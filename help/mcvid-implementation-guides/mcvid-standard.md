@@ -6,7 +6,7 @@ seo-title: Implementazione con Gestione tag dinamica
 title: Implementazione con Gestione tag dinamica
 uuid: c 4 f 752 c 4-392 e -4909-b 178-911706857064
 translation-type: tm+mt
-source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
+source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
 
 ---
 
@@ -94,7 +94,7 @@ mcvid-dtm-implement.xml
    >
    >Questa azione compila la **[!UICONTROL casella ID]** organizzazione Experience Cloud con l&#39;ID organizzazione. Se il tuo account di Dynamic Tag Management non è collegato a [!DNL Experience Cloud], devi fornire manualmente questo ID. Per collegare il tuo account, consulta [Collegare gli account in Experience Cloud](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html). Per informazioni su come reperire l&#39;ID organizzazione, vedi la sezione sui [requisiti](../mcvid-reference/mcvid-requirements.md#section-a02f537129a64ffbb690d5738d360c26).
 
-1. Digita il nome del server di tracciamento nella casella **[!UICONTROL Server]** tracciamento. Se non sei sicuro di come trovare il server di tracciamento, consulta [le domande frequenti](../mcvid-faq-intro/mcvid-faq.md) e [Aggiunta corretta delle variabili trackingserver e trackingserversecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+1. Digita il nome del server di tracciamento nella casella **[!UICONTROL Server]** tracciamento. Se non sei sicuro di come trovare il server di tracciamento, consulta [le domande frequenti](../mcvid-faq-intro/ecid-faq.md) e [Aggiunta corretta delle variabili trackingserver e trackingserversecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 1. Fate clic su **[!UICONTROL Crea strumento]** e **[!UICONTROL Salva modifiche]**.
 
    Dopo il salvataggio, il servizio ID è impostato come strumento in Dynamic Tag Management. Tuttavia non è ancora pronto all&#39;uso. Lo strumento Dynamic Tag Management deve ancora essere sottoposto al processo di pubblicazione e approvazione di Dynamic Tag Management e potrebbe essere necessario configurare altri parametri. Per informazioni sul processo di approvazione di Dynamic Tag Management, guarda il video [User Basics Jump Start](https://marketing.adobe.com/resources/help/en_US/dtm/user-basics-jump-start.html). Per informazioni sugli altri parametri che puoi aggiungere a Dynamic Tag Management, vedi [Impostazioni del servizio Experience Cloud ID per DTM](../mcvid-implementation-guides/mcvid-standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
