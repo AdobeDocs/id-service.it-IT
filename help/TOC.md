@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Aiuto del servizio ID
 user-guide-url: /content/help/en/id-service/using/mcvid-home.html
 translation-type: tm+mt
-source-git-commit: c8020fc1cc5acd5fccb1e8a2e2787d95aa1294ab
+source-git-commit: 1dd8b109f7e9567b5f72747ecc653d35d0942413
 
 ---
 
@@ -42,6 +42,7 @@ source-git-commit: c8020fc1cc5acd5fccb1e8a2e2787d95aa1294ab
       + [Riferimenti di Opt-in](mcvid-implementation-guides/opt-in-service/api.md)
       + [(beta) Utilizzo dei servizi di consenso con IAB Framework](mcvid-implementation-guides/opt-in-service/iab.md)
 + API del servizio ID {#id-service-api}
+   + [Panoramica API servizio ID](mcvid-library/mcvid-library.md)
    + Configurazione {#configurations}
       + [Panoramica sulle configurazioni](mcvid-library/mcvid-function-vars/mcvid-function-vars.md)
       + [audienceManagerServer e audienceManagerServerSecure](mcvid-library/mcvid-function-vars/mcvid-subdomain-config.md)
@@ -77,6 +78,7 @@ source-git-commit: c8020fc1cc5acd5fccb1e8a2e2787d95aa1294ab
       + [isClientSideMarketingCloudVisitorID](mcvid-library/mcvid-get-set/mcvid-client-side-id.md)
       + [resetState](mcvid-library/mcvid-get-set/mcvid-resetstate.md)
 + Riferimenti {#reference}
+   + [Panoramica di riferimento](mcvid-reference/mcvid-reference.md)
    + Guida di riferimento di Analytics {#analytics-reference}
       + [Panoramica di riferimento di Analytics](mcvid-reference/mcvid-analytics-reference/mcvid-analytics-reference.md)
       + [Impostazione degli ID di Analytics ed Experience Cloud](mcvid-reference/mcvid-analytics-reference/mcvid-analytics-ids.md)
@@ -91,6 +93,7 @@ source-git-commit: c8020fc1cc5acd5fccb1e8a2e2787d95aa1294ab
    + [Supporto per COPPA nel servizio Experience Cloud ID](mcvid-reference/mcvid-coppa.md)
    + [Supporto per CORS nel servizio Experience Cloud ID](mcvid-reference/mcvid-cors.md)
    + [ID cliente e stati di autenticazione](mcvid-reference/mcvid-authenticated-state.md)
+   + [Metodi della libreria ECID in un world Safari ITP](mcvid-reference/ecid-library-methods.md)
    + [Ottenere gli ID di utente e regione dal cookie AMCV o dal servizio ID](mcvid-reference/mcvid-regions.md)
    + [Requisiti del servizio Experience Cloud ID](mcvid-reference/mcvid-requirements.md)
    + [Video Heartbeat e il servizio Experience Cloud ID](mcvid-reference/mcvid-heartbeat.md)
