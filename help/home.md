@@ -1,19 +1,19 @@
 ---
 description: 'Experience Platform Identity Service fornisce un ID universale e costante che identifica i visitatori in tutte le soluzioni Experience Cloud. '
 keywords: Servizio ID
-seo-description: Il servizio Identità Adobe Experience Platform fornisce un ID universale e costante che identifica i visitatori in tutte le soluzioni Experience Cloud. Può sostituire il codice di generazione ID di servizi come Analytics, Audience Manager, Target e altre soluzioni o funzionalità Experience Cloud.
+seo-description: Il servizio identità Adobe Experience Platform (servizio ID) fornisce un ID universale e costante che identifica i visitatori in tutte le soluzioni Experience Cloud. Può sostituire il codice di generazione ID di servizi come Analytics, Audience Manager, Target e altre soluzioni o funzionalità Experience Cloud.
 seo-title: Servizio identità piattaforma Experience
 title: Servizio identità piattaforma Experience
 uuid: b 68194 b 5-e 549-4 f 6 f-bfaf -7744926 aeaac
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
 
-# Servizio identità piattaforma Experience {#experience-cloud-id-service}
+# Servizio identità Adobe Experience Platform {#experience-cloud-id-service}
 
-Il servizio Experience Platform Identity (ID) offre un ID universale e costante che identifica i visitatori in tutte le soluzioni Experience Cloud. Può sostituire il codice di generazione ID di servizi come Analytics, Audience Manager, Target e altre soluzioni o funzionalità Experience Cloud.
+Il servizio identità Adobe Experience Platform (servizio identità) fornisce un ID universale e costante che identifica i visitatori in tutte le soluzioni Experience Cloud. Può sostituire il codice di generazione ID di servizi come Analytics, Audience Manager, Target e altre soluzioni o funzionalità Experience Cloud.
 
 <table id="table_5E612F746A704FE095B809A013EE977F" class="simpletable"> 
  <tbody> 
