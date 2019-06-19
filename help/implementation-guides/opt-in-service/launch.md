@@ -1,22 +1,22 @@
 ---
-description: Semplificare l'abilitazione della soluzione Experience Cloud affinché Opt-in usi Launch by Adobe.
-seo-description: Semplificare l'abilitazione della soluzione Experience Cloud affinché Opt-in usi Launch by Adobe.
+description: Semplifica l'abilitazione della soluzione Experience Cloud per l'opt-in utilizzando Adobe Experience Platform Launch.
+seo-description: Semplifica l'abilitazione della soluzione Experience Cloud per l'opt-in utilizzando Adobe Experience Platform Launch.
 seo-title: Configurare Opt-in con Launch
 title: Configurare Opt-in con Launch
 uuid: d 35 ed 917-c 4 bd -4868-9026-1461 f 1 a 8 f 13 e
 translation-type: tm+mt
-source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
 
 # Configurare Opt-in con Launch {#configuring-opt-in-with-launch}
 
-Semplificare l&#39;abilitazione della soluzione Experience Cloud affinché Opt-in usi Launch by Adobe.
+Semplifica l&#39;abilitazione della soluzione Experience Cloud per l&#39;opt-in utilizzando Adobe Experience Platform Launch.
 
 ## Configurare una possibile situazione di Opt-in con Launch {#section-8aa1b58bf8374c938aa8cfdeddbad6ff}
 
-[Launch by Adobe](https://docs.adobelaunch.com/) semplifica la configurazione e l&#39;impostazione di uno scenario di consenso con le soluzioni Adobe. È possibile semplificare la raccolta dei consensi dei visitatori per le soluzioni Experience Cloud consentendo ad Analytics, Target, Audience Manager e a tutte le altre soluzioni Experience Cloud di partecipare al sistema di gestione dei consensi.
+[Adobe Experience Platform Launch](https://docs.adobelaunch.com/) semplifica la configurazione e la configurazione di uno scenario di iscrizione con le soluzioni Adobe. È possibile semplificare la raccolta dei consensi dei visitatori per le soluzioni Experience Cloud consentendo ad Analytics, Target, Audience Manager e a tutte le altre soluzioni Experience Cloud di partecipare al sistema di gestione dei consensi.
 
 **Configurare l&#39;estensione Experience Cloud ID**
 
