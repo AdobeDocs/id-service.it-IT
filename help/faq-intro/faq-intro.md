@@ -1,19 +1,19 @@
 ---
-description: Domande frequenti sul servizio Identità Experience Platform stessa insieme a sezioni sul servizio ID e su altre combinazioni della soluzione Experience Cloud.
+description: Domande frequenti sul servizio Experience Cloud ID, oltre a sezioni sul servizio ID e sulle altre combinazioni di soluzioni Experience Cloud.
 keywords: Servizio ID
-seo-description: Domande frequenti sul servizio Identità Experience Platform stessa insieme a sezioni sul servizio ID e su altre combinazioni della soluzione Experience Cloud.
+seo-description: Domande frequenti sul servizio Experience Cloud ID, oltre a sezioni sul servizio ID e sulle altre combinazioni di soluzioni Experience Cloud.
 seo-title: Domande frequenti
 title: Domande frequenti
 uuid: b 075957 b -165 f -4087-99 ad-bf 608 b 4 d 4967
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
 
 # Domande frequenti {#faqs}
 
-Domande frequenti sul servizio Identità Experience Platform stessa insieme a sezioni sul servizio ID e su altre combinazioni della soluzione Experience Cloud.
+Domande frequenti sul servizio Experience Cloud ID, oltre a sezioni sul servizio ID e sulle altre combinazioni di soluzioni Experience Cloud.
 
 * [Domande frequenti sul servizio ID](faq.md)
 * [Domande frequenti su Analytics e sul servizio ID](analytics-faq.md)
