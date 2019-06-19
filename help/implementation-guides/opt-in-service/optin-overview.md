@@ -5,7 +5,7 @@ seo-title: Servizio di consenso
 title: Servizio di consenso
 uuid: aebd 72 ad -4118-471 b -9755-d 08 a 72 caa 0 fd
 translation-type: tm+mt
-source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 Il servizio Consenso consente di impostare i protocolli per il visitatore per determinare se è possibile impostare un cookie sul dispositivo o sul browser dell&#39;utente quando accede al sito.
 
-Il servizio Opt-in è un&#39;estensione del servizio identità Adobe Experience Platform, progettato per consentirti di controllare se e quali soluzioni Experience Cloud possono creare cookie sulle pagine Web per i visitatori prima del consenso dell&#39;utente. Il servizio di consenso consente inoltre di impostare protocolli per l&#39;integrazione con la piattaforma CMP (Permission Management Platform) e i sistemi esistenti come parte della progettazione più grande.
+Il servizio di consenso è un&#39;estensione dell&#39;Experience Cloud ID (ECID), progettato per consentire di controllare se e quali soluzioni Experience Cloud possono creare cookie sulle pagine Web per i visitatori prima del consenso dell&#39;utente. Il servizio di consenso consente inoltre di impostare protocolli per l&#39;integrazione con la piattaforma CMP (Permission Management Platform) e i sistemi esistenti come parte della progettazione più grande.
 
 Utilizzando il servizio di consenso, puoi specificare se un visitatore può optare per le soluzioni Adobe alla volta oppure presentare soluzioni in sequenza per le autorizzazioni. Una volta che il cliente ha completato e registrato il processo di approvazione, è possibile recuperare le approvazioni del visitatore CMP da tutte le soluzioni Adobe.
 
