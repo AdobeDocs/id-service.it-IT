@@ -5,7 +5,7 @@ seo-title: Configurazione del servizio di consenso
 title: Configurazione del servizio di consenso
 uuid: f 1 c 27139-cef 2-4122-af 12-c 839 cfc 82 e 6 e
 translation-type: tm+mt
-source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 Implementa il servizio di consenso come punto di riferimento singolo utilizzato dalle soluzioni Experience Cloud (altrimenti denominato Categorie in Consenso) per determinare se creare o meno cookie sul dispositivo di un visitatore.
 
-Il servizio Opt-in è una libreria javascript fornita con Adobe Experience Platform Identity Service ed esiste in JS visitatore nell&#39;oggetto globale `adobe` come `adobe.optIn` oggetto. Il servizio di consenso installato consente di specificare se un visitatore può optare per le soluzioni Adobe alla volta o per presentare soluzioni in sequenza per ogni autorizzazione. La funzione di gestione del consenso del servizio di consenso consente di implementare diverse configurazioni per i requisiti di privacy specifici.
+Il servizio di consenso è una libreria javascript fornita con Experience Cloud ID (ECID) ed esiste in JS visitatore nell&#39;oggetto globale `adobe` come `adobe.optIn` oggetto. Il servizio di consenso installato consente di specificare se un visitatore può optare per le soluzioni Adobe alla volta o per presentare soluzioni in sequenza per ogni autorizzazione. La funzione di gestione del consenso del servizio di consenso consente di implementare diverse configurazioni per i requisiti di privacy specifici.
 
 Il servizio di consenso consente di specificare se un visitatore può optare per le soluzioni Adobe alla volta oppure per presentare soluzioni in sequenza per ogni tipo di autorizzazione. Quando il processo di approvazione è stato completato e registrato dal cliente, è possibile recuperare le approvazioni del visitatore CMP da tutte le soluzioni Adobe per rispondere con le relative chiamate di consenso.
 
