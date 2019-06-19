@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Help Platform Identity Service Help
 user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 1af38efa5e85c09548a6dee6c9c550900f90a8ed
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
@@ -81,7 +81,7 @@ source-git-commit: 1af38efa5e85c09548a6dee6c9c550900f90a8ed
    + [Panoramica di riferimento](reference/reference.md)
    + Guida di riferimento di Analytics {#analytics-reference}
       + [Panoramica di riferimento di Analytics](reference/analytics-reference/analytics-reference.md)
-      + [Impostazione di Analytics e Identità](reference/analytics-reference/analytics-ids.md)
+      + [Impostazione degli ID di Analytics ed Experience Cloud](reference/analytics-reference/analytics-ids.md)
       + [Ordine delle operazioni per gli ID di Analytics](reference/analytics-reference/analytics-order-of-operations.md)
       + [Decisioni relative alla migrazione al servizio identità](reference/analytics-reference/migration-decisions.md)
       + [Scenari di migrazione al servizio identità](reference/analytics-reference/migration-scenarios.md)
