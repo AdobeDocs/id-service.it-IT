@@ -5,7 +5,7 @@ seo-title: Configurare Opt-in con DTM
 title: Configurare Opt-in con DTM
 uuid: 7 a 886 bc 3-c 9 e 5-4 eac -85 e 8-828 a 83 c 847 c 5
 translation-type: tm+mt
-source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
@@ -20,6 +20,6 @@ Obbligatorio:
 
 * Passare alla versione 4.0.0 di ECID o successiva. Consultare [Download di ECID](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
-Inserire i [campi di configurazione](https://marketing.adobe.com/resources/help/en_US/mcvid/api.html) nella pagina Generale di DTM.
+Inserire i [campi di configurazione](/help/implementation-guides/opt-in-service/api.md) nella pagina Generale di DTM.
 
 ![](assets/DTM-example.png)
