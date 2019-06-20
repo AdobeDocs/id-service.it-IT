@@ -6,12 +6,12 @@ seo-title: Domande frequenti per altre soluzioni Experience Cloud
 title: Domande frequenti per altre soluzioni Experience Cloud
 uuid: 7 d 848663-6 cbb -4 d 80-ab 06-7 b 6 d 2 dc 20 e 2 b
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Domande frequenti per altre soluzioni Experience Cloud{#faqs-for-other-experience-cloud-solutions}
+# FAQs for other Experience Cloud solutions{#faqs-for-other-experience-cloud-solutions}
 
 Domande frequenti sulle caratteristiche, sulle funzionalità e sui problemi correlati all&#39;uso delle soluzioni Experience Cloud con il servizio ID.
 
@@ -25,7 +25,7 @@ Consulta  [Implementazione standard con DTM](../implementation-guides/standard.m
 
 ## Analytics e Audience Manager {#section-b3dd206d497041acb04554c6fb1c912a}
 
-**La cronologia delle visite di un utente verrà esportata[!DNL Adobe Analytics]in[!DNL Audience Manager]seguito all&#39;implementazione del servizio Identità Experience Platform?**
+**La cronologia delle visite di un utente verrà esportata da[!DNL Adobe Analytics]a[!DNL Audience Manager]in seguito all&#39;implementazione del servizio Experience Cloud ID?**
 
 In questo caso sono disponibili due opzioni:
 
