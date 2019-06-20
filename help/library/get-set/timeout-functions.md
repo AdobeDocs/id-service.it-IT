@@ -1,19 +1,19 @@
 ---
-description: Chiama queste funzioni del servizio ID per determinare lo stato di timeout per una richiesta Experience Platform Identity Service, Analytics o Audience Manager ID. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
+description: Chiama queste funzioni del servizio ID per determinare lo stato di timeout per una richiesta Experience Cloud ID Service, Analytics o Audience Manager ID. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
 keywords: Servizio ID
-seo-description: Chiama queste funzioni del servizio ID per determinare lo stato di timeout per una richiesta Experience Platform Identity Service, Analytics o Audience Manager ID. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
+seo-description: Chiama queste funzioni del servizio ID per determinare lo stato di timeout per una richiesta Experience Cloud ID Service, Analytics o Audience Manager ID. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
 seo-title: callTimeOut Methods
 title: callTimeOut Methods
 uuid: e 5047498-11 db -4945-b 356-c 92 b 7 d 447573
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # Metodi callTimeOut{#calltimeout-methods}
 
-Chiama queste funzioni del servizio ID per determinare lo stato di timeout per una richiesta Experience Platform Identity Service, Analytics o Audience Manager ID. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
+Chiama queste funzioni del servizio ID per determinare lo stato di timeout per una richiesta Experience Cloud ID Service, Analytics o Audience Manager ID. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
 
 ## Funzioni di timeout {#section-e08228ef5f9b45c9a84139bbb763164a}
 
@@ -26,7 +26,7 @@ Chiama queste funzioni del servizio ID per determinare lo stato di timeout per u
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Servizio identità piattaforma Experience </p> </td> 
+   <td colname="col1"> <p>Servizio Experience Cloud ID </p> </td> 
    <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variablename</span> = visitor. mcidcalltimedout ()</span> </p> </td> 
   </tr> 
   <tr> 
