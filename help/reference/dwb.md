@@ -2,16 +2,16 @@
 description: Per integrare il campo Experience Cloud ID in Data Workbench, procedi come indicato di seguito. Questo processo consente di usare l'Experience Cloud ID costante nel feed di dati per consentire un'integrazione migliore con gli altri prodotti Adobe Experience Cloud e migliorare il monitoraggio dei visitatori.
 keywords: Servizio ID
 seo-description: Per integrare il campo Experience Cloud ID in Data Workbench, procedi come indicato di seguito. Questo processo consente di usare l'Experience Cloud ID costante nel feed di dati per consentire un'integrazione migliore con gli altri prodotti Adobe Experience Cloud e migliorare il monitoraggio dei visitatori.
-seo-title: Workbench dati e Servizio identità Experience Platform
-title: Workbench dati e Servizio identità Experience Platform
+seo-title: Data Workbench e il servizio Experience Cloud ID
+title: Data Workbench e il servizio Experience Cloud ID
 uuid: 9448 abc 8-04 fb -47 d 2-be 08-1 dfbddb 0764 e
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Workbench dati e Servizio identità Experience Platform {#data-workbench-and-the-experience-cloud-id-service}
+# Data Workbench e il servizio Experience Cloud ID {#data-workbench-and-the-experience-cloud-id-service}
 
 Per integrare il campo Experience Cloud ID in Data Workbench, procedi come indicato di seguito. Questo processo consente di usare l&#39;Experience Cloud ID costante nel feed di dati per consentire un&#39;integrazione migliore con gli altri prodotti Adobe Experience Cloud e migliorare il monitoraggio dei visitatori.
 
@@ -19,7 +19,7 @@ Per aggiornare [Data Workbench](https://marketing.adobe.com/resources/help/en_US
 
 1. Individua il file di configurazione del [gruppo decodificatore](https://marketing.adobe.com/resources/help/en_US/insight/dataset/c_text_file_dec_groups.html) corrente.
 
-   In genere si [!DNL Decoder Group] trova in un [!DNL Profile Manager] percorso: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Copia il formato del decodificatore corrente dal file di configurazione.
+   Typically, the [!DNL Decoder Group] is located in a [!DNL Profile Manager] on this path: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Copia il formato del decodificatore corrente dal file di configurazione.
 1. Incolla il formato del decodificatore al di sotto dell&#39;originale.
 1. Apri il formato del decodificatore e aggiungi i seguenti nuovi campi al termine dell&#39;elenco:
 
