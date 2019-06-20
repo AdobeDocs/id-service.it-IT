@@ -6,7 +6,7 @@ seo-title: CNAME per raccolta dati e monitoraggio tra più domini
 title: CNAME per raccolta dati e monitoraggio tra più domini
 uuid: ba 42 c 822-b 677-4139-b 1 ed -4 d 98 d 3320 fd 0
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
@@ -35,16 +35,16 @@ Usare un CNAME per la raccolta dati consente anche di monitorare i visitatori tr
 
 Poiché in Apple Safari e altri browser i cookie di prime parti possono essere usati in un contesto di terze parti, un CNAME consente di monitorare i clienti tra un dominio principale e altri domini che utilizzano lo stesso server di monitoraggio.
 
-Ad esempio, è presente `mymainsite.com`un sito principale. Hai configurato il record CNAME in modo che punti al server di raccolta dati protetto: `smetrics.mymainsite.com`.
+For example, you have a primary site at `mymainsite.com`. You configured the CNAME record to point to your secure data collection server: `smetrics.mymainsite.com`.
 
-Quando un utente visita `mymainsite.com`, il cookie del servizio ID viene impostato dal server di raccolta dati. Questo è consentito perché il dominio del server di raccolta dati corrisponde al dominio del sito Web ed è il cosiddetto utilizzo di un cookie in un contesto *di prime parti*, o semplicemente di *cookie first-party*.
+When a user visits `mymainsite.com`, the ID service cookie is set by the data collection server. This is allowed since the domain of the data collection server matches the domain of the website, and is what is known as using a cookie in a *first-party context*, or just a *first-party cookie*.
 
-Se utilizzi anche lo stesso server di raccolta dati su altri siti (ad esempio, `myothersiteA.com`e `myothersiteB.com`) e un visitatore visita successivamente questi siti, il cookie impostato durante l&#39;accesso a `mymainsite.com` viene inviato nella richiesta HTTPS al server di raccolta dati (ricorda che i browser inviano tutti i cookie per un dominio con tutte le richieste HTTPS a quel dominio, anche se il dominio non corrisponde al dominio del sito Web corrente). Si parla di utilizzo di un cookie in un contesto *di terze parti*, o semplicemente di cookie *di terze parti*, e consente l&#39;utilizzo dello stesso ID visitatore negli altri domini. I browser gestiscono i cookie in contesti di terze parti in modo diverso rispetto ai cookie di prime parti.
+If you are also using this same data collection server on other sites (for example, `myothersiteA.com`, and `myothersiteB.com`), and a visitor later visits these sites, the cookie that was set during the visit to `mymainsite.com` is sent in the HTTPS request to the data collection server (remember that browsers send all cookies for a domain with all HTTPS requests to that domain, even if the domain doesn&#39;t match the domain of the current website). This is what is known as using a cookie in a *third-party context*, or just a *third-party cookie*, and it enables the same visitor ID to be used on these other domains. I browser gestiscono i cookie in contesti di terze parti in modo diverso rispetto ai cookie di prime parti.
 
 *Nota: Safari blocca tutti i cookie nel contesto di terze parti, a prescindere da come sono impostati.*
 
-Di conseguenza, il dominio di raccolta deve essere un dominio visitato regolarmente, in modo che i visitatori possano essere identificati in tutti i domini. Se non esiste un dominio *comune* da utilizzare per il dominio di raccolta dati, non esiste alcun vantaggio a livello multidominio che consenta di mantenere un CNAME per il dominio di raccolta dati. Se il sito di accesso principale non viene visitato per primo, i visitatori vengono identificati in modo diverso negli altri siti rispetto al sito principale.
+Di conseguenza, il dominio di raccolta deve essere un dominio visitato regolarmente, in modo che i visitatori possano essere identificati in tutti i domini. If there is no *common* domain to use for the data collection domain, there is no cross-domain benefit to maintaining a CNAME for the data collection domain. Se il sito di accesso principale non viene visitato per primo, i visitatori vengono identificati in modo diverso negli altri siti rispetto al sito principale.
 
-## Abilitare il supporto per CNAME con il servizio identità Experience Platform {#section-25d4feb686d944e3a877d7aad8dbdf9a}
+## Attivazione del supporto per i CNAME con il servizio Experience Cloud ID {#section-25d4feb686d944e3a877d7aad8dbdf9a}
 
-Il supporto per CNAME del server di raccolta dati è abilitato impostando le `visitor.marketingCloudServerSecure` variabili.
+Data collection server CNAME support is enabled by setting the `visitor.marketingCloudServerSecure` variables.
