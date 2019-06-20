@@ -6,7 +6,7 @@ seo-title: getVisitorValues
 title: getVisitorValues
 uuid: 7 fb 831 b 3-cf 7 e -40 e 2-a 219-07 fec 28 ad 49 c
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
@@ -100,7 +100,7 @@ Nella seguente tabella sono elencati e definiti i parametri di risposta. Questi 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>L'ID della regione di raccolta dati. Questo è un identificatore numerico della posizione geografica di un particolare datacenter del servizio ID. </p> <p>Consulta <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external"> ID regioni DCS, posizioni e nomi host </a> e <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getlocationhint </a>. </p> </td> 
+   <td colname="col2"> <p>L'ID della regione di raccolta dati. Questo è un identificatore numerico della posizione geografica di un particolare datacenter del servizio ID. </p> <p>See <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external"> DCS Region IDs, Locations, and Host Names </a> and <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
@@ -108,7 +108,7 @@ Nella seguente tabella sono elencati e definiti i parametri di risposta. Questi 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>L'Experience Cloud ID del visitatore. </p> <p>Consulta  <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookie e Servizio identità Experience Platform </a>. </p> </td> 
+   <td colname="col2"> <p>L'Experience Cloud ID del visitatore. </p> <p>Consulta  <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookie e il servizio Experience Cloud ID </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
