@@ -1,19 +1,19 @@
 ---
-description: I browser usano Cross Origin Resource Sharing (CORS) per richiedere risorse da un dominio diverso da quello corrente. Experience Platform Identity Service supporta gli standard CORS che consentono tali richieste di risorse lato client, lato client. Il servizio ID utilizza invece le richieste JSONP nei browser più datati che non supportano CORS.
+description: I browser usano Cross Origin Resource Sharing (CORS) per richiedere risorse da un dominio diverso da quello corrente. Il servizio Experience Cloud ID supporta gli standard CORS che consentono tali richieste di risorse lato client, lato client. Il servizio ID utilizza invece le richieste JSONP nei browser più datati che non supportano CORS.
 keywords: Servizio ID
-seo-description: I browser usano Cross Origin Resource Sharing (CORS) per richiedere risorse da un dominio diverso da quello corrente. Experience Platform Identity Service supporta gli standard CORS che consentono tali richieste di risorse lato client, lato client. Il servizio ID utilizza invece le richieste JSONP nei browser più datati che non supportano CORS.
-seo-title: Supporto CORS nel servizio Identità Experience Platform
-title: Supporto CORS nel servizio Identità Experience Platform
+seo-description: I browser usano Cross Origin Resource Sharing (CORS) per richiedere risorse da un dominio diverso da quello corrente. Il servizio Experience Cloud ID supporta gli standard CORS che consentono tali richieste di risorse lato client, lato client. Il servizio ID utilizza invece le richieste JSONP nei browser più datati che non supportano CORS.
+seo-title: Supporto per CORS nel servizio Experience Cloud ID
+title: Supporto per CORS nel servizio Experience Cloud ID
 uuid: e 656 b 573-72 a 8-4312-a 7 d 5-5 cc 3818 f 0 a 9 e
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Supporto CORS nel servizio Identità Experience Platform {#cors-support-in-the-experience-cloud-id-service}
+# Supporto per CORS nel servizio Experience Cloud ID {#cors-support-in-the-experience-cloud-id-service}
 
-I browser usano Cross Origin Resource Sharing (CORS) per richiedere risorse da un dominio diverso da quello corrente. Experience Platform Identity Service supporta gli standard CORS che consentono tali richieste di risorse lato client, lato client. Il servizio ID utilizza invece le richieste JSONP nei browser più datati che non supportano CORS.
+I browser usano Cross Origin Resource Sharing (CORS) per richiedere risorse da un dominio diverso da quello corrente. Il servizio Experience Cloud ID supporta gli standard CORS che consentono tali richieste di risorse lato client, lato client. Il servizio ID utilizza invece le richieste JSONP nei browser più datati che non supportano CORS.
 
 ## Problemi relativi a criteri per la stessa origine e richieste del servizio ID {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
@@ -60,7 +60,7 @@ Vediamo come funzionano queste intestazioni. In questo esempio, supponiamo che u
  </tbody> 
 </table>
 
-Vedere anche [usecorsonly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
+See also [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
 
 ## Altri benefici di CORS {#section-6f44f30694c44f95bf9854b8a2af8449}
 
