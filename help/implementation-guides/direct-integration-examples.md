@@ -6,24 +6,24 @@ seo-title: Casi d'uso per l'integrazione diretta
 title: Casi d'uso per l'integrazione diretta
 uuid: 6 de 1 eb 8 b -4783-4545-8 a 64-ab 6 b 9 ef 93432
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Casi d&#39;uso per l&#39;integrazione diretta {#direct-integration-use-cases}
+# Direct integration use cases {#direct-integration-use-cases}
 
 Questi esempi coprono 2 casi d&#39;uso comuni relativi a un&#39;integrazione diretta e all&#39;Experience Cloud ID (MID). L&#39;identificatore MID è un ID univoco e costante per i visitatori del tuo sito.
 
 >[!TIP]
 >
->* Leggi e comprendi la sintassi [del codice e le variabili](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) prima di immergerti nei casi d&#39;uso.
->* Per ulteriori informazioni sull&#39;identificatore MID, vedi [Cookie e Servizio identità piattaforma Experience Platform](../introduction/cookies.md).
+>* Review and understand the [code syntax and variables](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) before diving into the use cases.
+>* For more information about the MID, see [Cookies and the Experience Cloud ID Service](../introduction/cookies.md).
 >
 
 
 
-## Caso d&#39;uso 1: Ho un MID ma desidero trasmettere gli ID visitatore e impostare uno stato di autenticazione {#section-a67d89a343754d1286d03cf08d34b806}
+## Use case 1: I have a MID but want to pass my Visitor IDs and set an authentication state {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
@@ -65,7 +65,7 @@ Questi esempi coprono 2 casi d&#39;uso comuni relativi a un&#39;integrazione dir
  </tbody> 
 </table>
 
-## Caso d&#39;uso 2: Non ho un MID e ho bisogno di generarne uno {#section-8e81291f8b684de8b88fae4002ae0029}
+## Use case 2: I do not have a MID and need to generate one {#section-8e81291f8b684de8b88fae4002ae0029}
 
 <table id="table_666A92693F8A413096DF6A64770C1141"> 
  <thead> 
