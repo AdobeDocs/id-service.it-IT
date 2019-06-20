@@ -1,19 +1,19 @@
 ---
-description: Prima di distribuire il servizio Identità Experience Platform, è necessario comprendere in che modo il servizio influisce sul monitoraggio dei visitatori in più domini e sui potenziali problemi relativi alla raccolta di dati con metodi diversi o tramite file javascript.
+description: Prima di distribuire il servizio Experience Cloud ID, è necessario comprendere in che modo il servizio influisce sul monitoraggio dei visitatori in più domini e sui potenziali problemi relativi alla raccolta di dati con metodi diversi o tramite file javascript.
 keywords: Servizio ID
-seo-description: Prima di distribuire il servizio Identità Experience Platform, è necessario comprendere in che modo il servizio influisce sul monitoraggio dei visitatori in più domini e sui potenziali problemi relativi alla raccolta di dati con metodi diversi o tramite file javascript.
-seo-title: Decisioni relative alla migrazione al servizio identità Experience Platform
-title: Decisioni relative alla migrazione al servizio identità Experience Platform
+seo-description: Prima di distribuire il servizio Experience Cloud ID, è necessario comprendere in che modo il servizio influisce sul monitoraggio dei visitatori in più domini e sui potenziali problemi relativi alla raccolta di dati con metodi diversi o tramite file javascript.
+seo-title: Decisioni relative alla migrazione al servizio Experience Cloud ID
+title: Decisioni relative alla migrazione al servizio Experience Cloud ID
 uuid: ee 56 b 5 de-fcf 3-4 cfb -9 e 53-762 af 7 c 4 d 2 ff
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Decisioni relative alla migrazione al servizio identità Experience Platform
+# Decisioni relative alla migrazione al servizio Experience Cloud ID
 
-Prima di distribuire il servizio Identità Experience Platform, è necessario comprendere in che modo il servizio influisce sul monitoraggio dei visitatori in più domini e sui potenziali problemi relativi alla raccolta di dati con metodi diversi o tramite file javascript.
+Prima di distribuire il servizio Experience Cloud ID, è necessario comprendere in che modo il servizio influisce sul monitoraggio dei visitatori in più domini e sui potenziali problemi relativi alla raccolta di dati con metodi diversi o tramite file javascript.
 
 Le risposte alle domande incluse in questa sezione sono utili per stabilire eventuali passaggi di migrazione da eseguire.
 
