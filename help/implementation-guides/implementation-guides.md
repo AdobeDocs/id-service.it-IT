@@ -1,26 +1,26 @@
 ---
-description: Istruzioni ed esempi di codice per le implementazioni standard e non-standard del servizio Identità Experience Platform.
+description: Istruzioni ed esempi di codice per le implementazioni standard e non-standard del servizio Experience Cloud ID.
 keywords: Servizio ID
-seo-description: Istruzioni ed esempi di codice per le implementazioni standard e non-standard del servizio Identità Experience Platform.
+seo-description: Istruzioni ed esempi di codice per le implementazioni standard e non-standard del servizio Experience Cloud ID.
 seo-title: Guide all'implementazione per il servizio ID
 solution: Experience Cloud
 title: Guide all'implementazione
 uuid: null
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # Guide all&#39;implementazione
 
-Istruzioni ed esempi di codice per le implementazioni standard e non-standard del servizio Identità Experience Platform.
+Istruzioni ed esempi di codice per le implementazioni standard e non-standard del servizio Experience Cloud ID.
 
 Importante: Prima di iniziare a utilizzare queste procedure, leggi e comprendi i requisiti del servizio ID.
 
 ## Implementazione standard
 
-Un&#39;implementazione standard utilizza [Adobe Exprience Platform Launch](https://docs.adobelaunch.com/) per aiutarti a iniziare con il servizio ID e a integrarla con altre soluzioni Experience Cloud. Ti consigliamo vivamente di utilizzare Launch Platform Launch durante l&#39;implementazione del servizio ID.
+A standard implementation uses [Adobe Exprience Platform Launch](https://docs.adobelaunch.com/) to help you get started with the ID service and integrate it with other Experience Cloud solutions. Ti consigliamo vivamente di utilizzare Launch Platform Launch durante l&#39;implementazione del servizio ID.
 
 ## Risorse di implementazione
 
@@ -28,12 +28,12 @@ Un&#39;implementazione standard utilizza [Adobe Exprience Platform Launch](https
 * [Metodi di implementazione](implementation-methods.md)
 * [Implementare con Launch](ecid-implement-with-launch.md)
 * [Implementazione con Gestione tag dinamica](standard.md)
-* [Implementazione del servizio identità Experience Platform per Analytics](setup-analytics.md)
-* [Implementazione del servizio identità Experience Platform per Target](setup-target.md)
-* [Implementazione del servizio identità Experience Platform per Analytics e Audience Manager](setup-aam-analytics.md)
-* [Implementazione del servizio Identità Experience Platform per Analytics, Audience Manager e Target](setup-aam-analytics-target.md)
-* [Utilizzo del servizio identità Experience Platform con A 4 T e implementazione lato server di Target](ecid-a4t-target.md)
-* [Integrazione diretta con il servizio identità Experience Platform](direct-integration.md)
+* [Implementazione del servizio Experience Cloud ID per Analytics](setup-analytics.md)
+* [Implementazione del servizio Experience Cloud ID per Target](setup-target.md)
+* [Implementazione del servizio Experience Cloud ID per Analytics e Audience Manager](setup-aam-analytics.md)
+* [Implementazione del servizio Experience Cloud ID per Analytics, Audience Manager e Target](setup-aam-analytics-target.md)
+* [Uso del servizio Experience Cloud ID con A4T e l&#39;implementazione lato server di Target](ecid-a4t-target.md)
+* [Integrazione diretta con il servizio Experience Cloud ID](direct-integration.md)
 * [Casi d&#39;uso dell&#39;integrazione diretta](direct-integration-examples.md)
-* [Verifica e verifica del servizio Identità Experience Platform](test-verify.md)
+* [Verificare e verificare il servizio Experience Cloud ID](test-verify.md)
 * [Panoramica del servizio di consenso](opt-in-service/optin-overview.md)
