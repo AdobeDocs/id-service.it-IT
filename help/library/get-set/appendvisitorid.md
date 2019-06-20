@@ -6,7 +6,7 @@ seo-title: appendVisitorIDsTo (Monitoraggio interdominio)
 title: appendVisitorIDsTo (Monitoraggio interdominio)
 uuid: 06 b 453 ee -73 c 5-4625-82 d 9-877 ad 2 b 4 f 702
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
@@ -25,14 +25,14 @@ Sommario:
 
 ## Tieni traccia dei visitatori su più domini quando i browser bloccano i cookie di terze parti {#section-7251d88befd440b4b79520e33c5aa44a}
 
-Il servizio ID scrive un cookie di prime e terze parti sul browser quando una persona visita il sito (consultate [Cookie e Servizio identità Experience Platform](../../introduction/cookies.md) ). Il cookie di prima parte contiene il MID, un ID univoco che identifica quel visitatore specifico. Il cookie di terza parte contiene un altro ID usato dal servizio ID per generare il MID. Quando un browser blocca questo cookie di terza parte, il servizio ID non è in grado di:
+ID service writes a first- and third-party cookie to the browser when a person visit your site (see [Cookies and the Experience Cloud ID Service](../../introduction/cookies.md) ). Il cookie di prima parte contiene il MID, un ID univoco che identifica quel visitatore specifico. Il cookie di terza parte contiene un altro ID usato dal servizio ID per generare il MID. Quando un browser blocca questo cookie di terza parte, il servizio ID non è in grado di:
 
 * Rigenerare l&#39;ID univoco per quel visitatore del sito quando il visitatore si sposta su un altro dominio.
 * Tenere traccia dei visitatori su più domini diversi di proprietà della tua organizzazione.
 
-Per risolvere questo problema, implementa ` Visitor.appendVisitorIDsTo( *`l&#39;URL`*)`. Questa proprietà consente al servizio ID di tenere traccia dei visitatori su più domini anche se il loro browser blocca i cookie di terze parti. Funziona in questo modo:
+To help solve this problem, implement ` Visitor.appendVisitorIDsTo( *`url`*)`. Questa proprietà consente al servizio ID di tenere traccia dei visitatori su più domini anche se il loro browser blocca i cookie di terze parti. Funziona in questo modo:
 
-* Quando un visitatore arriva sugli altri domini, l&#39; ` Visitor.appendVisitorIDsTo( *`URL`*)` aggiunge il MID come parametro query nell&#39;URL reindirizzandolo dal dominio originale al dominio di destinazione.
+* As a visitor browses to your other domains, the ` Visitor.appendVisitorIDsTo( *`url`*)` appends the MID as a query parameter in the URL redirect from the original domain to the destination domain.
 * Invece di inviare ad Adobe la richiesta dell&#39;ID di quel visitatore, il codice del servizio ID sul dominio di destinazione estrae l&#39;identificatore MID dall&#39;URL. Questa richiesta include l&#39;ID del cookie di terza parte, che non è disponibile in questo caso.
 * Il codice del servizio ID sulla pagina di destinazione usa quindi questo stesso identificatore MID per tenere traccia del visitatore.
 
@@ -40,7 +40,7 @@ Per maggiori dettagli vedi l&#39;esempio di codice.
 
 ## Aggiungi l&#39;esempio di codice ID visitatore {#section-62d55f7f986542b0b9238e483d50d7b0}
 
-L&#39;esempio seguente può aiutarti a iniziare con ` Visitor.appendVisitorIDsTo( *`l&#39;URL`*)`. Se viene implementato correttamente, il codice JavaScript sarà simile a quello di questo esempio.
+The following example can help you get started with ` Visitor.appendVisitorIDsTo( *`url`*)`. Se viene implementato correttamente, il codice JavaScript sarà simile a quello di questo esempio.
 
 ```js
 //Code on Domain A 
