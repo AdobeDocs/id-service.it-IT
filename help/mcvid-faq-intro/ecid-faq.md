@@ -21,7 +21,7 @@ Domande frequenti sulle caratteristiche, sulle funzionalità e sui problemi corr
 
 Consulta la sezione [Panoramica](../mcvid-introduction/mcvid-overview.md).
 
-**Perché il servizio ID non sta effettuando una chiamata per recuperare l&#39;Experience Cloud ID?**
+**Perché il servizio ID non sta effettuando una chiamata per recuperare l'Experience Cloud ID?**
 
 Questa situazione è difficile da diagnosticare. Una cosa che puoi controllare sono le intestazioni dell&#39;informativa sulla sicurezza dei contenuti sul tuo sito. Se hai una politica di sicurezza restrittiva, quelle impostazioni possono bloccare le chiamate di terze parti effettuate dal servizio ID. Consulta  [Informativa sulla sicurezza dei contenuti e servizio Experience Cloud ID](../mcvid-reference/mcvid-csp.md#concept-968c423a7392479db0a0d821ae9783e3).
 
@@ -45,7 +45,7 @@ No, questa chiamata viene effettuata solo al primo rendering della pagina o una 
 
 Consultate [Panoramica](../mcvid-introduction/mcvid-overview.md).
 
-**Durante l&#39;uso del servizio ID, cosa può provocare un rallentamento dei tempi di caricamento delle pagine o influire sull&#39;esperienza dell&#39;utente?**
+**Durante l'uso del servizio ID, cosa può provocare un rallentamento dei tempi di caricamento delle pagine o influire sull'esperienza dell'utente?**
 
 È difficile catalogare tutte le condizioni possibili. Miliardi di clienti si collegano ai nostri servizi e l&#39;enorme varietà di modi e tempi in cui si connettono influisce sulle prestazioni. Ad esempio:
 
@@ -75,7 +75,7 @@ Consulta  [Supporto per CORS nel servizio Experience Cloud ID](../mcvid-referenc
 
 Sì. Consulta  [Supporto per CORS nel servizio Experience Cloud ID](../mcvid-reference/mcvid-cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
-**Cos&#39;è CORS?**
+**Cos'è CORS?**
 
 *`Cross-Origin Resource Sharing`*o CORS è un metodo che i browser usano per richiedere risorse. Il servizio ID richiede sempre risorse usando CORS nei browser che lo supportano. Il servizio ID richiede risorse con JSONP nei browser più datati che non supportano CORS. Consulta  [Experience Cloud](../mcvid-reference/mcvid-cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
