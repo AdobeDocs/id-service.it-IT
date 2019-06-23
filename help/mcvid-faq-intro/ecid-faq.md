@@ -23,7 +23,7 @@ Consulta la sezione [Panoramica](../mcvid-introduction/mcvid-overview.md).
 
 **Perché il servizio ID non sta effettuando una chiamata per recuperare l'Experience Cloud ID?**
 
-Questa situazione è difficile da diagnosticare. Una cosa che puoi controllare sono le intestazioni dell&#39;informativa sulla sicurezza dei contenuti sul tuo sito. Se hai una politica di sicurezza restrittiva, quelle impostazioni possono bloccare le chiamate di terze parti effettuate dal servizio ID. Consulta  [Informativa sulla sicurezza dei contenuti e servizio Experience Cloud ID](../mcvid-reference/mcvid-csp.md#concept-968c423a7392479db0a0d821ae9783e3).
+Questa situazione è difficile da diagnosticare. Una cosa che puoi controllare sono le intestazioni dell&#39;informativa sulla sicurezza dei contenuti sul tuo sito. Se hai una politica di sicurezza restrittiva, quelle impostazioni possono bloccare le chiamate di terze parti effettuate dal servizio ID. Consulta [Informativa sulla sicurezza dei contenuti e servizio Experience Cloud ID](../mcvid-reference/mcvid-csp.md#concept-968c423a7392479db0a0d821ae9783e3).
 
 **Archiviazione del file VisitorAPI.js**
 
@@ -73,17 +73,17 @@ Consulta [Supporto per CORS nel servizio Experience Cloud ID](../mcvid-reference
 
 **Il servizio ID supporta CORS?**
 
-Sì. Consulta  [Supporto per CORS nel servizio Experience Cloud ID](../mcvid-reference/mcvid-cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Sì. Consulta [Supporto per CORS nel servizio Experience Cloud ID](../mcvid-reference/mcvid-cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **Cos'è CORS?**
 
-*`Cross-Origin Resource Sharing`*o CORS è un metodo che i browser usano per richiedere risorse. Il servizio ID richiede sempre risorse usando CORS nei browser che lo supportano. Il servizio ID richiede risorse con JSONP nei browser più datati che non supportano CORS. Consulta  [Experience Cloud](../mcvid-reference/mcvid-cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+*`Cross-Origin Resource Sharing`*o CORS è un metodo che i browser usano per richiedere risorse. Il servizio ID richiede sempre risorse usando CORS nei browser che lo supportano. Il servizio ID richiede risorse con JSONP nei browser più datati che non supportano CORS. Consulta [Experience Cloud](../mcvid-reference/mcvid-cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **Cosa succede se i miei requisiti di sicurezza sono così rigidi da impedirmi di usare JSONP?**
 
 Se hai dei requisiti di sicurezza rigidi, imposta la configurazione API del servizio ID `useCORSOnly: true`. Abilita questa modalità solo se sei certo che i visitatori del tuo sito usano browser che supportano CORS.
 
-Consulta  [Experience Cloud](../mcvid-reference/mcvid-cors.md#concept-6c280446990d46d88ba9da15d2dcc758) e [usecorsonly](../mcvid-library/mcvid-function-vars/mcvid-use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
+Consulta [Experience Cloud](../mcvid-reference/mcvid-cors.md#concept-6c280446990d46d88ba9da15d2dcc758) e [usecorsonly](../mcvid-library/mcvid-function-vars/mcvid-use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
 
 >[!MORE_ LIKE_ THIS]
 >
