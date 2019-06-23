@@ -67,7 +67,7 @@ Questa modifica migliore le prestazioni per i clienti che usano Visitor 2.3.0+ e
 
 Le richieste di risorse con CORS sono generalmente preferibili a quelle con JSONP. Con JSONP, alcuni browser mettono in coda e modificano la priorità delle richieste rispetto ad altre chiamate sincrone ed asincrone sulla pagina. CORS contribuisce a garantire che a queste richieste sia data una maggiore priorità nello stack delle chiamate del browser.
 
-Consulta  [Supporto per CORS nel servizio Experience Cloud ID](../mcvid-reference/mcvid-cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Consulta [Supporto per CORS nel servizio Experience Cloud ID](../mcvid-reference/mcvid-cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 ## Sicurezza {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
