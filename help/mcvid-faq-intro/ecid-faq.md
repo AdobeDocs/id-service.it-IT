@@ -61,8 +61,6 @@ Ad esempio, il thread yielding. Abbiamo introdotto il thread yielding per i casi
 
 Questa modifica migliore le prestazioni per i clienti che usano Visitor 2.3.0+ e DIL 6.10+. I miglioramenti nei tempi di caricamento delle pagine sono mostrati nell&#39;immagine seguente:
 
-![](assets/id_sync_improvements_copy.png)
-
 **Le richieste del browser effettuate con CORS versus JSONP influiscono sulle prestazioni delle pagine?**
 
 Le richieste di risorse con CORS sono generalmente preferibili a quelle con JSONP. Con JSONP, alcuni browser mettono in coda e modificano la priorità delle richieste rispetto ad altre chiamate sincrone ed asincrone sulla pagina. CORS contribuisce a garantire che a queste richieste sia data una maggiore priorità nello stack delle chiamate del browser.
