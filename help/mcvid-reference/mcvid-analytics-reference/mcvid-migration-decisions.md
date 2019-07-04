@@ -4,8 +4,8 @@ keywords: Servizio ID
 seo-description: Prima di distribuire il servizio Experience Cloud ID, è necessario comprendere in che modo il servizio condizioni il monitoraggio dei visitatori in più domini e i potenziali problemi relativi alla raccolta dei dati con metodi diversi o tramite file JavaScript.
 seo-title: Decisioni relative alla migrazione al servizio Experience Cloud ID
 title: Decisioni relative alla migrazione al servizio Experience Cloud ID
-uuid: ee 56 b 5 de-fcf 3-4 cfb -9 e 53-762 af 7 c 4 d 2 ff
-translation-type: tm+mt
+uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -63,7 +63,7 @@ Se disponi di più domini che inviano dati alla *stessa suite di rapporti*, ti c
      <li id="li_32E2CD3E58454E20A642BADE507AE86E">Verifica che il nuovo server di monitoraggio sia <a href="https://marketing.adobe.com/resources/help/en_US/whitepapers/rdc/" format="https" scope="external">compatibile con RDC</a>. </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762">Passa dal CNAME a un server di monitoraggio RDC alcuni mesi prima della migrazione al servizio <span class="keyword">Experience Cloud ID</span>. </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i>Non</i> usare un server di monitoraggio <span class="codeph">*.2o7.net</span>. </li> 
-     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Per configurare la migrazione dei visitatori, contatta l'<a href="https://helpx.adobe.com/marketing-cloud/contact-support.html" format="https" scope="external">assistenza clienti</a>. In questo modo i conteggi dei visitatori rimarranno costanti. </li> 
+     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Per configurare la migrazione dei visitatori, contatta l'<a href="https://helpx.adobe.com/it/marketing-cloud/contact-support.html" format="https" scope="external">assistenza clienti</a>. In questo modo i conteggi dei visitatori rimarranno costanti. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
