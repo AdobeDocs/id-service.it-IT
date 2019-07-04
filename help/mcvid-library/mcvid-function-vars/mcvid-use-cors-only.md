@@ -4,8 +4,8 @@ keywords: Servizio ID
 seo-description: Flag booleano facoltativo che controlla in che modo il browser richiede le risorse dal servizio Experience Cloud ID.
 seo-title: useCORSOnly
 title: useCORSOnly
-uuid: 607 dc 035-dffc -4 f 4 d-be 51-08 ef 6 c 0 a 8 fad
-translation-type: tm+mt
+uuid: 607dc035-dffc-4f4d-be51-08ef6c0a8fad
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 Flag booleano facoltativo che controlla in che modo il browser richiede le risorse dal servizio Experience Cloud ID.
 
-** Sintassi: ** `useCORSOnly: true|false` (il valore predefinito `false`è.)
+** Sintassi: ** `useCORSOnly: true|false` (il valore predefinito è `false`.)
 
 **Panoramica**
 
