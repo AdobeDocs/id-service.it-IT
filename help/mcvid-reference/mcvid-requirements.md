@@ -4,8 +4,8 @@ keywords: Servizio ID
 seo-description: Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per il servizio Experience Cloud ID.
 seo-title: Requisiti del servizio Experience Cloud ID
 title: Requisiti del servizio Experience Cloud ID
-uuid: 608 b 1082-6 e 9 e -4101-b 6 cb -60027950109 b
-translation-type: tm+mt
+uuid: 608b1082-6e9e-4101-b6cb-60027950109b
+translation-type: ht
 source-git-commit: 5eb9eae07f5c0f9eb58b528cce05fc493dfdd584
 
 ---
@@ -17,7 +17,7 @@ Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le vers
 
 ## Requisiti per il successo e il supporto dell&#39;implementazione {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
-Un&#39;implementazione di successo e supportata deve rispettare (o superare) i requisiti di codice e aderire alle istruzioni fornite nell&#39;[!DNL Adobe]Aiuto di . Un&#39;implementazione non supportata darà risultati imprevisti e impedisce ai tecnici e agli operatori dell&#39;assistenza clienti di fornire il supporto necessario per risolvere eventuali problemi riscontrati con il servizio ID.
+Un&#39;implementazione di successo e supportata deve rispettare (o superare) i requisiti di codice e aderire alle istruzioni fornite nell&#39;[!DNL Adobe]Aiuto di. Un&#39;implementazione non supportata darà risultati imprevisti e impedisce ai tecnici e agli operatori dell&#39;assistenza clienti di fornire il supporto necessario per risolvere eventuali problemi riscontrati con il servizio ID.
 
 <table id="table_2216C44AA66248DCAA13BF64BDF2D88A"> 
  <thead> 
@@ -53,7 +53,7 @@ Per utilizzare il servizio ID, la società deve essere abilitata per [!DNL Exper
 
 >[!IMPORTANT]
 >
->L&#39;ID organizzazione fa distinzione tra maiuscole e minuscole e deve essere utilizzato esattamente come è stato fornito.
+>L&#39;ID organizzazione è sensibile all&#39;uso di maiuscole e minuscole e deve essere utilizzato esattamente come è stato fornito.
 
 <table id="table_6C74B676EB094C568D2439FDCC9A7830"> 
  <thead> 
@@ -65,22 +65,22 @@ Per utilizzare il servizio ID, la società deve essere abilitata per [!DNL Exper
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Abilitato</b> </p> </td> 
-   <td colname="col2"> <p>Se l'azienda è abilitata per <span class="keyword">Experience Cloud</span> ma non possiedi l'ID organizzazione, controlla gli <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html" format="https" scope="external">ID organizzazione</a> (scorri la sezione <i>Ricerca dell'ID organizzazione</i>). </p> </td> 
+   <td colname="col2"> <p>Se l'azienda è abilitata per <span class="keyword">Experience Cloud</span> ma non possiedi l'ID organizzazione, controlla gli <a href="https://marketing.adobe.com/resources/help/it_IT/mcloud/organizations.html" format="https" scope="external">ID organizzazione</a> (scorri la sezione <i>Ricerca dell'ID organizzazione</i>). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Non sono sicuro</b> </p> </td> 
-   <td colname="col2"> <p> Se non conosci lo stato <span class="keyword">Experience Cloud</span> della tua società, chiedi a chi gestisce il tuo account Adobe se i membri della società possono effettuare l'accesso a <a href="https://marketing.adobe.com" format="https" scope="external">marketing.adobe.com</a> utilizzando un Adobe ID. Se possono farlo, la società è abilitata e l'amministratore può vedere l'ID organizzazione. L'ID organizzazione è indicato nella sezione “Pagina di amministrazione” della pagina di <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started" format="https" scope="external">amministrazione di Experience Cloud</a>. </p> </td> 
+   <td colname="col2"> <p> Se non conosci lo stato <span class="keyword">Experience Cloud</span> della tua società, chiedi a chi gestisce il tuo account Adobe se i membri della società possono effettuare l'accesso a <a href="https://marketing.adobe.com" format="https" scope="external">marketing.adobe.com</a> utilizzando un Adobe ID. Se possono farlo, la società è abilitata e l'amministratore può vedere l'ID organizzazione. L'ID organizzazione è indicato nella sezione “Pagina di amministrazione” della pagina di <a href="https://marketing.adobe.com/resources/help/it_IT/mcloud/?f=admin_getting_started" format="https" scope="external">amministrazione di Experience Cloud</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Non abilitato</b> </p> </td> 
-   <td colname="col2"> <p> Se la società non è abilitata per Experience Cloud, vedi <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/?f=core_services.html" format="https" scope="external">Servizi di base - Come abilitare le soluzioni</a>. </p> </td> 
+   <td colname="col2"> <p> Se la società non è abilitata per Experience Cloud, vedi <a href="https://marketing.adobe.com/resources/help/it_IT/mcloud/?f=core_services.html" format="https" scope="external">Servizi di base - Come abilitare le soluzioni</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Requisiti di Analytics: raccolta dati regionali (RDC) {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-Tutti i server di tracciamento sono stati convertiti in RDC, quindi non è necessario modificare il server di tracciamento di Analytics. [Ulteriori informazioni...](https://docs.adobe.com/content/help/en/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
+Tutti i server di tracciamento sono stati convertiti in RDC, pertanto non è necessario modificare il server di tracciamento di Analytics. [Ulteriori informazioni…](https://docs.adobe.com/content/help/en/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
 
 ## Librerie dei codici e versioni richieste {#section-ad7542a4317d430fa79fc6b095beb84d}
 
@@ -88,7 +88,7 @@ Nelle seguenti sezioni sono elencate le versioni minime dei codici richieste per
 
 >[!TIP]
 >
->È consigliabile utilizzare le versioni più recenti del codice invece dei requisiti minimi.
+>Invece dei requisiti minimi, consigliamo di usare le ultime versioni del codice.
 
 **JavaScript**
 
@@ -102,7 +102,7 @@ Nelle seguenti sezioni sono elencate le versioni minime dei codici richieste per
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="keyword"></span>  Servizio Experience Cloud ID</b> </p> </td> 
+   <td colname="col1"> <p> <b><span class="keyword"> Servizio </span>Experience Cloud ID</b> </p> </td> 
    <td colname="col3"> <p> <span class="codeph"> VisitorAPI.js</span> </p> </td> 
    <td colname="col4"> <p>2.0 o successiva </p> </td> 
   </tr> 
@@ -129,11 +129,11 @@ Nelle seguenti sezioni sono elencate le versioni minime dei codici richieste per
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Vedi <a href="https://marketing.adobe.com/resources/help/en_US/target/ov/?f=c_mbox_technical.html" format="https" scope="external">Codice mbox</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Vedi <a href="https://marketing.adobe.com/resources/help/it_IT/target/ov/?f=c_mbox_technical.html" format="https" scope="external">Codice mbox</a>. </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Vedi <a href="https://marketing.adobe.com/resources/help/en_US/target/ov2/c_target-atjs-implementation.html" format="https" scope="external">Implementazione at.js</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Vedi <a href="https://marketing.adobe.com/resources/help/it_IT/target/ov2/c_target-atjs-implementation.html" format="https" scope="external">Implementazione at.js</a>. </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 
@@ -148,15 +148,15 @@ Il servizio ID richiede come minimo le versioni SDK elencate di seguito.
 
 >[!TIP]
 >
->È consigliabile utilizzare le versioni più recenti del codice invece dei requisiti minimi.
+>Invece dei requisiti minimi, consigliamo di usare le ultime versioni del codice.
 
 Il codice SDK deve essere abilitato per il servizio ID. Abilita e scarica l&#39;ultimo codice SDK per ogni app dal tuo account [Adobe Mobile Services](https://mobilemarketing.adobe.com/). Vedi anche:
 
-* [Configurare le opzioni del servizio ID visitatore dell&#39;SDK](https://marketing.adobe.com/resources/help/en_US/mobile/t_config_visitor.html)
-* [Metodi SDK per Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/c_marketing_cloud.html)
-* [Metodi SDK per iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/marketing_cloud.html)
+* [Configurare le opzioni del servizio ID SDK visitatore](https://marketing.adobe.com/resources/help/it_IT/mobile/t_config_visitor.html)
+* [Metodi SDK per Android](https://marketing.adobe.com/resources/help/it_IT/mobile/android/c_marketing_cloud.html)
+* [Metodi SDK per iOS](https://marketing.adobe.com/resources/help/it_IT/mobile/ios/marketing_cloud.html)
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
 >* [Libreria dei codici](../mcvid-library/mcvid-library.md#concept-ff27497375644a898d47984aefb21c97)
 
