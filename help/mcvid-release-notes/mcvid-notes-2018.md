@@ -4,8 +4,8 @@ keywords: Servizio ID
 seo-description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud ID per il 2018.
 seo-title: Note sulla versione 2018
 title: Note sulla versione 2018
-uuid: 771 b 5 b 11-a 8 e 3-464 c-b 65 e-b 15135584 ace
-translation-type: tm+mt
+uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -27,7 +27,7 @@ Versioni future, aggiornamenti o modifiche al servizio Experience Cloud ID per i
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Maggiore sicurezza per i cookie AMCV </p> </td> 
-   <td colname="col2"> <p>Durante una scansione della sicurezza interna, è stato rilevato che quando si usa la libreria DTM, i cookie usati per la gestione della sessione non riescono a specificare gli attributi adeguati. Questo potrebbe comportare una condivisione involontaria delle informazioni dei cookie. Per risolvere questo problema è stata introdotta una configurazione che consente al cliente di impostare il cookie AMCV come sicuro. Consulta <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-securecookie.html" format="https" scope="external">secureCookie</a>. </p> </td> 
+   <td colname="col2"> <p>Durante una scansione della sicurezza interna, è stato rilevato che quando si usa la libreria DTM, i cookie usati per la gestione della sessione non riescono a specificare gli attributi adeguati. Questo potrebbe comportare una condivisione involontaria delle informazioni dei cookie. Per risolvere questo problema è stata introdotta una configurazione che consente al cliente di impostare il cookie AMCV come sicuro. Consulta <a href="https://marketing.adobe.com/resources/help/it_IT/mcvid/mcvid-securecookie.html" format="https" scope="external">secureCookie</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -78,7 +78,7 @@ Versioni future, aggiornamenti o modifiche al servizio Experience Cloud ID per i
 
 >[!NOTE]
 >
->Si consiglia di effettuare l&#39;aggiornamento dalla versione 3.1.0 alla versione più recente al primo momento. Consultare la descrizione della versione 3.1.2. L&#39;ultimo pacchetto è disponibile da Adobe Launch, DTM e AppMeasurement.
+>È consigliabile passare il prima possibile dalla versione 3.1.0 alla versione più recente. Consultare la descrizione della versione 3.1.2. L&#39;ultimo pacchetto è disponibile da Adobe Launch, DTM e AppMeasurement.
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
