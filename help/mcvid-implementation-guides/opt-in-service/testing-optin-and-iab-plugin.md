@@ -1,20 +1,20 @@
 ---
-description: Dopo aver attivato il consenso nel sito Web, utilizzate i metodi di convalida per verificare che il servizio funzioni come previsto mediante gli strumenti per sviluppatori del browser.
-seo-description: Dopo aver attivato il consenso nel sito Web, utilizzate i metodi di convalida per verificare che il servizio funzioni come previsto mediante gli strumenti per sviluppatori del browser.
-seo-title: Convalida del servizio di consenso
-title: Convalida del servizio di consenso
-uuid: 1743360 a-d 757-4 e 50-8697-0 fa 92 b 302 cbc
-translation-type: tm+mt
+description: Dopo aver abilitato l'oggetto Opt-in sul sito Web, usa i metodi di convalida per verificare che il servizio funzioni come previsto usando gli strumenti per sviluppatori nel browser.
+seo-description: Dopo aver abilitato l'oggetto Opt-in sul sito Web, usa i metodi di convalida per verificare che il servizio funzioni come previsto usando gli strumenti per sviluppatori nel browser.
+seo-title: Convalida del servizio Opt-in
+title: Convalida del servizio Opt-in
+uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
 
 
-# Convalida del servizio di consenso{#validating-opt-in-service}
+# Convalida del servizio Opt-in{#validating-opt-in-service}
 
-Dopo aver attivato il consenso nel sito Web, utilizzate i metodi di convalida per verificare che il servizio funzioni come previsto mediante gli strumenti per sviluppatori del browser.
+Dopo aver abilitato l&#39;oggetto Opt-in sul sito Web, usa i metodi di convalida per verificare che il servizio funzioni come previsto usando gli strumenti per sviluppatori nel browser.
 
-## Caso d&#39;uso 1: Abilita consenso {#section-c8fe1ee3711b420c8186c7057abbecb3}
+## Caso d&#39;uso 1: abilitare Opt-in {#section-c8fe1ee3711b420c8186c7057abbecb3}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -30,7 +30,7 @@ In Chrome fai clic con il pulsante destro del mouse sulla pagina Web e seleziona
 
 Nell&#39;esempio sopra, i seguenti tag di Adobe JS sono installati sulla pagina: ECID, AAM, Analytics e Target.
 
-**Come dimostrare che il consenso funziona come previsto:**
+**Come verificare che Opt-in funzioni come previsto:**
 
 Nei server di Adobe non dovrebbe essere presente alcuna richiesta:
 
@@ -42,7 +42,7 @@ Nei server di Adobe non dovrebbe essere presente alcuna richiesta:
 
 >[!NOTE]
 >
->Potrebbe essere visualizzata una chiamata, `http://dpm.demdex.net/optOutStatus`ovvero un endpoint READ ONLY utilizzato per recuperare lo stato di rinuncia del visitatore. Questo endpoint non comporterà la creazione di un cookie di terze parti e non raccoglierà alcuna informazione dalla pagina.
+>È possibile che venga visualizzata una chiamata a `http://dpm.demdex.net/optOutStatus`; si tratta di un endpoint di SOLA LETTURA usato per recuperare lo stato di Opt-out del visitatore. Questo endpoint non comporterà la creazione di un cookie di terze parti e non raccoglierà alcuna informazione dalla pagina.
 
 Non dovrebbe essere visualizzato alcun cookie creato dai tag di Adobe: (AMCV_{{YOUR_ORG_ID}}, mbox, demdex, s_cc, s_sq, everest_g_v2, everest_session_v2)
 
