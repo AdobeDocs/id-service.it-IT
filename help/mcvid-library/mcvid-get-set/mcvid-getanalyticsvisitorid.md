@@ -4,8 +4,8 @@ keywords: Servizio ID
 seo-description: Restituisce l'ID Analytics legacy (se presente) memorizzato nel cookie s_vi prima dell'implementazione del servizio Experience Cloud ID. Se a un visitatore non è stato assegnato un ID Analytics, restituisce una stringa vuota.
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
-uuid: 6 bb 8 ddfc -9 fc 1-4105-b 377-d 9 b 4 d 247 a 0 f 8
-translation-type: tm+mt
+uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -17,7 +17,7 @@ Restituisce l&#39;ID Analytics legacy (se presente) memorizzato nel cookie s_vi 
 
 **Sintassi** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
-Di solito, questa funzione viene usata con soluzioni personalizzate che richiedono la lettura dell&#39;ID visitatore. Non viene utilizzata per l&#39;implementazione standard. `getAnalyticsVisitorID` funziona anche con le funzioni di callback per leggere gli ID di [!DNL Analytics] e inviarli al sistema o all&#39;applicazione.
+Di solito, questa funzione viene usata con soluzioni personalizzate che richiedono la lettura dell&#39;ID visitatore. Non viene utilizzata per l&#39;implementazione standard. `getAnalyticsVisitorID` funziona anche con le funzioni di callback per leggere gli [!DNL Analytics] ID di e inviarli al sistema o all&#39;applicazione.
 
 **Codice di esempio**
 
@@ -33,24 +33,24 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 >[!TIP]
 >
->Se sei [!DNL Analytics] un cliente, controlla e invia l&#39; [!DNL Analytics] ID alla funzione. Ad esempio, potresti volere utilizzare entrambi gli identificatori per il passaggio dell&#39;ID visitatore in un elemento nascosto a un&#39;applicazione server che utilizza l&#39;API di inserimento dati. In tal caso, devi raccogliere e restituire [!DNL Experience Cloud] gli ID [!DNL Analytics] visitatore. Consulta [getmarketingcloudvisitorid](../../mcvid-library/mcvid-get-set/mcvid-getmcvid.md).
+>Se sei un [!DNL Analytics] cliente, rintraccia e invia [!DNL Analytics]l&#39;ID di alla tua funzione. Ad esempio, potresti volere utilizzare entrambi gli identificatori per il passaggio dell&#39;ID visitatore in un elemento nascosto a un&#39;applicazione server che utilizza l&#39;API di inserimento dati. In tal caso, devi raccogliere e restituire gli ID visitatore di [!DNL Experience Cloud] e di [!DNL Analytics]. Consulta [getMarketingCloudVisitorID](../../mcvid-library/mcvid-get-set/mcvid-getmcvid.md).
 
 **Il parametro “aid” è un valore legacy**
 
-Il parametro `aid` viene visualizzato in una stringa di interrogazione in base a due diversi set di condizioni.
+Il `aid` parametro viene visualizzato in una stringa di interrogazione in base a due diversi set di condizioni.
 
 **Caso 1**
 
 Il parametro `aid` viene visualizzato in una stringa di interrogazione quando:
 
 * Il servizio [!DNL Experience Cloud] ID è stato distribuito correttamente.
-* L&#39;utente che accede a un sito dispone di un ID [!DNL Analytics] precedente memorizzato nel cookie [s_vi](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/?f=cookies_analytics.html).
+* L&#39;utente che accede a un sito ha un ID preesistente [!DNL Analytics] memorizzato nel proprio [cookie s_ vi](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/?f=cookies_analytics.html).
 
 **Caso 2**
 
-Il `aid` parametro viene visualizzato in una stringa query quando l&#39;organizzazione utilizza un periodo [di tolleranza](../../mcvid-reference/mcvid-analytics-reference/mcvid-grace-period.md) prima di implementare completamente il servizio ID. Se l&#39;utente che accede al sito è nuovo e non utilizzi un periodo di tolleranza, il visitatore riceve il `mid` parametro [!DNL Experience Cloud] (ID).
+Il `aid` parametro viene visualizzato in una stringa di interrogazione quando l&#39;organizzazione utilizza un [periodo di tolleranza](../../mcvid-reference/mcvid-analytics-reference/mcvid-grace-period.md) prima di implementare completamente il servizio ID. Se un nuovo utente accede al sito e non utilizzi un periodo di tolleranza, il visitatore riceve il parametro `mid` (ID [!DNL Experience Cloud]).
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
->* [Cookie di Analytics](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html)
+>* [Cookie Analytics](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html)
 
