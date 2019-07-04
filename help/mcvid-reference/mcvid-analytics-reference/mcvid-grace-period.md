@@ -4,14 +4,14 @@ keywords: Servizio ID
 seo-description: Se disponi di più file JavaScript che inviano dati alla stessa suite di rapporti o se utilizzi altre tecnologie sul tuo sito, ad esempio la misurazione video Flash, ti consigliamo di impostare un periodo di tolleranza.
 seo-title: Periodo di tolleranza per il servizio ID
 title: Periodo di tolleranza per il servizio ID
-uuid: 10 a 7 db 7 d-de 32-4379-914 f-edaf 929 efa 32
-translation-type: tm+mt
+uuid: 10a7db7d-de32-4379-914f-edaf929efa32
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
 
 
-# Periodo di tolleranza per il servizio ID{#the-id-service-grace-period}   
+# Periodo di tolleranza per il servizio ID {#the-id-service-grace-period}
 
 Se disponi di più file JavaScript che inviano dati alla stessa suite di rapporti o se utilizzi altre tecnologie sul tuo sito, ad esempio la misurazione video Flash, ti consigliamo di impostare un periodo di tolleranza.
 
@@ -23,14 +23,14 @@ Se si distribuisce il servizio [!DNL Experience Cloud] ID in siti che utilizzano
 
 >[!NOTE]
 >
->Il supporto per periodo di tolleranza richiede la versione 1.3 o successiva del servizio [!DNL Experience Cloud] ID.
+>Per il periodo di tolleranza è necessaria la versione 1.3, o una versione successiva, del servizio [!DNL Experience Cloud] ID.
 
 ## Ho bisogno di un periodo di tolleranza? {#section-fd34c7ff697348a39f49258b7d39eb42}
 
-Se disponi di un unico file JavaScript Analytics e non utilizzi altre librerie AppMeasurement, non è necessario un periodo di tolleranza. Puoi effettuare l&#39;aggiornamento nel file JavaScript, i nuovi visitatori verranno identificati in modo corretto utilizzando il Marketing Cloud ID durante l&#39;accesso.
+Se disponi di un unico file JavaScript Analytics e non utilizzi altre librerie AppMeasurement, non è necessario un periodo di tolleranza. Puoi effettuare l&#39;aggiornamento nel file JavaScript, i nuovi visitatori verranno identificati in modo corretto utilizzando il Experience Cloud ID durante l&#39;accesso.
 
 Se disponi di più file JavaScript che inviano dati alla *stessa suite di rapporti* o se utilizzi altre tecnologie sul tuo sito, ad esempio la misurazione video Flash, ti consigliamo di impostare un periodo di tolleranza.
 
 ## Come posso attivare un periodo di tolleranza? {#section-512d5cd8570e483cbdd8b04457a16ced}
 
-Contatta [l&#39;Assistenza clienti](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+Contatta [l&#39;assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html).
