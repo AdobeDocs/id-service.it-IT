@@ -3,8 +3,8 @@ description: API per la libreria Opt-in e riferimenti alle impostazioni di confi
 seo-description: API per la libreria Opt-in e riferimenti alle impostazioni di configurazione.
 seo-title: Riferimenti di Opt-in
 title: Riferimenti di Opt-in
-uuid: d 5023 a 34-2 f 3 e -464 d-b 21 f -579 b 2 f 416 ce 6
-translation-type: tm+mt
+uuid: d5023a34-2f3e-464d-b21f-579b2f416ce6
+translation-type: ht
 source-git-commit: 1c6dc1871ee2e7b8d1f510576836519f7383b809
 
 ---
@@ -29,7 +29,7 @@ adobe.OptInCategories = {
 
 Questa sezione illustra come usare l&#39;API per configurare Opt-in. Gran parte della configurazione e dell&#39;implementazione può essere effettuata usando l&#39;estensione Launch.
 
-Le configurazioni di consenso sono fornite nella funzione javascript `getInstance()` del visitatore, che crea un&#39;istanza dell&#39;oggetto globale `adobe` . Di seguito sono elencate le configurazioni JS visitatore correlate al servizio di consenso.
+Le configurazioni di Opt-in vengono fornite nella funzione `getInstance()` di JavaScript per il visitatore che crea l&#39;istanza per l&#39;oggetto globale `adobe`. Di seguito si riporta un elenco delle configurazioni di JS per il visitatore per il servizio Opt-in.
 
 **`doesOptInApply (boolean or function that evaluates to a boolean)`**:
 
@@ -69,15 +69,15 @@ Funzione che nega o rifiuta il consenso del visitatore a tutte le categorie spec
 
 **`adobe.optIn.approveAll()`**:
 
-Se la richiesta di autorizzazione per il sito da creare viene formulata in formule tale da consentire o negare l&#39;autorizzazione per il sito al fine di creare cookie, utilizzare `approveAll()` o `denyAll()`, in base alla risposta, la risposta.
+Se la richiesta di autorizzazione per il sito da creare è formulata in modo che la copertura del visitatore conceda o neghi l&#39;autorizzazione per il sito a creare cookie, usa `approveAll()` o `denyAll()` relativamente alla risposta.
 
 **`adobe.optIn.denyAll()`**:
 
-Se la richiesta di autorizzazione per il sito da creare viene formulata in formule tale da consentire o negare l&#39;autorizzazione per il sito al fine di creare cookie, utilizzare `approveAll()` o `denyAll()`, rispetto alla risposta,
+Se la richiesta di autorizzazione per il sito da creare è formulata in modo che la copertura del visitatore conceda o neghi l&#39;autorizzazione per il sito a creare cookie, usa `approveAll()` o `denyAll()` relativamente alla risposta.
 
 ## Parametri dei flussi di lavoro Opt-in {#section-2c5adfa5459c4e72b96d2693123a53c2}
 
-Opt-in supporta un flusso di lavoro in cui è possibile raccogliere le autorizzazioni per più di un ciclo di richiesta, come ad esempio quando le preferenze vengono assegnate tutte insieme. Usando le seguenti funzioni e specificando *true* per l&#39;impostazione `shouldWaitForComplete`, la soluzione è in grado di raccogliere il consenso per una soluzione o un sottoinsieme di tutte le categorie e poi di raccoglierlo per la soluzione o il sottoinsieme di categorie successivo. A partire dalla prima chiamata, la `adobe.optIn.status` proprietà sarà in sospeso finché `adobe.optIn.complete()` non viene chiamata alla fine del flusso. Una volta effettuata la chiamata, lo stato viene impostato su *Complete*.
+Opt-in supporta un flusso di lavoro in cui è possibile raccogliere le autorizzazioni per più di un ciclo di richiesta, come ad esempio quando le preferenze vengono assegnate tutte insieme. Usando le seguenti funzioni e specificando *true* per l&#39;impostazione `shouldWaitForComplete`, la soluzione è in grado di raccogliere il consenso per una soluzione o un sottoinsieme di tutte le categorie e poi di raccoglierlo per la soluzione o il sottoinsieme di categorie successivo. A partire dalla prima chiamata, la proprietà `adobe.optIn.status` sarà in sospeso fino a quando `adobe.optIn.complete()` non viene chiamata alla fine del flusso. Una volta effettuata la chiamata, lo stato viene impostato su *Complete*.
 
 **`adobe.optIn.approve(categories, shouldWaitForComplete)`**
 
@@ -109,7 +109,7 @@ Recupera l&#39;elenco di autorizzazioni in modo asincrono. Il callback avviene c
 
 **`permissions`**
 
-Un oggetto che elenca tutte le soluzioni Experience Cloud, come categorie, che sono state concesse o rifiutate dall&#39;esempio del visitatore: `{ aa: true, ecid: false, aam: true... }`
+Un oggetto in ascolto di tutte le soluzioni Experience Cloud, come categorie, a cui il visitatore ha dato o negato il proprio consenso. Ad esempio: `{ aa: true, ecid: false, aam: true... }`
 
 **`status`**
 
@@ -133,8 +133,8 @@ True o false in base al valore dello stato. Opt-in potrebbe indicare false per q
 
 **`approve(categories, shouldWaitForComplete)`**
 
-**`categories`**: una o più categorie da approvare. Ad esempio: `adobe.optIn.approve([adobe.OptInCategories.AAM, adobe.OptInCategories.ECID])`**`shouldWaitForComplete`**
-: (facoltativo), parametro booleano, false per impostazione predefinita. Se lo si cambia in true, Opt-in non completa il processo di approvazione fino a quando non si chiama `adobe.optIn.complete()`. Questo processo è simile a un flusso di lavoro.
+**`categories`**: una o più categorie da approvare. Ad esempio: `adobe.optIn.approve([adobe.OptInCategories.AAM, adobe.OptInCategories.ECID])`
+**`shouldWaitForComplete`**: (facoltativo), parametro booleano, false per impostazione predefinita. Se lo si cambia in true, Opt-in non completa il processo di approvazione fino a quando non si chiama `adobe.optIn.complete()`. Questo processo è simile a un flusso di lavoro.
 
 ```
 <codeblock>
@@ -155,11 +155,11 @@ Consente di controllare se una o più categorie sono state approvate dal cliente
 
 **`isPreApproved(categories)`**
 
-Consente di controllare se una o più categorie sono state preapprovate dal cliente. (Se sono state passate nella configurazione `preOptInApprovals`).
+Consente di controllare se una o più categorie sono state preapprovate dal cliente. (Se sono state passate nella `preOptInApprovals` configurazione).
 
 **`fetchPermissions(callback, shouldAutoSubscribe)`**
 
-API asincrona per recuperare l&#39;elenco di autorizzazioni. Il callback avviene con l&#39;elenco di autorizzazioni, quando il processo di concessione/negazione delle autorizzazioni viene completato. **`shouldAutoSubscribe`:** Un&#39;utilità helper, sottoscriverà automaticamente questo callback a tutti gli eventi futuri. Questo significa che il callback verrà chiamato ogni volta che si attiva un&#39;approvazione o una negazione in Opt-in. In questo modo sarai sempre aggiornato, senza doverti iscrivere agli eventi.
+API asincrona per recuperare l&#39;elenco di autorizzazioni. Il callback avviene con l&#39;elenco di autorizzazioni, quando il processo di concessione/negazione delle autorizzazioni viene completato. **`shouldAutoSubscribe`**: un&#39;utilità helper, sottoscrive automaticamente questo callback a tutti gli eventi futuri. Questo significa che il callback verrà chiamato ogni volta che si attiva un&#39;approvazione o una negazione in Opt-in. In questo modo sarai sempre aggiornato, senza doverti iscrivere agli eventi.
 
 **Esempio**
 
@@ -192,7 +192,7 @@ optIn.fetchPermissions(callback, true);
 
 >[!NOTE]
 >
->Utilizzate solo se avete superato il `shouldWaitForComplete` parametro per approvare o rifiutare. Questa API completa il processo di approvazione. Esempio: `adobe.optIn.complete()`.
+>Da usare solo se si è passato il `shouldWaitForComplete` parametro per l&#39;approvazione o la negazione. Questa API completa il processo di approvazione. Esempio: `adobe.optIn.complete()`.
 
 **`approveAll()`:**
 
@@ -206,7 +206,7 @@ Nega tutte le categorie esistenti.
 
 **`complete`:**
 
-L&#39;evento completo si attiva quando il processo di approvazione è stato completato. Se si esegue l&#39;approvazione/rifiuta senza passare `shouldWaitForComplete`, o `approveAll`/ `denyAll`, this event triggers. Oppure se si passa `shouldWaitForComplete`, questo evento si attiva quando si chiama `complete`.
+L&#39;evento completo si attiva quando il processo di approvazione è stato completato. Se si chiama l&#39;approvazione/negazione senza passare `shouldWaitForComplete` o `approveAll`/`denyAll`, si attiva questo evento. Oppure se si passa `shouldWaitForComplete`, questo evento si attiva quando si chiama `complete`.
 
 **Esempio**
 
