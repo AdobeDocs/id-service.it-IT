@@ -4,8 +4,8 @@ keywords: Servizio ID
 seo-description: Questa variabile consente di ignorare la durata predefinita del cookie AMCV.
 seo-title: cookieLifetime
 title: cookieLifetime
-uuid: cd 945 db 3-429 a -4625-ac 3 f -69 ac 259377 a 3
-translation-type: tm+mt
+uuid: cd945db3-429a-4625-ac3f-69ac259377a3
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,9 +15,9 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 Questa variabile consente di ignorare la durata predefinita del cookie AMCV.
 
-Per impostazione predefinita, [!DNL Experience Cloud] i cookie del servizio ID scadono dopo 24 mesi. L&#39;intervallo di tempo deve essere impostato in secondi.
+Per impostazione predefinita, i cookie del servizio [!DNL Experience Cloud] ID scadono dopo 24 mesi. L&#39;intervallo di tempo deve essere impostato in secondi.
 
-**Sintassi:**` cookieLifetime: *`durata in secondi`*`
+**Sintassi:** ` cookieLifetime: *`durata in secondi`*`
 
 **Esempio di codice**
 
