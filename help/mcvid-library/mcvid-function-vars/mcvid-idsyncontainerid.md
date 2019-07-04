@@ -4,8 +4,8 @@ keywords: Servizio ID
 seo-description: Questa proprietà imposta l'ID del contenitore della sorgente dati che desideri usare per le sincronizzazioni ID.
 seo-title: idSyncContainerID
 title: idSyncContainerID
-uuid: e 35 dc 48 b -1 aa 1-41 e 3-91 c 1-ef 1 e 9 d 2 d 8 b 90
-translation-type: tm+mt
+uuid: e35dc48b-1aa1-41e3-91c1-ef1e9d2d8b90
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -25,7 +25,7 @@ Sommario:
 
 ## Sintassi ed esempio di codice {#section-b0c50732b1c84bed8616e82e8e83d58c}
 
-**Sintassi:**` idSyncContainerID: *`valore ID contenitore`*`
+**Sintassi:** ` idSyncContainerID: *`valore ID contenitore`*`
 
 **Esempio di codice:**
 
@@ -46,7 +46,7 @@ I contenitori sono oggetti creati da [!DNL Audience Manager]. Sebbene non siano 
 * Hai a disposizione, ma non usi, per la sincronizzazione ID.
 * Sono state usate per la sincronizzazione ID.
 
-Anche se non sei un cliente [!DNL Audience Manager], il tuo account avrà questi contenitori se stai scambiando ID con varie sorgenti dati su pagine diverse all&#39;interno del tuo dominio. Questo perché [!DNL Audience Manager] offre la tecnologia e la funzionalità di back-end che consente la sincronizzazione ID.
+Anche se non sei un [!DNL Audience Manager] cliente, il tuo account avrà questi contenitori se stai scambiando ID con varie sorgenti dati su pagine diverse all&#39;interno del tuo dominio. Questo perché [!DNL Audience Manager] offre la tecnologia e la funzionalità di back-end che consente la sincronizzazione ID.
 
 **Casi d&#39;uso**
 
@@ -85,5 +85,5 @@ A seconda della situazione, potresti aver bisogno o meno di aggiungere questa co
 Se hai implementato [!DNL DIL]*e* VisitorAPI.js sulla stessa pagina:
 
 * Il codice del servizio ID del visitatore ha la precedenza rispetto a DIL per le sincronizzazioni ID.
-* Imposta la configurazione `idSyncContainerID` solo nel codice del servizio ID.
+* Imposta la `idSyncContainerID` configurazione solo nel codice del servizio ID.
 
