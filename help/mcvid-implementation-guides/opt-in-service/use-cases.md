@@ -1,10 +1,10 @@
 ---
-description: Esempi di utilizzo e soluzioni per gestire il servizio di consenso.
-seo-description: Esempi di utilizzo e soluzioni per gestire il servizio di consenso.
+description: Casi d'uso e soluzioni di esempio per gestire il servizio Opt-in.
+seo-description: Casi d'uso e soluzioni di esempio per gestire il servizio Opt-in.
 seo-title: Casi d'uso di Opt-in
 title: Casi d'uso di Opt-in
-uuid: d 75 a 44 d 5-b 713-43 d 1-b 5 b 6-95 d 1 d 0 d 213 a 7
-translation-type: tm+mt
+uuid: d75a44d5-b713-43d1-b5b6-95d1d0d213a7
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 # Casi d&#39;uso di Opt-in {#opt-in-use-cases}
 
-Esempi di utilizzo e soluzioni per gestire il servizio di consenso.
+Casi d&#39;uso e soluzioni di esempio per gestire il servizio Opt-in.
 
 ## Suggerimenti e risoluzione dei problemi {#section-5c566366410f4a8f89eca0d3f556d99f}
 
@@ -22,7 +22,7 @@ Esempi di utilizzo e soluzioni per gestire il servizio di consenso.
 
 ## Situazioni che potrebbero verificarsi con Opt-in {#section-1178053c065c430bba26f82ef383a71c}
 
-Questi casi d&#39;uso sono esempi di idee per l&#39;utilizzo del servizio di consenso.
+Questi casi d&#39;uso sono idee di esempio per usare il servizio Opt-in.
 
 <table id="table_83C85343611344D8A8315157C1B4240F"> 
  <thead> 
