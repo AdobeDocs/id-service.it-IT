@@ -1,6 +1,6 @@
 ---
 source-git-commit: 676f6ca9c37f77fe24dbc3ceb9aef2d540b3adbe
-translation-type: tm+mt
+translation-type: ht
 
 ---
 # Codice di condotta di Adobe
@@ -40,12 +40,11 @@ Il presente Codice di condotta si applica sia all’interno degli spazi del prog
 
 ## Applicazione
 
-Le occorrenze di comportamenti violenti, offensivi o altrimenti inaccettabili possono essere segnalate contattando il team del progetto all’indirizzo Grp-opensourceoffice@adobe.com. Tutti i reclami verranno esaminati e analizzati e risulteranno in una risposta ritenuta necessaria e appropriata alle circostanze. Il team del progetto è obbligato a mantenere la riservatezza rispetto a chi denuncia un incidente.
+Le occorrenze di comportamenti violenti, offensivi o altrimenti inaccettabili possono essere segnalate contattando il team del progetto all’indirizzo Grp-opensourceoffice@adobe.com. Tutti i reclami verranno esaminati e analizzati e risulteranno in una risposta ritenuta necessaria e appropriata alle circostanze. Il team del progetto è obbligato a mantenere la riservatezza rispetto a chi denuncia un incidente. 
 Ulteriori dettagli sui criteri di applicazione specifici possono essere pubblicati separatamente.
 
 I responsabili del progetto che non seguono o non applicano il Codice di condotta in buona fede possono far fronte a conseguenze temporanee o permanenti in base a quanto determinato da altri membri della direzione del progetto.
 
-## Attribuzione
+## Attribution
 
-Il presente Codice di condotta è stato adattato dal [Codice di Comportamento del Collaboratore](https://contributor-covenant.org), versione 1.4,
-disponibile all’indirizzo [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+Questo Codice di condotta è stato adattato dal [Contributor Covenant](https://contributor-covenant.org), versione 1.4, disponibile all’indirizzo [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
