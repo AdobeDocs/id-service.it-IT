@@ -4,8 +4,8 @@ keywords: Servizio ID
 seo-description: Per integrare il campo Experience Cloud ID in Data Workbench, procedi come indicato di seguito. Questo processo consente di usare l'Experience Cloud ID costante nel feed di dati per consentire un'integrazione migliore con gli altri prodotti Adobe Experience Cloud e migliorare il monitoraggio dei visitatori.
 seo-title: Data Workbench e il servizio Experience Cloud ID
 title: Data Workbench e il servizio Experience Cloud ID
-uuid: 9448 abc 8-04 fb -47 d 2-be 08-1 dfbddb 0764 e
-translation-type: tm+mt
+uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,11 +15,11 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 Per integrare il campo Experience Cloud ID in Data Workbench, procedi come indicato di seguito. Questo processo consente di usare l&#39;Experience Cloud ID costante nel feed di dati per consentire un&#39;integrazione migliore con gli altri prodotti Adobe Experience Cloud e migliorare il monitoraggio dei visitatori.
 
-Per aggiornare [Data Workbench](https://marketing.adobe.com/resources/help/en_US/insight/) in modo da usare il servizio ID:
+Per aggiornare [Data Workbench](https://marketing.adobe.com/resources/help/en_US/insight/) per usare il servizio ID:
 
-1. Individua il file di configurazione del [gruppo decodificatore](https://marketing.adobe.com/resources/help/en_US/insight/dataset/c_text_file_dec_groups.html) corrente.
+1. Individua il file di configurazione [Decoder Group](https://marketing.adobe.com/resources/help/en_US/insight/dataset/c_text_file_dec_groups.html) corrente.
 
-   In genere si [!DNL Decoder Group] trova in un [!DNL Profile Manager] percorso: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Copia il formato del decodificatore corrente dal file di configurazione.
+   In genere il [!DNL Decoder Group] trova in un [!DNL Profile Manager] del percorso: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Copia il formato corrente del decodificatore dal file di configurazione.
 1. Incolla il formato del decodificatore al di sotto dell&#39;originale.
 1. Apri il formato del decodificatore e aggiungi i seguenti nuovi campi al termine dell&#39;elenco:
 
