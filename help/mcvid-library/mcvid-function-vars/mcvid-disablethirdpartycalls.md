@@ -1,11 +1,11 @@
 ---
 description: Flag booleano opzionale che impedisce al servizio ID di effettuare chiamate ad altri domini.
-keywords: tracciamento tra domini; Servizio ID
+keywords: monitoraggio interdominio; servizio ID
 seo-description: Flag booleano opzionale che impedisce al servizio ID di effettuare chiamate ad altri domini.
 seo-title: disableThirdPartyCalls
 title: disableThirdPartyCalls
-uuid: e 92 ce 1 f 5-67 a 4-476 c -9 d 04-41 d 4 e 96 b 1592
-translation-type: tm+mt
+uuid: e92ce1f5-67a4-476c-9d04-41d4e96b1592
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 Flag booleano opzionale che impedisce al servizio ID di effettuare chiamate ad altri domini.
 
-**Sintassi:**` `Disablethirdpartycalls: true | false «(il valore predefinito `false`è.)
+**Sintassi:** ` `disableThirdPartyCalls: true|false`` (l&#39;impostazione predefinita è `false`)
 
 Quando `disableThirdPartyCalls: true`, il servizio ID non effettua chiamate ad altri domini.
 
