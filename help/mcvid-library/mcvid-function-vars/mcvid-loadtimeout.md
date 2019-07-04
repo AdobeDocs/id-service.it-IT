@@ -4,8 +4,8 @@ keywords: Servizio ID
 seo-description: Imposta un intervallo di timeout in millisecondi. Viene usato per comunicare alle altre soluzioni (es, Analytics, Audience Manager, Target, ecc.) quanto tempo attendere una risposta dal servizio ID.
 seo-title: loadTimeout
 title: loadTimeout
-uuid: f 627 e 044-bd 73-49 a 4-8 a 90-6 d 19 aa 566751
-translation-type: tm+mt
+uuid: f627e044-bd73-49a4-8a90-6d19aa566751
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,13 +15,13 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 Imposta un intervallo di timeout in millisecondi. Viene usato per comunicare alle altre soluzioni (es, Analytics, Audience Manager, Target, ecc.) quanto tempo attendere una risposta dal servizio ID.
 
-**Sintassi:**` loadTimeout: *`intervallo in millisecondi`*`
+**Sintassi:** ` loadTimeout: *`intervallo in millisecondi`*`
 
 Il valore predefinito è 30.000 millisecondi (30 secondi). Ti consigliamo caldamente di *non* modificare il valore predefinito.
 
 >[!NOTE]
 >
->Le chiamate al servizio ID sono asincrone in relazione ad altri codice non Adobe sulla pagina. Di conseguenza, se si aumenta o diminuisce l&#39;intervallo di timeout, la frequenza di rendering dei contenuti della pagina non viene modificata. Tuttavia, intervalli di timeout troppo lunghi possono influire sui tempi di caricamento della pagina, misurati da comuni strumenti di monitoraggio della rete, anche se la frequenza di rendering rimane inalterata.
+>Le chiamate al servizio ID sono sincronizzate con gli altri codici non Adobe presenti nella pagina. Di conseguenza, se si aumenta o diminuisce l&#39;intervallo di timeout, la frequenza di rendering dei contenuti della pagina non viene modificata. Tuttavia, intervalli di timeout troppo lunghi possono influire sui tempi di caricamento della pagina, misurati da comuni strumenti di monitoraggio della rete, anche se la frequenza di rendering rimane inalterata.
 
 **Esempio di codice**
 
