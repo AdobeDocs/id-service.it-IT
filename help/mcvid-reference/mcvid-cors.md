@@ -4,8 +4,8 @@ keywords: Servizio ID
 seo-description: I browser usano Cross Origin Resource Sharing (CORS) per richiedere risorse da un dominio diverso da quello corrente. Il servizio Experience Cloud ID supporta gli standard CORS per consentire tali richieste di risorse lato client tra origini diverse. Il servizio ID utilizza invece le richieste JSONP nei browser più datati che non supportano CORS.
 seo-title: Supporto per CORS nel servizio Experience Cloud ID
 title: Supporto per CORS nel servizio Experience Cloud ID
-uuid: e 656 b 573-72 a 8-4312-a 7 d 5-5 cc 3818 f 0 a 9 e
-translation-type: tm+mt
+uuid: e656b573-72a8-4312-a7d5-5cc3818f0a9e
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -32,7 +32,7 @@ CORS offre un modo sicuro ed efficace di richiedere risorse tra domini diversi. 
 * `Origin`: intestazione di richiesta che identifica l&#39;origine di una richiesta.
 * `Access-Control-Allow-Origin`: intestazione di richiesta che indica se una risorsa può essere condivisa con il richiedente.
 
-Vediamo come funzionano queste intestazioni. In questo esempio, supponiamo che una società di servizi finanziari abbia implementato il servizio [!DNL Experience Cloud] ID sul suo sito, www.finance-Website.com. La tabella che segue illustra come le intestazioni di richiesta e risposta CORS verificano se consentire o meno l&#39;accesso a una risorsa.
+Vediamo come funzionano queste intestazioni. In questo esempio, supponiamo che una società di servizi finanziari abbia implementato il servizio [!DNL Experience Cloud] ID sul suo sito, www.finance-website.com. La tabella che segue illustra come le intestazioni di richiesta e risposta CORS verificano se consentire o meno l&#39;accesso a una risorsa.
 
 <table id="table_B004ACF52B5A4D33B1DCF7EA77BE4E6D"> 
  <thead> 
@@ -60,7 +60,7 @@ Vediamo come funzionano queste intestazioni. In questo esempio, supponiamo che u
  </tbody> 
 </table>
 
-Vedere anche [usecorsonly](../mcvid-library/mcvid-function-vars/mcvid-use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
+Vedi anche [useCORSOnly](../mcvid-library/mcvid-function-vars/mcvid-use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
 
 ## Altri benefici di CORS {#section-6f44f30694c44f95bf9854b8a2af8449}
 
@@ -76,7 +76,7 @@ La tabella seguente descrive alcuni dei vantaggi di CORS per gli utenti che usan
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>Maggiore sicurezza</b> </p> </td> 
-   <td colname="col2"> <p>CORS usa <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" format="https" scope="external">XMLHttpRequest</a> per richiedere e trasferire i dati. Questo metodo è più sicuro di una richiesta JSONP. Impedisce che possano essere eseguiti JavaScript arbitrari eventualmente presenti nella risposta ricevuta dal DCS. Il payload di risposta XMLHttpRequest di CORS viene analizzato dal JavaScript del servizio ID e non viene semplicemente eseguito in una funzione di callback. </p> <p> <p>Nota: per accettare i cookie, la proprietà <span class="codeph">withCredentials</span> dell'oggetto <span class="codeph">XMLHttpRequest</span> deve essere impostata su <span class="codeph">true</span>. Questa proprietà è supportata su Chrome, Firefox, Internet Explorer (v10+), Opera e Safari. </p> </p> </td> 
+   <td colname="col2"> <p>CORS usa <a href="https://developer.mozilla.org/it-IT/docs/Web/API/XMLHttpRequest" format="https" scope="external">XMLHttpRequest</a> per richiedere e trasferire i dati. Questo metodo è più sicuro di una richiesta JSONP. Impedisce che possano essere eseguiti JavaScript arbitrari eventualmente presenti nella risposta ricevuta dal DCS. Il payload di risposta XMLHttpRequest di CORS viene analizzato dal JavaScript del servizio ID e non viene semplicemente eseguito in una funzione di callback. </p> <p> <p>Nota: per accettare i cookie, la proprietà <span class="codeph">withCredentials </span>dell'oggetto <span class="codeph">XMLHttpRequest</span> deve essere impostata su <span class="codeph">true</span>. Questa proprietà è supportata su Chrome, Firefox, Internet Explorer (v10+), Opera e Safari. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Prestazioni migliori</b> </p> </td> 
