@@ -1,19 +1,19 @@
 ---
-description: 'Il servizio Experience Cloud ID fornisce un ID universale e costante che identifica i visitatori in tutte le soluzioni Experience Cloud. '
+description: 'Experience Platform Identity Service fornisce un ID universale e costante che identifica i visitatori in tutte le soluzioni Experience Cloud. '
 keywords: Servizio ID
-seo-description: Il servizio ID Adobe Experience Cloud (servizio ID) fornisce un ID universale e costante che identifica i visitatori in tutte le soluzioni Experience Cloud. Può sostituire il codice di generazione ID di servizi come Analytics, Audience Manager, Target e altre soluzioni o funzionalità Experience Cloud.
-seo-title: Servizio Experience Cloud ID
-title: Servizio Experience Cloud ID
-uuid: b 68194 b 5-e 549-4 f 6 f-bfaf -7744926 aeaac
+seo-description: Il servizio identità Adobe Experience Platform (servizio ID) fornisce un ID universale e costante che identifica i visitatori in tutte le soluzioni Experience Cloud. Può sostituire il codice di generazione ID di servizi come Analytics, Audience Manager, Target e altre soluzioni o funzionalità Experience Cloud.
+seo-title: Servizio identità piattaforma Experience
+title: Servizio identità piattaforma Experience
+uuid: b68194b5-e549-4f6f-bfaf-7744926aeaac
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Adobe Experience Cloud ID Service {#experience-cloud-id-service}
+# Adobe Experience Platform Identity Service {#experience-cloud-id-service}
 
-Il servizio ID Adobe Experience Cloud (servizio ID) fornisce un ID universale e costante che identifica i visitatori in tutte le soluzioni Experience Cloud. Può sostituire il codice di generazione ID di servizi come Analytics, Audience Manager, Target e altre soluzioni o funzionalità Experience Cloud.
+Il servizio identità Adobe Experience Platform (servizio ID) fornisce un ID universale e costante che identifica i visitatori in tutte le soluzioni Experience Cloud. Può sostituire il codice di generazione ID di servizi come Analytics, Audience Manager, Target e altre soluzioni o funzionalità Experience Cloud.
 
 <table id="table_5E612F746A704FE095B809A013EE977F" class="simpletable"> 
  <tbody> 
@@ -21,11 +21,11 @@ Il servizio ID Adobe Experience Cloud (servizio ID) fornisce un ID universale e 
    <td colname="col1"> <p> <b>Introduzione</b> </p> <p> 
      <ul id="ul_D5EC6A54A03F4AB595B588116A7C1296"> 
       <li id="li_845F6DE25A1241439BCDCBC00459D7EB"> <a href="introduction/overview.md" format="dita" scope="local"> Panoramica </a> </li> 
-      <li id="li_47F399E1D4AF4F08BD647DF01A423BA7"> <a href="reference/requirements.md" format="dita" scope="local"> Requisiti del servizio Experience Cloud ID </a> </li> 
+      <li id="li_47F399E1D4AF4F08BD647DF01A423BA7"> <a href="reference/requirements.md" format="dita" scope="local"> Requisiti per il servizio identità della piattaforma Experience Platform </a> </li> 
       <li id="li_CBEEE79B45644F28A52B58DDF23DAD4F"> <a href="implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445" format="dita" scope="local"> Implementazione standard con DTM </a> </li> 
-     </ul> </p> <p><b>Librerie JavaScript di Experience Cloud ID</b> </p> <p>JavaScript for the Experience Cloud ID Service is located at: <a href="https://github.com/Adobe-Marketing-Cloud/id-service/releases" format="https" scope="external"> https://github.com/Adobe-Marketing-Cloud/id-service/releases</a> </p> <p> <b>Novità e funzioni</b> </p> <p> 
+     </ul> </p> <p><b>Librerie JavaScript di Experience Cloud ID</b> </p> <p>JavaScript for the Experience Platform Identity Service is located at: <a href="https://github.com/Adobe-Marketing-Cloud/id-service/releases" format="https" scope="external"> https://github.com/Adobe-Marketing-Cloud/id-service/releases</a> </p> <p> <b>Novità e funzioni</b> </p> <p> 
      <ul id="ul_B0A25B6827734D55BB1E20D12334AC21"> 
-      <li id="li_A66924F4948F4A5ABA545A89A28A6F6A"><a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local"> Servizio di consenso</a> </li> 
+      <li id="li_A66924F4948F4A5ABA545A89A28A6F6A"><a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local">Servizio Opt-in</a> </li> 
       <li id="li_92D49CB788AD478EA74BCF5328CB9A14"> <a href="library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues </a> </li> 
       <li id="li_9E512C6DD15C46C3ABD06ACD60D97E4A"> <a href="faq-intro/faq-intro.md" format="dita" scope="local"> Domande frequenti </a> </li> 
       <li id="li_B28082F3D075413D89E5AFB718657E17"> <a href="library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local"> isCoopSafe </a> </li> 
@@ -33,11 +33,11 @@ Il servizio ID Adobe Experience Cloud (servizio ID) fornisce un ID universale e 
      </ul> </p> 
     <draft-comment> 
      <p> <b>Annunci:</b> </p> 
-     <p> <p>Importante: Il supporto del servizio ID per Internet Explorer 6, 7 e 8 è obsoleto e verrà interrotto in una versione futura. </p> </p> 
+     <p> <p>Importante: in una versione futura, il servizio ID non supporterà più Internet Explorer 6, 7 e 8. </p> </p> 
     </draft-comment> </td> 
-   <td colname="col2"> <p> <b>Note sulla versione</b> </p> <p><b>La versione 4.0</b> del 12 febbraio 2019 include il servizio <a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local"> di consenso</a> utilizzato per identificare se è possibile inserire un cookie sul dispositivo o sul browser di un utente quando visita il sito. </p> <p>La versione del 18 gennaio 2018 include l'aggiornamento a JavaScript 3.0.0 e gli aggiornamenti ai metodi API. Consulta  <a href="library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414" format="dita" scope="local"> Disableidsyncs</a> e <a href="library/function-vars/disable-cookies.md#reference-2dd2d60d12f34f0b98bbb5606b3734cc" format="dita" scope="local"> disablethirdpartycookies</a>. </p> 
+   <td colname="col2"> <p> <b>Note sulla versione</b> </p> <p><b>La versione 4.0</b> del 12 febbraio 2019 include il <a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local">servizio Opt-in</a> utilizzato per identificare se è possibile inserire un cookie sul dispositivo o sul browser di un utente quando visita il sito. </p> <p>La versione del 18 gennaio 2018 include l'aggiornamento a JavaScript 3.0.0 e gli aggiornamenti ai metodi API. Consulta <a href="library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414" format="dita" scope="local"> disableIdSyncs</a> e <a href="library/function-vars/disable-cookies.md#reference-2dd2d60d12f34f0b98bbb5606b3734cc" format="dita" scope="local"> disableThirdPartyCookies</a>. </p> 
     <draft-comment> 
-     <p>La versione di ottobre 2017 non include modifiche o aggiornamenti del codice per il servizio ID. Il codice del servizio ID rimane immutato alla release v 2.5. </p> 
+     <p>La versione di ottobre 2017 non include modifiche o aggiornamenti del codice per il servizio ID. Il codice del servizio ID rimane immutato alla versione v 2.5. </p> 
     </draft-comment> 
     <draft-comment> 
      <p> La versione di settembre 2017 incrementa il codice del servizio ID alla versione v 2.5. </p> 
