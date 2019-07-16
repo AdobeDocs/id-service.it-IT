@@ -1,23 +1,23 @@
 ---
-description: Panoramica del funzionamento del servizio Experience Cloud ID con l'ID Analytics legacy.
+description: Panoramica del funzionamento del servizio Experience Platform Identity Service con l'ID Analytics legacy.
 keywords: Servizio ID
-seo-description: Panoramica del funzionamento del servizio Experience Cloud ID con l'ID Analytics legacy.
+seo-description: Panoramica del funzionamento del servizio Experience Platform Identity Service con l'ID Analytics legacy.
 seo-title: Richieste Analytics ed Experience Cloud ID
 title: Richieste Analytics ed Experience Cloud ID
-uuid: 28 beed 16-7 ef 9-4824-8 e 82-853930756 eca
+uuid: 28beed16-7ef9-4824-8e82-853930756eca
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # Richieste Analytics ed Experience Cloud ID{#analytics-and-experience-cloud-id-requests}
 
-Panoramica del funzionamento del servizio Experience Cloud ID con l&#39;ID Analytics legacy.
+Panoramica del funzionamento del servizio Experience Platform Identity Service con l&#39;ID Analytics legacy.
 
 ## Riepilogo {#section-64d8523ff7634cb987d0c6480f587dd3}
 
-Il servizio Experience Cloud ID è stato integrato in Adobe Analytics. Ora rimane una parte integrale di Analytics, ma esegue altre funzioni importanti per altre soluzioni e funzionalità di [!DNL Experience Cloud]. Because of this historical legacy, checking for or writing an Analytics ID works a little differently than with the generic process described in [How the Experience Cloud ID Service Requests and Sets IDs...](../../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a). For additional information on the order of operations for checking IDs, see [Setting Analytics and Experience Cloud IDs](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6).
+In precedenza, il servizio Identità Experience Platform è stato integrato in Adobe Analytics. Ora rimane una parte integrale di Analytics, ma esegue altre funzioni importanti per altre soluzioni e funzionalità di [!DNL Experience Cloud]. Because of this historical legacy, checking for or writing an Analytics ID works a little differently than with the generic process described in [How the Experience Platform Identity Service Requests and Sets IDs...](../../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a). Per ulteriori informazioni sull&#39;ordine delle operazioni per la verifica degli ID, consulta [Impostazione degli ID di Analytics ed Experience Cloud](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6).
 
 ## Il cookie AMCV non è impostato nel browser {#section-cccf10cd775e4a95a7e98d3c3c0ff9a9}
 
@@ -37,19 +37,19 @@ Se il cookie [!DNL Experience Cloud] (AMCV) non è presente, una chiamata del se
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Cookie s_vi impostato</b> </p> </td> 
-   <td colname="col2"> <p>Quando un visitatore del sito con cookie s_ vi accede al servizio Experience Cloud ID, questo servizio: </p> 
+   <td colname="col2"> <p>Quando un visitatore del sito con cookie s_ vi rileva prima il servizio Identità Experience Platform, questo servizio: </p> 
     <ul id="ul_BE584810280D4874AF802A9247011787"> 
      <li id="li_AA395B09A3174AF78F3EC10053E2E4F5">Scrive l'ID di <span class="keyword">Analytics</span> memorizzato nel cookie s_vi all'interno del cookie AMCV. Viene scritto come ID di <span class="keyword">Analytics</span> (AID). Questa azione <i>non</i> ha effetti sui conteggi dei visitatori. <span class="keyword"> Analytics</span> continua a identificare gli utenti in base ai loro ID legacy. </li> 
      <li id="li_8735DE21FEA542BA8024109B8FE1E2ED">Scrive il MID nel cookie AMCV. Il MID identifica gli utenti nelle diverse soluzioni. </li> 
-    </ul> <p> <p>Note: With a <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> grace period</a>, the data center response always includes a legacy ID that is stored in the s_vi cookie. Durante il periodo di tolleranza, l'ID legacy viene scritto nel cookie AMCV come valore AID. </p> </p> </td> 
+    </ul> <p> <p>Con un <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">periodo di tolleranza</a>, la risposta del datacenter include sempre un ID legacy memorizzato nel cookie s_vi. Durante il periodo di tolleranza, l'ID legacy viene scritto nel cookie AMCV come valore AID. </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->Per gli utenti identificati dal cookie s_ fid non viene migrato il valore FID precedente al cookie AMCV. Se gli utenti dispongono del cookie s_fid, vengono migrati come se il cookie s_vi non fosse presente (vedi sopra) e vengono quindi visualizzati come nuovi visitatori nel sito. Per ulteriori informazioni, vedi [Cookie di Analytics](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/?f=cookies_analytics.html).
+>Il valore FID degli utenti identificati dal cookie s_fid non viene migrato nel cookie AMCV. Se gli utenti dispongono del cookie s_fid, vengono migrati come se il cookie s_vi non fosse presente (vedi sopra) e vengono quindi visualizzati come nuovi visitatori nel sito. Per ulteriori informazioni, vedi [Cookie di Analytics](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/?f=cookies_analytics.html).
 
 ## Il cookie AMCV è impostato nel browser {#section-01c088fc565c4b24ba1722c7cc240310}
 
-Se il cookie AMCV è presente,  utilizza il MID come identificatore [!DNL Analytics], se nel cookie non è presenta un ID [!DNL Analytics]Analytics legacy.
+Se il cookie AMCV è presente, utilizza il MID come identificatore [!DNL Analytics], se nel cookie non è presenta un ID [!DNL Analytics]Analytics legacy.
