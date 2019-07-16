@@ -1,23 +1,23 @@
 ---
-description: Restituisce l'ID Analytics legacy (se presente) memorizzato nel cookie s_ vi prima dell'implementazione del servizio Experience Cloud ID. Se a un visitatore non è stato assegnato un ID Analytics, restituisce una stringa vuota.
+description: Restituisce l'ID Analytics legacy (se presente) memorizzato nel cookie s_ vi prima dell'implementazione del servizio Experience Platform Identity Service. Se a un visitatore non è stato assegnato un ID Analytics, restituisce una stringa vuota.
 keywords: Servizio ID
-seo-description: Restituisce l'ID Analytics legacy (se presente) memorizzato nel cookie s_ vi prima dell'implementazione del servizio Experience Cloud ID. Se a un visitatore non è stato assegnato un ID Analytics, restituisce una stringa vuota.
+seo-description: Restituisce l'ID Analytics legacy (se presente) memorizzato nel cookie s_ vi prima dell'implementazione del servizio Experience Platform Identity Service. Se a un visitatore non è stato assegnato un ID Analytics, restituisce una stringa vuota.
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
-uuid: 6 bb 8 ddfc -9 fc 1-4105-b 377-d 9 b 4 d 247 a 0 f 8
+uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-Restituisce l&#39;ID Analytics legacy (se presente) memorizzato nel cookie s_ vi prima dell&#39;implementazione del servizio Experience Cloud ID. Se a un visitatore non è stato assegnato un ID Analytics, restituisce una stringa vuota.
+Restituisce l&#39;ID Analytics legacy (se presente) memorizzato nel cookie s_ vi prima dell&#39;implementazione del servizio Experience Platform Identity Service. Se a un visitatore non è stato assegnato un ID Analytics, restituisce una stringa vuota.
 
 **Sintassi** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
-Di solito, questa funzione viene usata con soluzioni personalizzate che richiedono la lettura dell&#39;ID visitatore. Non viene utilizzata per l&#39;implementazione standard. `getAnalyticsVisitorID` funziona anche con le funzioni di callback per leggere gli ID di [!DNL Analytics] e inviarli al sistema o all&#39;applicazione.
+Di solito, questa funzione viene usata con soluzioni personalizzate che richiedono la lettura dell&#39;ID visitatore. Non viene utilizzata per l&#39;implementazione standard. `getAnalyticsVisitorID` funziona anche con le funzioni di callback per leggere gli [!DNL Analytics] ID di e inviarli al sistema o all&#39;applicazione.
 
 **Codice di esempio**
 
@@ -33,24 +33,24 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 >[!TIP]
 >
->If you&#39;re an [!DNL Analytics] customer, also check for and send the [!DNL Analytics] ID to your function. Ad esempio, potresti volere utilizzare entrambi gli identificatori per il passaggio dell&#39;ID visitatore in un elemento nascosto a un&#39;applicazione server che utilizza l&#39;API di inserimento dati. In this case, you should collect and return the [!DNL Experience Cloud] and [!DNL Analytics] visitor IDs. See [getMarketingCloudVisitorID](../../library/get-set/getmcvid.md).
+>Se sei un [!DNL Analytics] cliente, rintraccia e invia [!DNL Analytics]l&#39;ID di alla tua funzione. Ad esempio, potresti volere utilizzare entrambi gli identificatori per il passaggio dell&#39;ID visitatore in un elemento nascosto a un&#39;applicazione server che utilizza l&#39;API di inserimento dati. In tal caso, devi raccogliere e restituire gli ID visitatore di [!DNL Experience Cloud] e di [!DNL Analytics]. Consulta [getMarketingCloudVisitorID](../../library/get-set/getmcvid.md).
 
 **Il parametro “aid” è un valore legacy**
 
-Il parametro `aid` viene visualizzato in una stringa di interrogazione in base a due diversi set di condizioni.
+Il `aid` parametro viene visualizzato in una stringa di interrogazione in base a due diversi set di condizioni.
 
 **Caso 1**
 
 Il parametro `aid` viene visualizzato in una stringa di interrogazione quando:
 
-* The [!DNL Experience Cloud] ID service is deployed correctly.
+* Il servizio [!DNL Experience Cloud] ID è stato distribuito correttamente.
 * L&#39;utente che accede a un sito dispone di un ID [!DNL Analytics] precedente memorizzato nel cookie [s_vi](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/?f=cookies_analytics.html).
 
 **Caso 2**
 
-You will see the `aid` parameter in a query string when your organization is using a [grace period](../../reference/analytics-reference/grace-period.md) before fully implementing the ID service. If the user visiting your site is new, and you&#39;re not using a grace period, the visitor will get the `mid` ( [!DNL Experience Cloud] ID) parameter.
+Il `aid` parametro viene visualizzato in una stringa di interrogazione quando l&#39;organizzazione utilizza un [periodo di tolleranza](../../reference/analytics-reference/grace-period.md) prima di implementare completamente il servizio ID. Se un nuovo utente accede al sito e non utilizzi un periodo di tolleranza, il visitatore riceve il parametro `mid` (ID [!DNL Experience Cloud]).
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
 >* [Cookie di Analytics](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html)
 
