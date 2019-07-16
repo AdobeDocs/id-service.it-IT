@@ -1,25 +1,25 @@
 ---
-description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud ID per 2017.
+description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Identità Experience Platform per 2017.
 keywords: Servizio ID
-seo-description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud ID per 2017.
+seo-description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Identità Experience Platform per 2017.
 seo-title: Note sulla versione 2017
 title: Note sulla versione 2017
-uuid: 79452 df 0-49 db -42 b 8-96 fe -01 aa 7629 fbb 5
+uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # Note sulla versione 2017 {#release-notes}
 
-Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud ID per 2017.
+Rilasci di funzioni, aggiornamenti o modifiche al servizio Identità Experience Platform per 2017.
 
 Queste modifiche vengono anche riportate nelle [note sulla versione di Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/). Per le note sulle versioni del servizio ID più datate, consulta le [note sulle versioni precedenti](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html) o i link in fondo a questa pagina.
 
 >[!NOTE]
 >
->Non sono disponibili note sulla versione rivolte al cliente o modifiche al codice per marzo, aprile, maggio e ottobre 2017. Per questi mesi, il codice del servizio ID resta immutato alla versione v2.1.
+>Non esistono note sulla versione rivolte al clienti o modifiche del codice per marzo, aprile, maggio e ottobre 2017. Per questi mesi, il codice del servizio ID resta immutato alla versione v2.1.
 
 ## Versione 2.5 {#section-27b441509124493f80984ed09bd9e88b}
 
@@ -42,7 +42,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> getVisitorValues</span> </p> </td> 
-   <td colname="col2"> <p>Questa API asincrona restituisce per impostazione predefinita identificatori per Analytics, il servizio ID, la rinuncia alla raccolta di dati, la geolocalizzazione, e contenuti di metadati BLOB. Inoltre, è possibile controllare gli ID che dovranno essere restituiti con l'enum opzionale <span class="codeph">visitor.FIELDS</span>. See <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues</a>. </p> </td> 
+   <td colname="col2"> <p>Questa API asincrona restituisce per impostazione predefinita identificatori per Analytics, il servizio ID, la rinuncia alla raccolta di dati, la geolocalizzazione, e contenuti di metadati BLOB. Inoltre, è possibile controllare gli ID che dovranno essere restituiti con l'enum opzionale <span class="codeph">visitor.FIELDS</span>. Consulta <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -51,9 +51,9 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * È stato corretto un bug relativo a Chrome a causa del quale il servizio ID generava un errore quando si faceva clic sul pulsante Indietro in tale browser.
 * Il servizio ID ora avvia di nuovo la sincronizzazione degli ID quando l&#39;ID regione cambia nella risposta della chiamata dell&#39;evento.
-* Alla documentazione è stata aggiunta la sezione  [Informativa sulla sicurezza dei contenuti e il servizio Experience Cloud ID](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3) che spiega come la whitelist effettua la chiamata ai domini Adobe usati dal servizio ID.
+* Alla documentazione è stata aggiunta la sezione  [Informativa sulla sicurezza dei contenuti e Servizio identità Experience Platform](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), che spiega come inserire nella whitelist le chiamate ai domini Adobe utilizzati dal servizio ID.
 
-## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
+## Versione 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
 Agosto 2017
 
@@ -74,9 +74,9 @@ Agosto 2017
 
 **Documentazione rivista**
 
-È stata aggiornata e rivista la sezione  [Domande frequenti](/help/faq-intro/faq-intro.md) per includere domande frequenti separate per [!DNL Experience Cloud] soluzioni diverse.
+È stata aggiornata e rivista la sezione [Domande frequenti](/help/faq-intro/faq-intro.md) per includere domande frequenti separate per le varie soluzioni [!DNL Experience Cloud].
 
-## Version 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
+## Versione 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
 Luglio 2017
 
@@ -106,7 +106,7 @@ Luglio 2017
 
 ## Versione 2.2 {#section-b7dee2495c29470e9b3a3132ec1fd951}
 
-Data di rilascio: Giugno 2017
+Data di rilascio: giugno 2017
 
 <table id="table_7E412383E89D46759B00FE7328C9946F"> 
  <thead> 
@@ -161,9 +161,9 @@ Data di rilascio: Giugno 2017
  </tbody> 
 </table>
 
-## Version 2.1 {#section-5e666dc47c2f4f92999e92697d75799e}
+## Versione 2.1 {#section-5e666dc47c2f4f92999e92697d75799e}
 
-Data di rilascio: Febbraio 2017
+Data di rilascio: febbraio 2017
 
 **Funzioni**
 
@@ -176,12 +176,12 @@ Data di rilascio: Febbraio 2017
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> Proprietà API del servizio ID, <span class="codeph">idSyncContainerID </span></p> </td> 
-   <td colname="col2"> <p>Questa proprietà imposta l'ID del contenitore utilizzato da <span class="keyword">Audience Manager</span> per la sincronizzazione degli ID. Consulta <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external">idSyncContainerID</a>. </p> </td> 
+   <td colname="col1"> <p> Proprietà API del servizio ID, <span class="codeph">idSyncContainerID</span></p> </td> 
+   <td colname="col2"> <p>Questa proprietà imposta l'ID del contenitore utilizzato da <span class="keyword">Audience Manager</span> per la sincronizzazione degli ID. Consulta <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external"> idSyncContainerID</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Metodo API del servizio ID, <span class="codeph"> appendSupplementalDataIDTo( <span class="varname"> URL </span>, <span class="varname"> SDID</span>)</span></p> </td> 
-   <td colname="col2"> <p>Questo metodo pubblico aggiunge a un URL di reindirizzamento il codice <span class="wintitle">Supplemental Data ID</span> (SDID) sotto forma di parametro della stringa di interrogazione. See <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendSupplementalDataIDTo</a>. (MCID-285) </p> </td> 
+   <td colname="col1"> <p>Metodo API del servizio ID, <span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>, <span class="varname">SDID</span>)</span></p> </td> 
+   <td colname="col2"> <p>Questo metodo pubblico aggiunge a un URL di reindirizzamento il codice <span class="wintitle">Supplemental Data ID</span> (SDID) sotto forma di parametro della stringa di interrogazione. Consulta <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendSupplementalDataIDTo</a>. (MCID-285) </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -194,13 +194,13 @@ Data di rilascio: Febbraio 2017
 
 [Utilizzo del recupero preventivo del DNS con diverse soluzioni e servizi di Experience Cloud `Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/en_US/mcloud/dns-prefetch.html)
 
-## Version 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
+## Versione 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
 Gennaio 2017
 
 >[!IMPORTANT]
 >
->Per impostazione predefinita, il codice del servizio ID v 2.0 sincronizza automaticamente gli ID con Adobe Media Optimizer. This means you&#39;ll see a call from the page to `cm.eversttech.net`, which is a legacy [!DNL Media Optimizer] domain controlled by [!DNL Adobe]. Consultare anche [Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab). 
+>Per impostazione predefinita, il codice v2.0 del servizio ID sincronizza automaticamente gli ID con Adobe Media Optimizer. Questo significa che vedrai una chiamata dalla pagina a `cm.eversttech.net`, che è il dominio [!DNL Media Optimizer] legacy controllato da [!DNL Adobe]. Consultare anche [Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
 **Correzioni e miglioramenti**
 
