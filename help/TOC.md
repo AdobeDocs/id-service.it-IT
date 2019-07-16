@@ -1,28 +1,28 @@
 ---
 cloud: platform-cloud
 product: Servizio ID
-audience: end-user
+audience: utente finale
 user-guide-title: Aiuto del servizio Experience Cloud ID
 user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
 
 
 # Experience Cloud ID Service Help {#using}
 
-+ [Aiuto del servizio ID](home.md)
++ [Guida al servizio ID](home.md)
 + Panoramica {#intro}
    + [Panoramica](introduction/overview.md)
-   + [Il servizio ID](introduction/about-id-service.md)
+   + [Informazioni sul servizio ID](introduction/about-id-service.md)
    + [Cookie e il servizio ID](introduction/cookies.md)
    + [Richiesta e impostazione degli ID da parte del servizio ID](introduction/id-request.md)
-   + [Informazioni sulla sincronizzazione e sulle percentuali di corrispondenza](introduction/match-rates.md)
-+ Implementation guides {#implementation-guides}
+   + [Informazioni sulla sincronizzazione degli e sulle percentuali di corrispondenza](introduction/match-rates.md)
++ Guide all&#39;implementazione {#implementation-guides}
    + [Guide all&#39;implementazione](implementation-guides/implementation-guides.md)
    + [Metodi di implementazione](implementation-guides/implementation-methods.md)
-   + [Implementare con Launch](implementation-guides/ecid-implement-with-launch.md)
+   + [Implementazione con Experience Platform Launch](implementation-guides/ecid-implement-with-launch.md)
    + [Implementazione con DTM](implementation-guides/standard.md)
    + [Implementazione per Analytics](implementation-guides/setup-analytics.md)
    + [Implementazione per Target](implementation-guides/setup-target.md)
@@ -32,15 +32,15 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
    + [Integrazione diretta con il servizio ID](implementation-guides/direct-integration.md)
    + [Casi d&#39;uso dell&#39;integrazione diretta](implementation-guides/direct-integration-examples.md)
    + [Verificare e verificare il servizio ID](implementation-guides/test-verify.md)
-   + Opt-in Documentation {#opt-in-service}
-      + [Panoramica del servizio di consenso](implementation-guides/opt-in-service/optin-overview.md)
-      + [Configurazione del servizio di consenso](implementation-guides/opt-in-service/getting-started.md)
-      + [Convalida del servizio di consenso](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
-      + [Configurare Opt-in con Launch](implementation-guides/opt-in-service/launch.md)
+   + Documentazione Opt-in {#opt-in-service}
+      + [Panoramica del servizio Opt-in](implementation-guides/opt-in-service/optin-overview.md)
+      + [Configurazione del servizio Opt-in](implementation-guides/opt-in-service/getting-started.md)
+      + [Convalida del servizio Opt-in](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
+      + [Configurazione di Opt-in con Experience Platform Launch](implementation-guides/opt-in-service/launch.md)
       + [Configurare Opt-in con DTM](implementation-guides/opt-in-service/optin-dtm.md)
       + [Casi d&#39;uso di Opt-in](implementation-guides/opt-in-service/use-cases.md)
       + [Riferimenti di Opt-in](implementation-guides/opt-in-service/api.md)
-      + [(beta) Utilizzo dei servizi di consenso con IAB Framework](implementation-guides/opt-in-service/iab.md)
+      + [(beta) Utilizzo dei servizi Opt-in con il framework IAB](implementation-guides/opt-in-service/iab.md)
 + API del servizio ID {#id-service-api}
    + [Panoramica API servizio ID](library/library.md)
    + Configurazione {#configurations}
@@ -80,7 +80,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 + Riferimenti {#reference}
    + [Panoramica di riferimento](reference/reference.md)
    + Guida di riferimento di Analytics {#analytics-reference}
-      + [Panoramica di riferimento di Analytics](reference/analytics-reference/analytics-reference.md)
+      + [Panoramica sulla guida di riferimento di Analytics](reference/analytics-reference/analytics-reference.md)
       + [Impostazione degli ID di Analytics ed Experience Cloud](reference/analytics-reference/analytics-ids.md)
       + [Ordine delle operazioni per gli ID di Analytics](reference/analytics-reference/analytics-order-of-operations.md)
       + [Decisioni relative alla migrazione al servizio ID](reference/analytics-reference/migration-decisions.md)
@@ -88,7 +88,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
       + [Analytics e richieste di identità](reference/analytics-reference/legacy-analytics.md)
       + [CNAME per raccolta dati e monitoraggio tra più domini](reference/analytics-reference/cname.md)
       + [Implementazione lato server con JavaScript](reference/analytics-reference/server-side.md)
-      + [Periodo di tolleranza per il servizio ID](reference/analytics-reference/grace-period.md)   
+      + [Periodo di tolleranza per il servizio ID](reference/analytics-reference/grace-period.md)
    + [Informativa sulla sicurezza dei contenuti e servizio ID](reference/csp.md)
    + [Supporto per COPPA nel servizio ID](reference/coppa.md)
    + [Supporto CORS nel servizio ID](reference/cors.md)
@@ -99,11 +99,11 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
    + [Video Heartbeat e il servizio ID](reference/heartbeat.md)
    + [Workbench dati e servizio ID](reference/dwb.md)
 + Domande frequenti {#faqs}
-   + [Panoramica frequente](faq-intro/faq-intro.md)
+   + [Panoramica sulle domande frequenti](faq-intro/faq-intro.md)
    + [Domande frequenti sul servizio ID](faq-intro/faq.md)
    + [Domande frequenti su Analytics e sul servizio ID](faq-intro/analytics-faq.md)
    + [Domande frequenti per altre soluzioni Experience Cloud](faq-intro/other-faq.md)
-+ Release notes for ID Service {#release-notes}
++ Note sulla versione del servizio ID {#release-notes}
    + [Note sulla versione 2019](release-notes/release-notes.md)
    + [Note sulla versione 2018](release-notes/notes-2018.md)
    + [Note sulla versione 2017](release-notes/notes-2017.md)
