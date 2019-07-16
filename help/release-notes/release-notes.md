@@ -1,19 +1,19 @@
 ---
-description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud ID.
+description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Identità Experience Platform.
 keywords: Servizio ID
-seo-description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud ID.
+seo-description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Identità Experience Platform.
 seo-title: Note sulla versione 2019
 title: Note sulla versione 2019
-uuid: a 5 a 59410-7 f 85-48 f 9-a 30 a-fef 1 c 2 e 2 b 558
+uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # Note sulla versione 2019 {#release-notes}
 
-Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud ID.
+Rilasci di funzioni, aggiornamenti o modifiche al servizio Identità Experience Platform.
 
 ## Note sulla versione 2019 {#topic-1b9a1c3ec5044e1c987785950f697e25}
 
@@ -27,6 +27,6 @@ Versioni future, aggiornamenti o modifiche al servizio [!DNL Experience Cloud] I
 
 | Elemento | Descrizione |
 |---|---|
-| Il flag `disableIdSyncs` non funziona quando viene passata una stringa. | Problema risolto. Values set on `disableidSyncs` parameter for `getInstance` function are now being honored. |
+| Il flag `disableIdSyncs` non funziona quando viene passata una stringa. | Corretto. Ora i valori impostati sul `disableidSyncs` parametro per la `getInstance` funzione vengono rispettati. |
 | iFrames di terze parti non ottiene ECID | Corretto ECID su Safari Mobile ed ECID in diversi iFrames che non funzionavano. |
 
