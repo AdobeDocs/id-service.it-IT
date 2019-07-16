@@ -2,28 +2,28 @@
 description: Questi esempi coprono 2 casi d'uso comuni relativi a un'integrazione diretta e all'Experience Cloud ID (MID). L'identificatore MID è un ID univoco e costante per i visitatori del tuo sito.
 keywords: Servizio ID
 seo-description: Questi esempi coprono 2 casi d'uso comuni relativi a un'integrazione diretta e all'Experience Cloud ID (MID). L'identificatore MID è un ID univoco e costante per i visitatori del tuo sito.
-seo-title: Casi d'uso per l'integrazione diretta
-title: Casi d'uso per l'integrazione diretta
-uuid: 6 de 1 eb 8 b -4783-4545-8 a 64-ab 6 b 9 ef 93432
+seo-title: Casi d'uso dell'integrazione diretta
+title: Casi d'uso dell'integrazione diretta
+uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Direct integration use cases {#direct-integration-use-cases}
+# Casi d&#39;uso dell&#39;integrazione diretta {#direct-integration-use-cases}
 
 Questi esempi coprono 2 casi d&#39;uso comuni relativi a un&#39;integrazione diretta e all&#39;Experience Cloud ID (MID). L&#39;identificatore MID è un ID univoco e costante per i visitatori del tuo sito.
 
 >[!TIP]
 >
->* Review and understand the [code syntax and variables](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) before diving into the use cases.
->* For more information about the MID, see [Cookies and the Experience Cloud ID Service](../introduction/cookies.md).
+>* Leggi e comprendi la [sintassi del codice e le variabili](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) prima di immergerti nei casi d&#39;uso.
+>* For more information about the MID, see [Cookies and the Experience Platform Identity Service](../introduction/cookies.md).
 >
 
 
 
-## Use case 1: I have a MID but want to pass my Visitor IDs and set an authentication state {#section-a67d89a343754d1286d03cf08d34b806}
+## Caso d&#39;uso 1: ho un MID ma voglio trasmettere gli ID dei miei visitatori e impostare uno stato di autenticazione {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
@@ -65,7 +65,7 @@ Questi esempi coprono 2 casi d&#39;uso comuni relativi a un&#39;integrazione dir
  </tbody> 
 </table>
 
-## Use case 2: I do not have a MID and need to generate one {#section-8e81291f8b684de8b88fae4002ae0029}
+## Caso d&#39;uso 2: non ho un MID e ho bisogno di generarlo {#section-8e81291f8b684de8b88fae4002ae0029}
 
 <table id="table_666A92693F8A413096DF6A64770C1141"> 
  <thead> 
