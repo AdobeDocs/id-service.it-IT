@@ -2,16 +2,16 @@
 description: Questa implementazione permette ai clienti di usare il servizio ID su dispositivi che non possono accettare o lavorare con il nostro codice JavaScript o SDK. Tra questi dispositivi sono incluse consolle di gioco, smart TV o altri apparecchi dotati di Internet. Fare riferimento a questa sezione per sintassi, esempi di codice e definizioni.
 keywords: Servizio ID
 seo-description: Questa implementazione permette ai clienti di usare il servizio ID su dispositivi che non possono accettare o lavorare con il nostro codice JavaScript o SDK. Tra questi dispositivi sono incluse consolle di gioco, smart TV o altri apparecchi dotati di Internet. Fare riferimento a questa sezione per sintassi, esempi di codice e definizioni.
-seo-title: Integrazione diretta con il servizio Experience Cloud ID
-title: Integrazione diretta con il servizio Experience Cloud ID
-uuid: de 502 f 7 e-cffd -4130-b 3 ca -7 d 6 b 9 a 9 caae 9
+seo-title: Integrazione diretta con il servizio identità Experience Platform
+title: Integrazione diretta con il servizio identità Experience Platform
+uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Direct integration with the Experience Cloud ID Service {#direct-integration-with-the-experience-cloud-id-service}
+# Direct integration with the Experience Platform Identity Service {#direct-integration-with-the-experience-cloud-id-service}
 
 Questa implementazione permette ai clienti di usare il servizio ID su dispositivi che non possono accettare o lavorare con il nostro codice JavaScript o SDK. Tra questi dispositivi sono incluse consolle di gioco, smart TV o altri apparecchi dotati di Internet. Fare riferimento a questa sezione per sintassi, esempi di codice e definizioni.
 
@@ -21,17 +21,17 @@ I dispositivi che non possono usare le librerie di codici VisitorAPI.js o SDK po
 
 ![](assets/directSyntax.png)
 
-In this syntax example, the `d_` prefix identifies the key-value pairs in the call as a system-level variable. You can pass quite a few `d_` parameters to the ID service, but stay focused on the key-value pairs as shown in the code above. Per maggiori informazioni sulle altre variabili, consulta [Attributi supportati per le chiamate API DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
+In questo esempio di sintassi, il `d_` prefisso identifica le coppie chiave-valore nella chiamata come variabile a livello di sistema. Puoi trasmettere una serie di `d_` parametri al servizio ID, ma fai particolare attenzione alle coppie chiave-valore mostrate nel codice seguente. Per maggiori informazioni sulle altre variabili, consulta [Attributi supportati per le chiamate API DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
 
 Il servizio ID supporta le chiamate HTTP e HTTPS. Usa HTTPS per trasmettere i dati da una pagina sicura.
 
-## Sample request {#section-26302b8851704888b6f8e6b2071bcdb0}
+## Richiesta di esempio {#section-26302b8851704888b6f8e6b2071bcdb0}
 
 L&#39;aspetto della tua richiesta potrebbe essere simile all&#39;esempio mostrato di seguito. Abbiamo accorciato le variabili lunghe.
 
 ![](assets/directExample.png)
 
-## Sample response {#section-89bc103b3e9e4a8b98e74c32897b1200}
+## Risposta di esempio {#section-89bc103b3e9e4a8b98e74c32897b1200}
 
 Il servizio ID restituisce i dati in un oggetto JSON come mostrato di seguito. La tua risposta potrebbe essere diversa.
 
@@ -44,7 +44,7 @@ Il servizio ID restituisce i dati in un oggetto JSON come mostrato di seguito. L
 }
 ```
 
-## Request and response parameters defined {#section-4a9912b545364dc4acad4f1ea5ec641d}
+## Parametri di richiesta e risposta definiti {#section-4a9912b545364dc4acad4f1ea5ec641d}
 
 **Parametri di richiesta**
 
@@ -62,18 +62,18 @@ Il servizio ID restituisce i dati in un oggetto JSON come mostrato di seguito. L
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>L'ID visitatore Experience Cloud. Consulta  <a href="../introduction/cookies.md" format="dita" scope="local"> Cookie e il servizio Experience Cloud ID</a>. </p> </td> 
+   <td colname="col2"> <p>L'ID visitatore Experience Cloud. Consulta <a href="../introduction/cookies.md" format="dita" scope="local"> Cookie e Servizio identità Experience Platform</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>L'ID organizzazione Experience Cloud. Per maggiori informazioni su come trovare questo ID vedere, <a href="../reference/requirements.md" format="dita" scope="local"> Requisiti del servizio Experience Cloud ID</a>. </p> </td> 
+   <td colname="col2"> <p>L'ID organizzazione Experience Cloud. Per maggiori informazioni su come trovare questo ID vedere, <a href="../reference/requirements.md" format="dita" scope="local"> Requisiti per Experience Platform Identity Service</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
-   <td colname="col2"> <p>An optional parameter that passes the Data Provider ID (DPID), the Unique User ID (DPUUID), and an <a href="../reference/authenticated-state.md" format="dita" scope="local"> authenticated state ID</a> to the ID service. Come mostrato nell'esempio di codice, separata il DPID e il DPUUID con il carattere di controllo non stampabile, <span class="codeph">%01</span>. </p> <p> <b>DPID e DPUUID</b> </p> <p>Nel parametro <span class="codeph">d_cid</span>, assegna ogni combinazione di DPID e DPUUID allo stesso parametro <span class="codeph">d_cid</span>. Ciò ti consente di restituire set di ID multipli in un'unica richiesta. Inoltre, separa il DPID, il DPUUID e il flag di autenticazione opzionale con il carattere di controllo non stampabile, <span class="codeph">%01</span>. Negli esempi seguenti, gli ID del fornitore e dell'utente sono in <b>grassetto</b>. </p> 
+   <td colname="col2"> <p>Un parametro facoltativo che trasmette l'ID del fornitore dati(DPID), l'ID utente univoco (DPUUID) e un <a href="../reference/authenticated-state.md" format="dita" scope="local">ID dello stato di autenticazione</a> al servizio ID. Come mostrato nell'esempio di codice, separata il DPID e il DPUUID con il carattere di controllo non stampabile, <span class="codeph">%01</span>. </p> <p> <b>DPID e DPUUID</b> </p> <p>Nel parametro <span class="codeph">d_cid</span>, assegna ogni combinazione di DPID e DPUUID allo stesso parametro <span class="codeph">d_cid</span>. Ciò ti consente di restituire set di ID multipli in un'unica richiesta. Inoltre, separa il DPID, il DPUUID e il flag di autenticazione opzionale con il carattere di controllo non stampabile, <span class="codeph">%01</span>. Negli esempi seguenti, gli ID del fornitore e dell'utente sono in <b>grassetto</b>. </p> 
     <ul id="ul_2E19D837296B40E9ACD096495CF711C5"> 
      <li id="li_5B94B057654440B99B989BA60E4ED053">Sintassi: <span class="codeph">...d_cid=DPID%01DPUUID%01authentication state...</span> </li> 
-     <li id="li_B07833EF51D54F088574B7B7F9FB841A">Example: <span class="codeph">...d_cid=123%01456%011...</span> </li> 
+     <li id="li_B07833EF51D54F088574B7B7F9FB841A">Esempio: <span class="codeph">...d_cid=123%01456%011...</span> </li> 
     </ul> <p> <b>Stato di autenticazione</b> </p> <p>Questo è un ID opzionale nel parametro <span class="codeph">d_cid</span>. Espresso sotto forma di numero intero, identifica gli utenti a seconda del loro stato di autenticazione come mostrato di seguito: </p> 
     <ul id="ul_E2B36922B11C4AA2A9016B6E2DC9EDAA"> 
      <li id="li_31C018E3F9514B938C73EF40C436715F"> <span class="codeph"> 0</span> (sconosciuto) </li> 
