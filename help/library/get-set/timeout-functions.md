@@ -1,19 +1,19 @@
 ---
-description: Chiama queste funzioni del servizio ID per determinare lo stato di timeout per una richiesta Experience Cloud ID Service, Analytics o Audience Manager ID. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
+description: Chiama queste funzioni del servizio ID per determinare lo stato di timeout per una richiesta Experience Platform Identity Service, Analytics o Audience Manager ID. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
 keywords: Servizio ID
-seo-description: Chiama queste funzioni del servizio ID per determinare lo stato di timeout per una richiesta Experience Cloud ID Service, Analytics o Audience Manager ID. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
-seo-title: callTimeOut Methods
-title: callTimeOut Methods
-uuid: e 5047498-11 db -4945-b 356-c 92 b 7 d 447573
+seo-description: Chiama queste funzioni del servizio ID per determinare lo stato di timeout per una richiesta Experience Platform Identity Service, Analytics o Audience Manager ID. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
+seo-title: Metodi callTimeOut
+title: Metodi callTimeOut
+uuid: e5047498-11db-4945-b356-c92b7d447573
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # Metodi callTimeOut{#calltimeout-methods}
 
-Chiama queste funzioni del servizio ID per determinare lo stato di timeout per una richiesta Experience Cloud ID Service, Analytics o Audience Manager ID. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
+Chiama queste funzioni del servizio ID per determinare lo stato di timeout per una richiesta Experience Platform Identity Service, Analytics o Audience Manager ID. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
 
 ## Funzioni di timeout {#section-e08228ef5f9b45c9a84139bbb763164a}
 
@@ -26,16 +26,16 @@ Chiama queste funzioni del servizio ID per determinare lo stato di timeout per u
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Servizio Experience Cloud ID </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variablename</span> = visitor. mcidcalltimedout ()</span> </p> </td> 
+   <td colname="col1"> <p>Servizio identità piattaforma Experience </p> </td> 
+   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.MCIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="keyword"> Analytics</span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variablename</span> = visitor. analyticsidcalltimedout ()</span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.AnalyticsIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="keyword"> Audience Manager</span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variablename</span> = visitor. aamidcalltimedout ()</span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.AAMIDCallTimedOut()</span> </p> </td> 
   </tr> 
  </tbody> 
 </table>
