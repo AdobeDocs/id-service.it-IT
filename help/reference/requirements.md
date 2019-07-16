@@ -1,23 +1,23 @@
 ---
-description: Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per il servizio Experience Cloud ID.
+description: Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per Experience Platform Identity Service.
 keywords: Servizio ID
-seo-description: Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per il servizio Experience Cloud ID.
-seo-title: Requisiti del servizio Experience Cloud ID
-title: Requisiti del servizio Experience Cloud ID
-uuid: 608 b 1082-6 e 9 e -4101-b 6 cb -60027950109 b
+seo-description: Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per Experience Platform Identity Service.
+seo-title: Requisiti per il servizio identità della piattaforma Experience Platform
+title: Requisiti per il servizio identità della piattaforma Experience Platform
+uuid: 608b1082-6e9e-4101-b6cb-60027950109b
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Requisiti del servizio Experience Cloud ID {#requirements-for-the-experience-cloud-id-service}
+# Requirements for the Experience Platform Identity Service {#requirements-for-the-experience-cloud-id-service}
 
-Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per il servizio Experience Cloud ID.
+Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per Experience Platform Identity Service.
 
 ## Requisiti per il successo e il supporto dell&#39;implementazione {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
-Un&#39;implementazione di successo e supportata deve rispettare (o superare) i requisiti di codice e aderire alle istruzioni fornite nell&#39;[!DNL Adobe]Aiuto di . Un&#39;implementazione non supportata darà risultati imprevisti e impedisce ai tecnici e agli operatori dell&#39;assistenza clienti di fornire il supporto necessario per risolvere eventuali problemi riscontrati con il servizio ID.
+Un&#39;implementazione di successo e supportata deve rispettare (o superare) i requisiti di codice e aderire alle istruzioni fornite nell&#39;[!DNL Adobe]Aiuto di. Un&#39;implementazione non supportata darà risultati imprevisti e impedisce ai tecnici e agli operatori dell&#39;assistenza clienti di fornire il supporto necessario per risolvere eventuali problemi riscontrati con il servizio ID.
 
 <table id="table_2216C44AA66248DCAA13BF64BDF2D88A"> 
  <thead> 
@@ -53,7 +53,7 @@ Per utilizzare il servizio ID, la società deve essere abilitata per [!DNL Exper
 
 >[!IMPORTANT]
 >
->L&#39;ID organizzazione fa distinzione tra maiuscole e minuscole e deve essere utilizzato esattamente come è stato fornito.
+>L&#39;ID organizzazione è sensibile all&#39;uso di maiuscole e minuscole e deve essere utilizzato esattamente come è stato fornito.
 
 <table id="table_6C74B676EB094C568D2439FDCC9A7830"> 
  <thead> 
@@ -80,7 +80,7 @@ Per utilizzare il servizio ID, la società deve essere abilitata per [!DNL Exper
 
 ## Requisiti di Analytics: raccolta dati regionali (RDC) {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-Tutti i server di tracciamento sono stati convertiti in RDC, quindi non è necessario modificare il server di tracciamento di Analytics. [Ulteriori informazioni...](https://docs.adobe.com/content/help/en/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
+Tutti i server di tracciamento sono stati convertiti in RDC, pertanto non è necessario modificare il server di tracciamento di Analytics. [Ulteriori informazioni...](https://docs.adobe.com/content/help/en/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
 
 ## Librerie dei codici e versioni richieste {#section-ad7542a4317d430fa79fc6b095beb84d}
 
@@ -88,7 +88,7 @@ Nelle seguenti sezioni sono elencate le versioni minime dei codici richieste per
 
 >[!TIP]
 >
->È consigliabile utilizzare le versioni più recenti del codice invece dei requisiti minimi.
+>Invece dei requisiti minimi, consigliamo di usare le ultime versioni del codice.
 
 **JavaScript**
 
@@ -102,7 +102,7 @@ Nelle seguenti sezioni sono elencate le versioni minime dei codici richieste per
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="keyword"></span>  Servizio Experience Cloud ID</b> </p> </td> 
+   <td colname="col1"> <p> <b><span class="keyword"> Servizio </span>Experience Cloud ID</b> </p> </td> 
    <td colname="col3"> <p> <span class="codeph"> VisitorAPI.js</span> </p> </td> 
    <td colname="col4"> <p>2.0 o successiva </p> </td> 
   </tr> 
@@ -148,7 +148,7 @@ Il servizio ID richiede come minimo le versioni SDK elencate di seguito.
 
 >[!TIP]
 >
->È consigliabile utilizzare le versioni più recenti del codice invece dei requisiti minimi.
+>Invece dei requisiti minimi, consigliamo di usare le ultime versioni del codice.
 
 Il codice SDK deve essere abilitato per il servizio ID. Abilita e scarica l&#39;ultimo codice SDK per ogni app dal tuo account [Adobe Mobile Services](https://mobilemarketing.adobe.com/). Vedi anche:
 
@@ -156,7 +156,7 @@ Il codice SDK deve essere abilitato per il servizio ID. Abilita e scarica l&#39;
 * [Metodi SDK per Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/c_marketing_cloud.html)
 * [Metodi SDK per iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/marketing_cloud.html)
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
 >* [Libreria dei codici](../library/library.md#concept-ff27497375644a898d47984aefb21c97)
 
