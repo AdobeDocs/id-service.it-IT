@@ -4,9 +4,9 @@ keywords: Servizio ID
 seo-description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud ID per 2018.
 seo-title: Note sulla versione 2018
 title: Note sulla versione 2018
-uuid: 771 b 5 b 11-a 8 e 3-464 c-b 65 e-b 15135584 ace
+uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
 
@@ -78,7 +78,7 @@ Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud ID p
 
 >[!NOTE]
 >
->Si consiglia di effettuare l&#39;aggiornamento dalla versione 3.1.0 alla versione più recente al primo momento. Consultare la descrizione della versione 3.1.2. L&#39;ultimo pacchetto è disponibile da Adobe Launch, DTM e AppMeasurement.
+>È consigliabile passare il prima possibile dalla versione 3.1.0 alla versione più recente. Consultare la descrizione della versione 3.1.2. L&#39;ultimo bundle è disponibile in Adobe Experience Platform Launch, DTM e appmeasurement.
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
