@@ -1,21 +1,21 @@
 ---
-description: Restituisce l'ID di regione del servizio Experience Cloud ID. L'ID di regione (o hint di posizione) è l'identificatore numerico della posizione geografica di un particolare datacenter del servizio ID. Per effettuare chiamate API lato server all'Audience Manager hai bisogno dell'ID regione.
+description: Restituisce l'ID della regione del servizio Identità Experience Platform. L'ID di regione (o hint di posizione) è l'identificatore numerico della posizione geografica di un particolare datacenter del servizio ID. Per effettuare chiamate API lato server all'Audience Manager hai bisogno dell'ID regione.
 keywords: Servizio ID
-seo-description: Restituisce l'ID di regione del servizio Experience Cloud ID. L'ID di regione (o hint di posizione) è l'identificatore numerico della posizione geografica di un particolare datacenter del servizio ID. Per effettuare chiamate API lato server all'Audience Manager hai bisogno dell'ID regione.
+seo-description: Restituisce l'ID della regione del servizio Identità Experience Platform. L'ID di regione (o hint di posizione) è l'identificatore numerico della posizione geografica di un particolare datacenter del servizio ID. Per effettuare chiamate API lato server all'Audience Manager hai bisogno dell'ID regione.
 seo-title: getLocationHint
 title: getLocationHint
-uuid: cdc 312 b 7-d 270-4 a 5 c-a 2 bb -0 fbb 37 f 1 e 2 f 4
+uuid: cdc312b7-d270-4a5c-a2bb-0fbb37f1e2f4
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # getLocationHint{#getlocationhint}
 
-Restituisce l&#39;ID di regione del servizio Experience Cloud ID. L&#39;ID di regione (o hint di posizione) è l&#39;identificatore numerico della posizione geografica di un particolare datacenter del servizio ID. Per effettuare chiamate API lato server all&#39;Audience Manager hai bisogno dell&#39;ID regione.
+Restituisce l&#39;ID della regione del servizio Identità Experience Platform. L&#39;ID di regione (o hint di posizione) è l&#39;identificatore numerico della posizione geografica di un particolare datacenter del servizio ID. Per effettuare chiamate API lato server all&#39;Audience Manager hai bisogno dell&#39;ID regione.
 
-**Sintassi:**` var *`nome variabile`* = visitor.getLocationHint()`
+**Sintassi:** ` var *`nome variabile`* = visitor.getLocationHint()`
 
 Per un elenco degli ID di regione e delle posizioni corrispondenti, consulta [ID di regione DCS, posizioni e nomi host](https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html).
 
