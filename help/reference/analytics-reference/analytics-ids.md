@@ -1,19 +1,19 @@
 ---
-description: Il servizio Experience Cloud ID sostituisce i metodi legacy di ID visitatore Analytics.
+description: Il servizio Identità Experience Platform sostituisce i metodi legacy di ID visitatore Analytics.
 keywords: Servizio ID
-seo-description: Il servizio Experience Cloud ID sostituisce i metodi legacy di ID visitatore Analytics.
+seo-description: Il servizio Identità Experience Platform sostituisce i metodi legacy di ID visitatore Analytics.
 seo-title: Impostazione degli ID di Analytics ed Experience Cloud
 title: Impostazione degli ID di Analytics ed Experience Cloud
-uuid: 421 cf 597-a 3 e 0-4 ca 3-8 ce 8-d 0 c 80 cbb 6 aca
+uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # Impostazione degli ID di Analytics ed Experience Cloud{#setting-analytics-and-experience-cloud-ids}
 
-Il servizio Experience Cloud ID sostituisce i metodi legacy di ID visitatore Analytics.
+Il servizio Identità Experience Platform sostituisce i metodi legacy di ID visitatore Analytics.
 
 Una volta implementato il servizio ID, il codice viene eseguito prima di AppMeasurement. Il servizio ID recupera gli ID di Experience Cloud e Analytics in modo che siano a disposizione quando AppMeasurement viene caricato.
 
@@ -25,13 +25,13 @@ La principale modifica relativa alla migrazione al servizio [!DNL Experience Clo
 
 **Intestazione HTTP**
 
-La risposta HTTP da parte di un server Web imposta i cookie in un browser. This is how the `s_vi` cookie is set. The `s_vi` cookie identifies Analytics visitors. Una volta impostato, il cookie viene inviato insieme a tutte le richieste HTTP successive a tale server.
+La risposta HTTP da parte di un server Web imposta i cookie in un browser. Il `s_vi` cookie viene impostato in questo modo. Il `s_vi` cookie identifica i visitatori di Analytics. Una volta impostato, il cookie viene inviato insieme a tutte le richieste HTTP successive a tale server.
 
 Quando viene inviata una richiesta al server di raccolta dati Adobe, l&#39;intestazione viene controllata per verificare la presenza del cookie `s_vi`. Se il cookie è presente nella richiesta, viene utilizzato per identificare il visitatore. Se il cookie non è presente, il server genera un [!DNL Experience Cloud] ID univoco, lo imposta come cookie nell&#39;intestazione della risposta HTTP e lo invia nuovamente insieme alla richiesta. Il cookie viene memorizzato nel browser e inviato di nuovo al server di raccolta dati al momento delle successive visite al sito. In questo modo il visitatore può essere identificato nel corso delle visite.
 
-Alcuni browser tuttavia non accettano i cookie di terze parti (ad es. Apple Safari). Si tratta dei cookie impostati nel browser da domini diversi rispetto al sito Web corrente. Inoltre, Safari blocca i cookie in domini di terze parti se il visitatore non ha mai visitato tale dominio. For example, if you are on `mysite.com` and your data collection server is `mysite.omtrdc.net`, the cookie that is returned in the HTTP header from `mysite.omtrdc.net` might be rejected by the browser.
+Alcuni browser tuttavia non accettano i cookie di terze parti (ad es. Apple Safari). Si tratta dei cookie impostati nel browser da domini diversi rispetto al sito Web corrente. Inoltre, Safari blocca i cookie in domini di terze parti se il visitatore non ha mai visitato tale dominio. Ad esempio, se accedi a `mysite.com` e il server di raccolta dati è `mysite.omtrdc.net` il cookie restituito nell&#39;intestazione HTTP da `mysite.omtrdc.net` potrebbe essere rifiutato dal browser.
 
-Per evitare questo problema, molti clienti hanno implementato record CNAME per i propri server di raccolta dati. Questa operazione può essere considerata efficace nell&#39;ambito di una strategia di [implementazione dei cookie di prime parti](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/). If a CNAME record is configured to map a hostname on the customer&#39;s domain to the data collection server (e.g., mapping `metrics.mysite.com` to `mysite.omtrdc.net`), the [!DNL Experience Cloud] ID cookie is stored because the data collection domain now matches the domain of the website. Questa operazione aumenta la possibilità che il cookie del servizio ID venga memorizzato, ma comporta un sovraccarico maggiore, perché è necessario configurare i record CNAME e gestire i certificati SSL per i server di raccolta dati.
+Per evitare questo problema, molti clienti hanno implementato record CNAME per i propri server di raccolta dati. Questa operazione può essere considerata efficace nell&#39;ambito di una strategia di [implementazione dei cookie di prime parti](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/). Se viene configurato un record CNAME per mappare un nome host nel dominio del cliente al server di raccolta dati (ad es., mappatura di `metrics.mysite.com` a `mysite.omtrdc.net`), il cookie [!DNL Experience Cloud] ID viene memorizzato, perché il dominio di raccolta dati corrisponde al dominio del sito Web. Questa operazione aumenta la possibilità che il cookie del servizio ID venga memorizzato, ma comporta un sovraccarico maggiore, perché è necessario configurare i record CNAME e gestire i certificati SSL per i server di raccolta dati.
 
 **JavaScript**
 
@@ -66,7 +66,7 @@ Dopo aver implementato il servizio ID visitatore, i visitatori possono essere id
   <tr> 
    <td colname="col1"> <p> <img id="image_77A06981672745B6AEA8BB4D55911CCA" src="assets/step2_icon.png" /> </p> </td> 
    <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_analytics" format="http" scope="external"> aid (cookie s_vi)</a> </p> </td> 
-   <td colname="col3"> <p>The visitor had an existing s_vi cookie before you deployed the <span class="keyword"> Experience Cloud</span> ID service, or you have a <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> grace period</a> configured. </p> </td> 
+   <td colname="col3"> <p>Il visitatore aveva un altro cookie s_vi prima dell'implementazione del servizio <span class="keyword">Experience Cloud</span> ID, oppure è stato configurato un.<a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">periodo di tolleranza</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_0A950B1A6B004387AFEE8EED882739CB" src="assets/step3_icon.png" /> </p> </td> 
@@ -76,7 +76,7 @@ Dopo aver implementato il servizio ID visitatore, i visitatori possono essere id
   <tr> 
    <td colname="col1"> <p> <img id="image_6F0ED8FE3EF846CA8E6ECCC3C0070D85" src="assets/step4_icon.png" /> </p> </td> 
    <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external"> fid (cookie di fallback in H.25.3 o successivo, o in AppMeasurement per JavaScript)</a> </p> </td> 
-   <td colname="col3"> <p>Un browser non accetta cookie di terze parti e il server di tracciamento di Analytics è impostato come server di tracciamento terze parti. </p> <p> <p>Nota: <span class="codeph">fid</span> è un identificatore legacy e non viene utilizzato se hai implementato il servizio ID sul tuo sito. In this case, the <span class="codeph"> fid</span> is not needed because the first-party, <a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV cookie</a> makes it obsolete. È stato mantenuto per supportare codice legacy e per motivi storici. </p> </p> </td> 
+   <td colname="col3"> <p>Un browser non accetta cookie di terze parti e il server di tracciamento di Analytics è impostato come server di tracciamento terze parti. </p> <p> <p>Nota: <span class="codeph">fid</span> è un identificatore legacy e non viene utilizzato se hai implementato il servizio ID sul tuo sito. In questo caso, il <span class="codeph"> fid</span> non è necessario perché il <a href="../../introduction/cookies.md" format="dita" scope="local">cookie AMCV</a> di prime parti lo rende obsoleto. È stato mantenuto per supportare codice legacy e per motivi storici. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_23D8C0EB69EC4084BC237B5B98C036F4" src="assets/step5_icon.png" /> </p> </td> 
@@ -88,7 +88,7 @@ Dopo aver implementato il servizio ID visitatore, i visitatori possono essere id
 
 In molte situazioni potrebbero essere presenti due o tre ID diversi in una chiamata, ma Analytics utilizza il primo ID presente nell&#39;elenco come ID ufficiale di [!DNL Experience Cloud]. Ad esempio, se imposti un ID visitatore personalizzato (incluso nel parametro di query “vid”), questo ID verrà usato prima degli altri ID visualizzati per lo stesso hit.
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
 >* [Ordine delle operazioni per gli ID di Analytics](../../reference/analytics-reference/analytics-order-of-operations.md#concept-b92935b4fff545adb4773f3728bc15ef)
 
