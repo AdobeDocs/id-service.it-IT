@@ -1,19 +1,19 @@
 ---
-description: Queste istruzioni sono per i clienti di Analytics, Audience Manager e Target che desiderano utilizzare il servizio Identità Experience Platform e non usano Gestione dinamica dei tag. Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. Dynamic Tag Management semplifica l'implementazione e verifica automaticamente che il codice sia inserito correttamente e nella giusta sequenza.
+description: Queste istruzioni sono per i clienti di Analytics, Audience Manager e Target che desiderano utilizzare il servizio identità Experience Cloud e non usano Gestione dinamica dei tag. Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. Dynamic Tag Management semplifica l'implementazione e verifica automaticamente che il codice sia inserito correttamente e nella giusta sequenza.
 keywords: Servizio ID
-seo-description: Queste istruzioni sono per i clienti di Analytics, Audience Manager e Target che desiderano utilizzare il servizio Identità Experience Platform e non usano Gestione dinamica dei tag. Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. Dynamic Tag Management semplifica l'implementazione e verifica automaticamente che il codice sia inserito correttamente e nella giusta sequenza.
-seo-title: Implementazione del servizio Identità Experience Platform per Analytics, Audience Manager e Target
-title: Implementazione del servizio Identità Experience Platform per Analytics, Audience Manager e Target
+seo-description: Queste istruzioni sono per i clienti di Analytics, Audience Manager e Target che desiderano utilizzare il servizio identità Experience Cloud e non usano Gestione dinamica dei tag. Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. Dynamic Tag Management semplifica l'implementazione e verifica automaticamente che il codice sia inserito correttamente e nella giusta sequenza.
+seo-title: Implementazione del servizio identità Experience Cloud per Analytics, Audience Manager e Target
+title: Implementazione del servizio identità Experience Cloud per Analytics, Audience Manager e Target
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Implement the Experience Platform Identity Service for Analytics, Audience Manager, and Target {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
+# Implement the Experience Cloud Identity Service for Analytics, Audience Manager, and Target {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
 
-Queste istruzioni sono per i clienti di Analytics, Audience Manager e Target che desiderano utilizzare il servizio Identità Experience Platform e non usano Gestione dinamica dei tag. Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. Dynamic Tag Management semplifica l&#39;implementazione e verifica automaticamente che il codice sia inserito correttamente e nella giusta sequenza.
+Queste istruzioni sono per i clienti di Analytics, Audience Manager e Target che desiderano utilizzare il servizio identità Experience Cloud e non usano Gestione dinamica dei tag. Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. Dynamic Tag Management semplifica l'implementazione e verifica automaticamente che il codice sia inserito correttamente e nella giusta sequenza.
 
 >[!IMPORTANT]
 >
@@ -24,13 +24,13 @@ Queste istruzioni sono per i clienti di Analytics, Audience Manager e Target che
 
 
 
-## Passaggio 1: pianificazione dell&#39;inoltro lato server {#section-880797cc992d4755b29cada7b831f1fc}
+## Passaggio 1: pianificazione dell'inoltro lato server {#section-880797cc992d4755b29cada7b831f1fc}
 
-Oltre ai passaggi qui descritti, i clienti che usano [!DNL Analytics] e [!DNL Audience Manager] devono effettuare la migrazione all&#39;inoltro lato server. L&#39;inoltro lato server consente di rimuovere DIL (codice di raccolta dati di Audience Manager) e sostituirlo con il [modulo Gestione dell&#39;audience](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html). Per ulteriori informazioni, consulta la [documentazione sull&#39;inoltro lato server](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html).
+Oltre ai passaggi qui descritti, i clienti che usano [!DNL Analytics] e [!DNL Audience Manager] devono effettuare la migrazione all'inoltro lato server. L'inoltro lato server consente di rimuovere DIL (codice di raccolta dati di Audience Manager) e sostituirlo con il [modulo Gestione dell'audience](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html). Per ulteriori informazioni, consulta la [documentazione sull'inoltro lato server](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html).
 
-La migrazione all&#39;inoltro lato server richiede un&#39;attenta pianificazione e coordinazione. Il processo comporta modifiche esterne da apportare al codice del sito e passaggi interni che Adobe deve effettuare per il provisioning del tuo account. In effetti, molte di queste procedure di migrazione devono avvenire in parallelo ed essere rilasciate insieme. Il percorso di implementazione dovrà seguire questa sequenza di eventi:
+La migrazione all'inoltro lato server richiede un'attenta pianificazione e coordinazione. Il processo comporta modifiche esterne da apportare al codice del sito e passaggi interni che Adobe deve effettuare per il provisioning del tuo account. In effetti, molte di queste procedure di migrazione devono avvenire in parallelo ed essere rilasciate insieme. Il percorso di implementazione dovrà seguire questa sequenza di eventi:
 
-1. Pianifica con i tuoi contatti per [!DNL Analytics] e [!DNL Audience Manager] la migrazione dell&#39;inoltro lato server e il servizio ID. La selezione del server di tracciamento è una fase importante di questo piano.
+1. Pianifica con i tuoi contatti per [!DNL Analytics] e [!DNL Audience Manager] la migrazione dell'inoltro lato server e il servizio ID. La selezione del server di tracciamento è una fase importante di questo piano.
 
 1. Effettua il provisioning per [!DNL Profiles & Audiences]. Per iniziare, completa il modulo disponibile sul [sito di integrazioni e provisioning](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES).
 
@@ -49,8 +49,8 @@ Il servizio ID richiede la `VisitorAPI.js` libreria dei codici. Per scaricare la
 
 >[!IMPORTANT]
 >
->* Le versioni precedenti dell&#39;API del servizio ID inserivano questa funzione in una posizione diversa e richiedevano un&#39;altra sintassi. Se effettui la migrazione da una versione precedente alla [1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572), prendi nota della nuova posizione e della sintassi indicate in questo documento.
->* Il codice riportato in MAIUSCOLO funge da segnaposto per valori effettivi. Sostituisci tale testo con il tuo ID organizzazione, l&#39;URL del server di tracciamento o altro valore con nome.
+>* Le versioni precedenti dell'API del servizio ID inserivano questa funzione in una posizione diversa e richiedevano un'altra sintassi. Se effettui la migrazione da una versione precedente alla [1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572), prendi nota della nuova posizione e della sintassi indicate in questo documento.
+>* Il codice riportato in MAIUSCOLO funge da segnaposto per valori effettivi. Sostituisci tale testo con il tuo ID organizzazione, l'URL del server di tracciamento o altro valore con nome.
 >
 
 
@@ -94,15 +94,15 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE",
 }); 
 ```
 
-## Passaggio 4: aggiungi l&#39;ID organizzazione Experience Cloud a Visitor.getInstance {#section-e2947313492546789b0c3b2fc3e897d8}
+## Passaggio 4: aggiungi l'ID organizzazione Experience Cloud a Visitor.getInstance {#section-e2947313492546789b0c3b2fc3e897d8}
 
-Nella `Visitor.getInstance` funzione sostituisci `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` con l&#39;ID organizzazione Experience Cloud. Se non conosci il tuo ID organizzazione, puoi trovarlo nella pagina di amministrazione di Experience Cloud. La funzione modificata deve essere simile a quella riportata di seguito.
+Nella `Visitor.getInstance` funzione sostituisci `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` con l'ID organizzazione Experience Cloud. Se non conosci il tuo ID organizzazione, puoi trovarlo nella pagina di amministrazione di Experience Cloud. La funzione modificata deve essere simile a quella riportata di seguito.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
 >[!IMPORTANT]
 >
->*Non* modificare le lettere maiuscole in minuscole e viceversa nell&#39;ID organizzazione. L&#39;ID distingue tra maiuscole e minuscole e deve essere utilizzato esattamente così come è stato fornito.
+>*Non* modificare le lettere maiuscole in minuscole e viceversa nell'ID organizzazione. L'ID distingue tra maiuscole e minuscole e deve essere utilizzato esattamente così come è stato fornito.
 
 ## Passaggio 5: aggiungi i server di monitoraggio a Visitor.getInstance {#section-0dfc52096ac2427f86045aab9a0e0dfc}
 
@@ -144,7 +144,7 @@ Aggiungi la `Visitor.getInstance` funzione riportata di seguito al tuo `AppMeasu
 
 >[!IMPORTANT]
 >
->A questo punto, devi rimuovere il codice [!DNL Audience Manager] DIL e sostituirlo con il modulo Gestione dell&#39;audience. Vedi [Implementazione dell&#39;inoltro lato server](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html).
+>A questo punto, devi rimuovere il codice [!DNL Audience Manager] DIL e sostituirlo con il modulo Gestione dell'audience. Vedi [Implementazione dell'inoltro lato server](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html).
 
 ***(Facoltativo ma consigliato)*Crea un prop personalizzato****
 
@@ -159,7 +159,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 Inserisci il ` [!DNL VisitorAPI.js]` file entro i tag `<head>` di ogni pagina. Quando inserisci il `VisitorAPI.js` file nella pagina:
 
-* Inseriscilo all&#39;inizio della `<head>` sezione prima dei tag di altre soluzioni.
+* Inseriscilo all'inizio della `<head>` sezione prima dei tag di altre soluzioni.
 * Deve essere eseguito prima di AppMeasurement e del codice di altre [!DNL Experience Cloud] soluzioni.
 
 ## Passaggio 8: (facoltativo) configura un periodo di tolleranza {#section-aceacdb7d5794f25ac6ff46f82e148e1}
@@ -174,11 +174,11 @@ Dopo aver distribuito il servizio ID su tutte le pagine Web che riferiscono alla
 
 **Requisiti del cookie s_vi**
 
-Se, dopo la migrazione al servizio ID, richiedi ai nuovi visitatori il cookie s_vi, devi configurare il periodo di tolleranza. Questa situazione è frequente, se l&#39;implementazione legge il cookie s_vi e lo memorizza in una variabile.
+Se, dopo la migrazione al servizio ID, richiedi ai nuovi visitatori il cookie s_vi, devi configurare il periodo di tolleranza. Questa situazione è frequente, se l'implementazione legge il cookie s_vi e lo memorizza in una variabile.
 
-Quando l&#39;implementazione può acquisire il MID, invece di leggere il cookie s_vi, puoi interrompere il periodo di tolleranza.
+Quando l'implementazione può acquisire il MID, invece di leggere il cookie s_vi, puoi interrompere il periodo di tolleranza.
 
-See also, [Cookies and the Experience Platform Identity Service](../introduction/cookies.md).
+See also, [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md).
 
 **Integrazione dei dati di clickstream**
 
@@ -190,7 +190,7 @@ Vedi [Descrizione delle colonne nei dati di clickstream](https://marketing.adobe
 
 ## Passaggio 9: test e verifica {#section-f857542bfc70496dbb9f318d6b3ae110}
 
-Le soluzioni [!DNL Experience Cloud] di questa implementazione restituiscono gli ID sotto forma di coppie chiave-valore. Ogni soluzione usa chiavi diverse (ad esempio, [!DNL Analytics] SDID di e [!DNL Target] mboxMCSDID di) per lo stesso ID. Per verificare il corretto funzionamento dell&#39;implementazione, carica le pagine in un ambiente di sviluppo. Usa la console del browser o un software per monitorare le richieste HTTP e le risposte, e controlla gli ID elencati di seguito. Il servizio ID è stato implementato correttamente se le coppie chiave-valore elencate di seguito restituiscono gli stessi valori ID.
+Le soluzioni [!DNL Experience Cloud] di questa implementazione restituiscono gli ID sotto forma di coppie chiave-valore. Ogni soluzione usa chiavi diverse (ad esempio, [!DNL Analytics] SDID di e [!DNL Target] mboxMCSDID di) per lo stesso ID. Per verificare il corretto funzionamento dell'implementazione, carica le pagine in un ambiente di sviluppo. Usa la console del browser o un software per monitorare le richieste HTTP e le risposte, e controlla gli ID elencati di seguito. Il servizio ID è stato implementato correttamente se le coppie chiave-valore elencate di seguito restituiscono gli stessi valori ID.
 
 >[!TIP]
 >
@@ -203,11 +203,11 @@ Elementi da verificare:
 * [Cookie AMCV](../introduction/cookies.md) nel dominio di hosting della pagina.
 * [!DNL Experience Cloud] ID (MID) con [!DNL Adobe] Debugger o altro strumento di debug.
 
-For additional checks that help you determine if the ID service is working properly, see [Test and Verify the Experience Platform Identity Service](../implementation-guides/test-verify.md).
+For additional checks that help you determine if the ID service is working properly, see [Test and Verify the Experience Cloud Identity Service](../implementation-guides/test-verify.md).
 
 **Analytics**
 
-Verifica l&#39;identificatore SDID nella richiesta JavaScript. Il valore SDID di Analytics deve corrispondere al valore mboxMCSDID di Target.
+Verifica l'identificatore SDID nella richiesta JavaScript. Il valore SDID di Analytics deve corrispondere al valore mboxMCSDID di Target.
 
 Se le verifiche restituiscono un AID, questo può dipendere dalle seguenti possibili situazioni:
 
@@ -218,7 +218,7 @@ Quando ricevi un AID, controllane il valore rispetto al valore [!DNL Target] mbo
 
 **Audience Manager**
 
-Per verificare l&#39;inoltro lato server, vedi:
+Per verificare l'inoltro lato server, vedi:
 
 * [Come determinare se il tuo account è pronto per ricevere dati inoltrati](https://marketing.adobe.com/resources/help/en_US/aam/ssf-success.html)
 * [Come determinare se il tuo account non è pronto per ricevere dati inoltrati](https://marketing.adobe.com/resources/help/en_US/aam/ssf-fail.html)
@@ -245,6 +245,6 @@ Una volta superata la verifica, distribuisci il codice.
 
 Se hai attivato un periodo di tolleranza:
 
-* Verifica che l&#39;ID di Analytics (AID) e il MID siano presenti nella richiesta di immagine.
-* Ricorda di disattivare il periodo di tolleranza quando sono presenti i [requisiti per l&#39;interruzione](../implementation-guides/setup-aam-analytics-target.md#section-aceacdb7d5794f25ac6ff46f82e148e1).
+* Verifica che l'ID di Analytics (AID) e il MID siano presenti nella richiesta di immagine.
+* Ricorda di disattivare il periodo di tolleranza quando sono presenti i [requisiti per l'interruzione](../implementation-guides/setup-aam-analytics-target.md#section-aceacdb7d5794f25ac6ff46f82e148e1).
 
