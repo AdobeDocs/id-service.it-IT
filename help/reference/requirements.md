@@ -1,23 +1,23 @@
 ---
-description: Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per Experience Platform Identity Service.
+description: Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per Experience Cloud Identity Service.
 keywords: Servizio ID
-seo-description: Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per Experience Platform Identity Service.
-seo-title: Requisiti per il servizio identità della piattaforma Experience Platform
-title: Requisiti per il servizio identità della piattaforma Experience Platform
+seo-description: Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per Experience Cloud Identity Service.
+seo-title: Requisiti per il servizio identità Experience Cloud
+title: Requisiti per il servizio identità Experience Cloud
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Requirements for the Experience Platform Identity Service {#requirements-for-the-experience-cloud-id-service}
+# Requirements for the Experience Cloud Identity Service {#requirements-for-the-experience-cloud-id-service}
 
-Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per Experience Platform Identity Service.
+Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per Experience Cloud Identity Service.
 
-## Requisiti per il successo e il supporto dell&#39;implementazione {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
+## Requisiti per il successo e il supporto dell'implementazione {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
-Un&#39;implementazione di successo e supportata deve rispettare (o superare) i requisiti di codice e aderire alle istruzioni fornite nell&#39;[!DNL Adobe]Aiuto di. Un&#39;implementazione non supportata darà risultati imprevisti e impedisce ai tecnici e agli operatori dell&#39;assistenza clienti di fornire il supporto necessario per risolvere eventuali problemi riscontrati con il servizio ID.
+Un'implementazione di successo e supportata deve rispettare (o superare) i requisiti di codice e aderire alle istruzioni fornite nell'[!DNL Adobe]Aiuto di. Un'implementazione non supportata darà risultati imprevisti e impedisce ai tecnici e agli operatori dell'assistenza clienti di fornire il supporto necessario per risolvere eventuali problemi riscontrati con il servizio ID.
 
 <table id="table_2216C44AA66248DCAA13BF64BDF2D88A"> 
  <thead> 
@@ -53,7 +53,7 @@ Per utilizzare il servizio ID, la società deve essere abilitata per [!DNL Exper
 
 >[!IMPORTANT]
 >
->L&#39;ID organizzazione è sensibile all&#39;uso di maiuscole e minuscole e deve essere utilizzato esattamente come è stato fornito.
+>L'ID organizzazione è sensibile all'uso di maiuscole e minuscole e deve essere utilizzato esattamente come è stato fornito.
 
 <table id="table_6C74B676EB094C568D2439FDCC9A7830"> 
  <thead> 
@@ -139,7 +139,7 @@ Nelle seguenti sezioni sono elencate le versioni minime dei codici richieste per
  </tbody> 
 </table>
 
-## Requisiti dell&#39;SDK per Android e iOS {#section-73b2446fba8e463888642c7d7dfd94f1}
+## Requisiti dell'SDK per Android e iOS {#section-73b2446fba8e463888642c7d7dfd94f1}
 
 Il servizio ID richiede come minimo le versioni SDK elencate di seguito.
 
@@ -150,9 +150,9 @@ Il servizio ID richiede come minimo le versioni SDK elencate di seguito.
 >
 >Invece dei requisiti minimi, consigliamo di usare le ultime versioni del codice.
 
-Il codice SDK deve essere abilitato per il servizio ID. Abilita e scarica l&#39;ultimo codice SDK per ogni app dal tuo account [Adobe Mobile Services](https://mobilemarketing.adobe.com/). Vedi anche:
+Il codice SDK deve essere abilitato per il servizio ID. Abilita e scarica l'ultimo codice SDK per ogni app dal tuo account [Adobe Mobile Services](https://mobilemarketing.adobe.com/). Vedi anche:
 
-* [Configurare le opzioni del servizio ID visitatore dell&#39;SDK](https://marketing.adobe.com/resources/help/en_US/mobile/t_config_visitor.html)
+* [Configurare le opzioni del servizio ID visitatore dell'SDK](https://marketing.adobe.com/resources/help/en_US/mobile/t_config_visitor.html)
 * [Metodi SDK per Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/c_marketing_cloud.html)
 * [Metodi SDK per iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/marketing_cloud.html)
 
