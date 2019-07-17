@@ -6,14 +6,14 @@ seo-title: getVisitorValues
 title: getVisitorValues
 uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # getVisitorValues{#getvisitorvalues}
 
-Questa API asincrona restituisce per impostazione predefinita identificatori per Analytics, il servizio ID, la rinuncia alla raccolta di dati, la geolocalizzazione, e contenuti di metadati BLOB. Inoltre, è possibile controllare gli ID che dovranno essere restituiti con l&#39;enum opzionale visitor.FIELDS.
+Questa API asincrona restituisce per impostazione predefinita identificatori per Analytics, il servizio ID, la rinuncia alla raccolta di dati, la geolocalizzazione, e contenuti di metadati BLOB. Inoltre, è possibile controllare gli ID che dovranno essere restituiti con l'enum opzionale visitor.FIELDS.
 
 Sommario:
 
@@ -30,12 +30,12 @@ Questa funzione utilizza la seguente sintassi (il corsivo rappresenta un segnapo
 
 Nei parametri della funzione:
 
-* ` *`callback`*` rappresenta il codice di callback che riceve l&#39;ID restituito.
+* ` *`callback`*` rappresenta il codice di callback che riceve l'ID restituito.
 * *(Facoltativo)* ` visitor.FIELDS. *`Tipo ID`*` è un enum che ti permette di specificare quali [valori ID](../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) vuoi che siano restituiti da questa funzione.
 
-Per maggiori informazioni, vedi i casi d&#39;uso seguenti e le definizioni.
+Per maggiori informazioni, vedi i casi d'uso seguenti e le definizioni.
 
-## Caso d&#39;uso 1: richiesta di impostazione di dati predefiniti {#section-36a31683558742a5915db3a391e09f7b}
+## Caso d'uso 1: richiesta di impostazione di dati predefiniti {#section-36a31683558742a5915db3a391e09f7b}
 
 Questo codice restituisce il set di dati standard. La richiesta e la risposta saranno simili a quelle di questi esempi.
 
@@ -60,9 +60,9 @@ Nella risposta di esempio predefinita, alcuni valori sono stati abbreviati per f
 }
 ```
 
-## Caso d&#39;uso 2: richiesta di impostazione di dati personalizzati {#section-467b2f4e513344c89b7332b05f6f59f3}
+## Caso d'uso 2: richiesta di impostazione di dati personalizzati {#section-467b2f4e513344c89b7332b05f6f59f3}
 
-Questo codice utilizza un array facoltativo per restituire un set specifico di ID usando `visitor.FIELDS` l&#39;enum. In questo caso, vogliamo solo l&#39;Experience Cloud ID (MCID) e l&#39;Analytics ID (MCAID) del visitatore. La richiesta e la risposta saranno simili a quelle di questi esempi.
+Questo codice utilizza un array facoltativo per restituire un set specifico di ID usando `visitor.FIELDS` l'enum. In questo caso, vogliamo solo l'Experience Cloud ID (MCID) e l'Analytics ID (MCAID) del visitatore. La richiesta e la risposta saranno simili a quelle di questi esempi.
 
 ```js
 //Call the ID service 
@@ -84,7 +84,7 @@ La risposta di esempio personalizzata restituisce solo quegli ID specificati nel
 
 ## Parametri di risposta definiti {#section-4c4c300167694c6fbff1d6c612f372b5}
 
-Nella seguente tabella sono elencati e definiti i parametri di risposta. Questi sono anche tutti i valori `visitor.FIELDS` nell&#39;enum Nota, questo metodo restituisce una stringa vuota se non ci sono valori per una particolare variabile.
+Nella seguente tabella sono elencati e definiti i parametri di risposta. Questi sono anche tutti i valori `visitor.FIELDS` nell'enum Nota, questo metodo restituisce una stringa vuota se non ci sono valori per una particolare variabile.
 
 <table id="table_32D0FEEA76CE4F298EED4B8F5C644232"> 
  <thead> 
@@ -108,7 +108,7 @@ Nella seguente tabella sono elencati e definiti i parametri di risposta. Questi 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>L'Experience Cloud ID del visitatore. </p> <p>Consulta  <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookie e Servizio identità Experience Platform </a>. </p> </td> 
+   <td colname="col2"> <p>L'Experience Cloud ID del visitatore. </p> <p>Consulta  <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookie e Servizio identità Experience Cloud </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
