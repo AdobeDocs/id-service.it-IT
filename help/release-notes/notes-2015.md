@@ -6,7 +6,7 @@ seo-title: Note sulla versione 2015
 title: Note sulla versione 2015
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -19,14 +19,14 @@ Note sulla versione e aggiornamenti per la versione 2015.
 
 Novembre 2015
 
-Il Children&#39;s Online Privacy Protection Act (COPPA) proibisce la raccolta online di dati personali di bambini di età inferiore ai 13 anni senza disporre del consenso verificabile dei genitori. I clienti interessati dal COPPA possono aggiungere una variabile opzionale al codice del servizio [!DNL Experience Cloud] ID che impedisce l’impostazione di cookie nel dominio di un browser di terze parti. See [COPPA Support in the Experience Platform Identity Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Per le versioni a partire dalla 1.5.3.
+Il Children's Online Privacy Protection Act (COPPA) proibisce la raccolta online di dati personali di bambini di età inferiore ai 13 anni senza disporre del consenso verificabile dei genitori. I clienti interessati dal COPPA possono aggiungere una variabile opzionale al codice del servizio [!DNL Experience Cloud] ID che impedisce l’impostazione di cookie nel dominio di un browser di terze parti. See [COPPA Support in the Experience Cloud Identity Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Per le versioni a partire dalla 1.5.3.
 
 ## Versione 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
 Settembre 2015
 
 * È stato corretto un bug del browser Safari che impediva il funzionamento della sincronizzazione dei servizi quando gli utenti impostavano il blocco dei cookie di terze parti. (AAM-20764)
-* Ora le chiamate al servizio ID includono l&#39;ID versione nel parametro `d_visid_ver=`. L&#39;ID restituito aiuta i team interni a risolvere i problemi e a prestare assistenza. (AAM-20824)
+* Ora le chiamate al servizio ID includono l'ID versione nel parametro `d_visid_ver=`. L'ID restituito aiuta i team interni a risolvere i problemi e a prestare assistenza. (AAM-20824)
 
 ## Versione 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
@@ -45,7 +45,7 @@ Agosto 2015
 Alcune revisioni della documentazione effettuate in questa versione:
 
 * [Metodi API e libreria dei codici](../library/library.md#concept-ff27497375644a898d47984aefb21c97): contenuto e testo riorganizzati. Nella maggior parte dei casi, per ciascun metodo è presente una propria pagina.
-* [Requisiti per Experience Platform Identity Service](../reference/requirements.md): Contenuto rivisto e testo riorganizzato.
+* [Requisiti per Experience Cloud Identity Service](../reference/requirements.md): Contenuto rivisto e testo riorganizzato.
 
 ## Versione 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
