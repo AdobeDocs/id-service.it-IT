@@ -1,19 +1,19 @@
 ---
-description: Prima di distribuire il servizio Identità Experience Platform, è necessario comprendere in che modo il servizio influisce sul monitoraggio dei visitatori in più domini e sui potenziali problemi relativi alla raccolta di dati con metodi diversi o tramite file javascript.
+description: Prima di distribuire il servizio Experience Cloud Identity, è necessario comprendere in che modo il servizio influisce sul monitoraggio dei visitatori in più domini e sui potenziali problemi relativi alla raccolta di dati con metodi diversi o tramite file javascript.
 keywords: Servizio ID
-seo-description: Prima di distribuire il servizio Identità Experience Platform, è necessario comprendere in che modo il servizio influisce sul monitoraggio dei visitatori in più domini e sui potenziali problemi relativi alla raccolta di dati con metodi diversi o tramite file javascript.
-seo-title: Decisioni relative alla migrazione al servizio identità Experience Platform
-title: Decisioni relative alla migrazione al servizio identità Experience Platform
+seo-description: Prima di distribuire il servizio Experience Cloud Identity, è necessario comprendere in che modo il servizio influisce sul monitoraggio dei visitatori in più domini e sui potenziali problemi relativi alla raccolta di dati con metodi diversi o tramite file javascript.
+seo-title: Decisioni relative alla migrazione al servizio Experience Cloud per Experience Cloud
+title: Decisioni relative alla migrazione al servizio Experience Cloud per Experience Cloud
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Decisioni relative alla migrazione al servizio identità Experience Platform
+# Decisioni relative alla migrazione al servizio Experience Cloud per Experience Cloud
 
-Prima di distribuire il servizio Identità Experience Platform, è necessario comprendere in che modo il servizio influisce sul monitoraggio dei visitatori in più domini e sui potenziali problemi relativi alla raccolta di dati con metodi diversi o tramite file javascript.
+Prima di distribuire il servizio Experience Cloud Identity, è necessario comprendere in che modo il servizio influisce sul monitoraggio dei visitatori in più domini e sui potenziali problemi relativi alla raccolta di dati con metodi diversi o tramite file javascript.
 
 Le risposte alle domande incluse in questa sezione sono utili per stabilire eventuali passaggi di migrazione da eseguire.
 
@@ -42,7 +42,7 @@ Molti clienti possono effettuare la migrazione da un CNAME di raccolta dati dura
 
 ## Se hai un CNAME di raccolta dati, hai più domini?
 
-Se disponi di più domini che inviano dati alla *stessa suite di rapporti*, ti consigliamo di effettuare la raccolta dati usando un CNAME. In questo modo potrai eseguire il monitoraggio dei visitatori tra i domini. Se raccogli i dati in un solo dominio, l&#39;utilizzo di un CNAME per la raccolta dei dati non comporta vantaggi.
+Se disponi di più domini che inviano dati alla *stessa suite di rapporti*, ti consigliamo di effettuare la raccolta dati usando un CNAME. In questo modo potrai eseguire il monitoraggio dei visitatori tra i domini. Se raccogli i dati in un solo dominio, l'utilizzo di un CNAME per la raccolta dei dati non comporta vantaggi.
 
 <table id="table_D132BCA243E54657AEC930559343FDD3"> 
  <thead> 
@@ -71,7 +71,7 @@ Se disponi di più domini che inviano dati alla *stessa suite di rapporti*, ti c
 
 ## Hai più file JavaScript di Analytics o esegui il monitoraggio di applicazioni o video Flash?
 
-Se disponi di più file JavaScript di Analytics o applicazioni e video Flash che inviano dati alla *stessa suite di rapporti*, devi configurare un periodo di tolleranza in modo che i visitatori possano continuare ad essere identificati in base all&#39;ID Analytics durante il rollout del servizio [!DNL Experience Cloud] ID.
+Se disponi di più file JavaScript di Analytics o applicazioni e video Flash che inviano dati alla *stessa suite di rapporti*, devi configurare un periodo di tolleranza in modo che i visitatori possano continuare ad essere identificati in base all'ID Analytics durante il rollout del servizio [!DNL Experience Cloud] ID.
 
 <table id="table_8A4EA063AF4345B69BC98537E2E702BA"> 
  <thead> 
