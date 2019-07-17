@@ -2,16 +2,16 @@
 description: Questa implementazione permette ai clienti di usare il servizio ID su dispositivi che non possono accettare o lavorare con il nostro codice JavaScript o SDK. Tra questi dispositivi sono incluse consolle di gioco, smart TV o altri apparecchi dotati di Internet. Fare riferimento a questa sezione per sintassi, esempi di codice e definizioni.
 keywords: Servizio ID
 seo-description: Questa implementazione permette ai clienti di usare il servizio ID su dispositivi che non possono accettare o lavorare con il nostro codice JavaScript o SDK. Tra questi dispositivi sono incluse consolle di gioco, smart TV o altri apparecchi dotati di Internet. Fare riferimento a questa sezione per sintassi, esempi di codice e definizioni.
-seo-title: Integrazione diretta con il servizio identità Experience Platform
-title: Integrazione diretta con il servizio identità Experience Platform
+seo-title: Integrazione diretta con Experience Cloud Identity Service
+title: Integrazione diretta con Experience Cloud Identity Service
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Direct integration with the Experience Platform Identity Service {#direct-integration-with-the-experience-cloud-id-service}
+# Direct integration with the Experience Cloud Identity Service {#direct-integration-with-the-experience-cloud-id-service}
 
 Questa implementazione permette ai clienti di usare il servizio ID su dispositivi che non possono accettare o lavorare con il nostro codice JavaScript o SDK. Tra questi dispositivi sono incluse consolle di gioco, smart TV o altri apparecchi dotati di Internet. Fare riferimento a questa sezione per sintassi, esempi di codice e definizioni.
 
@@ -27,7 +27,7 @@ Il servizio ID supporta le chiamate HTTP e HTTPS. Usa HTTPS per trasmettere i da
 
 ## Richiesta di esempio {#section-26302b8851704888b6f8e6b2071bcdb0}
 
-L&#39;aspetto della tua richiesta potrebbe essere simile all&#39;esempio mostrato di seguito. Abbiamo accorciato le variabili lunghe.
+L'aspetto della tua richiesta potrebbe essere simile all'esempio mostrato di seguito. Abbiamo accorciato le variabili lunghe.
 
 ![](assets/directExample.png)
 
@@ -62,11 +62,11 @@ Il servizio ID restituisce i dati in un oggetto JSON come mostrato di seguito. L
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>L'ID visitatore Experience Cloud. Consulta <a href="../introduction/cookies.md" format="dita" scope="local"> Cookie e Servizio identità Experience Platform</a>. </p> </td> 
+   <td colname="col2"> <p>L'ID visitatore Experience Cloud. Consulta <a href="../introduction/cookies.md" format="dita" scope="local"> Cookie e Servizio identità Experience Cloud</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>L'ID organizzazione Experience Cloud. Per maggiori informazioni su come trovare questo ID vedere, <a href="../reference/requirements.md" format="dita" scope="local"> Requisiti per Experience Platform Identity Service</a>. </p> </td> 
+   <td colname="col2"> <p>L'ID organizzazione Experience Cloud. Per maggiori informazioni su come trovare questo ID vedere, <a href="../reference/requirements.md" format="dita" scope="local"> Requisiti per Experience Cloud Identity Service</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
