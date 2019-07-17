@@ -1,19 +1,19 @@
 ---
-description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Identità Experience Platform per 2018.
+description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud Identità per 2018.
 keywords: Servizio ID
-seo-description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Identità Experience Platform per 2018.
+seo-description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud Identità per 2018.
 seo-title: Note sulla versione 2018
 title: Note sulla versione 2018
 uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # Note sulla versione 2018 {#release-notes}
 
-Rilasci di funzioni, aggiornamenti o modifiche al servizio Identità Experience Platform per 2018.
+Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud Identità per 2018.
 
 ## Versione 3.3 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -69,7 +69,7 @@ Rilasci di funzioni, aggiornamenti o modifiche al servizio Identità Experience 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Picco non realistico nel conteggio di visitatori univoci </p> </td> 
-   <td colname="col2"> <p>Con il rilascio di Experience Platform Identity Service 3.1.0, è stato riscontrato un problema che causava un picco non realistico nel conteggio dei visitatori univoci quando questa versione era stata implementata. Questo comportamento si verifica solo nell'ultima versione di ECID (3.1.0) e solo se l'utente ha selezionato l'opzione “Consenti solo dal sito Web attuale” nelle impostazioni di privacy del browser Safari. La versione 3.1.2 corregge questo problema. </p> </td> 
+   <td colname="col2"> <p>Con il rilascio di Experience Cloud Identity Service 3.1.0, è stato riscontrato un problema che causava un picco non realistico nel conteggio dei visitatori univoci quando questa versione era stata implementata. Questo comportamento si verifica solo nell'ultima versione di ECID (3.1.0) e solo se l'utente ha selezionato l'opzione “Consenti solo dal sito Web attuale” nelle impostazioni di privacy del browser Safari. La versione 3.1.2 corregge questo problema. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -78,7 +78,7 @@ Rilasci di funzioni, aggiornamenti o modifiche al servizio Identità Experience 
 
 >[!NOTE]
 >
->È consigliabile passare il prima possibile dalla versione 3.1.0 alla versione più recente. Consultare la descrizione della versione 3.1.2. L&#39;ultimo bundle è disponibile in Adobe Experience Platform Launch, DTM e appmeasurement.
+>È consigliabile passare il prima possibile dalla versione 3.1.0 alla versione più recente. Consultare la descrizione della versione 3.1.2. L'ultimo bundle è disponibile in Adobe Experience Platform Launch, DTM e appmeasurement.
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
