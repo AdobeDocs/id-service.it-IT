@@ -6,14 +6,14 @@ seo-title: ID cliente e stati di autenticazione
 title: ID cliente e stati di autenticazione
 uuid: 643df363-224a-463e-a332-be59926b47e7
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # ID cliente e stati di autenticazione {#customer-ids-and-authentication-states}
 
-Oltre all&#39;ID visitatore di Experience Cloud, puoi associare altri ID cliente e uno stato di autenticazione a ciascun visitatore.
+Oltre all'ID visitatore di Experience Cloud, puoi associare altri ID cliente e uno stato di autenticazione a ciascun visitatore.
 
 ## Stati di autenticazione {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
@@ -23,7 +23,7 @@ Il `setCustomerIDs` metodo accetta più ID cliente per lo stesso visitatore. In 
 >
 >`setCustomerIDs` (sincronizzazione ID cliente) è richiesto per gli attributi dei clienti e le funzionalità dei servizi principali. La sincronizzazione degli ID cliente è un metodo di identificazione facoltativo per [!DNL Analytics]. [!DNL Target] richiede `Visitor.AuthState.AUTHENTICATED` per il funzionamento degli attributi cliente. Alcuni esempi sono disponibili in [Servizi principali - Come attivare le proprie soluzioni](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=core_services).
 
-Beginning with Experience Platform Identity Service v1.5+, `setCustomerIDs` includes the optional `AuthState` object. `AuthState` identifica i visitatori in base al loro stato di autenticazione (ad es. connessi o disconnessi). Lo stato di autenticazione deve essere impostato con uno stato indicato nella tabella. Lo stato di autenticazione viene restituito come numero intero.
+Beginning with Experience Cloud Identity Service v1.5+, `setCustomerIDs` includes the optional `AuthState` object. `AuthState` identifica i visitatori in base al loro stato di autenticazione (ad es. connessi o disconnessi). Lo stato di autenticazione deve essere impostato con uno stato indicato nella tabella. Lo stato di autenticazione viene restituito come numero intero.
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
@@ -52,7 +52,7 @@ Beginning with Experience Platform Identity Service v1.5+, `setCustomerIDs` incl
  </tbody> 
 </table>
 
-## Casi d&#39;uso per gli stati di autenticazione {#section-fe9560cc490943b29dac2c4fb6efd72c}
+## Casi d'uso per gli stati di autenticazione {#section-fe9560cc490943b29dac2c4fb6efd72c}
 
 È possibile assegnare gli stati di autenticazione agli utenti, a seconda delle azioni che questi eseguono sulle proprietà Web e del fatto che siano autenticati o meno. Nella tabella di seguito sono illustrati alcuni esempi:
 
@@ -89,10 +89,10 @@ Gli ID cliente possono includere combinazioni di ID e stati di identificazione, 
 
 >[!IMPORTANT]
 >
->* Gli ID sono sensibili all&#39;uso di maiuscole e minuscole.
+>* Gli ID sono sensibili all'uso di maiuscole e minuscole.
 >* Per gli ID, usa solo valori non codificati.
->* Gli ID dei clienti e gli stati di autenticazione non vengono memorizzati nel cookie ID visitatore. Devono essere impostati per ciascuna pagina o contesto dell&#39;applicazione.
->* Negli ID cliente non devono essere incluse informazioni identificative della persona. Invece di utilizzare informazioni di questo tipo per identificare un visitatore (ad esempio l&#39;indirizzo e-mail), consigliamo di memorizzare una versione con hash o codificata di queste informazioni.
+>* Gli ID dei clienti e gli stati di autenticazione non vengono memorizzati nel cookie ID visitatore. Devono essere impostati per ciascuna pagina o contesto dell'applicazione.
+>* Negli ID cliente non devono essere incluse informazioni identificative della persona. Invece di utilizzare informazioni di questo tipo per identificare un visitatore (ad esempio l'indirizzo e-mail), consigliamo di memorizzare una versione con hash o codificata di queste informazioni.
 >
 
 
@@ -211,7 +211,7 @@ Object customerIDs = visitor.getCustomerIDs();
  }
 ```
 
-## Supporto per l&#39;SDK {#section-861c6b3b1ba645dda133dccb22ec7bb0}
+## Supporto per l'SDK {#section-861c6b3b1ba645dda133dccb22ec7bb0}
 
 Il servizio [!DNL Experience Cloud] ID supporta gli ID dei clienti e gli stati di autenticazione nel nostro codice SDK per Android e iOS. Vedi le seguenti librerie di codice:
 
@@ -220,4 +220,4 @@ Il servizio [!DNL Experience Cloud] ID supporta gli ID dei clienti e gli stati d
 
 ## Avviso per i clienti Analytics e Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-Se trasferisci ID dichiarati ad [!DNL Audience Manager], l&#39;oggetto `userid` deve corrispondere al codice di integrazione associato a un&#39;origine dati. For more information, see the [!DNL Visitor ID Service] section in the [Configure Merge Rules Code](https://marketing.adobe.com/resources/help/en_US/aam/?f=merge-rules-configure-code.html) documentation.
+Se trasferisci ID dichiarati ad [!DNL Audience Manager], l'oggetto `userid` deve corrispondere al codice di integrazione associato a un'origine dati. For more information, see the [!DNL Visitor ID Service] section in the [Configure Merge Rules Code](https://marketing.adobe.com/resources/help/en_US/aam/?f=merge-rules-configure-code.html) documentation.
