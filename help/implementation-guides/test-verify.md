@@ -2,16 +2,16 @@
 description: Istruzioni, strumenti e procedure utili per determinare se il servizio ID funziona correttamente. Questi test sono applicabili al servizio ID in generale e per diverse combinazioni del servizio ID e della soluzione Experience Cloud.
 keywords: Servizio ID
 seo-description: Istruzioni, strumenti e procedure utili per determinare se il servizio ID funziona correttamente. Questi test sono applicabili al servizio ID in generale e per diverse combinazioni del servizio ID e della soluzione Experience Cloud.
-seo-title: Verifica e verifica del servizio Identità Experience Platform
-title: Verifica e verifica del servizio Identità Experience Platform
+seo-title: Verificare e verificare il servizio identità Experience Cloud
+title: Verificare e verificare il servizio identità Experience Cloud
 uuid: 442de9c3-c265-4412-89bd-aeaa286ddad6
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Test and verify the Experience Platform Identity Service{#test-and-verify-the-experience-cloud-id-service}
+# Test and verify the Experience Cloud Identity Service{#test-and-verify-the-experience-cloud-id-service}
 
 Istruzioni, strumenti e procedure utili per determinare se il servizio ID funziona correttamente. Questi test sono applicabili al servizio ID in generale e per diverse combinazioni del servizio ID e della soluzione Experience Cloud.
 
@@ -31,7 +31,7 @@ Utilizzando [Adobe Debugger](https://marketing.adobe.com/resources/help/en_US/sc
 
 ## Test con Adobe Debugger {#section-861365abc24b498e925b3837ea81d469}
 
-L&#39;integrazione del servizio è configurata correttamente se vedi un identificatore [!DNL Experience Cloud ID] (MID) nella risposta di [!DNL Adobe] Debugger. See [Cookies and the Experience Platform Identity Service](../introduction/cookies.md) for more information about the MID.
+L'integrazione del servizio è configurata correttamente se vedi un identificatore [!DNL Experience Cloud ID] (MID) nella risposta di [!DNL Adobe] Debugger. See [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md) for more information about the MID.
 
 To verify the status of the ID service with the [!DNL Adobe] [debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html):
 
@@ -42,24 +42,24 @@ To verify the status of the ID service with the [!DNL Adobe] [debugger](https://
 
 ## I risultati di Adobe Debugger {#section-bd2caa6643d54d41a476d747b41e7e25}
 
-L&#39;identificatore MID viene memorizzato in una coppia chiave-valore con sintassi: `MID= *`Experience Cloud ID`*`. Queste informazioni sono presentate nel modo seguente.
+L'identificatore MID viene memorizzato in una coppia chiave-valore con sintassi: `MID= *`Experience Cloud ID`*`. Queste informazioni sono presentate nel modo seguente.
 
 **Operazione riuscita**
 
-Il servizio ID è stato implementato correttamente se la risposta è simile all&#39;esempio seguente:
+Il servizio ID è stato implementato correttamente se la risposta è simile all'esempio seguente:
 
 ```
 mid=20265673158980419722735089753036633573
 ```
 
-Se sei un cliente [!DNL Analytics], oltre all&#39;identificatore MID potresti vedere un identificatore [!DNL Analytics] ID (AID). Ciò accade nelle seguenti situazioni:
+Se sei un cliente [!DNL Analytics], oltre all'identificatore MID potresti vedere un identificatore [!DNL Analytics] ID (AID). Ciò accade nelle seguenti situazioni:
 
 * Per alcuni visitatori di lunga data.
 * Se hai impostato un periodo di tolleranza.
 
 **Errore**
 
-Contatta l&#39;[assistenza clienti](https://helpx.adobe.com/marketing-cloud/contact-support.html) se il debugger:
+Contatta l'[assistenza clienti](https://helpx.adobe.com/marketing-cloud/contact-support.html) se il debugger:
 
 * non restituisce un valore MID;
 * restituisce un messaggio di errore che indica che non è stato effettuato il provisioning del tuo ID partner.
@@ -79,19 +79,19 @@ Questa sezione descrive quali informazioni cercare e dove cercarle quando usi Ch
 
 **Richieste corrette per il servizio ID in Charles**
 
-Il codice del servizio ID funziona correttamente se la funzione `Visitor.getInstance` effettua una chiamata JavaScript a `dpm.demdex.net`. Una richiesta corretta include il tuo [ID organizzazione](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). L&#39;ID organizzazione viene passato sotto forma di coppia chiave-valore con sintassi: `d_orgid= *`ID organizzazione`*`. Cerca il `dpm.demdex.net` e la chiamata JavaScript nella scheda [!DNL Structure]. Cerca l&#39;ID organizzazione nella scheda [!DNL Request].
+Il codice del servizio ID funziona correttamente se la funzione `Visitor.getInstance` effettua una chiamata JavaScript a `dpm.demdex.net`. Una richiesta corretta include il tuo [ID organizzazione](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). L'ID organizzazione viene passato sotto forma di coppia chiave-valore con sintassi: `d_orgid= *`ID organizzazione`*`. Cerca il `dpm.demdex.net` e la chiamata JavaScript nella scheda [!DNL Structure]. Cerca l'ID organizzazione nella scheda [!DNL Request].
 
 ![](assets/charles_request.png)
 
 **Risposte corrette per il servizio ID in Charles**
 
-Il provisioning del tuo account per il servizio ID è corretto se la risposta dai [Data Collection Servers](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html) (DCS) restituisce un valore MID. L&#39;identificatore MID viene restituito come una coppia chiave-valore con sintassi: `d_mid: *`Experience Cloud ID visitatore`*`. Cerca l&#39;identificatore MID nella scheda [!DNL Response], come illustrato di seguito.
+Il provisioning del tuo account per il servizio ID è corretto se la risposta dai [Data Collection Servers](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html) (DCS) restituisce un valore MID. L'identificatore MID viene restituito come una coppia chiave-valore con sintassi: `d_mid: *`Experience Cloud ID visitatore`*`. Cerca l'identificatore MID nella scheda [!DNL Response], come illustrato di seguito.
 
 ![](assets/charles_response_success.png)
 
 **Risposte errate per il servizio ID in Charles**
 
-Il provisioning del tuo account per il servizio ID non è corretto se la risposta DCS non contiene l&#39;identificatore MID. Una risposta errata restituisce un codice di errore e un messaggio nella scheda [!DNL Response], come illustrato di seguito. Se ricevi questo messaggio di errore nella risposta DCS, contatta l&#39;assistenza clienti.
+Il provisioning del tuo account per il servizio ID non è corretto se la risposta DCS non contiene l'identificatore MID. Una risposta errata restituisce un codice di errore e un messaggio nella scheda [!DNL Response], come illustrato di seguito. Se ricevi questo messaggio di errore nella risposta DCS, contatta l'assistenza clienti.
 
 ![](assets/charles_response_unsuccessful.png)
 
