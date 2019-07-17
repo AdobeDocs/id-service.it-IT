@@ -1,19 +1,19 @@
 ---
-description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Identità Experience Platform per 2017.
+description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud Identità per 2017.
 keywords: Servizio ID
-seo-description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Identità Experience Platform per 2017.
+seo-description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud Identità per 2017.
 seo-title: Note sulla versione 2017
 title: Note sulla versione 2017
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # Note sulla versione 2017 {#release-notes}
 
-Rilasci di funzioni, aggiornamenti o modifiche al servizio Identità Experience Platform per 2017.
+Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud Identità per 2017.
 
 Queste modifiche vengono anche riportate nelle [note sulla versione di Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/). Per le note sulle versioni del servizio ID più datate, consulta le [note sulle versioni precedenti](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html) o i link in fondo a questa pagina.
 
@@ -50,8 +50,8 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 **Correzioni di bug e altre modifiche**
 
 * È stato corretto un bug relativo a Chrome a causa del quale il servizio ID generava un errore quando si faceva clic sul pulsante Indietro in tale browser.
-* Il servizio ID ora avvia di nuovo la sincronizzazione degli ID quando l&#39;ID regione cambia nella risposta della chiamata dell&#39;evento.
-* Alla documentazione è stata aggiunta la sezione  [Informativa sulla sicurezza dei contenuti e Servizio identità Experience Platform](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), che spiega come inserire nella whitelist le chiamate ai domini Adobe utilizzati dal servizio ID.
+* Il servizio ID ora avvia di nuovo la sincronizzazione degli ID quando l'ID regione cambia nella risposta della chiamata dell'evento.
+* Alla documentazione è stata aggiunta la sezione  [Informativa sulla sicurezza dei contenuti e Servizio identità Experience Cloud](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), che spiega come inserire nella whitelist le chiamate ai domini Adobe utilizzati dal servizio ID.
 
 ## Versione 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
@@ -102,7 +102,7 @@ Luglio 2017
 **Correzioni di bug e altre modifiche**
 
 * È stato corretto un bug in VisitorAPI.js v2.2 a causa del quale il servizio ID e Target non potevano funzionare insieme in Internet Explorer.
-* È stato rivisto il codice per migliorare il modo in cui il servizio ID invia i dati all&#39;iFrame di pubblicazione di destinazione, per ridurre l&#39;utilizzo della CPU.
+* È stato rivisto il codice per migliorare il modo in cui il servizio ID invia i dati all'iFrame di pubblicazione di destinazione, per ridurre l'utilizzo della CPU.
 
 ## Versione 2.2 {#section-b7dee2495c29470e9b3a3132ec1fd951}
 
@@ -188,7 +188,7 @@ Data di rilascio: febbraio 2017
 
 **Correzioni**
 
-È stato corretto un bug a causa del quale il servizio ID effettuava chiamate ridondanti al server per richiedere un ID invece di utilizzare l&#39;ID registrato nel cookie AMCV. (MCID-296)
+È stato corretto un bug a causa del quale il servizio ID effettuava chiamate ridondanti al server per richiedere un ID invece di utilizzare l'ID registrato nel cookie AMCV. (MCID-296)
 
 **Nuova documentazione**
 
