@@ -1,21 +1,21 @@
 ---
-description: Flag booleano facoltativo che controlla in che modo il browser richiede le risorse dal servizio identità Experience Platform.
+description: Flag booleano facoltativo che controlla in che modo il browser richiede le risorse dal servizio Experience Cloud Identity.
 keywords: Servizio ID
-seo-description: Flag booleano facoltativo che controlla in che modo il browser richiede le risorse dal servizio identità Experience Platform.
+seo-description: Flag booleano facoltativo che controlla in che modo il browser richiede le risorse dal servizio Experience Cloud Identity.
 seo-title: useCORSOnly
 title: useCORSOnly
 uuid: 607dc035-dffc-4f4d-be51-08ef6c0a8fad
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # useCORSOnly{#usecorsonly}
 
-Flag booleano facoltativo che controlla in che modo il browser richiede le risorse dal servizio identità Experience Platform.
+Flag booleano facoltativo che controlla in che modo il browser richiede le risorse dal servizio Experience Cloud Identity.
 
-**Sintassi:**`useCORSOnly: true|false` (l&#39;impostazione predefinita è `false`).
+**Sintassi:**`useCORSOnly: true|false` (l'impostazione predefinita è `false`).
 
 **Panoramica**
 
@@ -23,7 +23,7 @@ Se è impostato su `false`, il browser esegue verifiche sulle risorse con CORS o
 
 >[!IMPORTANT]
 >
->`Set useCORSOnly: true` in caso di requisiti di sicurezza rigidi. Abilita questa modalità solo se sei certo che tutti i tuoi visitatori usano browser che supportano CORS. L&#39;esperienza utente non risente dell&#39;uso di browser che non supportano CORS. Tuttavia, i browser senza supporto CORS non possono richiedere risorse o scambiare dati con [!DNL Adobe Experience Cloud].
+>`Set useCORSOnly: true` in caso di requisiti di sicurezza rigidi. Abilita questa modalità solo se sei certo che tutti i tuoi visitatori usano browser che supportano CORS. L'esperienza utente non risente dell'uso di browser che non supportano CORS. Tuttavia, i browser senza supporto CORS non possono richiedere risorse o scambiare dati con [!DNL Adobe Experience Cloud].
 
 **Esempio di codice**
 
