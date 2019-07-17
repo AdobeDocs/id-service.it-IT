@@ -1,19 +1,19 @@
 ---
-description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Identità Experience Platform per 2016.
+description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud Identità per 2016.
 keywords: Servizio ID
-seo-description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Identità Experience Platform per 2016.
+seo-description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud Identità per 2016.
 seo-title: Note sulla versione 2016
 title: Note sulla versione 2016
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # Note sulla versione 2016 {#release-notes}
 
-Rilasci di funzioni, aggiornamenti o modifiche al servizio Identità Experience Platform per 2016.
+Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud Identità per 2016.
 
 Queste modifiche vengono anche riportate nelle [note sulla versione di Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/). Per gli annunci precedenti, vedi le [note sulle versioni precedenti](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html).[!DNL Experience Cloud]
 
@@ -24,7 +24,7 @@ Novembre 2016
 >[!IMPORTANT]
 >
 >* La versione 1.10 richiede [!DNL AppMeasurement] 1.8.0.
->* Utilizzando la libreria del servizio identità Experience Platform 2.0.0 +, la sincronizzazione degli ID verrà avviata per Adobe Media Optimizer per impostazione predefinita. Consulta [Informazioni sulla sincronizzazione degli ID e delle percentuali di corrispondenza](/help/introduction/match-rates.md).
+>* Utilizzando la libreria 2.0.0 + di Experience Cloud Identity, la sincronizzazione degli ID verrà avviata per Adobe Media Optimizer per impostazione predefinita. Consulta [Informazioni sulla sincronizzazione degli ID e delle percentuali di corrispondenza](/help/introduction/match-rates.md).
 
 
 **Correzioni e miglioramenti**
@@ -32,14 +32,14 @@ Novembre 2016
 * Sono state aggiunte istruzioni su come implementare il servizio ID in un ambiente lato server.
 * È stata aggiunta la funzione booleana `Visitor.overwriteCrossDomainMCIDAndAID`, che consente di sovrascrivere gli ID Experience Cloud e Analytics su altri domini di cui sei titolare. Consulta [Sovrascrivi ID visitatore](../library/function-vars/overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde).
 
-* È stata aggiunta la marca temporale `TS = UTC` come proprietà della funzione `visitor.appendVisitorIDsTo`. Il servizio ID utilizza la marca temporale per determinare se devono essere utilizzati gli ID nell&#39;URL di reindirizzamento in base a un intervallo di durata di 5 minuti. Consultare la sezione relativa alla [funzione di aggiunta dell’ID del visitatore](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)
+* È stata aggiunta la marca temporale `TS = UTC` come proprietà della funzione `visitor.appendVisitorIDsTo`. Il servizio ID utilizza la marca temporale per determinare se devono essere utilizzati gli ID nell'URL di reindirizzamento in base a un intervallo di durata di 5 minuti. Consultare la sezione relativa alla [funzione di aggiunta dell’ID del visitatore](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)
 
 * È stata aggiunta la nuova funzione `Visitor.getLocationHint,`, che restituisce un ID regionale. Consulta [Ottieni ID di regione (hint posizione)](../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c).
 
 * Sono state aggiunte le due funzioni `idSyncByURL` e `idSyncByDataSource`, che permettono di implementare manualmente una sincronizzazione ID nel Destination Publishing iFrame. Consulta [Sincronizzazione ID tramite URL o sorgente dati](../library/get-set/idsync.md#reference-b01b88c083434cf8abbeabd3c6956c48).
 
 * È stato corretto un bug che bloccava la chiamata di tracciamento AppMeasurement se `disableThirdPartyCalls:true`.
-* È stato corretto un bug che impediva al servizio ID di passare l&#39;identificatore Experience Cloud ID (MID) tra domini differenti.
+* È stato corretto un bug che impediva al servizio ID di passare l'identificatore Experience Cloud ID (MID) tra domini differenti.
 
 ## Versione 1.9.0 {#section-04e1b4d4b10d40468f2116b8119998e7}
 
@@ -69,15 +69,15 @@ Agosto 2016
 
 **Correzioni e miglioramenti**
 
-* Aggiunta di `idSyncAttachIframeOnWindowLoad` come flag opzionale booleano impostabile nella funzione `Visitor.getInstance`. Quando `idSyncAttachIframeOnWindowLoad= true`, il servizio ID carica l&#39;iFrame di sincronizzazione ID al caricamento della finestra. Per impostazione predefinita, il servizio ID carica l&#39;iFrame con la massima velocità possibile. Questo flag *sostituisce* `idSyncAttachIframeASAP`, che è diventato obsoleto. Consulta [Variabili della funzione Visitor.getInstance](../library/function-vars/function-vars.md).
+* Aggiunta di `idSyncAttachIframeOnWindowLoad` come flag opzionale booleano impostabile nella funzione `Visitor.getInstance`. Quando `idSyncAttachIframeOnWindowLoad= true`, il servizio ID carica l'iFrame di sincronizzazione ID al caricamento della finestra. Per impostazione predefinita, il servizio ID carica l'iFrame con la massima velocità possibile. Questo flag *sostituisce* `idSyncAttachIframeASAP`, che è diventato obsoleto. Consulta [Variabili della funzione Visitor.getInstance](../library/function-vars/function-vars.md).
 
-* È stata aggiunta la possibilità di tenere traccia degli [!DNL Experience Cloud] ID attraverso domini diversi, app native e app ibride per transizioni Web. Consultare la sezione relativa alla [funzione di aggiunta dell&#39;ID helper del visitatore](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)
+* È stata aggiunta la possibilità di tenere traccia degli [!DNL Experience Cloud] ID attraverso domini diversi, app native e app ibride per transizioni Web. Consultare la sezione relativa alla [funzione di aggiunta dell'ID helper del visitatore](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)
 
-* Sono state aggiunte delle funzioni al codice visitorAPI.js che determinano se il servizio ID ha generato l&#39;ID [!DNL Experience Cloud] del visitatore lato client o lato server, oppure se la chiamata per l&#39;ID è scaduta per timeout. Consultate [Funzioni di tracciamento del timeout](../library/get-set/timeout-functions.md#reference-912bae0f116540df8c5dc1c008656c23) e [Tracciamento della generazione degli ID visitatori lato client](../library/get-set/client-side-id.md#reference-8244dc6d832c4bbaaa97528096bcc2a6).
+* Sono state aggiunte delle funzioni al codice visitorAPI.js che determinano se il servizio ID ha generato l'ID [!DNL Experience Cloud] del visitatore lato client o lato server, oppure se la chiamata per l'ID è scaduta per timeout. Consultate [Funzioni di tracciamento del timeout](../library/get-set/timeout-functions.md#reference-912bae0f116540df8c5dc1c008656c23) e [Tracciamento della generazione degli ID visitatori lato client](../library/get-set/client-side-id.md#reference-8244dc6d832c4bbaaa97528096bcc2a6).
 
 **Documentazione nuova e rivista**
 
-Revised: [Requirements for the Experience Platform Identity Service](../reference/requirements.md)
+Revised: [Requirements for the Experience Cloud Identity Service](../reference/requirements.md)
 
 **Problemi noti**
 
@@ -89,7 +89,7 @@ Luglio 2016
 
 >[!IMPORTANT]
 >
->La versione 1.6.0 del [!DNL Experience Cloud]servizio ID *richiede* AppMeasurement per la versione 1.6.2. di JavaScript. Se effettui l&#39;aggiornamento al servizio ID versione 1.6.0, assicurati di usare la versione corretta del codice AppMeasurement.
+>La versione 1.6.0 del [!DNL Experience Cloud]servizio ID *richiede* AppMeasurement per la versione 1.6.2. di JavaScript. Se effettui l'aggiornamento al servizio ID versione 1.6.0, assicurati di usare la versione corretta del codice AppMeasurement.
 
 <table id="table_5472AAFA0DD2495DB8D92DEBE44A07A9"> 
  <thead> 
@@ -101,9 +101,9 @@ Luglio 2016
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Condivisione risorse tra le origini (CORS) </p> </td> 
-   <td colname="col2"> <p>CORS consente ai browser di richiedere risorse da un dominio diverso da quello corrente. Il servizio Experience Platform Identity Service supporta gli standard CORS per abilitare le richieste di risorse lato client. Il servizio ID ripristina le richieste JSONP nei browser che non supportano CORS. </p> <p>Vedi: </p> 
+   <td colname="col2"> <p>CORS consente ai browser di richiedere risorse da un dominio diverso da quello corrente. Experience Cloud Identity Service supporta gli standard CORS per abilitare le richieste di risorse lato client. Il servizio ID ripristina le richieste JSONP nei browser che non supportano CORS. </p> <p>Vedi: </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
-     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Supporto CORS nel servizio Identità Experience Platform </a> </li> 
+     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Supporto CORS nel servizio identità Experience Cloud </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -113,8 +113,8 @@ Luglio 2016
 
 * È stato aggiunto il parametro `d_fieldgroup` alle chiamate per la sincronizzazione ID verso `dpm.demdex.net`. Questo nuovo parametro è utilizzato per risolvere i problemi interni e per il debug.
 
-* È stato aggiunto un attributo titolo all&#39;iFrame del servizio ID. Un titolo nell&#39;iFrame consente alle utilità per la lettura dello schermo di fornire informazioni sulla pagina agli utenti che necessitano di assistenza per interagire con i contenuti online. L’attributo titolo dell’iFrame è impostato su `Adobe ID Syncing iFrame`.
-* È stato aggiunto `idSyncAttachIframeASAP: true` come flag opzionale impostabile nella funzione `Visitor.getInstance`. Quando è `true`, il servizio ID carica l&#39;iFrame di sincronizzazione ID il più rapidamente possibile. In questo modo è possibile aumentare le corrispondenze della sincronizzazione ID. Per impostazione predefinita, il servizio ID carica l&#39;iFrame durante il caricamento della finestra. Consulta [Variabili della funzione Visitor.getInstance](../library/function-vars/function-vars.md).
+* È stato aggiunto un attributo titolo all'iFrame del servizio ID. Un titolo nell'iFrame consente alle utilità per la lettura dello schermo di fornire informazioni sulla pagina agli utenti che necessitano di assistenza per interagire con i contenuti online. L’attributo titolo dell’iFrame è impostato su `Adobe ID Syncing iFrame`.
+* È stato aggiunto `idSyncAttachIframeASAP: true` come flag opzionale impostabile nella funzione `Visitor.getInstance`. Quando è `true`, il servizio ID carica l'iFrame di sincronizzazione ID il più rapidamente possibile. In questo modo è possibile aumentare le corrispondenze della sincronizzazione ID. Per impostazione predefinita, il servizio ID carica l'iFrame durante il caricamento della finestra. Consulta [Variabili della funzione Visitor.getInstance](../library/function-vars/function-vars.md).
 
 * È stato corretto un problema relativo a una funzione di callback che bloccava AppMeasurement in un ciclo infinito.
 * Il valore predefinito `loadTimeout` è stato modificato da 500 a 30.000 millisecondi. Consulta [Variabili della funzione Visitor.getInstance](../library/function-vars/function-vars.md).
@@ -123,13 +123,13 @@ Luglio 2016
 
 **Novità**
 
-* [Implementazione del servizio identità Experience Platform per Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
-* [Implementazione del servizio Identità Experience Platform per Analytics, Audience Manager e Target](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
+* [Implementazione del servizio identità Experience Cloud per Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
+* [Implementazione del servizio identità Experience Cloud per Analytics, Audience Manager e Target](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
 
 **Elementi revisionati**
 
-* [Requisiti per il servizio identità della piattaforma Experience Platform](../reference/requirements.md)
-* [Test e verifica del servizio identità Experience Platform](../implementation-guides/test-verify.md)
+* [Requisiti per il servizio identità Experience Cloud](../reference/requirements.md)
+* [Test e verifica del servizio identità Experience Cloud](../implementation-guides/test-verify.md)
 
 ## Versione 1.5.7 {#section-735b4989a5744a42aeb2d97602dbda62}
 
@@ -156,7 +156,7 @@ Giugno 2016
 
 **Correzioni**
 
-L&#39;API visitatore non forza più una chiamata di risincronizzazione supplementare con Audience Manager quando non è presente alcun ID visitatore Analytics precedente.
+L'API visitatore non forza più una chiamata di risincronizzazione supplementare con Audience Manager quando non è presente alcun ID visitatore Analytics precedente.
 
 ## Versione 1.5.x {#section-a62ae48275324058b57edf66ee5a579f}
 
@@ -164,9 +164,9 @@ Maggio 2016
 
 **Aggiornamenti alla documentazione**
 
-* [Requisiti dell&#39;SDK per Android e iOS](../reference/requirements.md#section-73b2446fba8e463888642c7d7dfd94f1)
-* [Workbench dati e Servizio identità Experience Platform](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
-* [Test e verifica del servizio identità Experience Platform](../implementation-guides/test-verify.md)
+* [Requisiti dell'SDK per Android e iOS](../reference/requirements.md#section-73b2446fba8e463888642c7d7dfd94f1)
+* [Workbench dati e Servizio identità Experience Cloud](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
+* [Test e verifica del servizio identità Experience Cloud](../implementation-guides/test-verify.md)
 
 ## Versione 1.5.x {#section-0cfeef085cff4cbc8dff6cbc6fc32920}
 
@@ -174,7 +174,7 @@ Aprile 2016
 
 **Aggiornamenti alla documentazione**
 
-[Implementazione del servizio identità Experience Platform per Target](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
+[Implementazione del servizio identità Experience Cloud per Target](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
 
 ## Versione 1.5.4 {#section-1a44ba147fb3440ea7dec551faee3528}
 
@@ -201,9 +201,9 @@ Marzo 2016
 
 **Aggiornamenti alla documentazione**
 
-* [Implementazione del servizio Identità Experience Platform per Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd) : Nuova procedura che descrive la modalità [!DNL Analytics]con cui impostare il servizio ID.
+* [Implementazione del servizio identità Experience Cloud per Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd) : Nuova procedura che descrive la modalità [!DNL Analytics]con cui impostare il servizio ID.
 
-* [Decisioni relative alla migrazione al servizio identità Experience Platform](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257) : Testo rivisto per chiarezza. L&#39;utilizzo di un solo dominio consente di effettuare la migrazione da un CNAME di raccolta dati, se non desideri gestirlo più. Se il CNAME funziona correttamente, non è necessario cambiarlo.
+* [Decisioni relative alla migrazione al servizio Experience](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257) Cloud: Testo rivisto per chiarezza. L'utilizzo di un solo dominio consente di effettuare la migrazione da un CNAME di raccolta dati, se non desideri gestirlo più. Se il CNAME funziona correttamente, non è necessario cambiarlo.
 
 ## Versione 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 
