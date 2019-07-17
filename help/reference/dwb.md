@@ -2,26 +2,26 @@
 description: Per integrare il campo Experience Cloud ID in Data Workbench, procedi come indicato di seguito. Questo processo consente di usare l'Experience Cloud ID costante nel feed di dati per consentire un'integrazione migliore con gli altri prodotti Adobe Experience Cloud e migliorare il monitoraggio dei visitatori.
 keywords: Servizio ID
 seo-description: Per integrare il campo Experience Cloud ID in Data Workbench, procedi come indicato di seguito. Questo processo consente di usare l'Experience Cloud ID costante nel feed di dati per consentire un'integrazione migliore con gli altri prodotti Adobe Experience Cloud e migliorare il monitoraggio dei visitatori.
-seo-title: Workbench dati e Servizio identità Experience Platform
-title: Workbench dati e Servizio identità Experience Platform
+seo-title: Workbench dati e Servizio identità Experience Cloud
+title: Workbench dati e Servizio identità Experience Cloud
 uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Data Workbench and the Experience Platform Identity Service {#data-workbench-and-the-experience-cloud-id-service}
+# Data Workbench and the Experience Cloud Identity Service {#data-workbench-and-the-experience-cloud-id-service}
 
-Per integrare il campo Experience Cloud ID in Data Workbench, procedi come indicato di seguito. Questo processo consente di usare l&#39;Experience Cloud ID costante nel feed di dati per consentire un&#39;integrazione migliore con gli altri prodotti Adobe Experience Cloud e migliorare il monitoraggio dei visitatori.
+Per integrare il campo Experience Cloud ID in Data Workbench, procedi come indicato di seguito. Questo processo consente di usare l'Experience Cloud ID costante nel feed di dati per consentire un'integrazione migliore con gli altri prodotti Adobe Experience Cloud e migliorare il monitoraggio dei visitatori.
 
 Per aggiornare [Data Workbench](https://marketing.adobe.com/resources/help/en_US/insight/) in modo da usare il servizio ID:
 
 1. Individua il file di configurazione del [gruppo decodificatore](https://marketing.adobe.com/resources/help/en_US/insight/dataset/c_text_file_dec_groups.html) corrente.
 
    In genere il [!DNL Decoder Group] trova in un [!DNL Profile Manager] del percorso: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Copia il formato corrente del decodificatore dal file di configurazione.
-1. Incolla il formato del decodificatore al di sotto dell&#39;originale.
-1. Apri il formato del decodificatore e aggiungi i seguenti nuovi campi al termine dell&#39;elenco:
+1. Incolla il formato del decodificatore al di sotto dell'originale.
+1. Apri il formato del decodificatore e aggiungi i seguenti nuovi campi al termine dell'elenco:
 
    * `x-mcvisid`
    * `x-tnt-action`
