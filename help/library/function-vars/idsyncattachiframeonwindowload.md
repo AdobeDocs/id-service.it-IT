@@ -1,23 +1,23 @@
 ---
-description: Flag booleano facoltativo che controlla il modo in cui Experience Platform Identity Service carica l'iframe di sincronizzazione ID.
+description: Flag booleano facoltativo che controlla il modo in cui Experience Cloud Identity Service carica l'iframe di sincronizzazione ID.
 keywords: Servizio ID
-seo-description: Flag booleano facoltativo che controlla il modo in cui Experience Platform Identity Service carica l'iframe di sincronizzazione ID.
+seo-description: Flag booleano facoltativo che controlla il modo in cui Experience Cloud Identity Service carica l'iframe di sincronizzazione ID.
 seo-title: idSyncAttachIframeOnWindowLoad
 title: idSyncAttachIframeOnWindowLoad
 uuid: aa2c2fa4-2cab-4e08-8d35-729a6c3e459a
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # idSyncAttachIframeOnWindowLoad{#idsyncattachiframeonwindowload}
 
-Flag booleano facoltativo che controlla il modo in cui Experience Platform Identity Service carica l&#39;iframe di sincronizzazione ID.
+Flag booleano facoltativo che controlla il modo in cui Experience Cloud Identity Service carica l'iframe di sincronizzazione ID.
 
-**Sintassi:** ` `idSyncAttachIframeOnWindowLoad= true|false`` (l&#39;impostazione predefinita è `false`).
+**Sintassi:** ` `idSyncAttachIframeOnWindowLoad= true|false`` (l'impostazione predefinita è `false`).
 
-Quando `idSyncAttachIframeOnWindowLoad: true`, il servizio ID carica l&#39;iFrame di sincronizzazione ID al caricamento della finestra. Per impostazione predefinita, il servizio ID carica l&#39;iFrame di sincronizzazione con la massima velocità possibile, ma non al caricamento della finestra.
+Quando `idSyncAttachIframeOnWindowLoad: true`, il servizio ID carica l'iFrame di sincronizzazione ID al caricamento della finestra. Per impostazione predefinita, il servizio ID carica l'iFrame di sincronizzazione con la massima velocità possibile, ma non al caricamento della finestra.
 
 **Esempio di codice**
 
