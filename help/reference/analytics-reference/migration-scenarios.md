@@ -2,16 +2,16 @@
 description: Comprende esempi di configurazione del server e i passaggi necessari per la migrazione.
 keywords: Servizio ID
 seo-description: Comprende esempi di configurazione del server e i passaggi necessari per la migrazione.
-seo-title: Scenari di migrazione al servizio Experience Platform Identity
-title: Scenari di migrazione al servizio Experience Platform Identity
+seo-title: Scenari di migrazione al servizio Experience Cloud
+title: Scenari di migrazione al servizio Experience Cloud
 uuid: 9e229045-6508-48c4-ae39-9537b4941853
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Experience Platform Identity Service Migration Scenarios {#experience-cloud-id-service-migration-scenarios}
+# Experience Cloud Identity Service Migration Scenarios {#experience-cloud-id-service-migration-scenarios}
 
 Comprende esempi di configurazione del server e i passaggi necessari per la migrazione.
 
@@ -31,12 +31,12 @@ Per prima cosa, il cliente deve essere abilitato per Experience Cloud (vedi [req
 * **Experience Cloud abilitato**: sì
 * **Proprietà Web**: altroesempio.com
 * **Server di raccolta dati**: altroesempio.112.2o7.net
-* **File JavaScript di Analytics**: più file JavaScript. Un file per il sito principale e un altro file per la sezione dell&#39;assistenza, gestita in un CMS separato.
+* **File JavaScript di Analytics**: più file JavaScript. Un file per il sito principale e un altro file per la sezione dell'assistenza, gestita in un CMS separato.
 * **Altri metodi di raccolta dati**: tag immagine hardcoded in una sezione del sito
 
 Per prima cosa, il cliente deve trovare il proprio ID organizzazione di Adobe Experience Cloud (vedi [requisiti](../../reference/requirements.md)). In seguito, deve configurare un periodo di tolleranza per la migrazione perché utilizza più file JavaScript. Il cliente deve anche configurare la migrazione dei visitatori e quindi effettuare la migrazione da `*.2o7.net` a `*.sc.omtrdc.net`.
 
-Quando il cliente effettua l&#39;aggiornamento al codice JavaScript di Analytics più recente per prepararsi ad eseguire il rollout del servizio [!DNL Experience Cloud] ID, aggiorna anche tutti i tag immagine hardcoded per l&#39;uso di JavaScript.
+Quando il cliente effettua l'aggiornamento al codice JavaScript di Analytics più recente per prepararsi ad eseguire il rollout del servizio [!DNL Experience Cloud] ID, aggiorna anche tutti i tag immagine hardcoded per l'uso di JavaScript.
 
 ## Più proprietà Web, più file JavaScript e un lettore video basato su Flash {#section-34647995ff3740b999fdee22d885e515}
 
@@ -49,4 +49,4 @@ Quando il cliente effettua l&#39;aggiornamento al codice JavaScript di Analytics
 
 Per prima cosa, il cliente deve trovare il proprio ID organizzazione di Adobe Experience Cloud (vedi [requisiti](../../reference/requirements.md)). In seguito, deve configurare un periodo di tolleranza per la migrazione perché utilizza più file JavaScript. Il cliente monitora i visitatori tra il dominio principale e i sottodomini, pertanto continua a usare i propri CNAME di raccolta dati con il servizio ID visitatore.
 
-Quando il cliente effettua l&#39;aggiornamento al codice JavaScript di Analytics più recente per prepararsi ad eseguire il rollout del servizio [!DNL Experience Cloud] ID, aggiorna anche il lettore video basato su Flash alla versione più recente di AppMeasurement per Flash.
+Quando il cliente effettua l'aggiornamento al codice JavaScript di Analytics più recente per prepararsi ad eseguire il rollout del servizio [!DNL Experience Cloud] ID, aggiorna anche il lettore video basato su Flash alla versione più recente di AppMeasurement per Flash.
