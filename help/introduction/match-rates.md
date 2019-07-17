@@ -1,31 +1,31 @@
 ---
-description: Panoramica dei processi di sincronizzazione ID e delle percentuali di corrispondenza nel servizio Identità Experience Platform, inclusi Adobe Media Optimizer e il servizio ID.
+description: Panoramica dei processi di sincronizzazione ID e delle percentuali di corrispondenza in Experience Cloud Identity Service, inclusi Adobe Media Optimizer e il servizio ID.
 keywords: Servizio ID
-seo-description: Panoramica dei processi di sincronizzazione ID e delle percentuali di corrispondenza nel servizio Identità Experience Platform, inclusi Adobe Media Optimizer e il servizio ID.
+seo-description: Panoramica dei processi di sincronizzazione ID e delle percentuali di corrispondenza in Experience Cloud Identity Service, inclusi Adobe Media Optimizer e il servizio ID.
 seo-title: Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza
 title: Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza{#understanding-id-synchronization-and-match-rates}
 
-Panoramica dei processi di sincronizzazione ID e delle percentuali di corrispondenza nel servizio Identità Experience Platform, inclusi Adobe Media Optimizer e il servizio ID.
+Panoramica dei processi di sincronizzazione ID e delle percentuali di corrispondenza in Experience Cloud Identity Service, inclusi Adobe Media Optimizer e il servizio ID.
 
 ## Sincronizzazione degli ID e percentuali di corrispondenza {#section-f652aae7234945e89d26dd833c5215fb}
 
-La sincronizzazione degli ID effettua la corrispondenza tra gli ID assegnati dal servizio ID e quelli assegnati ai visitatori del sito dal nostro cliente. Ad esempio, supponiamo che il servizio ID abbia assegnato l&#39;ID visitatore 1234. Un&#39;altra piattaforma conosce invece lo stesso visitatore con l&#39;ID 4321. Nel processo di sincronizzazione, il servizio ID associa questi due ID. I risultati aggiungono nuovi punti di dati a ciò che il nostro cliente sa sui visitatori del suo sito. Inoltre, se il servizio ID non trova alcuna corrispondenza per un ID, ne crea uno nuovo che utilizzerà per successive operazioni di sincronizzazione.
+La sincronizzazione degli ID effettua la corrispondenza tra gli ID assegnati dal servizio ID e quelli assegnati ai visitatori del sito dal nostro cliente. Ad esempio, supponiamo che il servizio ID abbia assegnato l'ID visitatore 1234. Un'altra piattaforma conosce invece lo stesso visitatore con l'ID 4321. Nel processo di sincronizzazione, il servizio ID associa questi due ID. I risultati aggiungono nuovi punti di dati a ciò che il nostro cliente sa sui visitatori del suo sito. Inoltre, se il servizio ID non trova alcuna corrispondenza per un ID, ne crea uno nuovo che utilizzerà per successive operazioni di sincronizzazione.
 
-Le percentuali di corrispondenza misurano e convalidano l&#39;efficacia del processo di sincronizzazione degli ID. Percentuali elevate suggeriscono che un particolare servizio sarà più efficace e permettono di accedere a un pubblico online più ampio rispetto a un servizio con percentuali più basse. Confrontando le percentuali di corrispondenza è possibile valutare diverse piattaforme integrate di tecnologie per la gestione di annunci.
+Le percentuali di corrispondenza misurano e convalidano l'efficacia del processo di sincronizzazione degli ID. Percentuali elevate suggeriscono che un particolare servizio sarà più efficace e permettono di accedere a un pubblico online più ampio rispetto a un servizio con percentuali più basse. Confrontando le percentuali di corrispondenza è possibile valutare diverse piattaforme integrate di tecnologie per la gestione di annunci.
 
 ![](assets/idsync2.png)
 
 **Come ottenere elevate percentuali di corrispondenza**
 
-Per generare percentuali di corrispondenza elevate, è importante impostare correttamente il servizio ID (vedi la [guida all&#39;implementazione standard](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445)). Una corretta implementazione permette di ottenere percentuali di corrispondenza elevate, poiché consente al servizio ID di impostare i cookie necessari per il suo funzionamento e per sincronizzare gli ID con i partner di dati abilitati. Tuttavia, fattori quali connessioni Internet lente, raccolta di dati da dispositivi mobili o rete wireless possono incidere sull&#39;efficacia di raccolta, sincronizzazione e corrispondenza degli ID da parte del servizio ID. Tali variabili lato client non possono essere controllate dal servizio ID e da [!DNL Adobe].
+Per generare percentuali di corrispondenza elevate, è importante impostare correttamente il servizio ID (vedi la [guida all'implementazione standard](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445)). Una corretta implementazione permette di ottenere percentuali di corrispondenza elevate, poiché consente al servizio ID di impostare i cookie necessari per il suo funzionamento e per sincronizzare gli ID con i partner di dati abilitati. Tuttavia, fattori quali connessioni Internet lente, raccolta di dati da dispositivi mobili o rete wireless possono incidere sull'efficacia di raccolta, sincronizzazione e corrispondenza degli ID da parte del servizio ID. Tali variabili lato client non possono essere controllate dal servizio ID e da [!DNL Adobe].
 
 ## Descrizione del processo di sincronizzazione degli ID {#section-a541a85cbbc74f5682824b1a2ee2a657}
 
@@ -33,21 +33,21 @@ Il servizio ID sincronizza gli ID in tempo reale. Questo processo funziona nel b
 
 **Passaggio 1: caricamento della pagina**
 
-Quando un visitatore accede al sito e carica una pagina, la funzione `Visitor.getInstance` esegue una chiamata [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) o JSON-P al servizio ID. Il servizio ID risponde con un cookie che include l&#39;identificatore [!DNL Experience Cloud] ID (MID) del visitatore. L&#39;identificatore MID è un ID univoco assegnato a ogni visitatore del sito. See also, [Cookies and the Experience Platform Identity Service](../introduction/cookies.md).
+Quando un visitatore accede al sito e carica una pagina, la funzione `Visitor.getInstance` esegue una chiamata [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) o JSON-P al servizio ID. Il servizio ID risponde con un cookie che include l'identificatore [!DNL Experience Cloud] ID (MID) del visitatore. L'identificatore MID è un ID univoco assegnato a ogni visitatore del sito. See also, [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md).
 
-**Passaggio 2: caricamento dell&#39;iFrame**
+**Passaggio 2: caricamento dell'iFrame**
 
-Durante il caricamento della pagina, il servizio ID carica un iFrame denominato *`Destination Publishing iFrame`*. L&#39;[!DNL Destination Publishing iFrame] viene caricato in un dominio diverso dalla pagina padre. Questo assicura buone prestazioni della pagina e migliora la sicurezza perché l&#39;iFrame:
+Durante il caricamento della pagina, il servizio ID carica un iFrame denominato *`Destination Publishing iFrame`*. L'[!DNL Destination Publishing iFrame] viene caricato in un dominio diverso dalla pagina padre. Questo assicura buone prestazioni della pagina e migliora la sicurezza perché l'iFrame:
 
-* Viene caricato in modo asincrono rispetto alla pagina padre. Questo significa che la pagina padre può essere caricata in modo indipendente dall&#39;[!DNL Destination Publishing iFrame]. Il caricamento dell&#39;iFrame e dei pixel di sincronizzazione ID dall&#39;interno dell&#39;iFrame non incide sulle prestazioni della pagina padre né sull&#39;esperienza dell&#39;utente.
-* Viene caricato il più rapidamente possibile. Se questo risulta troppo veloce, puoi caricare l&#39;iFrame dopo l&#39;evento di caricamento della finestra (non consigliato). Per informazioni, consulta [idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4).
-* Impedisce al codice presente nell&#39;iFrame di accedere alla pagina padre o di incidere su di essa.
+* Viene caricato in modo asincrono rispetto alla pagina padre. Questo significa che la pagina padre può essere caricata in modo indipendente dall'[!DNL Destination Publishing iFrame]. Il caricamento dell'iFrame e dei pixel di sincronizzazione ID dall'interno dell'iFrame non incide sulle prestazioni della pagina padre né sull'esperienza dell'utente.
+* Viene caricato il più rapidamente possibile. Se questo risulta troppo veloce, puoi caricare l'iFrame dopo l'evento di caricamento della finestra (non consigliato). Per informazioni, consulta [idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4).
+* Impedisce al codice presente nell'iFrame di accedere alla pagina padre o di incidere su di essa.
 
-See also, [How the Experience Platform Identity Service Requests and Sets IDs...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
+See also, [How the Experience Cloud Identity Service Requests and Sets IDs...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
 
 **Passaggio 3: attivazione delle sincronizzazioni ID**
 
-La sincronizzazione ID consiste in un URL attivato nell&#39;iFrame di pubblicazione della destinazione. Come mostrato in questo esempio generico, un URL di sincronizzazione ID contiene l&#39;endpoint di sincronizzazione ID di un partner e un URL di reindirizzamento verso [!DNL Adobe] che include tale ID.
+La sincronizzazione ID consiste in un URL attivato nell'iFrame di pubblicazione della destinazione. Come mostrato in questo esempio generico, un URL di sincronizzazione ID contiene l'endpoint di sincronizzazione ID di un partner e un URL di reindirizzamento verso [!DNL Adobe] che include tale ID.
 
 ```
 http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<
@@ -78,7 +78,7 @@ Il termine *`Sync Services`* fa riferimento alle tecnologie interne [!DNL Experi
 
 ## Sincronizzazione degli ID con Adobe Media Optimizer {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Media Optimizer] è un&#39;eccezione del processo di sincronizzazione ID basato su iFrame. Poiché [!DNL Media Optimizer] è un dominio fidato, le sincronizzazioni ID hanno luogo dalla pagina padre invece che nel [!DNL Destination Publishing iFrame]. Durante la sincronizzazione, il servizio ID chiama [!DNL Media Optimizer] su `cm.eversttech.net`, che è un nome di dominio legacy usato da [!DNL Media Optimizer] prima della sua acquisizione da parte di Adobe. L&#39;invio di dati a [!DNL Media Optimizer] aiuta a migliore le percentuali di corrispondenza ed è automatico per i clienti del servizio ID che usano la versione 2.0 (o superiore). Vedi anche [Cookie di Media Optimizer](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html).
+[!DNL Adobe Media Optimizer] è un'eccezione del processo di sincronizzazione ID basato su iFrame. Poiché [!DNL Media Optimizer] è un dominio fidato, le sincronizzazioni ID hanno luogo dalla pagina padre invece che nel [!DNL Destination Publishing iFrame]. Durante la sincronizzazione, il servizio ID chiama [!DNL Media Optimizer] su `cm.eversttech.net`, che è un nome di dominio legacy usato da [!DNL Media Optimizer] prima della sua acquisizione da parte di Adobe. L'invio di dati a [!DNL Media Optimizer] aiuta a migliore le percentuali di corrispondenza ed è automatico per i clienti del servizio ID che usano la versione 2.0 (o superiore). Vedi anche [Cookie di Media Optimizer](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html).
 
 >[!MORE_LIKE_THIS]
 >
