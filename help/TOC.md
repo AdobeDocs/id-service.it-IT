@@ -2,15 +2,15 @@
 cloud: platform-cloud
 product: Servizio ID
 audience: utente finale
-user-guide-title: Help Platform Identity Service Help
+user-guide-title: Aiuto di Experience Cloud Identity Service
 user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Experience Platform Identity Service Help {#using}
+# Experience Cloud Identity Service Help {#using}
 
 + [Guida al servizio ID](home.md)
 + Panoramica {#intro}
@@ -19,8 +19,8 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
    + [Cookie e il servizio ID](introduction/cookies.md)
    + [Richiesta e impostazione degli ID da parte del servizio ID](introduction/id-request.md)
    + [Informazioni sulla sincronizzazione degli e sulle percentuali di corrispondenza](introduction/match-rates.md)
-+ Guide all&#39;implementazione {#implementation-guides}
-   + [Guide all&#39;implementazione](implementation-guides/implementation-guides.md)
++ Guide all'implementazione {#implementation-guides}
+   + [Guide all'implementazione](implementation-guides/implementation-guides.md)
    + [Metodi di implementazione](implementation-guides/implementation-methods.md)
    + [Implementazione con Experience Platform Launch](implementation-guides/ecid-implement-with-launch.md)
    + [Implementazione con DTM](implementation-guides/standard.md)
@@ -28,9 +28,9 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
    + [Implementazione per Target](implementation-guides/setup-target.md)
    + [Implementazione per Analytics e Audience Manager](implementation-guides/setup-aam-analytics.md)
    + [Implementazione per Analytics, Audience Manager e Target](implementation-guides/setup-aam-analytics-target.md)
-   + [Uso del servizio ID con A4T e l&#39;implementazione lato server di Target](implementation-guides/ecid-a4t-target.md)
+   + [Uso del servizio ID con A4T e l'implementazione lato server di Target](implementation-guides/ecid-a4t-target.md)
    + [Integrazione diretta con il servizio ID](implementation-guides/direct-integration.md)
-   + [Casi d&#39;uso dell&#39;integrazione diretta](implementation-guides/direct-integration-examples.md)
+   + [Casi d'uso dell'integrazione diretta](implementation-guides/direct-integration-examples.md)
    + [Verificare e verificare il servizio ID](implementation-guides/test-verify.md)
    + Documentazione Opt-in {#opt-in-service}
       + [Panoramica del servizio Opt-in](implementation-guides/opt-in-service/optin-overview.md)
@@ -38,7 +38,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
       + [Convalida del servizio Opt-in](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
       + [Configurazione di Opt-in con Experience Platform Launch](implementation-guides/opt-in-service/launch.md)
       + [Configurare Opt-in con DTM](implementation-guides/opt-in-service/optin-dtm.md)
-      + [Casi d&#39;uso di Opt-in](implementation-guides/opt-in-service/use-cases.md)
+      + [Casi d'uso di Opt-in](implementation-guides/opt-in-service/use-cases.md)
       + [Riferimenti di Opt-in](implementation-guides/opt-in-service/api.md)
       + [(beta) Utilizzo dei servizi Opt-in con il framework IAB](implementation-guides/opt-in-service/iab.md)
 + API del servizio ID {#id-service-api}
