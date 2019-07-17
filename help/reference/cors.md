@@ -1,23 +1,23 @@
 ---
-description: I browser usano Cross Origin Resource Sharing (CORS) per richiedere risorse da un dominio diverso da quello corrente. Experience Platform Identity Service supporta gli standard CORS che consentono tali richieste di risorse lato client, lato client. Il servizio ID utilizza invece le richieste JSONP nei browser più datati che non supportano CORS.
+description: I browser usano Cross Origin Resource Sharing (CORS) per richiedere risorse da un dominio diverso da quello corrente. Experience Cloud Identity Service supporta gli standard CORS che consentono tali richieste di risorse lato client, lato client. Il servizio ID utilizza invece le richieste JSONP nei browser più datati che non supportano CORS.
 keywords: Servizio ID
-seo-description: I browser usano Cross Origin Resource Sharing (CORS) per richiedere risorse da un dominio diverso da quello corrente. Experience Platform Identity Service supporta gli standard CORS che consentono tali richieste di risorse lato client, lato client. Il servizio ID utilizza invece le richieste JSONP nei browser più datati che non supportano CORS.
-seo-title: Supporto CORS nel servizio Identità Experience Platform
-title: Supporto CORS nel servizio Identità Experience Platform
+seo-description: I browser usano Cross Origin Resource Sharing (CORS) per richiedere risorse da un dominio diverso da quello corrente. Experience Cloud Identity Service supporta gli standard CORS che consentono tali richieste di risorse lato client, lato client. Il servizio ID utilizza invece le richieste JSONP nei browser più datati che non supportano CORS.
+seo-title: Supporto CORS nel servizio identità Experience Cloud
+title: Supporto CORS nel servizio identità Experience Cloud
 uuid: e656b573-72a8-4312-a7d5-5cc3818f0a9e
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# CORS Support in the Experience Platform Identity Service {#cors-support-in-the-experience-cloud-id-service}
+# CORS Support in the Experience Cloud Identity Service {#cors-support-in-the-experience-cloud-id-service}
 
-I browser usano Cross Origin Resource Sharing (CORS) per richiedere risorse da un dominio diverso da quello corrente. Experience Platform Identity Service supporta gli standard CORS che consentono tali richieste di risorse lato client, lato client. Il servizio ID utilizza invece le richieste JSONP nei browser più datati che non supportano CORS.
+I browser usano Cross Origin Resource Sharing (CORS) per richiedere risorse da un dominio diverso da quello corrente. Experience Cloud Identity Service supporta gli standard CORS che consentono tali richieste di risorse lato client, lato client. Il servizio ID utilizza invece le richieste JSONP nei browser più datati che non supportano CORS.
 
 ## Problemi relativi a criteri per la stessa origine e richieste del servizio ID {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
-I criteri per la stessa origine sono controlli di sicurezza o restrizioni applicati dal browser Web. Quando vengono applicati a questo livello, il browser stesso determina se consentire o bloccare una richiesta di risorse effettuata da una pagina a un&#39;altra. Per determinare se una richiesta proviene dalla stessa origine, il browser confronta:
+I criteri per la stessa origine sono controlli di sicurezza o restrizioni applicati dal browser Web. Quando vengono applicati a questo livello, il browser stesso determina se consentire o bloccare una richiesta di risorse effettuata da una pagina a un'altra. Per determinare se una richiesta proviene dalla stessa origine, il browser confronta:
 
 * URI (Uniform Resource Identifiers)
 * Nomi host (esempio: http://www.esempio-mia-pagina-web.com)
@@ -27,12 +27,12 @@ Il browser consente una richiesta se entrambe le pagine hanno le stesse caratter
 
 ## CORS risolve i problemi relativi a criteri per la stessa origine {#section-76c87ec3295d447bab220c84f138c235}
 
-CORS offre un modo sicuro ed efficace di richiedere risorse tra domini diversi. La specifica CORS include un set di intestazioni HTTP usate dai browser per inviare, ricevere e valutare le richieste di risorse. La valutazione di una richiesta di risorse è detta *`preflight check`*. Tale verifica permette ai browser e ai server di determinare quali richieste consentire o bloccare. La verifica preliminare è trasparente per l&#39;app, l&#39;API o lo script che richiede una risorsa. Due intestazioni importanti nel processo di richiesta di risorse sono:
+CORS offre un modo sicuro ed efficace di richiedere risorse tra domini diversi. La specifica CORS include un set di intestazioni HTTP usate dai browser per inviare, ricevere e valutare le richieste di risorse. La valutazione di una richiesta di risorse è detta *`preflight check`*. Tale verifica permette ai browser e ai server di determinare quali richieste consentire o bloccare. La verifica preliminare è trasparente per l'app, l'API o lo script che richiede una risorsa. Due intestazioni importanti nel processo di richiesta di risorse sono:
 
-* `Origin`: intestazione di richiesta che identifica l&#39;origine di una richiesta.
+* `Origin`: intestazione di richiesta che identifica l'origine di una richiesta.
 * `Access-Control-Allow-Origin`: intestazione di richiesta che indica se una risorsa può essere condivisa con il richiedente.
 
-Vediamo come funzionano queste intestazioni. In questo esempio, supponiamo che una società di servizi finanziari abbia implementato il servizio [!DNL Experience Cloud] ID sul suo sito, www.finance-website.com. La tabella che segue illustra come le intestazioni di richiesta e risposta CORS verificano se consentire o meno l&#39;accesso a una risorsa.
+Vediamo come funzionano queste intestazioni. In questo esempio, supponiamo che una società di servizi finanziari abbia implementato il servizio [!DNL Experience Cloud] ID sul suo sito, www.finance-website.com. La tabella che segue illustra come le intestazioni di richiesta e risposta CORS verificano se consentire o meno l'accesso a una risorsa.
 
 <table id="table_B004ACF52B5A4D33B1DCF7EA77BE4E6D"> 
  <thead> 
