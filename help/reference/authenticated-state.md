@@ -6,7 +6,7 @@ seo-title: ID cliente e stati di autenticazione
 title: ID cliente e stati di autenticazione
 uuid: 643df363-224a-463e-a332-be59926b47e7
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: 21fb12b817b7c8cd34e6022ca6c188229228d1df
 
 ---
 
@@ -92,7 +92,7 @@ Gli ID cliente possono includere combinazioni di ID e stati di identificazione, 
 >* Gli ID sono sensibili all'uso di maiuscole e minuscole.
 >* Per gli ID, usa solo valori non codificati.
 >* Gli ID dei clienti e gli stati di autenticazione non vengono memorizzati nel cookie ID visitatore. Devono essere impostati per ciascuna pagina o contesto dell'applicazione.
->* Negli ID cliente non devono essere incluse informazioni identificative della persona. Invece di utilizzare informazioni di questo tipo per identificare un visitatore (ad esempio l'indirizzo e-mail), consigliamo di memorizzare una versione con hash o codificata di queste informazioni.
+>* Negli ID cliente non devono essere incluse informazioni identificative della persona. Invece di utilizzare informazioni di questo tipo per identificare un visitatore (ad esempio l'indirizzo e-mail), consigliamo di memorizzare una versione con hash o codificata di queste informazioni. La libreria ECID supporta l'hash degli identificatori utente. See [SHA256 Hashing Support for setCustomerIDs](/help/reference/hashing-support.md).
 >
 
 
@@ -116,7 +116,7 @@ visitor.setCustomerIDs({
         "id":"67312378756723456", 
         "authState":Visitor.AuthState.AUTHENTICATED 
     }, 
-    "puuid":"550e8400-e29b-41d4-a716-446655440000" 
+    "dpuuid":"550e8400-e29b-41d4-a716-446655440000" 
 }); 
  
 // Multiple IDs with identical authentication states 
@@ -125,7 +125,7 @@ visitor.setCustomerIDs({
         "id":"67312378756723456", 
         "authState":Visitor.AuthState.AUTHENTICATED 
     }, 
-    "puuid":{ 
+    "dpuuid":{ 
         "id":"550e8400-e29b-41d4-a716-446655440000", 
         "authState":Visitor.AuthState.AUTHENTICATED 
     } 
@@ -137,7 +137,7 @@ visitor.setCustomerIDs({
         "id":"67312378756723456", 
         "authState":Visitor.AuthState.AUTHENTICATED 
     }, 
-    "puuid":{ 
+    "dpuuid":{ 
         "id":"550e8400-e29b-41d4-a716-446655440000", 
         "authState":Visitor.AuthState.LOGGED_OUT 
     } 
@@ -199,12 +199,12 @@ Object customerIDs = visitor.getCustomerIDs();
     } 
 } 
   
-// setCustomerIDs call on this instance with {"userid":{"authState":Visitor.AuthState.LOGGED_OUT},"puuid":{"id":"550e8400-e29b-41d4-a716-446655440000"}} 
+// setCustomerIDs call on this instance with {"userid":{"authState":Visitor.AuthState.LOGGED_OUT},"dpuuid":{"id":"550e8400-e29b-41d4-a716-446655440000"}} 
 { 
     "userid":{ 
         "authState":2 
     }, 
-    "puuid":{ 
+    "dpuuid":{ 
         "id":"550e8400-e29b-41d4-a716-446655440000", 
         "authState":0 
     } 
