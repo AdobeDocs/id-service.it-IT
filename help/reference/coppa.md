@@ -6,7 +6,7 @@ seo-title: Supporto per COPPA nel servizio identità Experience Cloud
 title: Supporto per COPPA nel servizio identità Experience Cloud
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: 584b6240c3e0286111689499ca5df5d98aa9fab2
 
 ---
 
@@ -17,7 +17,7 @@ Il Children’s Online Privacy Protection Act (COPPA) proibisce la raccolta onli
 
 >[!NOTE]
 >
->Per le versioni a partire dalla 1.5.3.
+>Per le versioni a partire dalla 3.0.0.
 
 **Cookie e monitoraggio**
 
