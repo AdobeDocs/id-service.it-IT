@@ -6,7 +6,7 @@ seo-title: ID cliente e stati di autenticazione
 title: ID cliente e stati di autenticazione
 uuid: 643df363-224a-463e-a332-be59926b47e7
 translation-type: tm+mt
-source-git-commit: 21fb12b817b7c8cd34e6022ca6c188229228d1df
+source-git-commit: 603540150edcdc76aacf407aeb6421c5b8386f56
 
 ---
 
@@ -92,7 +92,7 @@ Gli ID cliente possono includere combinazioni di ID e stati di identificazione, 
 >* Gli ID sono sensibili all'uso di maiuscole e minuscole.
 >* Per gli ID, usa solo valori non codificati.
 >* Gli ID dei clienti e gli stati di autenticazione non vengono memorizzati nel cookie ID visitatore. Devono essere impostati per ciascuna pagina o contesto dell'applicazione.
->* Negli ID cliente non devono essere incluse informazioni identificative della persona. Invece di utilizzare informazioni di questo tipo per identificare un visitatore (ad esempio l'indirizzo e-mail), consigliamo di memorizzare una versione con hash o codificata di queste informazioni. La libreria ECID supporta l'hash degli identificatori utente. See [SHA256 Hashing Support for setCustomerIDs](/help/reference/hashing-support.md).
+>* Negli ID cliente non devono essere incluse informazioni identificative della persona. Invece di utilizzare informazioni di questo tipo per identificare un visitatore (ad esempio l'indirizzo e-mail), consigliamo di memorizzare una versione con hash o codificata di queste informazioni. La libreria ECID supporta l'hash degli identificatori utente. Consultate [SHA 256 Hashing Support for setcustomerids](/help/reference/hashing-support.md).
 >
 
 
@@ -220,4 +220,4 @@ Il servizio [!DNL Experience Cloud] ID supporta gli ID dei clienti e gli stati d
 
 ## Avviso per i clienti Analytics e Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-Se trasferisci ID dichiarati ad [!DNL Audience Manager], l'oggetto `userid` deve corrispondere al codice di integrazione associato a un'origine dati. For more information, see the [!DNL Visitor ID Service] section in the [Configure Merge Rules Code](https://marketing.adobe.com/resources/help/en_US/aam/?f=merge-rules-configure-code.html) documentation.
+Se trasferisci ID dichiarati ad [!DNL Audience Manager], l'oggetto `userid` deve corrispondere al codice di integrazione associato a un'origine dati. Per ulteriori informazioni, consulta la sezione [!UICONTROL Servizio ID visitatore] nel documento [Configurazione codice delle regole di unione](https://marketing.adobe.com/resources/help/en_US/aam/?f=merge-rules-configure-code.html).
