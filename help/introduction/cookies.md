@@ -6,7 +6,7 @@ seo-title: Cookie e servizio identità Experience Cloud
 title: Cookie e servizio identità Experience Cloud
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -19,13 +19,13 @@ Il servizio ID utilizza l'ID organizzazione, il cookie AMCV di Experience Cloud 
 
 Il servizio ID funziona correttamente se usa i cookie AMCV, AMCVS e demdex. Questi cookie sono semplicemente file che archiviano i dati usati dal servizio ID. Questi cookie del servizio ID non sono pericolosi, dannosi o diversi dagli altri cookie di prima parte o di terze parti memorizzati da un sito Web o da un servizio in un browser e seguono le stesse regole dei cookie di prima e terze parti. Per maggiori informazioni sui cookie usati dal servizio, fare riferimento alle sezioni seguenti.
 
-**Quali sono le funzioni dei cookie del servizio ID**
+### Quali sono le funzioni dei cookie del servizio ID
 
 * Impostare e archiviare un ID univoco per i visitatori del tuo sito (il MID).
 * Mantenere questo ID univoco permettendo al servizio ID di raccogliere e condividere i dati con altre soluzioni Experience Cloud.
 * Tracciare gli utenti nei vari domini. Questa funzione richiede però la presenza di altri domini dotati di un codice del servizio ID.
 
-** Quali funzioni non possono essere svolte dai cookie del servizio ID **
+### Ciò che le ookies del servizio ID non possono fare
 
 * Archiviare, trasmettere o eseguire virus sui computer.
 * Accedere o archiviare informazioni personali identificabili (PII) come il tuo indirizzo e-mail.
