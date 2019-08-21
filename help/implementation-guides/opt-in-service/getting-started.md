@@ -1,28 +1,28 @@
 ---
-description: Implementa il servizio di consenso come punto di riferimento singolo utilizzato dalle soluzioni Experience Cloud (altrimenti denominato Categorie in Consenso) per determinare se creare o meno cookie sul dispositivo di un visitatore.
-seo-description: Implementa il servizio di consenso come punto di riferimento singolo utilizzato dalle soluzioni Experience Cloud (altrimenti denominato Categorie in Consenso) per determinare se creare o meno cookie sul dispositivo di un visitatore.
-seo-title: Configurazione del servizio di consenso
-title: Configurazione del servizio di consenso
-uuid: f 1 c 27139-cef 2-4122-af 12-c 839 cfc 82 e 6 e
-translation-type: tm+mt
+description: Implementare il servizio Opt-in come unico punto di riferimento usato dalle soluzioni Experience Cloud (definite anche Categorie in Opt-in) per definire se è necessario creare cookie sul dispositivo di un visitatore.
+seo-description: Implementare il servizio Opt-in come unico punto di riferimento usato dalle soluzioni Experience Cloud (definite anche Categorie in Opt-in) per definire se è necessario creare cookie sul dispositivo di un visitatore.
+seo-title: Configurazione del servizio Opt-in
+title: Configurazione del servizio Opt-in
+uuid: f1c27139-cef2-4122-af12-c839cfc82e6e
+translation-type: ht
 source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
 
-# Configurazione del servizio di consenso{#setting-up-opt-in-service}
+# Configurazione del servizio Opt-in{#setting-up-opt-in-service}
 
-Implementa il servizio di consenso come punto di riferimento singolo utilizzato dalle soluzioni Experience Cloud (altrimenti denominato Categorie in Consenso) per determinare se creare o meno cookie sul dispositivo di un visitatore.
+Implementare il servizio Opt-in come unico punto di riferimento usato dalle soluzioni Experience Cloud (definite anche Categorie in Opt-in) per definire se è necessario creare cookie sul dispositivo di un visitatore.
 
-Il servizio di consenso è una libreria javascript fornita con Experience Cloud ID (ECID) ed esiste in JS visitatore nell&#39;oggetto globale `adobe` come `adobe.optIn` oggetto. Il servizio di consenso installato consente di specificare se un visitatore può optare per le soluzioni Adobe alla volta o per presentare soluzioni in sequenza per ogni autorizzazione. La funzione di gestione del consenso del servizio di consenso consente di implementare diverse configurazioni per i requisiti di privacy specifici.
+Il servizio Opt-in è una libreria JavaScript abbinata con Experience Cloud ID (ECID) ed esiste in JS per il visitatore nell&#39;oggetto globale `adobe` come oggetto`adobe.optIn`. Il servizio Opt-in installato consente di specificare se un visitatore può dare il consenso esplicito a tutte le soluzioni Adobe in una sola volta oppure deve darlo per ogni soluzione seguendo la sequenza di autorizzazioni per ognuna di esse. La funzionalità di gestione del consenso del servizio Opt-in consente di implementare diverse configurazioni per i requisiti di privacy specifici.
 
-Il servizio di consenso consente di specificare se un visitatore può optare per le soluzioni Adobe alla volta oppure per presentare soluzioni in sequenza per ogni tipo di autorizzazione. Quando il processo di approvazione è stato completato e registrato dal cliente, è possibile recuperare le approvazioni del visitatore CMP da tutte le soluzioni Adobe per rispondere con le relative chiamate di consenso.
+Il servizio Opt-in consente di specificare se un visitatore può dare il consenso esplicito a tutte le soluzioni Adobe in una sola volta oppure deve darlo per ogni soluzione seguendo la sequenza di autorizzazioni per ognuna di esse. Quando il processo di approvazione è stato completato e registrato dal cliente, è possibile recuperare le approvazioni del visitatore CMP da tutte le soluzioni Adobe per rispondere con le relative chiamate di consenso.
 
-## Prerequisiti {#section-c39246f45e514c8ea9fdbe6f7ffa3ad0}
+## Prerequisiti  {#section-c39246f45e514c8ea9fdbe6f7ffa3ad0}
 
 1. ECID versione 4.0
 
-   [Scarica](https://github.com/Adobe-Marketing-Cloud/id-service/releases) la versione di ECID più recente.
+   [Scarica](https://github.com/Adobe-Marketing-Cloud/id-service/releases) l&#39;ultima versione ECID.
 
 1. Librerie di supporto:
 
@@ -42,11 +42,11 @@ Il servizio di consenso consente di specificare se un visitatore può optare per
 
 1. I requisiti di privacy dell&#39;azienda saranno specifici in base alla scelta di rispettare il RGPD. Verifica quali librerie i team di privacy dell&#39;azienda desiderano usare in uno stato che precede il consenso.
 
-Se usi [Adobe Launch](https://docs.adobelaunch.com/) usa [Estensione di consenso](../../implementation-guides/opt-in-service/launch.md) per configurare il servizio di consenso.
+Se utilizzi [Adobe Launch](https://docs.adobelaunch.com/), utilizza l&#39;[estensione Opt-in](../../implementation-guides/opt-in-service/launch.md) per configurare il servizio Opt-in.
 
-## Categorie di consenso {#section-9ab0492ab4414f0ca16dc08d3a905f47}
+## Categorie di Opt-in {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
-Le preferenze Opt-in di un visitatore sono relative a una soluzione Adobe Experience Cloud, dove ogni soluzione è rappresentata come una categoria. Le categorie vengono fornite dall&#39;oggetto `adobe.OptInCategories` dove, ad esempio, il componente ECID viene indicato come `adobe.OptInCategories`. `ECID`. Di seguito la definizione di `adobe.OptInCategories`:
+Le preferenze Opt-in di un visitatore sono relative a una soluzione Adobe Experience Cloud, dove ogni soluzione è rappresentata come una categoria. Le categorie vengono fornite `adobe.OptInCategories` dall&#39;oggetto dove, ad esempio, il componente ECID viene indicato come `adobe.OptInCategories`. `ECID`. Di seguito la definizione di `adobe.OptInCategories`:
 
 Le impostazioni di Opt-in vengono mantenute per ciascuna categoria, dove ogni soluzione Experience Cloud è rappresentata da una categoria:
 
@@ -60,12 +60,12 @@ adobe.OptInCategories = {
 };
 ```
 
-Il servizio Consenso consente di impostare le preferenze di autorizzazione dei visitatori per ciascuna soluzione Adobe utilizzata sul sito. Include una libreria per salvare le impostazioni del visitatore mediante una categoria approvata e supporta un flusso sequenziale dove il processo di approvazione riceve le preferenze di &quot;conferma&quot; o &quot;rifiuto&quot; una alla volta per ogni categoria. Puoi impostare il consenso di tutte le soluzioni/categorie insieme oppure per ogni singola soluzione.
-Tutte le librerie lato client delle soluzioni Adobe dipendono dal servizio Opt-in e non generano cookie a meno che non sia stata concessa l&#39;autorizzazione. L&#39;oggetto Opt-in supporta diversi approcci per fornire e aggiornare le impostazioni di consenso per il visitatore attuale. In questa sezione sono forniti alcuni esempi per impostare le preferenze del servizio Opt-in. Per [un elenco completo delle funzioni e dei parametri, consultate il Riferimento](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) API di consenso.
+Il servizio Opt-in consente di impostare le preferenze di autorizzazione dei visitatori per ciascuna soluzione Adobe sul tuo sito. Include una libreria per salvare le impostazioni del visitatore mediante una categoria approvata e supporta un flusso sequenziale dove il processo di approvazione riceve le preferenze di &quot;conferma&quot; o &quot;rifiuto&quot; una alla volta per ogni categoria. Puoi impostare il consenso di tutte le soluzioni/categorie insieme oppure per ogni singola soluzione. 
+Tutte le librerie lato client delle soluzioni Adobe dipendono dal servizio Opt-in e non genereranno cookie a meno che non sia stata concessa l&#39;autorizzazione alla soluzione. L&#39;oggetto Opt-in supporta diversi approcci per fornire e aggiornare le impostazioni di consenso per il visitatore attuale. Questa sezione contiene degli esempi su come impostare le preferenze del servizio Opt-in. Consulta i [riferimenti alle API di Opt-in](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) per un elenco completo delle funzioni e dei parametri.
 
-Le configurazioni del servizio opt-in sono fornite nella funzione JS visitatore `getInstance()` che crea un&#39;istanza dell&#39;oggetto globale `adobe` . Di seguito sono elencate le impostazioni [di configurazione JS visitatore](../../implementation-guides/opt-in-service/api.md#section-d66018342baf401389f248bb381becbf) per il servizio di consenso.
+Le configurazioni del servizio Opt-in vengono fornite nella `getInstance()` funzione di JS per il visitatore che creano l&#39;istanza per `adobe` l&#39;oggetto globale. Di seguito un elenco delle [impostazioni di configurazione](../../implementation-guides/opt-in-service/api.md#section-d66018342baf401389f248bb381becbf) di JS per il visitatore per il servizio Opt-in.
 
-**Esempio di configurazione di consenso all&#39;inizializzazione dell&#39;`Visitor`oggetto globale**
+**Configurazione di esempio di Opt-in nell&#39;inizializzazione dell&#39;`Visitor`oggetto** globale 
 
 ```
 // FORMAT: Object<adobe.OptInCategories enum: boolean> 
@@ -90,15 +90,15 @@ Visitor.getInstance("YOUR_ORG_ID", {
 
 **Gestire le modifiche al consenso**
 
-Mentre visita il sito, il visitatore può scegliere di impostare le preferenze per la prima volta o modificarle usando CMP in qualsiasi momento. Dopo aver inizializzato JS per il visitatore con le impostazioni iniziali, è possibile modificare le autorizzazioni del visitatore. Vedere [Modifiche al consenso](../../implementation-guides/opt-in-service/api.md#section-c3d85403ff0d4394bd775c39f3d001fc) per un elenco delle funzioni di gestione del consenso.
+Mentre visita il sito, il visitatore può scegliere di impostare le preferenze per la prima volta o modificarle usando CMP in qualsiasi momento. Dopo aver inizializzato JS per il visitatore con le impostazioni iniziali, è possibile modificare le autorizzazioni del visitatore. Consulta [Modifiche di consenso](../../implementation-guides/opt-in-service/api.md#section-c3d85403ff0d4394bd775c39f3d001fc) per un elenco delle funzioni per la gestione del consenso.
 
 <!--
 <p> *** <b>sample code block </b>*** </p>
 -->
 
-## Flussi di lavoro di consenso {#section-70cd243dec834c8ea096488640ae20a5}
+## Flussi di lavoro di Opt-in {#section-70cd243dec834c8ea096488640ae20a5}
 
-Il servizio di consenso facilitato supporta un flusso di lavoro in cui le autorizzazioni possono essere raccolte su più di un ciclo di richiesta e le preferenze ne vengono fornite una alla volta. Usando le seguenti funzioni e specificando *true* per `shouldWaitForComplete`, la soluzione è in grado di raccogliere il consenso per una categoria o un sottoinsieme di tutte le categorie e poi di raccoglierlo per la categoria o il sottoinsieme di categoria successivo. A partire dalla prima chiamata, la `adobe.optIn.status` proprietà sarà *in sospeso* finché `adobe.optIn.complete()` non viene chiamata alla fine del flusso. Una volta effettuata la chiamata, lo stato viene impostato su *complete*.
+Il servizio Opt-in supporta un flusso di lavoro in cui è possibile raccogliere le autorizzazioni per più di un ciclo di richiesta e le preferenze vengono assegnate tutte insieme. Usando le seguenti funzioni e specificando *true* per `shouldWaitForComplete`, la soluzione è in grado di raccogliere il consenso per una categoria o un sottoinsieme di tutte le categorie e poi di raccoglierlo per la categoria o il sottoinsieme di categoria successivo. A partire dalla prima chiamata, la proprietà `adobe.optIn.status` sarà *in sospeso* fino a quando `adobe.optIn.complete()` non viene chiamata alla fine del flusso. Una volta effettuata la chiamata, lo stato viene impostato su *complete*.
 
 ```
 adobe.optIn.approve(['AAM', 'ECID'], true); 
@@ -106,11 +106,11 @@ adobe.optIn.deny(['ANALYTICS'], true);
 adobe.optIn.complete();
 ```
 
-Consultate [Impostazioni di configurazione Flusso di lavoro](../../implementation-guides/opt-in-service/api.md#section-2c5adfa5459c4e72b96d2693123a53c2).
+Consulta le [impostazioni di configurazione del flusso di lavoro](../../implementation-guides/opt-in-service/api.md#section-2c5adfa5459c4e72b96d2693123a53c2).
 
 ## Controllare le autorizzazioni Opt-in del visitatore {#section-f136a9024e054d84881e6667fb7c94eb}
 
-Man mano che i visitatori aprono le loro autorizzazioni, dovrai avere bisogno di approfondimenti sulle autorizzazioni risultanti per sincronizzare l&#39;archivio di autorizzazione con le modifiche apportate al servizio di consenso. Controlla le preferenze del visitatore usando le [funzioni di autorizzazione](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155), ad esempio:
+Man mano che i visitatori modificano le proprie autorizzazioni, avrai bisogno di maggiori informazioni sulle autorizzazioni risultanti per sincronizzare l&#39;archivio dei consensi con le modifiche apportate nel servizio Opt-in. Controlla le preferenze del visitatore usando le [funzioni di autorizzazione](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155), ad esempio:
 
 **fetchPermissions**
 
@@ -134,14 +134,14 @@ function callback() {
 optIn.fetchPermissions(callback, true);
 ```
 
-Consulta la [documentazione sulle API](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) per maggiori informazioni su tutte le funzioni, le proprietà o le configurazioni citate in questo documento.
+Consulta la  [documentazione sulle API](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) per maggiori informazioni su tutte le funzioni, le proprietà o le configurazioni citate in questo documento.
 
-## Memorizzazione delle preferenze dei visitatori {#section-ef2884ae67e34879bf7c7c3372706c9f}
+## Memorizzazione delle preferenze del visitatore {#section-ef2884ae67e34879bf7c7c3372706c9f}
 
-Il servizio Consenso fornisce un&#39;opzione per memorizzare preferenze di consenso adatte a un ambiente di sviluppo o a un ambiente in cui non è possibile utilizzare un CRM. Specifica della proprietà di configurazione `isOptInStorageEnabled` come *attiva* attivazione del servizio Opt-in per creare un cookie sul sistema del visitatore all&#39;interno del dominio.
+Il servizio Opt-in consente di memorizzare le preferenze di consenso adatte a un ambiente di sviluppo o a un ambiente in cui non è possibile usare un CRM. Imposta la proprietà di configurazione `isOptInStorageEnabled` su *true* per attivare il servizio Opt-in e creare un cookie sul sistema del visitatore nel tuo dominio.
 
-L&#39;oggetto `adobe.optIn` è senza stato e non fornisce alcun meccanismo di archiviazione. Ti consente invece di gestire le impostazioni di consenso di Adobe nella Piattaforma di gestione dei consensi (Consent Management Platform, CMP) se questa permette di memorizzare dati personalizzati. In alternativa è possibile memorizzare le preferenze del visitatore in un cookie sul browser del visitatore. Sono disponibili due opzioni per fornire le preferenze dell&#39;utente al servizio di consenso:
+`adobe.optIn` L&#39;oggetto è senza stato e non fornisce alcun meccanismo di archiviazione. Ti consente invece di gestire le impostazioni di consenso di Adobe nella Piattaforma di gestione dei consensi (Consent Management Platform, CMP) se questa permette di memorizzare dati personalizzati. In alternativa è possibile memorizzare le preferenze del visitatore in un cookie sul browser del visitatore. Puoi fornire le preferenze dell&#39;utente al servizio Opt-in in due modi:
 
-* Se la soluzione di persistenza del consenso, se si tratta di un CMP o di un cookie sul browser del visitatore, consente di recuperare rapidamente le preferenze dei visitatori, puoi fornire quelle al servizio di consenso durante l&#39;inizializzazione del visitatore.
-* Tuttavia, se il recupero può essere un processo molto lungo o altrimenti viene utilizzato come processo asincrono, potete utilizzare la `approve()` funzione del servizio per fornire tali impostazioni una volta che sono state caricate correttamente.
+* Se la soluzione di persistenza del consenso, che si tratti di CMP o di un cookie sul browser del visitatore, consente un recupero tempestivo delle preferenze del visitatore, è possibile fornirle al servizio Opt-in durante l&#39;inizializzazione di Visitatore.
+* Tuttavia, se il recupero è un processo lungo o in alternativa viene eseguito meglio come processo asincrono, puoi usare la `approve()` funzione del servizio per fornire tali impostazioni una volta caricate correttamente.
 
