@@ -4,8 +4,8 @@ keywords: Servizio ID
 seo-description: Flag booleano facoltativo che aggiunge un attributo "Sicuro" al cookie AMCV.
 seo-title: secureCookie
 title: secureCookie
-uuid: 995 d 19 f 6-9 c 9 d -4493-9 c 9 c -545 b 0 b 5696 b 0
-translation-type: tm+mt
+uuid: 995d19f6-9c9d-4493-9c9c-545b0b5696b0
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -15,13 +15,13 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 Flag booleano facoltativo che aggiunge un attributo &quot;Sicuro&quot; al cookie AMCV.
 
-Questo attributo di configurazione è disponibile nella versione 3.3.0 di `visitorAPI`.
+Questo attributo di configurazione è disponibile nella `visitorAPI`versione 3.3.0 di.
 
 >[!NOTE]
 >
->La `SecureCookie` configurazione non funziona su domini non protetti e potrebbe comportare la mancata ricezione dei valori MID per le visite che utilizzano un protocollo non protetto. La configurazione `secureCookie` deve essere impostata su `true` solo quando si è sicuri che tutte le pagine e i sottodomini usano sempre un protocollo sicuro.
+>La `SecureCookie` configurazione non funzionerà sui domini non sicuri e potrebbe comportare la mancata ricezione dei valori MID per le visite che usano un protocollo non sicuro. La `secureCookie` configurazione deve essere impostata su `true` solo quando si è sicuri che tutte le pagine e i sottodomini usano sempre un protocollo sicuro.
 
-**Sintassi:**`secureCookie: true | false` (predefinito)
+**Sintassi:** `secureCookie: true | false` (predefinito)
 
 **Esempio di codice**
 
