@@ -1,17 +1,17 @@
 ---
 cloud: experience-cloud
 product: Servizio ID
-audience: end-user
+audience: utente finale
 solution-title: Servizio ID
-solution-hub-url: https://helpx.adobe.com/support/experience-cloud/core-services.html
+solution-hub-url: https://helpx.adobe.com/it/support/experience-cloud/core-services.html
 solution-image: assets/experience-cloud-logo-24.png
 getting-started-title: Introduzione
-getting-started-url: https://helpx.adobe.com/experience-cloud-core-services/get-started.html
+getting-started-url: https://helpx.adobe.com/it/experience-cloud-core-services/get-started.html
 tutorials-title: Esercitazioni
 tutorials-url: https://helpx.adobe.com/it/experience-cloud/tutorials.html
 git-repo: https://github.com/AdobeDocs/id-service.en
 index: true
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
@@ -19,4 +19,4 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 # file di metadati
 
-Include i metadati per l&#39;intero aggiornamento
+Include i metadati per l&#39;intero archivio
