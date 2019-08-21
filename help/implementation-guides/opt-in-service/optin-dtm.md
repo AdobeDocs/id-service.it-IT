@@ -1,10 +1,10 @@
 ---
-description: Abilita i servizi di consenso tramite Gestione dinamica dei tag.
-seo-description: Abilita i servizi di consenso tramite Gestione dinamica dei tag.
+description: Abilitare il servizio Opt-in usando Dynamic Tag Management (DTM).
+seo-description: Abilitare il servizio Opt-in usando Dynamic Tag Management (DTM).
 seo-title: Configurare Opt-in con DTM
 title: Configurare Opt-in con DTM
-uuid: 7 a 886 bc 3-c 9 e 5-4 eac -85 e 8-828 a 83 c 847 c 5
-translation-type: tm+mt
+uuid: 7a886bc3-c9e5-4eac-85e8-828a83c847c5
+translation-type: ht
 source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
@@ -12,13 +12,13 @@ source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 # Configurare Opt-in con DTM{#configuring-opt-in-with-dtm}
 
-Abilita i servizi di consenso tramite Gestione dinamica dei tag.
+Abilitare il servizio Opt-in usando Dynamic Tag Management (DTM).
 
-Configurare i servizi di consenso tramite DTM.
+Configurare il servizio Opt-in usando DTM.
 
 Obbligatorio:
 
-* Passare alla versione 4.0.0 di ECID o successiva. Consultare [Download di ECID](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+* Passare alla versione 4.0.0 di ECID o successiva. Consulta [Download ECID](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 Inserire i [campi di configurazione](/help/implementation-guides/opt-in-service/api.md) nella pagina Generale di DTM.
 
