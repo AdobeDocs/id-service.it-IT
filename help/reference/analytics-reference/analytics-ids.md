@@ -1,11 +1,11 @@
 ---
-description: Experience Cloud Identity Service sostituisce i metodi legacy di ID visitatore Analytics.
+description: Il servizio Experience Cloud Identity sostituisce i metodi legacy di raccolta degli ID visitatore di Analytics.
 keywords: Servizio ID
-seo-description: Il servizio Identità Experience Platform sostituisce i metodi legacy di ID visitatore Analytics.
+seo-description: Il servizio Experience Platform Identity sostituisce i metodi legacy di raccolta degli ID visitatore di Analytics.
 seo-title: Impostazione degli ID di Analytics ed Experience Cloud
 title: Impostazione degli ID di Analytics ed Experience Cloud
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 # Impostazione degli ID di Analytics ed Experience Cloud{#setting-analytics-and-experience-cloud-ids}
 
-Experience Cloud Identity Service sostituisce i metodi legacy di ID visitatore Analytics.
+Il servizio Experience Cloud Identity sostituisce i metodi legacy di raccolta degli ID visitatore di Analytics.
 
 Una volta implementato il servizio ID, il codice viene eseguito prima di AppMeasurement. Il servizio ID recupera gli ID di Experience Cloud e Analytics in modo che siano a disposizione quando AppMeasurement viene caricato.
 
@@ -31,7 +31,7 @@ Quando viene inviata una richiesta al server di raccolta dati Adobe, l'intestazi
 
 Alcuni browser tuttavia non accettano i cookie di terze parti (ad es. Apple Safari). Si tratta dei cookie impostati nel browser da domini diversi rispetto al sito Web corrente. Inoltre, Safari blocca i cookie in domini di terze parti se il visitatore non ha mai visitato tale dominio. Ad esempio, se accedi a `mysite.com` e il server di raccolta dati è `mysite.omtrdc.net` il cookie restituito nell'intestazione HTTP da `mysite.omtrdc.net` potrebbe essere rifiutato dal browser.
 
-Per evitare questo problema, molti clienti hanno implementato record CNAME per i propri server di raccolta dati. Questa operazione può essere considerata efficace nell'ambito di una strategia di [implementazione dei cookie di prime parti](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/). Se viene configurato un record CNAME per mappare un nome host nel dominio del cliente al server di raccolta dati (ad es., mappatura di `metrics.mysite.com` a `mysite.omtrdc.net`), il cookie [!DNL Experience Cloud] ID viene memorizzato, perché il dominio di raccolta dati corrisponde al dominio del sito Web. Questa operazione aumenta la possibilità che il cookie del servizio ID venga memorizzato, ma comporta un sovraccarico maggiore, perché è necessario configurare i record CNAME e gestire i certificati SSL per i server di raccolta dati.
+Per evitare questo problema, molti clienti hanno implementato record CNAME per i propri server di raccolta dati. Può essere efficace per una [strategia di implementazione dei cookie di prime parti](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/). Se viene configurato un record CNAME per mappare un nome host nel dominio del cliente al server di raccolta dati (ad es., mappatura di `metrics.mysite.com` a `mysite.omtrdc.net`), il cookie [!DNL Experience Cloud] ID viene memorizzato, perché il dominio di raccolta dati corrisponde al dominio del sito Web. Questa operazione aumenta la possibilità che il cookie del servizio ID venga memorizzato, ma comporta un sovraccarico maggiore, perché è necessario configurare i record CNAME e gestire i certificati SSL per i server di raccolta dati.
 
 **JavaScript**
 
