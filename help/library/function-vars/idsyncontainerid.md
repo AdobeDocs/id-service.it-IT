@@ -5,7 +5,7 @@ seo-description: Questa proprietà imposta l'ID del contenitore della sorgente d
 seo-title: idSyncContainerID
 title: idSyncContainerID
 uuid: e35dc48b-1aa1-41e3-91c1-ef1e9d2d8b90
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -82,8 +82,8 @@ A seconda della situazione, potresti aver bisogno o meno di aggiungere questa co
 
 ## Impostazione degli ID dei contenitori quando usi DIL e VisitorAPI.js {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
-Se hai implementato [!UICONTROL DIL]*e* VisitorAPI.js sulla stessa pagina:
+Se hai implementato [!UICONTROL DIL] *e* VisitorAPI.js sulla stessa pagina:
 
 * Il codice del servizio ID del visitatore ha la precedenza rispetto a DIL per le sincronizzazioni ID.
-* Imposta la `idSyncContainerID` configurazione solo nel codice del servizio ID.
+* Imposta la configurazione `idSyncContainerID` solo nel codice del servizio ID.
 
