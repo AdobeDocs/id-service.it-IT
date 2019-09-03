@@ -1,11 +1,11 @@
 ---
-description: Restituisce l'ID Analytics legacy (se presente) memorizzato nel cookie s_ vi prima dell'implementazione del servizio Experience Cloud Identity. Se a un visitatore non è stato assegnato un ID Analytics, restituisce una stringa vuota.
+description: Restituisce l’ID Analytics legacy (se presente) memorizzato nel cookie s_vi prima dell’implementazione del servizio Experience Cloud Identity. Se a un visitatore non è stato assegnato un ID Analytics, restituisce una stringa vuota.
 keywords: Servizio ID
-seo-description: Restituisce l'ID Analytics legacy (se presente) memorizzato nel cookie s_ vi prima dell'implementazione del servizio Experience Cloud Identity. Se a un visitatore non è stato assegnato un ID Analytics, restituisce una stringa vuota.
+seo-description: Restituisce l’ID Analytics legacy (se presente) memorizzato nel cookie s_vi prima dell’implementazione del servizio Experience Cloud Identity. Se a un visitatore non è stato assegnato un ID Analytics, restituisce una stringa vuota.
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-Restituisce l'ID Analytics legacy (se presente) memorizzato nel cookie s_ vi prima dell'implementazione del servizio Experience Cloud Identity. Se a un visitatore non è stato assegnato un ID Analytics, restituisce una stringa vuota.
+Restituisce l’ID Analytics legacy (se presente) memorizzato nel cookie s_vi prima dell’implementazione del servizio Experience Cloud Identity. Se a un visitatore non è stato assegnato un ID Analytics, restituisce una stringa vuota.
 
 **Sintassi** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
@@ -44,7 +44,7 @@ Il `aid` parametro viene visualizzato in una stringa di interrogazione in base a
 Il parametro `aid` viene visualizzato in una stringa di interrogazione quando:
 
 * Il servizio [!DNL Experience Cloud] ID è stato distribuito correttamente.
-* L'utente che accede a un sito dispone di un ID [!DNL Analytics] precedente memorizzato nel cookie [s_vi](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/?f=cookies_analytics.html).
+* L'utente che accede a un sito ha un ID preesistente [!DNL Analytics] memorizzato nel proprio [cookie s_ vi](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/?f=cookies_analytics.html).
 
 **Caso 2**
 
@@ -52,5 +52,5 @@ Il `aid` parametro viene visualizzato in una stringa di interrogazione quando l'
 
 >[!MORE_LIKE_THIS]
 >
->* [Cookie di Analytics](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html)
+>* [Cookie Analytics](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html)
 
