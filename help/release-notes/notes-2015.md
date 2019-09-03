@@ -5,7 +5,7 @@ seo-description: Note sulla versione e aggiornamenti per la versione 2015.
 seo-title: Note sulla versione 2015
 title: Note sulla versione 2015
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -19,7 +19,7 @@ Note sulla versione e aggiornamenti per la versione 2015.
 
 Novembre 2015
 
-Il Children's Online Privacy Protection Act (COPPA) proibisce la raccolta online di dati personali di bambini di età inferiore ai 13 anni senza disporre del consenso verificabile dei genitori. I clienti interessati dal COPPA possono aggiungere una variabile opzionale al codice del servizio [!DNL Experience Cloud] ID che impedisce l’impostazione di cookie nel dominio di un browser di terze parti. See [COPPA Support in the Experience Cloud Identity Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Per le versioni a partire dalla 1.5.3.
+Il Children's Online Privacy Protection Act (COPPA) proibisce la raccolta online di dati personali di bambini di età inferiore ai 13 anni senza disporre del consenso verificabile dei genitori. I clienti interessati dal COPPA possono aggiungere una variabile opzionale al codice del servizio [!DNL Experience Cloud] ID che impedisce l’impostazione di cookie nel dominio di un browser di terze parti. Consulta [Supporto per COPPA nel servizio Experience Cloud Identity](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Per le versioni a partire dalla 1.5.3.
 
 ## Versione 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
@@ -45,13 +45,13 @@ Agosto 2015
 Alcune revisioni della documentazione effettuate in questa versione:
 
 * [Metodi API e libreria dei codici](../library/library.md#concept-ff27497375644a898d47984aefb21c97): contenuto e testo riorganizzati. Nella maggior parte dei casi, per ciascun metodo è presente una propria pagina.
-* [Requisiti per Experience Cloud Identity Service](../reference/requirements.md): Contenuto rivisto e testo riorganizzato.
+* [Requisiti del servizio Experience Cloud Identity](../reference/requirements.md): contenuto rivisto e testo riorganizzato.
 
 ## Versione 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
 Luglio 2015
 
-Il servizio [!DNL Experience Cloud] ID supporta più ID e stati di autenticazione. Questa modifica rimuove anche il supporto obsoleto per le mappature [!DNL Audience Manager] DPID di agli ID utente utilizzate dalla `setCustomerIDs`funzione. Vedi [Impostazione degli ID cliente e degli stati di autenticazione ](../reference/authenticated-state.md)
+Il servizio [!DNL Experience Cloud] ID supporta più ID e stati di autenticazione. Questa modifica rimuove anche il supporto obsoleto per le mappature [!DNL Audience Manager] DPID di agli ID utente utilizzate dalla `setCustomerIDs`funzione. Vedi [Impostazione degli ID cliente e degli stati di autenticazione](../reference/authenticated-state.md)
 
 ## Versione 1.4 {#section-f5c596f355b14da28f45c798df513572}
 
