@@ -1,11 +1,11 @@
 ---
-description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud Identità per 2017.
+description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2017.
 keywords: Servizio ID
-seo-description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud Identità per 2017.
+seo-description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2017.
 seo-title: Note sulla versione 2017
 title: Note sulla versione 2017
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,9 +13,9 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # Note sulla versione 2017 {#release-notes}
 
-Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud Identità per 2017.
+Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2017.
 
-Queste modifiche vengono anche riportate nelle [note sulla versione di Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/). Per le note sulle versioni del servizio ID più datate, consulta le [note sulle versioni precedenti](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html) o i link in fondo a questa pagina.
+Queste modifiche vengono anche acquisite nelle [note sulla versione Experience Cloud](https://marketing.adobe.com/resources/help/it_IT/whatsnew/). Per le note sulla versione del servizio ID precedenti, consulta le [note sulla versione precedente](https://marketing.adobe.com/resources/help/it_IT/whatsnew/?f=c_legacy_releases.html) o i collegamenti in fondo alla pagina.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * È stato corretto un bug relativo a Chrome a causa del quale il servizio ID generava un errore quando si faceva clic sul pulsante Indietro in tale browser.
 * Il servizio ID ora avvia di nuovo la sincronizzazione degli ID quando l'ID regione cambia nella risposta della chiamata dell'evento.
-* Alla documentazione è stata aggiunta la sezione  [Informativa sulla sicurezza dei contenuti e Servizio identità Experience Cloud](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), che spiega come inserire nella whitelist le chiamate ai domini Adobe utilizzati dal servizio ID.
+* Alla documentazione è stata aggiunta la sezione [Informativa sulla sicurezza dei contenuti e il servizio Experience Cloud Identity](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3) che spiega come inserire nella whitelist le chiamate ai domini Adobe utilizzati dal servizio ID.
 
 ## Versione 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
@@ -192,7 +192,7 @@ Data di rilascio: febbraio 2017
 
 **Nuova documentazione**
 
-[Utilizzo del recupero preventivo del DNS con diverse soluzioni e servizi di Experience Cloud `Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/en_US/mcloud/dns-prefetch.html)
+[Utilizzo di prefetch DNS con diverse soluzioni e servizi di Experience Cloud`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/it_IT/mcloud/dns-prefetch.html)
 
 ## Versione 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
