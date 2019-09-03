@@ -5,7 +5,7 @@ seo-description: setCustomerIDs imposta una o più coppie chiave/valore che defi
 seo-title: setCustomerIDs
 title: setCustomerIDs
 uuid: 4f960f98-cec2-4db6-84ea-0259e2128ea2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 21fb12b817b7c8cd34e6022ca6c188229228d1df
 
 ---
@@ -17,7 +17,7 @@ setCustomerIDs imposta una o più coppie chiave/valore che definiscono gli ID cl
 
 **Sintassi:** `visitor.setCustomerIDs()`
 
-Puoi impostare uno o più ID, come mostrato nel seguente codice di esempio. See [Customer IDs and Authentication States](../../reference/authenticated-state.md) for more information and examples.
+Puoi impostare uno o più ID, come mostrato nel seguente codice di esempio. Consulta [ID cliente e stati di autenticazione](../../reference/authenticated-state.md) per ulteriori informazioni ed esempi.
 
 ```js
 // Single ID with a single authentication state 
