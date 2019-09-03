@@ -5,7 +5,7 @@ seo-description: Le funzioni idSyncByURL e idSyncByDataSource del servizio ID pe
 seo-title: Sincronizzazione ID tramite URL o sorgente dati
 title: Sincronizzazione ID tramite URL o sorgente dati
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -92,8 +92,8 @@ Nella seguente tabella sono elencate e definite le proprietà di entrambe le fun
 Entrambe le funzioni accettano le seguenti macro:
 
 * `%TIMESTAMP%`: genera una marca temporale (in millisecondi). Utilizzato per svuotare la cache.
-* `%DID%`: inserisce l'ID di Audience Manager per l'utente.
-* `%HTTP_PROTO%`: Imposta il protocollo di comunicazione (`http` o `https`).
+* `%DID%`: inserisce l’ID di Audience Manager per l’utente.
+* `%HTTP_PROTO%`: imposta il protocollo di comunicazione ( `http` o `https`).
 
 ## Codice di esempio e output {#section-0115615c37584a19a2ab11e917c4e7e9}
 
