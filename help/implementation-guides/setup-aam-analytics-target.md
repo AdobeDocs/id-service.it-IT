@@ -1,19 +1,19 @@
 ---
-description: Queste istruzioni sono per i clienti di Analytics, Audience Manager e Target che desiderano utilizzare il servizio identità Experience Cloud e non usano Gestione dinamica dei tag. Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. Dynamic Tag Management semplifica l'implementazione e verifica automaticamente che il codice sia inserito correttamente e nella giusta sequenza.
+description: Queste istruzioni sono per i clienti di Analytics, Audience Manager e Target che desiderano usare il servizio Experience Cloud Identity e non usano Dynamic Tag Management (DTM). Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. Dynamic Tag Management semplifica l'implementazione e verifica automaticamente che il codice sia inserito correttamente e nella giusta sequenza.
 keywords: Servizio ID
-seo-description: Queste istruzioni sono per i clienti di Analytics, Audience Manager e Target che desiderano utilizzare il servizio identità Experience Cloud e non usano Gestione dinamica dei tag. Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. Dynamic Tag Management semplifica l'implementazione e verifica automaticamente che il codice sia inserito correttamente e nella giusta sequenza.
-seo-title: Implementazione del servizio identità Experience Cloud per Analytics, Audience Manager e Target
-title: Implementazione del servizio identità Experience Cloud per Analytics, Audience Manager e Target
+seo-description: Queste istruzioni sono per i clienti di Analytics, Audience Manager e Target che desiderano usare il servizio Experience Cloud Identity e non usano Dynamic Tag Management (DTM). Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. Dynamic Tag Management semplifica l'implementazione e verifica automaticamente che il codice sia inserito correttamente e nella giusta sequenza.
+seo-title: Implementazione del servizio Experience Cloud Identity per Analytics, Audience Manager e Target
+title: Implementazione del servizio Experience Cloud Identity per Analytics, Audience Manager e Target
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
 
-# Implement the Experience Cloud Identity Service for Analytics, Audience Manager, and Target {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
+# Implementazione del servizio Experience Cloud Identity per Analytics, Audience Manager e Target{#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
 
-Queste istruzioni sono per i clienti di Analytics, Audience Manager e Target che desiderano utilizzare il servizio identità Experience Cloud e non usano Gestione dinamica dei tag. Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. Dynamic Tag Management semplifica l'implementazione e verifica automaticamente che il codice sia inserito correttamente e nella giusta sequenza.
+Queste istruzioni sono per i clienti di Analytics, Audience Manager e Target che desiderano usare il servizio Experience Cloud Identity e non usano Dynamic Tag Management (DTM). Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. Dynamic Tag Management semplifica l'implementazione e verifica automaticamente che il codice sia inserito correttamente e nella giusta sequenza.
 
 >[!IMPORTANT]
 >
@@ -26,13 +26,13 @@ Queste istruzioni sono per i clienti di Analytics, Audience Manager e Target che
 
 ## Passaggio 1: pianificazione dell'inoltro lato server {#section-880797cc992d4755b29cada7b831f1fc}
 
-Oltre ai passaggi qui descritti, i clienti che usano [!DNL Analytics] e [!DNL Audience Manager] devono effettuare la migrazione all'inoltro lato server. L'inoltro lato server consente di rimuovere DIL (codice di raccolta dati di Audience Manager) e sostituirlo con il [modulo Gestione dell'audience](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html). Per ulteriori informazioni, consulta la [documentazione sull'inoltro lato server](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html).
+Oltre ai passaggi qui descritti, i clienti che usano [!DNL Analytics] e [!DNL Audience Manager] devono effettuare la migrazione all'inoltro lato server. L'inoltro lato server consente di rimuovere il DIL (codice di raccolta dati di Audience Manager) e sostituirlo con il modulo [Gestione dell'audience](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html). Per ulteriori informazioni, consulta la [documentazione dell'inoltro lato server](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html).
 
 La migrazione all'inoltro lato server richiede un'attenta pianificazione e coordinazione. Il processo comporta modifiche esterne da apportare al codice del sito e passaggi interni che Adobe deve effettuare per il provisioning del tuo account. In effetti, molte di queste procedure di migrazione devono avvenire in parallelo ed essere rilasciate insieme. Il percorso di implementazione dovrà seguire questa sequenza di eventi:
 
 1. Pianifica con i tuoi contatti per [!DNL Analytics] e [!DNL Audience Manager] la migrazione dell'inoltro lato server e il servizio ID. La selezione del server di tracciamento è una fase importante di questo piano.
 
-1. Per iniziare, completa il modulo disponibile sul [sito di integrazioni e provisioning](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES).
+1. Completa il modulo sulle [integrazioni e sul sito di provisioning](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES) per iniziare.
 
 1. Implementa il servizio ID e il [!DNL Audience Management Module] simultaneamente. Per funzionare correttamente, il [!DNL Audience Management Module] (inoltro lato server) e il servizio ID devono essere rilasciati per lo stesso set di pagine e allo stesso tempo.
 
@@ -132,7 +132,7 @@ Per stabilire quali variabili usare per il server di monitoraggio:
 * URL del server Experience Cloud = URL del server di tracciamento
 * URL del server protetto Experience Cloud = URL del server protetto di tracciamento
 
-Se non sei sicuro di come trovare il server di tracciamento, consulta [Domande frequenti](../faq-intro/faq.md) e [Aggiunta corretta delle variabili trackingServer e trackingServerSecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+Se non sei sicuro di come trovare il server di tracciamento, consulta le [domande frequenti](../faq-intro/faq.md) e [Compilare correttamente le variabili trackingServer e trackingServerSecure ](https://helpx.adobe.com/it/analytics/kb/determining-data-center.html#).
 
 ## Passaggio 6: aggiorna il file AppMeasurement.js {#section-5517e94a09bc44dfb492ebca14b43048}
 
@@ -144,7 +144,7 @@ Aggiungi la `Visitor.getInstance` funzione riportata di seguito al tuo `AppMeasu
 
 >[!IMPORTANT]
 >
->A questo punto, devi rimuovere il codice [!DNL Audience Manager] DIL e sostituirlo con il modulo Gestione dell'audience. Vedi [Implementazione dell'inoltro lato server](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html).
+>A questo punto, devi rimuovere il codice [!DNL Audience Manager] DIL e sostituirlo con il modulo Gestione dell'audience. Per istruzioni, consulta [Implementare l'inoltro lato server](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html).
 
 ***(Facoltativo ma consigliato)*Crea un prop personalizzato****
 
@@ -164,7 +164,7 @@ Inserisci il ` [!UICONTROL VisitorAPI.js]` file entro i tag `<head>` di ogni pag
 
 ## Passaggio 8: (facoltativo) configura un periodo di tolleranza {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). I periodi di tolleranza possono durare fino a 180 giorni. Se necessario, puoi rinnovare il periodo di tolleranza.
+Se uno di questi casi d'uso si applica alla tua situazione, chiedi [all'assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html) di impostare un [periodo di tolleranza](../reference/analytics-reference/grace-period.md) temporaneo. I periodi di tolleranza possono durare fino a 180 giorni. Se necessario, puoi rinnovare il periodo di tolleranza.
 
 **Implementazione parziale**
 
@@ -178,7 +178,7 @@ Se, dopo la migrazione al servizio ID, richiedi ai nuovi visitatori il cookie s_
 
 Quando l'implementazione può acquisire il MID, invece di leggere il cookie s_vi, puoi interrompere il periodo di tolleranza.
 
-See also, [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md).
+Consulta anche [Cookie e il servizio Experience Cloud Identity](../introduction/cookies.md).
 
 **Integrazione dei dati di clickstream**
 
@@ -186,7 +186,7 @@ Se invii dati a un sistema interno da un feed di dati clickstream e per i proces
 
 Quando il processo di inserimento dei dati può utilizzare le colonne `post_visid_high` e `post_visid_low`, interrompi il periodo di tolleranza.
 
-Vedi [Descrizione delle colonne nei dati di clickstream](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html).
+Vedi anche i riferimenti della [Colonna dati di clickstream](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html).
 
 ## Passaggio 9: test e verifica {#section-f857542bfc70496dbb9f318d6b3ae110}
 
@@ -194,7 +194,7 @@ Le soluzioni [!DNL Experience Cloud] di questa implementazione restituiscono gli
 
 >[!TIP]
 >
->You can use the [Adobe Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=debugger.html) or the [Charles HTTP proxy](https://www.charlesproxy.com/) to check for these solution-specific IDs. Puoi anche usare un altro strumento o debugger di tua preferenza.
+>Puoi utilizzare [Adobe Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=debugger.html) o [roxy HTTP Charles](https://www.charlesproxy.com/) per controllare questi ID specifici della soluzione. Puoi anche usare un altro strumento o debugger di tua preferenza.
 
 **Tutte le soluzioni**
 
@@ -203,7 +203,7 @@ Elementi da verificare:
 * [Cookie AMCV](../introduction/cookies.md) nel dominio di hosting della pagina.
 * [!DNL Experience Cloud] ID (MID) con [!DNL Adobe] Debugger o altro strumento di debug.
 
-For additional checks that help you determine if the ID service is working properly, see [Test and Verify the Experience Cloud Identity Service](../implementation-guides/test-verify.md).
+Per ulteriori verifiche utili per determinare se il servizio ID funziona correttamente, consulta [Test e verifica del servizio Experience Cloud Identity](../implementation-guides/test-verify.md).
 
 **Analytics**
 
@@ -221,7 +221,7 @@ Quando ricevi un AID, controllane il valore rispetto al valore [!DNL Target] mbo
 Per verificare l'inoltro lato server, vedi:
 
 * [Come determinare se il tuo account è pronto per ricevere dati inoltrati](https://marketing.adobe.com/resources/help/en_US/aam/ssf-success.html)
-* [Come determinare se il tuo account non è pronto per ricevere dati inoltrati](https://marketing.adobe.com/resources/help/en_US/aam/ssf-fail.html)
+* [Come determinare se l'account non è pronto a ricevere dati inoltrati](https://marketing.adobe.com/resources/help/en_US/aam/ssf-fail.html)
 
 **Target**
 
