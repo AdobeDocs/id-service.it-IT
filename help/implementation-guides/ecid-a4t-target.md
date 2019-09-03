@@ -5,7 +5,7 @@ seo-description: Queste istruzioni sono per i clienti A4T con implementazioni mi
 seo-title: Uso del servizio ID con A4T e l'implementazione lato server di Target
 title: Uso del servizio ID con A4T e l'implementazione lato server di Target
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -47,7 +47,7 @@ Successivamente, devi effettuare una richiesta lato server *`payload request`* a
 
 >[!NOTE]
 >
->Questo metodo richiede un singolo mbox da [!DNL Target]. Se devi richiedere più mbox in una singola chiamata, vedi [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload).
+>Questo metodo richiede un singolo mbox da [!DNL Target]. Se hai bisogno di richiedere più mbox in una singola chiamata, consulta [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload).
 
 Di seguito puoi vedere un esempio di codice per la richiesta di payload. Nel codice di esempio, la funzione `visitor.setCustomerIDs` è opzionale. Consulta [ID cliente e stati di autenticazione](../reference/authenticated-state.md) per ulteriori informazioni.
 
@@ -166,7 +166,7 @@ Le impostazioni modificate saranno simili all'esempio di seguito:
 
 ![](assets/server_side_dtm.png)
 
-See also, [Experience Cloud Identity Service Settings for DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
+Consulta anche [Impostazioni del servizio Experience Cloud Identity per DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
 
 **Ottenere lo stato del server senza DTM**
 
@@ -199,5 +199,5 @@ A questo punto, il server Web invia il contenuto della pagina al browser del vis
 
 >[!MORE_LIKE_THIS]
 >
->* [Pacchetto del servizio ID lato server da Node Package Manager](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
+>* [Pacchetto servizio ID lato server da Node Package Manager](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
 
