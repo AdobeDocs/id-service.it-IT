@@ -5,21 +5,21 @@ seo-description: Panoramica del processo di richiesta degli ID e di risposta. Qu
 seo-title: Richiesta e impostazione degli ID da parte del servizio Experience Cloud Identity
 title: Richiesta e impostazione degli ID da parte del servizio Experience Cloud Identity
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# How the Experience Cloud Identity Service requests and sets IDs{#how-the-experience-cloud-id-service-requests-and-sets-ids}
+# Richiesta e impostazione degli ID da parte del servizio Experience Cloud Identity{#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
 Panoramica del processo di richiesta degli ID e di risposta. Questi esempi descrivono l'assegnazione degli ID per siti individuali, per siti diversi e per siti gestiti da diversi clienti Experience Cloud con i propri ID organizzazione.
 
 >[!NOTE]
 >
->If you're not familiar with how the Experience Cloud Identity Service creates the visitor ID, take a moment to review [Experience Cloud](../introduction/cookies.md).
+>Se non sai in che modo il servizio Experience Cloud Identity crea l’ID visitatore, consulta la sezione [Experience Cloud](../introduction/cookies.md).
 
-**Suggerimento:** consulta anche il [ video sul monitoraggio interdominio del servizio ID](https://helpx.adobe.com/marketing-cloud-core/kb/MCID/CrossDomain.html).
+**Suggerimento:** guarda anche il [video del servizio ID sul monitoraggio tra più domini](https://helpx.adobe.com/it/marketing-cloud-core/kb/MCID/CrossDomain.html).
 
 ## Richiesta di un Experience Cloud ID {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 
@@ -32,7 +32,7 @@ Nei seguenti esempi viene spiegato in che modo il servizio ID richiede e riceve 
 In questo esempio, un nuovo visitatore accede al sito pizzeria gestito dalla società Azienda alimentare. La società Azienda alimentare ha implementato il codice del servizio ID sul sito Web pizzeria. Quando il sito pizzeria viene caricato, il codice del servizio ID verifica il cookie AMCV nel dominio pizza.
 
 * Se il cookie AMCV è impostato, il visitatore del sito dispone di un Experience Cloud ID. In questo caso, il cookie monitora il visitatore e condivide i dati con altre soluzioni Experience Cloud.
-* Se il cookie AMCV non è impostato, il codice del servizio ID effettua una chiamata a un [server di raccolta dati](https://marketing.adobe.com/resources/help/en_US/aam/?f=c_compcollect.html) (DCS) locale su `dpm.demdex.net/id` (vedi anche [Informazioni sulle chiamate al dominio demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)). La chiamata include l'ID organizzazione della società Azienda alimentare. L'ID organizzazione viene impostato nella funzione `Visitor.getInstance` del codice del servizio ID.
+* Se il cookie AMCV non è impostato, il codice del servizio ID chiama un [server di raccolta dati regionale](https://marketing.adobe.com/resources/help/en_US/aam/?f=c_compcollect.html) (DCS) in `dpm.demdex.net/id` (vedi anche, [Informazioni sulle chiamate a Demdex Domain](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)). La chiamata include l'ID organizzazione della società Azienda alimentare. L'ID organizzazione viene impostato nella funzione `Visitor.getInstance` del codice del servizio ID.
 
 ![](assets/request1.png)
 
