@@ -5,7 +5,7 @@ seo-description: Questa API asincrona restituisce per impostazione predefinita i
 seo-title: getVisitorValues
 title: getVisitorValues
 uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -84,7 +84,7 @@ La risposta di esempio personalizzata restituisce solo quegli ID specificati nel
 
 ## Parametri di risposta definiti {#section-4c4c300167694c6fbff1d6c612f372b5}
 
-Nella seguente tabella sono elencati e definiti i parametri di risposta. Questi sono anche tutti i valori `visitor.FIELDS` nell'enum Nota, questo metodo restituisce una stringa vuota se non ci sono valori per una particolare variabile.
+Nella seguente tabella sono elencati e definiti i parametri di risposta. Questi sono anche tutti i valori `visitor.FIELDS` nell'enum. Nota, questo metodo restituisce una stringa vuota se non ci sono valori per una particolare variabile.
 
 <table id="table_32D0FEEA76CE4F298EED4B8F5C644232"> 
  <thead> 
@@ -108,7 +108,7 @@ Nella seguente tabella sono elencati e definiti i parametri di risposta. Questi 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>L'Experience Cloud ID del visitatore. </p> <p>Consulta  <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookie e Servizio identità Experience Cloud </a>. </p> </td> 
+   <td colname="col2"> <p>L'Experience Cloud ID del visitatore. </p> <p>Consulta <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookie e il servizio Experience Cloud Identity </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
