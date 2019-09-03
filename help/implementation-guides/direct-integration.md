@@ -2,16 +2,16 @@
 description: Questa implementazione permette ai clienti di usare il servizio ID su dispositivi che non possono accettare o lavorare con il nostro codice JavaScript o SDK. Tra questi dispositivi sono incluse consolle di gioco, smart TV o altri apparecchi dotati di Internet. Fare riferimento a questa sezione per sintassi, esempi di codice e definizioni.
 keywords: Servizio ID
 seo-description: Questa implementazione permette ai clienti di usare il servizio ID su dispositivi che non possono accettare o lavorare con il nostro codice JavaScript o SDK. Tra questi dispositivi sono incluse consolle di gioco, smart TV o altri apparecchi dotati di Internet. Fare riferimento a questa sezione per sintassi, esempi di codice e definizioni.
-seo-title: Integrazione diretta con Experience Cloud Identity Service
-title: Integrazione diretta con Experience Cloud Identity Service
+seo-title: Integrazione diretta con il servizio Experience Cloud Identity
+title: Integrazione diretta con il servizio Experience Cloud Identity
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Direct integration with the Experience Cloud Identity Service {#direct-integration-with-the-experience-cloud-id-service}
+# Integrazione diretta con il servizio Experience Cloud Identity {#direct-integration-with-the-experience-cloud-id-service}
 
 Questa implementazione permette ai clienti di usare il servizio ID su dispositivi che non possono accettare o lavorare con il nostro codice JavaScript o SDK. Tra questi dispositivi sono incluse consolle di gioco, smart TV o altri apparecchi dotati di Internet. Fare riferimento a questa sezione per sintassi, esempi di codice e definizioni.
 
@@ -21,7 +21,7 @@ I dispositivi che non possono usare le librerie di codici VisitorAPI.js o SDK po
 
 ![](assets/directSyntax.png)
 
-In questo esempio di sintassi, il `d_` prefisso identifica le coppie chiave-valore nella chiamata come variabile a livello di sistema. Puoi trasmettere una serie di `d_` parametri al servizio ID, ma fai particolare attenzione alle coppie chiave-valore mostrate nel codice seguente. Per maggiori informazioni sulle altre variabili, consulta [Attributi supportati per le chiamate API DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
+In questo esempio di sintassi, il `d_` prefisso identifica le coppie chiave-valore nella chiamata come variabile a livello di sistema. Puoi trasmettere una serie di `d_` parametri al servizio ID, ma fai particolare attenzione alle coppie chiave-valore mostrate nel codice seguente. Per ulteriori informazioni su altre variabili, consulta [Attributi supportati per le chiamate API DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
 
 Il servizio ID supporta le chiamate HTTP e HTTPS. Usa HTTPS per trasmettere i dati da una pagina sicura.
 
@@ -62,11 +62,11 @@ Il servizio ID restituisce i dati in un oggetto JSON come mostrato di seguito. L
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>L'ID visitatore Experience Cloud. Consulta <a href="../introduction/cookies.md" format="dita" scope="local"> Cookie e Servizio identità Experience Cloud</a>. </p> </td> 
+   <td colname="col2"> <p>L'ID visitatore Experience Cloud. Consulta <a href="../introduction/cookies.md" format="dita" scope="local"> Cookie e il servizio Experience Cloud Identity</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>L'ID organizzazione Experience Cloud. Per maggiori informazioni su come trovare questo ID vedere, <a href="../reference/requirements.md" format="dita" scope="local"> Requisiti per Experience Cloud Identity Service</a>. </p> </td> 
+   <td colname="col2"> <p>L'ID organizzazione Experience Cloud. Per maggiori informazioni su come trovare questo ID vedere,  <a href="../reference/requirements.md" format="dita" scope="local"> Requisiti del servizio Experience Cloud Identity</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
