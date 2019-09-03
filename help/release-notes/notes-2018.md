@@ -1,11 +1,11 @@
 ---
-description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud Identità per 2018.
+description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2018.
 keywords: Servizio ID
-seo-description: Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud Identità per 2018.
+seo-description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2018.
 seo-title: Note sulla versione 2018
 title: Note sulla versione 2018
 uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # Note sulla versione 2018 {#release-notes}
 
-Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud Identità per 2018.
+Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2018.
 
 ## Versione 3.3 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -69,7 +69,7 @@ Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud Iden
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Picco non realistico nel conteggio di visitatori univoci </p> </td> 
-   <td colname="col2"> <p>Con il rilascio di Experience Cloud Identity Service 3.1.0, è stato riscontrato un problema che causava un picco non realistico nel conteggio dei visitatori univoci quando questa versione era stata implementata. Questo comportamento si verifica solo nell'ultima versione di ECID (3.1.0) e solo se l'utente ha selezionato l'opzione “Consenti solo dal sito Web attuale” nelle impostazioni di privacy del browser Safari. La versione 3.1.2 corregge questo problema. </p> </td> 
+   <td colname="col2"> <p>Con il rilascio del servizio Experience Cloud Identity 3.1.0, abbiamo riscontrato un problema che causava un picco non realistico nel conteggio dei visitatori univoci in seguito all’implementazione di tale versione. Questo comportamento si verifica solo nell'ultima versione di ECID (3.1.0) e solo se l'utente ha selezionato l'opzione “Consenti solo dal sito Web attuale” nelle impostazioni di privacy del browser Safari. La versione 3.1.2 corregge questo problema. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -78,7 +78,7 @@ Rilasci di funzioni, aggiornamenti o modifiche al servizio Experience Cloud Iden
 
 >[!NOTE]
 >
->È consigliabile passare il prima possibile dalla versione 3.1.0 alla versione più recente. Consultare la descrizione della versione 3.1.2. L'ultimo bundle è disponibile in Adobe Experience Platform Launch, DTM e appmeasurement.
+>È consigliabile passare il prima possibile dalla versione 3.1.0 alla versione più recente. Consultare la descrizione della versione 3.1.2. L’ultimo pacchetto è disponibile da Adobe Experience Platform Launch, DTM e AppMeasurement.
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
