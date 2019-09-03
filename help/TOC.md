@@ -1,16 +1,16 @@
 ---
-cloud: platform-cloud
+cloud: cloud piattaforma
 product: Servizio ID
 audience: utente finale
-user-guide-title: Aiuto di Experience Cloud Identity Service
-user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: tm+mt
+user-guide-title: Guida del servizio Experience Cloud Identity
+user-guide-url: /content/help/it-IT/id-service/using/home.html
+translation-type: ht
 source-git-commit: 11578e184a86625a246fee84c65fcdee1a086c45
 
 ---
 
 
-# Experience Cloud Identity Service Help {#using}
+# Guida del servizio Experience Cloud Identity {#using}
 
 + [Guida al servizio ID](home.md)
 + Panoramica {#intro}
@@ -31,7 +31,7 @@ source-git-commit: 11578e184a86625a246fee84c65fcdee1a086c45
    + [Uso del servizio ID con A4T e l'implementazione lato server di Target](implementation-guides/ecid-a4t-target.md)
    + [Integrazione diretta con il servizio ID](implementation-guides/direct-integration.md)
    + [Casi d'uso dell'integrazione diretta](implementation-guides/direct-integration-examples.md)
-   + [Verificare e verificare il servizio ID](implementation-guides/test-verify.md)
+   + [Test e verifica del servizio ID](implementation-guides/test-verify.md)
    + Documentazione Opt-in {#opt-in-service}
       + [Panoramica del servizio Opt-in](implementation-guides/opt-in-service/optin-overview.md)
       + [Configurazione del servizio Opt-in](implementation-guides/opt-in-service/getting-started.md)
@@ -42,7 +42,7 @@ source-git-commit: 11578e184a86625a246fee84c65fcdee1a086c45
       + [Riferimenti di Opt-in](implementation-guides/opt-in-service/api.md)
       + [(beta) Utilizzo dei servizi Opt-in con il framework IAB](implementation-guides/opt-in-service/iab.md)
 + API del servizio ID {#id-service-api}
-   + [Panoramica API servizio ID](library/library.md)
+   + [Panoramica API del servizio ID](library/library.md)
    + Configurazione {#configurations}
       + [Panoramica sulle configurazioni](library/function-vars/function-vars.md)
       + [audienceManagerServer e audienceManagerServerSecure](library/function-vars/subdomain-config.md)
@@ -78,7 +78,7 @@ source-git-commit: 11578e184a86625a246fee84c65fcdee1a086c45
       + [isClientSideMarketingCloudVisitorID](library/get-set/client-side-id.md)
       + [resetState](library/get-set/resetstate.md)
 + Riferimenti {#reference}
-   + [Panoramica di riferimento](reference/reference.md)
+   + [Panoramica dei riferimenti](reference/reference.md)
    + Guida di riferimento di Analytics {#analytics-reference}
       + [Panoramica sulla guida di riferimento di Analytics](reference/analytics-reference/analytics-reference.md)
       + [Impostazione degli ID di Analytics ed Experience Cloud](reference/analytics-reference/analytics-ids.md)
@@ -91,14 +91,14 @@ source-git-commit: 11578e184a86625a246fee84c65fcdee1a086c45
       + [Periodo di tolleranza per il servizio ID](reference/analytics-reference/grace-period.md)
    + [Informativa sulla sicurezza dei contenuti e servizio ID](reference/csp.md)
    + [Supporto per COPPA nel servizio ID](reference/coppa.md)
-   + [Supporto CORS nel servizio ID](reference/cors.md)
+   + [Supporto per CORS nel servizio ID](reference/cors.md)
    + [ID cliente e stati di autenticazione](reference/authenticated-state.md)
-   + [Metodi della libreria ECID in un world Safari ITP](reference/ecid-library-methods.md)
+   + [Metodi della libreria ECID in ambito Safari ITP](reference/ecid-library-methods.md)
    + [Ottenere gli ID di utente e regione dal cookie AMCV o dal servizio ID](reference/regions.md)
    + [Requisiti del servizio ID](reference/requirements.md)
    + [Video Heartbeat e il servizio ID](reference/heartbeat.md)
-   + [Workbench dati e servizio ID](reference/dwb.md)
-   + [SHA 256 Hashing Support for setcustomerids](reference/hashing-support.md)
+   + [Data Workbench e il servizio ID](reference/dwb.md)
+   + [Supporto di hashing SHA-256 per setCustomerIDs](reference/hashing-support.md)
 + Domande frequenti {#faqs}
    + [Panoramica sulle domande frequenti](faq-intro/faq-intro.md)
    + [Domande frequenti sul servizio ID](faq-intro/faq.md)
