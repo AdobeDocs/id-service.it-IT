@@ -2,16 +2,16 @@
 description: Il servizio ID utilizza l'ID organizzazione, il cookie AMCV di Experience Cloud e il cookie demdex per creare e memorizzare identificatori univoci e costanti per i visitatori del sito. Questi cookie permettono al servizio ID di tenere traccia dei visitatori nei diversi domini e di condividere i dati tra le varie soluzioni Experience Cloud.
 keywords: playstation; servizio ID
 seo-description: Il servizio ID utilizza l'ID organizzazione, il cookie AMCV di Experience Cloud e il cookie demdex per creare e memorizzare identificatori univoci e costanti per i visitatori del sito. Questi cookie permettono al servizio ID di tenere traccia dei visitatori nei diversi domini e di condividere i dati tra le varie soluzioni Experience Cloud.
-seo-title: Cookie e servizio identità Experience Cloud
-title: Cookie e servizio identità Experience Cloud
+seo-title: Cookie e il servizio Experience Cloud Identity
+title: Cookie e il servizio Experience Cloud Identity
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
 
-# Cookies and the Experience Cloud Identity Service{#cookies-and-the-experience-cloud-id-service}
+# Cookie e il servizio Experience Cloud Identity{#cookies-and-the-experience-cloud-id-service}
 
 Il servizio ID utilizza l'ID organizzazione, il cookie AMCV di Experience Cloud e il cookie demdex per creare e memorizzare identificatori univoci e costanti per i visitatori del sito. Questi cookie permettono al servizio ID di tenere traccia dei visitatori nei diversi domini e di condividere i dati tra le varie soluzioni Experience Cloud.
 
@@ -25,7 +25,7 @@ Il servizio ID funziona correttamente se usa i cookie AMCV, AMCVS e demdex. Ques
 * Mantenere questo ID univoco permettendo al servizio ID di raccogliere e condividere i dati con altre soluzioni Experience Cloud.
 * Tracciare gli utenti nei vari domini. Questa funzione richiede però la presenza di altri domini dotati di un codice del servizio ID.
 
-### Ciò che le ookies del servizio ID non possono fare
+### Quali funzioni non possono essere svolte dai cookie del servizio ID
 
 * Archiviare, trasmettere o eseguire virus sui computer.
 * Accedere o archiviare informazioni personali identificabili (PII) come il tuo indirizzo e-mail.
@@ -114,7 +114,7 @@ Nella seguente tabella sono elencati e definiti alcuni importanti attributi del 
  </tbody> 
 </table>
 
-For related information, see [Understanding Calls to the Demdex Domain](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
+Per informazioni correlate, consulta [Informazioni sulle chiamate al dominio Demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
 
 ## Generazione dell'Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
@@ -124,4 +124,4 @@ Il servizio ID inizia a creare un MID non appena la tua pagina viene caricata. D
 
 ## Passaggi successivi {#section-8db1727a63bc4ff68b495f270315d453}
 
-See [How the Experience Cloud Identity Service Requests and Sets IDs...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
+Consulta [Richiesta e impostazione degli ID da parte del servizio Experience Cloud Identity...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
