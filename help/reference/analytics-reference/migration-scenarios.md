@@ -2,16 +2,16 @@
 description: Comprende esempi di configurazione del server e i passaggi necessari per la migrazione.
 keywords: Servizio ID
 seo-description: Comprende esempi di configurazione del server e i passaggi necessari per la migrazione.
-seo-title: Scenari di migrazione al servizio Experience Cloud
-title: Scenari di migrazione al servizio Experience Cloud
+seo-title: Scenari di migrazione al servizio Experience Cloud Identity
+title: Scenari di migrazione al servizio Experience Cloud Identity
 uuid: 9e229045-6508-48c4-ae39-9537b4941853
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Experience Cloud Identity Service Migration Scenarios {#experience-cloud-id-service-migration-scenarios}
+# Scenari di migrazione al servizio Experience Cloud Identity {#experience-cloud-id-service-migration-scenarios}
 
 Comprende esempi di configurazione del server e i passaggi necessari per la migrazione.
 
