@@ -2,16 +2,16 @@
 description: Un'informativa sulla sicurezza dei contenuti (CSP) è un'intestazione HTTP e una funzione di sicurezza che offre ai browser il controllo sul tipo di risorse caricate su una pagina Web. Consulta questa sezione se usi il servizio ID e hai una CSP rigida che adotta delle whitelist per accettare le risorse dai domini fidati. Dovrai aggiungere i domini Adobe elencati di seguito alle whitelist della CSP.
 keywords: Servizio ID
 seo-description: Un'informativa sulla sicurezza dei contenuti (CSP) è un'intestazione HTTP e una funzione di sicurezza che offre ai browser il controllo sul tipo di risorse caricate su una pagina Web. Consulta questa sezione se usi il servizio ID e hai una CSP rigida che adotta delle whitelist per accettare le risorse dai domini fidati. Dovrai aggiungere i domini Adobe elencati di seguito alle whitelist della CSP.
-seo-title: Informativa sulla sicurezza dei contenuti e servizio identità Experience Cloud
-title: Informativa sulla sicurezza dei contenuti e servizio identità Experience Cloud
+seo-title: Informativa sulla sicurezza dei contenuti e servizio Experience Cloud Identity
+title: Informativa sulla sicurezza dei contenuti e servizio Experience Cloud Identity
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Content Security Policies and the Experience Cloud Identity Service {#content-security-policies-and-the-experience-cloud-id-service}
+# Informativa sulla sicurezza dei contenuti e servizio Experience Cloud Identity {#content-security-policies-and-the-experience-cloud-id-service}
 
 Un'informativa sulla sicurezza dei contenuti (CSP) è un'intestazione HTTP e una funzione di sicurezza che offre ai browser il controllo sul tipo di risorse caricate su una pagina Web. Consulta questa sezione se usi il servizio ID e hai una CSP rigida che adotta delle whitelist per accettare le risorse dai domini fidati. Dovrai aggiungere i domini Adobe elencati di seguito alle whitelist della CSP.
 
@@ -53,14 +53,14 @@ Aggiungi questi nomi o URL di domini alla tua CSP per ogni soluzione o servizio 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Servizio ID visitatori</b> </p> </td> 
-   <td colname="col2"> <p>Modifica la tua CSP in modo che includa <span class="codeph">*.demdex.net</span>. </p> <p>Calls to the <span class="codeph"> demdex.net</span> domain are used to generate the <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies and the Experience Cloud Identity Service</a> and for ID syncs. Vedi anche <a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Informazioni sulle chiamate al dominio demdex</a>. </p> </td> 
+   <td colname="col2"> <p>Modifica la tua CSP in modo che includa <span class="codeph">*.demdex.net</span>. </p> <p>Le chiamate al dominio <span class="codeph"> demdex.net</span> vengono utilizzate per generare i cookie <a href="../introduction/cookies.md" format="dita" scope="local"> e il servizio Experience Cloud Identity</a> e per le sincronizzazioni degli ID. Vedi anche <a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Informazioni sulle chiamate al dominio demdex</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!MORE_LIKE_THIS]
 >
->* [Riferimento all'informativa sulla sicurezza dei contenuti](https://content-security-policy.com/)
->* [MDN: informativa sulla sicurezza dei contenuti](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
->* [Wikipedia: informativa sulla sicurezza dei contenuti](https://en.wikipedia.org/wiki/Content_Security_Policy)
+>* [Riferimenti nell'informativa sulla sicurezza dei contenuti](https://content-security-policy.com/)
+>* [MDN: informativa sulla sicurezza dei contenuti](https://developer.mozilla.org/it-IT/docs/Web/HTTP/CSP)
+>* [Wikipedia: informativa sulla sicurezza dei contenuti](https://it.wikipedia.org/wiki/Content_Security_Policy)
 
