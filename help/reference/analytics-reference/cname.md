@@ -5,7 +5,7 @@ seo-description: nulle
 seo-title: CNAME per raccolta dati e monitoraggio tra più domini
 title: CNAME per raccolta dati e monitoraggio tra più domini
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -23,7 +23,7 @@ Il cookie demdex.net consente al servizio ID visitatore di offrire lo stesso liv
 
 ## CNAME per la raccolta dati {#section-48fd186d376a48079769d12c4bd9f317}
 
-Quando il cookie di Analytics veniva impostato dal server di raccolta dati, molti clienti configuravano i record CNAME del server di raccolta dati durante l'[implementazione dei cookie di prime parti](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/), in modo da evitare problemi con i browser che rifiutano i cookie di terze parti. Questo processo configura il dominio del server di raccolta dati in modo che corrisponda al dominio del sito Web, così il cookie dell'ID visitatore viene impostato come cookie di prime parti.
+Quando il cookie di Analytics veniva impostato dal server di raccolta dati, molti clienti configuravano i record CNAME del server di raccolta dati durante l'[implementazione dei cookie di prime parti](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/,) in modo da evitare problemi con i browser che rifiutano i cookie di terze parti. Questo processo configura il dominio del server di raccolta dati in modo che corrisponda al dominio del sito Web, così il cookie dell'ID visitatore viene impostato come cookie di prime parti.
 
 Poiché il servizio ID visitatore imposta direttamente il cookie visitatore sul dominio del sito Web corrente usando JavaScript, questa configurazione non è più necessaria per impostare i cookie di prime parti.
 
@@ -45,6 +45,6 @@ Se utilizzi questo stesso server di raccolta dati su altri siti (ad esempio, `my
 
 Di conseguenza, il dominio di raccolta deve essere un dominio visitato regolarmente, in modo che i visitatori possano essere identificati in tutti i domini. Se non è presente un dominio di raccolta dati *del genere*, l'uso di un CNAME per il dominio di raccolta dati non presenta alcuna utilità ai fini dell'utilizzo in più domini. Se il sito di accesso principale non viene visitato per primo, i visitatori vengono identificati in modo diverso negli altri siti rispetto al sito principale.
 
-## Enable CNAME support with the Experience Cloud Identity Service {#section-25d4feb686d944e3a877d7aad8dbdf9a}
+## Attivazione del supporto per i CNAME con il servizio Experience Cloud Identity {#section-25d4feb686d944e3a877d7aad8dbdf9a}
 
-Il supporto per i CNAME del server di raccolta dati può essere attivato impostando le `visitor.marketingCloudServerSecure` variabili.
+Il supporto per i CNAME del server di raccolta dati può essere attivato impostando le variabili `visitor.marketingCloudServerSecure`.
