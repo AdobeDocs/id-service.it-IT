@@ -1,19 +1,19 @@
 ---
-description: Il Children’s Online Privacy Protection Act (COPPA) proibisce la raccolta online di dati personali di bambini di età inferiore ai 13 anni senza disporre del consenso verificabile dei genitori. I clienti interessati dal COPPA possono aggiungere una variabile opzionale al codice del servizio identità Experience Cloud che impedisce l'impostazione di cookie nel dominio di un browser di terze parti.
+description: Il Children’s Online Privacy Protection Act (COPPA) proibisce la raccolta online di dati personali di bambini di età inferiore ai 13 anni senza disporre del consenso verificabile dei genitori. I clienti interessati dal COPPA possono aggiungere una variabile opzionale al codice del servizio Experience Cloud Identity che impedisce l’impostazione di cookie nel dominio di un browser di terze parti.
 keywords: Servizio ID
-seo-description: Il Children’s Online Privacy Protection Act (COPPA) proibisce la raccolta online di dati personali di bambini di età inferiore ai 13 anni senza disporre del consenso verificabile dei genitori. I clienti interessati dal COPPA possono aggiungere una variabile opzionale al codice del servizio identità Experience Cloud che impedisce l'impostazione di cookie nel dominio di un browser di terze parti.
-seo-title: Supporto per COPPA nel servizio identità Experience Cloud
-title: Supporto per COPPA nel servizio identità Experience Cloud
+seo-description: Il Children’s Online Privacy Protection Act (COPPA) proibisce la raccolta online di dati personali di bambini di età inferiore ai 13 anni senza disporre del consenso verificabile dei genitori. I clienti interessati dal COPPA possono aggiungere una variabile opzionale al codice del servizio Experience Cloud Identity che impedisce l’impostazione di cookie nel dominio di un browser di terze parti.
+seo-title: Supporto per COPPA nel servizio Experience Cloud Identity
+title: Supporto per COPPA nel servizio Experience Cloud Identity
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 584b6240c3e0286111689499ca5df5d98aa9fab2
 
 ---
 
 
-# COPPA Support in the Experience Cloud Identity Service {#coppa-support-in-the-experience-cloud-id-service}
+# Supporto per COPPA nel servizio Experience Cloud Identity {#coppa-support-in-the-experience-cloud-id-service}
 
-Il Children’s Online Privacy Protection Act (COPPA) proibisce la raccolta online di dati personali di bambini di età inferiore ai 13 anni senza disporre del consenso verificabile dei genitori. I clienti interessati dal COPPA possono aggiungere una variabile opzionale al codice del servizio identità Experience Cloud che impedisce l'impostazione di cookie nel dominio di un browser di terze parti.
+Il Children’s Online Privacy Protection Act (COPPA) proibisce la raccolta online di dati personali di bambini di età inferiore ai 13 anni senza disporre del consenso verificabile dei genitori. I clienti interessati dal COPPA possono aggiungere una variabile opzionale al codice del servizio Experience Cloud Identity che impedisce l’impostazione di cookie nel dominio di un browser di terze parti.
 
 >[!NOTE]
 >
@@ -45,6 +45,6 @@ Quando viene impostato su `true`, `disableThirdPartyCookies` l'oggetto impedisce
 
 >[!MORE_LIKE_THIS]
 >
->* [Centro per la privacy Adobe](http://www.adobe.com/privacy.html)
+>* [ Centro per la privacy Adobe](http://www.adobe.com/it/privacy.html)
 >* [Cos'è il COPPA?](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)
 
