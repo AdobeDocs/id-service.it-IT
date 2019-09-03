@@ -1,23 +1,23 @@
 ---
-description: Queste istruzioni sono per i clienti di Target che desiderano utilizzare il servizio identità Experience Cloud e non usano Gestione dinamica dei tag. Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. Dynamic Tag Management semplifica l'implementazione e verifica automaticamente che il codice sia inserito correttamente e nella giusta sequenza.
+description: Queste istruzioni sono per i clienti di Target che desiderano usare il servizio Experience Cloud Identity e non usano Dynamic Tag Management (DTM). Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. Dynamic Tag Management semplifica l'implementazione e verifica automaticamente che il codice sia inserito correttamente e nella giusta sequenza.
 keywords: Servizio ID
-seo-description: Queste istruzioni sono per i clienti di Target che desiderano utilizzare il servizio identità Experience Cloud e non usano Gestione dinamica dei tag. Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. Dynamic Tag Management semplifica l'implementazione e verifica automaticamente che il codice sia inserito correttamente e nella giusta sequenza.
-seo-title: Implementazione del servizio identità Experience Cloud per Target
-title: Implementazione del servizio identità Experience Cloud per Target
+seo-description: Queste istruzioni sono per i clienti di Target che desiderano usare il servizio Experience Cloud Identity e non usano Dynamic Tag Management (DTM). Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. Dynamic Tag Management semplifica l'implementazione e verifica automaticamente che il codice sia inserito correttamente e nella giusta sequenza.
+seo-title: Implementazione del servizio Experience Cloud Identity per Target
+title: Implementazione del servizio Experience Cloud Identity per Target
 uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
 
-# Implement the Experience Cloud Identity Service for Target{#implement-the-experience-cloud-id-service-for-target}
+# Implementazione del servizio Experience Cloud Identity per Target{#implement-the-experience-cloud-id-service-for-target}
 
-Queste istruzioni sono per i clienti di Target che desiderano utilizzare il servizio identità Experience Cloud e non usano Gestione dinamica dei tag. Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. Dynamic Tag Management semplifica l'implementazione e verifica automaticamente che il codice sia inserito correttamente e nella giusta sequenza.
+Queste istruzioni sono per i clienti di Target che desiderano usare il servizio Experience Cloud Identity e non usano Dynamic Tag Management (DTM). Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. Dynamic Tag Management semplifica l'implementazione e verifica automaticamente che il codice sia inserito correttamente e nella giusta sequenza.
 
 >[!IMPORTANT]
 >
->* [Prima di iniziare, leggi i requisiti](../reference/requirements.md).
+>* [Prima di iniziare](../reference/requirements.md), leggi i requisiti.
 >* Configura e verifica questo codice in un ambiente di sviluppo prima di implementarlo in produzione.
 >
 
@@ -25,7 +25,7 @@ Queste istruzioni sono per i clienti di Target che desiderano utilizzare il serv
 
 ## Passaggio 1: ottieni il codice del servizio ID {#section-b32ba0548aa546a79dd38be59832a53e}
 
-Il [!UICONTROL servizio ID] richiede la libreria dei codici `VisitorAPI.js`. Per ottenere questo codice, contatta l'[assistenza clienti](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+Il [!UICONTROL servizio ID] richiede la libreria dei codici `VisitorAPI.js`. Per ottenere questo codice, contatta [l'assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html).
 
 ## Passaggio 2: aggiungi la funzione Visitor.getInstance al codice del servizio ID {#section-287ef2958e9f43858fe9d630ae519e22}
 
@@ -54,7 +54,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 
 ## Passaggio 3: aggiungi l'ID organizzazione Experience Cloud a Visitor.getInstance {#section-522b1877be9243c39b222859b821f0ce}
 
-Nella `Visitor.getInstance` funzione sostituisci `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` con l'ID organizzazione [!DNL Experience Cloud]. Se non conosci il tuo ID organizzazione, puoi trovarlo nella pagina di [!DNL Experience Cloud]amministrazione di. Vedi anche [Amministrazione - Servizi principali](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html). La funzione modificata deve essere simile a quella riportata di seguito.
+Nella `Visitor.getInstance` funzione sostituisci `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` con l'ID organizzazione [!DNL Experience Cloud]. Se non conosci il tuo ID organizzazione, puoi trovarlo nella pagina di amministrazione di [!DNL Experience Cloud]. Vedi anche [Amministrazione - Servizi di base](https://marketing.adobe.com/resources/help/it_IT/mcloud/admin_getting_started.html). La funzione modificata deve essere simile a quella riportata di seguito.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg");`
 
@@ -77,7 +77,7 @@ Per verificare l'implementazione del servizio ID:
 * Controlla il cookie AMCV nel dominio di hosting della pagina.
 * Verifica che `mboxMCGVID` sia presente nella richiesta [!DNL Target] e che contenga l'[!DNL Experience Cloud] ID (MID).
 
-See [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md) for information about the AMCV cookie and the MID.
+Per informazioni sul cookie AMCV e sull’identificatore MID, consulta [Cookie e il servizio Experience Cloud Identity](../introduction/cookies.md).
 
 **Distribuzione**
 
