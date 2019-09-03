@@ -4,7 +4,7 @@ seo-description: API per la libreria Opt-in e riferimenti alle impostazioni di c
 seo-title: Riferimenti di Opt-in
 title: Riferimenti di Opt-in
 uuid: d5023a34-2f3e-464d-b21f-579b2f416ce6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
@@ -27,25 +27,25 @@ adobe.OptInCategories = {
 
 ## Parametri di configurazione Opt-in {#section-d66018342baf401389f248bb381becbf}
 
-Questa sezione illustra come usare l&#39;API per configurare Opt-in. Gran parte della configurazione e dell&#39;implementazione può essere effettuata utilizzando l&#39;estensione Experience Platform Launch.
+Questa sezione illustra come usare l'API per configurare Opt-in. Gran parte della configurazione e dell’implementazione può essere effettuata usando l’estensione Experience Platform Launch.
 
-Le configurazioni di Opt-in vengono fornite nella funzione `getInstance()` di JavaScript per il visitatore che crea l&#39;istanza per l&#39;oggetto globale `adobe`. Di seguito si riporta un elenco delle configurazioni di JS per il visitatore per il servizio Opt-in.
+Le configurazioni di Opt-in vengono fornite nella funzione `getInstance()` di JavaScript per il visitatore che crea l'istanza per l'oggetto globale `adobe`. Di seguito si riporta un elenco delle configurazioni di JS per il visitatore per il servizio Opt-in.
 
 **`doesOptInApply (boolean or function that evaluates to a boolean)`**:
 
-Se falso indica che i visitatori non devono dare il consenso. Comporta la creazione di cookie da parte di Experience Cloud indipendentemente dalle categorie a cui l&#39;utente ha dato o ha negato il consenso. Questa configurazione abilita in modo olistico Opt-in.
+Se falso indica che i visitatori non devono dare il consenso. Comporta la creazione di cookie da parte di Experience Cloud indipendentemente dalle categorie a cui l'utente ha dato o ha negato il consenso. Questa configurazione abilita in modo olistico Opt-in.
 
 **`preOptInApprovals (Object <adobe.OptInCategories enum: boolean>)`**
 
-Definisce quali categorie vengono approvate o negate se il visitatore non ha ancora impostato le preferenze; vengono definiti valori predefiniti dell&#39;organizzazione.
+Definisce quali categorie vengono approvate o negate se il visitatore non ha ancora impostato le preferenze; vengono definiti valori predefiniti dell'organizzazione.
 
 **`previousPermissions (Object<adobe.OptInCategories enum: boolean>)`**
 
-Il visitatore ha impostato in modo esplicito le preferenze. In questa configurazione le autorizzazioni sostituiscono i valori predefiniti dell&#39;organizzazione (`previousPermissions` sostituisce `preOptInApprovals`).
+Il visitatore ha impostato in modo esplicito le preferenze. In questa configurazione le autorizzazioni sostituiscono i valori predefiniti dell'organizzazione (`previousPermissions` sostituisce `preOptInApprovals`).
 
 **`isOptInStorageEnabled (boolean)`**
 
-Attiva per Opt-in l&#39;archiviazione delle autorizzazioni in un cookie di prima parte (all&#39;interno del dominio dell&#39;attuale cliente).
+Attiva per Opt-in l'archiviazione delle autorizzazioni in un cookie di prima parte (all'interno del dominio dell'attuale cliente).
 
 (Facoltativo) **`optInCookiesDomain (string)`**
 
@@ -69,15 +69,15 @@ Funzione che nega o rifiuta il consenso del visitatore a tutte le categorie spec
 
 **`adobe.optIn.approveAll()`**:
 
-Se la richiesta di autorizzazione per il sito da creare è formulata in modo che la copertura del visitatore conceda o neghi l&#39;autorizzazione per il sito a creare cookie, usa `approveAll()` o `denyAll()` relativamente alla risposta.
+Se la richiesta di autorizzazione per il sito da creare è formulata in modo che la copertura del visitatore conceda o neghi l'autorizzazione per il sito a creare cookie, usa `approveAll()` o `denyAll()` relativamente alla risposta.
 
 **`adobe.optIn.denyAll()`**:
 
-Se la richiesta di autorizzazione per il sito da creare è formulata in modo che la copertura del visitatore conceda o neghi l&#39;autorizzazione per il sito a creare cookie, usa `approveAll()` o `denyAll()` relativamente alla risposta.
+Se la richiesta di autorizzazione per il sito da creare è formulata in modo che la copertura del visitatore conceda o neghi l'autorizzazione per il sito a creare cookie, usa `approveAll()` o `denyAll()` relativamente alla risposta.
 
 ## Parametri dei flussi di lavoro Opt-in {#section-2c5adfa5459c4e72b96d2693123a53c2}
 
-Opt-in supporta un flusso di lavoro in cui è possibile raccogliere le autorizzazioni per più di un ciclo di richiesta, come ad esempio quando le preferenze vengono assegnate tutte insieme. Usando le seguenti funzioni e specificando *true* per l&#39;impostazione `shouldWaitForComplete`, la soluzione è in grado di raccogliere il consenso per una soluzione o un sottoinsieme di tutte le categorie e poi di raccoglierlo per la soluzione o il sottoinsieme di categorie successivo. A partire dalla prima chiamata, la proprietà `adobe.optIn.status` sarà in sospeso fino a quando `adobe.optIn.complete()` non viene chiamata alla fine del flusso. Una volta effettuata la chiamata, lo stato viene impostato su *Complete*.
+Opt-in supporta un flusso di lavoro in cui è possibile raccogliere le autorizzazioni per più di un ciclo di richiesta, come ad esempio quando le preferenze vengono assegnate tutte insieme. Usando le seguenti funzioni e specificando *true* per l'impostazione `shouldWaitForComplete`, la soluzione è in grado di raccogliere il consenso per una soluzione o un sottoinsieme di tutte le categorie e poi di raccoglierlo per la soluzione o il sottoinsieme di categorie successivo. A partire dalla prima chiamata, la proprietà `adobe.optIn.status` sarà in sospeso fino a quando `adobe.optIn.complete()` non viene chiamata alla fine del flusso. Una volta effettuata la chiamata, lo stato viene impostato su *Complete*.
 
 **`adobe.optIn.approve(categories, shouldWaitForComplete)`**
 
@@ -89,7 +89,7 @@ Funzione che nega o rifiuta il consenso del visitatore a tutte le categorie spec
 
 `adobe.optIn.complete()`
 
-Funzione che attiva l&#39;aggregazione delle chiamate in esecuzione per approvare() e rifiutare() una richiesta per impostare le preferenze di un visitatore. Quando si sottoscrivono le modifiche di Opt-in (consultare `adobe.optIn.fetchPermissions(callback, shouldAutoSubscribe`) di seguito, il callback viene attivato solo quando si chiama questa funzione.
+Funzione che attiva l'aggregazione delle chiamate in esecuzione per approvare() e rifiutare() una richiesta per impostare le preferenze di un visitatore. Quando si sottoscrivono le modifiche di Opt-in (consultare `adobe.optIn.fetchPermissions(callback, shouldAutoSubscribe`) di seguito, il callback viene attivato solo quando si chiama questa funzione.
 
 ## Parametri di autorizzazione Opt-in del visitatore {#section-7fe57279b5b44b4f8fe47e336df60155}
 
@@ -105,7 +105,7 @@ Se tutte le categorie sono state approvate, questa funzione restituirà true.
 
 `adobe.optIn.fetchPermissions(callback, shouldAutoSubscribe)`
 
-Recupera l&#39;elenco di autorizzazioni in modo asincrono. Il callback avviene con l&#39;elenco di autorizzazioni, quando il processo di concessione/negazione delle autorizzazioni viene completato. Specificando il valore *true* per `shouldAutoSubscribe` si registra il callback per tutte le future modifiche di Opt-in. le seguenti sono proprietà di `adobe.OptIn`:
+Recupera l'elenco di autorizzazioni in modo asincrono. Il callback avviene con l'elenco di autorizzazioni, quando il processo di concessione/negazione delle autorizzazioni viene completato. Specificando il valore *true* per `shouldAutoSubscribe` si registra il callback per tutte le future modifiche di Opt-in. le seguenti sono proprietà di `adobe.OptIn`:
 
 **`permissions`**
 
@@ -119,17 +119,17 @@ Un oggetto in ascolto di tutte le soluzioni Experience Cloud, come categorie, a 
 
 **`doesOptInApply`**
 
-True o false, rappresenta la configurazione fornita nell&#39;inizializzazione.
+True o false, rappresenta la configurazione fornita nell'inizializzazione.
 
 **`isPending`**
 
-True o false in base al valore dello stato. Opt-in indica true per questa proprietà per un visitatore che non ha ancora accettato o negato in modo esplicito l&#39;autorizzazione.
+True o false in base al valore dello stato. Opt-in indica true per questa proprietà per un visitatore che non ha ancora accettato o negato in modo esplicito l'autorizzazione.
 
 **`isComplete`**
 
 True o false in base al valore dello stato. Opt-in potrebbe indicare false per questa proprietà quando è stato avviato un flusso di lavoro di consenso, ma non è stato completato.
 
-## Metodi dell&#39;oggetto Opt-in {#section-e0417801a82548d199d833010033e433}
+## Metodi dell'oggetto Opt-in {#section-e0417801a82548d199d833010033e433}
 
 **`approve(categories, shouldWaitForComplete)`**
 
@@ -159,7 +159,7 @@ Consente di controllare se una o più categorie sono state preapprovate dal clie
 
 **`fetchPermissions(callback, shouldAutoSubscribe)`**
 
-API asincrona per recuperare l&#39;elenco di autorizzazioni. Il callback avviene con l&#39;elenco di autorizzazioni, quando il processo di concessione/negazione delle autorizzazioni viene completato. **`shouldAutoSubscribe`**: un&#39;utilità helper, sottoscrive automaticamente questo callback a tutti gli eventi futuri. Questo significa che il callback verrà chiamato ogni volta che si attiva un&#39;approvazione o una negazione in Opt-in. In questo modo sarai sempre aggiornato, senza doverti iscrivere agli eventi.
+API asincrona per recuperare l'elenco di autorizzazioni. Il callback avviene con l'elenco di autorizzazioni, quando il processo di concessione/negazione delle autorizzazioni viene completato. **`shouldAutoSubscribe`**: un'utilità helper, sottoscrive automaticamente questo callback a tutti gli eventi futuri. Questo significa che il callback verrà chiamato ogni volta che si attiva un'approvazione o una negazione in Opt-in. In questo modo sarai sempre aggiornato, senza doverti iscrivere agli eventi.
 
 **Esempio**
 
@@ -192,7 +192,7 @@ optIn.fetchPermissions(callback, true);
 
 >[!NOTE]
 >
->Da usare solo se si è passato il `shouldWaitForComplete` parametro per l&#39;approvazione o la negazione. Questa API completa il processo di approvazione. Esempio: `adobe.optIn.complete()`.
+>Da usare solo se si è passato il `shouldWaitForComplete` parametro per l'approvazione o la negazione. Questa API completa il processo di approvazione. Esempio: `adobe.optIn.complete()`.
 
 **`approveAll()`:**
 
@@ -202,11 +202,11 @@ Approva tutte le categorie esistenti.
 
 Nega tutte le categorie esistenti.
 
-## Eventi dell&#39;oggetto Opt-in {#section-06f25b33cab54bafb053183e937fb710}
+## Eventi dell'oggetto Opt-in {#section-06f25b33cab54bafb053183e937fb710}
 
 **`complete`:**
 
-L&#39;evento completo si attiva quando il processo di approvazione è stato completato. Se si chiama l&#39;approvazione/negazione senza passare `shouldWaitForComplete` o `approveAll`/`denyAll`, si attiva questo evento. Oppure se si passa `shouldWaitForComplete`, questo evento si attiva quando si chiama `complete`.
+L'evento completo si attiva quando il processo di approvazione è stato completato. Se si chiama l'approvazione/negazione senza passare `shouldWaitForComplete` o `approveAll`/`denyAll`, si attiva questo evento. Oppure se si passa `shouldWaitForComplete`, questo evento si attiva quando si chiama `complete`.
 
 **Esempio**
 
