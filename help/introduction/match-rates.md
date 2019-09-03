@@ -1,11 +1,11 @@
 ---
-description: Panoramica dei processi di sincronizzazione ID e delle percentuali di corrispondenza in Experience Cloud Identity Service, inclusi Adobe Media Optimizer e il servizio ID.
+description: Panoramica dei processi di sincronizzazione ID e delle percentuali di corrispondenza nel servizio Experience Cloud Identity, inclusi Adobe Media Optimizer e il servizio ID.
 keywords: Servizio ID
-seo-description: Panoramica dei processi di sincronizzazione ID e delle percentuali di corrispondenza in Experience Cloud Identity Service, inclusi Adobe Media Optimizer e il servizio ID.
+seo-description: Panoramica dei processi di sincronizzazione ID e delle percentuali di corrispondenza nel servizio Experience Cloud Identity, inclusi Adobe Media Optimizer e il servizio ID.
 seo-title: Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza
 title: Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 # Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza{#understanding-id-synchronization-and-match-rates}
 
-Panoramica dei processi di sincronizzazione ID e delle percentuali di corrispondenza in Experience Cloud Identity Service, inclusi Adobe Media Optimizer e il servizio ID.
+Panoramica dei processi di sincronizzazione ID e delle percentuali di corrispondenza nel servizio Experience Cloud Identity, inclusi Adobe Media Optimizer e il servizio ID.
 
 ## Sincronizzazione degli ID e percentuali di corrispondenza {#section-f652aae7234945e89d26dd833c5215fb}
 
@@ -33,7 +33,7 @@ Il servizio ID sincronizza gli ID in tempo reale. Questo processo funziona nel b
 
 **Passaggio 1: caricamento della pagina**
 
-Quando un visitatore accede al sito e carica una pagina, la funzione `Visitor.getInstance` esegue una chiamata [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) o JSON-P al servizio ID. Il servizio ID risponde con un cookie che include l'identificatore [!DNL Experience Cloud] ID (MID) del visitatore. L'identificatore MID è un ID univoco assegnato a ogni visitatore del sito. See also, [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md).
+Quando un visitatore accede al sito e carica una pagina, la funzione `Visitor.getInstance` esegue una chiamata [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) o JSON-P al servizio ID. Il servizio ID risponde con un cookie che include l'identificatore [!DNL Experience Cloud] ID (MID) del visitatore. L'identificatore MID è un ID univoco assegnato a ogni visitatore del sito. Consulta anche [Cookie e il servizio Experience Cloud Identity](../introduction/cookies.md).
 
 **Passaggio 2: caricamento dell'iFrame**
 
@@ -43,7 +43,7 @@ Durante il caricamento della pagina, il servizio ID carica un iFrame denominato 
 * Viene caricato il più rapidamente possibile. Se questo risulta troppo veloce, puoi caricare l'iFrame dopo l'evento di caricamento della finestra (non consigliato). Per informazioni, consulta [idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4).
 * Impedisce al codice presente nell'iFrame di accedere alla pagina padre o di incidere su di essa.
 
-See also, [How the Experience Cloud Identity Service Requests and Sets IDs...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
+Consulta anche: [Richiesta e impostazione degli ID da parte del servizio Experience Cloud Identity...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
 
 **Passaggio 3: attivazione delle sincronizzazioni ID**
 
@@ -51,11 +51,11 @@ La sincronizzazione ID consiste in un URL attivato nell'iFrame di pubblicazione 
 
 `http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 
-Vedi anche [Sincronizzazione degli ID per trasferimenti di dati in entrata](https://marketing.adobe.com/resources/help/en_US/aam/c_id_sync_in.html).
+Vedi anche [Sincronizzazione ID per il trasferimento di dati in entrata](https://marketing.adobe.com/resources/help/en_US/aam/c_id_sync_in.html).
 
 **Passaggio 4: archiviazione degli ID**
 
-Gli ID sincronizzati vengono archiviati nei [server di dati edge e core](https://marketing.adobe.com/resources/help/en_US/aam/c_compedge.html).
+Gli ID sincronizzati sono memorizzati sui [server perimetrali e di dati principali](https://marketing.adobe.com/resources/help/en_US/aam/c_compedge.html).
 
 ## I servizi di sincronizzazione gestiscono la sincronizzazione degli ID {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
@@ -70,9 +70,9 @@ Il termine *`Sync Services`* fa riferimento alle tecnologie interne [!DNL Experi
 
 ## Sincronizzazione degli ID con Adobe Media Optimizer {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Media Optimizer] è un'eccezione del processo di sincronizzazione ID basato su iFrame. Poiché [!DNL Media Optimizer] è un dominio fidato, le sincronizzazioni ID hanno luogo dalla pagina padre invece che nel [!UICONTROL Destination Publishing iFrame]. Durante la sincronizzazione, il servizio ID chiama [!DNL Media Optimizer] su `cm.eversttech.net`, che è un nome di dominio legacy usato da [!DNL Media Optimizer] prima della sua acquisizione da parte di Adobe. L'invio di dati a [!DNL Media Optimizer] aiuta a migliore le percentuali di corrispondenza ed è automatico per i clienti del servizio ID che usano la versione 2.0 (o superiore). Vedi anche [Cookie di Media Optimizer](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html).
+[!DNL Adobe Media Optimizer] è un'eccezione del processo di sincronizzazione ID basato su iFrame. Poiché [!DNL Media Optimizer] è un dominio fidato, le sincronizzazioni ID hanno luogo dalla pagina padre invece che nel [!UICONTROL Destination Publishing iFrame]. Durante la sincronizzazione, il servizio ID chiama [!DNL Media Optimizer] su `cm.eversttech.net`, che è un nome di dominio legacy usato da [!DNL Media Optimizer] prima della sua acquisizione da parte di Adobe. L'invio di dati a [!DNL Media Optimizer] aiuta a migliore le percentuali di corrispondenza ed è automatico per i clienti del servizio ID che usano la versione 2.0 (o superiore). Vedi anche [Cookie Media Optimizer](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html).
 
 >[!MORE_LIKE_THIS]
 >
->* [Informazioni sulle chiamate al dominio demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)
+>* [Informazioni sulle chiamate a Demdex Domain](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)
 
