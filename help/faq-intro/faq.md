@@ -2,10 +2,10 @@
 description: Domande frequenti sulle caratteristiche, sulle funzionalità e sui problemi correlati all'uso del servizio ID.
 keywords: Servizio ID
 seo-description: Domande frequenti sulle caratteristiche, sulle funzionalità e sui problemi correlati all'uso del servizio ID.
-seo-title: Servizio ID Domande frequenti
+seo-title: Domande frequenti sul servizio ID
 title: Domande frequenti sul servizio ID
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -23,7 +23,7 @@ Consulta la sezione [Panoramica](../introduction/overview.md).
 
 **Perché il servizio ID non sta effettuando una chiamata per recuperare l'Experience Cloud ID?**
 
-Questa situazione è difficile da diagnosticare. Una cosa che puoi controllare sono le intestazioni dell'informativa sulla sicurezza dei contenuti sul tuo sito. Se hai una politica di sicurezza restrittiva, quelle impostazioni possono bloccare le chiamate di terze parti effettuate dal servizio ID. Consulta [Informativa sulla sicurezza dei contenuti e Servizio identità Experience Cloud](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
+Questa situazione è difficile da diagnosticare. Una cosa che puoi controllare sono le intestazioni dell'informativa sulla sicurezza dei contenuti sul tuo sito. Se hai una politica di sicurezza restrittiva, quelle impostazioni possono bloccare le chiamate di terze parti effettuate dal servizio ID. Consulta [Informativa sulla sicurezza dei contenuti e servizio Experience Cloud Identity](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
 
 **Archiviazione del file VisitorAPI.js**
 
@@ -35,9 +35,9 @@ Questa situazione è difficile da diagnosticare. Una cosa che puoi controllare s
 
 Posiziona la libreria VisitorAPI.js nella parte superiore della pagina nella `<head>` sezione del tuo codice. Questo consente di garantire che la chiamata per un'ID venga effettuata prima che il corpo della pagina inizi a essere caricato e massimizza le possibilità di restituzione di un'ID.
 
-La chiamata del servizio ID è asincrona ed è l'unica chiamata al [dominio demdex.net](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html). La chiamata del servizio ID non blocca il caricamento di altri elementi sulla pagina.
+La chiamata al servizio ID è asincrona ed è l'unica chiamata al [dominio demdex.net](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html). La chiamata del servizio ID non blocca il caricamento di altri elementi sulla pagina.
 
-Per i [!DNL Target]clienti, il posizionamento del codice del servizio ID nel `<body>` della pagina può aumentare le possibilità che possa bloccare una chiamata [!DNL Target]. Se hai bisogno di posizionare il codice del servizio ID nel corpo della pagina, devi posizionarlo dopo il tag `<body>` aperto.
+Per i [!DNL Target] clienti, il posizionamento del codice del servizio ID nel `<body>` della pagina può aumentare le possibilità che possa bloccare una chiamata [!DNL Target]. Se hai bisogno di posizionare il codice del servizio ID nel corpo della pagina, devi posizionarlo dopo il tag `<body>` aperto.
 
 **Il servizio ID effettua una chiamata al server a ogni caricamento di pagina?**
 
@@ -67,13 +67,13 @@ Questa modifica migliore le prestazioni per i clienti che usano Visitor 2.3.0+ e
 
 Le richieste di risorse con CORS sono generalmente preferibili a quelle con JSONP. Con JSONP, alcuni browser mettono in coda e modificano la priorità delle richieste rispetto ad altre chiamate sincrone ed asincrone sulla pagina. CORS contribuisce a garantire che a queste richieste sia data una maggiore priorità nello stack delle chiamate del browser.
 
-Consulta  [Supporto CORS nel servizio Experience Cloud Identity](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Consulta [Supporto per CORS nel servizio Experience Cloud Identity](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 ## Sicurezza {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **Il servizio ID supporta CORS?**
 
-Sì. See [CORS Support in the Experience Cloud Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Sì. Consulta [Supporto per CORS nel servizio Experience Cloud Identity](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **Cos'è CORS?**
 
@@ -83,9 +83,9 @@ Sì. See [CORS Support in the Experience Cloud Identity Service](../reference/co
 
 Se hai dei requisiti di sicurezza rigidi, imposta la configurazione API del servizio ID `useCORSOnly: true`. Abilita questa modalità solo se sei certo che i visitatori del tuo sito usano browser che supportano CORS.
 
-Consulta  [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) e [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
+Consulta [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) e [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
 
 >[!MORE_LIKE_THIS]
 >
->* [Assistenza clienti](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+>* [Assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html)
 
