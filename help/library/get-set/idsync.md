@@ -5,8 +5,8 @@ seo-description: Le funzioni idSyncByURL e idSyncByDataSource del servizio ID pe
 seo-title: Sincronizzazione ID tramite URL o sorgente dati
 title: Sincronizzazione ID tramite URL o sorgente dati
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: ht
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+translation-type: tm+mt
+source-git-commit: 5345d0d58367bcfa30a98d76cadc28ffb0caa225
 
 ---
 
@@ -113,12 +113,14 @@ Entrambe le funzioni restituiscono `Successfully queued` in caso di esito positi
    <td colname="col1"> <p> <code class="syntax javascript"> //Crea istanza visitatore 
       var visitor = Visitor.getInstance("MARKETING-CLOUD-ORG-ID-HERE",{});
 
-    //&amp;nbsp;Fires&amp;nbsp;url&amp;nbsp;with&amp;nbsp;macros&amp;nbsp;replaced
-    visitor.idSyncByURL({
-    &amp;nbsp;dpid:&amp;nbsp;'24',&amp;nbsp;//&amp;nbsp;must&amp;nbsp;be&amp;nbsp;a&amp;nbsp;string
-    &amp;nbsp;url:&amp;nbsp;'//su.addthis.com/red/usync?pid=16&amp;amp;puid=%DID%&amp;amp;url=%HTTP_PROTO%%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D',
-    &amp;nbsp;minutesToLive:&amp;nbsp;20160&amp;nbsp;//&amp;nbsp;optional,&amp;nbsp;defaults&amp;nbsp;to&amp;nbsp;20160&amp;nbsp;minutes&amp;nbsp;(14&amp;nbsp;days)&amp;nbsp;
-    }); &lt;/code&gt; &lt;/p&gt; &lt;/td&gt;
+    // Attiva URL con macro replacedvisitor
+    . idsyncbyurl ({
+    dpid: ' 24 ', // deve essere un stringurl
+    : '//su.addthis.com/red/usync?pid=16&amp;puid=%DID%&amp;url=%HTTP_PROTO%://dpm.demdex.net/ibs:dpid=420&amp;dpuuid= {{uid}}',
+    minutestolive: 20160 // facoltativo, impostazione predefinita: 20160 minuti (14 giorni)
+    });
+    
+    &lt;/code &gt; &lt;/p &gt; &lt;/td &gt;
 <td colname="col2"> <p> <span class="codeph"> http://su.addthis.com/red/usync?pid=16&amp;puid=28777806459181003670799219185178493848&amp;url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D </span> </p> </td> 
   </tr> 
  </tbody> 
@@ -138,12 +140,13 @@ Entrambe le funzioni restituiscono `Successfully queued` in caso di esito positi
    <td colname="col1"> <p> <code class="syntax javascript"> //Crea istanza visitatore 
       var visitor = Visitor.getInstance("MARKETING-CLOUD-ORG-ID-HERE",{});
 
-    //&amp;nbsp;Fires&amp;nbsp;'http:/https:'&amp;nbsp;+&amp;nbsp;'//dpm.demdex.net/ibs:dpid=&amp;lt;dpid&amp;gt;&amp;amp;dpuuid=&amp;lt;dpuuid&amp;gt;'
-    visitor.idSyncByDataSource({
-    &amp;nbsp;dpid:&amp;nbsp;'24',&amp;nbsp;//&amp;nbsp;must&amp;nbsp;be&amp;nbsp;a&amp;nbsp;string
-    &amp;nbsp;dpuuid:&amp;nbsp;'98765',&amp;nbsp;//&amp;nbsp;must&amp;nbsp;be&amp;nbsp;a&amp;nbsp;string
-    &amp;nbsp;minutesToLive:&amp;nbsp;20160&amp;nbsp;//&amp;nbsp;optional,&amp;nbsp;defaults&amp;nbsp;to&amp;nbsp;20160&amp;nbsp;minutes&amp;nbsp;(14&amp;nbsp;days)&amp;nbsp;
-    }); &lt;/code&gt; &lt;/p&gt; &lt;/td&gt;
+    // Attivato 'http:/https:' +'//dpm.demdex.net/ibs:dpid= &lt; dpid &gt; &amp; dpuuid = &lt; dpuuid &gt;'
+    visitor. idsyncbydatasource ({
+    dpid: ' 24 ', // deve essere un stringdpuuid
+    : ' 98765 ', // deve essere un stringminutestolive
+    : 20160 // facoltativo, impostazione predefinita: 20160 minuti (14 giorni)
+    });
+    &lt;/code &gt; &lt;/p &gt; &lt;/td &gt;
 <td colname="col2"> <p> <span class="codeph"> http://dpm.demdex.net/ibs:dpid=24&amp;dpuuid=98765 </span> </p> </td> 
   </tr> 
  </tbody> 
