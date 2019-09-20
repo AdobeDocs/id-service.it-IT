@@ -5,7 +5,7 @@ seo-description: Le funzioni idSyncByURL e idSyncByDataSource del servizio ID pe
 seo-title: Sincronizzazione ID tramite URL o sorgente dati
 title: Sincronizzazione ID tramite URL o sorgente dati
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b83b192655f59a728b488b4e2a9aa2efbcf093f0
 
 ---
@@ -83,15 +83,15 @@ Entrambe le funzioni accettano le seguenti macro:
 
 * `%TIMESTAMP%`: genera una marca temporale (in millisecondi). Utilizzato per svuotare la cache.
 * `%DID%`: inserisce l’ID di Audience Manager per l’utente.
-* `%HTTP_PROTO%`: imposta il protocollo di comunicazione ( `http` o `https`).
+* `%HTTP_PROTO%`: imposta il protocollo di comunicazione (`http` o `https`).
 
 ## Codice di esempio e output {#section-0115615c37584a19a2ab11e917c4e7e9}
 
-Entrambe le funzioni restituiscono `Successfully queued` in caso di esito positivo. In caso di esito negativo, restituiscono la stringa di un messaggio di errore.
+Entrambe le funzioni restituiscono `Successfully queued` in caso di esito positivo. In caso di esito negativo, restituiscono una stringa con un messaggio di errore.
 
 ### visitor.idSyncByURL
 
-**Codice di esempio**
+**Codice campione**
 
 ```javascript
    //Instatiate Visitor
@@ -105,7 +105,7 @@ Entrambe le funzioni restituiscono `Successfully queued` in caso di esito positi
     minutesToLive: 20160 // optional, defaults to 20160 minutes (14 days) });
 ```
 
-**Output di esempio**
+**Output campione**
 
 ```
 http://su.addthis.com/red/usync?pid=16&puid=28777806459181003670799219185178493848&url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D
@@ -113,7 +113,7 @@ http://su.addthis.com/red/usync?pid=16&puid=287778064591810036707992191851784938
 
 ### visitor.idSyncByDataSource
 
-**Codice di esempio**
+**Codice campione**
 
 ```javascript
   //Instantiate Visitor
@@ -126,7 +126,7 @@ http://su.addthis.com/red/usync?pid=16&puid=287778064591810036707992191851784938
      minutesToLive: 20160 // optional, defaults to 20160 minutes (14 days) });
 ```
 
-**Output di esempio**
+**Output campione**
 
 ```
 http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765
@@ -134,5 +134,5 @@ http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765
 
 >[!MORE_LIKE_THIS]
 >
->* [DIL idSync](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync)
+>* [DIL idSync](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync)
 
