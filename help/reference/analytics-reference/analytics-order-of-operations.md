@@ -5,7 +5,7 @@ seo-description: Dopo l’implementazione del servizio ID visitatore, un visitat
 seo-title: Ordine delle operazioni per gli ID di Analytics
 title: Ordine delle operazioni per gli ID di Analytics
 uuid: cb1d136e-093f-43b0-a7e1-96f1e61fdad0
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 Dopo l’implementazione del servizio ID visitatore, un visitatore può essere identificato in Analytics in 5 modi diversi.
 
-In molte situazioni potrebbero essere presenti due o tre ID diversi in una chiamata, ma Analytics utilizza il primo ID presente nell&#39;elenco come ID ufficiale di [!DNL Experience Cloud]. Ad esempio, se imposti un ID visitatore personalizzato (incluso nel `vid` parametro di query), questo verrà usato prima degli altri ID visualizzati per lo stesso hit. Consulta [Impostazione degli ID di Analytics ed Experience Cloud](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6) per maggiori informazioni.
+In molte situazioni potrebbero essere presenti due o tre ID diversi in una chiamata, ma Analytics utilizza il primo ID presente nell'elenco come ID ufficiale di [!DNL Experience Cloud]. Ad esempio, se imposti un ID visitatore personalizzato (incluso nel `vid` parametro di query), questo verrà usato prima degli altri ID visualizzati per lo stesso hit. Consulta [Impostazione degli ID di Analytics ed Experience Cloud](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6) per maggiori informazioni.
 
 <table id="table_D267D36451F643D1BB68AF6FEAA6AD1A"> 
  <thead> 
