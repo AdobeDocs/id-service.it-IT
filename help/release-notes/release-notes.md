@@ -5,7 +5,7 @@ seo-description: Versioni future, aggiornamenti o modifiche al servizio Experien
 seo-title: Note sulla versione 2019
 title: Note sulla versione 2019
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4532d09cc9b4d83fa62c13bd1adac7abdae222b1
 
 ---
@@ -41,7 +41,7 @@ Versioni future, aggiornamenti o modifiche al servizio [!DNL Experience Cloud] I
 
 ## Versione 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**Servizio Opt-in**. Opt-in è un'estensione di Experience Cloud ID (ECID) che consente di controllare se (e quali) librerie di Experience Cloud possono creare dei cookie sulle pagine Web per i visitatori. Usando [Experience Platform Launch](https://docs.adobelaunch.com/), è possibile semplificare la raccolta dei consensi dei visitatori per la soluzione Experience Cloud consentendo ad Analytics, Target, Audience Manager e a tutte le altre soluzioni Experience Cloud di partecipare al sistema di gestione dei consensi.
+**Servizio Opt-in**. Opt-in è un'estensione di Experience Cloud ID (ECID) che consente di controllare se (e quali) librerie di Experience Cloud possono creare dei cookie sulle pagine Web per i visitatori. Using [Experience Platform Launch](https://docs.adobelaunch.com/), you can simplify gathering visitor opt-in consents for Experience Cloud solution by enabling Analytics, Target, Audience Manager, and other or all select Experience Cloud solutions to opt-in to your consent management system.
 
 ## Versione 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 
