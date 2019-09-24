@@ -5,7 +5,7 @@ seo-description: I browser usano Cross Origin Resource Sharing (CORS) per richie
 seo-title: Supporto per CORS nel servizio Experience Cloud Identity
 title: Supporto per CORS nel servizio Experience Cloud Identity
 uuid: e656b573-72a8-4312-a7d5-5cc3818f0a9e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -76,7 +76,7 @@ La tabella seguente descrive alcuni dei vantaggi di CORS per gli utenti che usan
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>Maggiore sicurezza</b> </p> </td> 
-   <td colname="col2"> <p>CORS usa <a href="https://developer.mozilla.org/it-IT/docs/Web/API/XMLHttpRequest" format="https" scope="external">XMLHttpRequest</a> per richiedere e trasferire i dati. Questo metodo è più sicuro di una richiesta JSONP. Impedisce che possano essere eseguiti JavaScript arbitrari eventualmente presenti nella risposta ricevuta dal DCS. Il payload di risposta XMLHttpRequest di CORS viene analizzato dal JavaScript del servizio ID e non viene semplicemente eseguito in una funzione di callback. </p> <p> <p>Nota: per accettare i cookie, la proprietà <span class="codeph">withCredentials </span>dell'oggetto <span class="codeph">XMLHttpRequest</span> deve essere impostata su <span class="codeph">true</span>. Questa proprietà è supportata su Chrome, Firefox, Internet Explorer (v10+), Opera e Safari. </p> </p> </td> 
+   <td colname="col2"> <p>CORS usa <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" format="https" scope="external">XMLHttpRequest</a> per richiedere e trasferire i dati. Questo metodo è più sicuro di una richiesta JSONP. Impedisce che possano essere eseguiti JavaScript arbitrari eventualmente presenti nella risposta ricevuta dal DCS. Il payload di risposta XMLHttpRequest di CORS viene analizzato dal JavaScript del servizio ID e non viene semplicemente eseguito in una funzione di callback. </p> <p> <p>Nota: per accettare i cookie, la proprietà <span class="codeph">withCredentials </span>dell'oggetto <span class="codeph">XMLHttpRequest</span> deve essere impostata su <span class="codeph">true</span>. Questa proprietà è supportata su Chrome, Firefox, Internet Explorer (v10+), Opera e Safari. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Prestazioni migliori</b> </p> </td> 
