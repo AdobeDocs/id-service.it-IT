@@ -5,7 +5,7 @@ seo-description: Questa proprietà sovrascrive gli ID Experience Cloud e Analyti
 seo-title: overwriteCrossDomainMCIDAndAID
 title: overwriteCrossDomainMCIDAndAID
 uuid: 8e48127a-ac62-4ea0-9756-2a27b20ecbcf
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 Questa proprietà sovrascrive gli ID Experience Cloud e Analytics di un visitatore che naviga da dominio a un altro. Per sovrascrivere un ID, devi possedere e aver implementato il servizio ID per ciascun dominio. Questo codice non ti permette di sovrascrivere gli ID per domini che non sono sotto il tuo controllo.
 
-**Sintassi:**`Visitor.overwriteCrossDomainMCIDAndAID: true|false` (l&#39;impostazione predefinita è `false`)
+**Sintassi:**`Visitor.overwriteCrossDomainMCIDAndAID: true|false` (l'impostazione predefinita è `false`)
 
 **Esempio di codice**
 
@@ -31,9 +31,9 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ID-HERE", {
 }); 
 ```
 
-**Casi d&#39;uso**
+**Casi d'uso**
 
-Per tenere traccia dei visitatori del sito, il servizio ID scrive un identificatore [!DNL Experience Cloud] ID (MID) in un cookie del browser. Nella tabella seguente sono elencati e descritti alcuni casi d&#39;uso di situazioni in cui può essere utile sovrascrivere un identificatore MID esistente impostato dal servizio ID in un altro dominio.
+Per tenere traccia dei visitatori del sito, il servizio ID scrive un identificatore [!DNL Experience Cloud] ID (MID) in un cookie del browser. Nella tabella seguente sono elencati e descritti alcuni casi d'uso di situazioni in cui può essere utile sovrascrivere un identificatore MID esistente impostato dal servizio ID in un altro dominio.
 
 <table id="table_FC1AF6551D6646E0BF1C4FB7C1316EBB"> 
  <thead> 
