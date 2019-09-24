@@ -4,7 +4,7 @@ seo-description: Dopo aver abilitato l'oggetto Opt-in sul sito Web, usa i metodi
 seo-title: Convalida del servizio Opt-in
 title: Convalida del servizio Opt-in
 uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 ---
@@ -12,9 +12,9 @@ source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 # Convalida del servizio Opt-in{#validating-opt-in-service}
 
-Dopo aver abilitato l&#39;oggetto Opt-in sul sito Web, usa i metodi di convalida per verificare che il servizio funzioni come previsto usando gli strumenti per sviluppatori nel browser.
+Dopo aver abilitato l'oggetto Opt-in sul sito Web, usa i metodi di convalida per verificare che il servizio funzioni come previsto usando gli strumenti per sviluppatori nel browser.
 
-## Caso d&#39;uso 1: abilitare Opt-in {#section-c8fe1ee3711b420c8186c7057abbecb3}
+## Caso d'uso 1: abilitare Opt-in {#section-c8fe1ee3711b420c8186c7057abbecb3}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -28,7 +28,7 @@ Prima di caricare la pagina, svuota la cache e cancella i cookie.
 
 In Chrome fai clic con il pulsante destro del mouse sulla pagina Web e seleziona Controlla. Come nella schermata in alto, seleziona la scheda *Rete* per visualizzare le richieste fatte dal browser.
 
-Nell&#39;esempio sopra, i seguenti tag di Adobe JS sono installati sulla pagina: ECID, AAM, Analytics e Target.
+Nell'esempio sopra, i seguenti tag di Adobe JS sono installati sulla pagina: ECID, AAM, Analytics e Target.
 
 **Come verificare che Opt-in funzioni come previsto:**
 
@@ -50,7 +50,7 @@ In Chrome, passa alla scheda *Applicazione*, espandi la sezione *Cookie* in *Arc
 
 ![](assets/use_case_1_2.png)
 
-## Caso d&#39;uso 2: abilitare Opt-in e l&#39;archiviazione  {#section-bd28326f52474fa09a2addca23ccdc0f}
+## Caso d'uso 2: abilitare Opt-in e l'archiviazione  {#section-bd28326f52474fa09a2addca23ccdc0f}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -59,9 +59,9 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-L&#39;unica differenza nel caso d&#39;uso 2 è che verrà visualizzato *un nuovo cookie* che conterrà le autorizzazioni Opt-in fornite dal visitatore: **adobeujs-optin**
+L'unica differenza nel caso d'uso 2 è che verrà visualizzato *un nuovo cookie* che conterrà le autorizzazioni Opt-in fornite dal visitatore: **adobeujs-optin**
 
-## Caso d&#39;uso 3: abilitare Opt-in e preapprovare Adobe Analytics  {#section-257fe582b425496cbf986d0ec12d3692}
+## Caso d'uso 3: abilitare Opt-in e preapprovare Adobe Analytics  {#section-257fe582b425496cbf986d0ec12d3692}
 
 ```
 var preApproveAnalytics = {}; 
@@ -81,7 +81,7 @@ e i cookie di Analytics nella scheda Applicazione:
 
 ![](assets/use_case_3_2.png)
 
-## Caso d&#39;uso 4: abilitare Opt-in e IAB  {#section-64331998954d4892960dcecd744a6d88}
+## Caso d'uso 4: abilitare Opt-in e IAB  {#section-64331998954d4892960dcecd744a6d88}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -102,7 +102,7 @@ Apri gli strumenti per sviluppatori e seleziona la scheda *Console*. Incolla il 
   
 ```
 
-Ecco un output di esempio generato quando vengono approvati gli scopi 1, 2 e 5 e l&#39;ID fornitore di Audience Manager:
+Ecco un output di esempio generato quando vengono approvati gli scopi 1, 2 e 5 e l'ID fornitore di Audience Manager:
 
 * demdex.net/id: la presenza di questa chiamata dimostra che ECID ha richiesto un ID a demdex.net/id
 * demdex.net/event: la presenza di questa chiamata dimostra che la chiamata della raccolta dati DIL funziona come previsto.
@@ -113,4 +113,4 @@ Ecco un output di esempio generato quando vengono approvati gli scopi 1, 2 e 5 e
 Non verrà visualizzata alcuna richiesta ai server di Adobe, né alcun cookie di Adobe se uno dei seguenti elementi non è valido:
 
 * Gli scopi 1, 2 o 5 non vengono approvati.
-* L&#39;ID fornitore di Audience Manager non viene approvato.
+* L'ID fornitore di Audience Manager non viene approvato.
