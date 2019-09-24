@@ -5,7 +5,7 @@ seo-description: Queste istruzioni sono per i clienti di Analytics e Audience Ma
 seo-title: Implementazione del servizio Experience Cloud Identity per Analytics e Audience Manager
 title: Implementazione del servizio Experience Cloud Identity per Analytics e Audience Manager
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -26,13 +26,13 @@ Queste istruzioni sono per i clienti di Analytics e Audience Manager che desider
 
 ## Passaggio 1: pianificazione dell'inoltro lato server {#section-880797cc992d4755b29cada7b831f1fc}
 
-Oltre ai passaggi qui descritti, i clienti che usano [!DNL Analytics] e [!DNL Audience Manager] devono effettuare la migrazione all'inoltro lato server. L'inoltro lato server consente di rimuovere il DIL (codice di raccolta dati di Audience Manager) e sostituirlo con il modulo [Gestione dell'audience](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html). Per ulteriori informazioni, consulta la documentazione dell'[inoltro lato server](https://marketing.adobe.com/resources/help/en_US/analytics/audiences/ssf.html).
+Oltre ai passaggi qui descritti, i clienti che usano [!DNL Analytics] e [!DNL Audience Manager] devono effettuare la migrazione all'inoltro lato server. L'inoltro lato server consente di rimuovere DIL (codice di raccolta dati di Audience Manager) e sostituirlo con il [modulo Gestione dell'audience](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html). Per ulteriori informazioni, consulta la [documentazione sull'inoltro lato server](https://marketing.adobe.com/resources/help/en_US/analytics/audiences/ssf.html).
 
 La migrazione all'inoltro lato server richiede un'attenta pianificazione e coordinazione. Il processo comporta modifiche esterne da apportare al codice del sito e passaggi interni che Adobe deve effettuare per il provisioning del tuo account. In effetti, molte di queste procedure di migrazione devono avvenire in parallelo ed essere rilasciate insieme. Il percorso di implementazione dovrà seguire questa sequenza di eventi:
 
 1. Pianifica con i tuoi contatti per [!DNL Analytics] e [!DNL Audience Manager] la migrazione dell'inoltro lato server e il servizio ID. La selezione del server di tracciamento è una fase importante di questo piano.
 
-1. Completa il modulo sulle [integrazioni e sul sito di provisioning](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES) per iniziare.
+1. Per iniziare, completa il modulo disponibile sul [sito di integrazioni e provisioning](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES).
 
 1. Implementa il servizio ID e il [!DNL Audience Management Module] simultaneamente. Per funzionare correttamente, il [!DNL Audience Management Module] (inoltro lato server) e il servizio ID devono essere rilasciati per lo stesso set di pagine e allo stesso tempo.
 
@@ -133,7 +133,7 @@ Per stabilire quali variabili usare per il server di monitoraggio:
 * URL del server Experience Cloud = URL del server di tracciamento
 * URL del server protetto Experience Cloud = URL del server protetto di tracciamento
 
-Se non sei sicuro di come trovare il server di tracciamento, consulta le [domande frequenti](../faq-intro/faq.md) e [Compilare correttamente le variabili trackingServer e trackingServerSecure ](https://helpx.adobe.com/it/analytics/kb/determining-data-center.html#).
+Se non sei sicuro di come trovare il server di tracciamento, consulta [Domande frequenti](../faq-intro/faq.md) e [Aggiunta corretta delle variabili trackingServer e trackingServerSecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 
 ## Passaggio 6: aggiorna il file AppMeasurement.js {#section-5517e94a09bc44dfb492ebca14b43048}
 
@@ -145,7 +145,7 @@ Aggiungi la `Visitor.getInstance` funzione riportata di seguito al tuo `AppMeasu
 
 >[!IMPORTANT]
 >
->A questo punto, devi rimuovere il codice [!DNL Audience Manager] DIL e sostituirlo con il modulo Gestione dell'audience. Per istruzioni, consulta [Implementare l'inoltro lato server](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html).
+>A questo punto, devi rimuovere il codice [!DNL Audience Manager] DIL e sostituirlo con il modulo Gestione dell'audience. Vedi [Implementazione dell'inoltro lato server](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html).
 
 ***(Facoltativo ma consigliato)*Crea un prop personalizzato****
 
@@ -165,7 +165,7 @@ Inserisci il ` [!UICONTROL VisitorAPI.js]` file entro i tag `<head>` di ogni pag
 
 ## Passaggio 8: (facoltativo) configura un periodo di tolleranza {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-Se uno di questi casi d'uso si applica alla tua situazione, chiedi [all'assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html) di impostare un [periodo di tolleranza](../reference/analytics-reference/grace-period.md) temporaneo. I periodi di tolleranza possono durare fino a 180 giorni. Se necessario, puoi rinnovare il periodo di tolleranza.
+If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). I periodi di tolleranza possono durare fino a 180 giorni. Se necessario, puoi rinnovare il periodo di tolleranza.
 
 **Implementazione parziale**
 
@@ -187,7 +187,7 @@ Se invii dati a un sistema interno da un feed di dati clickstream e per i proces
 
 Quando il processo di inserimento dei dati può utilizzare le colonne `post_visid_high` e `post_visid_low`, interrompi il periodo di tolleranza.
 
-Vedi anche i riferimenti della [Colonna dati di clickstream](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html).
+Vedi [Descrizione delle colonne nei dati di clickstream](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html).
 
 ## Passaggio 9: verifica e distribuisci il codice del servizio ID {#section-f857542bfc70496dbb9f318d6b3ae110}
 
@@ -198,10 +198,10 @@ Puoi eseguire il test e distribuirlo come segue.
 Per verificare l’implementazione del servizio ID, controlla i seguenti elementi:
 
 * [Cookie AMCV](../introduction/cookies.md) nel dominio di hosting della pagina.
-* Valore MID nella richiesta di immagine di Analytics con [Adobe debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html).
+* Valore MID nella richiesta di immagine di Analytics con lo strumento [Adobe Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html).
 * Consulta anche [Test e verifica del servizio Experience Cloud Identity](../implementation-guides/test-verify.md).
 
-Per verificare l'inoltro lato server, vedi [Come verificare l'implementazione dell'inoltro lato server](https://marketing.adobe.com/resources/help/en_US/reference/ssf-verify.html).
+Per verificare l'inoltro lato server, consulta [How to Verify your Server-Side Forwarding Implementation](https://marketing.adobe.com/resources/help/en_US/reference/ssf-verify.html) (Come verificare l'implementazione dell'inoltro lato server).
 
 **Distribuzione**
 
