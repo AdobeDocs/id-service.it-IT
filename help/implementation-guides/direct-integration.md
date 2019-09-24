@@ -5,7 +5,7 @@ seo-description: Questa implementazione permette ai clienti di usare il servizio
 seo-title: Integrazione diretta con il servizio Experience Cloud Identity
 title: Integrazione diretta con il servizio Experience Cloud Identity
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -21,7 +21,7 @@ I dispositivi che non possono usare le librerie di codici VisitorAPI.js o SDK po
 
 ![](assets/directSyntax.png)
 
-In questo esempio di sintassi, il `d_` prefisso identifica le coppie chiave-valore nella chiamata come variabile a livello di sistema. Puoi trasmettere una serie di `d_` parametri al servizio ID, ma fai particolare attenzione alle coppie chiave-valore mostrate nel codice seguente. Per ulteriori informazioni su altre variabili, consulta [Attributi supportati per le chiamate API DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
+In questo esempio di sintassi, il `d_` prefisso identifica le coppie chiave-valore nella chiamata come variabile a livello di sistema. Puoi trasmettere una serie di `d_` parametri al servizio ID, ma fai particolare attenzione alle coppie chiave-valore mostrate nel codice seguente. Per maggiori informazioni sulle altre variabili, consulta [Attributi supportati per le chiamate API DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
 
 Il servizio ID supporta le chiamate HTTP e HTTPS. Usa HTTPS per trasmettere i dati da una pagina sicura.
 
