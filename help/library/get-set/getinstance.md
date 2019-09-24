@@ -5,7 +5,7 @@ seo-description: getInstance restituisce un ID visitatore per l'ID organizzazion
 seo-title: getInstance
 title: getInstance
 uuid: 259b88a6-e3d0-4aab-b935-566099bdab98
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -51,7 +51,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-Se `getInstance` non rileva un'istanza esistente, viene creata e restituita una nuova istanza. È simile alla [`s_gi()` funzione ]( https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=function_s_gi.html) in [!DNL AppMeasurement].
+Se `getInstance` non rileva un'istanza esistente, viene creata e restituita una nuova istanza. This is similar to the [ `s_gi()` function ](https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=function_s_gi.html) in [!DNL AppMeasurement].
 
 **Uso comune**
 
