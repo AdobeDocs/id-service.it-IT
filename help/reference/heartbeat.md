@@ -5,7 +5,7 @@ seo-description: Video Heartbeat richiede il servizio Experience Cloud Identity.
 seo-title: Video Heartbeat e il servizio Experience Cloud Identity
 title: Video Heartbeat e il servizio Experience Cloud Identity
 uuid: 07986a78-23ac-4fd4-ab8f-be9275616a29
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -17,5 +17,5 @@ Video Heartbeat richiede il servizio Experience Cloud Identity. Per misurare i v
 
 >[!MORE_LIKE_THIS]
 >
->* [Misurazione dei video in Analytics con Video Heartbeat](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/)
+>* [Misurazione di video in Analytics con Video Heartbeat](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/)
 
