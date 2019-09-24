@@ -5,7 +5,7 @@ seo-description: Imposta un intervallo di timeout in millisecondi. Viene usato p
 seo-title: loadTimeout
 title: loadTimeout
 uuid: f627e044-bd73-49a4-8a90-6d19aa566751
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -21,7 +21,7 @@ Il valore predefinito è 30.000 millisecondi (30 secondi). Ti consigliamo caldam
 
 >[!NOTE]
 >
->Le chiamate al servizio ID sono sincronizzate con gli altri codici non Adobe presenti nella pagina. Di conseguenza, se si aumenta o diminuisce l&#39;intervallo di timeout, la frequenza di rendering dei contenuti della pagina non viene modificata. Tuttavia, intervalli di timeout troppo lunghi possono influire sui tempi di caricamento della pagina, misurati da comuni strumenti di monitoraggio della rete, anche se la frequenza di rendering rimane inalterata.
+>Le chiamate al servizio ID sono sincronizzate con gli altri codici non Adobe presenti nella pagina. Di conseguenza, se si aumenta o diminuisce l'intervallo di timeout, la frequenza di rendering dei contenuti della pagina non viene modificata. Tuttavia, intervalli di timeout troppo lunghi possono influire sui tempi di caricamento della pagina, misurati da comuni strumenti di monitoraggio della rete, anche se la frequenza di rendering rimane inalterata.
 
 **Esempio di codice**
 
