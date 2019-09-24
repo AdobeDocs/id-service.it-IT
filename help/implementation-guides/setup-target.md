@@ -5,7 +5,7 @@ seo-description: Queste istruzioni sono per i clienti di Target che desiderano u
 seo-title: Implementazione del servizio Experience Cloud Identity per Target
 title: Implementazione del servizio Experience Cloud Identity per Target
 uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -25,7 +25,7 @@ Queste istruzioni sono per i clienti di Target che desiderano usare il servizio 
 
 ## Passaggio 1: ottieni il codice del servizio ID {#section-b32ba0548aa546a79dd38be59832a53e}
 
-Il [!UICONTROL servizio ID] richiede la libreria dei codici `VisitorAPI.js`. Per ottenere questo codice, contatta [l'assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html).
+Il [!UICONTROL servizio ID] richiede la libreria dei codici `VisitorAPI.js`. Per ottenere questo codice, contatta l'[assistenza clienti](https://helpx.adobe.com/marketing-cloud/contact-support.html).
 
 ## Passaggio 2: aggiungi la funzione Visitor.getInstance al codice del servizio ID {#section-287ef2958e9f43858fe9d630ae519e22}
 
@@ -54,7 +54,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 
 ## Passaggio 3: aggiungi l'ID organizzazione Experience Cloud a Visitor.getInstance {#section-522b1877be9243c39b222859b821f0ce}
 
-Nella `Visitor.getInstance` funzione sostituisci `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` con l'ID organizzazione [!DNL Experience Cloud]. Se non conosci il tuo ID organizzazione, puoi trovarlo nella pagina di amministrazione di [!DNL Experience Cloud]. Vedi anche [Amministrazione - Servizi di base](https://marketing.adobe.com/resources/help/it_IT/mcloud/admin_getting_started.html). La funzione modificata deve essere simile a quella riportata di seguito.
+Nella `Visitor.getInstance` funzione sostituisci `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` con l'ID organizzazione [!DNL Experience Cloud]. Se non conosci il tuo ID organizzazione, puoi trovarlo nella pagina di amministrazione di [!DNL Experience Cloud]. Vedi anche [Amministrazione - Servizi principali](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html). La funzione modificata deve essere simile a quella riportata di seguito.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg");`
 
