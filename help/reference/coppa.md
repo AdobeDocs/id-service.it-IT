@@ -5,7 +5,7 @@ seo-description: Il Children’s Online Privacy Protection Act (COPPA) proibisce
 seo-title: Supporto per COPPA nel servizio Experience Cloud Identity
 title: Supporto per COPPA nel servizio Experience Cloud Identity
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 584b6240c3e0286111689499ca5df5d98aa9fab2
 
 ---
@@ -45,6 +45,6 @@ Quando viene impostato su `true`, `disableThirdPartyCookies` l'oggetto impedisce
 
 >[!MORE_LIKE_THIS]
 >
->* [ Centro per la privacy Adobe](http://www.adobe.com/it/privacy.html)
+>* [Centro per la privacy Adobe](http://www.adobe.com/privacy.html)
 >* [Cos'è il COPPA?](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)
 
