@@ -5,7 +5,7 @@ seo-description: Flag booleano facoltativo che aggiunge un attributo "Sicuro" al
 seo-title: secureCookie
 title: secureCookie
 uuid: 995d19f6-9c9d-4493-9c9c-545b0b5696b0
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 # secureCookie{#securecookie}
 
-Flag booleano facoltativo che aggiunge un attributo &quot;Sicuro&quot; al cookie AMCV.
+Flag booleano facoltativo che aggiunge un attributo "Sicuro" al cookie AMCV.
 
 Questo attributo di configurazione è disponibile nella `visitorAPI`versione 3.3.0 di.
 
