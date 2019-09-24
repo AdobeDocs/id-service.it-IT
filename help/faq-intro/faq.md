@@ -5,7 +5,7 @@ seo-description: Domande frequenti sulle caratteristiche, sulle funzionalità e 
 seo-title: Domande frequenti sul servizio ID
 title: Domande frequenti sul servizio ID
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -35,7 +35,7 @@ Questa situazione è difficile da diagnosticare. Una cosa che puoi controllare s
 
 Posiziona la libreria VisitorAPI.js nella parte superiore della pagina nella `<head>` sezione del tuo codice. Questo consente di garantire che la chiamata per un'ID venga effettuata prima che il corpo della pagina inizi a essere caricato e massimizza le possibilità di restituzione di un'ID.
 
-La chiamata al servizio ID è asincrona ed è l'unica chiamata al [dominio demdex.net](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html). La chiamata del servizio ID non blocca il caricamento di altri elementi sulla pagina.
+La chiamata del servizio ID è asincrona ed è l'unica chiamata al [dominio demdex.net](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html). La chiamata del servizio ID non blocca il caricamento di altri elementi sulla pagina.
 
 Per i [!DNL Target] clienti, il posizionamento del codice del servizio ID nel `<body>` della pagina può aumentare le possibilità che possa bloccare una chiamata [!DNL Target]. Se hai bisogno di posizionare il codice del servizio ID nel corpo della pagina, devi posizionarlo dopo il tag `<body>` aperto.
 
@@ -83,9 +83,9 @@ Sì. Consulta [Supporto per CORS nel servizio Experience Cloud Identity](../refe
 
 Se hai dei requisiti di sicurezza rigidi, imposta la configurazione API del servizio ID `useCORSOnly: true`. Abilita questa modalità solo se sei certo che i visitatori del tuo sito usano browser che supportano CORS.
 
-Consulta [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) e [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
+Consulta  [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) e [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
 
 >[!MORE_LIKE_THIS]
 >
->* [Assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html)
+>* [Assistenza clienti](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
