@@ -5,7 +5,7 @@ seo-description: Un'informativa sulla sicurezza dei contenuti (CSP) è un'intest
 seo-title: Informativa sulla sicurezza dei contenuti e servizio Experience Cloud Identity
 title: Informativa sulla sicurezza dei contenuti e servizio Experience Cloud Identity
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -60,7 +60,7 @@ Aggiungi questi nomi o URL di domini alla tua CSP per ogni soluzione o servizio 
 
 >[!MORE_LIKE_THIS]
 >
->* [Riferimenti nell'informativa sulla sicurezza dei contenuti](https://content-security-policy.com/)
->* [MDN: informativa sulla sicurezza dei contenuti](https://developer.mozilla.org/it-IT/docs/Web/HTTP/CSP)
->* [Wikipedia: informativa sulla sicurezza dei contenuti](https://it.wikipedia.org/wiki/Content_Security_Policy)
+>* [Riferimento all'informativa sulla sicurezza dei contenuti](https://content-security-policy.com/)
+>* [MDN: informativa sulla sicurezza dei contenuti](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+>* [Wikipedia: informativa sulla sicurezza dei contenuti](https://en.wikipedia.org/wiki/Content_Security_Policy)
 
