@@ -5,7 +5,7 @@ seo-description: Oltre all'ID visitatore di Experience Cloud, puoi associare alt
 seo-title: ID cliente e stati di autenticazione
 title: ID cliente e stati di autenticazione
 uuid: 643df363-224a-463e-a332-be59926b47e7
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 603540150edcdc76aacf407aeb6421c5b8386f56
 
 ---
@@ -17,11 +17,11 @@ Oltre all'ID visitatore di Experience Cloud, puoi associare altri ID cliente e u
 
 ## Stati di autenticazione {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-Il `setCustomerIDs` metodo accetta più ID cliente per lo stesso visitatore. In questo modo puoi identificare o indirizzare un singolo utente in più dispositivi. Ad esempio, puoi caricare questi ID come [attributi cliente](https://marketing.adobe.com/resources/help/it_IT/mcloud/?f=attributes.html) all'[!DNL Experience Cloud] e accedere a tali dati nelle diverse soluzioni.
+Il `setCustomerIDs` metodo accetta più ID cliente per lo stesso visitatore. In questo modo puoi identificare o indirizzare un singolo utente in più dispositivi. Ad esempio, puoi caricare gli ID come [attributi del cliente](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=attributes.html) in [!DNL Experience Cloud] e accedere ai dati dalle diverse soluzioni.
 
 >[!IMPORTANT]
 >
->`setCustomerIDs` (sincronizzazione ID cliente) è richiesto per gli attributi dei clienti e le funzionalità dei servizi principali. La sincronizzazione degli ID cliente è un metodo di identificazione facoltativo per [!DNL Analytics]. [!DNL Target] richiede `Visitor.AuthState.AUTHENTICATED` per il funzionamento degli attributi cliente. Per esempi, consulta [Servizi di base - Come abilitare le soluzioni](https://marketing.adobe.com/resources/help/it_IT/mcloud/?f=core_services).
+>`setCustomerIDs` (sincronizzazione ID cliente) è richiesto per gli attributi dei clienti e le funzionalità dei servizi principali. La sincronizzazione degli ID cliente è un metodo di identificazione facoltativo per [!DNL Analytics]. [!DNL Target] richiede `Visitor.AuthState.AUTHENTICATED` per il funzionamento degli attributi cliente. Alcuni esempi sono disponibili in [Servizi principali - Come attivare le proprie soluzioni](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=core_services).
 
 A partire dalla versione 1.5 del servizio Experience Cloud Identity, `setCustomerIDs` include l’oggetto facoltativo`AuthState`. `AuthState` identifica i visitatori in base al loro stato di autenticazione (ad es. connessi o disconnessi). Lo stato di autenticazione deve essere impostato con uno stato indicato nella tabella. Lo stato di autenticazione viene restituito come numero intero.
 
@@ -215,9 +215,9 @@ Object customerIDs = visitor.getCustomerIDs();
 
 Il servizio [!DNL Experience Cloud] ID supporta gli ID dei clienti e gli stati di autenticazione nel nostro codice SDK per Android e iOS. Vedi le seguenti librerie di codice:
 
-* [Metodi SDK per Android](https://marketing.adobe.com/resources/help/it_IT/mobile/android/?f=c_marketing_cloud.html)
-* [Metodi SDK per iOS](https://marketing.adobe.com/resources/help/it_IT/mobile/ios/?f=marketing_cloud.html)
+* [Metodi SDK per Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/?f=c_marketing_cloud.html)
+* [Metodi SDK per iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/?f=marketing_cloud.html)
 
 ## Avviso per i clienti Analytics e Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-Se trasferisci ID dichiarati ad [!DNL Audience Manager], l'oggetto `userid` deve corrispondere al codice di integrazione associato a un'origine dati. Per ulteriori informazioni, consulta la sezione sul [!UICONTROL servizio Visitor ID] nella documentazione su come [configurare il codice delle regole di unione](https://marketing.adobe.com/resources/help/en_US/aam/?f=merge-rules-configure-code.html).
+Se trasferisci ID dichiarati ad [!DNL Audience Manager], l'oggetto `userid` deve corrispondere al codice di integrazione associato a un'origine dati. Per ulteriori informazioni, consulta la sezione [!UICONTROL Servizio ID visitatore] nel documento [Configurazione codice delle regole di unione](https://marketing.adobe.com/resources/help/en_US/aam/?f=merge-rules-configure-code.html).
