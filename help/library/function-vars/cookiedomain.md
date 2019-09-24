@@ -5,7 +5,7 @@ seo-description: Obbligatoria per i domini di livello superiore con più parti, 
 seo-title: cookieDomain
 title: cookieDomain
 uuid: a57e5477-c07b-4d54-8aea-8e8b152f1423
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -13,11 +13,11 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 # cookieDomain{#cookiedomain}
 
-Obbligatoria per i domini di livello superiore con più parti, se una delle ultime due parti dell&#39;URL comprende più di due caratteri.
+Obbligatoria per i domini di livello superiore con più parti, se una delle ultime due parti dell'URL comprende più di due caratteri.
 
 **Sintassi:** ` cookieDomain: " *`URL`*"` (Il prefisso `www` non è obbligatorio.)
 
-**Caso d&#39;uso**
+**Caso d'uso**
 
 * Obbligatorio: `www.example.com.uk`
 * Non obbligatorio: `www.example.co.uk`
