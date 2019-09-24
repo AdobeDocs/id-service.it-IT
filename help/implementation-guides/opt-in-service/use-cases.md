@@ -4,25 +4,25 @@ seo-description: Casi d'uso e soluzioni di esempio per gestire il servizio Opt-i
 seo-title: Casi d'uso di Opt-in
 title: Casi d'uso di Opt-in
 uuid: d75a44d5-b713-43d1-b5b6-95d1d0d213a7
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 ---
 
 
-# Casi d&#39;uso di Opt-in {#opt-in-use-cases}
+# Casi d'uso di Opt-in {#opt-in-use-cases}
 
-Casi d&#39;uso e soluzioni di esempio per gestire il servizio Opt-in.
+Casi d'uso e soluzioni di esempio per gestire il servizio Opt-in.
 
 ## Suggerimenti e risoluzione dei problemi {#section-5c566366410f4a8f89eca0d3f556d99f}
 
-* L&#39;inizializzazione di JS per il visitatore è sincrona e viene eseguita durante il caricamento della pagina. Se si usa una CMP o si affronta la persistenza delle autorizzazioni con latenza elevata, è preferibile usare le funzioni asincrone descritte in [Configurazione di Opt-in](../../implementation-guides/opt-in-service/getting-started.md#section-cf9ab638780141c9b62dc57cf00b7047).
-* Opt-in è un&#39;implementazione per singolo dominio. Non gestisce implementazioni in più domini.
+* L'inizializzazione di JS per il visitatore è sincrona e viene eseguita durante il caricamento della pagina. Se si usa una CMP o si affronta la persistenza delle autorizzazioni con latenza elevata, è preferibile usare le funzioni asincrone descritte in [Configurazione di Opt-in](../../implementation-guides/opt-in-service/getting-started.md#section-cf9ab638780141c9b62dc57cf00b7047).
+* Opt-in è un'implementazione per singolo dominio. Non gestisce implementazioni in più domini.
 * Al fine di disabilitare le chiamate di terze parti per una libreria specifica, sarà necessario configurare la preferenza in ogni libreria separatamente.
 
 ## Situazioni che potrebbero verificarsi con Opt-in  {#section-1178053c065c430bba26f82ef383a71c}
 
-Questi casi d&#39;uso sono idee di esempio per usare il servizio Opt-in.
+Questi casi d'uso sono idee di esempio per usare il servizio Opt-in.
 
 <table id="table_83C85343611344D8A8315157C1B4240F"> 
  <thead> 
