@@ -5,7 +5,7 @@ seo-description: Le funzioni idSyncByURL e idSyncByDataSource del servizio ID pe
 seo-title: Sincronizzazione ID tramite URL o sorgente dati
 title: Sincronizzazione ID tramite URL o sorgente dati
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b83b192655f59a728b488b4e2a9aa2efbcf093f0
 
 ---
@@ -22,7 +22,7 @@ Le funzioni idSyncByURL e idSyncByDataSource del servizio ID permettono di imple
 <table id="table_ADC7501511914805A6A6B24B2DFEBA51"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Codice </th> 
+   <th colname="col1" class="entry"> cookie </th> 
    <th colname="col2" class="entry"> Sincronizza gli ID utente </th> 
   </tr> 
  </thead>
@@ -134,5 +134,5 @@ http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765
 
 >[!MORE_LIKE_THIS]
 >
->* [DIL idSync](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync)
+>* [DIL idSync](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync)
 
