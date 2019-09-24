@@ -5,7 +5,7 @@ seo-description: Queste configurazioni consentono a diverse istanze del codice d
 seo-title: whitelistParentDomain e whitelistIframeDomains
 title: whitelistParentDomain e whitelistIframeDomains
 uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -73,7 +73,7 @@ Queste configurazioni aiutano a risolvere il problema dell'impostazione di un co
 
 >[!TIP]
 >
->Puoi anche implementare queste configurazioni durante il serving di un video in un iFrame con [Video Heartbeat](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/). Video Heartbeat richiede un ID del servizio ID (il codice MID) per funzionare in modo appropriato.
+>You may also want to implement these configurations when you're serving video in an iFrame with [Video Heartbeat](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/). Video Heartbeat richiede un ID del servizio ID (il codice MID) per funzionare in modo appropriato.
 
 **Caso d'uso 1: il browser blocca i cookie di terza parte e il servizio ID è implementato su iFrame e sulla pagina padre**
 
