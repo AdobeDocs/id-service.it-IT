@@ -5,7 +5,7 @@ seo-description: Domande frequenti sulle caratteristiche, sulle funzionalità e 
 seo-title: Domande frequenti su Analytics e sul servizio Identity
 title: Domande frequenti su Analytics e sul servizio Identity
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -23,7 +23,7 @@ Ogni frammento di codice AppMeasurement configurato in maniera appropriata conti
 
 Tuttavia, talvolta, i clienti possono suddividere il file Analytics AppMeasurement in file separati. Ad esempio, alcuni clienti possono inserire in un file variabili di configurazione, usare un secondo file per i plug-in e quindi inserire un codice AppMeasurement in un terzo file. Questo tipo di operazione non è consigliato.
 
-Se non riesci a trovare informazioni sul server di tracciamento, l'istanza di Analytics potrebbe non essere stata configurata in maniera appropriata. Se non riesci a trovare informazioni sul server di tracciamento, contatta [l'assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html).
+Se non riesci a trovare informazioni sul server di tracciamento, l'istanza di Analytics potrebbe non essere stata configurata in maniera appropriata. Contatta l'[Assistenza clienti](https://helpx.adobe.com/marketing-cloud/contact-support.html) se non riesci a trovare informazioni sul server di tracciamento.
 
 **Che succede se uso il servizio Identity e cambio il server di tracciamento?**
 
@@ -35,7 +35,7 @@ Per gli utenti che sono già stati identificati dal servizio Identity, non cambi
 
 Se utilizzi un sito di accesso principale per l'identificazione dei clienti prima che visitino altri domini, un CNAME consente il monitoraggio tra più domini nei browser che non accettano i cookie di terze parti (ad es. Safari).
 
-Nei browser che accettano i cookie di terze parti, durante la richiesta viene impostato un cookie nel [dominio demdex.net ](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html) per recuperare un ID visitatore. Questo cookie consente al servizio Identity di restituire lo stesso ID visitatore Experience Cloud a tutti i domini configurati usando lo stesso ID organizzazione. Nei browser che rifiutano i cookie di terze parti, a ciascun dominio viene assegnato un nuovo ID visitatore Experience Cloud.
+Nei browser che accettano i cookie di terze parti, durante la richiesta, un cookie viene impostato nel [dominio demdex.net](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html) per recuperare l'ID visitatore. Questo cookie consente al servizio Identity di restituire lo stesso ID visitatore Experience Cloud a tutti i domini configurati usando lo stesso ID organizzazione. Nei browser che rifiutano i cookie di terze parti, a ciascun dominio viene assegnato un nuovo ID visitatore Experience Cloud.
 
 Anche se è configurato un CNAME, se il principale sito di accesso non viene visitato per primo, i visitatori vengono identificati in modo diverso sul sito secondario nei browser che non accettano i cookie di terze parti.
 
@@ -51,7 +51,7 @@ Tuttavia, il codice H non è supportato con il codice visitorAPI.js versione 1.6
 
 **Cos'è un periodo di tolleranza e come lo configuro?**
 
-Consulta [Periodo di tolleranza per il servizio Identity](../reference/analytics-reference/grace-period.md) e contatta l’[assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html).
+See [The Identity Service Grace Period](../reference/analytics-reference/grace-period.md) and contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html).
 
 **Perché devo migrare alla raccolta dati regionali (RDC) per usare il servizio Identity?**
 
@@ -90,5 +90,5 @@ Esistono tre possibili situazioni in cui questa casistica influisce sui dati Ana
 
 >[!MORE_LIKE_THIS]
 >
->* [Assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html)
+>* [Assistenza clienti](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
