@@ -5,7 +5,7 @@ seo-description: In alcune implementazioni, gli ID visitatore vengono trasferiti
 seo-title: Implementazione lato server con JavaScript
 title: Implementazione lato server con JavaScript
 uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -29,7 +29,7 @@ Include l'ID visitatore di Analytics (se è impostato) nell'elemento `<visitorID
 
 Include l'ID visitatore di Experience Cloud nell'elemento `<marketingCloudVisitorID>`.
 
-Consulta [Tag XML supportati](https://marketing.adobe.com/developer/it_IT/documentation/data-insertion/r-supported-tags).
+Vedi [Tag XML supportati](https://marketing.adobe.com/developer/en_US/documentation/data-insertion/r-supported-tags).
 
 ## AppMeasurement per Java {#section-d664b94934924d048300d9c2b6560085}
 
