@@ -5,7 +5,7 @@ seo-description: Versioni future, aggiornamenti o modifiche al servizio Experien
 seo-title: Note sulla versione 2016
 title: Note sulla versione 2016
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2016.
 
-Queste modifiche vengono anche acquisite nelle [note sulla versione Experience Cloud](https://marketing.adobe.com/resources/help/it_IT/whatsnew/). Per gli annunci precedenti [!DNL Experience Cloud], consulta le [note sulla versione precedenti](https://marketing.adobe.com/resources/help/it_IT/whatsnew/?f=c_legacy_releases.html).
+Queste modifiche vengono anche riportate nelle [note sulla versione di Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/). Per gli annunci precedenti, vedi le [note sulle versioni precedenti](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html).[!DNL Experience Cloud]
 
 ## Versione 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
@@ -145,7 +145,7 @@ Giugno 2016
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Modifiche all'attributo <span class="codeph">iframe.sandbox</span> </p> </td> 
-   <td colname="col2"> <p>iFrame è ora configurato in modo che <span class="codeph">iframe.sandbox='allow-scripts allow-same-origin';</span> </p> <p>Consentendo solamente questi 2 token è possibile migliorare la sicurezza e fornire il servizio ID con la funzionalità di base necessaria alla sincronizzazione ID. </p> <p>L'attributo sandbox non è supportato da Internet Explorer versione 9 o precedenti. Per ulteriori informazioni, consultate la sezione Attributi in questa <a href="https://developer.mozilla.org/it-IT/docs/Web/HTML/Element/iframe" format="https" scope="external">documentazione iFrame</a>. </p> </td> 
+   <td colname="col2"> <p>iFrame è ora configurato in modo che <span class="codeph">iframe.sandbox='allow-scripts allow-same-origin';</span> </p> <p>Consentendo solamente questi 2 token è possibile migliorare la sicurezza e fornire il servizio ID con la funzionalità di base necessaria alla sincronizzazione ID. </p> <p>L'attributo sandbox non è supportato da Internet Explorer versione 9 o precedenti. Per ulteriori informazioni, consultate la sezione Attributi in questa <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" format="https" scope="external">documentazione iFrame</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Codifica di Experience Cloud ID (MID) </p> </td> 
