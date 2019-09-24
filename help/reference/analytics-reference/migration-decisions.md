@@ -5,7 +5,7 @@ seo-description: Prima di implementare il servizio Experience Cloud Identity, è
 seo-title: Decisioni relative alla migrazione al servizio Experience Cloud Identity
 title: Decisioni relative alla migrazione al servizio Experience Cloud Identity
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -63,7 +63,7 @@ Se disponi di più domini che inviano dati alla *stessa suite di rapporti*, ti c
      <li id="li_32E2CD3E58454E20A642BADE507AE86E">Verifica che il nuovo server di monitoraggio sia <a href="https://marketing.adobe.com/resources/help/en_US/whitepapers/rdc/" format="https" scope="external">compatibile con RDC</a>. </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762">Passa dal CNAME a un server di monitoraggio RDC alcuni mesi prima della migrazione al servizio <span class="keyword">Experience Cloud ID</span>. </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i>Non</i> usare un server di monitoraggio <span class="codeph">*.2o7.net</span>. </li> 
-     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Per configurare la migrazione dei visitatori, contatta l'<a href="https://helpx.adobe.com/it/marketing-cloud/contact-support.html" format="https" scope="external">assistenza clienti</a>. In questo modo i conteggi dei visitatori rimarranno costanti. </li> 
+     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Per configurare la migrazione dei visitatori, contatta l'<a href="https://helpx.adobe.com/marketing-cloud/contact-support.html" format="https" scope="external">assistenza clienti</a>. In questo modo i conteggi dei visitatori rimarranno costanti. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -110,7 +110,7 @@ Potresti dover aggiornare il metodo di monitoraggio dei link o effettuare una mi
  <tbody> 
   <tr> 
    <td colname="col1"> <p>JavaScript e/o Flash </p> </td> 
-   <td colname="col2"> <p>Nessuno. Il servizio <span class="keyword">Experience Cloud ID</span> supporta questi metodi di raccolta dei dati. </p> </td> 
+   <td colname="col2"> <p>None. Il servizio <span class="keyword">Experience Cloud ID</span> supporta questi metodi di raccolta dei dati. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Silverlight </p> </td> 
