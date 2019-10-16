@@ -6,7 +6,7 @@ seo-title: ID cliente e stati di autenticazione
 title: ID cliente e stati di autenticazione
 uuid: 643df363-224a-463e-a332-be59926b47e7
 translation-type: tm+mt
-source-git-commit: 603540150edcdc76aacf407aeb6421c5b8386f56
+source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
 
 ---
 
@@ -17,11 +17,11 @@ Oltre all'ID visitatore di Experience Cloud, puoi associare altri ID cliente e u
 
 ## Stati di autenticazione {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-Il `setCustomerIDs` metodo accetta più ID cliente per lo stesso visitatore. In questo modo puoi identificare o indirizzare un singolo utente in più dispositivi. Ad esempio, puoi caricare gli ID come [attributi del cliente](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=attributes.html) in [!DNL Experience Cloud] e accedere ai dati dalle diverse soluzioni.
+Il `setCustomerIDs` metodo accetta più ID cliente per lo stesso visitatore. In questo modo puoi identificare o indirizzare un singolo utente in più dispositivi. Ad esempio, puoi caricare gli ID come [attributi del cliente](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html) in [!DNL Experience Cloud] e accedere ai dati dalle diverse soluzioni.
 
 >[!IMPORTANT]
 >
->`setCustomerIDs` (sincronizzazione ID cliente) è richiesto per gli attributi dei clienti e le funzionalità dei servizi principali. La sincronizzazione degli ID cliente è un metodo di identificazione facoltativo per [!DNL Analytics]. [!DNL Target] richiede `Visitor.AuthState.AUTHENTICATED` per il funzionamento degli attributi cliente. Alcuni esempi sono disponibili in [Servizi principali - Come attivare le proprie soluzioni](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=core_services).
+>`setCustomerIDs` (sincronizzazione ID cliente) è richiesto per gli attributi dei clienti e le funzionalità dei servizi principali. La sincronizzazione degli ID cliente è un metodo di identificazione facoltativo per [!DNL Analytics]. [!DNL Target] richiede `Visitor.AuthState.AUTHENTICATED` per il funzionamento degli attributi cliente. Alcuni esempi sono disponibili in [Servizi principali - Come attivare le proprie soluzioni](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html).
 
 A partire dalla versione 1.5 del servizio Experience Cloud Identity, `setCustomerIDs` include l’oggetto facoltativo`AuthState`. `AuthState` identifica i visitatori in base al loro stato di autenticazione (ad es. connessi o disconnessi). Lo stato di autenticazione deve essere impostato con uno stato indicato nella tabella. Lo stato di autenticazione viene restituito come numero intero.
 
@@ -90,7 +90,7 @@ Gli ID cliente possono includere combinazioni di ID e stati di identificazione, 
 >[!IMPORTANT]
 >
 >* Gli ID sono sensibili all'uso di maiuscole e minuscole.
->* Per gli ID, usa solo valori non codificati.
+>* Usa solo valori non codificati per i tuoi ID.
 >* Gli ID dei clienti e gli stati di autenticazione non vengono memorizzati nel cookie ID visitatore. Devono essere impostati per ciascuna pagina o contesto dell'applicazione.
 >* Negli ID cliente non devono essere incluse informazioni identificative della persona (Personally Identifiable Information, PII). Invece di utilizzare informazioni PII per identificare un visitatore (ad esempio l’indirizzo e-mail), consigliamo di memorizzare una versione con hashing o codificata di queste informazioni. La libreria ECID supporta l’hashing degli identificatori utente. Consulta [Supporto di hashing SHA-256 per setCustomerIDs](/help/reference/hashing-support.md).
 >
@@ -215,9 +215,9 @@ Object customerIDs = visitor.getCustomerIDs();
 
 Il servizio [!DNL Experience Cloud] ID supporta gli ID dei clienti e gli stati di autenticazione nel nostro codice SDK per Android e iOS. Vedi le seguenti librerie di codice:
 
-* [Metodi SDK per Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/?f=c_marketing_cloud.html)
-* [Metodi SDK per iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/?f=marketing_cloud.html)
+* [Metodi SDK per Android](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html)
+* [Metodi SDK per iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/overview.html)
 
 ## Avviso per i clienti Analytics e Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-Se trasferisci ID dichiarati ad [!DNL Audience Manager], l'oggetto `userid` deve corrispondere al codice di integrazione associato a un'origine dati. Per ulteriori informazioni, consulta la sezione [!UICONTROL Servizio ID visitatore] nel documento [Configurazione codice delle regole di unione](https://marketing.adobe.com/resources/help/en_US/aam/?f=merge-rules-configure-code.html).
+Se trasferisci ID dichiarati ad [!DNL Audience Manager], l'oggetto `userid` deve corrispondere al codice di integrazione associato a un'origine dati. Per ulteriori informazioni, consulta la sezione [!UICONTROL Servizio ID visitatore] nel documento [Configurazione codice delle regole di unione](https://docs.adobe.com/help/en/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html#configure-merge-rule-code).
