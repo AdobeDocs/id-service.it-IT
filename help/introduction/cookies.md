@@ -5,13 +5,13 @@ seo-description: Il servizio ID utilizza l'ID organizzazione, il cookie AMCV di 
 seo-title: Cookie e il servizio Experience Cloud Identity
 title: Cookie e il servizio Experience Cloud Identity
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7d7ecdf65cca67539b1b63c8811a0bad04c694c3
 
 ---
 
 
-# Cookie e il servizio Experience Cloud Identity{#cookies-and-the-experience-cloud-id-service}
+# Cookie e il servizio Experience Cloud Identity {#cookies-and-the-experience-cloud-id-service}
 
 Il servizio ID utilizza l'ID organizzazione, il cookie AMCV di Experience Cloud e il cookie demdex per creare e memorizzare identificatori univoci e costanti per i visitatori del sito. Questi cookie permettono al servizio ID di tenere traccia dei visitatori nei diversi domini e di condividere i dati tra le varie soluzioni Experience Cloud.
 
@@ -114,7 +114,7 @@ Nella seguente tabella sono elencati e definiti alcuni importanti attributi del 
  </tbody> 
 </table>
 
-For related information, see [Understanding Calls to the Demdex Domain](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
+Per informazioni correlate, consulta [Informazioni sulle chiamate al dominio Demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
 
 ## Generazione dell'Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
@@ -126,13 +126,13 @@ Il servizio ID inizia a creare un MID non appena la tua pagina viene caricata. D
 
 La tabella seguente descrive i flag per i cookie Experience Cloud:
 
-| Cookie (impostato da) | httpOnly | Proteggere | SameSite |
+| Cookie (impostato da) | httpOnly | Secure | SameSite |
 |--- |--- |--- |--- |
-| demdex (risposta http) | No | Sì | "None" |
-| AMCV (Javascript) | No | Configurabile | Non impostato (impostazione predefinita: Lax) |
-| AMCVS (Javascript) | No | Configurabile | Non impostato (impostazione predefinita: Lax) |
+| demdex (risposta http) | No | Sì | “Nessuno” |
+| AMCV (JavaScript) | No | Configurabile | Non impostato (impostazione predefinita Lax) |
+| AMCVS (JavaScript) | No | Configurabile | Non impostato (impostazione predefinita Lax) |
 
-*Nota: Per informazioni sulla configurazione del cookie AMCV e AMCVS con attributi sicuri, consulta l’argomento relativo a[secureCookie](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/securecookie.html).*
+*Nota: Per informazioni sulla configurazione del cookie AMCV e AMCVS con attributi sicuri, consulta l’argomento relativo a [secureCookie](https://docs.adobe.com/content/help/it-IT/id-service/using/id-service-api/configurations/securecookie.html).*
 
 ## Passaggi successivi {#section-8db1727a63bc4ff68b495f270315d453}
 
