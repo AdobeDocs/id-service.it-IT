@@ -6,7 +6,7 @@ seo-title: Informazioni sulla sincronizzazione degli ID e sulle percentuali di c
 title: Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -72,7 +72,7 @@ Il termine *`Sync Services`* fa riferimento alle tecnologie interne [!DNL Experi
 
 [!DNL Adobe Media Optimizer] è un'eccezione del processo di sincronizzazione ID basato su iFrame. Poiché [!DNL Media Optimizer] è un dominio fidato, le sincronizzazioni ID hanno luogo dalla pagina padre invece che nel [!UICONTROL Destination Publishing iFrame]. Durante la sincronizzazione, il servizio ID chiama [!DNL Media Optimizer] su `cm.eversttech.net`, che è un nome di dominio legacy usato da [!DNL Media Optimizer] prima della sua acquisizione da parte di Adobe. L'invio di dati a [!DNL Media Optimizer] aiuta a migliore le percentuali di corrispondenza ed è automatico per i clienti del servizio ID che usano la versione 2.0 (o superiore). Vedi anche [Cookie di Media Optimizer](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html).
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Informazioni sulle chiamate al dominio demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)
 
