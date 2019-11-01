@@ -6,7 +6,7 @@ seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -50,7 +50,7 @@ Il parametro `aid` viene visualizzato in una stringa di interrogazione quando:
 
 Il `aid` parametro viene visualizzato in una stringa di interrogazione quando l'organizzazione utilizza un [periodo di tolleranza](../../reference/analytics-reference/grace-period.md) prima di implementare completamente il servizio ID. Se un nuovo utente accede al sito e non utilizzi un periodo di tolleranza, il visitatore riceve il parametro `mid` (ID [!DNL Experience Cloud]).
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Cookie di Analytics](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html)
 
