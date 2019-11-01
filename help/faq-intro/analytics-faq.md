@@ -6,7 +6,7 @@ seo-title: Domande frequenti su Analytics e sul servizio Identity
 title: Domande frequenti su Analytics e sul servizio Identity
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -51,7 +51,7 @@ Tuttavia, il codice H non è supportato con il codice visitorAPI.js versione 1.6
 
 **Cos'è un periodo di tolleranza e come lo configuro?**
 
-See [The Identity Service Grace Period](../reference/analytics-reference/grace-period.md) and contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+Consulta [il periodo](../reference/analytics-reference/grace-period.md) di tolleranza per il servizio identità e contatta l'Assistenza [](https://helpx.adobe.com/marketing-cloud/contact-support.html)clienti.
 
 **Perché devo migrare alla raccolta dati regionali (RDC) per usare il servizio Identity?**
 
@@ -88,7 +88,7 @@ Esistono tre possibili situazioni in cui questa casistica influisce sui dati Ana
 >
 >L'uso degli ultimi aggiornamenti di VisitorAPI.js e AppMeasurement.js con le impostazioni predefinite dovrebbe evitare gli impatti gravi o percepibili causati dalle tre situazioni improbabili soprastanti.
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Assistenza clienti](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
