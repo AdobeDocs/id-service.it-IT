@@ -6,7 +6,7 @@ seo-title: Impostazione degli ID di Analytics ed Experience Cloud
 title: Impostazione degli ID di Analytics ed Experience Cloud
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -88,7 +88,7 @@ Dopo aver implementato il servizio ID visitatore, i visitatori possono essere id
 
 In molte situazioni potrebbero essere presenti due o tre ID diversi in una chiamata, ma Analytics utilizza il primo ID presente nell'elenco come ID ufficiale di [!DNL Experience Cloud]. Ad esempio, se imposti un ID visitatore personalizzato (incluso nel parametro di query “vid”), questo ID verrà usato prima degli altri ID visualizzati per lo stesso hit.
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Ordine delle operazioni per gli ID di Analytics](../../reference/analytics-reference/analytics-order-of-operations.md#concept-b92935b4fff545adb4773f3728bc15ef)
 
