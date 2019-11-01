@@ -6,7 +6,7 @@ seo-title: Implementazione con Dynamic Tag Management
 title: Implementazione con Dynamic Tag Management
 uuid: c4f752c4-392e-4909-b178-911706857064
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -51,7 +51,7 @@ Prima di iniziare, assicurati che sia stato fatto il provisioning dell'organizza
 
 * [Abilita le tue soluzioni per i servizi](https://marketing.adobe.com/resources/help/en_US/mcloud/core_services.html)di base: Implementa Experience Cloud e diventa amministratore. Questa procedura consente di modernizzare le soluzioni per i servizi di base come gli attributi del cliente e Experience Cloud Audiences.
 * [Guida introduttiva di Dynamic Tag Management](https://marketing.adobe.com/resources/help/en_US/dtm/get_started.html)
-* [Video](https://marketing.adobe.com/resources/help/en_US/dtm/jump-start-videos.html)Jump Start: Serie di brevi video che mostrano come eseguire le attività di base di Gestione dinamica dei tag.
+* [Video](https://marketing.adobe.com/resources/help/en_US/dtm/jump-start-videos.html)Jump Start:Serie di brevi video che mostrano come eseguire le attività di base di Gestione dinamica dei tag.
 
 **Inserimento e ordine di caricamento del codice del servizio ID**
 
@@ -98,11 +98,6 @@ mcvid-dtm-implement.xml
 1. Fai clic su **[!UICONTROL Crea strumento]** e **[!UICONTROL Salva modifiche]**.
 
    Dopo il salvataggio, il servizio ID è impostato come strumento in Dynamic Tag Management. Tuttavia non è ancora pronto all'uso. Lo strumento Dynamic Tag Management deve ancora essere sottoposto al processo di pubblicazione e approvazione di Dynamic Tag Management e potrebbe essere necessario configurare altri parametri. Per informazioni sul processo di approvazione di Dynamic Tag Management, guarda il video [User Basics Jump Start](https://marketing.adobe.com/resources/help/en_US/dtm/user-basics-jump-start.html). Per informazioni sugli altri parametri che puoi aggiungere a DTM, consulta [Impostazioni del servizio Experience Cloud Identity per Dynamic Tag Management](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
-
->[!MORE_LIKE_THIS]
->
->* [Proprietà Web](https://marketing.adobe.com/resources/help/en_US/dtm/web_property.html)
-
 
 ## Impostazioni del servizio Experience Cloud Identity per Dynamic Tag Management {#concept-fb6cb6a0e6cc4f10b92371f8671f6b59}
 
@@ -285,3 +280,8 @@ Il provisioning del tuo account per il servizio ID non è corretto se la rispost
 ![](assets/charles_response_unsuccessful.png)
 
 Per informazioni sui codici di errore, vedi [Codici di errore, messaggi ed esempi DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs_error_codes.html).
+
+>[!MORELIKETHIS]
+>
+>* [Proprietà Web](https://marketing.adobe.com/resources/help/en_US/dtm/web_property.html)
+
