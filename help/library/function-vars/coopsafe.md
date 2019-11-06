@@ -5,7 +5,7 @@ seo-description: Configurazione booleana opzionale che consente di determinare s
 seo-title: isCoopSafe
 title: isCoopSafe
 uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -30,7 +30,7 @@ Sommario:
 Per usare `isCoopSafe` devi:
 
 * Usare il codice del servizio ID versione 2.4 o superiore.
-* Partecipare a [Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/en_US/mcdc/). Anche i potenziali membri co-op devono consultare questa documentazione per stabilire se `isCoopSafe` si occupa di possibili problemi relativi al modo in cui i dati vengono utilizzati per creare il grafico del dispositivo.
+* Partecipare a [Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/it_IT/mcdc/). Anche i potenziali membri co-op devono consultare questa documentazione per stabilire se `isCoopSafe` si occupa di possibili problemi relativi al modo in cui i dati vengono utilizzati per creare il grafico del dispositivo.
 
 * Definisci un flag whitelist o blacklist sul tuo account Device Co-op avvalendoti dell'aiuto del tuo consulente [!DNL Adobe]. Non esiste alcun percorso self-service per l'attivazione di questi flag.
 
@@ -82,7 +82,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 });
 ```
 
-## Parametri POST della chiamata dell'evento  {#section-fcd441933506493faefaa6b51f194a17}
+## Parametri POST della chiamata dell'evento {#section-fcd441933506493faefaa6b51f194a17}
 
 A seconda del flag che hai impostato (`true` o `false`), il servizio ID traduce `isCoopSafe` in questi parametri POST e li invia ad [!DNL Adobe] in una chiamata dell'evento:
 
@@ -110,7 +110,7 @@ I parametri POST dicono all'[!DNL Experience Cloud] Device Co-op se può o meno 
  </tbody> 
 </table>
 
-## API di post-istanziazione  {#section-9281c39c8b6249d7864100b5cbca7dc6}
+## API di post-istanziazione {#section-9281c39c8b6249d7864100b5cbca7dc6}
 
 Questi API ti consentono di ignorare lo stato `isCoopSafe`. Questi sono necessarie perché ti permettono di modificare lo stato di post-istanziazione/post-login di un visitatore su un sito o in un'app a pagina singola in cui la pagina non viene aggiornata. Ad esempio, avrai bisogno di chiamare queste API se un utente si autentica sul tuo sito o sulla tua app e successivamente accetta una policy sulle Condizioni d'uso che consente al Device Co-op di usare i propri dati.
 
@@ -139,5 +139,5 @@ Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 
 >[!MORELIKETHIS]
 >
->* [DIL isCoopSafe](https://marketing.adobe.com/resources/help/en_US/aam/dil-coopsafe.html)
+>* [DIL isCoopSafe](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.translate.html)
 
