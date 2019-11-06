@@ -5,7 +5,7 @@ seo-description: Queste istruzioni sono per i clienti A4T con implementazioni mi
 seo-title: Uso del servizio ID con A4T e l'implementazione lato server di Target
 title: Uso del servizio ID con A4T e l'implementazione lato server di Target
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -26,7 +26,7 @@ I clienti A4T (ed altri) possono usare questa versione del servizio ID per:
 
 ## Download del codice e interfacce fornite {#section-32d75561438b4c3dba8861be6557be8a}
 
-Per scaricare il pacchetto di codice lato server e rivedere le interfacce incluse nella build corrente, vai all'[archivio NPM del servizio ID](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server).
+Per scaricare il pacchetto di codice lato server e rivedere le interfacce incluse nella build corrente, vai all’[archivio NPM del servizio ID](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server).
 
 ## Flusso di lavoro {#section-56b01017922046ed96536404239a272b}
 
