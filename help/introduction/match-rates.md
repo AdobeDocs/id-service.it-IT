@@ -5,7 +5,7 @@ seo-description: Panoramica dei processi di sincronizzazione ID e delle percentu
 seo-title: Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza
 title: Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -51,11 +51,11 @@ La sincronizzazione ID consiste in un URL attivato nell'iFrame di pubblicazione 
 
 `http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 
-Vedi anche [Sincronizzazione degli ID per trasferimenti di dati in entrata](https://marketing.adobe.com/resources/help/en_US/aam/c_id_sync_in.html).
+Vedi anche [Sincronizzazione degli ID per trasferimenti di dati in entrata](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.translate.html).
 
 **Passaggio 4: archiviazione degli ID**
 
-Gli ID sincronizzati vengono archiviati nei [server di dati edge e core](https://marketing.adobe.com/resources/help/en_US/aam/c_compedge.html).
+Gli ID sincronizzati vengono archiviati nei [server di dati edge e core](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/reference/system-components/components-edge.translate.html).
 
 ## I servizi di sincronizzazione gestiscono la sincronizzazione degli ID {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
@@ -70,9 +70,9 @@ Il termine *`Sync Services`* fa riferimento alle tecnologie interne [!DNL Experi
 
 ## Sincronizzazione degli ID con Adobe Media Optimizer {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Media Optimizer] è un'eccezione del processo di sincronizzazione ID basato su iFrame. Poiché [!DNL Media Optimizer] è un dominio fidato, le sincronizzazioni ID hanno luogo dalla pagina padre invece che nel [!UICONTROL Destination Publishing iFrame]. Durante la sincronizzazione, il servizio ID chiama [!DNL Media Optimizer] su `cm.eversttech.net`, che è un nome di dominio legacy usato da [!DNL Media Optimizer] prima della sua acquisizione da parte di Adobe. L'invio di dati a [!DNL Media Optimizer] aiuta a migliore le percentuali di corrispondenza ed è automatico per i clienti del servizio ID che usano la versione 2.0 (o superiore). Vedi anche [Cookie di Media Optimizer](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html).
+[!DNL Adobe Media Optimizer] è un'eccezione del processo di sincronizzazione ID basato su iFrame. Poiché [!DNL Media Optimizer] è un dominio fidato, le sincronizzazioni ID hanno luogo dalla pagina padre invece che nel [!UICONTROL Destination Publishing iFrame]. Durante la sincronizzazione, il servizio ID chiama [!DNL Media Optimizer] su `cm.eversttech.net`, che è un nome di dominio legacy usato da [!DNL Media Optimizer] prima della sua acquisizione da parte di Adobe. L'invio di dati a [!DNL Media Optimizer] aiuta a migliore le percentuali di corrispondenza ed è automatico per i clienti del servizio ID che usano la versione 2.0 (o superiore). Vedi anche [Cookie di Media Optimizer](https://marketing.adobe.com/resources/help/it_IT/whitepapers/cookies/cookies_media_optimizer.html).
 
 >[!MORELIKETHIS]
 >
->* [Informazioni sulle chiamate al dominio demdex](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)
+>* [Informazioni sulle chiamate al dominio demdex](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/reference/demdex-calls.translate.html)
 
