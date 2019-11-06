@@ -5,7 +5,7 @@ seo-description: Restituisce l’ID Analytics legacy (se presente) memorizzato n
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -44,7 +44,7 @@ Il `aid` parametro viene visualizzato in una stringa di interrogazione in base a
 Il parametro `aid` viene visualizzato in una stringa di interrogazione quando:
 
 * Il servizio [!DNL Experience Cloud] ID è stato distribuito correttamente.
-* L'utente che accede a un sito dispone di un ID [!DNL Analytics] precedente memorizzato nel cookie [s_vi](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/?f=cookies_analytics.html).
+* L’utente che accede a un sito dispone di un ID [!DNL Analytics] precedente memorizzato nel cookie [s_vi](https://marketing.adobe.com/resources/help/it_IT/whitepapers/cookies/cookies_analytics.html).
 
 **Caso 2**
 
@@ -52,5 +52,5 @@ Il `aid` parametro viene visualizzato in una stringa di interrogazione quando l'
 
 >[!MORELIKETHIS]
 >
->* [Cookie di Analytics](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html)
+>* [Cookie di Analytics](https://marketing.adobe.com/resources/help/it_IT/whitepapers/cookies/cookies_analytics.html)
 
