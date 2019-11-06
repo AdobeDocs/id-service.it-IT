@@ -5,7 +5,7 @@ seo-description: Il servizio Experience Platform Identity sostituisce i metodi l
 seo-title: Impostazione degli ID di Analytics ed Experience Cloud
 title: Impostazione degli ID di Analytics ed Experience Cloud
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -31,7 +31,7 @@ Quando viene inviata una richiesta al server di raccolta dati Adobe, l'intestazi
 
 Alcuni browser tuttavia non accettano i cookie di terze parti (ad es. Apple Safari). Si tratta dei cookie impostati nel browser da domini diversi rispetto al sito Web corrente. Inoltre, Safari blocca i cookie in domini di terze parti se il visitatore non ha mai visitato tale dominio. Ad esempio, se accedi a `mysite.com` e il server di raccolta dati è `mysite.omtrdc.net` il cookie restituito nell'intestazione HTTP da `mysite.omtrdc.net` potrebbe essere rifiutato dal browser.
 
-Per evitare questo problema, molti clienti hanno implementato record CNAME per i propri server di raccolta dati. Questa operazione può essere considerata efficace nell'ambito di una strategia di [implementazione dei cookie di prime parti](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/). Se viene configurato un record CNAME per mappare un nome host nel dominio del cliente al server di raccolta dati (ad es., mappatura di `metrics.mysite.com` a `mysite.omtrdc.net`), il cookie [!DNL Experience Cloud] ID viene memorizzato, perché il dominio di raccolta dati corrisponde al dominio del sito Web. Questa operazione aumenta la possibilità che il cookie del servizio ID venga memorizzato, ma comporta un sovraccarico maggiore, perché è necessario configurare i record CNAME e gestire i certificati SSL per i server di raccolta dati.
+Per evitare questo problema, molti clienti hanno implementato record CNAME per i propri server di raccolta dati. Questa operazione può essere considerata efficace nell'ambito di una strategia di [implementazione dei cookie di prime parti](https://docs.adobe.com/content/help/it-IT/core-services/interface/ec-cookies/cookies-first-party.translate.html). Se viene configurato un record CNAME per mappare un nome host nel dominio del cliente al server di raccolta dati (ad es., mappatura di `metrics.mysite.com` a `mysite.omtrdc.net`), il cookie [!DNL Experience Cloud] ID viene memorizzato, perché il dominio di raccolta dati corrisponde al dominio del sito Web. Questa operazione aumenta la possibilità che il cookie del servizio ID venga memorizzato, ma comporta un sovraccarico maggiore, perché è necessario configurare i record CNAME e gestire i certificati SSL per i server di raccolta dati.
 
 **JavaScript**
 
@@ -60,12 +60,12 @@ Dopo aver implementato il servizio ID visitatore, i visitatori possono essere id
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <img id="image_9F3E58898A1B4F40BBDEF5ADE362E55C" src="assets/step1_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_custom" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/it_IT/sc/implement/visid_custom.html" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
    <td colname="col3"> <p>s.visitorID è impostato </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_77A06981672745B6AEA8BB4D55911CCA" src="assets/step2_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_analytics" format="http" scope="external"> aid (cookie s_vi)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/it_IT/sc/implement/visid_analytics.html" format="http" scope="external"> aid (cookie s_vi)</a> </p> </td> 
    <td colname="col3"> <p>Il visitatore aveva un altro cookie s_vi prima dell'implementazione del servizio <span class="keyword">Experience Cloud</span> ID, oppure è stato configurato un.<a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">periodo di tolleranza</a>. </p> </td> 
   </tr> 
   <tr> 
@@ -75,12 +75,12 @@ Dopo aver implementato il servizio ID visitatore, i visitatori possono essere id
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_6F0ED8FE3EF846CA8E6ECCC3C0070D85" src="assets/step4_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external"> fid (cookie di fallback in H.25.3 o successivo, o in AppMeasurement per JavaScript)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/it_IT/sc/implement/visid_fallback.html" format="http" scope="external"> fid (cookie di fallback in H.25.3 o successivo, o in AppMeasurement per JavaScript)</a> </p> </td> 
    <td colname="col3"> <p>Un browser non accetta cookie di terze parti e il server di tracciamento di Analytics è impostato come server di tracciamento terze parti. </p> <p> <p>Nota: <span class="codeph">fid</span> è un identificatore legacy e non viene utilizzato se hai implementato il servizio ID sul tuo sito. In questo caso, il <span class="codeph"> fid</span> non è necessario perché il <a href="../../introduction/cookies.md" format="dita" scope="local">cookie AMCV</a> di prime parti lo rende obsoleto. È stato mantenuto per supportare codice legacy e per motivi storici. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_23D8C0EB69EC4084BC237B5B98C036F4" src="assets/step5_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external"> Indirizzo IP, agente utente, indirizzo IP gateway</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/it_IT/sc/implement/visid_fallback.html" format="http" scope="external"> Indirizzo IP, agente utente, indirizzo IP gateway</a> </p> </td> 
    <td colname="col3"> <p>Il browser del visitatore non accetta i cookie. </p> </td> 
   </tr> 
  </tbody> 
