@@ -7,7 +7,7 @@ solution: Experience Cloud
 title: Guide all'implementazione
 uuid: null
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: e75a448a2fa1c384c88f00648a6f868a886c6569
 
 ---
 
@@ -16,7 +16,9 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 Istruzioni ed esempi di codice per le implementazioni standard e non-standard del servizio Experience Cloud Identity.
 
-Importante: prima di iniziare a utilizzare queste procedure, leggi e comprendi i requisiti del servizio ID.
+>[!IMPORTANT]
+>
+>Prima di iniziare a utilizzare queste procedure, leggi e comprendi i [requisiti del servizio ID](../reference/requirements.md).
 
 ## Implementazione standard
 
@@ -24,7 +26,6 @@ A standard implementation uses [Adobe Exprience Platform Launch](https://docs.ad
 
 ## Risorse di implementazione
 
-* [Guide all'implementazione](implementation-guides.md)
 * [Metodi di implementazione](implementation-methods.md)
 * [Implementazione con Experience Platform Launch](ecid-implement-with-launch.md)
 * [Implementazione con Dynamic Tag Management](standard.md)
