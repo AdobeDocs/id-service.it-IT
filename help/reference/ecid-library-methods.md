@@ -4,7 +4,7 @@ seo-title: Metodi della libreria ECID in ambito Safari ITP
 description: Documentazione della libreria Adobe ECID (servizio ID).
 seo-description: Documentazione della libreria Adobe ECID (servizio ID).
 translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+source-git-commit: 51abd7b0f38da4c3375c0d2fe48d8bf96bdfb387
 
 ---
 
@@ -28,10 +28,6 @@ Le regole di ITP consentono agli sviluppatori di riprendere il controllo. Le imp
 **Perché Adobe si concentra sulla libreria ECID quando attualmente con i CNAME vengono utilizzati altri metodi di monitoraggio dei visitatori di Analytics?**
 
 La libreria ECID, il cookie AMCV ed ECID (ovvero MID) avevano come scopo iniziale quello di fornire un metodo per integrare tutte le soluzioni Adobe in un unico ID. Questo ID continuerà a essere l'ID prioritario a livello di cookie nella roadmap del prodotto Adobe ed è l'ID cookie predefinito per Adobe Experience Platform.
-
-**I CNAME consentono ai clienti di abilitare il monitoraggio tra più domini?**
-
-Le stesse regole e avvertenze che esistevano in precedenza con i CNAME esistono ancora. In alcuni casi, i nomi CNAME possono essere utilizzati in uno scenario con più domini. Se utilizzi un sito di accesso principale per l'identificazione degli utenti prima che visitino altri domini, un CNAME consente il monitoraggio tra più domini nei browser che non accettano i cookie di terze parti. Tuttavia, mentre i CNAME possono essere utili in caso di più domini in alcuni scenari, la ragione per il passaggio di ECID alle implementazioni CNAME è l'identificazione persistente dei visitatori, non il monitoraggio tra più domini. Per ulteriori informazioni su CNAME e sugli scenari con più domini, consulta [CNAME per raccolta dati e monitoraggio tra più domini](/help/reference/analytics-reference/cname.md).
 
 Ulteriori domande frequenti verranno aggiunte in questa sezione man mano che vengono rilasciate altre modifiche ITP. For more inquiries, please visit [Adobe Experience League](https://experienceleague.adobe.com/#recommended/solutions/analytics).
 
