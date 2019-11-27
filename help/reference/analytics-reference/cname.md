@@ -6,48 +6,45 @@ seo-title: CNAME per raccolta dati e monitoraggio tra più domini
 title: CNAME per raccolta dati e monitoraggio tra più domini
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
 translation-type: tm+mt
-source-git-commit: 989b5f537848a7506a96e2eac17409f8b0307217
+source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
 
 ---
 
 
-# Raccolta dati e identità{#data-collection-and-identity}
+# CNAME per raccolta dati e monitoraggio tra più domini{#data-collection-cnames-and-cross-domain-tracking}
 
-Nell'analisi sono disponibili tre modi per identificare i visitatori.
+Se utilizzi un sito di accesso principale per l'identificazione dei clienti prima che visitino altri domini, un CNAME consente il monitoraggio tra più domini nei browser che non accettano i cookie di terze parti (ad es. Safari).
 
-- Utilizzo del servizio ID [visitatore](https://docs.adobe.com/content/help/en/id-service/using/home.md)
-- Utilizza l’ID visitatore Analytics [legacy](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-overview.md)
-- Fornire la propria identità
+Nei browser che accettano i cookie di terze parti, i cookie vengono configurati dai server di raccolta dati durante la richiesta dell'ID visitatore. Questo cookie consente al servizio ID visitatore di restituire lo stesso ID visitatore Experience Cloud a tutti i domini configurati usando lo stesso ID organizzazione Experience Cloud.
 
-## Utilizzo del Servizio ID visitatore{#using-the-visitor-id-service}
+Nei browser che rifiutano i cookie di terze parti, a ciascun dominio viene assegnato un nuovo ID visitatore Experience Cloud.
 
-Il servizio ID visitatore è il metodo consigliato per identificare i visitatori. Si basa su due componenti
+Il cookie demdex.net consente al servizio ID visitatore di offrire lo stesso livello di monitoraggio tra più domini del cookie s_vi di Analytics, che viene accettato in alcuni browser e utilizzato tra più domini, ma viene rifiutato da altri browser.
 
-- ID 1st party - ID di prime parti che può essere utilizzato per misurare i visitatori del tuo sito Web. L’ID viene memorizzato nel primo ID di parametro, sia in un cookie lato client che in un cookie lato server (con un CNAME).
-- ID di terze parti (facoltativo) - Un ID di terze parti separato memorizzato in demdex.net che può essere utilizzato per misurare i visitatori su più domini (ad esempio, example.com e example.net)
+## CNAME per la raccolta dati {#section-48fd186d376a48079769d12c4bd9f317}
 
-Analytics utilizzerà l'ID 1st party a meno che non siano abilitati gli ID di terze parti, dove i browser lo consentono. L'ID di terze parti è preceduto dal nome del cliente, in modo che quest'ultimo non possa combinare dati con un altro cliente in Analytics.
+Quando il cookie di Analytics veniva impostato dal server di raccolta dati, molti clienti configuravano i record CNAME del server di raccolta dati durante l'[implementazione dei cookie di prime parti](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/), in modo da evitare problemi con i browser che rifiutano i cookie di terze parti. Questo processo configura il dominio del server di raccolta dati in modo che corrisponda al dominio del sito Web, così il cookie dell'ID visitatore viene impostato come cookie di prime parti.
 
-## Domini Analytics legacy
+Poiché il servizio ID visitatore imposta direttamente il cookie visitatore sul dominio del sito Web corrente usando JavaScript, questa configurazione non è più necessaria per impostare i cookie di prime parti.
 
-Prima dell’avvio del servizio ID visitatore Adobe, molti clienti utilizzavano i domini di analisi nativi per impostare i cookie ID. Questi includono `omtrdc.net`, `2o7.net` o un dominio CNAME. `omtrdc.net`, `2o7.net`, in alcuni casi un dominio CNAME è stato utilizzato per memorizzare cookie di terze parti. I cookie impostati in questo modo sono stati limitati a un singolo cliente in modo che i clienti non potessero combinare i propri dati con i dati di altri clienti. Domini CNAMED di terze parti, a volte chiamati amichevoli domini di terze parti sono stati utilizzati quando i clienti desiderano monitorare gli utenti tra siti che possiedono (ad esempio.com, example.co.jp). Questo metodo o l’utilizzo di CNAME per supportare domini di terze parti descrittivi è obsoleto per consentire il servizio ID visitatore più affidabile e consapevole della privacy. I clienti devono passare al servizio ID visitatore con un CNAME per dominio non appena possibile.
+I clienti con un'unica proprietà Web (un solo dominio) possono effettuare la migrazione dai CNAME per la raccolta dati e utilizzare i propri nomi host di raccolta dati (`omtrdc.net` o`2o7.net`).
 
-## Immetti la tua identità
+Usare un CNAME per la raccolta dati consente anche di monitorare i visitatori tra un dominio di destinazione principale e altri domini nei browser che non accettano i cookie di terze parti. I clienti che dispongono di più proprietà Web (più domini) possono trarre benefici dall'utilizzo di un CNAME per la raccolta dati. La seguente sezione spiega in che modo funziona il monitoraggio dei visitatori tra più domini.
 
-Se il cliente sceglie di ignorare completamente il sistema di identificazione di Adobe e implementare un proprio ID [visitatore](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-custom.md)personalizzato. Ci sono alcune cose di cui essere consapevoli se si sceglie questo percorso.
+## Modalità di attivazione del monitoraggio tra più domini da parte dei CNAME {#section-78925af798e24917b9abed79de290ad9}
 
-- Sarà necessario implementare il rifiuto e adeguati controlli sulla privacy
-- L'ID verrà applicato solo ad Analytics
-- Sei responsabile della persistenza di tale ID
+Poiché in Apple Safari e altri browser i cookie di prime parti possono essere usati in un contesto di terze parti, un CNAME consente di monitorare i clienti tra un dominio principale e altri domini che utilizzano lo stesso server di monitoraggio.
 
-## CNAME di raccolta dati
+Ad esempio, il tuo sito principale è `mymainsite.com`. Hai configurato il record CNAME in modo che punti al server di raccolta dati protetto: `smetrics.mymainsite.com`.
 
-Adobe consiglia ancora di utilizzare un CNAME insieme al servizio ID visitatore. Questo consente all’ID visitatore di prima parte di rimanere inalterato utilizzando i cookie HTTP, il che rende i cookie più duraturi.
+Se un utente accede a `mymainsite.com`, il cookie del servizio ID viene impostato dal server di raccolta dati. Ciò è possibile perché il dominio del server di raccolta dei dati corrisponde a quello del sito Web: in tal caso si parla di utilizzo di un cookie nel *contesto di prime parti*, o più semplicemente di *cookie di prime parti*.
 
-## OPTOUT
+Se utilizzi questo stesso server di raccolta dati su altri siti (ad esempio, `myothersiteB.com` e `myothersiteA.com`), e un visitatore accede in seguito a tali siti il cookie impostato durante l'accesso a `mymainsite.com` viene inviato nella richiesta HTTPS al server di raccolta dati (i browser inviano tutti i cookie di un dominio con tutte le richieste HTTPS a tale dominio, anche se il dominio non corrisponde a quello del sito Web corrente). In questo caso si parla di utilizzo di un cookie in un *contesto di terze parti*, o semplicemente di un *cookie di terze parti*, che consente l'utilizzo dello stesso ID visitatore negli altri domini. I browser gestiscono i cookie in contesti di terze parti in modo diverso rispetto ai cookie di prime parti.
 
-Adobe fornisce ai clienti le API per condividere i segnali di rifiuto con i nostri sistemi, in modo che i clienti possano a loro volta consentire agli utenti di non partecipare al tracciamento. Forniamo istruzioni dettagliate su come il cliente può implementare i controlli appropriati per supportare la scelta degli utenti; l'API [di](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/data-collection/opt-out.md) rifiuto o le opzioni per [impedire l'attivazione](https://docs.adobe.com/content/help/en/id-service/using/implementation-guides/opt-in-service/optin-overview.md) dei cookie fino a quando non viene ottenuto il consenso
+*Nota: Safari blocca tutti i cookie nel contesto di terze parti, a prescindere da come sono impostati.*
+
+Di conseguenza, il dominio di raccolta deve essere un dominio visitato regolarmente, in modo che i visitatori possano essere identificati in tutti i domini. Se non è presente un dominio di raccolta dati *del genere*, l'uso di un CNAME per il dominio di raccolta dati non presenta alcuna utilità ai fini dell'utilizzo in più domini. Se il sito di accesso principale non viene visitato per primo, i visitatori vengono identificati in modo diverso negli altri siti rispetto al sito principale.
 
 ## Attivazione del supporto per i CNAME con il servizio Experience Cloud Identity {#section-25d4feb686d944e3a877d7aad8dbdf9a}
 
-Il supporto del CNAME del server di raccolta dati è [abilitato per la configurazione di un CNAME](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-first-party.md) e l'impostazione della `visitor.marketingCloudServerSecure` variabile in Experience Cloud Identity Service e `s.trackingServerSecure` in AppMeasurement.
+Il supporto per i CNAME del server di raccolta dati può essere attivato impostando le variabili `visitor.marketingCloudServerSecure`.
