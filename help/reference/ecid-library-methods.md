@@ -3,7 +3,7 @@ title: Metodi della libreria ECID in ambito Safari ITP
 seo-title: Metodi della libreria ECID in ambito Safari ITP
 description: Documentazione della libreria Adobe ECID (servizio ID).
 seo-description: Documentazione della libreria Adobe ECID (servizio ID).
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
 
 Poiché Safari ottimizza il monitoraggio tra domini diversi tramite ITP, Adobe deve mantenere le best practice per le librerie che supportano i clienti, nonché la privacy e le scelte dei consumatori.
 
-Il 21 febbraio 2019 Apple ha annunciato l'ultimo aggiornamento di ITP (Intelligent Tracking Prevention). A differenza delle versioni precedenti incentrate su cookie di terze parti, questa versione fornisce nuove misure di prevenzione del monitoraggio per i cookie di prima parte. Tutti i cookie persistenti di prima parte impostati tramite l'API document.cookie, spesso noti come cookie "lato client", hanno una scadenza massima di 7 giorni. I cookie di terze parti continueranno a essere bloccati, come indicato nelle versioni precedenti di ITP. For more details on ITP 2.1 and the impact of Adobe solutions, read [Safari ITP 2.1 Impact on Adobe Experience Cloud and Experience Platform Customers](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).
+Il 21 febbraio 2019 Apple ha annunciato l'ultimo aggiornamento di ITP (Intelligent Tracking Prevention). A differenza delle versioni precedenti incentrate su cookie di terze parti, questa versione fornisce nuove misure di prevenzione del monitoraggio per i cookie di prima parte. Tutti i cookie persistenti di prima parte impostati tramite l'API document.cookie, spesso noti come cookie "lato client", hanno una scadenza massima di 7 giorni. I cookie di terze parti continueranno a essere bloccati, come indicato nelle versioni precedenti di ITP. Per ulteriori dettagli su ITP 2.1 e sull’impatto delle soluzioni Adobe, consulta [L’impatto di Safari ITP 2.1 sui clienti Adobe Experience Cloud ed Experience Platform](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).
 
 ## Domande frequenti su Adobe ECID per Safari ITP
 
@@ -33,7 +33,7 @@ La libreria ECID, il cookie AMCV ed ECID (ovvero MID) avevano come scopo inizial
 
 Le stesse regole e avvertenze che esistevano in precedenza con i CNAME esistono ancora. In alcuni casi, i nomi CNAME possono essere utilizzati in uno scenario con più domini. Se utilizzi un sito di accesso principale per l'identificazione degli utenti prima che visitino altri domini, un CNAME consente il monitoraggio tra più domini nei browser che non accettano i cookie di terze parti. Tuttavia, mentre i CNAME possono essere utili in caso di più domini in alcuni scenari, la ragione per il passaggio di ECID alle implementazioni CNAME è l'identificazione persistente dei visitatori, non il monitoraggio tra più domini. Per ulteriori informazioni su CNAME e sugli scenari con più domini, consulta [CNAME per raccolta dati e monitoraggio tra più domini](/help/reference/analytics-reference/cname.md).
 
-Ulteriori domande frequenti verranno aggiunte in questa sezione man mano che vengono rilasciate altre modifiche ITP. For more inquiries, please visit [Adobe Experience League](https://experienceleague.adobe.com/#recommended/solutions/analytics).
+In questa sezione verranno aggiunte nuove risposte alle domande più frequenti man mano che verranno rilasciate altre modifiche in merito a ITP. Per ulteriori informazioni, visita [Adobe Experience League](https://experienceleague.adobe.com/#recommended/solutions/analytics).
 
 ## Modifiche, metodi e configurazioni relative all'ITP
 
@@ -47,7 +47,7 @@ Di seguito sono riportate tutte le iniziative relative all'utilizzo della librer
 
 ITP 2.1 ostacola la possibilità di scrivere cookie lato client, il che ostacola la possibilità di fornire ai clienti informazioni accurate relative al monitoraggio dei visitatori. Pertanto, nei server di monitoraggio CNAME di Adobe viene introdotta una modifica per memorizzare l'Experience Cloud ID (ECID) del visitatore in un cookie di prima parte.
 
-Questa modifica è utile solo per i clienti ECID che utilizzano un CNAME di Analytics nel contesto di prima parte. Se sei un cliente di Analytics che al momento non usa un CNAME, o anche se non sei un cliente di Analytics, sei comunque idoneo per il record CNAME. Contact Customer Care or your account representative to start the process of registering for a [CNAME](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/adobe_managed_cert_pgm.html).
+Questa modifica è utile solo per i clienti ECID che utilizzano un CNAME di Analytics nel contesto di prima parte. Se sei un cliente di Analytics che al momento non usa un CNAME, o anche se non sei un cliente di Analytics, sei comunque idoneo per il record CNAME. Per avviare il processo di registrazione per un [CNAME](https://marketing.adobe.com/resources/help/it_IT/whitepapers/first_party_cookies/adobe_managed_cert_pgm.html), contatta l’Assistenza clienti o il rappresentante di riferimento per il tuo account.
 
 Esegui l'aggiornamento alla libreria ECID versione 4.3.0 o superiore per sfruttare questa modifica.
 
@@ -57,7 +57,7 @@ Quando viene effettuata una richiesta ID a demdex.net e viene recuperato un ECID
 
 Questo nuovo cookie `s_ecid` segue lo stesso stato di rinuncia del cookie AMCV. Se il codice ECID viene letto dal cookie `s_ecid`, demdex viene sempre chiamato per recuperare lo stato di rinuncia più recente per tale ID e archiviato nel cookie AMCV.
 
-In addition, if your consumer has opted out of Analytics tracking via this [method](https://marketing.adobe.com/resources/help/en_US/sc/implement/opt_out_link.html), this `s_ecid` cookie will be deleted.
+Inoltre, se il tuo utente ha rinunciato al tracciamento da parte di Analytics tramite questo [metodo](https://marketing.adobe.com/resources/help/it_IT/sc/implement/opt_out_link.html), questo cookie `s_ecid` verrà eliminato.
 
 Il nome del server di monitoraggio deve essere fornito alla libreria VisitorJS quando si inizializza la libreria utilizzando trackingServer o trackingServerSecure. Questo deve corrispondere alla configurazione di trackingServer nelle configurazioni di Analytics.
 
