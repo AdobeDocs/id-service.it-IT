@@ -5,13 +5,13 @@ seo-description: nulle
 seo-title: CNAME per raccolta dati e monitoraggio tra più domini
 title: CNAME per raccolta dati e monitoraggio tra più domini
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
 
 ---
 
 
-# CNAME per raccolta dati e monitoraggio tra più domini{#data-collection-cnames-and-cross-domain-tracking}
+# CNAME per raccolta dati e monitoraggio tra più domini {#data-collection-cnames-and-cross-domain-tracking}
 
 Se utilizzi un sito di accesso principale per l'identificazione dei clienti prima che visitino altri domini, un CNAME consente il monitoraggio tra più domini nei browser che non accettano i cookie di terze parti (ad es. Safari).
 
@@ -23,11 +23,11 @@ Il cookie demdex.net consente al servizio ID visitatore di offrire lo stesso liv
 
 ## CNAME per la raccolta dati {#section-48fd186d376a48079769d12c4bd9f317}
 
-Quando il cookie di Analytics veniva impostato dal server di raccolta dati, molti clienti configuravano i record CNAME del server di raccolta dati durante l'[implementazione dei cookie di prime parti](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/), in modo da evitare problemi con i browser che rifiutano i cookie di terze parti. Questo processo configura il dominio del server di raccolta dati in modo che corrisponda al dominio del sito Web, così il cookie dell'ID visitatore viene impostato come cookie di prime parti.
+Quando il cookie di Analytics veniva impostato dal server di raccolta dati, molti clienti configuravano i record CNAME del server di raccolta dati durante l'[implementazione dei cookie di prime parti](https://docs.adobe.com/content/help/it-IT/core-services/interface/ec-cookies/cookies-first-party.translate.html), in modo da evitare problemi con i browser che rifiutano i cookie di terze parti. Questo processo configura il dominio del server di raccolta dati in modo che corrisponda al dominio del sito Web, così il cookie dell'ID visitatore viene impostato come cookie di prime parti.
 
 Poiché il servizio ID visitatore imposta direttamente il cookie visitatore sul dominio del sito Web corrente usando JavaScript, questa configurazione non è più necessaria per impostare i cookie di prime parti.
 
-I clienti con un'unica proprietà Web (un solo dominio) possono effettuare la migrazione dai CNAME per la raccolta dati e utilizzare i propri nomi host di raccolta dati (`omtrdc.net` o`2o7.net`).
+I clienti con un'unica proprietà Web (un solo dominio) possono effettuare la migrazione dai CNAME per la raccolta dati e utilizzare i propri nomi host di raccolta dati (`omtrdc.net` o `2o7.net`).
 
 Usare un CNAME per la raccolta dati consente anche di monitorare i visitatori tra un dominio di destinazione principale e altri domini nei browser che non accettano i cookie di terze parti. I clienti che dispongono di più proprietà Web (più domini) possono trarre benefici dall'utilizzo di un CNAME per la raccolta dati. La seguente sezione spiega in che modo funziona il monitoraggio dei visitatori tra più domini.
 
