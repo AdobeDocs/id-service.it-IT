@@ -4,8 +4,8 @@ product: ID Service
 audience: end-user
 user-guide-title: Experience Cloud Identity Service Help
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: ht
-source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
+translation-type: tm+mt
+source-git-commit: 453a14a4b725dd14f445b089d083a83a5d2ffaa4
 
 ---
 
@@ -21,16 +21,16 @@ source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
    + [Informazioni sulla sincronizzazione degli e sulle percentuali di corrispondenza](introduction/match-rates.md)
 + Implementazione {#implementation}
    + [Metodi di implementazione](implementation-guides/implementation-methods.md)
-   + [Guide all'implementazione](implementation-guides/implementation-guides.md)
+   + [Guide all&#39;implementazione](implementation-guides/implementation-guides.md)
    + [Implementazione con Experience Platform Launch](implementation-guides/ecid-implement-with-launch.md)
    + [Implementazione con DTM](implementation-guides/standard.md)
    + [Implementazione per Analytics](implementation-guides/setup-analytics.md)
    + [Implementazione per Target](implementation-guides/setup-target.md)
    + [Implementazione per Analytics e Audience Manager](implementation-guides/setup-aam-analytics.md)
    + [Implementazione per Analytics, Audience Manager e Target](implementation-guides/setup-aam-analytics-target.md)
-   + [Uso del servizio ID con A4T e l'implementazione lato server di Target](implementation-guides/ecid-a4t-target.md)
+   + [Uso del servizio ID con A4T e l&#39;implementazione lato server di Target](implementation-guides/ecid-a4t-target.md)
    + [Integrazione diretta con il servizio ID](implementation-guides/direct-integration.md)
-   + [Casi d'uso dell'integrazione diretta](implementation-guides/direct-integration-examples.md)
+   + [Casi d&#39;uso dell&#39;integrazione diretta](implementation-guides/direct-integration-examples.md)
    + [Test e verifica del servizio ID](implementation-guides/test-verify.md)
    + Servizio Opt-in {#opt-in-service}
       + [Panoramica del servizio Opt-in](implementation-guides/opt-in-service/optin-overview.md)
@@ -38,7 +38,7 @@ source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
       + [Convalida del servizio Opt-in](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
       + [Configurazione di Opt-in con Experience Platform Launch](implementation-guides/opt-in-service/launch.md)
       + [Configurare Opt-in con DTM](implementation-guides/opt-in-service/optin-dtm.md)
-      + [Casi d'uso di Opt-in](implementation-guides/opt-in-service/use-cases.md)
+      + [Casi d&#39;uso di Opt-in](implementation-guides/opt-in-service/use-cases.md)
       + [Riferimenti di Opt-in](implementation-guides/opt-in-service/api.md)
       + [(beta) Utilizzo dei servizi Opt-in con il framework IAB](implementation-guides/opt-in-service/iab.md)
 + API del servizio ID {#id-service-api}
@@ -94,6 +94,7 @@ source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
    + [Supporto per CORS nel servizio ID](reference/cors.md)
    + [ID cliente e stati di autenticazione](reference/authenticated-state.md)
    + [Metodi della libreria ECID in ambito Safari ITP](reference/ecid-library-methods.md)
+   + [Identificazione di visitatori univoci](reference/unique-vis-method.md)
    + [Ottenere gli ID di utente e regione dal cookie AMCV o dal servizio ID](reference/regions.md)
    + [Requisiti del servizio ID](reference/requirements.md)
    + [Video Heartbeat e il servizio ID](reference/heartbeat.md)
