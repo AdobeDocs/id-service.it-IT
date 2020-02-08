@@ -1,23 +1,23 @@
 ---
 description: Questi esempi coprono 2 casi d'uso comuni relativi a un'integrazione diretta e all'Experience Cloud ID (MID). L'identificatore MID è un ID univoco e costante per i visitatori del tuo sito.
-keywords: Servizio ID
+keywords: ID Service
 seo-description: Questi esempi coprono 2 casi d'uso comuni relativi a un'integrazione diretta e all'Experience Cloud ID (MID). L'identificatore MID è un ID univoco e costante per i visitatori del tuo sito.
 seo-title: Casi d'uso dell'integrazione diretta
 title: Casi d'uso dell'integrazione diretta
 uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: 6342ea02c74e6d1c96f987c5f2620246602ce6c5
 
 ---
 
 
-# Casi d'uso dell'integrazione diretta {#direct-integration-use-cases}
+# Casi d&#39;uso dell&#39;integrazione diretta {#direct-integration-use-cases}
 
-Questi esempi coprono 2 casi d'uso comuni relativi a un'integrazione diretta e all'Experience Cloud ID (MID). L'identificatore MID è un ID univoco e costante per i visitatori del tuo sito.
+Questi esempi coprono 2 casi d’uso comuni relativi a un’integrazione diretta e all’Experience Cloud ID (ECID o MID). Questo ID è univoco e costante per i visitatori del sito.
 
 >[!TIP]
 >
->* Leggi e comprendi la [sintassi del codice e le variabili](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) prima di immergerti nei casi d'uso.
+>* Leggi e comprendi la [sintassi del codice e le variabili](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) prima di immergerti nei casi d&#39;uso.
 >* Per ulteriori informazioni sull’identificatore MID, consulta [Cookie e il servizio Experience Cloud Identity](../introduction/cookies.md).
 >
 
@@ -65,7 +65,7 @@ Questi esempi coprono 2 casi d'uso comuni relativi a un'integrazione diretta e a
  </tbody> 
 </table>
 
-## Caso d'uso 2: non ho un MID e ho bisogno di generarlo {#section-8e81291f8b684de8b88fae4002ae0029}
+## Caso d&#39;uso 2: non ho un MID e ho bisogno di generarlo {#section-8e81291f8b684de8b88fae4002ae0029}
 
 <table id="table_666A92693F8A413096DF6A64770C1141"> 
  <thead> 
