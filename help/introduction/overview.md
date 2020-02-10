@@ -4,7 +4,7 @@ seo-description: Il servizio Experience Cloud ID (già servizio Visitor ID o Mar
 seo-title: Panoramica del servizio Experience Cloud ID
 title: Panoramica del servizio Experience Cloud ID
 translation-type: tm+mt
-source-git-commit: 6342ea02c74e6d1c96f987c5f2620246602ce6c5
+source-git-commit: 98b72f87b188debd6a5f6b86822c3f714647de61
 
 ---
 
@@ -22,7 +22,7 @@ The [!UICONTROL Experience Cloud Identity Service] enables the common identifica
 
 Quando l&#39;organizzazione implementa il servizio ID, tale ID consente di identificare lo stesso visitatore del sito e i relativi dati in diverse soluzioni Experience Cloud.
 
-![](assets/ecid.png)
+![](assets/ecid-new.png)
 
 Inoltre, il servizio ID può sostituire i diversi ID specifici di ogni soluzione (ad esempio, AID di Analytics). E tramite la funzionalità [ID cliente e stati di autenticazione](/help/reference/authenticated-state.md), il servizio ID ti permette di trasmettere gli ID dei tuoi clienti a Experience Cloud. Ricorda però che il servizio ID può essere utilizzato solo con le soluzioni per le quali hai effettuato la sottoscrizione. Se non hai sottoscritto altri prodotti, questo servizio non consente di utilizzarli.
 
