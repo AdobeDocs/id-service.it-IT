@@ -1,12 +1,12 @@
 ---
 description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity.
-keywords: Servizio ID
+keywords: ID Service
 seo-description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity.
 seo-title: Note sulla versione 2019
 title: Note sulla versione 2019
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
 translation-type: tm+mt
-source-git-commit: 4532d09cc9b4d83fa62c13bd1adac7abdae222b1
+source-git-commit: ba84c4dac9023ab13f5176c5665adbbdaeb00d33
 
 ---
 
@@ -39,9 +39,23 @@ Versioni future, aggiornamenti o modifiche al servizio [!DNL Experience Cloud] I
 
 **Correzione di bug nella configurazione di secureCookie.**
 
+## Versione 4.1
+
+Aggiornamento `publishDestinations` per nuova modifica API. Con questo aggiornamento le informazioni della pagina possono essere esposte durante la sincronizzazione ID, se si desidera. (CORE-23693)
+
+## Versione 4.2
+
+Supporto per il plug-in Audience Manager per IAB TCF, disponibile tramite l’oggetto di consenso ECID.
+
+**Correzioni**
+
+* IAB + OptIn non riesce a ottenere il MID per la revisione dei clienti (CORE-26022)
+* È stato corretto un bug nella configurazione opt-in doOptInApply in DTM (DTM-12958)
+* La rinuncia ECID disattiva le sincronizzazioni ID (CORE-23814)
+
 ## Versione 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**Servizio Opt-in**. Opt-in è un'estensione di Experience Cloud ID (ECID) che consente di controllare se (e quali) librerie di Experience Cloud possono creare dei cookie sulle pagine Web per i visitatori. Using [Experience Platform Launch](https://docs.adobelaunch.com/), you can simplify gathering visitor opt-in consents for Experience Cloud solution by enabling Analytics, Target, Audience Manager, and other or all select Experience Cloud solutions to opt-in to your consent management system.
+**Servizio Opt-in**. Opt-in è un&#39;estensione di Experience Cloud ID (ECID) che consente di controllare se (e quali) librerie di Experience Cloud possono creare dei cookie sulle pagine Web per i visitatori. Using [Experience Platform Launch](https://docs.adobelaunch.com/), you can simplify gathering visitor opt-in consents for Experience Cloud solution by enabling Analytics, Target, Audience Manager, and other or all select Experience Cloud solutions to opt-in to your consent management system.
 
 ## Versione 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 
