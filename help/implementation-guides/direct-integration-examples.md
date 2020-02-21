@@ -5,7 +5,7 @@ seo-description: Questi esempi coprono 2 casi d'uso comuni relativi a un'integra
 seo-title: Casi d'uso dell'integrazione diretta
 title: Casi d'uso dell'integrazione diretta
 uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
 
 # Casi d&#39;uso dell&#39;integrazione diretta {#direct-integration-use-cases}
 
-Questi esempi coprono 2 casi d’uso comuni relativi a un’integrazione diretta e all’Experience Cloud ID (ECID o MID). Questo ID è univoco e costante per i visitatori del sito.
+Questi esempi coprono 2 casi d&#39;uso comuni relativi a un&#39;integrazione diretta e all&#39;Experience Cloud ID (ECID o MID). Questo ID è univoco e costante per i visitatori del tuo sito.
 
 >[!TIP]
 >
@@ -51,7 +51,7 @@ Questi esempi coprono 2 casi d’uso comuni relativi a un’integrazione diretta
      <li id="li_4869572B40E54C54B88A2474DAC475A8">L'ID del fornitore dei dati. Questo è un ID univoco assegnato alla tua azienda. Chiamiamolo ID 4444. </li> 
      <li id="li_05C8ED47488C4E289D84093127EC7B19">L'ID del visitatore (9876). </li> 
      <li id="li_3D1556AD18C843828A362CC604A9F76B"> <i>(Facoltativo)</i> Un ID di stato per definite lo stato di autenticazione per quel visitatore. </li> 
-    </ul> <p>Nel caso in cui tu disponga degli altri parametri elencati in <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">guida all'integrazione diretta</a> (es.,<span class="codeph"> d_blob</span> o <span class="codeph">dcs_region</span>, ecc.) puoi benissimo trasmettere anche quelli. </p> </td> 
+    </ul> <p>Nel caso in cui tu disponga degli altri parametri elencati in <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">guida all'integrazione diretta</a> (es., <span class="codeph">d_blob</span> o <span class="codeph">dcs_region</span>, ecc.) puoi benissimo trasmettere anche quelli. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Soluzione ed esempio di codice</b> </p> </td> 
@@ -86,11 +86,11 @@ Questi esempi coprono 2 casi d’uso comuni relativi a un’integrazione diretta
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Azioni</b> </p> </td> 
-   <td colname="col2"> <p>Considerate queste condizioni, effettua una chiamata al servizio ID che includa il tuo ID organizzazione. </p> <p>Nel caso in cui tu disponga degli altri parametri elencati in <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">guida all'integrazione diretta</a> (es.,<span class="codeph"> d_blob</span> o <span class="codeph">dcs_region</span>, ecc.) puoi benissimo trasmettere anche quelli. </p> </td> 
+   <td colname="col2"> <p>Considerate queste condizioni, effettua una chiamata al servizio ID che includa il tuo ID organizzazione. </p> <p>Nel caso in cui tu disponga degli altri parametri elencati in <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">guida all'integrazione diretta</a> (es., <span class="codeph">d_blob</span> o <span class="codeph">dcs_region</span>, ecc.) puoi benissimo trasmettere anche quelli. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Soluzione ed esempio di codice</b> </p> </td> 
-   <td colname="col2"> <p>Formula la tua chiamata al servizio ID seguendo questo esempio: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>Nota come questa chiamata d'esempio contiene il tuo ID organizzazione, <span class="codeph">d_orgid=5555</span>. Ti verrà restituito un ID <span class="keyword">Experience Cloud</span> per il visitatore. </p> </td> 
+   <td colname="col2"> <p>Formula la tua chiamata al servizio ID seguendo questo esempio: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>Nota come questa chiamata d'esempio contiene il tuo ID organizzazione, <span class="codeph">d_orgid=5555</span>. Ti verrà restituito un <span class="keyword">Experience Cloud</span> ID per il visitatore. </p> </td> 
   </tr> 
  </tbody> 
 </table>
