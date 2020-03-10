@@ -4,13 +4,13 @@ seo-description: Collega la loro piattaforma di gestione del consenso (CMP) con 
 seo-title: Utilizzo dei servizi Opt-in con il Framework IAB
 title: Utilizzo dei servizi Opt-in con il Framework IAB
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5c20510d9b2174b14599eab04fb694389ff87589
 
 ---
 
 
-# Utilizzo dei servizi Opt-in con il Framework IAB{#using-opt-in-services-with-iab-framework}
+# Utilizzo dei servizi Opt-in con il Framework IAB {#using-opt-in-services-with-iab-framework}
 
 Collega la piattaforma di gestione del consenso (CMP) con il plugin Audience Manager di Opt-in per IAB TCF.
 
@@ -31,7 +31,7 @@ Per altre informazioni, leggere i [documenti di Interactive Advertising Bureau](
 >
 >Opt-in è disponibile solo in ECID 4.0+
 
-Usa Adobe Experience Platform Launch per implementare sia l’Opt-in sia il plug-in Audience Manager per IAB TCF per il tuo sito. Quando si abilita IAB per Opt-in in modo manuale, accertarsi che le seguenti opzioni siano impostate su true nell&#39;oggetto Visitatore:
+Usa Adobe Experience Platform Launch per implementare sia l’Opt-in sia il plug-in Audience Manager per IAB TCF per il tuo sito. Quando si abilita IAB per Opt-in in modo manuale, accertarsi che le seguenti opzioni siano impostate su true nell’oggetto Visitatore:
 
 ```
 Visitor.getInstance("YOUR_ORG_ID", {  
@@ -44,7 +44,7 @@ Quando le impostazioni sono state configurate in modo adeguato, le librerie ECID
 
 >[!IMPORTANT]
 >
->Al fine di distribuire i cookie e avviare oppure rispettare le sincronizzazioni degli ID in Audience Manager, è necessario dare il consenso per gli *scopi 1, 2 e 5 oltre al consenso del fornitore*. Ulteriori informazioni sul plug-in Audience Manager per IAB TCF sono disponibili nella documentazione di Audience Manager [qui](https://docs.adobe.com/help/en/audience-manager/user-guide/overview/gdpr/aam-iab-plugin.html).
+>Al fine di distribuire i cookie e avviare oppure rispettare le sincronizzazioni degli ID in Audience Manager, è necessario dare il consenso per gli *scopi 1, 2 e 5 oltre al consenso del fornitore*. Ulteriori informazioni sul plug-in Audience Manager per IAB TCF sono disponibili nella documentazione di Audience Manager [qui](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html).
 
 Per altre informazioni su come convalidare sia Opt-in sia il plug-in Audience Manager per IAB TCF, consulta il caso d’uso n. 4 nella guida alla convalida, disponibile [qui](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0).
 
@@ -52,6 +52,6 @@ Per altre informazioni su come convalidare sia Opt-in sia il plug-in Audience Ma
 
 * [IAB Transparency and Consent Framework (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/): per altre informazioni sugli standard IAB
 * [Adobe Opt-in](../../implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360): per altre informazioni su Opt-in, un componente necessario per la gestione dei consensi nelle soluzioni della piattaforma
-* Supporto di IAB Transparency and Consent Framework (TCF) [in Audience Manager](https://docs.adobe.com/content/help/en/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html)
-* [Opzioni sulla privacy](https://www.adobe.com/privacy/opt-out.html#customeruse): un&#39;altra opzione sulla privacy a tua disposizione è la capacità di negare il consenso alla raccolta dei dati usando gli strumenti di rifiuto globale. Il Global Opt-Out ha precedenza rispetto alla verifica di Opt-in e IAB.
+* Supporto di IAB Transparency and Consent Framework (TCF) [in Audience Manager](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html)
+* [Opzioni sulla privacy](https://www.adobe.com/it/privacy/opt-out.html#customeruse): un’altra opzione sulla privacy a tua disposizione è la capacità di negare il consenso alla raccolta dei dati usando gli strumenti di rifiuto globale. Il Global Opt-Out ha precedenza rispetto alla verifica di Opt-in e IAB.
 
