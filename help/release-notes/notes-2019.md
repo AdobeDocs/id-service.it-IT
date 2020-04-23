@@ -5,7 +5,7 @@ seo-description: Versioni future, aggiornamenti o modifiche al servizio Experien
 seo-title: Note sulla versione 2019
 title: Note sulla versione 2019
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8ece066545f4ca4a7bd1eca67c8f02dcd2a88369
 
 ---
@@ -21,8 +21,8 @@ Aggiungi approvazione pre-consenso tramite casella di controllo per l’analisi 
 
 **Correzioni**
 
-* Problema con l’estensione di avvio ECID preOptInApprovals nella stringa di input parsing.
-* Riduzione delle prestazioni quando viene utilizzato trackingServer.
+* Problema con l’estensione di lancio ECID: parsing della stringa di input per preOptInApprovals.
+* Calo della prestazione quando trackingServer è in uso.
 
 ## Versione 4.4 {#version-4point4}
 
@@ -34,9 +34,9 @@ Aggiungi approvazione pre-consenso tramite casella di controllo per l’analisi 
 
 * È stato effettuato un aggiornamento della configurazione per `cookieDomain`. La libreria ECID ora filtra la stringa vuota `cookieDomain` in `initConfig` e utilizza il dominio del cookie di livello principale, restituito dal metodo getDomain.
 * È stato corretto un bug correlato a `getVisitorValues` in `localVisitor`.
-* È stato corretto un bug a causa del quale si verificava un’incoerenza per il valore MCOPTOUT nel browser Safari, restituito dal metodo `getVisitorValue`. 
+* È stato corretto un bug a causa del quale si verificava un’incoerenza per il valore MCOPTOUT nel browser Safari, restituito dal metodo `getVisitorValue`.
 * Abbiamo aggiornato la libreria Opt-in aggiungendo `optIn.off` per annullare l’iscrizione agli eventi.
-* È stato corretto un bug correlato alla funzione setTimeout, che in alcuni siti dei clienti causava la violazione della CSP (Content Security Policy) da parte di `setTimeout`. 
+* È stato corretto un bug correlato alla funzione setTimeout, che in alcuni siti dei clienti causava la violazione della CSP (Content Security Policy) da parte di `setTimeout`.
 
 ## Versione 4.3 {#version-4point3}
 
@@ -55,7 +55,7 @@ Supporto per il plug-in Audience Manager per IAB TCF, disponibile tramite l’og
 **Correzioni**
 
 * IAB + OptIn non riesce a ottenere il MID per i clienti di ritorno.
-* È stato corretto un bug nella configurazione opt-in doOptInApply in DTM.
+* Risoluzione di un bug della configurazione opt-in doesOptInApply in DTM.
 * La rinuncia ECID disattiva le sincronizzazioni ID.
 
 ## Versione 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
@@ -67,4 +67,4 @@ Supporto per il plug-in Audience Manager per IAB TCF, disponibile tramite l’og
 | Elemento | Descrizione |
 |---|---|
 | Il flag `disableIdSyncs` non funziona quando viene passata una stringa. | Corretto. Ora i valori impostati sul `disableidSyncs` parametro per la `getInstance` funzione vengono rispettati. |
-| IFrame di terze parti non ricevono l&#39;ECID | È stato corretto ECID su Safari Mobile e ECID in diversi iFrame che non funzionavano. |
+| iFrames di terze parti non ricevono l’ECID | È stato corretto ECID su Safari Mobile e ECID in diversi iFrame che non funzionavano. |
