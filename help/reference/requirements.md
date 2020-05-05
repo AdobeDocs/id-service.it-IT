@@ -1,12 +1,12 @@
 ---
 description: Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per il servizio Experience Cloud Identity.
-keywords: Servizio ID
+keywords: ID Service
 seo-description: Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per il servizio Experience Cloud Identity.
 seo-title: Requisiti del servizio Experience Cloud Identity
 title: Requisiti del servizio Experience Cloud Identity
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
-translation-type: ht
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+translation-type: tm+mt
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -15,9 +15,9 @@ source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per il servizio Experience Cloud Identity.
 
-## Requisiti per il successo e il supporto dell'implementazione {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
+## Requisiti per il successo e il supporto dell&#39;implementazione {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
-Un'implementazione di successo e supportata deve rispettare (o superare) i requisiti di codice e aderire alle istruzioni fornite nell'[!DNL Adobe] Aiuto di. Un'implementazione non supportata darà risultati imprevisti e impedisce ai tecnici e agli operatori dell'assistenza clienti di fornire il supporto necessario per risolvere eventuali problemi riscontrati con il servizio ID.
+Un&#39;implementazione di successo e supportata deve rispettare (o superare) i requisiti di codice e aderire alle istruzioni fornite nell&#39;[!DNL Adobe] Aiuto di. Un’implementazione non supportata darà risultati imprevisti e impedirà all’Assistenza clienti e ai nostri team tecnici di fornire assistenza nella risoluzione dei problemi con il servizio ID.
 
 <table id="table_2216C44AA66248DCAA13BF64BDF2D88A"> 
  <thead> 
@@ -33,16 +33,16 @@ Un'implementazione di successo e supportata deve rispettare (o superare) i requi
     <ul id="ul_59CDE179566844B494F3068FF6333809"> 
      <li id="li_CCCB6AFC08EE405F94C42216D3CE50AC"> Inserire il codice di intestazione da incorporare nella sezione <span class="codeph">&lt;head&gt;</span> della pagina. </li> 
      <li id="li_13962F2CB1764091A84863BE499675A2">Inserire il codice piè di pagina da incorporare prima del tag di chiusura <span class="codeph">&lt;/body&gt;</span>. </li> 
-    </ul> <p>Un'implementazione standard non è supportata se: </p> 
+    </ul> <p>Un'implementazione standard non è supportata quando: </p> 
     <ul id="ul_3B62559317ED4C7AA548C3B8DBA281F7"> 
-     <li id="li_1F16C6D412944197BEA56BC24730782C"> Inserisci uno di questi codici da incorporare di Dynamic Tag Management altrove nel codice della pagina o di markup. </li> 
-     <li id="li_05615C01F3A947BBBD41046E68377224"> Aggiungi o carichi il codice di Dynamic Tag Management con metodi asincroni, chiamate/metodi di callback o wrapper. </li> 
-     <li id="li_B2137DFF627B473FA876580449026D2B">Includi più istanze del codice da incorporare sulla stessa pagina. </li> 
-    </ul> <p>Vedi anche <a href="https://marketing.adobe.com/resources/help/it_IT/dtm/deployment.html" format="https" scope="external">Opzioni di hosting e codice di incorporamento</a>. </p> </td> 
+     <li id="li_1F16C6D412944197BEA56BC24730782C"> Posiziona uno di questi codici da incorporare di Gestione dinamica dei tag altrove nel codice di markup e/o di pagina. </li> 
+     <li id="li_05615C01F3A947BBBD41046E68377224"> Aggiungi, aggiungi o carica il codice DTM con metodi asincroni, chiamate/metodi di callback o wrapper. </li> 
+     <li id="li_B2137DFF627B473FA876580449026D2B">Includere più istanze di codice da incorporare sulla stessa pagina. </li> 
+    </ul> <p>Vedi anche <a href="https://docs.adobe.com/content/help/it-IT/dtm/using/client-side/deployment.html" format="https" scope="external">Opzioni di hosting e codice di incorporamento</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113" format="dita" scope="local"> Implementazioni non standard </a> </p> </td> 
-   <td colname="col2"> <p>Per implementazioni non standard o manuali, devi impostare il servizio ID come descritto dalle procedure di questa guida. Come per le linee guida di Dynamic Tag Management riportate qui sopra, l'inserimento e il caricamento non corretto del codice darà luogo a un'implementazione non supportata. </p> </td> 
+   <td colname="col2"> <p>Per implementazioni non standard o manuali, devi impostare il servizio ID come descritto dalle procedure di questa guida. Come per le linee guida di Gestione dinamica dei tag sopra, la posizione e il caricamento impropri del codice creeranno un'implementazione non supportata. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -53,7 +53,7 @@ Per utilizzare il servizio ID, la società deve essere abilitata per [!DNL Exper
 
 >[!IMPORTANT]
 >
->L'ID organizzazione è sensibile all'uso di maiuscole e minuscole e deve essere utilizzato esattamente come è stato fornito.
+>L&#39;ID organizzazione è sensibile all&#39;uso di maiuscole e minuscole e deve essere utilizzato esattamente come è stato fornito.
 
 <table id="table_6C74B676EB094C568D2439FDCC9A7830"> 
  <thead> 
@@ -65,15 +65,15 @@ Per utilizzare il servizio ID, la società deve essere abilitata per [!DNL Exper
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Abilitato</b> </p> </td> 
-   <td colname="col2"> <p>Se l'azienda è abilitata per <span class="keyword">Experience Cloud</span> ma non possiedi l'ID organizzazione, controlla gli <a href="https://marketing.adobe.com/resources/help/it_IT/mcloud/organizations.html" format="https" scope="external">ID organizzazione</a> (scorri la sezione <i>Ricerca dell'ID organizzazione</i>). </p> </td> 
+   <td colname="col2"> <p>Se l'azienda è abilitata per <span class="keyword">Experience Cloud</span> ma non possiedi l'ID organizzazione, controlla gli <a href="https://docs.adobe.com/content/help/it-IT/core-services/interface/manage-users-and-products/organizations.html" format="https" scope="external">ID organizzazione</a> (scorri la sezione <i>Ricerca dell'ID organizzazione</i>). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Non sono sicuro</b> </p> </td> 
-   <td colname="col2"> <p> Se non conosci lo stato <span class="keyword">Experience Cloud</span> della tua società, chiedi a chi gestisce il tuo account Adobe se i membri della società possono effettuare l'accesso a <a href="https://marketing.adobe.com" format="https" scope="external">marketing.adobe.com</a> utilizzando un Adobe ID. Se possono farlo, la società è abilitata e l'amministratore può vedere l'ID organizzazione. L'ID organizzazione è indicato nella sezione “Pagina di amministrazione” della pagina di <a href="https://marketing.adobe.com/resources/help/it_IT/mcloud/?f=admin_getting_started" format="https" scope="external">amministrazione di Experience Cloud</a>. </p> </td> 
+   <td colname="col2"> <p> Se non conosci lo stato <span class="keyword">Experience Cloud</span> della tua società, chiedi a chi gestisce il tuo account Adobe se i membri della società possono effettuare l'accesso a <a href="https://experiencecloud.adobe.com" format="https" scope="external">marketing.adobe.com</a> utilizzando un Adobe ID. Se possono farlo, la società è abilitata e l'amministratore può vedere l'ID organizzazione. L'ID organizzazione è indicato nella sezione “Pagina di amministrazione” della pagina di <a href="https://docs.adobe.com/help/it-IT/core-services/interface/experience-cloud.html" format="https" scope="external">amministrazione di Experience Cloud</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Non abilitato</b> </p> </td> 
-   <td colname="col2"> <p> Se la società non è abilitata per Experience Cloud, vedi <a href="https://marketing.adobe.com/resources/help/it_IT/mcloud/core_services.html" format="https" scope="external">Servizi di base - Come abilitare le soluzioni</a>. </p> </td> 
+   <td colname="col2"> <p> Se la società non è abilitata per Experience Cloud, vedi <a href="https://docs.adobe.com/content/help/it-IT/core-services/interface/about-core-services/core-services.html" format="https" scope="external">Servizi di base - Come abilitare le soluzioni</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -108,7 +108,7 @@ Nelle seguenti sezioni sono elencate le versioni minime dei codici richieste per
   </tr> 
   <tr> 
    <td colname="col1" morerows="2"> <p> <b> <span class="keyword"> Analytics </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> AppMeasurement.js</span> </p> <p>Vedi <a href="https://marketing.adobe.com/resources/help/it_IT/sc/implement/appmeasure_mjs.html" format="https" scope="external">AppMeasurement per JavaScript</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> AppMeasurement.js</span> </p> <p>Vedi <a href="https://docs.adobe.com/content/help/it-IT/analytics/implementation/js/overview.html" format="https" scope="external">AppMeasurement per JavaScript</a>. </p> </td> 
    <td colname="col4"> <p>1.6.4 o successiva </p> </td> 
   </tr> 
   <tr> 
@@ -121,7 +121,7 @@ Nelle seguenti sezioni sono elencate le versioni minime dei codici richieste per
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> <span class="keyword"> Audience Manager </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> Vedi <a href="https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/dil-api/dil-overview.translate.html" format="https" scope="external">Libreria di integrazione dei dati</a> (DIL). </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> Vedi <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external">Libreria di integrazione dei dati</a> (DIL). </p> </td> 
    <td colname="col4"> <p>5.0 </p> <p> 
      <draft-comment>
        aggiornamento da 4.9 
@@ -129,19 +129,19 @@ Nelle seguenti sezioni sono elencate le versioni minime dei codici richieste per
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Vedi <a href="https://marketing.adobe.com/resources/help/it_IT/target/ov/c_mbox_technical.html" format="https" scope="external">Codice mbox</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Vedi <a href="https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external">Codice mbox</a>. </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Vedi <a href="https://marketing.adobe.com/resources/help/it_IT/target/ov2/c_target-atjs-implementation.html" format="https" scope="external">Implementazione at.js</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Vedi <a href="https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/at-js/how-atjs-works.html" format="https" scope="external">Implementazione at.js</a>. </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Requisiti dell'SDK per Android e iOS {#section-73b2446fba8e463888642c7d7dfd94f1}
+## Requisiti dell&#39;SDK per Android e iOS {#section-73b2446fba8e463888642c7d7dfd94f1}
 
-Il servizio ID richiede come minimo le versioni SDK elencate di seguito.
+Come minimo, il servizio ID richiede le versioni SDK elencate di seguito.
 
 * Android: 4.11.0
 * iOS: 4.11.0
@@ -150,11 +150,11 @@ Il servizio ID richiede come minimo le versioni SDK elencate di seguito.
 >
 >Invece dei requisiti minimi, consigliamo di usare le ultime versioni del codice.
 
-Il codice SDK deve essere abilitato per il servizio ID. Abilita e scarica l'ultimo codice SDK per ogni app dal tuo account [Adobe Mobile Services](https://mobilemarketing.adobe.com/). Vedi anche:
+Il codice SDK deve essere abilitato per il servizio ID. Enable and download the latest SDK code for each app from your [Adobe Mobile Services](https://mobilemarketing.adobe.com/) account. Vedi anche:
 
-* [Configurare le opzioni del servizio ID visitatore dell’SDK](https://docs.adobe.com/content/help/it-IT/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.translate.html)
-* [Metodi SDK per Android](https://docs.adobe.com/content/help/it-IT/mobile-services/android/experience-cloud-android/c-marketing-cloud.translate.html)
-* [Metodi SDK per iOS](https://docs.adobe.com/content/help/it-IT/mobile-services/ios/exp-cloud-ios/marketing-cloud.translate.html)
+* [Configurare le opzioni del servizio ID visitatore dell’SDK](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
+* [Metodi SDK per Android](https://docs.adobe.com/content/help/en/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
+* [Metodi SKD iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
 
 >[!MORELIKETHIS]
 >
