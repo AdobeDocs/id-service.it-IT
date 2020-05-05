@@ -1,12 +1,12 @@
 ---
 description: Le implementazioni meno recenti usano Dynamic Tag Management (DTM) per configurare, distribuire e integrare il servizio Experience Cloud Identity con le altre soluzioni Experience Cloud.
-keywords: Servizio ID
+keywords: ID Service
 seo-description: Le implementazioni meno recenti usano Dynamic Tag Management (DTM) per configurare, distribuire e integrare il servizio Experience Cloud Identity con le altre soluzioni Experience Cloud.
 seo-title: Implementazione con Dynamic Tag Management
 title: Implementazione con Dynamic Tag Management
 uuid: c4f752c4-392e-4909-b178-911706857064
-translation-type: ht
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+translation-type: tm+mt
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -25,19 +25,19 @@ Le implementazioni meno recenti usano Dynamic Tag Management (DTM) per configura
 
 ## Dynamic Tag Management e servizio ID {#section-4a4c4fac5d0a4cbbaff8e1833f73657c}
 
-[Dynamic Tag Management](https://marketing.adobe.com/resources/help/it_IT/dtm/) consente di configurare, implementare e gestire la tua istanza del servizio ID e le relative integrazioni di soluzioni [!DNL Experience Cloud]. DTM semplifica il processo di implementazione grazie alla stretta integrazione con il servizio ID e altre soluzioni Experience Cloud. È sufficiente aggiungere e configurare lo strumento Experience Cloud ID e specificare informazioni quali:
+[Dynamic Tag Management](https://docs.adobe.com/content/help/it-IT/dtm/using/dtm-home.html) consente di configurare, implementare e gestire la tua istanza del servizio ID e le relative integrazioni di soluzioni [!DNL Experience Cloud]. DTM semplifica il processo di implementazione grazie alla stretta integrazione con il servizio ID e altre soluzioni Experience Cloud. È sufficiente aggiungere e configurare lo strumento Experience Cloud ID e specificare informazioni quali:
 
 * ID organizzazione Experience Cloud (popolato automaticamente se collegato a Experience Cloud)
-* Server per tracking di Analytics (protetto e non protetto)
-* Server Experience Cloud (per server per tracking di prime parti)
+* Server di tracciamento di Analytics (protetto e non protetto)
+* Server Experience Cloud (per server di monitoraggio di prime parti)
 
 DTM è disponibile gratuitamente per tutti i clienti di [!DNL Experience Cloud].
 
 **Guida introduttiva a Dynamic Tag Management**
 
-Dynamic Tag Management è uno strumento semplice ma molto potente. Se non lo usi già, ti consigliamo vivamente di iniziare a farlo. Leggi la [documentazione](https://marketing.adobe.com/resources/help/it_IT/dtm/c_overview.html) di Dynamic Tag Management e guarda i [video DTM Jump Start](https://marketing.adobe.com/resources/help/it_IT/dtm/jump-start-videos.html). Per istruzioni su come impostare il servizio ID con Dynamic Tag Management, leggi le informazioni e procedure riportate di seguito.
+DTM è uno strumento semplice ma potente. Se non lo utilizzate già, vi invitiamo vivamente a farlo. Per informazioni introduttive su questo servizio, consulta la documentazione [di](https://docs.adobe.com/content/help/it-IT/dtm/using/c-overview.html) Gestione dinamica dei tag. Per istruzioni su come impostare il servizio ID con Dynamic Tag Management, leggi le informazioni e procedure riportate di seguito.
 
-## Linee guida per l'implementazione {#concept-54a2ec49af8f4bfca9207b1d404e8e1a}
+## Linee guida per l&#39;implementazione {#concept-54a2ec49af8f4bfca9207b1d404e8e1a}
 
 Leggi i requisiti e le procedure seguenti prima di provare a implementare il servizio Experience Cloud Identity con Dynamic Tag Management (DTM).
 
@@ -45,13 +45,12 @@ Leggi i requisiti e le procedure seguenti prima di provare a implementare il ser
 mcvid-dtm-deployment.xml
 -->
 
-**Provisioning dell'account**
+**Provisioning dell&#39;account**
 
-Prima di iniziare, assicurati che sia stato fatto il provisioning dell'organizzazione e delle soluzioni per [!DNL Experience Cloud] e acquisisci familiarità con [!DNL Dyanamic Tag Management]. Questa documentazione rappresenta un buon punto di partenza:
+Prima di iniziare, assicurati che sia stato fatto il provisioning dell&#39;organizzazione e delle soluzioni per [!DNL Experience Cloud] e acquisisci familiarità con [!DNL Dyanamic Tag Management]. Questa documentazione rappresenta un buon punto di partenza:
 
-* [Abilita le tue soluzioni per i servizi di base](https://marketing.adobe.com/resources/help/it_IT/mcloud/core_services.html): implementa Experience Cloud e diventa amministratore. Questa procedura consente di modernizzare le soluzioni per i servizi di base come gli attributi del cliente e Experience Cloud Audiences.
-* [Guida introduttiva di Dynamic Tag Management](https://marketing.adobe.com/resources/help/it_IT/dtm/get_started.html)
-* [Video introduttivi](https://marketing.adobe.com/resources/help/it_IT/dtm/jump-start-videos.html): una serie di brevi video che mostrano come eseguire attività di base DTM.
+* [Abilita le tue soluzioni per i servizi di base](https://docs.adobe.com/content/help/it-IT/core-services/interface/about-core-services/core-services.html): implementa Experience Cloud e diventa amministratore. Questa procedura consente di modernizzare le soluzioni per i servizi di base come gli attributi del cliente e Experience Cloud Audiences.
+* [Guida introduttiva di Dynamic Tag Management](https://docs.adobe.com/content/help/en/dtm/using/getting-started/get-started.html)
 
 **Inserimento e ordine di caricamento del codice del servizio ID**
 
@@ -64,21 +63,21 @@ Finché mantieni tutte le soluzioni e le librerie di codice [!DNL Adobe] in Dyna
 
 **Convalida della raccolta dati regionali**
 
-I clienti devono fornire un CNAME o utilizzare `*.sc.omtrdc` per la [raccolta dati regionali](https://marketing.adobe.com/resources/help/it_IT/whitepapers/rdc/) (RDC). Per ottenere le impostazioni RDC specifiche, rivolgiti al tuo consulente [!DNL Adobe].
+I clienti devono fornire un CNAME o utilizzare `*.sc.omtrdc` per la [raccolta dati regionali](https://docs.adobe.com/content/help/en/analytics/technotes/rdc/regional-data-collection.html) (RDC). Per ottenere le impostazioni RDC specifiche, rivolgiti al tuo consulente [!DNL Adobe].
 
 **Configurare le suite di rapporti di Analytics**
 
-I nuovi clienti [!DNL Analytics] devono [creare una suite di rapporti](https://marketing.adobe.com/resources/help/it_IT/reference/new_report_suite.html) per la raccolta dei dati.
+I nuovi clienti [!DNL Analytics] devono [creare una suite di rapporti](https://docs.adobe.com/content/help/it-IT/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html) per la raccolta dei dati.
 
 ## Implementazione del servizio Experience Cloud Identity con DTM {#task-a659cf19dea84ad48edabe0b72ef9f5c}
 
-Segui questi passaggi per implementare il servizio ID con Dynamic Tag Management (DTM).
+Per implementare il servizio ID con Gestione dinamica dei tag, procedi come indicato di seguito.
 
 **Prerequisiti**
 
-* Abilita le tue soluzioni per [!DNL Experience Cloud] e verifica di disporre delle autorizzazioni di livello amministratore. Vedi [abilita le soluzioni per i servizi di base](https://marketing.adobe.com/resources/help/it_IT/mcloud/core_services.html).
+* Abilita le tue soluzioni per [!DNL Experience Cloud] e verifica di disporre delle autorizzazioni di livello amministratore. Vedi [abilita le soluzioni per i servizi di base](https://docs.adobe.com/content/help/it-IT/core-services/interface/about-core-services/core-services.html).
 
-* Crea una proprietà Web in Dynamic Tag Management. Consulta la documentazione di Dynamic Tag Management su come [creare una proprietà Web](https://marketing.adobe.com/resources/help/it_IT/dtm/web_property.html) o guarda il [video Admin Jump Start](https://marketing.adobe.com/resources/help/it_IT/dtm/admin-jump-start.html).
+* Crea una proprietà Web in Dynamic Tag Management. Consulta la documentazione di Gestione dinamica dei tag [Creazione di una proprietà](https://docs.adobe.com/content/help/en/dtm/using/admin/web-property.html) Web.
 
 <!--
 mcvid-dtm-implement.xml
@@ -92,12 +91,12 @@ mcvid-dtm-implement.xml
 
    >[!NOTE]
    >
-   >La casella **[!UICONTROL ID organizzazione Experience Cloud]** viene compilata con l'ID organizzazione. Se il tuo account di Dynamic Tag Management non è collegato a [!DNL Experience Cloud], devi fornire manualmente questo ID. Per collegare il tuo account, consulta [Collegare gli account in Experience Cloud](https://marketing.adobe.com/resources/help/it_IT/mcloud/organizations.html). Per informazioni su come reperire l'ID organizzazione, vedi la sezione sui [requisiti](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26).
+   >La casella **[!UICONTROL ID organizzazione Experience Cloud]** viene compilata con l&#39;ID organizzazione. Se il tuo account di Dynamic Tag Management non è collegato a [!DNL Experience Cloud], devi fornire manualmente questo ID. Per collegare il tuo account, consulta [Collegare gli account in Experience Cloud](https://docs.adobe.com/content/help/it-IT/core-services/interface/manage-users-and-products/organizations.html). Per informazioni su come reperire l&#39;ID organizzazione, vedi la sezione sui [requisiti](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26).
 
 1. Digita il nome del server di tracciamento nella casella **[!UICONTROL Server tracciamento]**. Se non sei sicuro di come trovare il server di tracciamento, consulta le [domande frequenti](../faq-intro/faq.md) e [Compilare correttamente le variabili trackingServer e trackingServerSecure](https://helpx.adobe.com/it/analytics/kb/determining-data-center.html#).
 1. Fai clic su **[!UICONTROL Crea strumento]** e **[!UICONTROL Salva modifiche]**.
 
-   Dopo il salvataggio, il servizio ID è impostato come strumento in Dynamic Tag Management. Tuttavia non è ancora pronto all'uso. Lo strumento Dynamic Tag Management deve ancora essere sottoposto al processo di pubblicazione e approvazione di Dynamic Tag Management e potrebbe essere necessario configurare altri parametri. Per informazioni sul processo di approvazione di Dynamic Tag Management, guarda il video [User Basics Jump Start](https://marketing.adobe.com/resources/help/it_IT/dtm/user-basics-jump-start.html). Per informazioni sugli altri parametri che puoi aggiungere a DTM, consulta [Impostazioni del servizio Experience Cloud Identity per Dynamic Tag Management](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
+   Dopo il salvataggio, il servizio ID è impostato come strumento in Gestione dinamica dei tag. Tuttavia, non è ancora pronto all’uso. Lo strumento Gestione dinamica dei tag deve ancora essere sottoposto al processo di pubblicazione/approvazione di Gestione dinamica dei tag e potrebbe essere necessario configurare parametri aggiuntivi. Per informazioni sugli altri parametri che puoi aggiungere a DTM, consulta [Impostazioni del servizio Experience Cloud Identity per Dynamic Tag Management](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
 
 ## Impostazioni del servizio Experience Cloud Identity per Dynamic Tag Management {#concept-fb6cb6a0e6cc4f10b92371f8671f6b59}
 
@@ -109,13 +108,13 @@ mcvid-dtm-settings.xml
 
 ## Dove si trovano queste impostazioni? {#section-c5b2d1c928944ae2b8565c1b182fe575}
 
-Queste impostazioni diventano disponibili dopo che il servizio ID è stato aggiunto e salvato come strumenti in Dynamic Tag Management. Puoi anche accedere a queste impostazioni facendo clic sull'icona dell'ingranaggio nella sezione [!UICONTROL Strumenti installati] della proprietà Web di Dynamic Tag Management.
+Queste impostazioni diventano disponibili dopo che il servizio ID è stato aggiunto e salvato come strumenti in Dynamic Tag Management. You can also access these settings by clicking the gear icon from the [!UICONTROL Installed Tools] section of your DTM web property.
 
 ![](assets/installedTools.png)
 
 ## ID organizzazione {#section-949b5a0d8af940558b04ff675cf53f77}
 
-Questo ID è richiesto da e associato alla società con provisioning [!DNL Experience Cloud]. Per organizzazione si intende l'entità che consente all'amministratore di configurare gruppi e utenti e di controllare l'accesso single sign-on in [!DNL Experience Cloud]. L'ID organizzazione è una stringa alfanumerica composta da 24 caratteri, seguita da (e deve includere) @AdobeOrg. Gli amministratori di [!DNL Experience Cloud] possono trovare questo ID in [Experience Cloud &gt; Strumenti](https://docs.adobe.com/content/help/it-IT/core-services/interface/manage-users-and-products/admin-getting-started.translate.html).
+Questo ID è richiesto da e associato alla società con provisioning [!DNL Experience Cloud]. Per organizzazione si intende l&#39;entità che consente all&#39;amministratore di configurare gruppi e utenti e di controllare l&#39;accesso single sign-on in [!DNL Experience Cloud]. L&#39;ID organizzazione è una stringa alfanumerica composta da 24 caratteri, seguita da (e deve includere) @AdobeOrg. Gli amministratori di [!DNL Experience Cloud] possono trovare questo ID in [Experience Cloud > Strumenti](https://docs.adobe.com/content/help/it-IT/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 ![](assets/orgID.png)
 
@@ -127,7 +126,7 @@ Queste impostazioni consentono di specificare i server di tracciamento, le versi
 
 ![](assets/generalSettings.png)
 
-Nella seguente tabella sono elencate e definite le impostazioni [!UICONTROL Generali].
+The following table lists and defines the [!UICONTROL General] settings.
 
 **Richiedi automaticamente ID visitatore**
 
@@ -135,43 +134,43 @@ Quando questa opzione è selezionata, Dynamic Tag Management chiama automaticame
 
 Consulta [getMarketingCloudVisitorID](../library/get-set/getmcvid.md).
 
-**Server di tracciamento Analytics**
+**Analytics Tracking Server**
 
-Nome del server di tracciamento usato per la raccolta di dati Analytics. Si tratta del dominio in cui vengono scritti la richiesta di immagini e il cookie (esempio: `http://site.omtrdc.net`).
+Nome del server di tracciamento utilizzato per la raccolta dati di Analytics. Si tratta del dominio in cui vengono scritti la richiesta di immagini e il cookie (esempio: `http://site.omtrdc.net`).
 
-Se non conosci l'URL del server di tracciamento, controlla i tuoi file `s_code.js` o `AppMeasurement.js`. Individua l'URL impostato dalla `s.trackingServer` variabile.
+Se non conosci l&#39;URL del server di tracciamento, controlla i tuoi file `s_code.js` o `AppMeasurement.js`. Individua l&#39;URL impostato dalla `s.trackingServer` variabile.
 
-Vedi [trackingServer](https://marketing.adobe.com/resources/help/it_IT/sc/implement/trackingServer.html) e [Aggiunta corretta delle variabili trackingServer e trackingServerSecure](https://helpx.adobe.com/it/analytics/kb/determining-data-center.html#).
+Vedi [trackingServer](https://docs.adobe.com/content/help/it-IT/analytics/implementation/vars/page-vars/page-variables.html) e [Aggiunta corretta delle variabili trackingServer e trackingServerSecure](https://helpx.adobe.com/it/analytics/kb/determining-data-center.html#).
 
 **Server di tracciamento protetto**
 
-Nome del server di tracciamento protetto utilizzato per la raccolta dati Analytics. Si tratta del dominio in cui vengono scritti la richiesta di immagini e il cookie (esempio: `https://site.omtrdc.net`).
+Il nome del server di tracciamento protetto utilizzato per la raccolta di dati Analytics. Si tratta del dominio in cui vengono scritti la richiesta di immagini e il cookie (esempio: `https://site.omtrdc.net`).
 
-Se non conosci l'URL del server di tracciamento, controlla i tuoi file `s_code.js` o `AppMeasurement.js`. Individua l'URL impostato dalla `s.trackingServerSecure` variabile.
+Se non conosci l&#39;URL del server di tracciamento, controlla i tuoi file `s_code.js` o `AppMeasurement.js`. Individua l&#39;URL impostato dalla `s.trackingServerSecure` variabile.
 
-Vedi [trackingServer](https://marketing.adobe.com/resources/help/it_IT/sc/implement/trackingServer.html) e [Aggiunta corretta delle variabili trackingServer e trackingServerSecure](https://helpx.adobe.com/it/analytics/kb/determining-data-center.html#).
+Vedi [trackingServer](https://docs.adobe.com/content/help/it-IT/analytics/implementation/vars/page-vars/page-variables.html) e [Aggiunta corretta delle variabili trackingServer e trackingServerSecure](https://helpx.adobe.com/it/analytics/kb/determining-data-center.html#).
 
 **Server Experience Cloud**
 
-Se l'azienda utilizza la raccolta dati di prime parti (CNAME) per utilizzare cookie di prime parti in un contesto terze parti, specifica il server di tracciamento (esempio: `http://metrics.company.com`).
+Se l&#39;azienda utilizza la raccolta dati di prime parti (CNAME) per utilizzare cookie di prime parti in un contesto terze parti, specifica il server di tracciamento (esempio: `http://metrics.company.com`).
 
 **Server Experience Cloud protetto**
 
-Se l'azienda utilizza la raccolta dati di prime parti (CNAME) per utilizzare cookie di prime parti in un contesto terze parti, specifica il server di tracciamento (esempio: `https://metrics.company.com`).
+Se l&#39;azienda utilizza la raccolta dati di prime parti (CNAME) per utilizzare cookie di prime parti in un contesto terze parti, specifica il server di tracciamento (esempio: `https://metrics.company.com`).
 
 **Versione libreria**
 
-Imposta la versione della libreria del codice del servizio ID (`VisitorAPI.js`) che desideri usare. Non puoi modificare queste opzioni di menu.
+Imposta la versione della libreria del codice del servizio ID (`VisitorAPI.js`) che desideri usare. Non è possibile modificare queste opzioni di menu.
 
 **Impostazioni**
 
-Questi campi consentono di aggiungere [variabili di funzioni](../library/function-vars/function-vars.md) sotto forma di coppie chiave-valore. Fai clic su **[!UICONTROL Aggiungi]** per aggiungere una o più variabili all'implementazione del servizio ID.
+Questi campi consentono di aggiungere [variabili di funzioni](../library/function-vars/function-vars.md) sotto forma di coppie chiave-valore. Fai clic su **[!UICONTROL Aggiungi]** per aggiungere una o più variabili all&#39;implementazione del servizio ID.
 
 ![](assets/dtmVars.png)
 
 >[!IMPORTANT]
 >
->Imposta la `cookieDomain` variabile qui. Questa variabile è obbligatoria per i domini di livello superiore con più parti, se una delle ultime due parti dell'URL comprende più di due caratteri. Consulta la documentazione sulle variabili di configurazione dal collegamento fornito qui sopra.
+>Imposta la `cookieDomain` variabile qui. È richiesto per i domini di livello superiore con più parti, se una delle ultime due parti dell’URL comprende più di due caratteri. Consulta la documentazione sulle variabili di configurazione, collegata qui sopra.
 
 ## Impostazioni cliente {#section-238d1272c1504d148fe38fb0ae5d71c2}
 
@@ -181,15 +180,15 @@ Campi aggiuntivi che consentono di aggiungere codice di integrazione o lo stato 
 
 **Codice integrazione**
 
-Un codice di integrazione è un ID cliente univoco. Il codice di integrazione deve contenere il valore utilizzato per [creare un’origine dati](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/features/data-sources/manage-datasources.html#create-data-source) in [!DNL Audience Manager].
+Un codice di integrazione è un ID cliente univoco. Il codice di integrazione deve contenere il valore utilizzato per [creare un’origine dati](hhttps://docs.adobe.com/content/help/en/audience-manager/user-guide/features/data-sources/manage-datasources.html#create-data-source) in [!DNL Audience Manager].
 
 **Valore**
 
-Il valore deve essere un elemento di dati contenente l'ID utente. Gli elementi di dati sono contenitori idonei per valori dinamici, come gli ID da un sistema interno specifico per il cliente.
+Il valore deve essere un elemento dati contenente l&#39;ID utente. Gli elementi dati sono contenitori adatti per valori dinamici come gli ID di un sistema interno specifico per il client.
 
 **Stato autenticazione**
 
-Opzioni che definiscono o identificano i visitatori in base al loro stato di autenticazione (connessi o disconnessi). Vedi [Impostazione degli ID cliente e degli stati di autenticazione](../reference/authenticated-state.md).
+Opzioni che definiscono o identificano i visitatori in base al loro stato di autenticazione (ad esempio, connessi o disconnessi). Vedi [Impostazione degli ID cliente e degli stati di autenticazione](../reference/authenticated-state.md).
 
 ## Test e verifica del servizio Experience Cloud Identity {#concept-644fdbef433b46ba9c0634ac95eaa680}
 
@@ -205,56 +204,56 @@ Informazioni importanti da conoscere prima di iniziare il test e la verifica del
 
 **Ambienti browser**
 
-Se esegui il test in una normale sessione browser, cancella la cache del browser prima di ogni test.
+Quando eseguite il test in una normale sessione del browser, eliminate la cache del browser prima di ogni test.
 
-In alternativa, verifica il servizio ID in una sessione browser anonima. In una sessione anonima, non devi cancellare i cookie o la cache del browser prima di ogni test.
+In alternativa, puoi provare il servizio ID in una sessione browser anonima. In una sessione anonima, non è necessario cancellare i cookie o la cache del browser prima di ogni test.
 
 **Strumenti**
 
-Utilizzando [Adobe Debugger](https://marketing.adobe.com/resources/help/it_IT/sc/implement/debugger.html) e il [proxy HTTP Charles](https://www.charlesproxy.com/) puoi determinare se il servizio ID è stato configurato in modo da funzionare correttamente con Analytics. Le informazioni di questa sezione si basano sui risultati restituiti da Adobe Debugger e Charles. Puoi anche usare un altro strumento o debugger di tua preferenza.
+Utilizzando [Adobe Debugger](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html) e il [proxy HTTP Charles](https://www.charlesproxy.com/) puoi determinare se il servizio ID è stato configurato in modo da funzionare correttamente con Analytics. Le informazioni presenti in questa sezione si basano sui risultati restituiti da Adobe Debugger e Charles. Puoi anche usare un altro strumento o debugger di tua preferenza.
 
 ## Test con Adobe Debugger {#section-861365abc24b498e925b3837ea81d469}
 
-L'integrazione del servizio è configurata correttamente se vedi un identificatore [!DNL Experience Cloud ID] (MID) nella risposta di [!DNL Adobe] Debugger. Per maggiori informazioni sull’identificatore MID, consulta [Cookie e il servizio Experience Cloud Identity](../introduction/cookies.md).
+L&#39;integrazione del servizio è configurata correttamente se vedi un identificatore [!DNL Experience Cloud ID] (MID) nella risposta di [!DNL Adobe] Debugger. Per maggiori informazioni sull’identificatore MID, consulta [Cookie e il servizio Experience Cloud Identity](../introduction/cookies.md).
 
-Per verificare lo stato del servizio ID con il [!DNL Adobe] [debugger](https://marketing.adobe.com/resources/help/it_IT/sc/implement/debugger.html):
+Per verificare lo stato del servizio ID con il [!DNL Adobe] [debugger](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html):
 
-1. Cancella i cookie del browser o apri una sessione browser anonima.
-1. Carica la pagina di prova contenente il codice del servizio ID.
+1. Cancella i cookie del browser o apri una sessione di navigazione anonima.
+1. Carica la pagina di prova che contiene il codice del servizio ID.
 1. Apri [!DNL Adobe] Debugger.
 1. Individua un identificatore MID nei risultati.
 
 ## I risultati di Adobe Debugger {#section-bd2caa6643d54d41a476d747b41e7e25}
 
-L'identificatore MID viene memorizzato in una coppia chiave-valore con sintassi: `MID= *`Experience Cloud ID`*`. Queste informazioni sono presentate nel modo seguente.
+L&#39;identificatore MID viene memorizzato in una coppia chiave-valore con sintassi: `MID= *`Experience Cloud ID`*`. Queste informazioni sono presentate nel modo seguente.
 
 **Operazione riuscita**
 
-Il servizio ID è stato implementato correttamente se la risposta è simile all'esempio seguente:
+Il servizio ID è stato implementato correttamente se viene visualizzata una risposta simile al seguente:
 
 ```
 mid=20265673158980419722735089753036633573
 ```
 
-Se sei un cliente [!DNL Analytics], oltre all'identificatore MID potresti vedere un identificatore [!DNL Analytics] ID (AID). Ciò accade nelle seguenti situazioni:
+Se sei un cliente [!DNL Analytics], oltre all&#39;identificatore MID potresti vedere un identificatore [!DNL Analytics] ID (AID). Ciò si verifica:
 
-* Per alcuni visitatori di lunga data.
-* Se hai impostato un periodo di tolleranza.
+* Con alcuni dei visitatori di lunga data del sito.
+* Se hai attivato un periodo di tolleranza.
 
 **Errore**
 
-Contatta l'[assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html) se il debugger:
+Contatta l’assistenza [](https://helpx.adobe.com/it/marketing-cloud/contact-support.html) clienti se il debugger:
 
-* non restituisce un valore MID;
-* restituisce un messaggio di errore che indica che non è stato effettuato il provisioning del tuo ID partner.
+* Non restituisce un MID.
+* Restituisce un messaggio di errore che indica che non è stato eseguito il provisioning dell’ID partner.
 
 ## Test con il proxy HTTP Charles {#section-d9e91f24984146b2b527fe059d7c9355}
 
 Per verificare lo stato del servizio ID con Charles:
 
-1. Cancella i cookie del browser o apri una sessione browser anonima.
+1. Cancella i cookie del browser o apri una sessione di navigazione anonima.
 1. Avvia Charles.
-1. Carica la pagina di prova contenente il codice del servizio ID.
+1. Carica la pagina di prova che contiene il codice del servizio ID.
 1. Verifica le chiamate di richiesta e risposta e i dati descritti di seguito.
 
 ## I risultati di Charles {#section-c10c3dc0bb9945cbaffcf6fec7082fab}
@@ -263,25 +262,25 @@ Questa sezione descrive quali informazioni cercare e dove cercarle quando usi Ch
 
 ### Richieste corrette per il servizio ID in Charles
 
-Il codice del servizio ID funziona correttamente se la funzione `Visitor.getInstance` effettua una chiamata JavaScript a `dpm.demdex.net`. Una richiesta corretta include il tuo [ID organizzazione](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). L'ID organizzazione viene passato sotto forma di coppia chiave-valore con sintassi: `d_orgid= *`ID organizzazione`*`. Cerca le chiamate `dpm.demdex.net` e JavaScript nella scheda [!UICONTROL Struttura]. Cerca l’ID organizzazione nella scheda [!UICONTROL Richiesta].
+Il codice del servizio ID funziona correttamente se la funzione `Visitor.getInstance` effettua una chiamata JavaScript a `dpm.demdex.net`. Una richiesta corretta include il tuo [ID organizzazione](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). L&#39;ID organizzazione viene passato sotto forma di coppia chiave-valore con sintassi: `d_orgid= *`ID organizzazione`*`. Cerca le chiamate `dpm.demdex.net` e JavaScript nella scheda [!UICONTROL Struttura]. Cerca l’ID organizzazione nella scheda [!UICONTROL Richiesta].
 
 ![](assets/charles_request.png)
 
 ### Risposte corrette per il servizio ID in Charles
 
-Il provisioning del tuo account per il servizio ID è corretto se la risposta dai [Data Collection Servers](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/reference/system-components/components-data-collection.translate.html) (DCS) restituisce un valore MID. L’identificatore MID viene restituito come coppia chiave-valore con la seguente sintassi: `d_mid: visitor Experience Cloud ID`. Cerca l’identificatore MID nella scheda [!UICONTROL Risposta], come illustrato di seguito.
+Il provisioning del tuo account per il servizio ID è corretto se la risposta dai [Data Collection Servers](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS) restituisce un valore MID. L’identificatore MID viene restituito come coppia chiave-valore con la seguente sintassi: `d_mid: visitor Experience Cloud ID`. Cerca l’identificatore MID nella scheda [!UICONTROL Risposta], come illustrato di seguito.
 
 ![](assets/charles_response_success.png)
 
 ### Risposte errate per il servizio ID in Charles
 
-Il provisioning del tuo account per il servizio ID non è corretto se la risposta DCS non contiene l’identificatore MID. Una risposta errata restituisce un codice di errore e un messaggio nella scheda [!UICONTROL Risposta], come illustrato di seguito. Se ricevi questo messaggio di errore nella risposta DCS, contatta l’assistenza clienti.
+Il provisioning del tuo account per il servizio ID non è corretto se la risposta DCS non contiene l’identificatore MID. An unsuccessful response returns an error code and message in the [!UICONTROL Response] tab as shown below. Se ricevi questo messaggio di errore nella risposta DCS, contatta l’assistenza clienti.
 
 ![](assets/charles_response_unsuccessful.png)
 
-Per informazioni sui codici di errore, vedi [Codici di errore, messaggi ed esempi DCS](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.translate.html).
+For more information about error codes, see [DCS Error Codes, Messages, and Examples](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html).
 
 >[!MORELIKETHIS]
 >
->* [Proprietà Web](https://marketing.adobe.com/resources/help/it_IT/dtm/web_property.html)
+>* [Proprietà Web](https://docs.adobe.com/content/help/en/dtm/using/admin/web-property.html)
 
