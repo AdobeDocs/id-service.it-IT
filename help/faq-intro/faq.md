@@ -1,19 +1,19 @@
 ---
 description: Domande frequenti sulle caratteristiche, sulle funzionalità e sui problemi correlati all'uso del servizio ID.
-keywords: Servizio ID
+keywords: ID Service
 seo-description: Domande frequenti sulle caratteristiche, sulle funzionalità e sui problemi correlati all'uso del servizio ID.
 seo-title: Domande frequenti sul servizio ID
 title: Domande frequenti sul servizio ID
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: ht
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+translation-type: tm+mt
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
 
 # Domande frequenti sul servizio ID{#id-service-faqs}
 
-Domande frequenti sulle caratteristiche, sulle funzionalità e sui problemi correlati all'uso del servizio ID.
+Domande frequenti sulle caratteristiche, sulle funzionalità e sui problemi correlati all&#39;uso del servizio ID.
 
 ## Funzionalità {#section-659e89f8b9a74cb8afff35587dc96836}
 
@@ -21,51 +21,51 @@ Domande frequenti sulle caratteristiche, sulle funzionalità e sui problemi corr
 
 Consulta la sezione [Panoramica](../introduction/overview.md).
 
-**Perché il servizio ID non sta effettuando una chiamata per recuperare l'Experience Cloud ID?**
+**Perché il servizio ID non effettua una chiamata per recuperare l’Experience Cloud ID?**
 
-Questa situazione è difficile da diagnosticare. Una cosa che puoi controllare sono le intestazioni dell'informativa sulla sicurezza dei contenuti sul tuo sito. Se hai una politica di sicurezza restrittiva, quelle impostazioni possono bloccare le chiamate di terze parti effettuate dal servizio ID. Consulta [Informativa sulla sicurezza dei contenuti e servizio Experience Cloud Identity](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
+Questa situazione è difficile da diagnosticare. Una cosa che puoi controllare sono le intestazioni dell&#39;informativa sulla sicurezza dei contenuti sul tuo sito. Se hai una politica di sicurezza restrittiva, quelle impostazioni possono bloccare le chiamate di terze parti effettuate dal servizio ID. Consulta [Informativa sulla sicurezza dei contenuti e servizio Experience Cloud Identity](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
 
-**Archiviazione del file VisitorAPI.js**
+**Archiviazione dei file VisitorAPI.js**
 
-È possibile riscontrare problemi se il file VisitorAPI.js è stato memorizzato come file locale nelle applicazioni per dispositivi mobili. È consigliabile conservare il file su un server Web.
+È possibile riscontrare problemi se il file VisitorAPI.js è stato memorizzato come file locale nelle applicazioni per dispositivi mobili. È consigliabile ospitare il file su un server Web.
 
 ## Tempi di caricamento delle pagine e latenza {#section-c78e148d8dbe4c77a436ef0f2af5434b}
 
 **In che modo il posizionamento della libreria VisitorAPI.js del servizio ID influisce sui tempi di caricamento delle pagine?**
 
-Posiziona la libreria VisitorAPI.js nella parte superiore della pagina nella `<head>` sezione del tuo codice. Questo consente di garantire che la chiamata per un'ID venga effettuata prima che il corpo della pagina inizi a essere caricato e massimizza le possibilità di restituzione di un'ID.
+Posiziona la libreria VisitorAPI.js nella parte superiore della pagina nella `<head>` sezione del tuo codice. Questo consente di garantire che la chiamata per un&#39;ID venga effettuata prima che il corpo della pagina inizi a essere caricato e massimizza le possibilità di restituzione di un&#39;ID.
 
-La chiamata del servizio ID è asincrona ed è l'unica chiamata al [dominio demdex.net](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/reference/demdex-calls.translate.html). La chiamata del servizio ID non blocca il caricamento di altri elementi sulla pagina.
+The ID service call is asynchronous and is the only call to the [demdex.net domain](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html). La chiamata del servizio ID non blocca il caricamento di altri elementi sulla pagina.
 
 Per i [!DNL Target] clienti, il posizionamento del codice del servizio ID nel `<body>` della pagina può aumentare le possibilità che possa bloccare una chiamata [!DNL Target]. Se hai bisogno di posizionare il codice del servizio ID nel corpo della pagina, devi posizionarlo dopo il tag `<body>` aperto.
 
 **Il servizio ID effettua una chiamata al server a ogni caricamento di pagina?**
 
-No, questa chiamata viene effettuata solo al primo rendering della pagina o una volta ogni 7 giorni in seguito. Nel frattempo, le chiamate al server non sono richieste. Il servizio ID opera nella modalità lato client e non necessita di effettuare una chiamata al server per restituire un ID.
+No, questa chiamata viene effettuata solo al primo rendering della pagina o una volta ogni 7 giorni in seguito. Nel frattempo, le chiamate al server non sono richieste. Il servizio ID funziona in modalità lato client e non deve effettuare una chiamata al server per restituire un ID.
 
 Consulta [Panoramica](../introduction/overview.md).
 
-**Durante l'uso del servizio ID, cosa può provocare un rallentamento dei tempi di caricamento delle pagine o influire sull'esperienza dell'utente?**
+**Quando si utilizza il servizio ID, cosa può causare rallentamenti dei tempi di caricamento delle pagine o influenzare l’esperienza dell’utente?**
 
-È difficile catalogare tutte le condizioni possibili. Miliardi di clienti si collegano ai nostri servizi e l'enorme varietà di modi e tempi in cui si connettono influisce sulle prestazioni. Ad esempio:
+È difficile catalogare tutte le condizioni possibili. Miliardi di clienti si collegano ai nostri servizi e l&#39;enorme varietà di modi e tempi in cui si connettono influisce sulle prestazioni. Ad esempio:
 
-* Le velocità variano notevolmente sulle reti mobili. Queste reti sono soggette anche alla perdita del segnale e del pacchetto dati o voce.
-* La connettività si riduce sui dispositivi che si collegano tramite WiFi in svariate condizioni. Ad esempio, problemi dovuti alla velocità o alla perdita di pacchetti sono comuni in luoghi pubblici, come caffetterie, o in altri ambienti come velivoli dovi i pacchetti possono rimbalzare attraverso un satellite prima di raggiungere le reti terrestri.
-* Le reti locali caratterizzate da una configurazione scadente possono influire negativamente su connettività e velocità.
-* I dispositivi dei clienti possono avere problemi intrinseci come spazio di memoria ridotto, scambi eccessivi sul disco rigido o potenza della CPU limitata rispetto ai carichi di lavoro correnti.
+* Le velocità variano notevolmente sulle reti mobili. Queste reti subiscono anche la perdita di segnali e dati o di pacchetti vocali.
+* La connettività si riduce sui dispositivi che si collegano tramite WiFi in svariate condizioni. Ad esempio, problemi di velocità e perdita di pacchetti sono comuni in luoghi pubblici come caffetterie o in altri ambienti come velivoli dove i pacchetti devono rimbalzare attraverso un satellite prima di raggiungere le reti terrestri.
+* Le reti locali scarsamente configurate possono avere un impatto negativo su connettività e velocità.
+* I dispositivi client possono avere problemi propri come memoria insufficiente, scambi eccessivi di dischi o potenza della CPU limitata rispetto ai carichi di lavoro correnti.
 * I browser mettono in coda ed eseguono le chiamate al server remoto ed elaborano, persino, le risposte con regole diverse a seconda del produttore e della versione del browser. Questo comportamento influisce su velocità e prestazioni.
 
-**Puoi nominare alcuni miglioramenti apportati al fine di migliorare i tempi di caricamento delle pagine?**
+**È possibile denominare alcuni miglioramenti apportati per ridurre i tempi di caricamento delle pagine?**
 
-Ad esempio, il thread yielding. Abbiamo introdotto il thread yielding per i casi in cui si verificano più richieste di sincronizzazione ID. I rapporti forniti dal laboratorio hanno indicato che per i clienti che eseguono più sincronizzazioni ID, l'interfaccia utente si blocca a causa dei continui calcoli che la CPU deve elaborare. Di conseguenza, abbiamo introdotto la tecnica del thread yielding per separare le richieste di sincronizzazione ID di 100 msec l'una dall'altra.
+Ad esempio, il thread yielding. Abbiamo introdotto il thread yielding per i casi in cui si verificano più richieste di sincronizzazione ID. I rapporti forniti dal laboratorio hanno indicato che per i clienti che eseguono più sincronizzazioni ID, l&#39;interfaccia utente si blocca a causa dei continui calcoli che la CPU deve elaborare. Di conseguenza, abbiamo introdotto il thread yielding per separare le richieste di sincronizzazione ID di 100 msec l’una dall’altra.
 
-Questa modifica migliore le prestazioni per i clienti che usano Visitor 2.3.0+ e DIL 6.10+. I miglioramenti nei tempi di caricamento delle pagine sono mostrati nell'immagine seguente:
+Questa modifica migliore le prestazioni per i clienti che usano Visitor 2.3.0+ e DIL 6.10+. I miglioramenti nei tempi di caricamento delle pagine sono mostrati nella figura seguente:
 
 ![](assets/id_sync_improvements_copy.png)
 
-**Le richieste del browser effettuate con CORS versus JSONP influiscono sulle prestazioni delle pagine?**
+**Le richieste del browser che utilizzano CORS vs JSON-P influiscono sulle prestazioni della pagina?**
 
-Le richieste di risorse con CORS sono generalmente preferibili a quelle con JSONP. Con JSONP, alcuni browser mettono in coda e modificano la priorità delle richieste rispetto ad altre chiamate sincrone ed asincrone sulla pagina. CORS contribuisce a garantire che a queste richieste sia data una maggiore priorità nello stack delle chiamate del browser.
+Le richieste di risorse con CORS sono generalmente preferibili a quelle con JSONP. Con JSONP, alcuni browser mettono in coda e modificano la priorità delle richieste rispetto ad altre chiamate sincrone ed asincrone sulla pagina. CORS garantisce che queste richieste siano trattate con una priorità più alta nello stack di chiamate del browser.
 
 Consulta [Supporto per CORS nel servizio Experience Cloud Identity](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
@@ -75,15 +75,15 @@ Consulta [Supporto per CORS nel servizio Experience Cloud Identity](../reference
 
 Sì. Consulta [Supporto per CORS nel servizio Experience Cloud Identity](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
-**Cos'è CORS?**
+**Cos&#39;è CORS?**
 
 *`Cross-Origin Resource Sharing`* o CORS è un metodo che i browser usano per richiedere risorse. Il servizio ID richiede sempre risorse usando CORS nei browser che lo supportano. Il servizio ID richiede risorse con JSONP nei browser più datati che non supportano CORS. Consulta [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **Cosa succede se i miei requisiti di sicurezza sono così rigidi da impedirmi di usare JSONP?**
 
-Se hai dei requisiti di sicurezza rigidi, imposta la configurazione API del servizio ID `useCORSOnly: true`. Abilita questa modalità solo se sei certo che i visitatori del tuo sito usano browser che supportano CORS.
+Se hai dei requisiti di sicurezza rigidi, imposta la configurazione API del servizio ID `useCORSOnly: true`. Abilita questa modalità solo se sei certo che i visitatori del tuo sito utilizzano browser che supportano CORS.
 
-Consulta [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) e [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
+See [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) and [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
 
 >[!MORELIKETHIS]
 >
