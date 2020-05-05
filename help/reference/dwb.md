@@ -1,33 +1,33 @@
 ---
-description: Per integrare il campo Experience Cloud ID in Data Workbench, procedi come indicato di seguito. Questo processo consente di usare l'Experience Cloud ID costante nel feed di dati per consentire un'integrazione migliore con gli altri prodotti Adobe Experience Cloud e migliorare il monitoraggio dei visitatori.
-keywords: Servizio ID
-seo-description: Per integrare il campo Experience Cloud ID in Data Workbench, procedi come indicato di seguito. Questo processo consente di usare l'Experience Cloud ID costante nel feed di dati per consentire un'integrazione migliore con gli altri prodotti Adobe Experience Cloud e migliorare il monitoraggio dei visitatori.
+description: Per integrare il campo Experience Cloud ID in Data Workbench, procedi come indicato di seguito. Questo processo consente di utilizzare l’Experience Cloud ID persistente nel feed di dati, per consentire un’integrazione migliore con altri prodotti Adobe Experience Cloud e migliorare il tracciamento dei visitatori.
+keywords: ID Service
+seo-description: Per integrare il campo Experience Cloud ID in Data Workbench, procedi come indicato di seguito. Questo processo consente di utilizzare l’Experience Cloud ID persistente nel feed di dati, per consentire un’integrazione migliore con altri prodotti Adobe Experience Cloud e migliorare il tracciamento dei visitatori.
 seo-title: Data Workbench e il servizio Experience Cloud Identity
 title: Data Workbench e il servizio Experience Cloud Identity
 uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
 
 # Data Workbench e il servizio Experience Cloud Identity {#data-workbench-and-the-experience-cloud-id-service}
 
-Per integrare il campo Experience Cloud ID in Data Workbench, procedi come indicato di seguito. Questo processo consente di usare l'Experience Cloud ID costante nel feed di dati per consentire un'integrazione migliore con gli altri prodotti Adobe Experience Cloud e migliorare il monitoraggio dei visitatori.
+Per integrare il campo Experience Cloud ID in Data Workbench, procedi come indicato di seguito. Questo processo consente di utilizzare l’Experience Cloud ID persistente nel feed di dati, per consentire un’integrazione migliore con altri prodotti Adobe Experience Cloud e migliorare il tracciamento dei visitatori.
 
-Per aggiornare [Data Workbench](https://marketing.adobe.com/resources/help/en_US/insight/) in modo da usare il servizio ID:
+To update [Data Workbench](https://docs.adobe.com/content/help/it-IT/data-workbench/using/home.html) to use the ID service:
 
-1. Individua il file di configurazione del [gruppo decodificatore](https://marketing.adobe.com/resources/help/en_US/insight/dataset/c_text_file_dec_groups.html) corrente.
+1. Individuare il file di configurazione [Decoder Group](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html) corrente.
 
    In genere il [!DNL Decoder Group] si trova in un [!UICONTROL Profile Manager] nel seguente percorso: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Copia il formato corrente del decodificatore dal file di configurazione.
-1. Incolla il formato del decodificatore al di sotto dell'originale.
-1. Apri il formato del decodificatore e aggiungi i seguenti nuovi campi al termine dell'elenco:
+1. Incolla il formato del decodificatore al di sotto dell&#39;originale.
+1. Apri il formato del decodificatore e aggiungi i seguenti nuovi campi al termine dell&#39;elenco:
 
    * `x-mcvisid`
    * `x-tnt-action`
    Se non sei pronto a utilizzare o definire questi campi, lasciali vuoti.  **Istruzioni per la decodifica**
 
-Di seguito puoi controllare il contenuto del decodificatore, compresi i nuovi campi indicati in precedenza.
+Consulta il contenuto completo del decodificatore riportato di seguito, inclusi i nuovi campi indicati in precedenza.
 
 ```js
 Log Processing Include = LogProcessingInclude:   
