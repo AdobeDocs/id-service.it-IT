@@ -1,19 +1,19 @@
 ---
-description: getInstance restituisce un ID visitatore per l'ID organizzazione Experience Cloud specificato. Questo ID è richiesto per inizializzare l'ID visitatore fornito ad AppMeasurement tramite s.visitor.
-keywords: Servizio ID
-seo-description: getInstance restituisce un ID visitatore per l'ID organizzazione Experience Cloud specificato. Questo ID è richiesto per inizializzare l'ID visitatore fornito ad AppMeasurement tramite s.visitor.
+description: getInstance restituisce un ID visitatore per l'ID organizzazione Experience Cloud specificato. Questo è necessario per inizializzare l’ID visitatore fornito ad AppMeasurement tramite s.visitor.
+keywords: ID Service
+seo-description: getInstance restituisce un ID visitatore per l'ID organizzazione Experience Cloud specificato. Questo è necessario per inizializzare l’ID visitatore fornito ad AppMeasurement tramite s.visitor.
 seo-title: getInstance
 title: getInstance
 uuid: 259b88a6-e3d0-4aab-b935-566099bdab98
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
 
 # getInstance{#getinstance}
 
-getInstance restituisce un ID visitatore per l'ID organizzazione Experience Cloud specificato. Questo ID è richiesto per inizializzare l'ID visitatore fornito ad AppMeasurement tramite s.visitor.
+getInstance restituisce un ID visitatore per l&#39;ID organizzazione Experience Cloud specificato. Questo è necessario per inizializzare l’ID visitatore fornito ad AppMeasurement tramite s.visitor.
 
 **Sintassi**
 
@@ -33,7 +33,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 >[!CAUTION]
 >
->*Non* creare un'istanza della funzione Visitatore con `var visitor = new Visitor`. Devi usare la chiamata di funzione appropriata indicata qui. Si applica alla libreria di codici [!UICONTROL VisitorAPI.js] v3.0 o superiore.
+>*Non* creare un&#39;istanza della funzione Visitatore con `var visitor = new Visitor`. Devi usare la chiamata di funzione appropriata indicata qui. Applies to [!UICONTROL VisitorAPI.js] code library v3.0 or higher.
 
 **ActionScript / Flash**
 
@@ -51,10 +51,10 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-Se `getInstance` non rileva un'istanza esistente, viene creata e restituita una nuova istanza. This is similar to the [ `s_gi()` function ](https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=function_s_gi.html) in [!DNL AppMeasurement].
+Se `getInstance` non rileva un&#39;istanza esistente, viene creata e restituita una nuova istanza. È simile alla [`s_gi()` funzione ](https://docs.adobe.com/content/help/en/analytics/implementation/vars/functions/s-gi.html) in [!DNL AppMeasurement].
 
 **Uso comune**
 
-L'API del servizio [!DNL Experience Cloud] ID conserva un elenco di tutte le istanze create per ciascun [!DNL Adobe Experience Cloud] ID organizzazione di. Se l'applicazione che utilizza l'API del servizio ID non utilizza un riferimento all'istanza, l'istanza può essere rilevata chiamando `getInstance`, senza bisogno di crearne una nuova. Questa funzione supporta anche più istanze per diverse organizzazioni all'interno della stessa pagina Web o della stessa applicazione.
+L&#39;API del servizio [!DNL Experience Cloud] ID conserva un elenco di tutte le istanze create per ciascun [!DNL Adobe Experience Cloud] ID organizzazione di. Se l&#39;applicazione che utilizza l&#39;API del servizio ID non utilizza un riferimento all&#39;istanza, l&#39;istanza può essere rilevata chiamando `getInstance`, senza bisogno di crearne una nuova. Questa funzione supporta anche più istanze per diverse organizzazioni all&#39;interno della stessa pagina Web o della stessa applicazione.
 
-È utile per le applicazioni che non dispongono di una `init` fase chiara e che devono essere richiamate nell'API del servizio ID in più posizioni. Puoi chiamare `getInstance` da tutte le posizioni, l'istanza verrà creata dalla prima posizione in cui viene eseguito. L'istanza esistente verrà restituita dalle chiamate successive.
+È utile per le applicazioni che non dispongono di una `init` fase chiara e che devono essere richiamate nell&#39;API del servizio ID in più posizioni. Puoi chiamare `getInstance` da tutte le posizioni, l&#39;istanza verrà creata dalla prima posizione in cui viene eseguito. L&#39;istanza esistente verrà restituita dalle chiamate successive.
