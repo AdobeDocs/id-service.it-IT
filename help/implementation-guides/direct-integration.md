@@ -1,12 +1,12 @@
 ---
 description: Questa implementazione permette ai clienti di usare il servizio ID su dispositivi che non possono accettare o lavorare con il nostro codice JavaScript o SDK. Tra questi dispositivi sono incluse consolle di gioco, smart TV o altri apparecchi dotati di Internet. Fare riferimento a questa sezione per sintassi, esempi di codice e definizioni.
-keywords: Servizio ID
+keywords: ID Service
 seo-description: Questa implementazione permette ai clienti di usare il servizio ID su dispositivi che non possono accettare o lavorare con il nostro codice JavaScript o SDK. Tra questi dispositivi sono incluse consolle di gioco, smart TV o altri apparecchi dotati di Internet. Fare riferimento a questa sezione per sintassi, esempi di codice e definizioni.
 seo-title: Integrazione diretta con il servizio Experience Cloud Identity
 title: Integrazione diretta con il servizio Experience Cloud Identity
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -21,13 +21,13 @@ I dispositivi che non possono usare le librerie di codici VisitorAPI.js o SDK po
 
 ![](assets/directSyntax.png)
 
-In questo esempio di sintassi, il `d_` prefisso identifica le coppie chiave-valore nella chiamata come variabile a livello di sistema. Puoi trasmettere una serie di `d_` parametri al servizio ID, ma fai particolare attenzione alle coppie chiave-valore mostrate nel codice seguente. Per maggiori informazioni sulle altre variabili, consulta [Attributi supportati per le chiamate API DCS](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
+In questo esempio di sintassi, il `d_` prefisso identifica le coppie chiave-valore nella chiamata come variabile a livello di sistema. Puoi trasmettere una serie di `d_` parametri al servizio ID, ma fai particolare attenzione alle coppie chiave-valore mostrate nel codice seguente. For more information about other variables, see [Supported Attributes for DCS API calls](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
 
-Il servizio ID supporta le chiamate HTTP e HTTPS. Usa HTTPS per trasmettere i dati da una pagina sicura.
+Il servizio ID supporta le chiamate HTTP e HTTPS. Utilizzare HTTPS per trasmettere dati da una pagina protetta.
 
 ## Richiesta di esempio {#section-26302b8851704888b6f8e6b2071bcdb0}
 
-L'aspetto della tua richiesta potrebbe essere simile all'esempio mostrato di seguito. Abbiamo accorciato le variabili lunghe.
+L&#39;aspetto della tua richiesta potrebbe essere simile all&#39;esempio mostrato di seguito. Le variabili lunghe sono state abbreviate.
 
 ![](assets/directExample.png)
 
@@ -58,7 +58,7 @@ Il servizio ID restituisce i dati in un oggetto JSON come mostrato di seguito. L
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dpm.demdex.net</span> </p> </td> 
-   <td colname="col2"> <p>Un dominio legacy controllato da <span class="keyword">Adobe</span>. Vedi <a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Informazioni sulle chiamate al dominio demdex</a>. </p> </td> 
+   <td colname="col2"> <p>Un dominio legacy controllato da <span class="keyword">Adobe</span>. Vedi <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Informazioni sulle chiamate al dominio demdex</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
@@ -88,7 +88,7 @@ Il servizio ID restituisce i dati in un oggetto JSON come mostrato di seguito. L
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>Il servizio ID è un sistema distribuito geograficamente e bilanciato in base al carico. L'ID identifica la regione del centro dati che gestisce la chiamata. Consulta <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external">ID regioni DCS, posizioni e nomi host</a>. </p> </td> 
+   <td colname="col2"> <p>Il servizio ID è un sistema distribuito geograficamente e bilanciato in base al carico. L'ID identifica la regione del centro dati che gestisce la chiamata. Consulta <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">ID regioni DCS, posizioni e nomi host</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
@@ -96,7 +96,7 @@ Il servizio ID restituisce i dati in un oggetto JSON come mostrato di seguito. L
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_blob</span> </p> </td> 
-   <td colname="col2"> <p>Un pezzo crittografato di metadati JavaScript. I vincoli alle dimensioni limitano il blob a un massimo di 512 byte. </p> </td> 
+   <td colname="col2"> <p>Un pezzo crittografato di metadati JavaScript. I vincoli di dimensione limitano il BLOB a 512 byte o meno. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_ver</span> </p> </td> 
@@ -107,7 +107,7 @@ Il servizio ID restituisce i dati in un oggetto JSON come mostrato di seguito. L
 
 **Parametri di risposta**
 
-Alcuni parametri di risposta sono parte della richiesta e sono stati definiti nella sezione soprastante.
+Alcuni parametri di risposta fanno parte della richiesta e sono stati definiti nella sezione precedente.
 
 <table id="table_58D0E8876DDC4A81B1F24F845E87EC18"> 
  <thead> 
@@ -119,7 +119,7 @@ Alcuni parametri di risposta sono parte della richiesta e sono stati definiti ne
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> id_sync_ttl</span> </p> </td> 
-   <td colname="col2"> <p>L'intervallo di ri-sincronizzazione, specificato in secondi. L'intervallo predefinito è 604.800 secondi (7 giorni). </p> </td> 
+   <td colname="col2"> <p>L'intervallo di ri-sincronizzazione, specificato in secondi. L’intervallo predefinito è 604.800 secondi (7 giorni). </p> </td> 
   </tr> 
  </tbody> 
 </table>
