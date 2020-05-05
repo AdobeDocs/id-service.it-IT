@@ -1,19 +1,19 @@
 ---
 description: Queste configurazioni consentono a diverse istanze del codice del servizio ID implementate in un iFrame e sulla pagina padre di comunicare tra di loro. Risolvono problemi rilevati per 2 casi d'uso specifici in cui si può controllare o meno la pagina padre o il dominio e si carica il codice del servizio ID nell'iFrame di un dominio controllato. Sono disponibili in VisitorAPI.js versione del codice 2.2 o successiva.
-keywords: Servizio ID
+keywords: ID Service
 seo-description: Queste configurazioni consentono a diverse istanze del codice del servizio ID implementate in un iFrame e sulla pagina padre di comunicare tra di loro. Risolvono problemi rilevati per 2 casi d'uso specifici in cui si può controllare o meno la pagina padre o il dominio e si carica il codice del servizio ID nell'iFrame di un dominio controllato. Sono disponibili in VisitorAPI.js versione del codice 2.2 o successiva.
 seo-title: whitelistParentDomain e whitelistIframeDomains
 title: whitelistParentDomain e whitelistIframeDomains
 uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
 
 # whitelistParentDomain e whitelistIframeDomains{#whitelistparentdomain-and-whitelistiframedomains}
 
-Queste configurazioni consentono a diverse istanze del codice del servizio ID implementate in un iFrame e sulla pagina padre di comunicare tra di loro. Risolvono problemi rilevati per 2 casi d'uso specifici in cui si può controllare o meno la pagina padre o il dominio e si carica il codice del servizio ID nell'iFrame di un dominio controllato. Sono disponibili in VisitorAPI.js versione del codice 2.2 o successiva.
+Queste configurazioni consentono a diverse istanze del codice del servizio ID implementate in un iFrame e sulla pagina padre di comunicare tra di loro. Risolvono problemi rilevati per 2 casi d&#39;uso specifici in cui si può controllare o meno la pagina padre o il dominio e si carica il codice del servizio ID nell&#39;iFrame di un dominio controllato. Sono disponibili in VisitorAPI.js versione del codice 2.2 o successiva.
 
 Sommario:
 
@@ -27,7 +27,7 @@ Sommario:
 
 ## Sintassi {#section-f645198bbaba4fba8961acb6e88d1470}
 
-Entrambi gli elementi di configurazione sono richiesti quando si questo codice.
+Entrambi gli elementi di configurazione sono richiesti quando si utilizza questo codice.
 
 <table id="table_237108A4D40F4AAC981D0060BA68F881"> 
  <thead> 
@@ -64,35 +64,35 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 );
 ```
 
-## Casi d'uso {#section-fc2eeb93546b406fae3b102dbcd11de7}
+## Casi d&#39;uso {#section-fc2eeb93546b406fae3b102dbcd11de7}
 
-Queste configurazioni aiutano a risolvere il problema dell'impostazione di un cookie del servizio ID e dell'assegnazione di un ID visitatore quando i browser bloccano i cookie di terza parte e se si applica una delle condizioni seguenti:
+Queste configurazioni aiutano a risolvere il problema dell’impostazione di un cookie del servizio ID e dell’assegnazione di un ID visitatore quando i browser bloccano i cookie di terze parti e se si applica una delle seguenti condizioni:
 
-* Controlli o non controlli la pagina/dominio padre.
+* È possibile controllare o meno la pagina/dominio padre.
 * Il codice del servizio ID non è installato sulla pagina padre, ma è implementato in un iFrame.
 
 >[!TIP]
 >
->You may also want to implement these configurations when you're serving video in an iFrame with [Video Heartbeat](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/). Video Heartbeat richiede un ID del servizio ID (il codice MID) per funzionare in modo appropriato.
+>You may also want to implement these configurations when you&#39;re serving video in an iFrame with [Video Heartbeat](https://docs.adobe.com/content/help/it-IT/media-analytics/using/media-overview.html). Video Heartbeat richiede un ID del servizio ID (il MID) per funzionare correttamente.
 
-**Caso d'uso 1: il browser blocca i cookie di terza parte e il servizio ID è implementato su iFrame e sulla pagina padre**
+**Caso d’uso 1: Il browser blocca i cookie di terze parti e il servizio ID è implementato sull’iFrame e sulla pagina padre**
 
 <table id="table_B479AA96DBE64685A253A6DF98D81B31"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Elemento del caso d'uso </th> 
+   <th colname="col1" class="entry"> Elemento del caso di utilizzo </th> 
    <th colname="col2" class="entry"> Descrizione </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Condizioni</b> </p> </td> 
-   <td colname="col2"> <p>Questo caso d'uso include le condizioni seguenti: </p> <p> 
+   <td colname="col2"> <p>Questo caso d’uso include le seguenti condizioni: </p> <p> 
      <ul id="ul_DC748846585745B0AB74398D82BDA53A"> 
-      <li id="li_6E04CF0B6A204B4D8856656B0C9EF2A5">La società A implementa il servizio ID sulla sua pagina iniziale. </li> 
-      <li id="li_B53AE0F0C69844E7B6C4D3464C57883B">La società A implementa il servizio ID in iFrame sulla sua pagina iniziale. </li> 
-      <li id="li_07E0A6D7BEB140E4B9FB6C7B9629B860">La società A è proprietaria della pagina padre e di iFrame e ha implementato il servizio ID in entrambi i posti. </li> 
-      <li id="li_76967BD69DDB40A8A9C915DADC58AC62">Un cliente carica la pagina padre in un browser che blocca i cookie di terza parte. </li> 
+      <li id="li_6E04CF0B6A204B4D8856656B0C9EF2A5">La società A implementa il servizio ID sulla propria pagina principale. </li> 
+      <li id="li_B53AE0F0C69844E7B6C4D3464C57883B">La società A implementa il servizio ID in iFrame sulla propria pagina principale. </li> 
+      <li id="li_07E0A6D7BEB140E4B9FB6C7B9629B860">La società A è proprietaria della pagina padre e dell’iFrame e ha implementato il servizio ID in entrambe le posizioni. </li> 
+      <li id="li_76967BD69DDB40A8A9C915DADC58AC62">Un cliente carica la pagina padre in un browser che blocca i cookie di terze parti. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -100,61 +100,61 @@ Queste configurazioni aiutano a risolvere il problema dell'impostazione di un co
    <td colname="col2"> <p>Considerate queste condizioni, il servizio ID: </p> <p> 
      <ul id="ul_12356701501E40DFA57903494FFE58F7"> 
       <li id="li_B57EDF1B0762486F95FA6526C047390C">Funziona correttamente nella pagina padre. Richiede e imposta il cookie AMCV e assegna un ID univoco al visitatore del sito. </li> 
-      <li id="li_BA9F42C759E747EAAE14DD3FBB6130A5">Non funziona nell'iFrame. Questo perché il browser vede l'iFrame come un dominio di terza parte e impedisce al servizio ID di impostare il cookie AMCV. </li> 
+      <li id="li_BA9F42C759E747EAAE14DD3FBB6130A5">Non funziona nell'iFrame. Questo perché il browser vede l’iFrame come un dominio di terze parti e impedisce al servizio ID di impostare il cookie AMCV. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Soluzione</b> </p> </td> 
-   <td colname="col2"> <p>Modifica la funzione <span class="codeph">Visitor.getInstance</span> del servizio ID nell'iFrame con queste configurazioni della whitelist. Specifica i domini padre e figlio nel codice. Queste configurazioni permettono al codice del servizio ID nell'iFrame di controllare il codice del servizio ID sulla pagina padre per un ID visitatore. </p> <p>Se il codice del servizio ID nell'iFrame non riceve una pagina padre di risposta, queste configurazioni generano un ID del visitatore locale. </p> </td> 
+   <td colname="col2"> <p>Modifica la funzione <span class="codeph">Visitor.getInstance</span> del servizio ID nell'iFrame con queste configurazioni della whitelist. Specifica i domini padre e figlio nel codice. Queste configurazioni consentono al codice del servizio ID nell’iFrame di controllare il codice del servizio ID sulla pagina padre per un ID visitatore. </p> <p>Se il codice del servizio ID nell’iFrame non riceve una pagina padre di risposta, queste configurazioni generano un ID visitatore locale. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**Caso d'uso 2: richiesta di un ID da un iFrame integrato in una pagina padre che non controlli o che non usa il servizio ID**
+**Caso d’uso 2: Richiesta di un ID da un iFrame incorporato in una pagina padre che non controlli o che non utilizza il servizio ID**
 
 <table id="table_1F21710F9D5F493BA6BA5974F2966DF4"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Elemento del caso d'uso </th> 
+   <th colname="col1" class="entry"> Elemento del caso di utilizzo </th> 
    <th colname="col2" class="entry"> Descrizione </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Condizioni</b> </p> </td> 
-   <td colname="col2"> <p>Questo caso d'uso include le condizioni seguenti: </p> <p> 
+   <td colname="col2"> <p>Questo caso d’uso include le seguenti condizioni: </p> <p> 
      <ul id="ul_356E8FB0B1D14F46A844FE5281967E28"> 
-      <li id="li_1285D945361842268B46FB492A3B5AA5">La società A non usa il servizio ID. </li> 
+      <li id="li_1285D945361842268B46FB492A3B5AA5">La società A non utilizza il servizio ID. </li> 
       <li id="li_880D6D473F8342FF9BB49FCE111FD61A">La società A carica un iFrame sulla pagina. Questo iFrame è di proprietà della società B e si carica in un dominio separato rispetto alla società A. </li> 
-      <li id="li_7988F0272B094FE0B398006AD4E6F81B">Il browser blocca i cookie di terza parte. </li> 
+      <li id="li_7988F0272B094FE0B398006AD4E6F81B">Il browser blocca i cookie di terze parti. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Risultati</b> </p> </td> 
    <td colname="col2"> <p>Considerate queste condizioni, il servizio ID: </p> <p> 
      <ul id="ul_A92D90896E5A42C5804AC5CE83E8EB25"> 
-      <li id="li_9734EA9C5D9D4F908DE783188C9E5530">Non funziona nell'iFrame. Questo perché il browser vede l'iFrame come un dominio di terza parte e impedisce al servizio ID di impostare il cookie AMCV. </li> 
-      <li id="li_3F4BE9048E774902A867D67E5A80674D">Non è possibile ottenere un ID visitatore dalla pagina padre perché la società A non usa questo servizio. </li> 
+      <li id="li_9734EA9C5D9D4F908DE783188C9E5530">Non funziona nell'iFrame. Questo perché il browser vede l’iFrame come un dominio di terze parti e impedisce al servizio ID di impostare il cookie AMCV. </li> 
+      <li id="li_3F4BE9048E774902A867D67E5A80674D">Impossibile ottenere un ID visitatore dalla pagina padre perché la società A non utilizza questo servizio. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Soluzione</b> </p> </td> 
-   <td colname="col2"> <p>Modifica la funzione <span class="codeph">Visitor.getInstance</span> del servizio ID nell'iFrame con queste configurazioni della whitelist. Specifica i domini padre e figlio nel codice. Queste configurazioni permettono al codice del servizio ID nell'iFrame di controllare il codice del servizio ID sulla pagina padre per un ID visitatore. </p> <p>Se il codice del servizio ID nell'iFrame non riceve una pagina padre di risposta, queste configurazioni generano un ID del visitatore locale. </p> </td> 
+   <td colname="col2"> <p>Modifica la funzione <span class="codeph">Visitor.getInstance</span> del servizio ID nell'iFrame con queste configurazioni della whitelist. Specifica i domini padre e figlio nel codice. Queste configurazioni consentono al codice del servizio ID nell’iFrame di controllare il codice del servizio ID sulla pagina padre per un ID visitatore. </p> <p>Se il codice del servizio ID nell’iFrame non riceve una pagina padre di risposta, queste configurazioni generano un ID visitatore locale. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Sicurezza della configurazione {#section-2b1ce31fab034e1ca0f6b1c3cc57a6e2}
 
-Puoi implementare queste configurazioni con sicurezza perché:
+Puoi implementare queste configurazioni in modo sicuro perché:
 
-* Il servizio ID implementato sul dominio padre e sul dominio iFrame deve usare lo stesso ID organizzazione. Queste configurazioni della whitelist non funzioneranno quando gli ID organizzazione sul dominio padre o sull'iFrame sono diversi.
-* Queste configurazioni comunicano solo con il dominio e l'iFrame specificati nel codice.
-* La comunicazione tra l'iFrame e la pagina padre segue un formato specifico. Il processo di condivisione non riuscirà correttamente se il servizio ID sulla pagina padre non riceve una richiesta nel formato atteso.
+* Il servizio ID implementato sul dominio padre e sul dominio iFrame deve usare lo stesso ID organizzazione. Queste configurazioni della whitelist non funzioneranno se gli ID organizzazione nell’iFrame o nell’elemento padre sono diversi.
+* Queste configurazioni comunicano solo con il dominio e gli iFrame specificati nel codice.
+* La comunicazione tra l&#39;iFrame e la pagina padre segue un formato specifico. Se il servizio ID sulla pagina padre non riceve una richiesta nel formato previsto, il processo di condivisione non riuscirà.
 
 ## Metodi API del visitatore supportati {#section-30c6a9f4dcdc4265a1149260b97cc057}
 
-Il servizio ID supporta un set limitato di metodi API pubblici quando si implementano queste configurazioni della whitelist. I metodi supportati variano a seconda degli scenari di casi d'uso descritti sopra.
+Il servizio ID supporta un set limitato di metodi API pubblici quando si implementano queste configurazioni della whitelist. I metodi supportati variano a seconda degli scenari di casi d’uso descritti in precedenza.
 
 <table id="table_0FF9E529FD1C43A8A3B2B0D789C8E83C"> 
  <thead> 
