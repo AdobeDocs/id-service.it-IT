@@ -6,7 +6,7 @@ seo-title: CNAME per raccolta dati e monitoraggio tra più domini
 title: CNAME per raccolta dati e monitoraggio tra più domini
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
 translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+source-git-commit: 9fe63cf3983a2ed6642837b02a3c3441ef745d70
 
 ---
 
@@ -31,19 +31,17 @@ I clienti con un&#39;unica proprietà Web (un solo dominio) possono effettuare l
 
 Tuttavia, esiste un ulteriore vantaggio nell’utilizzo di un CNAME per la raccolta dati che consente di monitorare i visitatori tra un dominio di destinazione principale e altri domini nei browser che non accettano i cookie di terze parti. I clienti che dispongono di più proprietà Web (più domini) potrebbero trarre vantaggio dalla gestione di un CNAME di raccolta dati. La sezione seguente spiega come funziona il tracciamento dei visitatori tra domini.
 
-## Modalità di attivazione del monitoraggio tra più domini da parte dei CNAME {#section-78925af798e24917b9abed79de290ad9}
+## Monitoraggio tra domini {#section-78925af798e24917b9abed79de290ad9}
 
-Poiché in Apple Safari e altri browser i cookie di prime parti possono essere usati in un contesto di terze parti, un CNAME consente di monitorare i clienti tra un dominio principale e altri domini che utilizzano lo stesso server di monitoraggio.
+Il servizio ID visitatore utilizza demdex.net come dominio per il monitoraggio dei visitatori tra domini diversi (ma all’interno della stessa società proprietaria) se la privacy dell’utente e le impostazioni del browser lo consentono.
 
-Ad esempio, il tuo sito principale è `mymainsite.com`. Hai configurato il record CNAME in modo che punti al server di raccolta dati protetto: `smetrics.mymainsite.com`.
+Un CNAME non offre ulteriori vantaggi tra domini diversi. Ad esempio, il tuo sito principale è `mymainsite.com`. Hai configurato il record CNAME in modo che punti al server di raccolta dati protetto: `smetrics.mymainsite.com`.
 
 Se un utente accede a `mymainsite.com`, il cookie del servizio ID viene impostato dal server di raccolta dati. Ciò è possibile perché il dominio del server di raccolta dei dati corrisponde a quello del sito Web: in tal caso si parla di utilizzo di un cookie nel *contesto di prime parti*, o più semplicemente di *cookie di prime parti*.
 
-Se utilizzi questo stesso server di raccolta dati su altri siti (ad esempio, `myothersiteB.com` e `myothersiteA.com`), e un visitatore accede in seguito a tali siti il cookie impostato durante l&#39;accesso a `mymainsite.com` viene inviato nella richiesta HTTPS al server di raccolta dati (i browser inviano tutti i cookie di un dominio con tutte le richieste HTTPS a tale dominio, anche se il dominio non corrisponde a quello del sito Web corrente). In questo caso si parla di utilizzo di un cookie in un *contesto di terze parti*, o semplicemente di un *cookie di terze parti*, che consente l&#39;utilizzo dello stesso ID visitatore negli altri domini. I browser gestiscono i cookie in contesti di terze parti in modo diverso rispetto ai cookie di prime parti.
+Se utilizzi questo stesso server di raccolta dati su altri siti (ad esempio, `myothersiteB.com` e `myothersiteA.com`), e un visitatore accede in seguito a tali siti il cookie impostato durante l&#39;accesso a `mymainsite.com` viene inviato nella richiesta HTTPS al server di raccolta dati (i browser inviano tutti i cookie di un dominio con tutte le richieste HTTPS a tale dominio, anche se il dominio non corrisponde a quello del sito Web corrente). Questo è ciò che viene definito utilizzo di un cookie in un contesto *di* terze parti, o semplicemente di un cookie *di* terze parti, anche se si utilizza un CNAME. Adobe consiglia un CNAME per ciascun dominio univoco.
 
 *Nota: Safari blocca tutti i cookie nel contesto di terze parti, a prescindere da come sono impostati.*
-
-Di conseguenza, il dominio di raccolta deve essere un dominio visitato regolarmente, in modo che i visitatori possano essere identificati in tutti i domini. Se non è presente un dominio di raccolta dati *del genere*, l&#39;uso di un CNAME per il dominio di raccolta dati non presenta alcuna utilità ai fini dell&#39;utilizzo in più domini. Se il sito di accesso principale non viene visitato per primo, i visitatori vengono identificati in modo diverso negli altri siti rispetto al sito principale.
 
 ## Attivazione del supporto per i CNAME con il servizio Experience Cloud Identity {#section-25d4feb686d944e3a877d7aad8dbdf9a}
 
