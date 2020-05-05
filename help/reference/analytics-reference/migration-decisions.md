@@ -1,12 +1,12 @@
 ---
 description: Prima di implementare il servizio Experience Cloud Identity, è necessario comprendere in che modo condiziona il tracciamento dei visitatori in più domini e i potenziali problemi relativi alla raccolta dei dati con metodi diversi o tramite file JavaScript.
-keywords: Servizio ID
+keywords: ID Service
 seo-description: Prima di implementare il servizio Experience Cloud Identity, è necessario comprendere in che modo condiziona il tracciamento dei visitatori in più domini e i potenziali problemi relativi alla raccolta dei dati con metodi diversi o tramite file JavaScript.
 seo-title: Decisioni relative alla migrazione al servizio Experience Cloud Identity
 title: Decisioni relative alla migrazione al servizio Experience Cloud Identity
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -17,9 +17,9 @@ Prima di implementare il servizio Experience Cloud Identity, è necessario compr
 
 Le risposte alle domande incluse in questa sezione sono utili per stabilire eventuali passaggi di migrazione da eseguire.
 
-## Disponi di un CNAME di raccolta dati?
+## Hai un CNAME di raccolta dati?
 
-Molti clienti possono effettuare la migrazione da un CNAME di raccolta dati durante la migrazione al servizio ID.
+Molti clienti possono effettuare la migrazione da un CNAME di raccolta dati nell’ambito della migrazione al servizio ID.
 
 <table id="table_13F7C1E3D64D4F86B0149C9D3B54AADD"> 
  <thead> 
@@ -31,7 +31,7 @@ Molti clienti possono effettuare la migrazione da un CNAME di raccolta dati dura
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Con un CNAME </p> </td> 
-   <td colname="col2"> <p>Vedi la prossima domanda per stabilire se devi effettuare la migrazione dal CNAME di raccolta dati. </p> </td> 
+   <td colname="col2"> <p>Consulta la domanda successiva per decidere se effettuare la migrazione da un CNAME di raccolta dati. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Senza un CNAME </p> </td> 
@@ -42,28 +42,28 @@ Molti clienti possono effettuare la migrazione da un CNAME di raccolta dati dura
 
 ## Se hai un CNAME di raccolta dati, hai più domini?
 
-Se disponi di più domini che inviano dati alla *stessa suite di rapporti*, ti consigliamo di effettuare la raccolta dati usando un CNAME. In questo modo potrai eseguire il monitoraggio dei visitatori tra i domini. Se raccogli i dati in un solo dominio, l'utilizzo di un CNAME per la raccolta dei dati non comporta vantaggi.
+Se hai più domini che inviano dati alla *stessa suite* di rapporti, ti consigliamo di effettuare la raccolta dati con un CNAME. Questo consente di tenere traccia dei visitatori tra i domini. Se raccoglii dati su un solo dominio, non c&#39;è alcun vantaggio nel mantenere un CNAME di raccolta dati.
 
 <table id="table_D132BCA243E54657AEC930559343FDD3"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Raccolta dei dati da </th> 
+   <th colname="col1" class="entry"> Raccolta di dati da </th> 
    <th colname="col2" class="entry"> Descrizione </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Più domini </p> </td> 
-   <td colname="col2"> <p>Se effettui il monitoraggio dei visitatori tra più domini e disponi di un sito di accesso principale in cui i clienti vengono identificati prima dell'accesso agli altri domini, dovresti continuare a usare il CNAME di raccolta dati. Per una spiegazione dettagliata, vedi <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local">CNAME di raccolta dati e monitoraggio tra i domini</a>. </p> <p>Per configurare un CNAME con il servizio ID è necessario specificare due parametri aggiunti per il server di tracciamento, <span class="codeph">visitor.marketingCloudServer</span> e <span class="codeph">visitor.marketingCloudServerSecure</span>. </p> </td> 
+   <td colname="col2"> <p>Se monitori i visitatori su più domini e hai anche un sito di accesso principale in cui i clienti possono essere identificati prima che visitino altri domini, devi continuare a utilizzare il CNAME di raccolta dati. Per una spiegazione dettagliata, vedi <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local">CNAME di raccolta dati e monitoraggio tra i domini</a>. </p> <p>Per configurare un CNAME con il servizio ID è necessario specificare due parametri aggiunti per il server di tracciamento, <span class="codeph">visitor.marketingCloudServer</span> e <span class="codeph">visitor.marketingCloudServerSecure</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Un solo dominio </p> </td> 
-   <td colname="col2"> <p>L'utilizzo di un solo dominio consente di effettuare la migrazione da un CNAME di raccolta dati, se non desideri gestirlo più. Se il CNAME funziona correttamente, non è necessario cambiarlo. </p> <p>Se rimuovi il CNAME: </p> 
+   <td colname="col2"> <p>Se si utilizza un solo dominio, è possibile effettuare la migrazione da un CNAME di raccolta dati se non si desidera più gestirlo. Tuttavia, non è necessario apportare modifiche se il CNAME funziona correttamente. </p> <p>Se rimuovi il CNAME: </p> 
     <ul id="ul_12CDECEFC7BB41A18895B507CAA42315"> 
-     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Verifica che il nuovo server di monitoraggio sia <a href="https://marketing.adobe.com/resources/help/en_US/whitepapers/rdc/" format="https" scope="external">compatibile con RDC</a>. </li> 
+     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Verifica che il nuovo server di monitoraggio sia <a href="https://docs.adobe.com/content/help/en/analytics/technotes/rdc/regional-data-collection.html" format="https" scope="external">compatibile con RDC</a>. </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762">Passa dal CNAME a un server di monitoraggio RDC alcuni mesi prima della migrazione al servizio <span class="keyword">Experience Cloud ID</span>. </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i>Non</i> usare un server di monitoraggio <span class="codeph">*.2o7.net</span>. </li> 
-     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Per configurare la migrazione dei visitatori, contatta l'<a href="https://helpx.adobe.com/marketing-cloud/contact-support.html" format="https" scope="external">assistenza clienti</a>. In questo modo i conteggi dei visitatori rimarranno costanti. </li> 
+     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Per configurare la migrazione dei visitatori, contatta l'<a href="https://helpx.adobe.com/it/marketing-cloud/contact-support.html" format="https" scope="external">assistenza clienti</a>. In questo modo i conteggi dei visitatori rimarranno costanti. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -71,7 +71,7 @@ Se disponi di più domini che inviano dati alla *stessa suite di rapporti*, ti c
 
 ## Hai più file JavaScript di Analytics o esegui il monitoraggio di applicazioni o video Flash?
 
-Se disponi di più file JavaScript di Analytics o applicazioni e video Flash che inviano dati alla *stessa suite di rapporti*, devi configurare un periodo di tolleranza in modo che i visitatori possano continuare ad essere identificati in base all'ID Analytics durante il rollout del servizio [!DNL Experience Cloud] ID.
+Se disponi di più file JavaScript di Analytics o applicazioni e video Flash che inviano dati alla *stessa suite di rapporti*, devi configurare un periodo di tolleranza in modo che i visitatori possano continuare ad essere identificati in base all&#39;ID Analytics durante il rollout del servizio [!DNL Experience Cloud] ID.
 
 <table id="table_8A4EA063AF4345B69BC98537E2E702BA"> 
  <thead> 
@@ -87,18 +87,18 @@ Se disponi di più file JavaScript di Analytics o applicazioni e video Flash che
      <li id="li_4366CC8EB7A54A959568E3761ABBBF23">Più file JavaScript di Analytics </li> 
      <li id="li_B8A8132019EA48088E4F37E36F153D76">Altri metodi di raccolta dati </li> 
     </ul> </td> 
-   <td colname="col2"> <p>Ti consigliamo di configurare un periodo di tolleranza per il servizio ID visitatore, in modo da poter effettuare il rollout del servizio ID visitatore in ciascun file JavaScript e nelle librerie di raccolta dati. Consulta <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> Periodo di tolleranza per il servizio ID</a>. </p> </td> 
+   <td colname="col2"> <p>Devi configurare un periodo di tolleranza per il servizio ID visitatore in modo da poter distribuire il servizio ID visitatore a ciascun file JavaScript e ad altre librerie di raccolta dati. See <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> ID Service Grace Period</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Un unico file JavaScript di Analytics </p> </td> 
-   <td colname="col2"> <p>Puoi aggiornare il singolo file JavaScript per usare il servizio ID visitatore senza un periodo di tolleranza. </p> </td> 
+   <td colname="col1"> <p>Un singolo file JavaScript di Analytics </p> </td> 
+   <td colname="col2"> <p>Puoi aggiornare il singolo file JavaScript per utilizzare il servizio ID visitatore senza un periodo di tolleranza. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Utilizzi metodi di raccolta dati non supportati?
 
-Potresti dover aggiornare il metodo di monitoraggio dei link o effettuare una migrazione da Silverlight.
+Potrebbe essere necessario aggiornare il modo in cui monitori i collegamenti o effettua la migrazione da Sliverlight.
 
 <table id="table_A72AEB92F48345DD83F136B9989F4EF9"> 
  <thead> 
@@ -114,11 +114,11 @@ Potresti dover aggiornare il metodo di monitoraggio dei link o effettuare una mi
   </tr> 
   <tr> 
    <td colname="col1"> <p>Silverlight </p> </td> 
-   <td colname="col2"> <p>Se i visitatori possono accedere ai contenuti di Silverlight e ad altre sezioni del sito che utilizzano il servizio <span class="keyword">Experience Cloud ID</span>, devi effettuare la migrazione da Silverlight. Silverlight non è supportato dal servizio ID. </p> <p> Se esegui il monitoraggio di un lettore video basato su Silverlight, probabilmente il venditore può fornirti le API JavaScript da utilizzare. </p> </td> 
+   <td colname="col2"> <p>Se i visitatori possono accedere ai contenuti di Silverlight e ad altre sezioni del sito che utilizzano il servizio <span class="keyword">Experience Cloud ID</span>, devi effettuare la migrazione da Silverlight. Silverlight non è supportato dal servizio ID. </p> <p> Se si sta effettuando il tracciamento di un lettore video basato su Silverlight, è probabile che il fornitore fornisca le API JavaScript da utilizzare. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Tag immagine hardcoded </p> </td> 
-   <td colname="col2"> <p>Aggiorna i link hardcoded per usare JavaScript. </p> </td> 
+   <td colname="col2"> <p>Aggiornare i collegamenti hardcoded per l'uso di JavaScript. </p> </td> 
   </tr> 
  </tbody> 
 </table>
