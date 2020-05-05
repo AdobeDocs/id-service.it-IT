@@ -1,12 +1,12 @@
 ---
 description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2017.
-keywords: Servizio ID
+keywords: ID Service
 seo-description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2017.
 seo-title: Note sulla versione 2017
 title: Note sulla versione 2017
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2017.
 
-Queste modifiche vengono anche riportate nelle [note sulla versione di Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/). Per le note sulle versioni del servizio ID più datate, consulta le [note sulle versioni precedenti](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html) o i link in fondo a questa pagina.
+Queste modifiche vengono anche riportate nelle note [sulla versione di](https://docs.adobe.com/content/help/it-IT/release-notes/experience-cloud/current.html)Experience Cloud.
 
 >[!NOTE]
 >
@@ -50,8 +50,8 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 **Correzioni di bug e altre modifiche**
 
 * È stato corretto un bug relativo a Chrome a causa del quale il servizio ID generava un errore quando si faceva clic sul pulsante Indietro in tale browser.
-* Il servizio ID ora avvia di nuovo la sincronizzazione degli ID quando l'ID regione cambia nella risposta della chiamata dell'evento.
-* Alla documentazione è stata aggiunta la sezione  [Informativa sulla sicurezza dei contenuti e il servizio Experience Cloud Identity](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3) che spiega come inserire nella whitelist le chiamate ai domini Adobe utilizzati dal servizio ID.
+* Il servizio ID ora avvia di nuovo la sincronizzazione degli ID quando l’ID di regione cambia nella risposta della chiamata dell’evento.
+* Added new documentation, [Content Security Policies and the Experience Cloud Identity Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), that explains how to whitelist calls to Adobe domains used by the ID service.
 
 ## Versione 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
@@ -101,10 +101,10 @@ Luglio 2017
 
 **Correzioni di bug e altre modifiche**
 
-* È stato corretto un bug in VisitorAPI.js v2.2 a causa del quale il servizio ID e Target non potevano funzionare insieme in Internet Explorer.
-* È stato rivisto il codice per migliorare il modo in cui il servizio ID invia i dati all'iFrame di pubblicazione di destinazione, per ridurre l'utilizzo della CPU.
+* È stato corretto un bug in VisitorAPI.js v2.2 che impediva al servizio ID e a Target di funzionare insieme in Internet Explorer.
+* È stato rivisto il codice per migliorare il modo in cui il servizio ID invia i dati all&#39;iFrame di pubblicazione di destinazione, Questo consente di ridurre l&#39;utilizzo della CPU.
 
-## Versione 2.2 {#section-b7dee2495c29470e9b3a3132ec1fd951}
+## Version 2.2 {#section-b7dee2495c29470e9b3a3132ec1fd951}
 
 Data di rilascio: giugno 2017
 
@@ -188,11 +188,11 @@ Data di rilascio: febbraio 2017
 
 **Correzioni**
 
-È stato corretto un bug a causa del quale il servizio ID effettuava chiamate ridondanti al server per richiedere un ID invece di utilizzare l'ID registrato nel cookie AMCV. (MCID-296)
+È stato corretto un bug a causa del quale il servizio ID effettuava chiamate ridondanti al server per richiedere un ID invece di utilizzare l’ID memorizzato nel cookie AMCV. (MCID-296)
 
 **Nuova documentazione**
 
-[Utilizzo del recupero preventivo del DNS con diverse soluzioni e servizi di Experience Cloud `Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/en_US/mcloud/dns-prefetch.html)
+[Utilizzo del recupero preventivo del DNS con diverse soluzioni e servizi Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/more-resources/dns-prefetch.html)
 
 ## Versione 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
@@ -204,9 +204,9 @@ Gennaio 2017
 
 **Correzioni e miglioramenti**
 
-* È stato risolto un bug che impediva ad AppMeasurement di effettuare chiamate di tracciamento ad Analytics. (MCID-254, MCID-256, MCID-286)
-* È stato risolto un bug che impediva al servizio ID di generare immediatamente un errore in presenza di un ad blocker abilitato e configurato per escludere il dominio demdex.net. Si tratta di un bug raro e insolito, perché la maggior parte degli ad blocker non bloccano il dominio demdex.net. (MCID-233)
-* È stato risolto un bug causato da interazioni tra il codice del servizio ID e uno script personalizzato sul sito Web del cliente. Questo problema impediva a Internet Explorer 9 di caricare le pagine Web. (MCID-206)
+* È stato corretto un bug che impediva ad AppMeasurement di effettuare chiamate di tracciamento ad Analytics. (MCID-254, MCID-256, MCID-286)
+* È stato corretto un bug che impediva al servizio ID di generare immediatamente un errore se un visitatore aveva attivato un blocco degli annunci e tale blocco era configurato per escludere il dominio demdex.net. Si tratta di un bug raro e insolito perché la maggior parte degli strumenti di blocco annunci non bloccano il dominio demdex.net. (MCID-233)
+* È stato corretto un bug causato dalle interazioni tra il codice del servizio ID e uno script personalizzato sul sito Web di un cliente. Questo problema impediva a Internet Explorer 9 di caricare le pagine Web. (MCID-206)
 
 ## Anni precedenti {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
