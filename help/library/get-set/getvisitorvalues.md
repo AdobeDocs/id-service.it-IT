@@ -1,19 +1,19 @@
 ---
 description: Questa API asincrona restituisce per impostazione predefinita identificatori per Analytics, il servizio ID, la rinuncia alla raccolta di dati, la geolocalizzazione, e contenuti di metadati BLOB. Inoltre, è possibile controllare gli ID che dovranno essere restituiti con l'enum opzionale visitor.FIELDS.
-keywords: Servizio ID
+keywords: ID Service
 seo-description: Questa API asincrona restituisce per impostazione predefinita identificatori per Analytics, il servizio ID, la rinuncia alla raccolta di dati, la geolocalizzazione, e contenuti di metadati BLOB. Inoltre, è possibile controllare gli ID che dovranno essere restituiti con l'enum opzionale visitor.FIELDS.
 seo-title: getVisitorValues
 title: getVisitorValues
 uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
 
 # getVisitorValues{#getvisitorvalues}
 
-Questa API asincrona restituisce per impostazione predefinita identificatori per Analytics, il servizio ID, la rinuncia alla raccolta di dati, la geolocalizzazione, e contenuti di metadati BLOB. Inoltre, è possibile controllare gli ID che dovranno essere restituiti con l'enum opzionale visitor.FIELDS.
+Questa API asincrona restituisce per impostazione predefinita identificatori per Analytics, il servizio ID, la rinuncia alla raccolta di dati, la geolocalizzazione, e contenuti di metadati BLOB. Inoltre, è possibile controllare gli ID che dovranno essere restituiti con l&#39;enum opzionale visitor.FIELDS.
 
 Sommario:
 
@@ -30,14 +30,14 @@ Questa funzione utilizza la seguente sintassi (il corsivo rappresenta un segnapo
 
 Nei parametri della funzione:
 
-* ` *`callback`*` rappresenta il codice di callback che riceve l'ID restituito.
+* ` *`callback`*` rappresenta il codice di callback che riceve l&#39;ID restituito.
 * *(Facoltativo)* ` visitor.FIELDS. *`Tipo ID`*` è un enum che ti permette di specificare quali [valori ID](../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) vuoi che siano restituiti da questa funzione.
 
-Per maggiori informazioni, vedi i casi d'uso seguenti e le definizioni.
+Per maggiori informazioni, vedi i casi d&#39;uso seguenti e le definizioni.
 
-## Caso d'uso 1: richiesta di impostazione di dati predefiniti {#section-36a31683558742a5915db3a391e09f7b}
+## Caso d&#39;uso 1: richiesta di impostazione di dati predefiniti {#section-36a31683558742a5915db3a391e09f7b}
 
-Questo codice restituisce il set di dati standard. La richiesta e la risposta saranno simili a quelle di questi esempi.
+Questo codice restituisce il set di dati standard. La richiesta e la risposta potrebbero essere simili ai seguenti esempi.
 
 ```js
 //Call the ID service 
@@ -47,7 +47,7 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 visitor.getVisitorValues(visitorIdsCallback);
 ```
 
-Nella risposta di esempio predefinita, alcuni valori sono stati abbreviati per fini dimostrativi.
+Nella risposta di esempio predefinita, alcuni valori sono stati abbreviati a scopo dimostrativo.
 
 ```js
 //Formatted IDs in JSON response 
@@ -60,9 +60,9 @@ Nella risposta di esempio predefinita, alcuni valori sono stati abbreviati per f
 }
 ```
 
-## Caso d'uso 2: richiesta di impostazione di dati personalizzati {#section-467b2f4e513344c89b7332b05f6f59f3}
+## Caso d&#39;uso 2: richiesta di impostazione di dati personalizzati {#section-467b2f4e513344c89b7332b05f6f59f3}
 
-Questo codice utilizza un array facoltativo per restituire un set specifico di ID usando `visitor.FIELDS` l'enum. In questo caso, vogliamo solo l'Experience Cloud ID (MCID) e l'Analytics ID (MCAID) del visitatore. La richiesta e la risposta saranno simili a quelle di questi esempi.
+Questo codice utilizza un array facoltativo per restituire un set specifico di ID usando `visitor.FIELDS` l&#39;enum. In questo caso, vogliamo solo l’Experience Cloud ID (MCID) e l’Analytics ID (MCAID) del visitatore. La richiesta e la risposta potrebbero essere simili ai seguenti esempi.
 
 ```js
 //Call the ID service 
@@ -72,7 +72,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIELDS.MCAID]);
 ```
 
-La risposta di esempio personalizzata restituisce solo quegli ID specificati nella richiesta.
+La risposta di esempio personalizzata restituisce solo gli ID specificati nella richiesta.
 
 ```js
 //Formatted IDs in JSON response 
@@ -84,7 +84,7 @@ La risposta di esempio personalizzata restituisce solo quegli ID specificati nel
 
 ## Parametri di risposta definiti {#section-4c4c300167694c6fbff1d6c612f372b5}
 
-Nella seguente tabella sono elencati e definiti i parametri di risposta. Questi sono anche tutti i valori `visitor.FIELDS` nell'enum. Nota, questo metodo restituisce una stringa vuota se non ci sono valori per una particolare variabile.
+Nella seguente tabella sono elencati e definiti i parametri di risposta. Questi sono anche tutti i valori `visitor.FIELDS` nell&#39;enum. Nota: questo metodo restituisce una stringa vuota se non sono presenti valori per una particolare variabile.
 
 <table id="table_32D0FEEA76CE4F298EED4B8F5C644232"> 
  <thead> 
@@ -100,7 +100,7 @@ Nella seguente tabella sono elencati e definiti i parametri di risposta. Questi 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>L'ID della regione di raccolta dati. Questo è un identificatore numerico della posizione geografica di un particolare datacenter del servizio ID. </p> <p>Consulta <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external">ID regioni DCS, posizioni e nomi host</a> e <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a> </p> </td> 
+   <td colname="col2"> <p>L'ID della regione di raccolta dati. Identificatore numerico per la posizione geografica di un particolare datacenter del servizio ID. </p> <p>Consulta <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">ID regioni DCS, posizioni e nomi host</a> e <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
@@ -108,11 +108,11 @@ Nella seguente tabella sono elencati e definiti i parametri di risposta. Questi 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>L'Experience Cloud ID del visitatore. </p> <p>Consulta  <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookie e il servizio Experience Cloud Identity </a>. </p> </td> 
+   <td colname="col2"> <p>L’Experience Cloud ID del visitatore. </p> <p>See <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookies and the Experience Cloud Identity Service </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
-   <td colname="col2"> <p>Un flag che indica se un visitatore ha rinunciato alla raccolta dei dati. </p> <p>I valori includono: </p> <p> 
+   <td colname="col2"> <p>Flag che indica se un visitatore ha rinunciato alla raccolta dati. </p> <p>I valori includono: </p> <p> 
      <ul id="ul_E82431DE12B449F8822499364B363798"> 
       <li id="li_2BAB7C15A38A408E8FC4B85E70B66E46"> <span class="codeph"> 'isoptedout-true'</span>: un visitatore ha rinunciato alla raccolta dei dati. </li> 
       <li id="li_BB80AE4CEBC44166BC04428B212FEF51"> <span class="codeph"> 'isoptedout-false'</span>: un visitatore non ha rinunciato alla raccolta dei dati. </li> 
