@@ -1,19 +1,22 @@
 ---
-description: Questa implementazione permette ai clienti di usare il servizio ID su dispositivi che non possono accettare o lavorare con il nostro codice JavaScript o SDK. Tra questi dispositivi sono incluse consolle di gioco, smart TV o altri apparecchi dotati di Internet. Fare riferimento a questa sezione per sintassi, esempi di codice e definizioni.
+description: Questa implementazione permette ai clienti di usare il servizio ID su dispositivi che non possono accettare o lavorare con il nostro codice JavaScript o SDK. Tra questi dispositivi sono incluse consolle di gioco, smart TV o altri apparecchi dotati di Internet. Fai riferimento a questa sezione per sintassi, esempi di codice e definizioni.
 keywords: ID Service
-seo-description: Questa implementazione permette ai clienti di usare il servizio ID su dispositivi che non possono accettare o lavorare con il nostro codice JavaScript o SDK. Tra questi dispositivi sono incluse consolle di gioco, smart TV o altri apparecchi dotati di Internet. Fare riferimento a questa sezione per sintassi, esempi di codice e definizioni.
+seo-description: Questa implementazione permette ai clienti di usare il servizio ID su dispositivi che non possono accettare o lavorare con il nostro codice JavaScript o SDK. Tra questi dispositivi sono incluse consolle di gioco, smart TV o altri apparecchi dotati di Internet. Fai riferimento a questa sezione per sintassi, esempi di codice e definizioni.
 seo-title: Integrazione diretta con il servizio Experience Cloud Identity
 title: Integrazione diretta con il servizio Experience Cloud Identity
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '712'
+ht-degree: 100%
 
 ---
 
 
 # Integrazione diretta con il servizio Experience Cloud Identity {#direct-integration-with-the-experience-cloud-id-service}
 
-Questa implementazione permette ai clienti di usare il servizio ID su dispositivi che non possono accettare o lavorare con il nostro codice JavaScript o SDK. Tra questi dispositivi sono incluse consolle di gioco, smart TV o altri apparecchi dotati di Internet. Fare riferimento a questa sezione per sintassi, esempi di codice e definizioni.
+Questa implementazione permette ai clienti di usare il servizio ID su dispositivi che non possono accettare o lavorare con il nostro codice JavaScript o SDK. Tra questi dispositivi sono incluse consolle di gioco, smart TV o altri apparecchi dotati di Internet. Fai riferimento a questa sezione per sintassi, esempi di codice e definizioni.
 
 ## Sintassi {#section-a4754afec5ad40b6be00d6f1011d68bb}
 
@@ -21,9 +24,9 @@ I dispositivi che non possono usare le librerie di codici VisitorAPI.js o SDK po
 
 ![](assets/directSyntax.png)
 
-In questo esempio di sintassi, il `d_` prefisso identifica le coppie chiave-valore nella chiamata come variabile a livello di sistema. Puoi trasmettere una serie di `d_` parametri al servizio ID, ma fai particolare attenzione alle coppie chiave-valore mostrate nel codice seguente. For more information about other variables, see [Supported Attributes for DCS API calls](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
+In questo esempio di sintassi, il `d_` prefisso identifica le coppie chiave-valore nella chiamata come variabile a livello di sistema. Puoi trasmettere una serie di `d_` parametri al servizio ID, ma fai particolare attenzione alle coppie chiave-valore mostrate nel codice seguente. Per ulteriori informazioni su altre variabili, consulta [Attributi supportati per le chiamate API DCS](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
 
-Il servizio ID supporta le chiamate HTTP e HTTPS. Utilizzare HTTPS per trasmettere dati da una pagina protetta.
+Il servizio ID supporta le chiamate HTTP e HTTPS. Utilizza HTTPS per trasmettere dati da una pagina protetta.
 
 ## Richiesta di esempio {#section-26302b8851704888b6f8e6b2071bcdb0}
 
@@ -58,7 +61,7 @@ Il servizio ID restituisce i dati in un oggetto JSON come mostrato di seguito. L
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dpm.demdex.net</span> </p> </td> 
-   <td colname="col2"> <p>Un dominio legacy controllato da <span class="keyword">Adobe</span>. Vedi <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Informazioni sulle chiamate al dominio demdex</a>. </p> </td> 
+   <td colname="col2"> <p>Un dominio legacy controllato da <span class="keyword">Adobe</span>. Vedi <a href="https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Informazioni sulle chiamate al dominio demdex</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
@@ -66,11 +69,11 @@ Il servizio ID restituisce i dati in un oggetto JSON come mostrato di seguito. L
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>L'ID organizzazione Experience Cloud. Per maggiori informazioni su come trovare questo ID vedere,  <a href="../reference/requirements.md" format="dita" scope="local"> Requisiti del servizio Experience Cloud Identity</a>. </p> </td> 
+   <td colname="col2"> <p>L'ID organizzazione Experience Cloud. Per maggiori informazioni su come trovare questo ID vedere, <a href="../reference/requirements.md" format="dita" scope="local"> Requisiti del servizio Experience Cloud Identity</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
-   <td colname="col2"> <p>Un parametro facoltativo che trasmette l'ID del fornitore dati(DPID), l'ID utente univoco (DPUUID) e un <a href="../reference/authenticated-state.md" format="dita" scope="local">ID dello stato di autenticazione</a> al servizio ID. Come mostrato nell'esempio di codice, separata il DPID e il DPUUID con il carattere di controllo non stampabile, <span class="codeph">%01</span>. </p> <p> <b>DPID e DPUUID</b> </p> <p>Nel parametro <span class="codeph">d_cid</span>, assegna ogni combinazione di DPID e DPUUID allo stesso parametro <span class="codeph">d_cid</span>. Ciò ti consente di restituire set di ID multipli in un'unica richiesta. Inoltre, separa il DPID, il DPUUID e il flag di autenticazione opzionale con il carattere di controllo non stampabile, <span class="codeph">%01</span>. Negli esempi seguenti, gli ID del fornitore e dell'utente sono in <b>grassetto</b>. </p> 
+   <td colname="col2"> <p>Un parametro facoltativo che trasmette l'ID del fornitore dati (DPID), l'ID utente univoco (DPUUID) e un <a href="../reference/authenticated-state.md" format="dita" scope="local">ID dello stato di autenticazione</a> al servizio ID. Come mostrato nell'esempio di codice, separata il DPID e il DPUUID con il carattere di controllo non stampabile, <span class="codeph">%01</span>. </p> <p> <b>DPID e DPUUID</b> </p> <p>Nel parametro <span class="codeph">d_cid</span>, assegna ogni combinazione di DPID e DPUUID allo stesso parametro <span class="codeph">d_cid</span>. Ciò ti consente di restituire set di ID multipli in un'unica richiesta. Inoltre, separa il DPID, il DPUUID e il flag di autenticazione opzionale con il carattere di controllo non stampabile, <span class="codeph">%01</span>. Negli esempi seguenti, gli ID del fornitore e dell'utente sono in <b>grassetto</b>. </p> 
     <ul id="ul_2E19D837296B40E9ACD096495CF711C5"> 
      <li id="li_5B94B057654440B99B989BA60E4ED053">Sintassi: <span class="codeph">...d_cid=DPID%01DPUUID%01authentication state...</span> </li> 
      <li id="li_B07833EF51D54F088574B7B7F9FB841A">Esempio: <span class="codeph">...d_cid=123%01456%011...</span> </li> 
@@ -88,7 +91,7 @@ Il servizio ID restituisce i dati in un oggetto JSON come mostrato di seguito. L
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>Il servizio ID è un sistema distribuito geograficamente e bilanciato in base al carico. L'ID identifica la regione del centro dati che gestisce la chiamata. Consulta <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">ID regioni DCS, posizioni e nomi host</a>. </p> </td> 
+   <td colname="col2"> <p>Il servizio ID è un sistema distribuito geograficamente e bilanciato in base al carico. L'ID identifica la regione del centro dati che gestisce la chiamata. Consulta <a href="https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">ID regioni DCS, posizioni e nomi host</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
@@ -96,7 +99,7 @@ Il servizio ID restituisce i dati in un oggetto JSON come mostrato di seguito. L
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_blob</span> </p> </td> 
-   <td colname="col2"> <p>Un pezzo crittografato di metadati JavaScript. I vincoli di dimensione limitano il BLOB a 512 byte o meno. </p> </td> 
+   <td colname="col2"> <p>Un pezzo crittografato di metadati JavaScript. I vincoli di dimensione limitano il blob a un massimo di 512 byte. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_ver</span> </p> </td> 
@@ -119,7 +122,7 @@ Alcuni parametri di risposta fanno parte della richiesta e sono stati definiti n
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> id_sync_ttl</span> </p> </td> 
-   <td colname="col2"> <p>L'intervallo di ri-sincronizzazione, specificato in secondi. L’intervallo predefinito è 604.800 secondi (7 giorni). </p> </td> 
+   <td colname="col2"> <p>L'intervallo di ri-sincronizzazione, specificato in secondi. L’intervallo predefinito è di 604.800 secondi (7 giorni). </p> </td> 
   </tr> 
  </tbody> 
 </table>
