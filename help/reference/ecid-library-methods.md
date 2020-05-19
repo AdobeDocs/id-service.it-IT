@@ -3,8 +3,11 @@ title: Metodi della libreria ECID in ambito Safari ITP
 seo-title: Metodi della libreria ECID in ambito Safari ITP
 description: Documentazione della libreria Adobe ECID (servizio ID).
 seo-description: Documentazione della libreria Adobe ECID (servizio ID).
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '1090'
+ht-degree: 100%
 
 ---
 
@@ -39,7 +42,7 @@ In questa sezione verranno aggiunte nuove risposte alle domande più frequenti m
 
 Quando vengono creati metodi aggiuntivi per il monitoraggio in Safari, questi verranno aggiunti come riferimento a questa pagina.
 
->[!NOTE] *ECID* = *MID* = *MCID* nell&#39;intera documentazione di seguito.
+>[!NOTE] *ECID* = *MID* = *MCID* in tutta la documentazione di seguito.
 
 Di seguito sono riportate tutte le iniziative relative all&#39;utilizzo della libreria ECID e ITP.
 
@@ -57,7 +60,7 @@ Quando viene effettuata una richiesta ID a demdex.net e viene recuperato un ECID
 
 Questo nuovo cookie `s_ecid` segue lo stesso stato di rinuncia del cookie AMCV. Se il codice ECID viene letto dal cookie `s_ecid`, demdex viene sempre chiamato per recuperare lo stato di rinuncia più recente per tale ID e archiviato nel cookie AMCV.
 
-Inoltre, se il tuo utente ha rinunciato al tracciamento da parte di Analytics tramite questo [metodo](https://docs.adobe.com/content/help/en/analytics/implementation/js/opt-out.html), questo cookie `s_ecid` verrà eliminato.
+Inoltre, se il tuo utente ha rinunciato al tracciamento da parte di Analytics tramite questo [metodo](https://docs.adobe.com/content/help/it-IT/analytics/implementation/js/opt-out.html), questo cookie `s_ecid` verrà eliminato.
 
 Il nome del server di monitoraggio deve essere fornito alla libreria VisitorJS quando si inizializza la libreria utilizzando trackingServer o trackingServerSecure. Questo deve corrispondere alla configurazione di trackingServer nelle configurazioni di Analytics.
 
@@ -77,7 +80,7 @@ Con questa funzione puoi condividere l&#39;ECID di un visitatore tra più domini
 
 * Invece di inviare ad Adobe la richiesta dell&#39;ID di quel visitatore, il codice del servizio ID sul dominio di destinazione estrae l&#39;identificatore ECID dall&#39;URL.
 
-   Questa richiesta include l&#39;ID del cookie di terza parte, che non è disponibile in questo caso.
+   Questa richiesta include l’ID del cookie di terza parte, che in questo caso non è disponibile.
 
 * Il codice del servizio ID sulla pagina di destinazione usa quindi questo stesso identificatore ECID per tenere traccia del visitatore.
 
