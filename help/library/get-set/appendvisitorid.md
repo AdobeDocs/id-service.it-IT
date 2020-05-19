@@ -5,13 +5,16 @@ seo-description: Con questa funzione puoi condividere l'Experience Cloud ID di u
 seo-title: appendVisitorIDsTo (Monitoraggio interdominio)
 title: appendVisitorIDsTo (Monitoraggio interdominio)
 uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '446'
+ht-degree: 100%
 
 ---
 
 
-# appendVisitorIDsTo (Monitoraggio interdominio){#appendvisitoridsto-cross-domain-tracking}
+# appendVisitorIDsTo (Monitoraggio interdominio) {#appendvisitoridsto-cross-domain-tracking}
 
 Con questa funzione puoi condividere l&#39;Experience Cloud ID di un visitatore tra più domini quando i browser bloccano i cookie di terze parti. Per usare questa funzione, devi avere implementato il servizio ID sui domini di sorgente e di destinazione. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
 
@@ -25,18 +28,18 @@ Sommario:
 
 ## Tieni traccia dei visitatori su più domini quando i browser bloccano i cookie di terze parti {#section-7251d88befd440b4b79520e33c5aa44a}
 
-Il servizio ID scrive un cookie di prime e terze parti nel browser quando una persona visita il sito (consulta [Cookie e il servizio Experience Cloud Identity](../../introduction/cookies.md)). Il cookie di prima parte contiene il MID, un ID univoco che identifica quel visitatore specifico. Il cookie di terza parte contiene un altro ID usato dal servizio ID per generare il MID. Quando un browser blocca questo cookie di terza parte, il servizio ID non può:
+Il servizio ID scrive un cookie di prime e terze parti nel browser quando una persona visita il sito (consulta [Cookie e il servizio Experience Cloud Identity](../../introduction/cookies.md)). Il cookie di prima parte contiene il MID, un ID univoco che identifica quel visitatore specifico. Il cookie di terza parte contiene un altro ID usato dal servizio ID per generare il MID. Quando un browser blocca il cookie di terza parte, il servizio ID non può:
 
 * Rigenerare l’ID univoco per quel visitatore del sito quando si sposta su un altro dominio.
-* Consente di tenere traccia dei visitatori tra domini diversi di proprietà della tua organizzazione.
+* Tenere traccia dei visitatori su domini diversi di proprietà della tua organizzazione.
 
-Per risolvere questo problema, implementa ` Visitor.appendVisitorIDsTo( *`url`*)`. Questa proprietà consente al servizio ID di tenere traccia dei visitatori su più domini anche se il loro browser blocca i cookie di terze parti. Funziona così:
+Per risolvere questo problema, implementa ` Visitor.appendVisitorIDsTo( *`url`*)`. Questa proprietà consente al servizio ID di tenere traccia dei visitatori su più domini anche se il loro browser blocca i cookie di terze parti. Ecco come funziona:
 
 * Quando un visitatore esplora gli altri domini, l&#39;` Visitor.appendVisitorIDsTo( *`url`*)` aggiunge il MID come parametro di query nell&#39;URL reindirizzandolo dal dominio originale al dominio di destinazione.
 * Invece di inviare ad Adobe la richiesta dell&#39;ID di quel visitatore, il codice del servizio ID sul dominio di destinazione estrae l&#39;identificatore MID dall&#39;URL. Questa richiesta include l’ID del cookie di terza parte, che in questo caso non è disponibile.
-* Il codice del servizio ID sulla pagina di destinazione utilizza l’identificatore MID passato per monitorare il visitatore.
+* Il codice del servizio ID sulla pagina di destinazione usa il MID passato per tenere traccia del visitatore.
 
-Per informazioni dettagliate, consultate l’esempio di codice.
+Per informazioni dettagliate consulta l’esempio di codice.
 
 ## Aggiungi l&#39;esempio di codice ID visitatore {#section-62d55f7f986542b0b9238e483d50d7b0}
 
@@ -78,8 +81,8 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
    <td colname="col1"> <p> <b>SDK</b> </p> </td> 
    <td colname="col2"> 
     <ul id="ul_9D7933FF68EE4C71BAE999B3747F8398"> 
-     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://docs.adobe.com/content/help/en/mobile-services/android/experience-cloud-android/mc-methods.html" format="https" scope="external"> Metodi del servizio ID Android </a> </li> 
-     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://docs.adobe.com/content/help/en/mobile-services/ios/exp-cloud-ios/mc-methods.html" format="https" scope="external"> Metodi del servizio ID iOS </a> </li> 
+     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://docs.adobe.com/content/help/it-IT/mobile-services/android/experience-cloud-android/mc-methods.html" format="https" scope="external"> Metodi del servizio ID Android </a> </li> 
+     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://docs.adobe.com/content/help/it-IT/mobile-services/ios/exp-cloud-ios/mc-methods.html" format="https" scope="external"> Metodi del servizio ID iOS </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
