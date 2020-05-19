@@ -5,8 +5,11 @@ seo-description: Versioni future, aggiornamenti o modifiche al servizio Experien
 seo-title: Note sulla versione 2016
 title: Note sulla versione 2016
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '1162'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2016.
 
-Queste modifiche vengono anche riportate nelle note [sulla versione di](https://docs.adobe.com/content/help/it-IT/release-notes/experience-cloud/current.html)Experience Cloud.
+Queste modifiche vengono riportate anche nelle [note sulla versione di Experience Cloud](https://docs.adobe.com/content/help/it-IT/release-notes/experience-cloud/current.html).
 
 ## Versione 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
@@ -47,7 +50,7 @@ Ottobre 2016
 
 **Correzioni e miglioramenti**
 
-* È stato corretto un bug a causa del quale gli ID utente univoci di Audience Manager (AAMUUID) venivano trasferiti come Experience Cloud ID al servizio ID.
+* È stato corretto un bug che riportava al servizio ID gli ID utente univoci di Audience Manager (AAMUUID) come Experience Cloud ID.
 * Se il time-to-live (TTL) di un cookie AMCV è scaduto, il servizio ID restituirà comunque tali informazioni al server purché il cookie non contenga un Experience Cloud ID. Dopo questa chiamata, il servizio ID effettua una chiamata asincrona per aggiornare il cookie. Ciò consente di migliorare le prestazioni perché il servizio ID non deve attendere una risposta del server. Può utilizzare i valori del cookie AMCV esistenti e richiedere un aggiornamento.
 * Il servizio ID sincronizza automaticamente gli Experience Cloud ID (MID) con Adobe Media Optimizer e altri domini interni di Adobe direttamente sulla pagina. La sincronizzazione automatica è abilitata per tutti gli account esistenti e nuovi. Questo consente di migliorare le percentuali di corrispondenza per Media Optimizer. Applicabile a VisitorAPI.js versione 1.8 o versioni successive. Consultare anche [Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
@@ -81,7 +84,7 @@ Rivisto: [Requisiti del servizio Experience Cloud Identity](../reference/require
 
 **Problemi noti**
 
-I clienti che utilizzano sulla stessa pagina il codice DIL di [!DNL Audience Manager] e il codice visitorAPI.js devono impostare la variabile DIL `secureDataCollection= false`. Vedere [secureDataCollection](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-overview.html).
+I clienti che utilizzano sulla stessa pagina il codice DIL di [!DNL Audience Manager] e il codice visitorAPI.js devono impostare la variabile DIL `secureDataCollection= false`. Consulta [secureDataCollection](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/dil-api/dil-overview.html).
 
 ## Versione 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
@@ -100,7 +103,7 @@ Luglio 2016
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Condivisione risorse tra le origini (CORS) </p> </td> 
+   <td colname="col1"> <p>Condivisione delle risorse multiorigine (CORS) </p> </td> 
    <td colname="col2"> <p>CORS consente ai browser di richiedere risorse da un dominio diverso da quello corrente. Il servizio Experience Cloud Identity supporta gli standard CORS per consentire le richieste di risorse tra diverse origini lato client. Il servizio ID ripristina le richieste JSONP sui browser che non supportano CORS. </p> <p>Vedi: </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
      <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local">Supporto per CORS nel servizio Experience Cloud Identity</a> </li> 
@@ -114,7 +117,7 @@ Luglio 2016
 * È stato aggiunto il parametro `d_fieldgroup` alle chiamate per la sincronizzazione ID verso `dpm.demdex.net`. Questo nuovo parametro viene utilizzato per la risoluzione interna dei problemi e per il debug.
 
 * È stato aggiunto un attributo titolo all’iFrame del servizio ID. Un titolo nell&#39;iFrame consente alle utilità per la lettura dello schermo di fornire informazioni sulla pagina agli utenti che necessitano di assistenza per interagire con i contenuti online. L’attributo titolo dell’iFrame è impostato su `Adobe ID Syncing iFrame`.
-* È stato aggiunto `idSyncAttachIframeASAP: true` come flag opzionale impostabile nella funzione `Visitor.getInstance`. Quando è `true`, il servizio ID carica l&#39;iFrame di sincronizzazione ID il più rapidamente possibile. Questa funzione è stata progettata per migliorare le percentuali di corrispondenza della sincronizzazione ID. Per impostazione predefinita, il servizio ID carica l’iFrame al caricamento della finestra. Consulta [Variabili della funzione Visitor.getInstance](../library/function-vars/function-vars.md).
+* È stato aggiunto `idSyncAttachIframeASAP: true` come flag opzionale impostabile nella funzione `Visitor.getInstance`. Quando è `true`, il servizio ID carica l&#39;iFrame di sincronizzazione ID il più rapidamente possibile. Questa funzione è stata progettata per migliorare le percentuali di corrispondenza della sincronizzazione ID. Per impostazione predefinita il servizio ID carica l’iFrame al caricamento della finestra. Consulta [Variabili della funzione Visitor.getInstance](../library/function-vars/function-vars.md).
 
 * È stato corretto un problema relativo a una funzione di callback che bloccava AppMeasurement in un ciclo infinito.
 * Il valore predefinito `loadTimeout` è stato modificato da 500 a 30.000 millisecondi. Consulta [Variabili della funzione Visitor.getInstance](../library/function-vars/function-vars.md).
@@ -156,7 +159,7 @@ Giugno 2016
 
 **Correzioni**
 
-L’API visitatore non forza più una chiamata di risincronizzazione supplementare con Audience Manager quando non è presente un ID visitatore Analytics legacy.
+L’API del visitatore non forza più una chiamata di risincronizzazione aggiuntiva con Audience Manager quando manca l’ID visitatore di Analytics legacy.
 
 ## Versione 1.5.x {#section-a62ae48275324058b57edf66ee5a579f}
 
@@ -189,7 +192,7 @@ Marzo 2016
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Supporto per il rifiuto </p> </td> 
+   <td colname="col1"> <p>Supporto per la disattivazione </p> </td> 
    <td colname="col2"> <p>Il servizio <span class="keyword">Experience Cloud</span> ID supporta le richieste di disattivazione del visitatore. </p> </td> 
   </tr> 
   <tr> 
@@ -203,7 +206,7 @@ Marzo 2016
 
 * [Implementazione del servizio Experience Cloud Identity per ](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd): nuova procedura che descrive come configurare il servizio ID con [!DNL Analytics].
 
-* [Decisioni relative alla migrazione al servizio Experience Cloud Identity](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257): testo aggiornato per migliorarne la chiarezza. Se si utilizza un solo dominio, è possibile effettuare la migrazione da un CNAME di raccolta dati se non si desidera più gestirlo. Tuttavia, non è necessario apportare modifiche se il CNAME funziona correttamente.
+* [Decisioni relative alla migrazione al servizio Experience Cloud Identity](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257): testo aggiornato per migliorarne la chiarezza. Se usi un solo dominio puoi effettuare la migrazione da un CNAME di raccolta dati se non desideri più gestirlo. Tuttavia, questo cambiamento non è necessario se il CNAME funziona correttamente.
 
 ## Versione 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 
