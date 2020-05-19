@@ -5,13 +5,16 @@ seo-description: getInstance restituisce un ID visitatore per l'ID organizzazion
 seo-title: getInstance
 title: getInstance
 uuid: 259b88a6-e3d0-4aab-b935-566099bdab98
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '254'
+ht-degree: 100%
 
 ---
 
 
-# getInstance{#getinstance}
+# getInstance {#getinstance}
 
 getInstance restituisce un ID visitatore per l&#39;ID organizzazione Experience Cloud specificato. Questo è necessario per inizializzare l’ID visitatore fornito ad AppMeasurement tramite s.visitor.
 
@@ -33,7 +36,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 >[!CAUTION]
 >
->*Non* creare un&#39;istanza della funzione Visitatore con `var visitor = new Visitor`. Devi usare la chiamata di funzione appropriata indicata qui. Applies to [!UICONTROL VisitorAPI.js] code library v3.0 or higher.
+>*Non* creare un&#39;istanza della funzione Visitatore con `var visitor = new Visitor`. Devi usare la chiamata di funzione appropriata indicata qui. Si applica alla versione 3.0 o successiva della libreria del codice di [!UICONTROL VisitorAPI.js].
 
 **ActionScript / Flash**
 
@@ -51,7 +54,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-Se `getInstance` non rileva un&#39;istanza esistente, viene creata e restituita una nuova istanza. È simile alla [`s_gi()` funzione ](https://docs.adobe.com/content/help/en/analytics/implementation/vars/functions/s-gi.html) in [!DNL AppMeasurement].
+Se `getInstance` non rileva un&#39;istanza esistente, viene creata e restituita una nuova istanza. È simile alla [funzione `s_gi()`](https://docs.adobe.com/content/help/it-IT/analytics/implementation/vars/functions/s-gi.html) in [!DNL AppMeasurement].
 
 **Uso comune**
 
