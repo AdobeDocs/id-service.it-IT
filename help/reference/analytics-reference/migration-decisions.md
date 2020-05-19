@@ -5,8 +5,11 @@ seo-description: Prima di implementare il servizio Experience Cloud Identity, è
 seo-title: Decisioni relative alla migrazione al servizio Experience Cloud Identity
 title: Decisioni relative alla migrazione al servizio Experience Cloud Identity
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '689'
+ht-degree: 100%
 
 ---
 
@@ -42,7 +45,7 @@ Molti clienti possono effettuare la migrazione da un CNAME di raccolta dati nell
 
 ## Se hai un CNAME di raccolta dati, hai più domini?
 
-Se hai più domini che inviano dati alla *stessa suite* di rapporti, ti consigliamo di effettuare la raccolta dati con un CNAME. Questo consente di tenere traccia dei visitatori tra i domini. Se raccoglii dati su un solo dominio, non c&#39;è alcun vantaggio nel mantenere un CNAME di raccolta dati.
+Se hai più domini che inviano dati alla *stessa suite di rapporti*, ti consigliamo di effettuare la raccolta dati con un CNAME. Questo consente di tenere traccia dei visitatori su più domini. Se raccogli i dati su un solo dominio non c’è alcun vantaggio nel mantenere un CNAME di raccolta dati.
 
 <table id="table_D132BCA243E54657AEC930559343FDD3"> 
  <thead> 
@@ -54,13 +57,13 @@ Se hai più domini che inviano dati alla *stessa suite* di rapporti, ti consigli
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Più domini </p> </td> 
-   <td colname="col2"> <p>Se monitori i visitatori su più domini e hai anche un sito di accesso principale in cui i clienti possono essere identificati prima che visitino altri domini, devi continuare a utilizzare il CNAME di raccolta dati. Per una spiegazione dettagliata, vedi <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local">CNAME di raccolta dati e monitoraggio tra i domini</a>. </p> <p>Per configurare un CNAME con il servizio ID è necessario specificare due parametri aggiunti per il server di tracciamento, <span class="codeph">visitor.marketingCloudServer</span> e <span class="codeph">visitor.marketingCloudServerSecure</span>. </p> </td> 
+   <td colname="col2"> <p>Se tieni traccia dei visitatori su più domini e hai anche un sito di accesso principale in cui i clienti possono essere identificati prima che visitino altri domini dovresti continuare a utilizzare il CNAME di raccolta dati. Per una spiegazione dettagliata, vedi <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local">CNAME di raccolta dati e monitoraggio tra i domini</a>. </p> <p>Per configurare un CNAME con il servizio ID è necessario specificare due parametri aggiunti per il server di tracciamento, <span class="codeph">visitor.marketingCloudServer</span> e <span class="codeph">visitor.marketingCloudServerSecure</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Un solo dominio </p> </td> 
-   <td colname="col2"> <p>Se si utilizza un solo dominio, è possibile effettuare la migrazione da un CNAME di raccolta dati se non si desidera più gestirlo. Tuttavia, non è necessario apportare modifiche se il CNAME funziona correttamente. </p> <p>Se rimuovi il CNAME: </p> 
+   <td colname="col2"> <p>Se usi un solo dominio puoi effettuare la migrazione da un CNAME di raccolta dati se non desideri più gestirlo. Tuttavia, questo cambiamento non è necessario se il CNAME funziona correttamente. </p> <p>Se rimuovi il CNAME: </p> 
     <ul id="ul_12CDECEFC7BB41A18895B507CAA42315"> 
-     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Verifica che il nuovo server di monitoraggio sia <a href="https://docs.adobe.com/content/help/en/analytics/technotes/rdc/regional-data-collection.html" format="https" scope="external">compatibile con RDC</a>. </li> 
+     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Verifica che il nuovo server di monitoraggio sia <a href="https://docs.adobe.com/content/help/it-IT/analytics/technotes/rdc/regional-data-collection.html" format="https" scope="external">compatibile con RDC</a>. </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762">Passa dal CNAME a un server di monitoraggio RDC alcuni mesi prima della migrazione al servizio <span class="keyword">Experience Cloud ID</span>. </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i>Non</i> usare un server di monitoraggio <span class="codeph">*.2o7.net</span>. </li> 
      <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Per configurare la migrazione dei visitatori, contatta l'<a href="https://helpx.adobe.com/it/marketing-cloud/contact-support.html" format="https" scope="external">assistenza clienti</a>. In questo modo i conteggi dei visitatori rimarranno costanti. </li> 
@@ -87,7 +90,7 @@ Se disponi di più file JavaScript di Analytics o applicazioni e video Flash che
      <li id="li_4366CC8EB7A54A959568E3761ABBBF23">Più file JavaScript di Analytics </li> 
      <li id="li_B8A8132019EA48088E4F37E36F153D76">Altri metodi di raccolta dati </li> 
     </ul> </td> 
-   <td colname="col2"> <p>Devi configurare un periodo di tolleranza per il servizio ID visitatore in modo da poter distribuire il servizio ID visitatore a ciascun file JavaScript e ad altre librerie di raccolta dati. See <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> ID Service Grace Period</a>. </p> </td> 
+   <td colname="col2"> <p>Devi configurare un periodo di tolleranza per il servizio ID visitatore in modo da poter effettuare il rollout del servizio ID visitatore in ciascun file JavaScript e in altre librerie di raccolta dati. Consulta <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">Periodo di tolleranza del servizio ID</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Un singolo file JavaScript di Analytics </p> </td> 
@@ -96,9 +99,9 @@ Se disponi di più file JavaScript di Analytics o applicazioni e video Flash che
  </tbody> 
 </table>
 
-## Utilizzi metodi di raccolta dati non supportati?
+## Usi metodi di raccolta dati non supportati?
 
-Potrebbe essere necessario aggiornare il modo in cui monitori i collegamenti o effettua la migrazione da Sliverlight.
+Potrebbe essere necessario aggiornare il modo in cui tieni traccia dei link o effettuare la migrazione da Sliverlight.
 
 <table id="table_A72AEB92F48345DD83F136B9989F4EF9"> 
  <thead> 
@@ -110,15 +113,15 @@ Potrebbe essere necessario aggiornare il modo in cui monitori i collegamenti o e
  <tbody> 
   <tr> 
    <td colname="col1"> <p>JavaScript e/o Flash </p> </td> 
-   <td colname="col2"> <p>None. Il servizio <span class="keyword">Experience Cloud ID</span> supporta questi metodi di raccolta dei dati. </p> </td> 
+   <td colname="col2"> <p>Nessuno. Il servizio <span class="keyword">Experience Cloud ID</span> supporta questi metodi di raccolta dei dati. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Silverlight </p> </td> 
-   <td colname="col2"> <p>Se i visitatori possono accedere ai contenuti di Silverlight e ad altre sezioni del sito che utilizzano il servizio <span class="keyword">Experience Cloud ID</span>, devi effettuare la migrazione da Silverlight. Silverlight non è supportato dal servizio ID. </p> <p> Se si sta effettuando il tracciamento di un lettore video basato su Silverlight, è probabile che il fornitore fornisca le API JavaScript da utilizzare. </p> </td> 
+   <td colname="col2"> <p>Se i visitatori possono accedere ai contenuti di Silverlight e ad altre sezioni del sito che utilizzano il servizio <span class="keyword">Experience Cloud ID</span>, devi effettuare la migrazione da Silverlight. Silverlight non è supportato dal servizio ID. </p> <p> Se tieni traccia di un lettore video basato su Silverlight, è probabile che il fornitore ti fornisca le API JavaScript da utilizzare in alternativa. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Tag immagine hardcoded </p> </td> 
-   <td colname="col2"> <p>Aggiornare i collegamenti hardcoded per l'uso di JavaScript. </p> </td> 
+   <td colname="col2"> <p>Aggiorna i collegamenti hardcoded per usare JavaScript. </p> </td> 
   </tr> 
  </tbody> 
 </table>
