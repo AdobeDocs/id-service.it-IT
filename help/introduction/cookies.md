@@ -5,8 +5,11 @@ seo-description: Il servizio ID utilizza l'ID organizzazione, il cookie AMCV di 
 seo-title: Cookie e il servizio Experience Cloud Identity
 title: Cookie e il servizio Experience Cloud Identity
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '994'
+ht-degree: 100%
 
 ---
 
@@ -23,15 +26,15 @@ Il servizio ID funziona correttamente se usa i cookie AMCV, AMCVS e demdex. Ques
 
 * Imposta e archivia un ID univoco per i visitatori del tuo sito (il MID).
 * Mantieni questo ID univoco in modo che il servizio ID possa raccogliere e condividere dati con altre soluzioni Experience Cloud.
-* Tracciare gli utenti nei vari domini. Tuttavia, questo richiede che tu possiedi gli altri domini e che su di essi sia distribuito il codice del servizio ID.
+* Tracciare gli utenti nei vari domini. Tuttavia, questo richiede che tu possieda gli altri domini e che su di essi sia distribuito il codice del servizio ID.
 
 ### Quali funzioni non possono essere svolte dai cookie del servizio ID
 
 * Archiviare, trasmettere o eseguire virus del computer.
 * Accedere o archiviare informazioni personali identificabili (PII) come il tuo indirizzo e-mail.
-* Controllare l&#39;hardware o il software del computer.
-* Rendere i computer instabili o causare problemi di prestazioni.
-* Monitora gli utenti su siti che non utilizzano il servizio ID.
+* Controllare l’hardware o il software del computer.
+* Rendere i computer instabili o causare problemi di prestazione.
+* Tenere traccia degli utenti su siti che non utilizzano il servizio ID.
 
 ## Cookie AMCV {#section-c55af54828dc4cce89f6118655d694c8}
 
@@ -63,7 +66,7 @@ Questo identificatore permanente consente la condivisione dei dati tra più solu
 
 Il cookie AMCV è impostato nel dominio di prima parte di un browser. Ciò significa che è impostato nel dominio del sito visualizzato al momento da un utente. Di conseguenza, il codice del servizio ID e altre librerie di codici Experience Cloud possono leggere il MID memorizzato nel cookie AMCV.
 
-Tuttavia, poiché il cookie AMCV è impostato nel dominio di prime parti, non può essere utilizzato per monitorare e identificare gli utenti tra domini diversi. Al contrario, il servizio ID si basa sull’ID organizzazione e sull’ID demdex per restituire il MID corretto quando un visitatore del sito accede a un dominio diverso.
+Tuttavia, poiché il cookie AMCV è impostato nel dominio di prima parte, non può essere utilizzato per tracciare e identificare gli utenti tra domini diversi. Al contrario, il servizio ID si basa sull’ID organizzazione e sull’ID demdex per restituire il MID corretto quando un visitatore del sito accede a un dominio diverso.
 
 ## Cookie AMCVS {#section-92a9454f1ac645948f9059b9fad928bf}
 
@@ -89,7 +92,7 @@ Il cookie AMCVS è impostato nel dominio di prima parte di un browser. Ciò sign
 
 ## Cookie demdex {#section-7ff7d96d6e4141b08a84a75a63d7814c}
 
-Nella tabella seguente sono elencati e definiti alcuni importanti attributi del cookie demdex.
+Nella tabella seguente sono elencati e definiti alcuni attributi importanti del cookie demdex.
 
 <table id="table_18E3CAF3550E4BB6A199736AACE39202"> 
  <thead> 
@@ -101,7 +104,7 @@ Nella tabella seguente sono elencati e definiti alcuni importanti attributi del 
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Nome</b> </p> </td> 
-   <td colname="col2"> <p>Il nome del cookie è "demdex". </p> </td> 
+   <td colname="col2"> <p>Il nome del cookie è “demdex”. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Contenuto</b> </p> </td> 
@@ -109,16 +112,16 @@ Nella tabella seguente sono elencati e definiti alcuni importanti attributi del 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Dominio</b> </p> </td> 
-   <td colname="col2"> <p>Il cookie demdex è impostato nel dominio demdex.net di terze parti del browser. Questo dominio è separato dal sito visitato attualmente da un utente. </p> <p>A differenza del cookie di prime parti, il cookie AMCV, il cookie demdex e l’ID restano costanti nei diversi domini. L’ID demdex e l’ID organizzazione sono i valori comuni che consentono al servizio ID di restituire e identificare un visitatore del sito con l’ID visitatore corretto. </p> </td> 
+   <td colname="col2"> <p>Il cookie demdex è impostato nel dominio di terza parte demdex.net nel browser. Questo dominio è separato dal sito visitato attualmente da un utente. </p> <p>A differenza del cookie di prima parte, il cookie AMCV, il cookie demdex e l’ID restano costanti nei diversi domini. L’ID demdex e l’ID organizzazione sono i valori comuni che consentono al servizio ID di restituire e identificare un visitatore del sito con l’ID visitatore corretto. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Per informazioni correlate, consulta [Informazioni sulle chiamate al dominio Demdex](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html).
+Per informazioni correlate, consulta [Informazioni sulle chiamate al dominio Demdex](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/reference/demdex-calls.html).
 
 ## Generazione dell&#39;Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
-L&#39;Experience Cloud ID (MID) viene derivato matematicamente dall&#39;ID organizzazione e dall&#39;ID demdex. Fintanto che questi ID restano costanti la generazione del MID corretto per un utente specifico è semplicemente un problema matematico. Con lo stesso ID organizzazione e lo stesso ID demdex ottenete sempre lo stesso valore MID. Questo consente al servizio ID di tenere traccia dei visitatori tra i domini che controlli e che hai configurato con il codice del servizio ID.
+L&#39;Experience Cloud ID (MID) viene derivato matematicamente dall&#39;ID organizzazione e dall&#39;ID demdex. Fintanto che questi ID restano costanti la generazione del MID corretto per un utente specifico è semplicemente un problema matematico. Con lo stesso ID organizzazione e lo stesso ID demdex si ottiene sempre lo stesso valore MID. Questo consente al servizio ID di tenere traccia dei visitatori tra i domini che controlli e che hai configurato con il codice del servizio ID.
 
 Il servizio ID inizia a creare un MID non appena la tua pagina viene caricata. Durante il processo, il codice fornito dalla `visitorAPI.js` libreria di codici invia l&#39;ID organizzazione in una chiamata evento al servizio ID. Il servizio ID crea e restituisce il MID e un ID demdex, rispettivamente, nei cookie AMCV e demdex.
 
