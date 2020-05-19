@@ -5,31 +5,34 @@ seo-description: Panoramica dei processi di sincronizzazione ID e delle percentu
 seo-title: Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza
 title: Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '831'
+ht-degree: 100%
 
 ---
 
 
-# Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza{#understanding-id-synchronization-and-match-rates}
+# Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza {#understanding-id-synchronization-and-match-rates}
 
 Panoramica dei processi di sincronizzazione ID e delle percentuali di corrispondenza nel servizio Experience Cloud Identity, inclusi Adobe Media Optimizer e il servizio ID.
 
 ## Sincronizzazione degli ID e percentuali di corrispondenza {#section-f652aae7234945e89d26dd833c5215fb}
 
-La sincronizzazione ID corrisponde agli ID assegnati dal servizio ID agli ID assegnati ai visitatori del sito dai nostri clienti. Ad esempio, supponiamo che il servizio ID abbia assegnato l’ID visitatore 1234. Un&#39;altra piattaforma conosce questo visitatore per ID 4321. Il servizio ID associa questi ID durante il processo di sincronizzazione. I risultati aggiungono nuovi punti dati a ciò che i nostri clienti sanno sui visitatori del sito. Inoltre, se il servizio ID non può corrispondere a un ID, ne crea uno nuovo e lo utilizza per la sincronizzazione futura.
+La sincronizzazione ID associa gli ID assegnati dal servizio ID agli ID assegnati ai visitatori del sito dai nostri clienti. Ad esempio, supponiamo che il servizio ID abbia assegnato l’ID visitatore 1234. Un’altra piattaforma conosce questo visitatore come ID 4321. Il servizio ID associa questi ID durante il processo di sincronizzazione. I risultati aggiungono nuovi punti dati a ciò che i nostri clienti sanno sui visitatori del loro sito. Inoltre, se il servizio ID non è in grado di associare un ID ne crea uno nuovo e lo utilizza per la sincronizzazione futura.
 
-Le percentuali di corrispondenza misurano e convalidano l’efficacia del processo di sincronizzazione ID. Percentuali elevate suggeriscono che un particolare servizio sarà più efficace e forniscono l&#39;accesso a un pubblico online più ampio rispetto a un servizio con percentuali di corrispondenza più basse. Confrontare le percentuali di corrispondenza è un modo quantificabile per valutare diverse piattaforme integrate di tecnologie per gli annunci.
+Le percentuali di corrispondenza misurano e confermano l’efficacia del processo di sincronizzazione ID. Percentuali elevate di corrispondenza suggeriscono che un particolare servizio sarà più efficace e darà accesso a un pubblico online più ampio rispetto a un servizio con percentuali di corrispondenza più basse. Confrontare le percentuali di corrispondenza è un modo quantificabile per valutare diverse piattaforme ad tech integrate.
 
 ![](assets/idsync2.png)
 
 **Come ottenere elevate percentuali di corrispondenza**
 
-Per generare percentuali di corrispondenza elevate, è importante impostare correttamente il servizio ID (vedi la [guida all&#39;implementazione standard](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445)). Una corretta implementazione consente di ottenere percentuali di corrispondenza elevate, perché consente al servizio ID di impostare i cookie necessari per funzionare e sincronizzare gli ID con i partner dati abilitati. Tuttavia, fattori come connessioni Internet lente, raccolta di dati da dispositivi mobili o reti wireless possono influenzare il livello di raccolta, sincronizzazione e corrispondenza degli ID da parte del servizio ID. Tali variabili lato client non possono essere controllate dal servizio ID e da [!DNL Adobe].
+Per generare percentuali di corrispondenza elevate, è importante impostare correttamente il servizio ID (vedi la [guida all&#39;implementazione standard](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445)). Una corretta implementazione consente di ottenere percentuali di corrispondenza elevate, perché consente al servizio ID di impostare i cookie necessari per funzionare e sincronizzare gli ID con i partner dati abilitati. Tuttavia, fattori come connessioni Internet lente, raccolta di dati da dispositivi mobile o reti wireless possono influenzare l’efficacia con cui il servizio ID raccoglie, sincronizza e associa gli ID. Tali variabili lato client non possono essere controllate dal servizio ID e da [!DNL Adobe].
 
 ## Descrizione del processo di sincronizzazione degli ID {#section-a541a85cbbc74f5682824b1a2ee2a657}
 
-Il servizio ID sincronizza gli ID in tempo reale. Questo processo funziona nel browser invece che tramite un trasferimento dati server-to-server. Nella tabella seguente sono descritti i passaggi del processo di sincronizzazione ID.
+Il servizio ID sincronizza gli ID in tempo reale. Questo processo funziona nel browser invece che tramite un trasferimento dati da server a server. Nella tabella seguente sono descritti i passaggi del processo di sincronizzazione ID.
 
 **Passaggio 1: caricamento della pagina**
 
@@ -37,17 +40,17 @@ Quando un visitatore accede al sito e carica una pagina, la funzione `Visitor.ge
 
 **Passaggio 2: caricamento dell&#39;iFrame**
 
-Durante il caricamento della pagina, il servizio ID carica un iFrame denominato *`Destination Publishing iFrame`*. The [!UICONTROL Destination Publishing iFrame] loads in a domain separate from the parent page. Questo consente di garantire le prestazioni della pagina e di migliorare la sicurezza perché l’iFrame:
+Durante il caricamento della pagina, il servizio ID carica un iFrame denominato *`Destination Publishing iFrame`*. Il [!UICONTROL Destination Publishing iFrame] viene caricato in un dominio separato dalla pagina padre. Questo consente di garantire la prestazione della pagina e di migliorare la sicurezza perché l’iFrame:
 
-* Viene caricato in modo asincrono in relazione alla pagina padre. This means the parent page can load independently from the [!UICONTROL Destination Publishing iFrame]. Il caricamento dell’iFrame e dei pixel di sincronizzazione ID dall’interno dell’iFrame non influisce sulla pagina padre o sull’esperienza dell’utente.
-* Viene caricato il più rapidamente possibile. Se questo è troppo veloce, potete caricare l’iFrame dopo l’evento di caricamento della finestra (non consigliato). Per informazioni, consulta [idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4).
+* viene caricato in modo asincrono in relazione alla pagina padre. Questo significa che la pagina padre può essere caricata indipendentemente dal [!UICONTROL Destination Publishing iFrame]. Il caricamento dell’iFrame e dei pixel di sincronizzazione ID dall’interno dell’iFrame non influisce sulla pagina padre o sull’esperienza utente.
+* Viene caricato il più rapidamente possibile. Se è troppo veloce, puoi caricare l’iFrame dopo l’evento di caricamento della finestra (non consigliato). Per informazioni, consulta [idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4).
 * Impedisce al codice presente nell&#39;iFrame di accedere alla pagina padre o di incidere su di essa.
 
 Consulta anche: [Richiesta e impostazione degli ID da parte del servizio Experience Cloud Identity...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
 
-**Passaggio 3: Sincronizzazioni ID attivazione**
+**Passaggio 3: attivazione della sincronizzazione ID**
 
-La sincronizzazione ID è un URL attivato nell’iFrame di pubblicazione della destinazione. Come mostrato in questo esempio generico, un URL di sincronizzazione ID contiene l&#39;endpoint di sincronizzazione ID di un partner e un URL di reindirizzamento verso [!DNL Adobe] che include tale ID.
+La sincronizzazione ID è un URL attivato nel Destination Publishing iFrame. Come mostrato in questo esempio generico, un URL di sincronizzazione ID contiene l&#39;endpoint di sincronizzazione ID di un partner e un URL di reindirizzamento verso [!DNL Adobe] che include tale ID.
 
 `http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 
@@ -55,11 +58,11 @@ Vedi anche [Sincronizzazione degli ID per trasferimenti di dati in entrata](http
 
 **Passaggio 4: archiviazione degli ID**
 
-Synchronized IDs are stored on the [edge and core data servers](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/system-components/components-edge.html).
+Gli ID sincronizzati sono archiviati nei [server dati edge e core](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/reference/system-components/components-edge.html).
 
 ## I servizi di sincronizzazione gestiscono la sincronizzazione degli ID {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
-Il termine *`Sync Services`* fa riferimento alle tecnologie interne [!DNL Experience Cloud]responsabili della sincronizzazione ID. Il servizio è abilitato per impostazione predefinita. Per disattivarlo, aggiungi una [variabile opzionale](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414) alla funzione `Visitor.getInstance` del servizio ID. I servizi di sincronizzazione effettuano la corrispondenza tra diversi ID di [!DNL Experience Cloud], ad esempio:
+Il termine *`Sync Services`* fa riferimento alle tecnologie interne [!DNL Experience Cloud] responsabili della sincronizzazione ID. Il servizio è abilitato per impostazione predefinita. Per disattivarlo, aggiungi una [variabile opzionale](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414) alla funzione `Visitor.getInstance` del servizio ID. I servizi di sincronizzazione effettuano la corrispondenza tra diversi ID di [!DNL Experience Cloud], ad esempio:
 
 * ID di [!DNL Experience Cloud] cookie terze parti di con [!DNL Experience Cloud] ID di prime parti di.
 
@@ -70,9 +73,9 @@ Il termine *`Sync Services`* fa riferimento alle tecnologie interne [!DNL Experi
 
 ## Sincronizzazione degli ID con Adobe Advertising Cloud {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Advertising Cloud] (in precedenza denominato [!DNL Adobe Media Optimizer]) è un’eccezione al processo di sincronizzazione ID basato su iFrame. Poiché [!DNL Advertising Cloud] è un dominio fidato, le sincronizzazioni ID hanno luogo dalla pagina padre invece che nel [!UICONTROL Destination Publishing iFrame]. Durante la sincronizzazione, il servizio ID chiama [!DNL Advertising Cloud] su `cm.eversttech.net`, che è un nome di dominio legacy usato da [!DNL Advertising Cloud] prima della sua acquisizione da parte di Adobe. L&#39;invio di dati a [!DNL Advertising Cloud] aiuta a migliore le percentuali di corrispondenza ed è automatico per i clienti del servizio ID che usano la versione 2.0 (o superiore). Vedi anche [Advertising Cloud Cookies](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-advertising-cloud.html).
+[!DNL Adobe Advertising Cloud] (prima chiamato [!DNL Adobe Media Optimizer]) è un’eccezione del processo di sincronizzazione ID basato sull’iFrame. Poiché [!DNL Advertising Cloud] è un dominio fidato, le sincronizzazioni ID hanno luogo dalla pagina padre invece che nel [!UICONTROL Destination Publishing iFrame]. Durante la sincronizzazione, il servizio ID chiama [!DNL Advertising Cloud] su `cm.eversttech.net`, che è un nome di dominio legacy usato da [!DNL Advertising Cloud] prima della sua acquisizione da parte di Adobe. L&#39;invio di dati a [!DNL Advertising Cloud] aiuta a migliore le percentuali di corrispondenza ed è automatico per i clienti del servizio ID che usano la versione 2.0 (o superiore). Vedi anche [Cookie di Advertising Cloud](https://docs.adobe.com/content/help/it-IT/core-services/interface/ec-cookies/cookies-advertising-cloud.html).
 
 >[!MORELIKETHIS]
 >
->* [Informazioni sulle chiamate al dominio demdex](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html)
+>* [Informazioni sulle chiamate al dominio demdex](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/reference/demdex-calls.html)
 
