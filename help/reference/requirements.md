@@ -5,8 +5,11 @@ seo-description: Leggi questa sezione per essere certo di usare le soluzioni, i 
 seo-title: Requisiti del servizio Experience Cloud Identity
 title: Requisiti del servizio Experience Cloud Identity
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '783'
+ht-degree: 100%
 
 ---
 
@@ -17,7 +20,7 @@ Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le vers
 
 ## Requisiti per il successo e il supporto dell&#39;implementazione {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
-Un&#39;implementazione di successo e supportata deve rispettare (o superare) i requisiti di codice e aderire alle istruzioni fornite nell&#39;[!DNL Adobe] Aiuto di. Un’implementazione non supportata darà risultati imprevisti e impedirà all’Assistenza clienti e ai nostri team tecnici di fornire assistenza nella risoluzione dei problemi con il servizio ID.
+Un&#39;implementazione di successo e supportata deve rispettare (o superare) i requisiti di codice e aderire alle istruzioni fornite nell&#39;[!DNL Adobe] Aiuto di. Un’implementazione non supportata darà risultati imprevisti e impedirà all’assistenza clienti e ai nostri team tecnici di prestare aiuto per la risoluzione dei problemi con il servizio ID.
 
 <table id="table_2216C44AA66248DCAA13BF64BDF2D88A"> 
  <thead> 
@@ -33,16 +36,16 @@ Un&#39;implementazione di successo e supportata deve rispettare (o superare) i r
     <ul id="ul_59CDE179566844B494F3068FF6333809"> 
      <li id="li_CCCB6AFC08EE405F94C42216D3CE50AC"> Inserire il codice di intestazione da incorporare nella sezione <span class="codeph">&lt;head&gt;</span> della pagina. </li> 
      <li id="li_13962F2CB1764091A84863BE499675A2">Inserire il codice piè di pagina da incorporare prima del tag di chiusura <span class="codeph">&lt;/body&gt;</span>. </li> 
-    </ul> <p>Un'implementazione standard non è supportata quando: </p> 
+    </ul> <p>Un’implementazione standard non è supportata quando: </p> 
     <ul id="ul_3B62559317ED4C7AA548C3B8DBA281F7"> 
-     <li id="li_1F16C6D412944197BEA56BC24730782C"> Posiziona uno di questi codici da incorporare di Gestione dinamica dei tag altrove nel codice di markup e/o di pagina. </li> 
-     <li id="li_05615C01F3A947BBBD41046E68377224"> Aggiungi, aggiungi o carica il codice DTM con metodi asincroni, chiamate/metodi di callback o wrapper. </li> 
-     <li id="li_B2137DFF627B473FA876580449026D2B">Includere più istanze di codice da incorporare sulla stessa pagina. </li> 
+     <li id="li_1F16C6D412944197BEA56BC24730782C"> Inserisci uno di questi codici DTM da incorporare in un’altra posizione nel codice di markup e/o di pagina. </li> 
+     <li id="li_05615C01F3A947BBBD41046E68377224"> Accodi, aggiungi o carichi il codice DTM con metodi asincroni, chiamate/metodi di callback o wrapper. </li> 
+     <li id="li_B2137DFF627B473FA876580449026D2B">Includi più istanze di codice da incorporare sulla stessa pagina. </li> 
     </ul> <p>Vedi anche <a href="https://docs.adobe.com/content/help/it-IT/dtm/using/client-side/deployment.html" format="https" scope="external">Opzioni di hosting e codice di incorporamento</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113" format="dita" scope="local"> Implementazioni non standard </a> </p> </td> 
-   <td colname="col2"> <p>Per implementazioni non standard o manuali, devi impostare il servizio ID come descritto dalle procedure di questa guida. Come per le linee guida di Gestione dinamica dei tag sopra, la posizione e il caricamento impropri del codice creeranno un'implementazione non supportata. </p> </td> 
+   <td colname="col2"> <p>Per implementazioni non standard o manuali, devi impostare il servizio ID come descritto dalle procedure di questa guida. Come per le linee guida di DTM presentate sopra, una posizione e un caricamento impropri del codice risulteranno in un’implementazione non supportata. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -80,7 +83,7 @@ Per utilizzare il servizio ID, la società deve essere abilitata per [!DNL Exper
 
 ## Requisiti di Analytics: raccolta dati regionali (RDC) {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-Tutti i server di tracciamento sono stati convertiti in RDC, pertanto non è necessario modificare il server di tracciamento di Analytics. [Ulteriori informazioni...](https://docs.adobe.com/content/help/it-IT/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
+Tutti i server di tracciamento sono stati convertiti in RDC, pertanto non è necessario modificare il server di tracciamento di Analytics. [Ulteriori informazioni...](https://docs.adobe.com/content/help/it-IT/analytics/technotes/rdc/regional-data-collection.translate.html)
 
 ## Librerie dei codici e versioni richieste {#section-ad7542a4317d430fa79fc6b095beb84d}
 
@@ -121,7 +124,7 @@ Nelle seguenti sezioni sono elencate le versioni minime dei codici richieste per
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> <span class="keyword"> Audience Manager </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> Vedi <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external">Libreria di integrazione dei dati</a> (DIL). </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> Vedi <a href="https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external">Libreria di integrazione dei dati</a> (DIL). </p> </td> 
    <td colname="col4"> <p>5.0 </p> <p> 
      <draft-comment>
        aggiornamento da 4.9 
@@ -129,11 +132,11 @@ Nelle seguenti sezioni sono elencate le versioni minime dei codici richieste per
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Vedi <a href="https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external">Codice mbox</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Vedi <a href="https://docs.adobe.com/content/help/it-IT/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external">Codice mbox</a>. </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Vedi <a href="https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/at-js/how-atjs-works.html" format="https" scope="external">Implementazione at.js</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Vedi <a href="https://docs.adobe.com/content/help/it-IT/target/using/implement-target/client-side/at-js/how-atjs-works.html" format="https" scope="external">Implementazione at.js</a>. </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 
@@ -150,11 +153,11 @@ Come minimo, il servizio ID richiede le versioni SDK elencate di seguito.
 >
 >Invece dei requisiti minimi, consigliamo di usare le ultime versioni del codice.
 
-Il codice SDK deve essere abilitato per il servizio ID. Enable and download the latest SDK code for each app from your [Adobe Mobile Services](https://mobilemarketing.adobe.com/) account. Vedi anche:
+Il codice SDK deve essere abilitato per il servizio ID. Abilita e scarica il codice SDK più recente per ciascuna app dal tuo account [Adobe Mobile Services](https://mobilemarketing.adobe.com/). Vedi anche:
 
-* [Configurare le opzioni del servizio ID visitatore dell’SDK](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
-* [Metodi SDK per Android](https://docs.adobe.com/content/help/en/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
-* [Metodi SKD iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
+* [Configurare le opzioni del servizio ID visitatore dell’SDK](https://docs.adobe.com/content/help/it-IT/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
+* [Metodi SDK per Android](https://docs.adobe.com/content/help/it-IT/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
+* [Metodi SKD per iOS](https://docs.adobe.com/content/help/it-IT/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
 
 >[!MORELIKETHIS]
 >
