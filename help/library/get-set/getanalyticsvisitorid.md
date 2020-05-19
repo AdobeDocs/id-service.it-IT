@@ -5,19 +5,22 @@ seo-description: Restituisce l’ID Analytics legacy (se presente) memorizzato n
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '338'
+ht-degree: 100%
 
 ---
 
 
-# getAnalyticsVisitorID{#getanalyticsvisitorid}
+# getAnalyticsVisitorID {#getanalyticsvisitorid}
 
 Restituisce l’ID Analytics legacy (se presente) memorizzato nel cookie s_vi prima dell’implementazione del servizio Experience Cloud Identity. Se a un visitatore non è stato assegnato un ID Analytics, restituisce una stringa vuota.
 
 **Sintassi** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
-In genere, questa funzione viene utilizzata con soluzioni personalizzate che richiedono la lettura dell&#39;ID visitatore. Non viene utilizzato da un&#39;implementazione standard. `getAnalyticsVisitorID` funziona anche con le funzioni di callback per leggere gli [!DNL Analytics] ID di e inviarli al sistema o all&#39;applicazione.
+In genere questa funzione viene utilizzata con soluzioni personalizzate che richiedono la lettura dell’ID visitatore. Non viene utilizzata da un’implementazione standard. `getAnalyticsVisitorID` funziona anche con le funzioni di callback per leggere gli [!DNL Analytics] ID di e inviarli al sistema o all&#39;applicazione.
 
 **Codice di esempio**
 
@@ -44,7 +47,7 @@ Il `aid` parametro viene visualizzato in una stringa di interrogazione in base a
 Il parametro `aid` viene visualizzato in una stringa di interrogazione quando:
 
 * Il servizio [!DNL Experience Cloud] ID è stato distribuito correttamente.
-* L’utente che accede a un sito dispone di un ID [!DNL Analytics] precedente memorizzato nel cookie [s_vi](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679).
+* L’utente che accede a un sito dispone di un ID [!DNL Analytics] precedente memorizzato nel cookie [s_vi](https://docs.adobe.com/content/help/it-IT/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679).
 
 **Caso 2**
 
@@ -52,5 +55,5 @@ Il `aid` parametro viene visualizzato in una stringa di interrogazione quando l&
 
 >[!MORELIKETHIS]
 >
->* [Cookie di Analytics](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-privacy.html)
+>* [Cookie di Analytics](https://docs.adobe.com/content/help/it-IT/core-services/interface/ec-cookies/cookies-privacy.html)
 
