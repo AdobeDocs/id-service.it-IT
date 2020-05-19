@@ -5,8 +5,11 @@ seo-description: Versioni future, aggiornamenti o modifiche al servizio Experien
 seo-title: Note sulla versione 2017
 title: Note sulla versione 2017
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '760'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2017.
 
-Queste modifiche vengono anche riportate nelle note [sulla versione di](https://docs.adobe.com/content/help/it-IT/release-notes/experience-cloud/current.html)Experience Cloud.
+Queste modifiche vengono riportate anche nelle [note sulla versione di Experience Cloud](https://docs.adobe.com/content/help/it-IT/release-notes/experience-cloud/current.html).
 
 >[!NOTE]
 >
@@ -49,9 +52,9 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **Correzioni di bug e altre modifiche**
 
-* È stato corretto un bug relativo a Chrome a causa del quale il servizio ID generava un errore quando si faceva clic sul pulsante Indietro in tale browser.
-* Il servizio ID ora avvia di nuovo la sincronizzazione degli ID quando l’ID di regione cambia nella risposta della chiamata dell’evento.
-* Added new documentation, [Content Security Policies and the Experience Cloud Identity Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), that explains how to whitelist calls to Adobe domains used by the ID service.
+* È stato corretto un bug relativo a Chrome a causa del quale il servizio ID generava un errore quando si faceva clic sul pulsante Indietro in questo browser.
+* Il servizio ID ora riavvia la sincronizzazione degli ID quando l’ID di regione cambia nella risposta alla chiamata dell’evento.
+* È stata aggiunta della nuova documentazione, [Policy di sicurezza dei contenuti e il servizio Experience Cloud Identity](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), che spiega come inserire nella whitelist le chiamate ai domini Adobe usati dal servizio ID.
 
 ## Versione 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
@@ -101,10 +104,10 @@ Luglio 2017
 
 **Correzioni di bug e altre modifiche**
 
-* È stato corretto un bug in VisitorAPI.js v2.2 che impediva al servizio ID e a Target di funzionare insieme in Internet Explorer.
-* È stato rivisto il codice per migliorare il modo in cui il servizio ID invia i dati all&#39;iFrame di pubblicazione di destinazione, Questo consente di ridurre l&#39;utilizzo della CPU.
+* È stato corretto un bug in VisitorAPI.js v2.2 che impediva al servizio ID e a Target di funzionare in contemporanea in Internet Explorer.
+* È stato rivisto il codice per migliorare il modo in cui il servizio ID invia i dati all&#39;iFrame di pubblicazione di destinazione, Questo consente di ridurre l’utilizzo della CPU.
 
-## Version 2.2 {#section-b7dee2495c29470e9b3a3132ec1fd951}
+## Versione 2.2 {#section-b7dee2495c29470e9b3a3132ec1fd951}
 
 Data di rilascio: giugno 2017
 
@@ -192,7 +195,7 @@ Data di rilascio: febbraio 2017
 
 **Nuova documentazione**
 
-[Utilizzo del recupero preventivo del DNS con diverse soluzioni e servizi Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/more-resources/dns-prefetch.html)
+[Usare il prefetch di DNS con soluzioni e servizi Experience Cloud diversi](https://docs.adobe.com/content/help/it-IT/core-services/interface/more-resources/dns-prefetch.html)
 
 ## Versione 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
@@ -205,7 +208,7 @@ Gennaio 2017
 **Correzioni e miglioramenti**
 
 * È stato corretto un bug che impediva ad AppMeasurement di effettuare chiamate di tracciamento ad Analytics. (MCID-254, MCID-256, MCID-286)
-* È stato corretto un bug che impediva al servizio ID di generare immediatamente un errore se un visitatore aveva attivato un blocco degli annunci e tale blocco era configurato per escludere il dominio demdex.net. Si tratta di un bug raro e insolito perché la maggior parte degli strumenti di blocco annunci non bloccano il dominio demdex.net. (MCID-233)
+* È stato corretto un bug che impediva al servizio ID di fallire immediatamente quando un visitatore aveva abilitato un ad blocker la cui configurazione escludeva il dominio demdex.net. Si tratta di un bug raro e insolito perché la maggior parte degli strumenti di ad blocking non bloccano il dominio demdex.net. (MCID-233)
 * È stato corretto un bug causato dalle interazioni tra il codice del servizio ID e uno script personalizzato sul sito Web di un cliente. Questo problema impediva a Internet Explorer 9 di caricare le pagine Web. (MCID-206)
 
 ## Anni precedenti {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
