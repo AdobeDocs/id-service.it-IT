@@ -5,11 +5,11 @@ seo-description: Un'informativa sulla sicurezza dei contenuti (CSP) è un'intest
 seo-title: Informativa sulla sicurezza dei contenuti e servizio Experience Cloud Identity
 title: Informativa sulla sicurezza dei contenuti e servizio Experience Cloud Identity
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: acf10dd734132662698791e473c1f3f4dda85d67
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '619'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -62,14 +62,14 @@ Aggiungi questi nomi di dominio o URL alla tua CSP per ogni soluzione o servizio
    <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-   <li>Se utilizzi Adobe Launch per distribuire i tag, devi aggiungere anche <code>https://assets.adobedtm.com</code> all’elenco dei domini.</li></ul></p> <p>Le chiamate al dominio <span class="codeph"> demdex.net</span> vengono utilizzate per generare i <a href="../introduction/cookies.md" format="dita" scope="local">cookie e il servizio Experience Cloud Identity</a> e per le sincronizzazioni degli ID. Vedi anche <a href="https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Informazioni sulle chiamate al dominio demdex</a>. </p> </td> </tr> 
+   <li>Se utilizzi Adobe Launch per distribuire i tag, devi aggiungere anche <code>https://assets.adobedtm.com</code> all’elenco dei domini.</li></ul></p> <p>Le chiamate al dominio <span class="codeph">demdex.net</span> vengono utilizzate per generare i <a href="../introduction/cookies.md" format="dita" scope="local">cookie e il servizio Experience Cloud Identity</a> e per le sincronizzazioni degli ID. Vedi anche <a href="https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Informazioni sulle chiamate al dominio demdex</a>. </p> </td> </tr> 
  <tr>
  <td colname="col1"> <p> <b>Plug-in Activity Map</b> </p> </td> 
  <td colname="col2"> <p>Modifica la tua CSP in modo che includa *.adobe.com. **Nota**: se hai installato Activity Map prima di gennaio 2020, il browser visualizzerà comunque una richiesta iniziale a *.omniture.com ma verrà reindirizzato a *.adobe.com. </p></td> 
  </tr>
  <tr>
  <td colname="col1"> <p> <b>Advertising Analytics</b> </p> </td> 
- <td colname="col2"> <p>Se disponete di controlli sui parametri delle stringhe di query, accertatevi di inserire in una whitelist i parametri `s_kwcid` e `ef_id`. Tecnicamente, Analisi della pubblicità utilizza solo `s_kwcid`, ma se selezionate Ad Cloud Search o DSP, utilizza anche `ef_id`. Questi parametri della stringa di query sono alfanumerici. Il parametro `s_kwcid` utilizza "!" e il parametro `ef_id` utilizza il carattere ":". Se stai bloccando "!" nell’URL, è necessario inserirlo anche in una whitelist.</p></td> 
+ <td colname="col2"> <p>Se disponi di controlli sui parametri delle stringhe query, accertati di inserire in una whitelist i parametri 's_kwcid' e 'ef_id'. Tecnicamente Advertising Analytics utilizza solo 's_kwcid', ma se selezioni Ad Cloud Search o DSP utilizza anche 'ef_id'. Questi parametri delle stringhe query sono alfanumerici. Il parametro 's_kwcid' utilizza il carattere “!” e il parametro 'ef_id' utilizza il carattere “:”. Se blocchi il carattere “!” nell’URL, inseriscilo a sua volta nella whitelist.</p></td> 
  </tr>
  </tbody> 
 </table>
