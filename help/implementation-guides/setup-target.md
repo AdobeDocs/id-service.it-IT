@@ -5,9 +5,9 @@ seo-description: Queste istruzioni sono per i clienti di Target che desiderano u
 seo-title: Implementazione del servizio Experience Cloud Identity per Target
 title: Implementazione del servizio Experience Cloud Identity per Target
 uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 100%
 
@@ -22,8 +22,6 @@ Queste istruzioni sono per i clienti di Target che desiderano usare il servizio 
 >
 >* [Prima di iniziare](../reference/requirements.md), leggi i requisiti.
 >* Configura e verifica questo codice in un ambiente di sviluppo prima di implementarlo in produzione.
->
-
 
 
 ## Passaggio 1: ottieni il codice del servizio ID {#section-b32ba0548aa546a79dd38be59832a53e}
