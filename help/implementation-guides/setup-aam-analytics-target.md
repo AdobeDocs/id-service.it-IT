@@ -5,9 +5,9 @@ seo-description: Queste istruzioni sono per i clienti di Analytics, Audience Man
 seo-title: Implementazione del servizio Experience Cloud Identity per Analytics, Audience Manager e Target
 title: Implementazione del servizio Experience Cloud Identity per Analytics, Audience Manager e Target
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '1572'
 ht-degree: 100%
 
@@ -20,11 +20,10 @@ Queste istruzioni sono per i clienti di Analytics, Audience Manager e Target che
 
 >[!IMPORTANT]
 >
->Leggi i [requisiti](../reference/requirements.md) del servizio ID e prendi nota dei seguenti requisiti specifici per questa implementazione: >
+>Leggi i [requisiti](../reference/requirements.md) del servizio ID e prendi nota dei seguenti requisiti specifici per questa implementazione:
+>
 >* I clienti che usano s_code non possono completare questa procedura. Esegui l’aggiornamento al codice mbox v61 per completare questa procedura.
 >* Configura e verifica questo codice in un ambiente di sviluppo *prima* di implementarlo in produzione.
->
-
 
 
 ## Passaggio 1: pianificazione dell&#39;inoltro lato server {#section-880797cc992d4755b29cada7b831f1fc}
@@ -54,8 +53,6 @@ Il servizio ID richiede la `VisitorAPI.js` libreria dei codici. Per scaricare la
 >
 >* Le versioni precedenti dell’API del servizio ID inserivano questa funzione in una posizione diversa e richiedevano una sintassi diversa. Se stai eseguendo la migrazione da una versione precedente alla [versione 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572), tieni presente la nuova posizione e la sintassi qui documentate.
 >* Il codice in maiuscolo è un segnaposto per i valori effettivi. Sostituisci questo testo con il tuo ID organizzazione, l’URL del server di tracciamento o un altro valore denominato.
->
-
 
 
 **Parte 1: copia la funzione Visitor.getInstance di seguito**
