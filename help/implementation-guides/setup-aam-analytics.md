@@ -5,9 +5,9 @@ seo-description: Queste istruzioni sono per i clienti di Analytics e Audience Ma
 seo-title: Implementazione del servizio Experience Cloud Identity per Analytics e Audience Manager
 title: Implementazione del servizio Experience Cloud Identity per Analytics e Audience Manager
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '1303'
 ht-degree: 100%
 
@@ -23,8 +23,6 @@ Queste istruzioni sono per i clienti di Analytics e Audience Manager che desider
 >* [Prima di iniziare](../reference/requirements.md), leggi i requisiti.
 >* Questa procedura richiede AppMeasurement. I clienti che usano s_code non possono completare questa procedura.
 >* Configura e verifica questo codice in un ambiente di sviluppo prima di implementarlo in produzione.
->
-
 
 
 ## Passaggio 1: pianificazione dell&#39;inoltro lato server {#section-880797cc992d4755b29cada7b831f1fc}
@@ -55,8 +53,6 @@ Il servizio ID richiede la `VisitorAPI.js` libreria dei codici. Per scaricare la
 >
 >* Le versioni precedenti dell’API del servizio ID inserivano questa funzione in una posizione diversa e richiedevano una sintassi diversa. Se stai eseguendo la migrazione da una versione precedente alla [versione 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572), tieni presente la nuova posizione e la sintassi qui documentate.
 >* Il codice in maiuscolo è un segnaposto per i valori effettivi. Sostituisci questo testo con il tuo ID organizzazione, l’URL del server di tracciamento o un altro valore denominato.
->
-
 
 
 **Parte 1: copia la funzione Visitor.getInstance di seguito**
