@@ -5,9 +5,9 @@ seo-description: Queste istruzioni sono per i clienti di Analytics che desideran
 seo-title: Implementazione del servizio Experience Cloud Identity per Analytics
 title: Implementazione del servizio Experience Cloud Identity per Analytics
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 100%
 
@@ -22,8 +22,6 @@ Queste istruzioni sono per i clienti di Analytics che desiderano usare il serviz
 >
 >* [Prima di iniziare](../reference/requirements.md), leggi i requisiti.
 >* Configura e verifica questo codice in un ambiente di sviluppo prima di implementarlo in produzione.
->
-
 
 
 Per implementare il servizio ID per Adobe Analytics, effettua le seguenti operazioni:
@@ -54,8 +52,6 @@ Il [!UICONTROL servizio ID] richiede la libreria dei codici `VisitorAPI.js`. Per
 >
 >* Le versioni precedenti dell’API del servizio ID inserivano questa funzione in una posizione diversa e richiedevano una sintassi diversa. Se stai eseguendo la migrazione da una versione precedente alla [versione 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572), tieni presente la nuova posizione e la sintassi qui documentate.
 >* Il codice in maiuscolo è un segnaposto per i valori effettivi. Sostituisci questo testo con il tuo ID organizzazione, l’URL del server di tracciamento o un altro valore denominato.
->
-
 
 
 **Parte 1: copia la funzione Visitor.getInstance di seguito**
@@ -130,11 +126,10 @@ Per determinare quali variabili del server di tracciamento utilizzare:
 
 >[!NOTE]
 >
->Se utilizzato, fai corrispondere gli [!DNL Experience Cloud] URL del server con gli URL del server di tracciamento corrispondenti, come riportato di seguito: >
+>Se utilizzato, fai corrispondere gli [!DNL Experience Cloud] URL del server con gli URL del server di tracciamento corrispondenti, come riportato di seguito:
+>
 >* [!DNL Experience Cloud] URL del server = URL del server di tracciamento
 >* [!DNL Experience Cloud] URL del server protetto = URL del server protetto di tracciamento
->
-
 
 
 Se non sei sicuro di come trovare il server di tracciamento, consulta le [Domande frequenti](../faq-intro/faq.md) e [Compilare correttamente le variabili trackingServer e trackingServerSecure](https://helpx.adobe.com/it/analytics/kb/determining-data-center.html#).
