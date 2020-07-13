@@ -3,9 +3,9 @@ title: Metodi della libreria ECID in ambito Safari ITP
 seo-title: Metodi della libreria ECID in ambito Safari ITP
 description: Documentazione della libreria Adobe ECID (servizio ID).
 seo-description: Documentazione della libreria Adobe ECID (servizio ID).
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 100%
 
@@ -42,7 +42,9 @@ In questa sezione verranno aggiunte nuove risposte alle domande più frequenti m
 
 Quando vengono creati metodi aggiuntivi per il monitoraggio in Safari, questi verranno aggiunti come riferimento a questa pagina.
 
->[!NOTE] *ECID* = *MID* = *MCID* in tutta la documentazione di seguito.
+>[!NOTE]
+>
+>*ECID* = *MID* = *MCID* in tutta la documentazione di seguito.
 
 Di seguito sono riportate tutte le iniziative relative all&#39;utilizzo della libreria ECID e ITP.
 
