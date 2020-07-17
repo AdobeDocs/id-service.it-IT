@@ -5,9 +5,9 @@ seo-description: Queste istruzioni sono per i clienti di Analytics, Audience Man
 seo-title: Implementazione del servizio Experience Cloud Identity per Analytics, Audience Manager e Target
 title: Implementazione del servizio Experience Cloud Identity per Analytics, Audience Manager e Target
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1572'
 ht-degree: 100%
 
