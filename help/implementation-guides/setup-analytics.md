@@ -5,9 +5,9 @@ seo-description: Queste istruzioni sono per i clienti di Analytics che desideran
 seo-title: Implementazione del servizio Experience Cloud Identity per Analytics
 title: Implementazione del servizio Experience Cloud Identity per Analytics
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1087'
 ht-degree: 100%
 
@@ -126,10 +126,10 @@ Per determinare quali variabili del server di tracciamento utilizzare:
 
 >[!NOTE]
 >
->Se utilizzato, fai corrispondere gli [!DNL Experience Cloud] URL del server con gli URL del server di tracciamento corrispondenti, come riportato di seguito:
+>Se utilizzati, gli URL del server [!DNL Experience Cloud] devono corrispondere a quelli del relativo server di tracciamento, come riportato di seguito:
 >
->* [!DNL Experience Cloud] URL del server = URL del server di tracciamento
->* [!DNL Experience Cloud] URL del server protetto = URL del server protetto di tracciamento
+>* URL del server [!DNL Experience Cloud] = URL del server di tracciamento
+>* URL sicuro del server [!DNL Experience Cloud] = URL sicuro del server di tracciamento
 
 
 Se non sei sicuro di come trovare il server di tracciamento, consulta le [Domande frequenti](../faq-intro/faq.md) e [Compilare correttamente le variabili trackingServer e trackingServerSecure](https://helpx.adobe.com/it/analytics/kb/determining-data-center.html#).
