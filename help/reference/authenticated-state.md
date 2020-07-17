@@ -5,11 +5,11 @@ seo-description: Oltre all’ID visitatore di Experience Cloud, puoi associare a
 seo-title: ID cliente e stati di autenticazione
 title: ID cliente e stati di autenticazione
 uuid: 643df363-224a-463e-a332-be59926b47e7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '659'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -26,13 +26,13 @@ Il `setCustomerIDs` metodo accetta più ID cliente per lo stesso visitatore. In 
 >
 >`setCustomerIDs` (sincronizzazione ID cliente) è richiesto per gli attributi dei clienti e le funzionalità dei servizi principali. La sincronizzazione degli ID cliente è un metodo di identificazione facoltativo per [!DNL Analytics]. [!DNL Target] richiede `Visitor.AuthState.AUTHENTICATED` per il funzionamento degli attributi cliente. Alcuni esempi sono disponibili in [Servizi principali - Come attivare le proprie soluzioni](https://docs.adobe.com/content/help/it-IT/core-services/interface/about-core-services/core-services.html).
 
-A partire dalla versione 1.5 del servizio Experience Cloud Identity, `setCustomerIDs` include l’oggetto facoltativo `AuthState`. `AuthState` identifica i visitatori in base al loro stato di autenticazione (ad es. connessi o disconnessi). È possibile impostare lo stato di autenticazione con un valore di stato elencato nella tabella. Lo stato di autenticazione viene restituito come numero intero.
+A partire dalla versione 1.5 del servizio Experience Cloud Identity, `setCustomerIDs` include l’oggetto facoltativo `AuthState`. `AuthState` identifica i visitatori in base al loro stato di autenticazione (ad es. connessi o disconnessi). Lo stato di autenticazione si imposta con uno dei valori di stato elencati nella tabella. Lo stato di autenticazione viene restituito come numero intero.
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Stato autenticazione </th> 
-   <th colname="col2" class="entry"> Numero intero stato </th> 
+   <th colname="col1" class="entry"> Stato di autenticazione </th> 
+   <th colname="col2" class="entry"> Numero intero dello stato </th> 
    <th colname="col3" class="entry"> Stato dell’utente </th> 
   </tr> 
  </thead>
@@ -57,12 +57,12 @@ A partire dalla versione 1.5 del servizio Experience Cloud Identity, `setCustome
 
 ## Casi d’uso per gli stati di autenticazione {#section-fe9560cc490943b29dac2c4fb6efd72c}
 
-È possibile assegnare gli stati di autenticazione agli utenti, a seconda delle azioni che questi eseguono sulle proprietà Web e del fatto che siano autenticati o meno. Di seguito sono riportati alcuni esempi:
+È possibile assegnare gli stati di autenticazione agli utenti, a seconda delle azioni che questi eseguono sulle proprietà Web e del fatto che siano autenticati o meno. La tabella seguente riporta alcuni esempi:
 
 <table id="table_3769E79304014C4F87094B87A8ACE4E0"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Stato autenticazione </th> 
+   <th colname="col1" class="entry"> Stato di autenticazione </th> 
    <th colname="col2" class="entry"> Caso d’uso </th> 
   </tr> 
  </thead>
@@ -94,7 +94,7 @@ Gli ID cliente possono includere combinazioni di ID e stati di identificazione, 
 >
 >* Gli ID sono sensibili all’uso di maiuscole e minuscole.
 >* Per gli ID, usa solo valori non codificati.
->* Gli ID cliente e gli stati di autenticazione non vengono memorizzati nel cookie ID visitatore. Devono essere impostati per ciascuna pagina o contesto dell’applicazione.
+>* Gli ID cliente e gli stati di autenticazione non sono memorizzati nel cookie dell’ID visitatore. Devono essere impostati per ciascuna pagina o contesto dell’applicazione.
 >* Negli ID cliente non devono essere incluse informazioni identificative della persona (Personally Identifiable Information, PII). Invece di utilizzare informazioni PII per identificare un visitatore (ad esempio l’indirizzo e-mail), consigliamo di memorizzare una versione con hashing o codificata di queste informazioni. La libreria ECID supporta l’hashing degli identificatori utente. Consulta [Supporto di hashing SHA-256 per setCustomerIDs](/help/reference/hashing-support.md).
 
 
@@ -147,7 +147,7 @@ visitor.setCustomerIDs({
 
 ## Restituzione degli ID cliente e degli stati di autenticazione {#section-71a610546188478fa9a3185a01d6e83b}
 
-Per restituire gli ID cliente e i relativi stati di autenticazione, utilizza `getCustomerIDs`. Questo metodo restituisce lo stato autenticato di un visitatore come numero intero.
+Per restituire gli ID cliente e i relativi stati di autenticazione, utilizza `getCustomerIDs`. Questo metodo restituisce lo stato di autenticazione di un visitatore sotto forma di numero intero.
 
 **Sintassi**
 
@@ -169,7 +169,7 @@ Per restituire gli ID cliente e i relativi stati di autenticazione, utilizza `ge
 
 **Esempi**
 
-Gli ID cliente e i dati sullo stato di autenticazione restituiti devono essere simili ai seguenti esempi.
+Gli ID cliente e i dati sullo stato di autenticazione restituiti saranno simili agli esempi seguenti.
 
 ```js
 Object customerIDs = visitor.getCustomerIDs(); 
@@ -214,10 +214,10 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## Supporto per l’SDK {#section-861c6b3b1ba645dda133dccb22ec7bb0}
 
-Il servizio [!DNL Experience Cloud] ID supporta gli ID dei clienti e gli stati di autenticazione nel nostro codice SDK per Android e iOS. Consultate le seguenti librerie di codice:
+Il servizio [!DNL Experience Cloud] ID supporta gli ID dei clienti e gli stati di autenticazione nel nostro codice SDK per Android e iOS. Consulta le seguenti librerie di codice:
 
 * [Metodi SDK per Android](https://docs.adobe.com/content/help/it-IT/mobile-services/android/overview.html)
-* [Metodi SDK iOS](https://docs.adobe.com/content/help/it-IT/mobile-services/ios/overview.html)
+* [Metodi SDK per iOS](https://docs.adobe.com/content/help/it-IT/mobile-services/ios/overview.html)
 
 ## Avviso per i clienti Analytics e Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
