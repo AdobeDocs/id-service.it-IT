@@ -5,9 +5,9 @@ seo-description: Leggi questa sezione per essere certo di usare le soluzioni, i 
 seo-title: Requisiti del servizio Experience Cloud Identity
 title: Requisiti del servizio Experience Cloud Identity
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '781'
 ht-degree: 100%
 
@@ -105,7 +105,7 @@ Nelle seguenti sezioni sono elencate le versioni minime dei codici richieste per
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="keyword"> Servizio </span>Experience Cloud ID</b> </p> </td> 
+   <td colname="col1"> <p> <b> <span class="keyword"> Servizio </span>Experience Cloud ID</b> </p> </td> 
    <td colname="col3"> <p> <span class="codeph"> VisitorAPI.js</span> </p> </td> 
    <td colname="col4"> <p>2.0 o successiva </p> </td> 
   </tr> 
@@ -154,7 +154,7 @@ Il codice SDK deve essere abilitato per il servizio ID. Abilita e scarica il cod
 
 * [Configurare le opzioni del servizio ID visitatore dell’SDK](https://docs.adobe.com/content/help/it-IT/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
 * [Metodi SDK per Android](https://docs.adobe.com/content/help/it-IT/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
-* [Metodi SKD per iOS](https://docs.adobe.com/content/help/it-IT/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
+* [Metodi SDK per iOS](https://docs.adobe.com/content/help/it-IT/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
 
 >[!MORELIKETHIS]
 >
