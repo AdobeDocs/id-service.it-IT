@@ -5,16 +5,16 @@ seo-description: Le funzioni idSyncByURL e idSyncByDataSource del servizio ID co
 seo-title: Sincronizzazione ID tramite URL o sorgente dati
 title: Sincronizzazione ID tramite URL o sorgente dati
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '273'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
 
-# Sincronizzazione ID tramite URL o sorgente dati{#id-synchronization-by-url-or-data-source}
+# Sincronizzazione ID tramite URL o sorgente dati {#id-synchronization-by-url-or-data-source}
 
 Le funzioni idSyncByURL e idSyncByDataSource del servizio ID consentono di implementare manualmente una sincronizzazione ID nell’iFrame di pubblicazione della destinazione. Sono disponibili in VisitorAPI.js versione 1.10 o successiva.
 
@@ -43,7 +43,7 @@ Le funzioni idSyncByURL e idSyncByDataSource del servizio ID consentono di imple
 
 **Proprietà**
 
-Nella tabella seguente sono elencate e definite le proprietà disponibili per entrambe le funzioni.
+Nella tabella seguente sono elencate e definite le proprietà di entrambe le funzioni.
 
 <table id="table_5343BE784E694C67B09A0A8878CF8001"> 
  <thead> 
@@ -57,12 +57,12 @@ Nella tabella seguente sono elencate e definite le proprietà disponibili per en
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> dpid </span> </td> 
    <td colname="col2"> Stringa </td> 
-   <td colname="col3"> <p>ID provider di dati assegnato dal Audience Manager . </p> </td> 
+   <td colname="col3"> <p>ID del fornitore dei dati assegnato da Audience Manager. </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> dpuuid </span> </td> 
    <td colname="col2"> Stringa </td> 
-   <td colname="col3"> <p>ID univoco del provider di dati per l'utente. </p> </td> 
+   <td colname="col3"> <p>ID univoco del fornitore di dati per l’utente. </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> minutesToLive </span> </td> 
@@ -79,7 +79,7 @@ Nella tabella seguente sono elencate e definite le proprietà disponibili per en
 
 **Macro**
 
-Entrambe le funzioni accettano le macro seguenti:
+Entrambe le funzioni accettano le seguenti macro:
 
 * `%TIMESTAMP%`: genera una marca temporale (in millisecondi). Utilizzato per svuotare la cache.
 * `%DID%`: inserisce l’ID di Audience Manager per l’utente.
