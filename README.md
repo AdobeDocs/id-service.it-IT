@@ -1,9 +1,16 @@
 ---
-source-git-commit: 676f6ca9c37f77fe24dbc3ceb9aef2d540b3adbe
-translation-type: ht
+source-git-commit: a49f9c8487e32ba23f0ec3c6c0ea39f8638695f3
+workflow-type: tm+mt
+translation-type: tm+mt
+source-wordcount: '520'
+ht-degree: 82%
 
 ---
 # Contribuire agli articoli
+
+| EXL-PR | EXL | Anteprima | Attiva | Data di pubblicazione | Aiuto |
+|--- |--- |--- |--- |--- |--- |
+| [![Stato build](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_pr-exl/lastBuild/) | [![Stato build](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_exl/lastBuild/lastBuild) | [URL anteprima](https://experienceleague.corp.adobe.com/docs/id-service/using/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [URL dal vivo](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=en) | [Guida all’authoring](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Apprezziamo contributi di contenuti dalla community e dai dipendenti Adobe al di fuori dei team della documentazione.
 
@@ -13,7 +20,7 @@ Questo progetto ha adottato il [Codice di condotta open source di Adobe](code-of
 
 ## Informazioni sui contributi ai contenuti Adobe
 
-Consulta la [guida per i collaboratori per la documentazione di Adobe](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
+Consulta la [Guida collaboratore per i documenti di Adobe](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
 
 Il modo in cui contribuisci dipende da chi sei e dal tipo di modifiche con le quali desideri contribuire:
 
@@ -21,7 +28,7 @@ Il modo in cui contribuisci dipende da chi sei e dal tipo di modifiche con le qu
 
 Per inviare una richiesta, fai clic sul collegamento **Segnala un problema** in un articolo, per aprire un problema su GitHub. Specifica un titolo e una descrizione, quindi fai clic su **Enviar nuevo problema**.
 
-Per richiedere aggiornamenti minori, fai clic sul collegamento **Modifica questa pagina** in un articolo, per aprire l’articolo sorgente in GitHub. Utilizza l’interfaccia utente di GitHub per apportare un aggiornamento. Per ulteriori informazioni, consulta la [guida per i collaboratori per la documentazione di Adobe](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
+Per richiedere aggiornamenti minori, fai clic sul collegamento **Modifica questa pagina** in un articolo, per aprire l’articolo sorgente in GitHub. Utilizza l’interfaccia utente di GitHub per apportare un aggiornamento. Per ulteriori informazioni, consulta la [Guida collaboratore per i documenti di Adobe](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) generale.
 
 Le correzioni o i chiarimenti minori inviati per la documentazione e gli esempi di codice in questo archivio sono coperti dalle condizioni d’uso di Adobe.
 
@@ -35,7 +42,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Modifiche principali da dipendenti Adobe
 
-Se sei un autore, un responsabile di programma o uno sviluppatore del team di prodotto per una soluzione [!UICONTROL Adobe Experience Cloud] e il tuo lavoro è contribuire a o creare articoli tecnici, devi utilizzare l’archivio privato all’indirizzo `https://git.corp.adobe.com/AdobeDocs`. Consulta la [guida per collaborazione interna](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html).
+Se sei un autore, un responsabile di programma o uno sviluppatore del team di prodotto per una soluzione [!UICONTROL Adobe Experience Cloud] e il tuo lavoro è contribuire a o creare articoli tecnici, devi utilizzare l’archivio privato all’indirizzo `https://git.corp.adobe.com/AdobeDocs`. Consulta la Guida alla collaborazione [interna](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html).
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
@@ -43,14 +50,14 @@ Se sei un autore, un responsabile di programma o uno sviluppatore del team di pr
 
 I collaboratori della community possono utilizzare l’interfaccia utente di GitHub per le modifiche di base o effettuare il forking dell’archivio per apportare contributi principali.
 
-Per informazioni dettagliate, consulta la [guida per i collaboratori per la documentazione di Adobe](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
+Per informazioni, consulta la [Guida collaboratore per i documenti di Adobe](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
 
 ## Come utilizzare Markdown per formattare l’argomento
 
 Tutti gli articoli in questo archivio utilizzano GitHub Flavored Markdown. Se non conosci Markdown, consulta:
 
 * [Nozioni di base su Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [Riassunto stampabile di Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Cheat sheet Markdown stampabile](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Etichette
 
