@@ -4,11 +4,11 @@ keywords: ID Service
 seo-description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity.
 seo-title: Note sulla versione 2020
 title: Note sulla versione 2020
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d0057a8242dafca63101b1a2f569766bde11bea7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '145'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity
 
 ## Versione 4.6
 
-* È stato impostato il flag `loadSSL` per impostazione predefinita. Tutte le chiamate al servizio identità sono impostate su `https` per impostazione predefinita. I clienti possono impostarlo su false se desiderano chiamare i servizi identità su HTTP dalle proprie `non-ssl` pagine.
+* È stato impostato il flag `loadSSL` per impostazione predefinita. Tutte le chiamate al servizio identità sono impostate su `https` per impostazione predefinita.  I clienti possono impostarlo su false se desiderano chiamare i servizi identità su HTTP dalle proprie `non-ssl` pagine.
 * È stata aggiornata la funzione utilizzata per rilevare la versione di `Internet-Explorer (IE)`, per risolvere un problema segnalato da `ESLint`.
 È stato risolto un problema di prestazioni in `Internet-Explorer (IE) 11`, nel caso di `pre-approval` del consenso esplicito per l’ECID e successivo aggiornamento.
 
@@ -28,4 +28,4 @@ Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity
 * A partire dalla versione 4.5, ECID rifiuterà gli ID vuoti inviati al metodo `setCustomerIDs`.
 * È stato risolto un problema che si verificava quando l’opzione di consenso era configurata come `doesOptInApply=false` e `isIabContext=true`.
 
-Consultate [Experience Cloud delle note](https://docs.adobe.com/content/help/it-IT/release-notes/experience-cloud/current.html) sulla versione per le note sulle versioni mensili relative a tutti i prodotti.
+Consulta [Note sulla versione di Experience Cloud](https://docs.adobe.com/content/help/it-IT/release-notes/experience-cloud/current.html) per le note sulle versioni mensili di tutti i prodotti.
