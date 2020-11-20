@@ -1,56 +1,56 @@
 ---
-title: Utilizzo del consenso per il controllo delle attività  Experience Cloud in base al consenso degli utenti
-description: L'oggetto di consenso  Adobe è un'estensione di Adobe Experience Platform Identity Service, progettata per aiutarti a controllare se e quali soluzioni Experience Cloud possono creare cookie su pagine Web o avviare beacon, in base al consenso dell'utente finale.
-translation-type: tm+mt
+title: Usa il servizio Opt-in per controllare le attività Experience Cloud in base al consenso degli utenti
+description: L’oggetto Adobe Opt-in è un’estensione del servizio Adobe Experience Platform Identity, utile per controllare se e quali soluzioni Experience Cloud possono creare dei cookie su pagine web o avviare dei beacon, in base al consenso dell’utente finale.
+translation-type: ht
 source-git-commit: 3aba8820ef40d068c732a637be5ab67652a8d35d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '554'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Controllo  attività del Experience Cloud in base al consenso degli utenti
+# Controllare le attività Experience Cloud in base al consenso degli utenti
 
- Adobe [!UICONTROL Opt-in] Object è un&#39;estensione del  Adobe [!UICONTROL Experience Platform Servizio]identità di , progettato per aiutarti a controllare se e quali soluzioni di Experience Cloud possono creare cookie su pagine Web o avviare beacon, in base al consenso dell&#39;utente finale.
+L’oggetto [!UICONTROL Adobe Opt-in] è un’estensione del [!UICONTROL servizio Adobe Experience Platform Identity], utile per controllare se e quali soluzioni Experience Cloud possono creare dei cookie su pagine web o avviare dei beacon, in base al consenso fornito dall’utente finale.
 
-## Le basi del [!UICONTROL consenso]
+## Nozioni di base del servizio [!UICONTROL Opt-in]
 
-Un aspetto importante della normativa sulla privacy è l&#39;acquisizione e la trasmissione del consenso degli utenti su come i loro dati personali possono essere utilizzati e da chi. L&#39;ultima versione di [!UICONTROL Identity Service] include funzionalità che si trovano tra l&#39;utente (l&#39;interfaccia utente) e le soluzioni del Adobe  e forniscono attivazione condizionale (ad esempio, pre e post-consenso) dei tag delle soluzioni Adobe Experience Cloud in base al consenso o meno fornito dall&#39;utente finale. Questo viene mostrato nella seguente immagine:
+Un aspetto importante della normativa sulla privacy riguarda l’acquisizione e la trasmissione del consenso degli utenti in merito a come e da chi possono essere utilizzati i loro dati personali. L’ultima versione del [!UICONTROL servizio Identity] include funzionalità che si collocano tra l’utente (l’interfaccia utente) e le soluzioni Adobe per l’attivazione condizionale (ad esempio, pre- o post-consenso) dei tag delle soluzioni Adobe Experience Cloud in base allo stato del consenso fornito dall’utente finale. Tale processo è illustrato dall’immagine seguente:
 
-![Diagramma del funzionamento del [!UICONTROL consenso]](assets/opt-in.png)
+![Diagramma del funzionamento del servizio [!UICONTROL Opt-in]](assets/opt-in.png)
 
-[!UICONTROL Il consenso] è fondamentalmente il portiere... o è il keymaster? Decidete.
+[!UICONTROL Opt-in] funge in pratica da portiere... o da guardiano delle chiavi. Sta a te decidere.
 
-Si riduce a questo:
+In breve:
 
-**Se il [!UICONTROL consenso] è attivato nel servizio identità (tramite una variabile booleana), ritarda l&#39;attivazione di tag o l&#39;impostazione di cookie da parte delle librerie della soluzione del Experience Cloud  fino a quando non viene fornito il consenso per tale soluzione.**
+**Se il servizio [!UICONTROL Opt-in] è attivato nel servizio Identity (tramite una variabile booleana), l’attivazione di tag o l’impostazione di cookie da parte delle librerie della soluzione Experience Cloud viene rinviata fino a quando non si riceve il consenso per tale soluzione.**
 
-[!UICONTROL Il consenso] consente inoltre di decidere se i tag vengono attivati *prima* del consenso dell&#39;utente, e quindi le informazioni sul consenso (insieme al consenso fornito dall&#39;utente finale) vengono memorizzate, in modo che possano essere utilizzate anche per gli hit successivi. L&#39;archiviazione del consenso è disponibile nelle opzioni di [!UICONTROL consenso] , oppure è possibile integrarsi con un CMP e fare in modo che memorizzi le selezioni del consenso.
+[!UICONTROL Opt-in] permette inoltre di decidere se eventuali tag devono essere attivati *prima* del consenso dell’utente. Le informazioni sul consenso (insieme al consenso fornito dall’utente finale) vengono quindi memorizzate e utilizzate anche per gli hit successivi. L’archiviazione del consenso è disponibile nelle opzioni di [!UICONTROL Opt-in], oppure tramite l’integrazione con una soluzione CMP in cui possono essere archiviate le opzioni di consenso selezionate.
 
-## Abilitazione e configurazione del [!UICONTROL consenso]
+## Abilitazione e configurazione di [!UICONTROL Opt-in]
 
-[!UICONTROL Il consenso] è inoltre facilmente configurabile con  Adobe Experience Platform Launch. Guardate il seguente breve video per vedere come.
+Il servizio [!UICONTROL Opt-in] può essere facilmente configurato con Adobe Experience Platform Launch, come illustrato da questo breve video.
 
->[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12&captions=ita)
 
-Se non utilizzi l’Experience Platform Launch, puoi impostare la configurazione del [!UICONTROL consenso]nell’inizializzazione dell’oggetto Visitor globale, come mostrato nella [documentazione](https://marketing.adobe.com/resources/help/en_US/mcvid/getting-started.html).
+Se non utilizzi Experience Platform Launch, puoi impostare la configurazione di [!UICONTROL Opt-in] nell’inizializzazione dell’oggetto globale Visitor, come descritto nella [documentazione](https://marketing.adobe.com/resources/help/it_IT/mcvid/getting-started.html).
 
-## Implementazione del [!UICONTROL consenso] sulla pagina
+## Implementazione di [!UICONTROL Opt-in] sulla pagina
 
-Tutta questa configurazione e la roba di back-end è solo in preparazione per fornire un&#39;interfaccia per i visitatori del sito da presentare con opzioni di consenso. L’interfaccia utente può essere creata dall’utente stesso oppure potete utilizzare un partner CMP (Consent Management Platform) per creare l’interfaccia utente.
+La configurazione e l’impostazione back-end sono necessarie solo in preparazione alla fornitura di un’interfaccia che offra ai visitatori del sito le opzioni di consenso da selezionare. Puoi creare tale interfaccia utente internamente oppure puoi rivolgerti a un partner CMP (Consent Management Platform).
 
-Quando si configura un&#39;interfaccia utente per l&#39;utilizzo del [!UICONTROL consenso] per la raccolta, è necessario che sia configurata per chiamare le API che verranno collegate al [!UICONTROL consenso] e informarlo per dare il consenso ad alcune o a tutte le soluzioni Adobe Experience Cloud. Informazioni dettagliate su queste API sono disponibili nella documentazione [di riferimento per il](https://marketing.adobe.com/resources/help/en_US/mcvid/api.html)consenso. Ulteriori informazioni sul consenso sono disponibili anche nelle pagine della documentazione circostante.
+Quando si imposta un’interfaccia utente affinché il servizio [!UICONTROL Opt-in] possa raccogliere le preferenze di consenso dell’utente, è necessario configurarla per chiamare delle API che si agganciano al servizio [!UICONTROL Opt-in] e lo informano se il consenso è applicabile solo ad alcune o a tutte le soluzioni Adobe Experience Cloud. Per informazioni dettagliate su queste API, consulta la [documentazione di riferimento di Opt-in](https://marketing.adobe.com/resources/help/it_IT/mcvid/api.html). Ulteriori informazioni sul servizio Opt-in sono disponibili anche nelle pagine della documentazione circostanti.
 
-## [!UICONTROL Demo di consenso]
+## Demo di [!UICONTROL Opt-in]
 
-Nel video seguente, vedete una breve dimostrazione del [!UICONTROL consenso] sulla pagina e come può influenzare se le soluzioni di Experience Cloud  possono impostare o meno i cookie, avviare beacon e così via.
+Il video seguente offre una breve dimostrazione di come funziona il servizio [!UICONTROL Opt-in] sulla pagina e di come può determinare se le soluzioni di Experience Cloud possano o meno impostare i cookie, avviare i beacon e così via.
 
->[!VIDEO](https://video.tv.adobe.com/v/26432/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/26432/?quality=12&captions=ita)
 
-**NOTA:** È importante notare che al momento della stesura di questo articolo, il [!UICONTROL consenso] non è stato integrato nelle librerie per tutte le soluzioni del Experience Cloud . Le librerie attualmente supportate per il [!UICONTROL consenso] sono:
+**NOTA:** al momento della stesura di questo articolo, [!UICONTROL Opt-in] non è ancora stato integrato nelle librerie di tutte le soluzioni Experience Cloud. Attualmente [!UICONTROL Opt-in] supporta le seguenti librerie:
 
-* Servizio identità
+* Servizio Identity
 * Analytics
 * Audience Manager
 * [!DNL Target]
