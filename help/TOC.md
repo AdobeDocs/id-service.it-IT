@@ -4,13 +4,13 @@ product: ID Service
 audience: end-user
 user-guide-title: Guida del servizio Experience Cloud Identity
 breadcrumb-title: Guida a Identity Service
-user-guide-description: Il servizio ID fornisce un ID universale e costante che identifica i visitatori in tutte le soluzioni Experience Cloud. Può sostituire il codice di generazione ID di servizi come Analytics, Audience Manager, Target e altre soluzioni o funzionalità Experience Cloud.
+user-guide-description: Il servizio ID fornisce un ID universale e costante che identifica i visitatori in tutte le soluzioni Experience Cloud. Può sostituire il codice di generazione ID per servizi come Analytics, Audience Manager, Target e altre soluzioni o funzionalità Experience Cloud.
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0bf1464a7caf3f2a8a06178ed5c2d2525e79cfd6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '396'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -42,8 +42,8 @@ ht-degree: 97%
       + [Configurazione del servizio Opt-in](implementation-guides/opt-in-service/getting-started.md)
       + [Convalida del servizio Opt-in](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
       + [Configurazione di Opt-in con Experience Platform Launch](implementation-guides/opt-in-service/launch.md)
-      + [Configurare Opt-in con DTM](implementation-guides/opt-in-service/optin-dtm.md)
-      + [Controllo  attività del Experience Cloud in base al consenso degli utenti](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
+      + [Configurazione di Opt-in con DTM](implementation-guides/opt-in-service/optin-dtm.md)
+      + [Controllare le attività Experience Cloud in base al consenso degli utenti](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
       + [Casi d’uso di Opt-in](implementation-guides/opt-in-service/use-cases.md)
       + [Riferimenti di Opt-in](implementation-guides/opt-in-service/api.md)
       + [Utilizzo dei servizi Opt-in con il Framework IAB](implementation-guides/opt-in-service/iab.md)
