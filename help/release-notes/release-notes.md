@@ -4,9 +4,9 @@ keywords: ID Service
 seo-description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity.
 seo-title: Note sulla versione 2020
 title: Note sulla versione 2020
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d0057a8242dafca63101b1a2f569766bde11bea7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 100%
 
