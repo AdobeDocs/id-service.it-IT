@@ -1,12 +1,15 @@
 ---
 description: Metodi pubblici che permettono di interagire con il servizio ID.
-keywords: Servizio ID
+keywords: ID Service
 seo-description: Metodi pubblici che permettono di interagire con il servizio ID.
 seo-title: Metodi
 title: Metodi
 uuid: 184d0a62-0c8d-481b-9afe-b7a67bdafdce
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '88'
+ht-degree: 80%
 
 ---
 
@@ -17,7 +20,7 @@ Metodi pubblici che permettono di interagire con il servizio ID.
 
 >[!NOTE]
 >
->Le *librerie JavaScript di Experience Cloud ID* sono state recentemente spostate. L'ultima versione delle librerie ECID JS è disponibile all'indirizzo [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+>Le *librerie JavaScript di Experience Cloud ID* sono state recentemente spostate. The latest release of the ECID JS libraries can be found at [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 Articoli correlati:
 
