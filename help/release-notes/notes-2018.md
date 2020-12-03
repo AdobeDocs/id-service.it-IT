@@ -1,12 +1,15 @@
 ---
 description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2018.
-keywords: Servizio ID
+keywords: ID Service
 seo-description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2018.
 seo-title: Note sulla versione 2018
 title: Note sulla versione 2018
 uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '489'
+ht-degree: 57%
 
 ---
 
@@ -20,7 +23,7 @@ Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity
 <table id="table_201417BD540E4EE69911AABE9BF77509"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Descrizione dell'elemento </th> 
+   <th colname="col1" class="entry"> Descrizione articolo </th> 
    <th colname="col2" class="entry"> </th> 
   </tr>
  </thead>
@@ -37,7 +40,7 @@ Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity
 <table id="table_6546F5C74E4742E4B5E9793BCEAB66FA"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Descrizione dell'elemento </th> 
+   <th colname="col1" class="entry"> Descrizione articolo </th> 
    <th colname="col2" class="entry"> </th> 
   </tr>
  </thead>
@@ -47,12 +50,12 @@ Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity
    <td colname="col2"> <p>Durante una scansione della sicurezza interna, è stato rilevato che quando si usa la libreria DTM, i cookie usati per la gestione della sessione non riescono a specificare gli attributi adeguati. Questo potrebbe comportare una condivisione involontaria delle informazioni dei cookie. Per risolvere questo problema è stata introdotta una configurazione che consente al cliente di impostare il cookie AMCV come sicuro. Consulta secureCookie. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Il codice di integrazione e l'ID devono essere numeri o stringhe non vuote </p> </td> 
-   <td colname="col2"> <p>È stato corretto un problema di convalida di “setCustomerIDs” quando i dati contengono un codice di integrazione o un ID che non è né un numero né una stringa non vuota. </p> </td> 
+   <td colname="col1"> <p>Il codice e l'ID di integrazione devono essere numeri o stringhe non vuote </p> </td> 
+   <td colname="col2"> <p>È stato risolto un problema con la convalida `setCustomerIDs` quando i dati contengono un'integrazione `code` o `id` che non è né un numero né una stringa non vuota. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> ECID JS è disponibile nel repository Git pubblico </td> 
-   <td colname="col2"> ECID JS è ora disponibile nel repository Git pubblico per tutti i clienti di Experience Cloud all'indirizzo https://github.com/Adobe-Marketing-Cloud/id-service/releases. </td> 
+   <td colname="col1"> ECID JS è disponibile in Public Git repo </td> 
+   <td colname="col2"> ECID JS è ora disponibile in Public Git repo per tutti i clienti  Experience Cloud all'indirizzo https://github.com/Adobe-Marketing-Cloud/id-service/releases. </td> 
   </tr> 
  </tbody> 
 </table>
@@ -62,14 +65,14 @@ Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity
 <table id="table_9FA4E20C996746A2A4219C9A0F759AD1"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Descrizione dell'elemento </th> 
+   <th colname="col1" class="entry"> Descrizione articolo </th> 
    <th colname="col2" class="entry"> </th> 
   </tr>
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Picco non realistico nel conteggio di visitatori univoci </p> </td> 
-   <td colname="col2"> <p>Con il rilascio del servizio Experience Cloud Identity 3.1.0, abbiamo riscontrato un problema che causava un picco non realistico nel conteggio dei visitatori univoci in seguito all’implementazione di tale versione. Questo comportamento si verifica solo nell'ultima versione di ECID (3.1.0) e solo se l'utente ha selezionato l'opzione “Consenti solo dal sito Web attuale” nelle impostazioni di privacy del browser Safari. La versione 3.1.2 corregge questo problema. </p> </td> 
+   <td colname="col2"> <p>Con il rilascio del servizio Experience Cloud Identity 3.1.0, abbiamo riscontrato un problema che causava un picco non realistico nel conteggio dei visitatori univoci in seguito all’implementazione di tale versione. Questo comportamento viene mostrato solo con l’ultima versione di ECID, v3.1.0, e se un utente ha selezionato l’opzione "Consenti solo dal sito Web corrente" nelle impostazioni di privacy di un browser Safari. La versione 3.1.2 risolve il problema. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -83,14 +86,14 @@ Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Descrizione dell'elemento </th> 
+   <th colname="col1" class="entry"> Descrizione articolo </th> 
    <th colname="col2" class="entry"> </th> 
   </tr>
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Cookie impostato su un dominio errato </p> </td> 
-   <td colname="col2"> <p>È stato corretto un bug in cui il cookie Visitatore temporaneo impostava un cookie nel dominio del cookie "predefinito" anziché impostarlo nel dominio specificato nella configurazione (initConfig). </p> </td> 
+   <td colname="col1"> <p>Cookie impostato su un dominio non corretto </p> </td> 
+   <td colname="col2"> <p>È stato corretto un bug a causa del quale il cookie del visitatore temporaneo impostava un cookie nel dominio "predefinito" del cookie invece di impostarlo nel dominio fornito nella configurazione (initConfig). </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -100,21 +103,21 @@ Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity
 <table id="table_7E9224D6CC924A2DB5119171C9DC5443"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Descrizione dell'elemento </th> 
+   <th colname="col1" class="entry"> Descrizione articolo </th> 
    <th colname="col2" class="entry"> </th> 
   </tr>
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Thread yielding per richieste di sincronizzazione ID multiple </p> </td> 
-   <td colname="col2"> <p><b>Iframe</b> </p> <p>Per i clienti che eseguono più sincronizzazioni di ID, in alcuni casi l'interfaccia utente si blocca a causa dei continui calcoli che la CPU deve elaborare. Stiamo pertanto introducendo la tecnica del thread yielding per separare le richieste di sincronizzazione ID di 100 msec l'una dall'altra. </p> <p>Questa modifica determinerà un miglioramento delle prestazioni per i clienti che usano Visitor 2.3.0+ e DIL 6.10+. </p> </td> 
+   <td colname="col2"> <p><b>Iframe</b> </p> <p>Per i clienti che eseguono più sincronizzazioni di ID, a causa dei continui calcoli della CPU, in alcuni casi l’interfaccia utente viene bloccata. Stiamo introducendo il thread yielding per separare le richieste di sincronizzazione ID di 100 msec l’una dall’altra. </p> <p>Questa modifica migliorerà le prestazioni per i clienti che usano Visitor 2.3.0+ e DIL 6.10+. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Possibilità di disattivare le chiamate di terze parti aggiunta </td> 
    <td colname="col2"> <p><b>JavaScript - 3.0.0</b> </p> <p>Adobe ha rinominato le configurazioni seguenti per consentire la disattivazione delle chiamate di sincronizzazione di terze parti. </p> <p>Da idSyncDisableSyncs a disableIdSyncs </p> <p>Da idSyncDisable3rdPartySyncing a disableThirdPartyCookies </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Supporto per Internet Explorer </p> </td> 
+   <td colname="col1"> <p>Supporto di Internet Explorer </p> </td> 
    <td colname="col2"> <p>Il servizio ID non supporta più Internet Explorer 6, 7, 8 e 9. </p> </td> 
   </tr> 
   <tr> 
