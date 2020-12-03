@@ -1,12 +1,15 @@
 ---
 description: Note sulla versione e aggiornamenti per la versione 2015.
-keywords: Servizio ID
+keywords: ID Service
 seo-description: Note sulla versione e aggiornamenti per la versione 2015.
 seo-title: Note sulla versione 2015
 title: Note sulla versione 2015
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 73%
 
 ---
 
@@ -19,30 +22,30 @@ Note sulla versione e aggiornamenti per la versione 2015.
 
 Novembre 2015
 
-Il Children's Online Privacy Protection Act (COPPA) proibisce la raccolta online di dati personali di bambini di età inferiore ai 13 anni senza disporre del consenso verificabile dei genitori. I clienti interessati dal COPPA possono aggiungere una variabile opzionale al codice del servizio [!DNL Experience Cloud] ID che impedisce l’impostazione di cookie nel dominio di un browser di terze parti. Consulta [Supporto per COPPA nel servizio Experience Cloud Identity](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Per le versioni a partire dalla 1.5.3.
+Il Children&#39;s Online Privacy Protection Act (COPPA) proibisce la raccolta online di dati personali di bambini di età inferiore ai 13 anni senza disporre del consenso verificabile dei genitori. I clienti interessati dal COPPA possono aggiungere una variabile opzionale al codice del servizio [!DNL Experience Cloud] ID che impedisce l’impostazione di cookie nel dominio di un browser di terze parti. Consulta [Supporto per COPPA nel servizio Experience Cloud Identity](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Per le versioni a partire dalla 1.5.3.
 
 ## Versione 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
 Settembre 2015
 
 * È stato corretto un bug del browser Safari che impediva il funzionamento della sincronizzazione dei servizi quando gli utenti impostavano il blocco dei cookie di terze parti. (AAM-20764)
-* Ora le chiamate al servizio ID includono l'ID versione nel parametro `d_visid_ver=`. L'ID restituito aiuta i team interni a risolvere i problemi e a prestare assistenza. (AAM-20824)
+* Ora le chiamate al servizio ID includono l&#39;ID versione nel parametro `d_visid_ver=`. L’ID restituito aiuta i team interni a risolvere i problemi e a fornire assistenza. (AAM-20824)
 
 ## Versione 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
 Agosto 2015
 
-* È stato corretto un bug per impedire al servizio ID di richiedere un iframe se non sono presenti dati da sincronizzare o attivare. (AAM-20164)
-* È stato risolto un bug che impediva al servizio ID di impostare correttamente un cookie per un dominio di livello superiore con più parti. Per esempio, per un dominio come `my_company.co.uk`, in alcuni casi il servizio ID imposterebbe un cookie solo in `co.uk`. (AN-104683)
+* È stato corretto un bug per impedire al servizio ID di richiedere un iframe in assenza di dati da sincronizzare o attivare. (AAM-20164)
+* È stato corretto un bug che impediva al servizio ID di impostare correttamente un cookie di dominio di livello superiore con più parti. Per esempio, per un dominio come `my_company.co.uk`, in alcuni casi il servizio ID imposterebbe un cookie solo in `co.uk`. (AN-104683)
 
    Questo bug interessava solo alcuni clienti che soddisfacevano *tutti* i seguenti criteri:
 
-   * Utilizzavano il servizio ID.
-   * Hanno abilitato un [periodo di grazia](../reference/analytics-reference/grace-period.md) *o* utilizzano cookie di prime parti e gli utenti hanno bloccato i cookie di terze parti.
+   * Utilizzo del servizio ID.
+   * Hanno abilitato un [periodo di grazia ](../reference/analytics-reference/grace-period.md)*o* utilizzano cookie di prime parti e gli utenti hanno bloccato i cookie di terze parti.
 
    * Avevano pagine con domini di livello superiore con più parti.
 
-Alcune revisioni della documentazione effettuate in questa versione:
+Le revisioni della documentazione in questa versione includono:
 
 * [Metodi API e libreria dei codici](../library/library.md#concept-ff27497375644a898d47984aefb21c97): contenuto e testo riorganizzati. Nella maggior parte dei casi, per ciascun metodo è presente una propria pagina.
 * [Requisiti del servizio Experience Cloud Identity](../reference/requirements.md): contenuto rivisto e testo riorganizzato.
@@ -73,7 +76,7 @@ Consulta [Experience Cloud](../implementation-guides/setup-analytics.md#concept-
 
 Febbraio 2015
 
-È stata corretta la gestione del timeout delle richieste per AAM Blob e Location Hint. Ora, quando si verifica un timeout, il sistema lascia correttamente questi campi vuoti per la pagina corrente ed effettua tutti i callback. Il timeout viene trattato come una condizione di errore, pertanto viene ritentato nella pagina successiva. (AN-94473, AN-94474)
+È stata risolta la gestione del timeout sulle richieste di AAM Blob e Location Hint. Ora, in caso di timeout, il sistema lascerà correttamente questi campi vuoti per la pagina corrente ed effettua tutte le callback. Il timeout viene trattato come una condizione di errore, quindi verrà ritentato nella pagina successiva. (AN-94473, AN-94474)
 
 ## Versione 1.3.4 {#section-bca4a3e7c05546b7af1c9ec47fdb3331}
 
