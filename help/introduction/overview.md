@@ -3,8 +3,11 @@ description: Il ruolo del servizio Experience Cloud Identity in Adobe Experience
 seo-description: Il servizio Experience Cloud Identity (già servizio Visitor ID o Marketing Cloud ID) abilita il framework comune di identificazione dei servizi Experience Cloud, come gli attributi cliente e i tipi di pubblico.
 seo-title: Panoramica del servizio Experience Cloud ID
 title: Panoramica del servizio Experience Cloud ID
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 98b72f87b188debd6a5f6b86822c3f714647de61
+workflow-type: tm+mt
+source-wordcount: '615'
+ht-degree: 80%
 
 ---
 
@@ -20,20 +23,20 @@ Il [!UICONTROL servizio Experience Cloud Identity] abilita il framework comune d
 * [!UICONTROL Servizio Experience Platform Identity]: il servizio che collega le identità. È il servizio di collegamento dispositivi per la gestione dell&#39;esperienza basata sulle persone.
 * [!UICONTROL Servizio Experience Cloud ID] (ECID): l&#39;ID univoco e costante assegnato ai visitatori del sito. È un&#39;entità specifica che può essere utilizzata dal servizio Platform Identity.
 
-Quando l&#39;organizzazione implementa il servizio ID, tale ID consente di identificare lo stesso visitatore del sito e i relativi dati in diverse soluzioni Experience Cloud.
+Quando l’organizzazione implementa il servizio ID, questo ID consente di identificare lo stesso visitatore del sito e i relativi dati in diverse soluzioni  Experience Cloud.
 
 ![](assets/ecid-new.png)
 
-Inoltre, il servizio ID può sostituire i diversi ID specifici di ogni soluzione (ad esempio, AID di Analytics). E tramite la funzionalità [ID cliente e stati di autenticazione](/help/reference/authenticated-state.md), il servizio ID ti permette di trasmettere gli ID dei tuoi clienti a Experience Cloud. Ricorda però che il servizio ID può essere utilizzato solo con le soluzioni per le quali hai effettuato la sottoscrizione. Se non hai sottoscritto altri prodotti, questo servizio non consente di utilizzarli.
+Inoltre, il servizio ID può sostituire i diversi ID specifici della soluzione (ad esempio, AID di Analytics). And, through the [Customer IDs and Authentication States](/help/reference/authenticated-state.md) functionality, the ID service lets you pass in your own customer IDs to the Experience Cloud. Ricorda, tuttavia, che il servizio ID funziona solo con le soluzioni per le quali hai già effettuato la sottoscrizione. Non fornirà l&#39;accesso ad altri prodotti se non siete iscritti.
 
 Il servizio ID è un componente integrale di un gran numero di funzioni, miglioramenti e servizi correnti e futuri di Experience Cloud. Attualmente, il servizio ID supporta [Analytics](http://www.adobe.com/it/marketing-cloud/web-analytics.html), [Audience Manager](http://www.adobe.com/it/marketing-cloud/data-management-platform.html) e [Target](http://www.adobe.com/it/marketing-cloud/testing-targeting.html). È inoltre richiesto per partecipare ad Adobe Experience Cloud Device Co-op. Se non hai implementato il servizio ID, ti consigliamo di considerare fin d&#39;ora una strategia di migrazione. Per ulteriori informazioni sull’importanza e il ruolo del servizio ID, consulta l’articolo di blog [Why the Experience Cloud Identity Service Should be on Your Radar](http://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/) (Perché considerare il servizio Experience Cloud Identity).
 
 ## Riepilogo delle funzioni
 
-Riepilogando, il servizio ID:
+In sintesi, il servizio ID:
 
-* Crea una chiave o un ID comune che possono essere usati per collegare profili ed identità.
-* Identifica in maniera univoca un dispositivo all&#39;interno di varie soluzioni.
+* Crea una chiave o un ID comune che può essere utilizzata per collegare profili e identità.
+* Identifica in modo univoco un dispositivo tra più soluzioni.
 * Imposta un cookie di prima parte nel dominio del cliente per garantire il monitoraggio del dominio stesso. Consulta il documento su [cookie e servizio Experience Cloud Identity](https://docs.adobe.com/content/help/it-IT/id-service/using/intro/cookies.html) per ulteriori informazioni.
 * Riceve alias e mappature ID dai clienti e dai partner Experience Cloud.
 * Gestisce la sincronizzazione ID all&#39;interno di Experience Cloud.
