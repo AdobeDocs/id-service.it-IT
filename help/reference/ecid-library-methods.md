@@ -3,9 +3,9 @@ title: Metodi della libreria ECID in ambito Safari ITP
 seo-title: Metodi della libreria ECID in ambito Safari ITP
 description: Documentazione della libreria Adobe ECID (servizio ID).
 seo-description: Documentazione della libreria Adobe ECID (servizio ID).
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 100%
 
