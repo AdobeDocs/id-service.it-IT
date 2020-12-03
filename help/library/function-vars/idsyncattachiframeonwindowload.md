@@ -1,12 +1,15 @@
 ---
 description: Flag booleano facoltativo che controlla come il servizio Experience Cloud Identity carica l’iFrame di sincronizzazione ID.
-keywords: Servizio ID
+keywords: ID Service
 seo-description: Flag booleano facoltativo che controlla come il servizio Experience Cloud Identity carica l’iFrame di sincronizzazione ID.
 seo-title: idSyncAttachIframeOnWindowLoad
 title: idSyncAttachIframeOnWindowLoad
 uuid: aa2c2fa4-2cab-4e08-8d35-729a6c3e459a
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '93'
+ht-degree: 79%
 
 ---
 
@@ -15,9 +18,9 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 Flag booleano facoltativo che controlla come il servizio Experience Cloud Identity carica l’iFrame di sincronizzazione ID.
 
-**Sintassi:** ` `idSyncAttachIframeOnWindowLoad= true|false`` (l'impostazione predefinita è `false`).
+**Sintassi:** ` `idSyncAttachIframeOnWindowLoad= true|false`` (l&#39;impostazione predefinita è `false`).
 
-Quando `idSyncAttachIframeOnWindowLoad: true`, il servizio ID carica l'iFrame di sincronizzazione ID al caricamento della finestra. Per impostazione predefinita, il servizio ID carica l'iFrame di sincronizzazione con la massima velocità possibile, ma non al caricamento della finestra.
+Quando `idSyncAttachIframeOnWindowLoad: true`, il servizio ID carica l&#39;iFrame di sincronizzazione ID al caricamento della finestra. Per impostazione predefinita, il servizio ID carica l’iFrame di sincronizzazione ID il più rapidamente possibile, anziché al caricamento della finestra.
 
 **Esempio di codice**
 
