@@ -1,18 +1,21 @@
 ---
 description: Istruzioni ed esempi di codice per le implementazioni standard e non-standard del servizio Experience Cloud Identity.
-keywords: Servizio ID
+keywords: ID Service
 seo-description: Istruzioni ed esempi di codice per le implementazioni standard e non-standard del servizio Experience Cloud Identity.
 seo-title: Guide all'implementazione per il servizio ID
 solution: Experience Cloud
 title: Guide all'implementazione
 uuid: null
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e75a448a2fa1c384c88f00648a6f868a886c6569
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 100%
 
 ---
 
 
-# Guide all'implementazione
+# Guide all&#39;implementazione
 
 Istruzioni ed esempi di codice per le implementazioni standard e non-standard del servizio Experience Cloud Identity.
 
@@ -22,7 +25,7 @@ Istruzioni ed esempi di codice per le implementazioni standard e non-standard de
 
 ## Implementazione standard
 
-Un'implementazione standard utilizza [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/it-IT/launch/using/overview.html) per aiutarti a iniziare con il servizio ID e a integrarlo con altre soluzioni Experience Cloud. Tuttavia, si consiglia vivamente di usare Experience Platform Launch per implementare il servizio ID.
+Un&#39;implementazione standard utilizza [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/it-IT/launch/using/overview.html) per aiutarti a iniziare con il servizio ID e a integrarlo con altre soluzioni Experience Cloud. Tuttavia, si consiglia vivamente di usare Experience Platform Launch per implementare il servizio ID.
 
 ## Risorse di implementazione
 
