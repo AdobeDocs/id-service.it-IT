@@ -1,12 +1,15 @@
 ---
 description: Flag booleano opzionale che impedisce al servizio ID di effettuare chiamate ad altri domini.
-keywords: monitoraggio interdominio; servizio ID
+keywords: cross domain tracking;ID Service
 seo-description: Flag booleano opzionale che impedisce al servizio ID di effettuare chiamate ad altri domini.
 seo-title: disableThirdPartyCalls
 title: disableThirdPartyCalls
 uuid: e92ce1f5-67a4-476c-9d04-41d4e96b1592
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 68%
 
 ---
 
@@ -15,21 +18,21 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 Flag booleano opzionale che impedisce al servizio ID di effettuare chiamate ad altri domini.
 
-**Sintassi:** ` `disableThirdPartyCalls: true|false`` (l'impostazione predefinita è `false`)
+**Sintassi:** ` `disableThirdPartyCalls: true|false`` (l&#39;impostazione predefinita è `false`)
 
 Quando `disableThirdPartyCalls: true`, il servizio ID non effettua chiamate ad altri domini.
 
 **Finalità**
 
-Questa variabile è progettata per i clienti che devono:
+Questa variabile è progettata per i clienti che hanno bisogno di:
 
-* Impedire che il servizio ID possa effettuare chiamate dalle proprie pagine sicure e autenticate.
-* Assegnare ai visitatori del sito un identificatore Experience Cloud ID (MID).
-* Assicurare il corretto funzionamento di altre soluzioni Experience Cloud.
+* Per impedire che il servizio ID effettui chiamate dalle loro pagine sicure e autenticate.
+* Assegnare ai visitatori del sito un ID Experience Cloud  (MID).
+* Le altre soluzioni  Experience Cloud per funzionare correttamente.
 
 **Strategia di implementazione**
 
-Poiché altre soluzioni Experience Cloud usano l'identificatore MID, il servizio ID chiama Adobe per restituire e impostare questo ID. Per evitare che il servizio ID effettui tali chiamate da sezioni autenticate del sito, puoi fare sì che le chiamate necessarie vengano effettuate da pagine che non richiedono la preventiva autenticazione. Una volta che un visitatore ha un suo identificatore MID, puoi impostare `disableThirdPartyCalls= true` nel codice del servizio ID sulle sezioni autenticate del sito. Qui si presuppone che quasi tutti (o tutti) i clienti accedano a una pagina di autenticazione prima di accedere alle sezioni protette del sito.
+Poiché altre soluzioni Experience Cloud usano l&#39;identificatore MID, il servizio ID chiama Adobe per restituire e impostare questo ID. Per evitare che il servizio ID effettui tali chiamate da sezioni autenticate del sito, puoi fare sì che le chiamate necessarie vengano effettuate da pagine che non richiedono la preventiva autenticazione. Una volta che un visitatore ha un suo identificatore MID, puoi impostare `disableThirdPartyCalls= true` nel codice del servizio ID sulle sezioni autenticate del sito. Il presupposto è che la maggior parte, se non tutti, dei clienti accederà a una pagina di autenticazione prima di accedere alle parti protette del sito.
 
 **Esempio di codice**
 
