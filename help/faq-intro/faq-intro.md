@@ -1,12 +1,15 @@
 ---
 description: Domande frequenti sul servizio Experience Cloud Identity, oltre a sezioni sul servizio ID e sulle altre combinazioni di soluzioni Experience Cloud.
-keywords: Servizio ID
+keywords: ID Service
 seo-description: Domande frequenti sul servizio Experience Cloud Identity, oltre a sezioni sul servizio ID e sulle altre combinazioni di soluzioni Experience Cloud.
 seo-title: Domande frequenti
 title: Domande frequenti
 uuid: b075957b-165f-4087-99ad-bf608b4d4967
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 100%
 
 ---
 
