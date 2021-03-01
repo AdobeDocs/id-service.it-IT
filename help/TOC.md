@@ -3,7 +3,7 @@ cloud: platform-cloud
 product: ID Service
 audience: end-user
 user-guide-title: Guida del servizio Experience Cloud Identity
-breadcrumb-title: Guida a Identity Service
+breadcrumb-title: Guida di Identity Service
 user-guide-description: Il servizio ID fornisce un ID universale e costante che identifica i visitatori in tutte le soluzioni Experience Cloud. Può sostituire il codice di generazione ID per servizi come Analytics, Audience Manager, Target e altre soluzioni o funzionalità Experience Cloud.
 user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
