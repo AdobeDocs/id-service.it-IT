@@ -1,0 +1,42 @@
+---
+description: Configurazione all’interno di ECID che può essere utilizzata per supportare i cookie AMCV sulle pagine Google AMP.
+keywords: Servizio ID
+seo-description: Configurazione all’interno di ECID che può essere utilizzata per supportare i cookie AMCV sulle pagine Google AMP.
+seo-title: Configurazioni Secure e SameSite
+title: Configurazioni Secure e SameSite
+translation-type: tm+mt
+source-git-commit: 702d20f3989f7749fb173496765d94c3a5af46dc
+workflow-type: tm+mt
+source-wordcount: '174'
+ht-degree: 2%
+
+---
+
+
+# Configurazioni Secure e SameSite
+
+Questa configurazione ti consente di modificare le impostazioni per i cookie e supportare i [cookie AMCV](../../introduction/cookies.md) sulle pagine Google AMP.
+
+Il servizio ID visitatore di Adobe imposta i cookie ECID con l’impostazione predefinita del browser `SameSite = Lax`, che è inaccessibile se la pagina viene caricata in un iframe come una pagina AMP di Google. Per accedere ai cookie ECID, utilizza le configurazioni seguenti per aggiornare l’impostazione SameSite a `SameSite = None`.
+
+>[!NOTE]
+>
+>Quando applichi `SameSite = None`, i cookie devono essere impostati su `Secure` in modo che i dati possano essere trasmessi solo tramite connessioni HTTPS.
+
+**Implementazione**:
+
+Se utilizzi Adobe Experience Platform Launch, aggiorna l’estensione Experience Cloud ID alla versione 5.1.0 e configura `secureCookie: true` e `sameSiteCookie: none`.
+
+Se non utilizzi Experience Platform Launch, aggiorna la libreria Visitor 5.1.0 più recente e segui le configurazioni riportate di seguito, durante l’inizializzazione dell’istanza Visitor:
+
+**Esempio di codice**
+
+```js
+var visitor = Visitor.getInstance("IMSORG_ID", {
+
+     secureCookie: true,
+
+     sameSiteCookie: "None"
+
+});
+```
