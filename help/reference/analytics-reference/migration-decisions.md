@@ -1,14 +1,14 @@
 ---
 description: Prima di implementare il servizio Experience Cloud Identity, è necessario comprendere in che modo condiziona il tracciamento dei visitatori in più domini e i potenziali problemi relativi alla raccolta dei dati con metodi diversi o tramite file JavaScript.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Prima di implementare il servizio Experience Cloud Identity, è necessario comprendere in che modo condiziona il tracciamento dei visitatori in più domini e i potenziali problemi relativi alla raccolta dei dati con metodi diversi o tramite file JavaScript.
 seo-title: Decisioni relative alla migrazione al servizio Experience Cloud Identity
 title: Decisioni relative alla migrazione al servizio Experience Cloud Identity
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+source-git-commit: a76eb7cc579ca859769e6caa256a3a0a3f66ca33
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '679'
 ht-degree: 100%
 
 ---
@@ -57,7 +57,7 @@ Se hai più domini che inviano dati alla *stessa suite di rapporti*, ti consigli
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Più domini </p> </td> 
-   <td colname="col2"> <p>Se tieni traccia dei visitatori su più domini e hai anche un sito di accesso principale in cui i clienti possono essere identificati prima che visitino altri domini dovresti continuare a utilizzare il CNAME di raccolta dati. Per una spiegazione dettagliata, vedi <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local">CNAME di raccolta dati e monitoraggio tra i domini</a>. </p> <p>Per configurare un CNAME con il servizio ID è necessario specificare due parametri aggiunti per il server di tracciamento, <span class="codeph">visitor.marketingCloudServer</span> e <span class="codeph">visitor.marketingCloudServerSecure</span>. </p> </td> 
+   <td colname="col2"> <p>Se tieni traccia dei visitatori su più domini e hai anche un sito di accesso principale in cui i clienti possono essere identificati prima che visitino altri domini dovresti continuare a utilizzare il CNAME di raccolta dati. <!--See <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local"> Data Collection CNAMES and Cross Domain Tracking</a> for a detailed explanation.--> </p> <p>Per configurare un CNAME con il servizio ID è necessario specificare due parametri aggiunti per il server di tracciamento, <span class="codeph">visitor.marketingCloudServer</span> e <span class="codeph">visitor.marketingCloudServerSecure</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Un solo dominio </p> </td> 
