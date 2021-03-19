@@ -1,14 +1,14 @@
 ---
 description: Funzioni o caratteristiche del servizio ID esclusive di Adobe Analytics.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Funzioni o caratteristiche del servizio ID esclusive di Adobe Analytics.
 seo-title: Guida di riferimento di Analytics
 title: Guida di riferimento di Analytics
 uuid: 215f0394-a436-4f0c-9a52-3b387048e40e
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: 73465dcdab8b8316e0e9d41c5780ff0231270058
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '76'
 ht-degree: 100%
 
 ---
@@ -23,6 +23,6 @@ Funzioni o caratteristiche del servizio ID esclusive di Adobe Analytics.
 + [Decisioni relative alla migrazione al servizio Experience Cloud Identity](migration-decisions.md)
 + [Scenari di migrazione al servizio Experience Cloud Identity](migration-scenarios.md)
 + [Richieste Analytics ed Experience Cloud ID](legacy-analytics.md)
-+ [CNAME per raccolta dati e monitoraggio tra più domini](cname.md)
 + [Implementazione lato server con JavaScript](server-side.md)
 + [Periodo di tolleranza per il servizio ID](grace-period.md)
+<!--+ [Data Collection CNAMEs and Cross-Domain Tracking](cname.md)-->
