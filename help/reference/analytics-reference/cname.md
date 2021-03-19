@@ -1,14 +1,14 @@
 ---
-description: 'null'
-keywords: order of operations;ID Service
-seo-description: 'null'
+description: Se utilizzi un sito di accesso principale per l’identificazione dei clienti prima che visitino altri domini, un CNAME consente il monitoraggio tra più domini nei browser che non accettano i cookie di terze parti (ad esempio Safari).
+keywords: ordine delle operazioni;servizio ID
+seo-description: Se utilizzi un sito di accesso principale per l’identificazione dei clienti prima che visitino altri domini, un CNAME consente il monitoraggio tra più domini nei browser che non accettano i cookie di terze parti (ad esempio Safari).
 seo-title: CNAME per raccolta dati e monitoraggio tra più domini
 title: CNAME per raccolta dati e monitoraggio tra più domini
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
 translation-type: tm+mt
-source-git-commit: 9fe63cf3983a2ed6642837b02a3c3441ef745d70
+source-git-commit: 053d45656e941adc1950d49099c30da1d9a72aa0
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '675'
 ht-degree: 100%
 
 ---
