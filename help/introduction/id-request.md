@@ -1,18 +1,18 @@
 ---
 description: Panoramica del processo di richiesta ID e risposta. Questi esempi descrivono l'assegnazione degli ID per siti individuali, per siti diversi e per siti gestiti da diversi clienti Experience Cloud con i propri ID organizzazione.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Panoramica del processo di richiesta ID e risposta. Questi esempi descrivono l'assegnazione degli ID per siti individuali, per siti diversi e per siti gestiti da diversi clienti Experience Cloud con i propri ID organizzazione.
 seo-title: Richiesta e impostazione degli ID da parte del servizio Experience Cloud Identity
 title: Richiesta e impostazione degli ID da parte del servizio Experience Cloud Identity
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '804'
+exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '806'
 ht-degree: 100%
 
 ---
-
 
 # Richiesta e impostazione degli ID da parte del servizio Experience Cloud Identity {#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
@@ -64,4 +64,3 @@ Il DCS, dopo aver ricevuto l’ID organizzazione e l’ID demdex, crea e restitu
 In questo esempio, il visitatore abbandona i siti della società Azienda alimentare e accede al sito di calcio di proprietà della società Azienda sportiva. Quando il visitatore accede al sito di calcio, il processo di verifica e richiesta degli ID funziona nel modo descritto negli esempi precedenti. Tuttavia, poiché la società Azienda sportiva dispone di un proprio ID organizzazione, il servizio ID restituisce un MID diverso. Il nuovo MID è univoco per i domini controllati dalla società Azienda sportiva e consente alla società di monitorare e condividere i dati del visitatore tra le soluzioni [!DNL Experience Cloud]. L&#39;ID demdex del visitatore rimane invariato, perché è contenuto in un cookie di terze parti e viene mantenuto nei diversi domini.
 
 ![](assets/req_resp.png)
-
