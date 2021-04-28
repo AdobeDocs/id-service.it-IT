@@ -1,20 +1,20 @@
 ---
 description: Chiama questa funzione del servizio ID per determinare se il servizio ID ha generato un ID visitatore Experience Cloud (MID) lato client. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Chiama questa funzione del servizio ID per determinare se il servizio ID ha generato un ID visitatore Experience Cloud (MID) lato client. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
 seo-title: isClientSideMarketingCloudVisitorID
 title: isClientSideMarketingCloudVisitorID
 uuid: 1c39ac60-1d2b-4ed4-a2ea-30d680e61e10
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 91%
+exl-id: ed2672e7-da1a-4c02-9f4e-c14419ec9ec7
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '148'
+ht-degree: 100%
 
 ---
 
-
-# isClientSideMarketingCloudVisitorID{#isclientsidemarketingcloudvisitorid}
+# isClientSideMarketingCloudVisitorID {#isclientsidemarketingcloudvisitorid}
 
 Chiama questa funzione del servizio ID per determinare se il servizio ID ha generato un ID visitatore Experience Cloud (MID) lato client. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
 
@@ -22,7 +22,7 @@ Chiama questa funzione del servizio ID per determinare se il servizio ID ha gene
 
 `var *`variableName`* = visitor.isClientSideMarketingCloudVisitorID()`
 
-La tabella seguente elenca e descrive le risposte restituite da questa funzione.
+Nella tabella seguente sono elencate e descritte le risposte restituite da questa funzione.
 
 <table id="table_5D08A5DD6FD04F94818B0E8B790D3136"> 
  <thead> 
@@ -46,4 +46,3 @@ La tabella seguente elenca e descrive le risposte restituite da questa funzione.
   </tr> 
  </tbody> 
 </table>
-
