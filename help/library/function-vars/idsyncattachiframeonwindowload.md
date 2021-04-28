@@ -1,26 +1,26 @@
 ---
 description: Flag booleano facoltativo che controlla come il servizio Experience Cloud Identity carica l’iFrame di sincronizzazione ID.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Flag booleano facoltativo che controlla come il servizio Experience Cloud Identity carica l’iFrame di sincronizzazione ID.
 seo-title: idSyncAttachIframeOnWindowLoad
 title: idSyncAttachIframeOnWindowLoad
 uuid: aa2c2fa4-2cab-4e08-8d35-729a6c3e459a
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
-workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 79%
+exl-id: 44c45378-f007-4d87-913a-d6bb9961948c
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '95'
+ht-degree: 100%
 
 ---
 
-
-# idSyncAttachIframeOnWindowLoad{#idsyncattachiframeonwindowload}
+# idSyncAttachIframeOnWindowLoad {#idsyncattachiframeonwindowload}
 
 Flag booleano facoltativo che controlla come il servizio Experience Cloud Identity carica l’iFrame di sincronizzazione ID.
 
-**Sintassi:** ` `idSyncAttachIframeOnWindowLoad= true|false`` (l&#39;impostazione predefinita è `false`).
+**Sintassi:** ` `idSyncAttachIframeOnWindowLoad= true false`` (l&#39;impostazione predefinita è `false`).
 
-Quando `idSyncAttachIframeOnWindowLoad: true`, il servizio ID carica l&#39;iFrame di sincronizzazione ID al caricamento della finestra. Per impostazione predefinita, il servizio ID carica l’iFrame di sincronizzazione ID il più rapidamente possibile, anziché al caricamento della finestra.
+Quando `idSyncAttachIframeOnWindowLoad: true`, il servizio ID carica l&#39;iFrame di sincronizzazione ID al caricamento della finestra. Per impostazione predefinita, il servizio ID carica l’iFrame di sincronizzazione ID il più rapidamente possibile invece che al caricamento della finestra.
 
 **Esempio di codice**
 
@@ -37,4 +37,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    idSyncAttachIframeOnWindowLoad: true 
 });
 ```
-
