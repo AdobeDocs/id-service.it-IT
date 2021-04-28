@@ -1,20 +1,20 @@
 ---
 description: Chiama queste funzioni del servizio ID per determinare lo stato di timeout di una richiesta dell’ID del servizio Experience Cloud Identity, di Analytics o di Audience Manager. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Chiama queste funzioni del servizio ID per determinare lo stato di timeout di una richiesta dell’ID del servizio Experience Cloud Identity, di Analytics o di Audience Manager. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
 seo-title: Metodi callTimeOut
 title: Metodi callTimeOut
 uuid: e5047498-11db-4945-b356-c92b7d447573
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
-workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 96%
+exl-id: ff3a2c5e-a0a8-4257-b538-0e4ce454b4e8
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '155'
+ht-degree: 100%
 
 ---
 
-
-# Metodi callTimeOut{#calltimeout-methods}
+# Metodi callTimeOut {#calltimeout-methods}
 
 Chiama queste funzioni del servizio ID per determinare lo stato di timeout di una richiesta dell’ID del servizio Experience Cloud Identity, di Analytics o di Audience Manager. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
 
@@ -24,7 +24,7 @@ Chiama queste funzioni del servizio ID per determinare lo stato di timeout di un
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Soluzione o servizio </th> 
-   <th colname="col2" class="entry"> Sintassi funzione </th> 
+   <th colname="col2" class="entry"> Sintassi della funzione </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -67,4 +67,3 @@ Chiama queste funzioni del servizio ID per determinare lo stato di timeout di un
   </tr> 
  </tbody> 
 </table>
-
