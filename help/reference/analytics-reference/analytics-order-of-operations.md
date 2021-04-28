@@ -1,18 +1,18 @@
 ---
 description: Dopo l’implementazione del servizio ID visitatore, un visitatore può essere identificato in Analytics in 5 modi diversi.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Dopo l’implementazione del servizio ID visitatore, un visitatore può essere identificato in Analytics in 5 modi diversi.
 seo-title: Ordine delle operazioni per gli ID di Analytics
 title: Ordine delle operazioni per gli ID di Analytics
 uuid: cb1d136e-093f-43b0-a7e1-96f1e61fdad0
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '329'
+exl-id: 8ee340fe-ef3b-40e6-9441-7ee0c9e20357
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '331'
 ht-degree: 100%
 
 ---
-
 
 # Ordine delle operazioni per gli ID di Analytics {#order-of-operations-for-analytics-ids}
 
@@ -51,9 +51,8 @@ In molte situazioni potrebbero essere presenti due o tre ID diversi in una chiam
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>5<sup>°</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/it-IT/analytics/technotes/visitor-identification.html" format="http" scope="external"> Indirizzo IP, agente utente, indirizzo IP gateway</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/it-IT/analytics/components/metrics/unique-visitors.html" format="http" scope="external"> Indirizzo IP, agente utente, indirizzo IP gateway</a> </p> </td> 
    <td colname="col3"> <p>Il browser del visitatore non accetta i cookie. </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
