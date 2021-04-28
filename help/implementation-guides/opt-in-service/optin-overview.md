@@ -4,16 +4,16 @@ seo-description: Il servizio Opt-in consente di configurare i protocolli per il 
 seo-title: Servizio Opt-in
 title: Servizio Opt-in
 uuid: aebd72ad-4118-471b-9755-d08a72caa0fd
-translation-type: tm+mt
-source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
-workflow-type: tm+mt
+exl-id: 351da861-4faa-409b-b0ff-f4d2ce66700b
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '534'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
-
-# Servizio Opt-in{#opt-in-service}
+# Servizio Opt-in {#opt-in-service}
 
 Il servizio Opt-in consente di configurare i protocolli per il visitatore per identificare se è possibile impostare un cookie sul dispositivo o sul browser dell&#39;utente che visita il tuo sito.
 
@@ -21,7 +21,7 @@ Il servizio Opt-in è un&#39;estensione del servizio Experience Cloud ID (ECID) 
 
 Usando il servizio Opt-in è possibile specificare se un visitatore può dare il consenso a tutte le soluzioni Adobe in una sola volta oppure deve darlo per ogni soluzione seguendo la sequenza di autorizzazioni per ognuna di esse. Una volta che il cliente ha completato e registrato il processo di approvazione, è possibile recuperare le approvazioni del visitatore CMP da tutte le soluzioni Adobe.
 
-The Opt-in service is implemented and configured easily using [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/it-IT/launch/using/overview.html) with the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md). Può essere implementato e configurato anche usando [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
+Il servizio Opt-in può essere implementato e configurato facilmente tramite [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/it-IT/launch/using/overview.html) con l’[estensione Opt-in](../../implementation-guides/opt-in-service/launch.md). Può essere implementato e configurato anche usando [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
 
 Per iniziare, consulta [Configurazione del servizio Opt-in](../../implementation-guides/opt-in-service/getting-started.md).
 
@@ -39,12 +39,12 @@ Il servizio Opt-in è uno strumento per creare un flusso di lavoro di scelta del
 
 Il servizio Opt-in ti consente di configurare le pratiche di gestione dei consensi per le soluzioni Adobe per:
 
-* Indicate se i requisiti per la raccolta del consenso si applicano in generale a un utente.
-* Specificare le soluzioni consentite per generare i cookie.
-* Applica preferenze predefinite per qualsiasi soluzione la cui categoria non sia esplicitamente consenziente o rifiutata dall&#39;utente.
-* Attiva la risposta personalizzata in base alle modifiche apportate alle impostazioni del consenso dell&#39;utente, consentendo di mantenere o aggiornare le impostazioni dell&#39;utente.
+* Indica se i requisiti di raccolta del consenso si applicano in generale per un utente.
+* Specifica quali soluzioni possono generare i cookie.
+* Applica le preferenze predefinite per tutte le soluzioni la cui categoria non è esplicitamente autorizzata o rifiutata dall’utente.
+* Attiva la risposta personalizzata in base alle modifiche alle impostazioni di consenso di un utente, permettendoti di mantenere o aggiornare le impostazioni dell’utente.
 
-Con il servizio Opt-in è possibile configurare il proprio sito per consentire il caricamento di alcuni cookie con il consenso concesso prima che l&#39;utente effettui la sua scelta. È possibile impostare i servizi Opt-in per i nuovi clienti per consentire il caricamento dei cookie dopo il consenso dell&#39;utente o dopo aver reso disponibile una scelta. È inoltre possibile memorizzare e recuperare il consenso di consenso dalla piattaforma di gestione del consenso esistente o semplicemente memorizzare le autorizzazioni di consenso in un cookie.
+Con il servizio Opt-in è possibile configurare il proprio sito per consentire il caricamento di alcuni cookie con il consenso concesso prima che l&#39;utente effettui la sua scelta. È possibile impostare i servizi Opt-in per i nuovi clienti per consentire il caricamento dei cookie dopo il consenso dell&#39;utente o dopo aver reso disponibile una scelta. Puoi anche archiviare e recuperare il consenso opt-in dalla tua attuale piattaforma per la gestione dei consensi o semplicemente archiviare le autorizzazioni opt-in in un cookie.
 
 ![](assets/Opt-in-approval.png)
 
