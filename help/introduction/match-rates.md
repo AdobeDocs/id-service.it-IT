@@ -1,18 +1,18 @@
 ---
 description: Panoramica dei processi di sincronizzazione ID e delle percentuali di corrispondenza nel servizio Experience Cloud Identity, inclusi Adobe Media Optimizer e il servizio ID.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Panoramica dei processi di sincronizzazione ID e delle percentuali di corrispondenza nel servizio Experience Cloud Identity, inclusi Adobe Media Optimizer e il servizio ID.
 seo-title: Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza
 title: Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '831'
+exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '833'
 ht-degree: 100%
 
 ---
-
 
 # Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza {#understanding-id-synchronization-and-match-rates}
 
