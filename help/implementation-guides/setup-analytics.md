@@ -1,18 +1,18 @@
 ---
 description: Queste istruzioni sono per i clienti di Analytics che desiderano usare il servizio Experience Cloud Identity e non usano Dynamic Tag Management (DTM). Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. DTM semplifica il flusso di lavoro di implementazione e assicura automaticamente il posizionamento e la sequenza del codice corretti.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Queste istruzioni sono per i clienti di Analytics che desiderano usare il servizio Experience Cloud Identity e non usano Dynamic Tag Management (DTM). Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. DTM semplifica il flusso di lavoro di implementazione e assicura automaticamente il posizionamento e la sequenza del codice corretti.
 seo-title: Implementazione del servizio Experience Cloud Identity per Analytics
 title: Implementazione del servizio Experience Cloud Identity per Analytics
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
-source-wordcount: '1087'
+exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '1089'
 ht-degree: 100%
 
 ---
-
 
 # Implementazione del servizio Experience Cloud Identity per Analytics {#implement-the-experience-cloud-id-service-for-analytics}
 
