@@ -1,18 +1,18 @@
 ---
 description: Un'informativa sulla sicurezza dei contenuti (CSP) è un'intestazione HTTP e una funzione di sicurezza che offre ai browser il controllo sul tipo di risorse caricate su una pagina Web. Consulta questa sezione se usi il servizio ID e hai una CSP rigida che adotta delle whitelist per accettare le risorse dai domini fidati. Dovrai aggiungere i domini Adobe elencati di seguito alle whitelist della CSP.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Un'informativa sulla sicurezza dei contenuti (CSP) è un'intestazione HTTP e una funzione di sicurezza che offre ai browser il controllo sul tipo di risorse caricate su una pagina Web. Consulta questa sezione se usi il servizio ID e hai una CSP rigida che adotta delle whitelist per accettare le risorse dai domini fidati. Dovrai aggiungere i domini Adobe elencati di seguito alle whitelist della CSP.
 seo-title: Informativa sulla sicurezza dei contenuti e servizio Experience Cloud Identity
 title: Informativa sulla sicurezza dei contenuti e servizio Experience Cloud Identity
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
-source-wordcount: '619'
+exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '621'
 ht-degree: 100%
 
 ---
-
 
 # Informativa sulla sicurezza dei contenuti e servizio Experience Cloud Identity {#content-security-policies-and-the-experience-cloud-id-service}
 
