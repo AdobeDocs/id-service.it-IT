@@ -1,17 +1,17 @@
 ---
 description: Il servizio Experience Cloud ID (ECID) supporta l’algoritmo di hashing SHA-256 che consente di ricevere gli ID o indirizzi e-mail dei clienti e di inoltrare gli ID con hashing. Questo è un metodo JavaScript facoltativo per l’invio di identificatori con hashing a Experience Cloud. Puoi continuare a utilizzare i tuoi attuali metodi di hashing prima di inviare gli ID dei clienti.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Il servizio Experience Cloud ID (ECID) supporta l’algoritmo di hashing SHA-256 che consente di ricevere gli ID o indirizzi e-mail dei clienti e di inoltrare gli ID con hashing. Questo è un metodo JavaScript facoltativo per l’invio di identificatori con hashing a Experience Cloud. Puoi continuare a utilizzare i tuoi attuali metodi di hashing prima di inviare gli ID dei clienti.
 seo-title: Supporto di hashing SHA-256 per setCustomerIDs
 title: Supporto di hashing SHA-256 per setCustomerIDs
-translation-type: tm+mt
-source-git-commit: ac1131be75fd04b51cd1d646086e1802a43afb18
-workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 91%
+exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '666'
+ht-degree: 100%
 
 ---
-
 
 # Supporto di hashing SHA-256 per `setCustomerIDs` {#hashing-support}
 
@@ -23,7 +23,7 @@ Esistono due modi per implementare il supporto dell’hashing per setCustomerIDs
 
 ## Utilizzare il metodo `setCustomerIDs` in ECID {#use-setcustomerids-method}
 
-The first method leverages using the [`setCustomerIDs`](/help/library/get-set/setcustomerids.md) (`customerIDs<object>`, `hashType<string>`) method.
+Nel primo caso viene utilizzato il metodo [`setCustomerIDs`](/help/library/get-set/setcustomerids.md) (`customerIDs<object>`, `hashType<string>`).
 
 Prima di eseguire l’hashing, la libreria ECID esegue la normalizzazione dei dati sugli identificatori customerID. Durante questo processo vengono eliminati gli spazi bianchi a entrambe le estremità degli identificatori customerID e tutti i caratteri vengono convertiti in minuscole. Ad esempio, l’indirizzo e-mail &quot; ecid@adobe.com &quot; diventa &quot;ecid@adobe.com&quot;
 
@@ -38,7 +38,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 Oltre all’ID visitatore di Experience Cloud, puoi associare a ciascun visitatore altri ID cliente, lo stato di autenticazione e il tipo di hashing (SHA-256). Se non fornisci il tipo di hashing, l’impostazione verrà considerata come “senza hashing”.
 
-Il `setCustomerIDs` metodo accetta più ID cliente per lo stesso visitatore. In questo modo puoi identificare o indirizzare un singolo utente in più dispositivi. For example, you can upload these IDs as [customer attributes](https://docs.adobe.com/content/help/it-IT/core-services/interface/customer-attributes/attributes.html) to the Experience Cloud and access this data across the different solutions.
+Il `setCustomerIDs` metodo accetta più ID cliente per lo stesso visitatore. In questo modo puoi identificare o indirizzare un singolo utente in più dispositivi. Ad esempio, puoi caricare gli ID come [attributi del cliente](https://docs.adobe.com/content/help/it-IT/core-services/interface/customer-attributes/attributes.html) in Experience Cloud e accedere ai dati dalle diverse soluzioni.
 
 Gli ID cliente, gli stati di autenticazione e il tipo di hashing *non sono* memorizzati in un cookie da utilizzare in un secondo momento. Al contrario, gli ID cliente, gli stati di autenticazione e il tipo hashing devono essere memorizzati in una variabile di istanza, da recuperare mediante [`getCustomerIDs`](/help/library/get-set/getcustomerids.md), come illustrato di seguito:
 
@@ -71,9 +71,9 @@ Per una descrizione del parametro `d_cid_ic` e dello stato di autenticazione, co
 
 ## Aggiungere un’azione in Adobe Experience Platform Launch {#add-action-launch}
 
-Experience Platform Launch è la soluzione Adobe di nuova generazione per la gestione dei tag. Read more about Launch in the [Launch product documentation](https://docs.adobe.com/content/help/it-IT/launch/using/overview.html).
+Experience Platform Launch è la soluzione Adobe di nuova generazione per la gestione dei tag. Per ulteriori informazioni su Launch, consulta la [documentazione di Launch](https://docs.adobe.com/content/help/it-IT/launch/using/overview.html).
 
-To add an action in Launch, read the [rules documentation](https://docs.adobe.com/help/it-IT/launch/using/reference/manage-resources/rules.html) in Adobe Launch and see the screen capture below:
+Per aggiungere un’azione in Launch, leggi la [documentazione sulle regole](https://docs.adobe.com/help/it-IT/launch/using/reference/manage-resources/rules.html) in Adobe Launch e fai riferimento alla schermata di seguito:
 
 ![](/help/reference/assets/hashing-support.png)
 
