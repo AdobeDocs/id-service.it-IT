@@ -1,18 +1,18 @@
 ---
 description: Queste istruzioni sono per i clienti di Analytics e Audience Manager che desiderano usare il servizio Experience Cloud Identity e non usano Dynamic Tag Management (DTM). Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. DTM semplifica il flusso di lavoro di implementazione e assicura automaticamente il posizionamento e la sequenza del codice corretti.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Queste istruzioni sono per i clienti di Analytics e Audience Manager che desiderano usare il servizio Experience Cloud Identity e non usano Dynamic Tag Management (DTM). Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. DTM semplifica il flusso di lavoro di implementazione e assicura automaticamente il posizionamento e la sequenza del codice corretti.
 seo-title: Implementazione del servizio Experience Cloud Identity per Analytics e Audience Manager
 title: Implementazione del servizio Experience Cloud Identity per Analytics e Audience Manager
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
-source-wordcount: '1303'
+exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '1305'
 ht-degree: 100%
 
 ---
-
 
 # Implementazione del servizio Experience Cloud Identity per Analytics e Audience Manager {#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
@@ -210,4 +210,3 @@ Se hai attivato un periodo di tolleranza:
 
 * Verifica che l’ID di Analytics (AID) e il MID siano presenti nella richiesta di immagine.
 * Ricorda di disattivare il periodo di tolleranza quando sono presenti i requisiti per l&#39;interruzione.
-
