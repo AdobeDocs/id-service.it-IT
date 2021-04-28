@@ -1,18 +1,18 @@
 ---
 description: Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per il servizio Experience Cloud Identity.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per il servizio Experience Cloud Identity.
 seo-title: Requisiti del servizio Experience Cloud Identity
 title: Requisiti del servizio Experience Cloud Identity
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
-translation-type: tm+mt
-source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
-source-wordcount: '781'
+exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '783'
 ht-degree: 100%
 
 ---
-
 
 # Requisiti del servizio Experience Cloud Identity {#requirements-for-the-experience-cloud-id-service}
 
@@ -83,7 +83,7 @@ Per utilizzare il servizio ID, la società deve essere abilitata per [!DNL Exper
 
 ## Requisiti di Analytics: raccolta dati regionali (RDC) {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-Tutti i server di tracciamento sono stati convertiti in RDC, pertanto non è necessario modificare il server di tracciamento di Analytics. [Ulteriori informazioni...](https://docs.adobe.com/content/help/it-IT/analytics/technotes/rdc/regional-data-collection.translate.html)
+Tutti i server di tracciamento sono stati convertiti in RDC, pertanto non è necessario modificare il server di tracciamento di Analytics. [Ulteriori informazioni...](https://docs.adobe.com/content/help/it-IT/analytics/technotes/rdc/regional-data-collection.html)
 
 ## Librerie dei codici e versioni richieste {#section-ad7542a4317d430fa79fc6b095beb84d}
 
