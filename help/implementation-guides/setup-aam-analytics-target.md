@@ -1,18 +1,18 @@
 ---
 description: Queste istruzioni sono per i clienti di Analytics, Audience Manager e Target che desiderano usare il servizio Experience Cloud Identity e non usano Dynamic Tag Management (DTM). Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. DTM semplifica il flusso di lavoro di implementazione e assicura automaticamente il posizionamento e la sequenza del codice corretti.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Queste istruzioni sono per i clienti di Analytics, Audience Manager e Target che desiderano usare il servizio Experience Cloud Identity e non usano Dynamic Tag Management (DTM). Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. DTM semplifica il flusso di lavoro di implementazione e assicura automaticamente il posizionamento e la sequenza del codice corretti.
 seo-title: Implementazione del servizio Experience Cloud Identity per Analytics, Audience Manager e Target
 title: Implementazione del servizio Experience Cloud Identity per Analytics, Audience Manager e Target
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
-source-wordcount: '1572'
+exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '1574'
 ht-degree: 100%
 
 ---
-
 
 # Implementazione del servizio Experience Cloud Identity per Analytics, Audience Manager e Target {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
 
@@ -244,4 +244,3 @@ Se hai attivato un periodo di tolleranza:
 
 * Verifica che l’ID di Analytics (AID) e il MID siano presenti nella richiesta di immagine.
 * Ricorda di disattivare il periodo di tolleranza quando sono presenti i [requisiti per l’interruzione](../implementation-guides/setup-aam-analytics-target.md#section-aceacdb7d5794f25ac6ff46f82e148e1).
-
