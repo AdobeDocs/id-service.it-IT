@@ -5,14 +5,14 @@ seo-description: Prima di implementare il servizio Experience Cloud Identity, è
 seo-title: Decisioni relative alla migrazione al servizio Experience Cloud Identity
 title: Decisioni relative alla migrazione al servizio Experience Cloud Identity
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
+exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
 translation-type: ht
-source-git-commit: a76eb7cc579ca859769e6caa256a3a0a3f66ca33
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
 workflow-type: ht
 source-wordcount: '679'
 ht-degree: 100%
 
 ---
-
 
 # Decisioni relative alla migrazione al servizio Experience Cloud Identity
 
@@ -125,4 +125,3 @@ Potrebbe essere necessario aggiornare il modo in cui tieni traccia dei link o ef
   </tr> 
  </tbody> 
 </table>
-
