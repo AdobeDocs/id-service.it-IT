@@ -4,16 +4,16 @@ seo-description: Implementare il servizio Opt-in come unico punto di riferimento
 seo-title: Configurazione del servizio Opt-in
 title: Configurazione del servizio Opt-in
 uuid: f1c27139-cef2-4122-af12-c839cfc82e6e
-translation-type: tm+mt
-source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
-workflow-type: tm+mt
+exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '941'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-
-# Configurazione del servizio Opt-in{#setting-up-opt-in-service}
+# Configurazione del servizio Opt-in {#setting-up-opt-in-service}
 
 Implementare il servizio Opt-in come unico punto di riferimento usato dalle soluzioni Experience Cloud (definite anche Categorie in Opt-in) per definire se è necessario creare cookie sul dispositivo di un visitatore.
 
@@ -25,7 +25,7 @@ Il servizio Opt-in consente di specificare se un visitatore può dare il consens
 
 1. ECID versione 4.0
 
-   [Scarica](https://github.com/Adobe-Marketing-Cloud/id-service/releases) la versione più recente di ECID.
+   [Scarica](https://github.com/Adobe-Marketing-Cloud/id-service/releases) la versione di ECID più recente.
 
 1. Librerie di supporto:
 
@@ -33,19 +33,19 @@ Il servizio Opt-in consente di specificare se un visitatore può dare il consens
    * AppMeasurement 2.11 o versione successiva
    * DIL 9.0
    * AT.js versione 1.7.0
-   * AT.js Lancio versione 9.0
+   * Estensione AT.js Launch versione 9.0
    * Per Analytics, App Measurement 2.11 con estensione 1.6
    * Per Target, estensione 0.9.1
 
-1. Acquisisci una buona conoscenza del framework di gestione del consenso che utilizzerai con il consenso e comprendi tutti i prerequisiti aggiuntivi.
+1. Acquisisci familiarità con il framework di gestione dei consensi che utilizzerai con il servizio Opt-in e comprendi eventuali prerequisiti aggiuntivi.
 
    <!--
    For IAB, see here for additional pre-reqs.
    -->
 
-1. I requisiti di privacy dell&#39;azienda saranno specifici in base alla scelta di rispettare il RGPD. Ricorda quali librerie possono essere utilizzate dai tuoi team aziendali per la privacy in uno stato di consenso preliminare.
+1. I requisiti di privacy dell&#39;azienda saranno specifici in base alla scelta di rispettare il RGPD. Tieni presente quali librerie i team aziendali per la privacy possono usare prima del consenso.
 
-If using [Adobe Launch](https://docs.adobe.com/content/help/it-IT/launch/using/overview.html), take advantage of the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md) to configure Opt-in service.
+Se utilizzi [Adobe Launch](https://docs.adobe.com/content/help/it-IT/launch/using/overview.html), sfrutta l’[estensione Opt-in](../../implementation-guides/opt-in-service/launch.md) per configurare il servizio Opt-in.
 
 ## Categorie di Opt-in {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
@@ -91,7 +91,7 @@ Visitor.getInstance("YOUR_ORG_ID", {
 });
 ```
 
-**Gestione delle modifiche al consenso**
+**Gestire le modifiche al consenso**
 
 Mentre visita il sito, il visitatore può scegliere di impostare le preferenze per la prima volta o modificarle usando CMP in qualsiasi momento. Dopo aver inizializzato JS per il visitatore con le impostazioni iniziali, è possibile modificare le autorizzazioni del visitatore. Consulta [Modifiche di consenso](../../implementation-guides/opt-in-service/api.md#section-c3d85403ff0d4394bd775c39f3d001fc) per un elenco delle funzioni per la gestione del consenso.
 
@@ -113,7 +113,7 @@ Consulta le [impostazioni di configurazione del flusso di lavoro](../../implemen
 
 ## Controllare le autorizzazioni Opt-in del visitatore {#section-f136a9024e054d84881e6667fb7c94eb}
 
-Man mano che i visitatori modificano le proprie autorizzazioni, avrai bisogno di maggiori informazioni sulle autorizzazioni risultanti per sincronizzare l&#39;archivio dei consensi con le modifiche apportate nel servizio Opt-in.  le preferenze del visitatore utilizzando le funzioni di [autorizzazione](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155), ad esempio:
+Man mano che i visitatori modificano le proprie autorizzazioni, avrai bisogno di maggiori informazioni sulle autorizzazioni risultanti per sincronizzare l&#39;archivio dei consensi con le modifiche apportate nel servizio Opt-in. Controlla le preferenze del visitatore utilizzando le [funzioni di autorizzazione](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155), ad esempio:
 
 **esempio di fetchPermissions**
 
@@ -137,7 +137,7 @@ function callback() {
 optIn.fetchPermissions(callback, true);
 ```
 
-See [API documentation](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) for more details on these and any functions, properties, or configurations mentioned in this document.
+Consulta la [documentazione delle API](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) per maggiori informazioni su tutte le funzioni, le proprietà o le configurazioni citate in questo documento.
 
 ## Memorizzazione delle preferenze del visitatore {#section-ef2884ae67e34879bf7c7c3372706c9f}
 
@@ -147,4 +147,3 @@ Il servizio Opt-in consente di memorizzare le preferenze di consenso adatte a un
 
 * Se la soluzione di persistenza del consenso, che si tratti di CMP o di un cookie sul browser del visitatore, consente un recupero tempestivo delle preferenze del visitatore, è possibile fornirle al servizio Opt-in durante l&#39;inizializzazione di Visitatore.
 * Tuttavia, se il recupero è un processo lungo o in alternativa viene eseguito meglio come processo asincrono, puoi usare la `approve()` funzione del servizio per fornire tali impostazioni una volta caricate correttamente.
-
