@@ -4,16 +4,16 @@ seo-description: API per la libreria Opt-in e riferimenti alle impostazioni di c
 seo-title: Riferimenti di Opt-in
 title: Riferimenti di Opt-in
 uuid: d5023a34-2f3e-464d-b21f-579b2f416ce6
-translation-type: tm+mt
-source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
-workflow-type: tm+mt
+exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '897'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-
-# Riferimenti di Opt-in{#opt-in-reference}
+# Riferimenti di Opt-in {#opt-in-reference}
 
 API per la libreria Opt-in e riferimenti alle impostazioni di configurazione.
 
@@ -34,9 +34,9 @@ Questa sezione illustra come usare l&#39;API per configurare Opt-in. Gran parte 
 
 Le configurazioni di Opt-in vengono fornite nella funzione `getInstance()` di JavaScript per il visitatore che crea l&#39;istanza per l&#39;oggetto globale `adobe`. Di seguito si riporta un elenco delle configurazioni di JS per il visitatore per il servizio Opt-in.
 
-**`doesOptInApply (boolean or function that evaluates to a boolean)`**:
+**`doesOptInApply (boolean or function that evaluates to a boolean)`**
 
-Se falso indica che i visitatori non devono dare il consenso. Comporta la creazione di cookie da parte di Experience Cloud indipendentemente dalle categorie a cui l&#39;utente ha dato o ha negato il consenso. Questa configurazione abilita o disabilita in modo olistico il consenso.
+Se falso indica che i visitatori non devono dare il consenso. Comporta la creazione di cookie da parte di Experience Cloud indipendentemente dalle categorie a cui l&#39;utente ha dato o ha negato il consenso. Questa configurazione abilita o disabilita in modo olistico il servizio Opt-in.
 
 **`preOptInApprovals (Object <adobe.OptInCategories enum: boolean>)`**
 
@@ -60,21 +60,21 @@ Numero di secondi necessari per ignorare il valore di scadenza predefinito di 13
 
 ## Modifiche ai parametri di consenso {#section-c3d85403ff0d4394bd775c39f3d001fc}
 
-Mentre visita il sito, il visitatore può impostare le preferenze per la prima volta oppure modificarle usando CMP in qualsiasi momento. Una volta inizializzata la JS del visitatore con le impostazioni iniziali, le autorizzazioni del visitatore possono essere modificate utilizzando le seguenti funzioni:
+Mentre visita il sito, il visitatore può impostare le preferenze per la prima volta oppure modificarle usando CMP in qualsiasi momento. Dopo aver inizializzato JS per il visitatore con le impostazioni iniziali, è possibile modificare le autorizzazioni del visitatore utilizzando le funzioni seguenti:
 
 **`adobe.optIn.approve(categories, shouldWaitForComplete)`**
 
-Funzione che approva oppure dà il consenso del visitatore a tutte le categorie di un elenco. Per ulteriori informazioni sul parametro mustWaitForComplete, consulta Flusso di lavoro di [consenso](../../implementation-guides/opt-in-service/getting-started.md#section-70cd243dec834c8ea096488640ae20a5).
+Funzione che approva oppure dà il consenso del visitatore a tutte le categorie di un elenco. Per ulteriori informazioni sul parametro shouldWaitForComplete, consulta [Flussi di lavoro di Opt-in](../../implementation-guides/opt-in-service/getting-started.md#section-70cd243dec834c8ea096488640ae20a5).
 
 **`adobe.optIn.deny(categories, shouldWaitForComplete)`**
 
 Funzione che nega o rifiuta il consenso del visitatore a tutte le categorie specificate.
 
-**`adobe.optIn.approveAll()`**:
+**`adobe.optIn.approveAll()`**
 
 Se la richiesta di autorizzazione per il sito da creare è formulata in modo che la copertura del visitatore conceda o neghi l&#39;autorizzazione per il sito a creare cookie, usa `approveAll()` o `denyAll()` relativamente alla risposta.
 
-**`adobe.optIn.denyAll()`**:
+**`adobe.optIn.denyAll()`**
 
 Se la richiesta di autorizzazione per il sito da creare è formulata in modo che la copertura del visitatore conceda o neghi l&#39;autorizzazione per il sito a creare cookie, usa `approveAll()` o `denyAll()` relativamente alla risposta.
 
@@ -117,7 +117,7 @@ Un oggetto in ascolto di tutte le soluzioni Experience Cloud, come categorie, a 
 **`status`**
 
 * in sospeso
-* changed
+* modificato
 * completato
 
 **`doesOptInApply`**
@@ -126,11 +126,11 @@ True o false, rappresenta la configurazione fornita nell&#39;inizializzazione.
 
 **`isPending`**
 
-True o false in base al valore dello stato. Report di consenso true per questa proprietà per un visitatore che non ha ancora accettato o rifiutato in modo esplicito l&#39;autorizzazione
+True o false in base al valore dello stato. Il servizio Opt-in restituisce true per questa proprietà per un visitatore che non ha ancora accettato o rifiutato in modo esplicito l’autorizzazione.
 
 **`isComplete`**
 
-True o false in base al valore dello stato. Se il consenso in stile flusso di lavoro è iniziato ma non completato, il consenso potrebbe essere falso per questa proprietà.
+True o false in base al valore dello stato. Se il consenso in stile flusso di lavoro è stato avviato ma non è stato completato, il servizio Opt-in potrebbe riportare false per questa proprietà.
 
 ## Metodi dell&#39;oggetto Opt-in {#section-e0417801a82548d199d833010033e433}
 
@@ -162,7 +162,7 @@ Consente di controllare se una o più categorie sono state preapprovate dal clie
 
 **`fetchPermissions(callback, shouldAutoSubscribe)`**
 
-API asincrona per recuperare l&#39;elenco di autorizzazioni. Il callback avviene con l&#39;elenco di autorizzazioni, quando il processo di concessione/negazione delle autorizzazioni viene completato. **`shouldAutoSubscribe`:** un&#39;utilità helper, sottoscrive automaticamente questo callback a tutti gli eventi futuri. Questo significa che il callback verrà chiamato ogni volta che si attiva un&#39;approvazione o una negazione in Opt-in. In questo modo si viene sempre aggiornati, senza iscriversi agli eventi.
+API asincrona per recuperare l&#39;elenco di autorizzazioni. Il callback avviene con l&#39;elenco di autorizzazioni, quando il processo di concessione/negazione delle autorizzazioni viene completato. **`shouldAutoSubscribe`:** un&#39;utilità helper, sottoscrive automaticamente questo callback a tutti gli eventi futuri. Questo significa che il callback verrà chiamato ogni volta che si attiva un&#39;approvazione o una negazione in Opt-in. In questo modo, potrai essere sempre aggiornato, senza doverti iscrivere ai singoli eventi.
 
 **Esempio**
 
