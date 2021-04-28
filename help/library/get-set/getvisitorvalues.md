@@ -1,18 +1,18 @@
 ---
 description: Questa API asincrona restituisce per impostazione predefinita identificatori per Analytics, il servizio ID, la rinuncia alla raccolta di dati, la geolocalizzazione, e contenuti di metadati BLOB. Inoltre, è possibile controllare gli ID che dovranno essere restituiti con l'enum opzionale visitor.FIELDS.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Questa API asincrona restituisce per impostazione predefinita identificatori per Analytics, il servizio ID, la rinuncia alla raccolta di dati, la geolocalizzazione, e contenuti di metadati BLOB. Inoltre, è possibile controllare gli ID che dovranno essere restituiti con l'enum opzionale visitor.FIELDS.
 seo-title: getVisitorValues
 title: getVisitorValues
 uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '447'
+exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '449'
 ht-degree: 100%
 
 ---
-
 
 # getVisitorValues {#getvisitorvalues}
 
@@ -123,4 +123,3 @@ Nella seguente tabella sono elencati e definiti i parametri di risposta. Questi 
   </tr> 
  </tbody> 
 </table>
-
