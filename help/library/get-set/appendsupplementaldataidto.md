@@ -1,22 +1,22 @@
 ---
-description: Questo metodo helper ti consente di aggiungere a un URL di reindirizzamento il codice Supplemental Data ID (SDID) sotto forma di parametro della stringa di interrogazione. È utile quando stai usando A4T e hai bisogno di mantenere il codice SDID da una pagina all'altra e di unire insieme le visite separate. Per utilizzare questa funzione, devi aver implementato il servizio ID con lo stesso ID organizzazione nei domini di origine e di destinazione.
-keywords: ID Service
-seo-description: Questo metodo helper ti consente di aggiungere a un URL di reindirizzamento il codice Supplemental Data ID (SDID) sotto forma di parametro della stringa di interrogazione. È utile quando stai usando A4T e hai bisogno di mantenere il codice SDID da una pagina all'altra e di unire insieme le visite separate. Per utilizzare questa funzione, devi aver implementato il servizio ID con lo stesso ID organizzazione nei domini di origine e di destinazione.
+description: Questo metodo helper ti consente di aggiungere a un URL di reindirizzamento il codice Supplemental Data ID (SDID) sotto forma di parametro della stringa di interrogazione. È utile quando stai usando A4T e hai bisogno di mantenere il codice SDID da una pagina all'altra e di unire insieme le visite separate. Per usare questa funzione, devi aver implementato il servizio ID con lo stesso ID organizzazione sui domini di origine e di destinazione.
+keywords: Servizio ID
+seo-description: Questo metodo helper ti consente di aggiungere a un URL di reindirizzamento il codice Supplemental Data ID (SDID) sotto forma di parametro della stringa di interrogazione. È utile quando stai usando A4T e hai bisogno di mantenere il codice SDID da una pagina all'altra e di unire insieme le visite separate. Per usare questa funzione, devi aver implementato il servizio ID con lo stesso ID organizzazione sui domini di origine e di destinazione.
 seo-title: appendSupplementalDataIDTo
 title: appendSupplementalDataIDTo
 uuid: f3504d82-8da3-4971-818b-3df57df4ec2d
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 77%
+exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '412'
+ht-degree: 100%
 
 ---
 
+# appendSupplementalDataIDTo {#appendsupplementaldataidto}
 
-# appendSupplementalDataIDTo{#appendsupplementaldataidto}
-
-Questo metodo helper ti consente di aggiungere a un URL di reindirizzamento il codice Supplemental Data ID (SDID) sotto forma di parametro della stringa di interrogazione. È utile quando stai usando A4T e hai bisogno di mantenere il codice SDID da una pagina all&#39;altra e di unire insieme le visite separate. Per utilizzare questa funzione, devi aver implementato il servizio ID con lo stesso ID organizzazione nei domini di origine e di destinazione.
+Questo metodo helper ti consente di aggiungere a un URL di reindirizzamento il codice Supplemental Data ID (SDID) sotto forma di parametro della stringa di interrogazione. È utile quando stai usando A4T e hai bisogno di mantenere il codice SDID da una pagina all&#39;altra e di unire insieme le visite separate. Per usare questa funzione, devi aver implementato il servizio ID con lo stesso ID organizzazione sui domini di origine e di destinazione.
 
 Sommario:
 
@@ -29,7 +29,7 @@ Sommario:
 
 ## Sintassi ed esempio di codice {#section-cbb0b2f73bcc418386796c24c01b2365}
 
-**Sintassi:**` appendSupplementalDataIDTo( *`URL`*, *`SDID`*)`
+**Sintassi:** ` appendSupplementalDataIDTo( *`URL`*, *`SDID`*)`
 
 **Esempio di codice**
 
@@ -53,11 +53,11 @@ Come mostrato di seguito, l&#39;URL reindirizza il codice SDID visitatore, l&#39
 
 ## Modifica del timeout del codice SDID con sdidParamExpiry {#section-99946715cefa4acc95200b093db5297e}
 
-La configurazione [sdidParamExpiry](../../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) ti permette di ignorare l&#39;intervallo di scadenza del codice SDID predefinito quando trasmetti quell&#39;ID da una pagina all&#39;altra usando la funzione helper `appendSupplementalDataIDTo`. Per impostazione predefinita, il codice del servizio ID sulla pagina ricevente ha 30 secondi di tempo per ottenere il codice SDID dall&#39;URL inviato dalla pagina inviante. Se il codice del servizio ID sulla pagina ricevente non riesce a recuperare il codice SDID in meno di 30 secondi, richiede un nuovo codice SDID. Questa funzionalità è destinata principalmente ai clienti A4T che devono passare il codice SDID da una pagina all’altra e desiderano controllare questo intervallo di timeout.
+La configurazione [sdidParamExpiry](../../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) ti permette di ignorare l&#39;intervallo di scadenza del codice SDID predefinito quando trasmetti quell&#39;ID da una pagina all&#39;altra usando la funzione helper `appendSupplementalDataIDTo`. Per impostazione predefinita, il codice del servizio ID sulla pagina ricevente ha 30 secondi di tempo per ottenere il codice SDID dall&#39;URL inviato dalla pagina inviante. Se il codice del servizio ID sulla pagina ricevente non riesce a recuperare il codice SDID in meno di 30 secondi, richiede un nuovo codice SDID. Questa funzionalità è principalmente per i clienti A4T che devono passare il codice SDID da una pagina all’altra e desiderano controllare questo intervallo di timeout.
 
 Se hai bisogno di modificare il timeout del codice SDID predefinito, aggiungi `sdidParamExpiry` alla `Visitor.getInstance` funzione con la sintassi seguente:
 
-**Sintassi:**` sdidParamExpiry: *`tempo in secondi`*`
+**Sintassi:** ` sdidParamExpiry: *`tempo in secondi`*`
 
 **Esempio di codice**
 
@@ -74,4 +74,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 var pageB = "www.domain.com/pageB"; 
 var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, "67987653465787219"); 
 ```
-
