@@ -1,18 +1,18 @@
 ---
 description: Queste configurazioni consentono a diverse istanze del codice del servizio ID implementate in un iFrame e sulla pagina padre di comunicare tra di loro. Risolvono problemi rilevati per 2 casi d'uso specifici in cui si può controllare o meno la pagina padre o il dominio e si carica il codice del servizio ID nell'iFrame di un dominio controllato. Sono disponibili in VisitorAPI.js per la versione del codice 2.2 o successiva.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Queste configurazioni consentono a diverse istanze del codice del servizio ID implementate in un iFrame e sulla pagina padre di comunicare tra di loro. Risolvono problemi rilevati per 2 casi d'uso specifici in cui si può controllare o meno la pagina padre o il dominio e si carica il codice del servizio ID nell'iFrame di un dominio controllato. Sono disponibili in VisitorAPI.js per la versione del codice 2.2 o successiva.
 seo-title: whitelistParentDomain e whitelistIframeDomains
 title: whitelistParentDomain e whitelistIframeDomains
 uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '932'
+exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '934'
 ht-degree: 100%
 
 ---
-
 
 # whitelistParentDomain e whitelistIframeDomains {#whitelistparentdomain-and-whitelistiframedomains}
 
@@ -188,4 +188,3 @@ Il servizio ID supporta un set limitato di metodi API pubblici quando si impleme
   </tr> 
  </tbody> 
 </table>
-
