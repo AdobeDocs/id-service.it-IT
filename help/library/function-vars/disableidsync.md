@@ -1,20 +1,20 @@
 ---
 description: Flag booleano facoltativo che disabilita la sincronizzazione degli ID.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Flag booleano facoltativo che disabilita la sincronizzazione degli ID.
 seo-title: disableIdSyncs
 title: disableIdSyncs
 uuid: 8bea1de8-53c8-4a15-bcf5-f0869763a32e
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
-source-wordcount: '44'
+exl-id: 96d42133-6040-4da3-9315-fd94318b33aa
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '46'
 ht-degree: 100%
 
 ---
 
-
-# disableIdSyncs{#disableidsyncs}
+# disableIdSyncs {#disableidsyncs}
 
 Flag booleano facoltativo che disabilita la sincronizzazione degli ID.
 
@@ -22,7 +22,7 @@ Flag booleano facoltativo che disabilita la sincronizzazione degli ID.
 >
 >Questa configurazione era `idSyncDisableSyncs` ed è stata rinominata in `disableIdSyncs` il 18 gennaio 2018 in occasione del rilascio della v3.0.
 
-**Sintassi:**`disableIdSyncs: true|false` (l&#39;impostazione predefinita è `false`).
+**Sintassi:** `disableIdSyncs: true|false` (l&#39;impostazione predefinita è `false`).
 
 **Esempio di codice**
 
@@ -39,4 +39,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    disableIdSyncs: true 
 });
 ```
-
