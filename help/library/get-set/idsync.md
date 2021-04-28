@@ -1,18 +1,18 @@
 ---
 description: Le funzioni idSyncByURL e idSyncByDataSource del servizio ID consentono di implementare manualmente una sincronizzazione ID nell’iFrame di pubblicazione della destinazione. Sono disponibili in VisitorAPI.js versione 1.10 o successiva.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Le funzioni idSyncByURL e idSyncByDataSource del servizio ID consentono di implementare manualmente una sincronizzazione ID nell’iFrame di pubblicazione della destinazione. Sono disponibili in VisitorAPI.js versione 1.10 o successiva.
 seo-title: Sincronizzazione ID tramite URL o sorgente dati
 title: Sincronizzazione ID tramite URL o sorgente dati
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: tm+mt
-source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
-source-wordcount: '273'
+exl-id: a22e6b47-00ff-4b51-9958-ddeccc1e507e
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '275'
 ht-degree: 100%
 
 ---
-
 
 # Sincronizzazione ID tramite URL o sorgente dati {#id-synchronization-by-url-or-data-source}
 
