@@ -1,18 +1,18 @@
 ---
 description: Il Children’s Online Privacy Protection Act (COPPA) proibisce la raccolta online di dati personali di bambini di età inferiore ai 13 anni senza disporre del consenso verificabile dei genitori. I clienti interessati dal COPPA possono aggiungere una variabile opzionale al codice del servizio Experience Cloud Identity che impedisce l’impostazione di cookie nel dominio di un browser di terze parti.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Il Children’s Online Privacy Protection Act (COPPA) proibisce la raccolta online di dati personali di bambini di età inferiore ai 13 anni senza disporre del consenso verificabile dei genitori. I clienti interessati dal COPPA possono aggiungere una variabile opzionale al codice del servizio Experience Cloud Identity che impedisce l’impostazione di cookie nel dominio di un browser di terze parti.
 seo-title: Supporto per COPPA nel servizio Experience Cloud Identity
 title: Supporto per COPPA nel servizio Experience Cloud Identity
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
-translation-type: tm+mt
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
-workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 85%
+exl-id: c7579f90-3011-4e26-b908-08907bf12ba2
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '403'
+ht-degree: 100%
 
 ---
-
 
 # Supporto per COPPA nel servizio Experience Cloud Identity {#coppa-support-in-the-experience-cloud-id-service}
 
@@ -24,10 +24,10 @@ Il Children’s Online Privacy Protection Act (COPPA) proibisce la raccolta onli
 
 **Cookie e monitoraggio**
 
-Quando viene caricata una pagina Web, il servizio [!DNL Experience Cloud] ID effettua una chiamata a un server di raccolta dati (DCS) [!DNL Adobe]. La risposta del DCS include un cookie  Experience Cloud e un cookie demdex.net.
+Quando viene caricata una pagina Web, il servizio [!DNL Experience Cloud] ID effettua una chiamata a un server di raccolta dati (DCS) [!DNL Adobe]. La risposta del DCS include un cookie di Experience Cloud e un cookie demdex.net.
 
-* Il cookie Experience Cloud è impostato nel dominio di prime parti. Non può essere utilizzato per monitorare i visitatori tra domini diversi, a meno che tali domini non collaborino per consentire l&#39;accesso.
-* Il cookie demdex.net è impostato nel dominio di terze parti. Contiene un identificatore univoco che può essere utilizzato per monitorare i visitatori nei diversi domini.
+* Il cookie Experience Cloud è impostato nel dominio di prime parti. Non può essere utilizzato per tenere traccia dei visitatori tra domini diversi, a meno che questi non collaborino per consentire l’accesso.
+* Il cookie demdex.net è impostato nel dominio di terze parti. Contiene un identificatore univoco che può essere utilizzato per monitorare i visitatori tra domini diversi.
 
 **Cookie e conformità COPPA**
 
