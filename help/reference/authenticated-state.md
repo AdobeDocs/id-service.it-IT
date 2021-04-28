@@ -1,18 +1,18 @@
 ---
 description: Oltre all’ID visitatore di Experience Cloud, puoi associare altri ID cliente e uno stato di autenticazione a ciascun visitatore.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Oltre all’ID visitatore di Experience Cloud, puoi associare altri ID cliente e uno stato di autenticazione a ciascun visitatore.
 seo-title: ID cliente e stati di autenticazione
 title: ID cliente e stati di autenticazione
 uuid: 643df363-224a-463e-a332-be59926b47e7
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
-source-wordcount: '659'
+exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '661'
 ht-degree: 100%
 
 ---
-
 
 # ID cliente e stati di autenticazione {#customer-ids-and-authentication-states}
 
