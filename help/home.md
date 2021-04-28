@@ -1,18 +1,18 @@
 ---
-description: 'Il servizio Experience Cloud Identity fornisce un ID universale e permanente che identifica i visitatori in tutte le soluzioni di Experience Cloud. '
-keywords: ID Service
+description: 'Il servizio Experience Cloud Identity fornisce un ID universale e costante che identifica i visitatori in tutte le soluzioni di Experience Cloud. '
+keywords: Servizio ID
 seo-description: Il servizio Adobe Experience Cloud Identity (servizio ID) fornisce un ID universale e costante che identifica i visitatori in tutte le soluzioni di Experience Cloud. Può sostituire il codice di generazione ID di servizi come Analytics, Audience Manager, Target e altre soluzioni o funzionalità Experience Cloud.
 seo-title: Servizio Experience Cloud Identity
 title: Servizio Experience Cloud Identity
 uuid: b68194b5-e549-4f6f-bfaf-7744926aeaac
-translation-type: tm+mt
-source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
-source-wordcount: '303'
+exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '305'
 ht-degree: 100%
 
 ---
-
 
 # Servizio Adobe Experience Cloud Identity {#experience-cloud-id-service}
 
@@ -52,4 +52,3 @@ Il servizio Adobe Experience Cloud Identity (servizio ID) fornisce un ID univers
   </tr> 
  </tbody> 
 </table>
-
