@@ -1,18 +1,18 @@
 ---
 description: Note sulla versione e aggiornamenti per la versione 2015.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Note sulla versione e aggiornamenti per la versione 2015.
 seo-title: Note sulla versione 2015
 title: Note sulla versione 2015
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
-workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 73%
+exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '415'
+ht-degree: 100%
 
 ---
-
 
 # Note sulla versione 2015 {#release-notes}
 
@@ -35,12 +35,12 @@ Settembre 2015
 
 Agosto 2015
 
-* È stato corretto un bug per impedire al servizio ID di richiedere un iframe in assenza di dati da sincronizzare o attivare. (AAM-20164)
-* È stato corretto un bug che impediva al servizio ID di impostare correttamente un cookie di dominio di livello superiore con più parti. Per esempio, per un dominio come `my_company.co.uk`, in alcuni casi il servizio ID imposterebbe un cookie solo in `co.uk`. (AN-104683)
+* È stato risolto un bug per impedire che il servizio ID richieda un iframe se non sono presenti dati da sincronizzare o attivare. (AAM-20164)
+* È stato risolto un bug che impediva al servizio ID di impostare correttamente un cookie di dominio multiparte di livello più alto. Per esempio, per un dominio come `my_company.co.uk`, in alcuni casi il servizio ID imposterebbe un cookie solo in `co.uk`. (AN-104683)
 
    Questo bug interessava solo alcuni clienti che soddisfacevano *tutti* i seguenti criteri:
 
-   * Utilizzo del servizio ID.
+   * Uso del servizio ID.
    * Hanno abilitato un [periodo di grazia ](../reference/analytics-reference/grace-period.md)*o* utilizzano cookie di prime parti e gli utenti hanno bloccato i cookie di terze parti.
 
    * Avevano pagine con domini di livello superiore con più parti.
@@ -76,7 +76,7 @@ Consulta [Experience Cloud](../implementation-guides/setup-analytics.md#concept-
 
 Febbraio 2015
 
-È stata risolta la gestione del timeout sulle richieste di AAM Blob e Location Hint. Ora, in caso di timeout, il sistema lascerà correttamente questi campi vuoti per la pagina corrente ed effettua tutte le callback. Il timeout viene trattato come una condizione di errore, quindi verrà ritentato nella pagina successiva. (AN-94473, AN-94474)
+È stata corretta la gestione del timeout per le richieste di Blob AAM e posizione hint. Ora, in caso di timeout, il sistema lascerà tali campi vuoti per la pagina corrente ed effettuerà tutti i callback. Il timeout viene trattato come una condizione di errore e verrà quindi ritentato nella pagina successiva. (AN-94473, AN-94474)
 
 ## Versione 1.3.4 {#section-bca4a3e7c05546b7af1c9ec47fdb3331}
 
