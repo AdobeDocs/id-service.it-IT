@@ -1,20 +1,20 @@
 ---
 description: Proprietà, metodi e configurazioni che consentono di usare in maniera programmatica il servizio Experience Cloud Identity.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Proprietà, metodi e configurazioni che consentono di usare in maniera programmatica il servizio Experience Cloud Identity.
 seo-title: API del servizio ID
 title: API del servizio ID
 uuid: 9663cf9d-64be-4b68-a0e1-c1a1eb70fbd5
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
-workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 80%
+exl-id: 60ae4927-e905-4252-b9ec-9cc74073e8d5
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '91'
+ht-degree: 100%
 
 ---
 
-
-# API del servizio ID{#id-service-api}
+# API del servizio ID {#id-service-api}
 
 Proprietà, metodi e configurazioni che consentono di usare in maniera programmatica il servizio Experience Cloud Identity.
 
@@ -23,5 +23,4 @@ Proprietà, metodi e configurazioni che consentono di usare in maniera programma
 
 >[!NOTE]
 >
->Le *librerie JavaScript di Experience Cloud ID* sono state recentemente spostate. The latest release of the ECID JS libraries can be found at [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
-
+>Le *librerie JavaScript di Experience Cloud ID* sono state recentemente spostate. L’ultima versione delle librerie ECID JS è disponibile all’indirizzo [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
