@@ -1,18 +1,18 @@
 ---
 description: Metodi di implementazione standard e non standard del servizio Experience Cloud Identity.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Metodi di implementazione standard e non standard del servizio Experience Cloud Identity.
 seo-title: Metodi di implementazione
 title: Metodi di implementazione
 uuid: d41250e2-09f4-4a8b-8ade-54d43e9281c9
-translation-type: tm+mt
-source-git-commit: 63de22a29ebd8a504800d1045a69ea7eec05077a
-workflow-type: tm+mt
-source-wordcount: '149'
+exl-id: 0fe40a3c-bdcd-4290-bcd7-25344ff108d6
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '151'
 ht-degree: 100%
 
 ---
-
 
 # Metodi di implementazione
 
