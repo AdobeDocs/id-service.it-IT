@@ -1,26 +1,26 @@
 ---
 description: Configura il servizio ID trasmettendo queste proprietà al metodo statico Visitor.getInstance.
-keywords: Organization ID;ID Service
+keywords: ID organizzazione;servizio ID
 seo-description: Configura il servizio ID trasmettendo queste proprietà al metodo statico Visitor.getInstance.
 seo-title: Configurazioni
 title: Configurazioni
 uuid: 2dfe1ed6-f3a6-4f5c-976b-eeb43738c20c
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 82%
+exl-id: a369f624-d263-4287-bb7e-b89d584fa245
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '100'
+ht-degree: 100%
 
 ---
 
-
-# Configurazioni{#configurations}
+# Configurazioni {#configurations}
 
 Configura il servizio ID trasmettendo queste proprietà al metodo statico Visitor.getInstance.
 
 >[!NOTE]
 >
->Le *librerie JavaScript di Experience Cloud ID* sono state recentemente spostate. The latest release of the ECID JS libraries can be found at [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+>Le *librerie JavaScript di Experience Cloud ID* sono state recentemente spostate. L’ultima versione delle librerie ECID JS è disponibile all’indirizzo [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 Articoli correlati:
 
@@ -41,4 +41,3 @@ Articoli correlati:
 + [secureCookie](securecookie.md)
 + [useCORSOnly](use-cors-only.md)
 + [whitelistParentDomain e whitelistIframeDomains](whitelistdomain.md)
-
