@@ -1,18 +1,18 @@
 ---
 description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2016.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2016.
 seo-title: Note sulla versione 2016
 title: Note sulla versione 2016
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '1162'
+exl-id: f96b9869-6282-4090-b392-797608e25a51
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '1164'
 ht-degree: 100%
 
 ---
-
 
 # Note sulla versione 2016 {#release-notes}
 
@@ -228,4 +228,3 @@ Gennaio 2016
   </tr> 
  </tbody> 
 </table>
-
