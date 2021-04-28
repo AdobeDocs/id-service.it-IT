@@ -1,26 +1,26 @@
 ---
 description: Metodi pubblici che permettono di interagire con il servizio ID.
-keywords: ID Service
+keywords: Servizio ID
 seo-description: Metodi pubblici che permettono di interagire con il servizio ID.
 seo-title: Metodi
 title: Metodi
 uuid: 184d0a62-0c8d-481b-9afe-b7a67bdafdce
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 80%
+exl-id: 59a930f0-c0a8-477e-abad-f019d7d02d3b
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '90'
+ht-degree: 100%
 
 ---
 
-
-# Metodi{#methods}
+# Metodi {#methods}
 
 Metodi pubblici che permettono di interagire con il servizio ID.
 
 >[!NOTE]
 >
->Le *librerie JavaScript di Experience Cloud ID* sono state recentemente spostate. The latest release of the ECID JS libraries can be found at [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+>Le *librerie JavaScript di Experience Cloud ID* sono state recentemente spostate. L’ultima versione delle librerie ECID JS è disponibile all’indirizzo [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 Articoli correlati:
 
@@ -37,4 +37,3 @@ Articoli correlati:
 + [getVisitorValues](getvisitorvalues.md)
 + [isClientSideMarketingCloudVisitorID](client-side-id.md)
 + [resetState](resetstate.md)
-
