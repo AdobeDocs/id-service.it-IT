@@ -1,14 +1,14 @@
 ---
 title: Usa il servizio Opt-in per controllare le attività Experience Cloud in base al consenso degli utenti
 description: L’oggetto Adobe Opt-in è un’estensione del servizio Adobe Experience Platform Identity, utile per controllare se e quali soluzioni Experience Cloud possono creare dei cookie su pagine web o avviare dei beacon, in base al consenso dell’utente finale.
-translation-type: tm+mt
-source-git-commit: 3aba8820ef40d068c732a637be5ab67652a8d35d
-workflow-type: tm+mt
+exl-id: ac44e628-01ca-401c-864b-30fed0450e5f
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '554'
 ht-degree: 100%
 
 ---
-
 
 # Controllare le attività Experience Cloud in base al consenso degli utenti
 
@@ -18,7 +18,7 @@ L’oggetto [!UICONTROL Adobe Opt-in] è un’estensione del [!UICONTROL servizi
 
 Un aspetto importante della normativa sulla privacy riguarda l’acquisizione e la trasmissione del consenso degli utenti in merito a come e da chi possono essere utilizzati i loro dati personali. L’ultima versione del [!UICONTROL servizio Identity] include funzionalità che si collocano tra l’utente (l’interfaccia utente) e le soluzioni Adobe per l’attivazione condizionale (ad esempio, pre- o post-consenso) dei tag delle soluzioni Adobe Experience Cloud in base allo stato del consenso fornito dall’utente finale. Tale processo è illustrato dall’immagine seguente:
 
-![Diagramma del funzionamento del servizio [!UICONTROL Opt-in]](assets/opt-in.png)
+![ Diagramma del funzionamento del servizio [!UICONTROL  Opt-in] ](assets/opt-in.png)
 
 [!UICONTROL Opt-in] funge in pratica da portiere... o da guardiano delle chiavi. Sta a te decidere.
 
