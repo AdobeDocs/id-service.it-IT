@@ -22,7 +22,6 @@ Questi esempi coprono 2 casi d&#39;uso comuni relativi a un&#39;integrazione dir
 >
 >* Leggi e comprendi la [sintassi del codice e le variabili](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) prima di immergerti nei casi d&#39;uso.
 >* Per ulteriori informazioni sull’identificatore MID, consulta [Cookie e il servizio Experience Cloud Identity](../introduction/cookies.md).
-
 >
 
 
