@@ -6,11 +6,10 @@ seo-title: Cookie e il servizio Experience Cloud Identity
 title: Cookie e il servizio Experience Cloud Identity
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
+source-git-commit: d2bc28329c68c54a85dcf714083b3fcb5afc5a14
+workflow-type: tm+mt
 source-wordcount: '997'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -28,7 +27,7 @@ Il servizio ID funziona correttamente se usa i cookie AMCV, AMCVS e demdex. Ques
 * Mantieni questo ID univoco in modo che il servizio ID possa raccogliere e condividere dati con altre soluzioni Experience Cloud.
 * Tracciare gli utenti nei vari domini. Tuttavia, questo richiede che tu possieda gli altri domini e che su di essi sia distribuito il codice del servizio ID.
 
-### Quali funzioni non possono essere svolte dai cookie del servizio ID
+### Quali operazioni non possono eseguire i cookie del servizio ID
 
 * Archiviare, trasmettere o eseguire virus del computer.
 * Accedere o archiviare informazioni personali identificabili (PII) come il tuo indirizzo e-mail.
@@ -52,12 +51,12 @@ AMCV_1FD6776A524453CC0A490D44%40AdobeOrg
 
 **Contenuto**
 
-Il cookie AMCV contiene l&#39;ID o il MID del visitatore di Experience Cloud. Il MID viene memorizzato in una coppia chiave/valore con sintassi `mid|<Experience Cloud ID>`.
+Il cookie AMCV contiene l&#39;ID o il MID del visitatore di Experience Cloud. Il MID viene memorizzato in una coppia chiave/valore con sintassi `MCMID|<Experience Cloud ID>`.
 
 La coppia chiave/valore completa deve essere simile alla seguente:
 
 ```
-mid|20265673158980419722735089753036633573
+MCMID|20265673158980419722735089753036633573
 ```
 
 Questo identificatore permanente consente la condivisione dei dati tra più soluzioni.
