@@ -5,11 +5,11 @@ user-guide-title: Guida del servizio Experience Cloud Identity
 breadcrumb-title: Guida al servizio Identity
 user-guide-description: Il servizio ID fornisce un ID universale e costante che identifica i visitatori in tutte le soluzioni Experience Cloud. Può sostituire il codice di generazione ID per servizi come Analytics, Audience Manager, Target e altre soluzioni o funzionalità Experience Cloud.
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 01d50f9def8916b45fac846de235363836ba0429
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '397'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ ht-degree: 99%
    + [Panoramica dei riferimenti](reference/reference.md)
    + Guida di riferimento di Analytics {#analytics-reference}
       + [Panoramica sulla guida di riferimento di Analytics](reference/analytics-reference/analytics-reference.md)
-      + [Panoramica dell’implementazione CNAME](reference/analytics-reference/cname.md)
+      + [Panoramica dell’implementazione di CNAME](reference/analytics-reference/cname.md)
       + [Impostazione degli ID di Analytics ed Experience Cloud](reference/analytics-reference/analytics-ids.md)
       + [Ordine delle operazioni per gli ID di Analytics](reference/analytics-reference/analytics-order-of-operations.md)
       + [Decisioni relative alla migrazione al servizio ID](reference/analytics-reference/migration-decisions.md)
