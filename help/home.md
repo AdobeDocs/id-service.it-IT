@@ -6,11 +6,10 @@ seo-title: Servizio Experience Cloud Identity
 title: Servizio Experience Cloud Identity
 uuid: b68194b5-e549-4f6f-bfaf-7744926aeaac
 exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '305'
-ht-degree: 100%
+source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+workflow-type: tm+mt
+source-wordcount: '303'
+ht-degree: 92%
 
 ---
 
@@ -40,12 +39,12 @@ Il servizio Adobe Experience Cloud Identity (servizio ID) fornisce un ID univers
      --> </td> 
    <td colname="col2"> <p> <b>Note sulla versione</b> </p> <p>La <b>versione 4.4</b> del 17 luglio 2019 include il supporto dell’<a href="reference/hashing-support.md" format="dita" scope="local">algoritmo di hashing SHA-256</a> che consente di ricevere gli ID o indirizzi e-mail dei clienti e di inoltrarli con hashing.</p><p>La <b>versione 4.0</b> del 12 febbraio 2019 include il <a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local">servizio Opt-in</a> utilizzato per identificare se è possibile inserire un cookie sul dispositivo o nel browser di un utente quando visita il sito. </p> <p> 
      <ul id="ul_4F06F170F214492780C7D25A069F799F"> 
-      <li id="li_45A7CD556FE44F4DAB035C736A058F36"> Per conoscere le nuove funzioni e le correzioni, vedi le <a href="https://docs.adobe.com/content/help/it-IT/release-notes/experience-cloud/current.html" format="https" scope="external">note sulla versione di Experience Cloud</a> più recenti. </li> 
-      <li id="li_10CC4FBFEFC947CA9AD15F52D9715257">Per le versioni precedenti consulta la sezione <a href="https://docs.adobe.com/content/help/it-IT/release-notes/experience-cloud/current.html" format="html" scope="external">note sulla versione precedente</a>. </li> 
+      <li id="li_45A7CD556FE44F4DAB035C736A058F36"> Per conoscere le nuove funzioni e le correzioni, vedi le <a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=en" format="https" scope="external">note sulla versione di Experience Cloud</a> più recenti. </li> 
+      <li id="li_10CC4FBFEFC947CA9AD15F52D9715257">Per le versioni precedenti consulta la sezione <a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=en" format="html" scope="external">note sulla versione precedente</a>. </li> 
      </ul> </p> <p> <b>Risorse di Experience Cloud</b> </p> <p> 
      <ul id="ul_E30EC96BDC624B5591F0470D430B7F41"> 
       <li id="li_F3A5CCFAE0F247CEB41A03CA8E03106B"> <a href="http://www.adobe.com/it/privacy.html" format="http" scope="external"> Centro per la privacy Adobe</a> </li> 
-      <li id="li_A54C1EB170EA4B8FA6A81B90AB0C39DD"> <a href="https://docs.adobe.com/content/help/it-IT/experience-cloud/user-guides/home.html" scope="external" format="http"> Adobe Experience Cloud</a> </li> 
+      <li id="li_A54C1EB170EA4B8FA6A81B90AB0C39DD"> <a href="https://experienceleague.adobe.com/docs/home.html?lang=en" scope="external" format="http"> Adobe Experience Cloud</a> </li> 
       <li id="li_1938F7044F544481A6CC0F45CC22B80A"> <a href="http://helpx.adobe.com/it/learning.html?promoid=KAUDK" scope="external" format="http"> Formazione e tutorial di Adobe</a> </li> 
       <li id="li_C71459E0D1464C05B8B9387C43541F17"> <a href="https://helpx.adobe.com/it/support/experience-cloud.html" scope="external" format="https"> Pagina principale documentazione del prodotto</a> </li> 
      </ul> </p> </td> 
