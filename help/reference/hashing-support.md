@@ -5,11 +5,10 @@ seo-description: Il servizio Experience Cloud ID (ECID) supporta l’algoritmo d
 seo-title: Supporto di hashing SHA-256 per setCustomerIDs
 title: Supporto di hashing SHA-256 per setCustomerIDs
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '666'
-ht-degree: 100%
+source-git-commit: cca52e1ece7a31199cb86a286dd772a41f01eeaa
+workflow-type: tm+mt
+source-wordcount: '667'
+ht-degree: 97%
 
 ---
 
@@ -71,7 +70,7 @@ Per una descrizione del parametro `d_cid_ic` e dello stato di autenticazione, co
 
 ## Aggiungere un’azione in Adobe Experience Platform Launch {#add-action-launch}
 
-Experience Platform Launch è la soluzione Adobe di nuova generazione per la gestione dei tag. Per ulteriori informazioni su Launch, consulta la [documentazione di Launch](https://docs.adobe.com/content/help/it-IT/launch/using/overview.html).
+Experience Platform Launch è la soluzione Adobe di nuova generazione per la gestione dei tag. Per ulteriori informazioni sul Platform launch, consulta la [documentazione di Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=en).
 
 Per aggiungere un’azione in Launch, leggi la [documentazione sulle regole](https://docs.adobe.com/help/it-IT/launch/using/reference/manage-resources/rules.html) in Adobe Launch e fai riferimento alla schermata di seguito:
 
