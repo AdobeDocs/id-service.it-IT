@@ -6,10 +6,10 @@ seo-title: Cookie e il servizio Experience Cloud Identity
 title: Cookie e il servizio Experience Cloud Identity
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
-source-git-commit: d2bc28329c68c54a85dcf714083b3fcb5afc5a14
-workflow-type: ht
-source-wordcount: '997'
-ht-degree: 100%
+source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+workflow-type: tm+mt
+source-wordcount: '987'
+ht-degree: 99%
 
 ---
 
@@ -116,7 +116,7 @@ Nella tabella seguente sono elencati e definiti alcuni attributi importanti del 
  </tbody> 
 </table>
 
-Per informazioni correlate, consulta [Informazioni sulle chiamate al dominio Demdex](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/reference/demdex-calls.html).
+Per informazioni correlate, consulta [Informazioni sulle chiamate al dominio Demdex](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en).
 
 ## Generazione dell&#39;Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
@@ -134,7 +134,7 @@ La tabella seguente descrive i flag per i cookie Experience Cloud:
 | AMCV (JavaScript) | No | Configurabile | Non impostato (impostazione predefinita Lax) |
 | AMCVS (JavaScript) | No | Configurabile | Non impostato (impostazione predefinita Lax) |
 
-*Nota: Per informazioni sulla configurazione del cookie AMCV e AMCVS con attributi sicuri, consulta l’argomento relativo a [secureCookie](https://docs.adobe.com/content/help/it-IT/id-service/using/id-service-api/configurations/securecookie.html).*
+*Nota: Per informazioni sulla configurazione del cookie AMCV e AMCVS con attributi sicuri, consulta l’argomento relativo a [secureCookie](../library/function-vars/securecookie.md).*
 
 ## Passaggi successivi {#section-8db1727a63bc4ff68b495f270315d453}
 
