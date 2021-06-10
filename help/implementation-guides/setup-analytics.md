@@ -3,10 +3,10 @@ description: Queste istruzioni sono per i clienti di Analytics che desiderano us
 keywords: Servizio ID
 title: Implementazione del servizio Experience Cloud Identity per Analytics
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1025'
+ht-degree: 97%
 
 ---
 
@@ -91,7 +91,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 ## Passaggio 3: aggiungi l&#39;ID organizzazione Experience Cloud a Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
 
-Nella `Visitor.getInstance` funzione sostituisci `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` con l&#39;ID organizzazione [!DNL Experience Cloud]. Se non conosci il tuo ID organizzazione, puoi trovarlo nella pagina di amministrazione di [!DNL Experience Cloud]. Vedi anche [Amministrazione - Servizi di base](https://docs.adobe.com/content/help/it-IT/core-services/interface/manage-users-and-products/admin-getting-started.html). La funzione modificata deve essere simile a quella riportata di seguito.
+Nella `Visitor.getInstance` funzione sostituisci `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` con l&#39;ID organizzazione [!DNL Experience Cloud]. Se non conosci il tuo ID organizzazione, puoi trovarlo nella pagina di amministrazione di [!DNL Experience Cloud]. Vedi anche [Amministrazione - Servizi di base](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html). La funzione modificata deve essere simile a quella riportata di seguito.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -178,7 +178,7 @@ Se invii dati a un sistema interno da un feed di dati click-stream e per i proce
 
 Quando il processo di inserimento dei dati può utilizzare le colonne `post_visid_high` e `post_visid_low`, interrompi il periodo di tolleranza.
 
-Vedi la [colonna di riferimento dei dati di click-stream](https://docs.adobe.com/content/help/it-IT/analytics/export/analytics-data-feed/data-feed-overview.html).
+Vedi la [colonna di riferimento dei dati di click-stream](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html).
 
 **Inserimento dei dati di click-stream**
 
@@ -191,7 +191,7 @@ Puoi eseguire il test e distribuirlo come segue.
 Per verificare l’implementazione del servizio ID, controlla i seguenti elementi:
 
 * [Cookie AMCV](../introduction/cookies.md) nel dominio di hosting della pagina.
-* Valore MID nella richiesta di immagine [!DNL Analytics] con lo [strumento Adobe Debugger](https://docs.adobe.com/content/help/it-IT/analytics/implementation/validate/debugger.html).
+* Valore MID nella richiesta di immagine [!DNL Analytics] con lo [strumento Adobe Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html).
 
 Consulta [Test e verifica del servizio Experience Cloud Identity](../implementation-guides/test-verify.md).
 
