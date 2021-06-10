@@ -3,10 +3,10 @@ description: Leggi questa sezione per essere certo di usare le soluzioni, i serv
 keywords: Servizio ID
 title: Requisiti del servizio Experience Cloud Identity
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '730'
+ht-degree: 89%
 
 ---
 
@@ -37,7 +37,7 @@ Un&#39;implementazione di successo e supportata deve rispettare (o superare) i r
      <li id="li_1F16C6D412944197BEA56BC24730782C"> Inserisci uno di questi codici DTM da incorporare in un’altra posizione nel codice di markup e/o di pagina. </li> 
      <li id="li_05615C01F3A947BBBD41046E68377224"> Accodi, aggiungi o carichi il codice DTM con metodi asincroni, chiamate/metodi di callback o wrapper. </li> 
      <li id="li_B2137DFF627B473FA876580449026D2B">Includi più istanze di codice da incorporare sulla stessa pagina. </li> 
-    </ul> <p>Vedi anche <a href="https://docs.adobe.com/content/help/it-IT/dtm/using/client-side/deployment.html" format="https" scope="external">Opzioni di hosting e codice di incorporamento</a>. </p> </td> 
+    </ul> <p>Vedi anche <a href="https://experienceleague.adobe.com/docs/dtm/using/client-side/deployment.html" format="https" scope="external">Opzioni di hosting e codice di incorporamento</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113" format="dita" scope="local"> Implementazioni non standard </a> </p> </td> 
@@ -64,7 +64,7 @@ Per utilizzare il servizio ID, la società deve essere abilitata per [!DNL Exper
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Abilitato</b> </p> </td> 
-   <td colname="col2"> <p>Se l'azienda è abilitata per <span class="keyword">Experience Cloud</span> ma non possiedi l'ID organizzazione, controlla gli <a href="https://docs.adobe.com/content/help/it-IT/core-services/interface/manage-users-and-products/organizations.html" format="https" scope="external">ID organizzazione</a> (scorri la sezione <i>Ricerca dell'ID organizzazione</i>). </p> </td> 
+   <td colname="col2"> <p>Se l'azienda è abilitata per <span class="keyword">Experience Cloud</span> ma non possiedi l'ID organizzazione, controlla gli <a href="https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html" format="https" scope="external">ID organizzazione</a> (scorri la sezione <i>Ricerca dell'ID organizzazione</i>). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Non sono sicuro</b> </p> </td> 
@@ -72,14 +72,14 @@ Per utilizzare il servizio ID, la società deve essere abilitata per [!DNL Exper
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Non abilitato</b> </p> </td> 
-   <td colname="col2"> <p> Se la società non è abilitata per Experience Cloud, vedi <a href="https://docs.adobe.com/content/help/it-IT/core-services/interface/about-core-services/core-services.html" format="https" scope="external">Servizi di base - Come abilitare le soluzioni</a>. </p> </td> 
+   <td colname="col2"> <p> Se la società non è abilitata per Experience Cloud, vedi <a href="https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html" format="https" scope="external">Servizi di base - Come abilitare le soluzioni</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Requisiti di Analytics: raccolta dati regionali (RDC) {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-Tutti i server di tracciamento sono stati convertiti in RDC, pertanto non è necessario modificare il server di tracciamento di Analytics. [Ulteriori informazioni...](https://docs.adobe.com/content/help/it-IT/analytics/technotes/rdc/regional-data-collection.html)
+Tutti i server di tracciamento sono stati convertiti in RDC, pertanto non è necessario modificare il server di tracciamento di Analytics. [Ulteriori informazioni...](https://experienceleague.adobe.com/docs/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
 
 ## Librerie dei codici e versioni richieste {#section-ad7542a4317d430fa79fc6b095beb84d}
 
@@ -107,7 +107,7 @@ Nelle seguenti sezioni sono elencate le versioni minime dei codici richieste per
   </tr> 
   <tr> 
    <td colname="col1" morerows="2"> <p> <b> <span class="keyword"> Analytics </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> AppMeasurement.js</span> </p> <p>Vedi <a href="https://docs.adobe.com/content/help/it-IT/analytics/implementation/js/overview.html" format="https" scope="external">AppMeasurement per JavaScript</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> AppMeasurement.js</span> </p> <p>Vedi <a href="https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=it" format="https" scope="external">AppMeasurement per JavaScript</a>. </p> </td> 
    <td colname="col4"> <p>1.6.4 o successiva </p> </td> 
   </tr> 
   <tr> 
@@ -115,21 +115,21 @@ Nelle seguenti sezioni sono elencate le versioni minime dei codici richieste per
    <td colname="col4"> <p>H.27 </p> <p> <p>Nota:<span class="keyword"> la versione H.27 di Analytics</span> s_code non è più supportata a partire dal rilascio del servizio ID versione 1.6.0. Aggiorna il codice all'ultima versione di AppMeasurement. </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p>Video Heartbeat </p> <p>Guarda il <a href="https://docs.adobe.com/content/help/it-IT/media-analytics/using/media-overview.html" format="https" scope="external">video su Heartbeat 2.x per JavaScript</a>. </p> </td> 
+   <td colname="col3"> <p>Video Heartbeat </p> <p>Guarda il <a href="https://docs.adobe.com/content/help/it-IT/experience-cloud/user-guides/home.translate.html" format="https" scope="external">video su Heartbeat 2.x per JavaScript</a>. </p> </td> 
    <td colname="col4"> <p>2.0 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> <span class="keyword"> Audience Manager </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> Vedi <a href="https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external">Libreria di integrazione dei dati</a> (DIL). </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> Vedi <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external">Libreria di integrazione dei dati</a> (DIL). </p> </td> 
    <td colname="col4"> <p>5.0 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Vedi <a href="https://docs.adobe.com/content/help/it-IT/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external">Codice mbox</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Vedi <a href="https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external">Codice mbox</a>. </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Vedi <a href="https://docs.adobe.com/content/help/it-IT/target/using/implement-target/client-side/at-js/how-atjs-works.html" format="https" scope="external">Implementazione at.js</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Vedi <a href="https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js/how-atjs-works.html" format="https" scope="external">Implementazione at.js</a>. </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 
@@ -148,9 +148,9 @@ Come minimo, il servizio ID richiede le versioni SDK elencate di seguito.
 
 Il codice SDK deve essere abilitato per il servizio ID. Abilita e scarica il codice SDK più recente per ciascuna app dal tuo account [Adobe Mobile Services](https://mobilemarketing.adobe.com/). Vedi anche:
 
-* [Configurare le opzioni del servizio ID visitatore dell’SDK](https://docs.adobe.com/content/help/it-IT/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
-* [Metodi SDK per Android](https://docs.adobe.com/content/help/it-IT/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
-* [Metodi SDK per iOS](https://docs.adobe.com/content/help/it-IT/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
+* [Configurare le opzioni del servizio ID visitatore dell’SDK](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
+* [Metodi SDK per Android](https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
+* [Metodi SDK per iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
 
 >[!MORELIKETHIS]
 >
