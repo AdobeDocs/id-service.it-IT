@@ -1,16 +1,12 @@
 ---
 description: Istruzioni, strumenti e procedure utili per determinare se il servizio ID funziona correttamente. Questi test sono applicabili al servizio ID in generale e per diverse combinazioni del servizio ID e delle soluzioni Experience Cloud.
 keywords: Servizio ID
-seo-description: Istruzioni, strumenti e procedure utili per determinare se il servizio ID funziona correttamente. Questi test sono applicabili al servizio ID in generale e per diverse combinazioni del servizio ID e delle soluzioni Experience Cloud.
-seo-title: Test e verifica del servizio Experience Cloud Identity
 title: Test e verifica del servizio Experience Cloud Identity
-uuid: 442de9c3-c265-4412-89bd-aeaa286ddad6
 exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '723'
-ht-degree: 100%
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,11 +28,11 @@ In alternativa puoi provare il servizio ID in una sessione browser anonima o in 
 
 Utilizzando [Adobe Debugger](https://docs.adobe.com/content/help/it-IT/analytics/implementation/validate/debugger.html) e il [proxy HTTP Charles](https://www.charlesproxy.com/) puoi determinare se il servizio ID è stato configurato in modo da funzionare correttamente con Analytics. Le informazioni presenti in questa sezione si basano sui risultati restituiti da Adobe Debugger e Charles. Puoi anche usare un altro strumento o debugger di tua preferenza.
 
-## Test con Adobe Debugger {#section-861365abc24b498e925b3837ea81d469}
+## Test con Adobe Debugger  {#section-861365abc24b498e925b3837ea81d469}
 
 L&#39;integrazione del servizio è configurata correttamente se vedi un identificatore [!DNL Experience Cloud ID] (MID) nella risposta di [!DNL Adobe] Debugger. Per maggiori informazioni sull’identificatore MID, consulta [Cookie e il servizio Experience Cloud Identity](../introduction/cookies.md).
 
-Per verificare lo stato del servizio ID con il [!DNL Adobe] [debugger](https://docs.adobe.com/content/help/it-IT/analytics/implementation/validate/debugger.html):
+Per verificare lo stato del servizio ID con il [!DNL Adobe] [debugger](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html):
 
 1. Cancella i cookie del browser o apri una sessione di navigazione anonima.
 1. Carica la pagina di prova che contiene il codice del servizio ID.
