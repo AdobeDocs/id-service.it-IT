@@ -1,16 +1,12 @@
 ---
 description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity.
 keywords: Servizio ID
-seo-description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity.
-seo-title: Note sulla versione 2019
 title: Note sulla versione 2019
-uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '424'
-ht-degree: 100%
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -63,7 +59,7 @@ Supporto per il plug-in Audience Manager per IAB TCF, disponibile tramite l’og
 
 ## Versione 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**Servizio Opt-in**. Opt-in è un&#39;estensione di Experience Cloud ID (ECID) che consente di controllare se (e quali) librerie di Experience Cloud possono creare dei cookie sulle pagine Web per i visitatori. Usando [Experience Platform Launch](https://docs.adobe.com/content/help/it-IT/launch/using/overview.html), è possibile semplificare la raccolta dei consensi dei visitatori per la soluzione Experience Cloud consentendo ad Analytics, Target, Audience Manager e a tutte le altre soluzioni Experience Cloud di partecipare al sistema di gestione dei consensi.
+**Servizio Opt-in**. Opt-in è un&#39;estensione di Experience Cloud ID (ECID) che consente di controllare se (e quali) librerie di Experience Cloud possono creare dei cookie sulle pagine Web per i visitatori. Usando [Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html), è possibile semplificare la raccolta dei consensi dei visitatori per la soluzione Experience Cloud consentendo ad Analytics, Target, Audience Manager e a tutte le altre soluzioni Experience Cloud di partecipare al sistema di gestione dei consensi.
 
 ## Versione 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 
