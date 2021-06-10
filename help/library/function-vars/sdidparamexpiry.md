@@ -1,20 +1,16 @@
 ---
 description: Questa configurazione ti permette di ignorare l'intervallo di scadenza del codice Supplemental Data ID (SDID) predefinito quando trasmetti quell'ID da una pagina all'altra usando la funzione helper appendSupplementalDataIDTo. Per impostazione predefinita, il codice del servizio ID sulla pagina ricevente ha 30 secondi di tempo per ottenere il codice SDID dall'URL inviato dalla pagina inviante. Se il codice del servizio ID sulla pagina ricevente non riesce a recuperare il codice SDID in meno di 30 secondi, richiede un nuovo codice SDID. Questa funzionalità è principalmente per i clienti A4T che devono passare il codice SDID da una pagina all’altra e desiderano controllare questo intervallo di timeout.
 keywords: Servizio ID
-seo-description: Questa configurazione ti permette di ignorare l'intervallo di scadenza del codice Supplemental Data ID (SDID) predefinito quando trasmetti quell'ID da una pagina all'altra usando la funzione helper appendSupplementalDataIDTo. Per impostazione predefinita, il codice del servizio ID sulla pagina ricevente ha 30 secondi di tempo per ottenere il codice SDID dall'URL inviato dalla pagina inviante. Se il codice del servizio ID sulla pagina ricevente non riesce a recuperare il codice SDID in meno di 30 secondi, richiede un nuovo codice SDID. Questa funzionalità è principalmente per i clienti A4T che devono passare il codice SDID da una pagina all’altra e desiderano controllare questo intervallo di timeout.
-seo-title: sdidParamExpiry
 title: sdidParamExpiry
-uuid: cdaf7e2d-b196-4c70-936d-8a98191cbb85
 exl-id: 5458ffa5-03d1-4c52-907d-c50fe00ce35d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '357'
-ht-degree: 100%
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# sdidParamExpiry {#sdidparamexpiry}
+# sdidParamExpiry{#sdidparamexpiry}
 
 Questa configurazione ti permette di ignorare l&#39;intervallo di scadenza del codice Supplemental Data ID (SDID) predefinito quando trasmetti quell&#39;ID da una pagina all&#39;altra usando la funzione helper appendSupplementalDataIDTo. Per impostazione predefinita, il codice del servizio ID sulla pagina ricevente ha 30 secondi di tempo per ottenere il codice SDID dall&#39;URL inviato dalla pagina inviante. Se il codice del servizio ID sulla pagina ricevente non riesce a recuperare il codice SDID in meno di 30 secondi, richiede un nuovo codice SDID. Questa funzionalità è principalmente per i clienti A4T che devono passare il codice SDID da una pagina all’altra e desiderano controllare questo intervallo di timeout.
 
