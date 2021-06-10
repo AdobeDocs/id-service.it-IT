@@ -1,15 +1,11 @@
 ---
 description: Implementare il servizio Opt-in come unico punto di riferimento usato dalle soluzioni Experience Cloud (definite anche Categorie in Opt-in) per definire se è necessario creare cookie sul dispositivo di un visitatore.
-seo-description: Implementare il servizio Opt-in come unico punto di riferimento usato dalle soluzioni Experience Cloud (definite anche Categorie in Opt-in) per definire se è necessario creare cookie sul dispositivo di un visitatore.
-seo-title: Configurazione del servizio Opt-in
 title: Configurazione del servizio Opt-in
-uuid: f1c27139-cef2-4122-af12-c839cfc82e6e
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '941'
-ht-degree: 100%
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +17,7 @@ Il servizio Opt-in è una libreria JavaScript abbinata con Experience Cloud ID (
 
 Il servizio Opt-in consente di specificare se un visitatore può dare il consenso esplicito a tutte le soluzioni Adobe in una sola volta oppure deve darlo per ogni soluzione seguendo la sequenza di autorizzazioni per ognuna di esse. Quando il processo di approvazione è stato completato e registrato dal cliente, è possibile recuperare le approvazioni del visitatore CMP da tutte le soluzioni Adobe per rispondere con le relative chiamate di consenso.
 
-## Prerequisiti  {#section-c39246f45e514c8ea9fdbe6f7ffa3ad0}
+## Prerequisiti   {#section-c39246f45e514c8ea9fdbe6f7ffa3ad0}
 
 1. ECID versione 4.0
 
@@ -45,7 +41,7 @@ Il servizio Opt-in consente di specificare se un visitatore può dare il consens
 
 1. I requisiti di privacy dell&#39;azienda saranno specifici in base alla scelta di rispettare il RGPD. Tieni presente quali librerie i team aziendali per la privacy possono usare prima del consenso.
 
-Se utilizzi [Adobe Launch](https://docs.adobe.com/content/help/it-IT/launch/using/overview.html), sfrutta l’[estensione Opt-in](../../implementation-guides/opt-in-service/launch.md) per configurare il servizio Opt-in.
+Se utilizzi [Adobe Launch](https://experienceleague.adobe.com/docs/launch/using/home.html), sfrutta l’[estensione Opt-in](../../implementation-guides/opt-in-service/launch.md) per configurare il servizio Opt-in.
 
 ## Categorie di Opt-in {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
