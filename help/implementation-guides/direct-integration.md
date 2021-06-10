@@ -3,10 +3,10 @@ description: Questa implementazione permette ai clienti di usare il servizio ID 
 keywords: Servizio ID
 title: Integrazione diretta con il servizio Experience Cloud Identity
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 100%
+source-wordcount: '656'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ I dispositivi che non possono usare le librerie di codici VisitorAPI.js o SDK po
 
 ![](assets/directSyntax.png)
 
-In questo esempio di sintassi, il `d_` prefisso identifica le coppie chiave-valore nella chiamata come variabile a livello di sistema. Puoi trasmettere una serie di `d_` parametri al servizio ID, ma fai particolare attenzione alle coppie chiave-valore mostrate nel codice seguente. Per ulteriori informazioni su altre variabili, consulta [Attributi supportati per le chiamate API DCS](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
+In questo esempio di sintassi, il `d_` prefisso identifica le coppie chiave-valore nella chiamata come variabile a livello di sistema. Puoi trasmettere una serie di `d_` parametri al servizio ID, ma fai particolare attenzione alle coppie chiave-valore mostrate nel codice seguente. Per ulteriori informazioni su altre variabili, consulta [Attributi supportati per le chiamate API DCS](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
 
 Il servizio ID supporta le chiamate HTTP e HTTPS. Utilizza HTTPS per trasmettere dati da una pagina protetta.
 
@@ -57,7 +57,7 @@ Il servizio ID restituisce i dati in un oggetto JSON come mostrato di seguito. L
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dpm.demdex.net</span> </p> </td> 
-   <td colname="col2"> <p>Un dominio legacy controllato da <span class="keyword">Adobe</span>. Vedi <a href="https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Informazioni sulle chiamate al dominio demdex</a>. </p> </td> 
+   <td colname="col2"> <p>Un dominio legacy controllato da <span class="keyword">Adobe</span>. Vedi <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Informazioni sulle chiamate al dominio demdex</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
@@ -87,7 +87,7 @@ Il servizio ID restituisce i dati in un oggetto JSON come mostrato di seguito. L
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>Il servizio ID è un sistema distribuito geograficamente e bilanciato in base al carico. L'ID identifica la regione del centro dati che gestisce la chiamata. Consulta <a href="https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">ID regioni DCS, posizioni e nomi host</a>. </p> </td> 
+   <td colname="col2"> <p>Il servizio ID è un sistema distribuito geograficamente e bilanciato in base al carico. L'ID identifica la regione del centro dati che gestisce la chiamata. Consulta <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">ID regioni DCS, posizioni e nomi host</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
