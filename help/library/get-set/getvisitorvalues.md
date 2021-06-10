@@ -1,20 +1,16 @@
 ---
 description: Questa API asincrona restituisce per impostazione predefinita identificatori per Analytics, il servizio ID, la rinuncia alla raccolta di dati, la geolocalizzazione, e contenuti di metadati BLOB. Inoltre, è possibile controllare gli ID che dovranno essere restituiti con l'enum opzionale visitor.FIELDS.
 keywords: Servizio ID
-seo-description: Questa API asincrona restituisce per impostazione predefinita identificatori per Analytics, il servizio ID, la rinuncia alla raccolta di dati, la geolocalizzazione, e contenuti di metadati BLOB. Inoltre, è possibile controllare gli ID che dovranno essere restituiti con l'enum opzionale visitor.FIELDS.
-seo-title: getVisitorValues
 title: getVisitorValues
-uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '449'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '409'
 ht-degree: 100%
 
 ---
 
-# getVisitorValues {#getvisitorvalues}
+# getVisitorValues{#getvisitorvalues}
 
 Questa API asincrona restituisce per impostazione predefinita identificatori per Analytics, il servizio ID, la rinuncia alla raccolta di dati, la geolocalizzazione, e contenuti di metadati BLOB. Inoltre, è possibile controllare gli ID che dovranno essere restituiti con l&#39;enum opzionale visitor.FIELDS.
 
@@ -38,7 +34,7 @@ Nei parametri della funzione:
 
 Per maggiori informazioni, vedi i casi d&#39;uso seguenti e le definizioni.
 
-## Caso d&#39;uso 1: richiesta di impostazione di dati predefiniti {#section-36a31683558742a5915db3a391e09f7b}
+## Caso d&#39;uso 1: richiesta di impostazione di dati predefiniti  {#section-36a31683558742a5915db3a391e09f7b}
 
 Questo codice restituisce il set di dati standard. La richiesta e la risposta potrebbero essere simili ai seguenti esempi.
 
@@ -63,7 +59,7 @@ Nella risposta di esempio predefinita alcuni valori sono stati abbreviati a scop
 }
 ```
 
-## Caso d&#39;uso 2: richiesta di impostazione di dati personalizzati {#section-467b2f4e513344c89b7332b05f6f59f3}
+## Caso d&#39;uso 2: richiesta di impostazione di dati personalizzati  {#section-467b2f4e513344c89b7332b05f6f59f3}
 
 Questo codice utilizza un array facoltativo per restituire un set specifico di ID usando `visitor.FIELDS` l&#39;enum. In questo caso vogliamo solo l’Experience Cloud ID (MCID) e l’ID Analytics (MCAID) del visitatore. La richiesta e la risposta potrebbero essere simili ai seguenti esempi.
 
@@ -85,7 +81,7 @@ La risposta di esempio personalizzata restituisce solo gli ID specificati nella 
 }
 ```
 
-## Parametri di risposta definiti {#section-4c4c300167694c6fbff1d6c612f372b5}
+## Parametri di risposta definiti  {#section-4c4c300167694c6fbff1d6c612f372b5}
 
 Nella seguente tabella sono elencati e definiti i parametri di risposta. Questi sono anche tutti i valori `visitor.FIELDS` nell&#39;enum. Nota che questo metodo restituisce una stringa vuota se non sono presenti valori per una particolare variabile.
 
