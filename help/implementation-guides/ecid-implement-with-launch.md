@@ -1,15 +1,11 @@
 ---
 description: Adobe Experience Platform Launch è lo strumento principale usato per configurare, distribuire e integrare il servizio Experience Cloud Identity con le altre soluzioni Experience Cloud.
-seo-description: Adobe Experience Platform Launch è lo strumento principale usato per configurare, distribuire e integrare il servizio Experience Cloud Identity con le altre soluzioni Experience Cloud.
-seo-title: Implementare con Launch
 title: Implementare con Launch
-uuid: b3282f8e-82b8-4635-8c80-1b365e8a9693
 exl-id: cf197fde-3b93-4578-b24e-2db5633f043c
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '189'
-ht-degree: 100%
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,9 +13,9 @@ ht-degree: 100%
 
 Adobe Experience Platform Launch è lo strumento principale usato per configurare, distribuire e integrare il servizio Experience Cloud Identity con le altre soluzioni Experience Cloud.
 
-## Informazioni su Launch {#section-611711602854464ea351a4af80a8dafe}
+## Informazioni su Launch  {#section-611711602854464ea351a4af80a8dafe}
 
-[Adobe Experience Platform Launch](https://docs.adobe.com/content/help/it-IT/launch/using/overview.html) è la funzionalità di gestione dei tag di nuova generazione di Adobe incorporata in Adobe Experience Cloud. Launch consente ai clienti di:
+[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html) è la funzionalità di gestione dei tag di nuova generazione di Adobe incorporata in Adobe Experience Cloud. Launch consente ai clienti di:
 
 * distribuire prodotti Web lato client usando integrazioni definite estensioni;
 * acquisire, definire, gestire e condividere in modo coerente i dati tra prodotti marketing e pubblicitari di Adobe e altri fornitori;
