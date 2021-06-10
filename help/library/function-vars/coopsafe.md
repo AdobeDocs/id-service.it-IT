@@ -1,20 +1,16 @@
 ---
 description: Configurazione booleana opzionale che consente di determinare se il servizio ID invia o meno dati ad Adobe Experience Cloud Device Co-op.
 keywords: Servizio ID
-seo-description: Configurazione booleana opzionale che consente di determinare se il servizio ID invia o meno dati ad Adobe Experience Cloud Device Co-op.
-seo-title: isCoopSafe
 title: isCoopSafe
-uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '606'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '582'
 ht-degree: 100%
 
 ---
 
-# isCoopSafe {#iscoopsafe}
+# isCoopSafe{#iscoopsafe}
 
 Configurazione booleana opzionale che consente di determinare se il servizio ID invia o meno dati ad Adobe Experience Cloud Device Co-op.
 
@@ -85,7 +81,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 });
 ```
 
-## Parametri POST della chiamata dell&#39;evento {#section-fcd441933506493faefaa6b51f194a17}
+## Parametri POST della chiamata dell&#39;evento  {#section-fcd441933506493faefaa6b51f194a17}
 
 A seconda del flag che hai impostato (`true` o `false`), il servizio ID traduce `isCoopSafe` in questi parametri POST e li invia ad [!DNL Adobe] in una chiamata dell&#39;evento:
 
@@ -113,7 +109,7 @@ I parametri POST dicono all&#39;[!DNL Experience Cloud] Device Co-op se può o m
  </tbody> 
 </table>
 
-## API di post-istanziazione {#section-9281c39c8b6249d7864100b5cbca7dc6}
+## API di post-istanziazione  {#section-9281c39c8b6249d7864100b5cbca7dc6}
 
 Questi API ti consentono di ignorare lo stato `isCoopSafe`. Questi sono necessarie perché ti permettono di modificare lo stato di post-istanziazione/post-login di un visitatore su un sito o in un&#39;app a pagina singola in cui la pagina non viene aggiornata. Ad esempio, dovresti chiamare queste API se un utente si autentica sul tuo sito o sulla tua app e successivamente accetta una policy sulle condizioni d’uso che consente a Device Co-op di utilizzare i propri dati.
 
