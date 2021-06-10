@@ -1,20 +1,16 @@
 ---
 description: Questa proprietà imposta l'ID del contenitore della sorgente dati che desideri usare per le sincronizzazioni ID.
 keywords: Servizio ID
-seo-description: Questa proprietà imposta l'ID del contenitore della sorgente dati che desideri usare per le sincronizzazioni ID.
-seo-title: idSyncContainerID
 title: idSyncContainerID
-uuid: e35dc48b-1aa1-41e3-91c1-ef1e9d2d8b90
 exl-id: 6c4cd41b-902b-4872-8c3f-475a834b76f4
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '336'
-ht-degree: 100%
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# idSyncContainerID {#idsynccontainerid}
+# idSyncContainerID{#idsynccontainerid}
 
 Questa proprietà imposta l&#39;ID del contenitore della sorgente dati che desideri usare per le sincronizzazioni ID.
 
@@ -40,7 +36,7 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 });
 ```
 
-## Cosa sono i contenitori e quando dovrei usarli? {#section-6aed44fbe9d6401a8f912cb0d98339a7}
+## Cosa sono i contenitori e quando dovrei usarli?  {#section-6aed44fbe9d6401a8f912cb0d98339a7}
 
 **Contenitori**
 
@@ -83,7 +79,7 @@ A seconda della situazione, potresti dover o meno aggiungere questa configurazio
  </tbody> 
 </table>
 
-## Impostazione degli ID dei contenitori quando usi DIL e VisitorAPI.js {#section-f283cb69c8de4348b5316cc4e02a3e9e}
+## Impostazione degli ID dei contenitori quando usi DIL e VisitorAPI.js  {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
 Se hai implementato [!UICONTROL DIL ]* e* VisitorAPI.js sulla stessa pagina:
 
