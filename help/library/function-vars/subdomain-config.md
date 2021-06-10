@@ -1,16 +1,12 @@
 ---
 description: Modifica il nome di dominio predefinito usato dalle chiamate al servizio Experience Cloud Identity con il nome del tuo sottodominio con queste configurazioni.
 keywords: Servizio ID
-seo-description: Modifica il nome di dominio predefinito usato dalle chiamate al servizio Experience Cloud Identity con il nome del tuo sottodominio con queste configurazioni.
-seo-title: audienceManagerServer e audienceManagerServerSecure
 title: audienceManagerServer e audienceManagerServerSecure
-uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
 exl-id: b740eb5c-ac4e-46f4-ba7c-1080d8d9292d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '245'
-ht-degree: 100%
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
