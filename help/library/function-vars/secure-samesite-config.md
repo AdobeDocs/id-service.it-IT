@@ -1,15 +1,12 @@
 ---
 description: Configurazione all’interno di ECID che può essere utilizzata per supportare i cookie AMCV sulle pagine Google AMP.
 keywords: Servizio ID
-seo-description: Configurazione all’interno di ECID che può essere utilizzata per supportare i cookie AMCV sulle pagine Google AMP.
-seo-title: Configurazioni Secure e SameSite
 title: Configurazioni Secure e SameSite
 exl-id: c3bc44fc-5adc-4eae-8169-9d731d148458
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '174'
-ht-degree: 100%
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
