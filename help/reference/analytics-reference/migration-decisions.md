@@ -3,10 +3,10 @@ description: Prima di implementare il servizio Experience Cloud Identity, è nec
 keywords: Servizio ID
 title: Decisioni relative alla migrazione al servizio Experience Cloud Identity
 exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '636'
+ht-degree: 98%
 
 ---
 
@@ -59,7 +59,7 @@ Se hai più domini che inviano dati alla *stessa suite di rapporti*, ti consigli
    <td colname="col1"> <p>Un solo dominio </p> </td> 
    <td colname="col2"> <p>Se usi un solo dominio puoi effettuare la migrazione da un CNAME di raccolta dati se non desideri più gestirlo. Tuttavia, questo cambiamento non è necessario se il CNAME funziona correttamente. </p> <p>Se rimuovi il CNAME: </p> 
     <ul id="ul_12CDECEFC7BB41A18895B507CAA42315"> 
-     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Verifica che il nuovo server di monitoraggio sia <a href="https://docs.adobe.com/content/help/it-IT/analytics/technotes/rdc/regional-data-collection.html" format="https" scope="external">compatibile con RDC</a>. </li> 
+     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Verifica che il nuovo server di monitoraggio sia <a href="https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html" format="https" scope="external">compatibile con RDC</a>. </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762">Passa dal CNAME a un server di monitoraggio RDC alcuni mesi prima della migrazione al servizio <span class="keyword">Experience Cloud ID</span>. </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i>Non</i> usare un server di monitoraggio <span class="codeph">*.2o7.net</span>. </li> 
      <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Per configurare la migrazione dei visitatori, contatta l'<a href="https://helpx.adobe.com/it/marketing-cloud/contact-support.html" format="https" scope="external">assistenza clienti</a>. In questo modo i conteggi dei visitatori rimarranno costanti. </li> 
