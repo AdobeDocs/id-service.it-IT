@@ -1,15 +1,12 @@
 ---
 description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity.
 keywords: Servizio ID
-seo-description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity.
-seo-title: Note sulla versione 2020
 title: Note sulla versione 2020
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '147'
-ht-degree: 100%
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
