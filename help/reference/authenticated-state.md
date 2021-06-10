@@ -1,16 +1,12 @@
 ---
 description: Oltre all’ID visitatore di Experience Cloud, puoi associare altri ID cliente e uno stato di autenticazione a ciascun visitatore.
 keywords: Servizio ID
-seo-description: Oltre all’ID visitatore di Experience Cloud, puoi associare altri ID cliente e uno stato di autenticazione a ciascun visitatore.
-seo-title: ID cliente e stati di autenticazione
 title: ID cliente e stati di autenticazione
-uuid: 643df363-224a-463e-a332-be59926b47e7
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '661'
-ht-degree: 100%
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -55,7 +51,7 @@ A partire dalla versione 1.5 del servizio Experience Cloud Identity, `setCustome
  </tbody> 
 </table>
 
-## Casi d’uso per gli stati di autenticazione {#section-fe9560cc490943b29dac2c4fb6efd72c}
+## Casi d’uso per gli stati di autenticazione  {#section-fe9560cc490943b29dac2c4fb6efd72c}
 
 È possibile assegnare gli stati di autenticazione agli utenti, a seconda delle azioni che questi eseguono sulle proprietà Web e del fatto che siano autenticati o meno. La tabella seguente riporta alcuni esempi:
 
@@ -68,7 +64,7 @@ A partire dalla versione 1.5 del servizio Experience Cloud Identity, `setCustome
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN  </span> </p> </td> 
    <td colname="col2"> <p>Questo stato può essere utilizzato per scenari quali: </p> <p> 
      <ul id="ul_086C7446D258443DA7AF5BB96A6AAEC7"> 
       <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">si legge un’e-mail (questa azione probabilmente indica che il lettore è il destinatario desiderato, ma l’e-mail potrebbe anche essere stata inoltrata) </li> 
@@ -76,11 +72,11 @@ A partire dalla versione 1.5 del servizio Experience Cloud Identity, `setCustome
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED  </span> </p> </td> 
    <td colname="col2"> <p>Al momento l’utente è autenticato con una sessione attiva sul sito Web o sull’app. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT  </span> </p> </td> 
    <td colname="col2"> <p>L’utente si è autenticato ma si è disconnesso in modo attivo. L’utente desiderava disconnettersi dallo stato autenticato. L’utente non desidera più essere trattato come utente autenticato. </p> </td> 
   </tr> 
  </tbody> 
@@ -212,7 +208,7 @@ Object customerIDs = visitor.getCustomerIDs();
  }
 ```
 
-## Supporto per l’SDK {#section-861c6b3b1ba645dda133dccb22ec7bb0}
+## Supporto per l’SDK  {#section-861c6b3b1ba645dda133dccb22ec7bb0}
 
 Il servizio [!DNL Experience Cloud] ID supporta gli ID dei clienti e gli stati di autenticazione nel nostro codice SDK per Android e iOS. Consulta le seguenti librerie di codice:
 
