@@ -1,16 +1,12 @@
 ---
 description: Domande frequenti sulle caratteristiche, sulle funzionalità e sui problemi correlati all'uso del servizio ID.
-keywords: Servizio ID
-seo-description: Domande frequenti sulle caratteristiche, sulle funzionalità e sui problemi correlati all'uso del servizio ID.
-seo-title: Domande frequenti sul servizio ID
+keywords: 'Servizio ID '
 title: Domande frequenti sul servizio ID
-uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '806'
-ht-degree: 100%
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
