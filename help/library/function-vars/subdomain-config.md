@@ -3,10 +3,10 @@ description: Modifica il nome di dominio predefinito usato dalle chiamate al ser
 keywords: Servizio ID
 title: audienceManagerServer e audienceManagerServerSecure
 exl-id: b740eb5c-ac4e-46f4-ba7c-1080d8d9292d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '218'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ Modifica il nome di dominio predefinito usato dalle chiamate al servizio Experie
 
 **Finalità**
 
-Normalmente, il servizio [!DNL Experience Cloud] ID effettua chiamate ad [!DNL Adobe] a `dpm.demdex.net`. Talvolta potresti non voler effettuare chiamate a questa destinazione perché troppo generica o &quot;di terza parte&quot;. Affinché la chiamata al servizio ID sembri più una chiamata di prima parte, usa queste configurazioni per aggiungere il nome del [!DNL Audience Manager] sottodominio a `demdex.net` come mostrato di seguito. Per ulteriori informazioni sulla chiamata `dpm.demdex.net`, vedi [Informazioni sulle chiamate al dominio Demdex](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/reference/demdex-calls.html).
+Normalmente, il servizio [!DNL Experience Cloud] ID effettua chiamate ad [!DNL Adobe] a `dpm.demdex.net`. Talvolta potresti non voler effettuare chiamate a questa destinazione perché troppo generica o &quot;di terza parte&quot;. Affinché la chiamata al servizio ID sembri più una chiamata di prima parte, usa queste configurazioni per aggiungere il nome del [!DNL Audience Manager] sottodominio a `demdex.net` come mostrato di seguito. Per ulteriori informazioni sulla chiamata `dpm.demdex.net`, vedi [Informazioni sulle chiamate al dominio Demdex](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html).
 
 **Requisiti**
 
