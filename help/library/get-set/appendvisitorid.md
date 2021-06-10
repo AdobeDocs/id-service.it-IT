@@ -1,15 +1,11 @@
 ---
 description: Con questa funzione puoi condividere l'Experience Cloud ID di un visitatore tra più domini quando i browser bloccano i cookie di terze parti. Per usare questa funzione, devi avere implementato il servizio ID sui domini di sorgente e di destinazione. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
 keywords: Servizio ID
-seo-description: Con questa funzione puoi condividere l'Experience Cloud ID di un visitatore tra più domini quando i browser bloccano i cookie di terze parti. Per usare questa funzione, devi avere implementato il servizio ID sui domini di sorgente e di destinazione. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
-seo-title: appendVisitorIDsTo (Monitoraggio interdominio)
 title: appendVisitorIDsTo (Monitoraggio interdominio)
-uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '448'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '404'
 ht-degree: 100%
 
 ---
@@ -41,7 +37,7 @@ Per risolvere questo problema, implementa ` Visitor.appendVisitorIDsTo( *`url`*)
 
 Per informazioni dettagliate consulta l’esempio di codice.
 
-## Aggiungi l&#39;esempio di codice ID visitatore {#section-62d55f7f986542b0b9238e483d50d7b0}
+## Aggiungi l&#39;esempio di codice ID visitatore  {#section-62d55f7f986542b0b9238e483d50d7b0}
 
 L&#39;esempio seguente può aiutarti a iniziare con ` Visitor.appendVisitorIDsTo( *`url`*)`. Se viene implementato correttamente, il codice JavaScript sarà simile a quello di questo esempio.
 
@@ -59,7 +55,7 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
 //Redirect to the destination
 ```
 
-## Dynamic Tag Management (DTM) e supporto per l&#39;SDK {#section-168e313df6054af0a7e27b9fa0d69640}
+## Dynamic Tag Management (DTM) e supporto per l&#39;SDK  {#section-168e313df6054af0a7e27b9fa0d69640}
 
 <table id="table_6E7152B4FD2B4C4D8C9477C68204C4FF"> 
  <thead> 
