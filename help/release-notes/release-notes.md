@@ -3,10 +3,10 @@ description: Versioni future, aggiornamenti o modifiche al servizio Experience C
 keywords: Servizio ID
 title: Note sulla versione 2020
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '132'
+ht-degree: 100%
 
 ---
 
@@ -25,4 +25,4 @@ Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity
 * A partire dalla versione 4.5, ECID rifiuterà gli ID vuoti inviati al metodo `setCustomerIDs`.
 * È stato risolto un problema che si verificava quando l’opzione di consenso era configurata come `doesOptInApply=false` e `isIabContext=true`.
 
-Consulta [Note sulla versione di Experience Cloud](https://docs.adobe.com/content/help/it-IT/release-notes/experience-cloud/current.html) per le note sulle versioni mensili di tutti i prodotti.
+Consulta [Note sulla versione di Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=it) per le note sulle versioni mensili di tutti i prodotti.
