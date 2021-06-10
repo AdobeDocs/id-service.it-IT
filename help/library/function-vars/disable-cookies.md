@@ -1,20 +1,16 @@
 ---
 description: Flag booleano opzionale che impedisce al servizio Experience Cloud Identity di restituire il cookie di terze parti demdex.net.
 keywords: Servizio ID
-seo-description: Flag booleano opzionale che impedisce al servizio Experience Cloud Identity di restituire il cookie di terze parti demdex.net.
-seo-title: disableThirdPartyCookies
 title: disableThirdPartyCookies
-uuid: 7ed5aa16-44ca-4702-878a-1a208ca95270
 exl-id: 19d12822-0e17-4a1c-8e9c-25a22e20a4a8
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '157'
-ht-degree: 100%
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# disableThirdPartyCookies {#disablethirdpartycookies}
+# disableThirdPartyCookies{#disablethirdpartycookies}
 
 Flag booleano opzionale che impedisce al servizio Experience Cloud Identity di restituire il cookie di terze parti demdex.net.
 
