@@ -1,15 +1,11 @@
 ---
 description: Se utilizzi un sito di accesso principale per l’identificazione dei clienti prima che visitino altri domini, un CNAME consente il monitoraggio tra più domini nei browser che non accettano i cookie di terze parti (ad esempio Safari).
 keywords: ordine delle operazioni;servizio ID
-seo-description: Se utilizzi un sito di accesso principale per l’identificazione dei clienti prima che visitino altri domini, un CNAME consente il monitoraggio tra più domini nei browser che non accettano i cookie di terze parti (ad esempio Safari).
-seo-title: Panoramica sull’implementazione di CNAME
 title: Panoramica sull’implementazione di CNAME
-uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: ht
-source-git-commit: ebeca9e285af71872c05d58ba252ca65bde24f3d
-workflow-type: ht
-source-wordcount: '259'
-ht-degree: 100%
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
