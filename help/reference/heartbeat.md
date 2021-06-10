@@ -1,15 +1,11 @@
 ---
 description: Video Heartbeat richiede il servizio Experience Cloud Identity. Per misurare i video in JavaScript o Flash, implementa il servizio ID sulle pagine del sito e nella riproduzione video per essere sicuro che i visitatori che riproducono il video non vengano contati separatamente.
 keywords: Servizio ID
-seo-description: Video Heartbeat richiede il servizio Experience Cloud Identity. Per misurare i video in JavaScript o Flash, implementa il servizio ID sulle pagine del sito e nella riproduzione video per essere sicuro che i visitatori che riproducono il video non vengano contati separatamente.
-seo-title: Video Heartbeat e il servizio Experience Cloud Identity
 title: Video Heartbeat e il servizio Experience Cloud Identity
-uuid: 07986a78-23ac-4fd4-ab8f-be9275616a29
 exl-id: 5e905925-54ba-43ce-ae87-a9bf193d7b95
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '152'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '107'
 ht-degree: 100%
 
 ---
