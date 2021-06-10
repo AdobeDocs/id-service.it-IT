@@ -1,20 +1,16 @@
 ---
 description: getInstance restituisce un ID visitatore per l'ID organizzazione Experience Cloud specificato. Questo è necessario per inizializzare l’ID visitatore fornito ad AppMeasurement tramite s.visitor.
 keywords: Servizio ID
-seo-description: getInstance restituisce un ID visitatore per l'ID organizzazione Experience Cloud specificato. Questo è necessario per inizializzare l’ID visitatore fornito ad AppMeasurement tramite s.visitor.
-seo-title: getInstance
 title: getInstance
-uuid: 259b88a6-e3d0-4aab-b935-566099bdab98
 exl-id: 4941cf51-a8d0-4796-a102-4cd13cd5574d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '256'
-ht-degree: 100%
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# getInstance {#getinstance}
+# getInstance{#getinstance}
 
 getInstance restituisce un ID visitatore per l&#39;ID organizzazione Experience Cloud specificato. Questo è necessario per inizializzare l’ID visitatore fornito ad AppMeasurement tramite s.visitor.
 
