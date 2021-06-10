@@ -1,16 +1,12 @@
 ---
 description: Domande frequenti sulle caratteristiche, sulle funzionalità e sui problemi correlati all’uso di Analytics con il servizio Experience Cloud Identity.
 keywords: Servizio Experience Cloud Identity
-seo-description: Domande frequenti sulle caratteristiche, sulle funzionalità e sui problemi correlati all’uso di Analytics con il servizio Identity.
-seo-title: Domande frequenti su Analytics e sul servizio Identity
 title: Domande frequenti su Analytics e sul servizio Identity
-uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '993'
-ht-degree: 100%
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -54,13 +50,13 @@ Tuttavia, il codice H non è supportato con la versione 1.6 o successiva del cod
 
 **Cos’è un periodo di tolleranza e come posso configurarlo?**
 
-Consulta [il periodo di tolleranza per il servizio Identity](../reference/analytics-reference/grace-period.md) e contatta [l’Assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html).
+Consulta [il periodo di tolleranza per il servizio Identity](../reference/analytics-reference/grace-period.md) e contatta [l’Assistenza clienti](https://helpx.adobe.com/marketing-cloud/contact-support.html).
 
 **Perché devo migrare alla raccolta dati regionali (RDC) per usare il servizio Identity?**
 
 La RDC offre vantaggi in termini di prestazioni globali ed è necessaria per garantire che l’implementazione sia pronta per le prossime funzionalità che sfruttano la rete globale dei nodi edge di Adobe. Consulta [Requisiti di Analytics: raccolta dati regionali (RDC)](../reference/requirements.md#section-7d04bb013bc84a25bae3b148bc0ca25f).
 
-## Reporting {#section-123cd55a32e54a45a23beb140becfa8f}
+## Reporting  {#section-123cd55a32e54a45a23beb140becfa8f}
 
 **Quali sono alcune delle possibili cause di discrepanze quando si utilizza Analytics con il servizio Identity?**
 
@@ -69,7 +65,7 @@ Alcune cause comuni di discrepanze quando si usa il servizio Identity sono le se
 * Uso continuo del cookie s_vi legacy. Ciò contribuisce a creare discrepanze nella raccolta dei dati.
 * Doppio conteggio dei visitatori quando navigano da un sondaggio a un pop-up.
 
-## Cookie {#section-b7d5384fbedd47b09e1030211c39a3d1}
+## Cookie  {#section-b7d5384fbedd47b09e1030211c39a3d1}
 
 **Cosa succede in Analytics quando il servizio Identity non riesce a impostare il cookie AMCV?**
 
@@ -93,5 +89,5 @@ Esistono tre possibili scenari in cui questo influisce sui dati di Analytics per
 
 >[!MORELIKETHIS]
 >
->* [Assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html)
+>* [Assistenza clienti](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
