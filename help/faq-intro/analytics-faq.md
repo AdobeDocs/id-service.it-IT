@@ -3,10 +3,10 @@ description: Domande frequenti sulle caratteristiche, sulle funzionalità e sui 
 keywords: Servizio Experience Cloud Identity
 title: Domande frequenti su Analytics e sul servizio Identity
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '970'
+ht-degree: 99%
 
 ---
 
@@ -34,7 +34,7 @@ Per gli utenti che sono già stati identificati dal servizio Identity, non cambi
 
 Se utilizzi un sito di accesso principale per l’identificazione dei clienti prima che visitino altri domini, un CNAME consente il monitoraggio tra più domini nei browser che non accettano i cookie di terze parti (ad esempio Safari).
 
-Nei browser che accettano i cookie di terze parti, durante la richiesta viene impostato un cookie nel [dominio demdex.net](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/reference/demdex-calls.html) per recuperare un ID visitatore. Questo cookie consente al servizio Identity di restituire lo stesso ID visitatore Experience Cloud a tutti i domini configurati usando lo stesso ID organizzazione. Nei browser che rifiutano i cookie di terze parti a ciascun dominio viene assegnato un nuovo ID visitatore Experience Cloud.
+Nei browser che accettano i cookie di terze parti, durante la richiesta viene impostato un cookie nel [dominio demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html) per recuperare un ID visitatore. Questo cookie consente al servizio Identity di restituire lo stesso ID visitatore Experience Cloud a tutti i domini configurati usando lo stesso ID organizzazione. Nei browser che rifiutano i cookie di terze parti a ciascun dominio viene assegnato un nuovo ID visitatore Experience Cloud.
 
 Anche se è configurato un CNAME, se il sito di accesso principale non viene visitato per primo, i visitatori vengono identificati in modo diverso sul sito secondario e sul sito principale nei browser che non accettano i cookie di terze parti.
 
