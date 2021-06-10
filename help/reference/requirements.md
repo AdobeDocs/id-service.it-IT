@@ -1,16 +1,12 @@
 ---
 description: Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per il servizio Experience Cloud Identity.
 keywords: Servizio ID
-seo-description: Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per il servizio Experience Cloud Identity.
-seo-title: Requisiti del servizio Experience Cloud Identity
 title: Requisiti del servizio Experience Cloud Identity
-uuid: 608b1082-6e9e-4101-b6cb-60027950109b
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '783'
-ht-degree: 100%
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +46,7 @@ Un&#39;implementazione di successo e supportata deve rispettare (o superare) i r
  </tbody> 
 </table>
 
-## Requisiti di Experience Cloud: ID organizzazione {#section-a02f537129a64ffbb690d5738d360c26}
+## Requisiti di Experience Cloud: ID organizzazione  {#section-a02f537129a64ffbb690d5738d360c26}
 
 Per utilizzare il servizio ID, la società deve essere abilitata per [!DNL Experience Cloud] e deve disporre di un ID organizzazione. Se non sei sicuro di quale sia lo stato [!DNL Experience Cloud] della tua società e vuoi trovare il tuo ID organizzazione, consulta il seguente elenco.
 
@@ -139,7 +135,7 @@ Nelle seguenti sezioni sono elencate le versioni minime dei codici richieste per
  </tbody> 
 </table>
 
-## Requisiti dell&#39;SDK per Android e iOS {#section-73b2446fba8e463888642c7d7dfd94f1}
+## Requisiti dell&#39;SDK per Android e iOS  {#section-73b2446fba8e463888642c7d7dfd94f1}
 
 Come minimo, il servizio ID richiede le versioni SDK elencate di seguito.
 
