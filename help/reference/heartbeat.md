@@ -3,9 +3,9 @@ description: Video Heartbeat richiede il servizio Experience Cloud Identity. Per
 keywords: Servizio ID
 title: Video Heartbeat e il servizio Experience Cloud Identity
 exl-id: 5e905925-54ba-43ce-ae87-a9bf193d7b95
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '107'
+source-wordcount: '105'
 ht-degree: 100%
 
 ---
@@ -16,5 +16,5 @@ Video Heartbeat richiede il servizio Experience Cloud Identity. Per misurare i v
 
 >[!MORELIKETHIS]
 >
->* [Misurazione di audio e video in Adobe Analytics](https://docs.adobe.com/content/help/it-IT/media-analytics/using/media-overview.html)
+>* [Misurazione di audio e video in Adobe Analytics](https://docs.adobe.com/content/help/it-IT/experience-cloud/user-guides/home.translate.html)
 
