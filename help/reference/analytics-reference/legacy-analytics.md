@@ -3,10 +3,10 @@ description: Panoramica del funzionamento del servizio Experience Cloud Identity
 keywords: Servizio ID
 title: Richieste Analytics ed Experience Cloud ID
 exl-id: 8c682159-e23a-4641-9ffd-e0028dc2f305
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '444'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ Il servizio Experience Cloud Identity era stato integrato in Adobe Analytics. Or
 
 ## Il cookie AMCV non è impostato nel browser {#section-cccf10cd775e4a95a7e98d3c3c0ff9a9}
 
-Se il cookie [!DNL Experience Cloud] (AMCV) non è presente, una chiamata del servizio ID a [!DNL Adobe] genera una risposta che varia a seconda della presenza o dell’assenza di un ID Analytics legacy. L’ID legacy di [!DNL Analytics] è memorizzato nel [cookie s_vi](https://docs.adobe.com/content/help/it-IT/core-services/interface/ec-cookies/cookies-analytics.html). La tabella seguente descrive il modo in cui gli ID vengono scritti nel cookie AMCV in base allo stato del cookie s_vi.
+Se il cookie [!DNL Experience Cloud] (AMCV) non è presente, una chiamata del servizio ID a [!DNL Adobe] genera una risposta che varia a seconda della presenza o dell’assenza di un ID Analytics legacy. L’ID legacy di [!DNL Analytics] è memorizzato nel [cookie s_vi](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html). La tabella seguente descrive il modo in cui gli ID vengono scritti nel cookie AMCV in base allo stato del cookie s_vi.
 
 <table id="table_DC85FECE26DD424E841BA1059AF1E57F"> 
  <thead> 
@@ -47,7 +47,7 @@ Se il cookie [!DNL Experience Cloud] (AMCV) non è presente, una chiamata del se
 
 >[!NOTE]
 >
->Il valore FID degli utenti identificati dal cookie s_fid non viene migrato nel cookie AMCV. Se gli utenti dispongono del cookie s_fid, vengono migrati come se il cookie s_vi non fosse presente (vedi sopra) e vengono quindi visualizzati come nuovi visitatori nel sito. Per ulteriori informazioni, consulta [Cookie di Analytics](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html).
+>Il valore FID degli utenti identificati dal cookie s_fid non viene migrato nel cookie AMCV. Se gli utenti dispongono del cookie s_fid, vengono migrati come se il cookie s_vi non fosse presente (vedi sopra) e vengono quindi visualizzati come nuovi visitatori nel sito. Per ulteriori informazioni, consulta [Cookie di Analytics](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html).
 
 ## Il cookie AMCV è impostato nel browser {#section-01c088fc565c4b24ba1722c7cc240310}
 
