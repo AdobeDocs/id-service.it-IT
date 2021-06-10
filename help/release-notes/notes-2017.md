@@ -3,10 +3,10 @@ description: Versioni future, aggiornamenti o modifiche al servizio Experience C
 keywords: Servizio ID
 title: Note sulla versione 2017
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '744'
+ht-degree: 99%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2017.
 
-Queste modifiche vengono riportate anche nelle [note sulla versione di Experience Cloud](https://docs.adobe.com/content/help/it-IT/release-notes/experience-cloud/current.html).
+Queste modifiche vengono riportate anche nelle [note sulla versione di Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=it).
 
 >[!NOTE]
 >
@@ -191,7 +191,7 @@ Data di rilascio: febbraio 2017
 
 **Nuova documentazione**
 
-[Usare il prefetch di DNS con soluzioni e servizi Experience Cloud diversi](https://docs.adobe.com/content/help/it-IT/core-services/interface/more-resources/dns-prefetch.html)
+[Usare il prefetch di DNS con soluzioni e servizi Experience Cloud diversi](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html)
 
 ## Versione 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
