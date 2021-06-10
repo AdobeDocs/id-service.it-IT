@@ -3,10 +3,10 @@ description: Restituisce l’ID di regione del servizio Experience Cloud Identit
 keywords: Servizio ID
 title: getLocationHint
 exl-id: 0213f828-a985-4201-8a38-0a4b170ed057
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 100%
+source-wordcount: '185'
+ht-degree: 95%
 
 ---
 
@@ -16,7 +16,7 @@ Restituisce l’ID di regione del servizio Experience Cloud Identity. Un ID di r
 
 **Sintassi:** ` var *`nome variabile`* = visitor.getLocationHint()`
 
-Per un elenco degli ID di regione e delle posizioni corrispondenti, consulta [ID di regione DCS, posizioni e nomi host](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html).
+Per un elenco degli ID di regione e delle posizioni corrispondenti, consulta [ID di regione DCS, posizioni e nomi host](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html).
 
 **Esempio di codice**
 
