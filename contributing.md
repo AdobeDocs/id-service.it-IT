@@ -1,6 +1,8 @@
 ---
-source-git-commit: 676f6ca9c37f77fe24dbc3ceb9aef2d540b3adbe
-translation-type: ht
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 100%
 
 ---
 # Come contribuire
@@ -17,27 +19,24 @@ prevede il rispetto di tale codice. Segnala comportamenti inaccettabili all’in
 
 ## Documentazione della guida per i collaboratori
 
-Consulta la [guida per i collaboratori](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Consulta la [Guida per i collaboratori](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=it).
 
 ## Hai una domanda?
 
 Inizia segnalando un problema. I committenti esistenti di questo progetto lavorano per raggiungere
-un consenso sulla direzione del progetto e sulla risoluzione dei problemi all’interno dei thread
-dei problemi
+un consenso sulla direzione del progetto e sulla risoluzione dei problemi all’interno dei thread dei problemi
 (quando opportuno).
 
 ## Contratto di licenza da collaboratore
 
-Tutti i contributi di terze parti a questo progetto devono essere accompagnati da un Contratto di licenza
-da collaboratore firmato. Ciò consente ad Adobe di ridistribuire i contributi
-come parte del progetto. [Firma il nostro Contratto di licenza da collaboratore](http://opensource.adobe.com/cla.html). È
-sufficiente inviare un Contratto di licenza da collaboratore di Adobe una volta, quindi se ne hai inviato uno in precedenza
-non devi fare altre operazioni.
+Tutti i contributi di terze parti a questo progetto devono essere accompagnati da un Contratto di licenza da collaboratore firmato. Ciò consente ad Adobe di ridistribuire i contributi
+come parte del progetto. [Firma il Contratto di licenza da collaboratore](http://opensource.adobe.com/cla.html). È sufficiente inviare un Contratto di licenza da collaboratore di Adobe una volta, quindi se ne hai inviato uno in precedenza non devi fare altre operazioni.
 
 ## Revisioni del codice
 
 Tutti gli invii devono pervenire sotto forma di richieste di pull e devono essere revisionati
-dai committenti del progetto. Per ulteriori informazioni sull’invio di richieste di pull, consulta la [documentazione sulle richieste di pull di GitHub](https://help.github.com/articles/about-pull-requests/).
+dai committenti del progetto. Per ulteriori informazioni sull’invio di richieste di pull,
+consulta la [Documentazione sulle richieste di pull di GitHub](https://help.github.com/it/github/collaborating-with-issues-and-pull-requests/about-pull-requests).
 
 <!--
 Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
@@ -46,8 +45,7 @@ submitting a pull request!
 
 ## Da collaboratore a committente
 
-Apprezziamo i contributi della nostra community. Se desideri essere qualcosa di più di un collaboratore
-e diventare un committente con accesso completo in scrittura e avere voce in capitolo sul progetto, devi essere invitato al progetto. I committenti esistenti utilizzano un processo di designazione
+Apprezziamo i contributi della nostra community. Se desideri essere qualcosa di più di un collaboratore e diventare un committente con accesso completo in scrittura e avere voce in capitolo sul progetto, devi essere invitato al progetto. I committenti esistenti utilizzano un processo di designazione 
 interno che deve raggiungere il consenso approssimativo (il silenzio rappresenta l’approvazione)
 prima di inviare gli inviti. Se ritieni di essere qualificato e desideri un coinvolgimento maggiore,
 rivolgiti ai committenti esistenti per parlarne con loro.
