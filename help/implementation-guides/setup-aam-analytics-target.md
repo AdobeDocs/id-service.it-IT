@@ -3,10 +3,10 @@ description: Queste istruzioni sono per i clienti di Analytics, Audience Manager
 keywords: Servizio ID
 title: Implementazione del servizio Experience Cloud Identity per Analytics, Audience Manager e Target
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1498'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ Queste istruzioni sono per i clienti di Analytics, Audience Manager e Target che
 
 ## Passaggio 1: pianificazione dell&#39;inoltro lato server {#section-880797cc992d4755b29cada7b831f1fc}
 
-Oltre ai passaggi qui descritti, i clienti che usano [!DNL Analytics] e [!DNL Audience Manager] devono effettuare la migrazione all&#39;inoltro lato server. L’inoltro lato server consente di rimuovere il DIL (codice di raccolta dati di Audience Manager) e sostituirlo con il [modulo Gestione dell’audience](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html). Per ulteriori informazioni, consulta la [documentazione dell’inoltro lato server](https://docs.adobe.com/content/help/it-IT/analytics/admin/admin-tools/server-side-forwarding/ssf.html).
+Oltre ai passaggi qui descritti, i clienti che usano [!DNL Analytics] e [!DNL Audience Manager] devono effettuare la migrazione all&#39;inoltro lato server. L’inoltro lato server consente di rimuovere il DIL (codice di raccolta dati di Audience Manager) e sostituirlo con il [modulo Gestione dell’audience](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html). Per ulteriori informazioni, consulta la [documentazione dell’inoltro lato server](https://docs.adobe.com/content/help/it-IT/analytics/admin/admin-tools/server-side-forwarding/ssf.html).
 
 La migrazione all’inoltro lato server richiede pianificazione e coordinamento. Questo processo comporta modifiche esterne al codice del sito e passaggi interni che Adobe deve effettuare per il provisioning del tuo account. Infatti, molte di queste procedure di migrazione devono avvenire in parallelo ed essere rilasciate insieme. Il percorso di implementazione deve seguire questa sequenza di eventi:
 
@@ -140,7 +140,7 @@ Aggiungi la `Visitor.getInstance` funzione riportata di seguito al tuo `AppMeasu
 
 >[!IMPORTANT]
 >
->A questo punto, devi rimuovere il codice [!DNL Audience Manager] DIL e sostituirlo con il modulo Gestione dell&#39;audience. Per istruzioni consulta [Implementare l’inoltro lato server](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html).
+>A questo punto, devi rimuovere il codice [!DNL Audience Manager] DIL e sostituirlo con il modulo Gestione dell&#39;audience. Per istruzioni consulta [Implementare l’inoltro lato server](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html).
 
 ***(Facoltativo ma consigliato)* Crea un prop personalizzato.**
 
@@ -182,7 +182,7 @@ Se invii dati a un sistema interno da un feed di dati di click-stream e per i pr
 
 Quando il processo di inserimento dei dati può utilizzare le colonne `post_visid_high` e `post_visid_low`, interrompi il periodo di tolleranza.
 
-Vedi anche la [colonna di riferimento dei dati di click-stream](https://docs.adobe.com/content/help/it-IT/analytics/export/analytics-data-feed/data-feed-overview.html).
+Vedi anche la [colonna di riferimento dei dati di click-stream](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html).
 
 ## Passaggio 9: test e verifica {#section-f857542bfc70496dbb9f318d6b3ae110}
 
@@ -190,7 +190,7 @@ Le soluzioni [!DNL Experience Cloud] di questa implementazione restituiscono gli
 
 >[!TIP]
 >
->Puoi usare [Adobe debugger](https://docs.adobe.com/content/help/it-IT/analytics/implementation/validate/debugger.html) o il [proxy HTTP Charles](https://www.charlesproxy.com/) per verificare la presenza degli ID specifici della soluzione. Puoi anche usare un altro strumento o debugger di tua preferenza.
+>Puoi usare [Adobe debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html) o il [proxy HTTP Charles](https://www.charlesproxy.com/) per verificare la presenza degli ID specifici della soluzione. Puoi anche usare un altro strumento o debugger di tua preferenza.
 
 **Tutte le soluzioni**
 
@@ -214,7 +214,7 @@ Quando ricevi un AID, controllane il valore rispetto al valore [!DNL Target] mbo
 
 **Audience Manager**
 
-Per verificare l’inoltro lato server, consulta [Come verificare l’implementazione dell’inoltro lato server](https://docs.adobe.com/content/help/it-IT/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html).
+Per verificare l’inoltro lato server, consulta [Come verificare l’implementazione dell’inoltro lato server](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html).
 
 **Target**
 
