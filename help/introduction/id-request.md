@@ -1,14 +1,11 @@
 ---
 description: Panoramica del processo di richiesta ID e risposta. Questi esempi descrivono l'assegnazione degli ID per siti individuali, per siti diversi e per siti gestiti da diversi clienti Experience Cloud con i propri ID organizzazione.
 keywords: Servizio ID
-seo-description: Panoramica del processo di richiesta ID e risposta. Questi esempi descrivono l'assegnazione degli ID per siti individuali, per siti diversi e per siti gestiti da diversi clienti Experience Cloud con i propri ID organizzazione.
-seo-title: Richiesta e impostazione degli ID da parte del servizio Experience Cloud Identity
 title: Richiesta e impostazione degli ID da parte del servizio Experience Cloud Identity
-uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
-source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '762'
 ht-degree: 97%
 
 ---
