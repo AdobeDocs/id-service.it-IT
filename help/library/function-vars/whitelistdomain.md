@@ -3,10 +3,10 @@ description: Queste configurazioni consentono a diverse istanze del codice del s
 keywords: Servizio ID
 title: whitelistParentDomain e whitelistIframeDomains
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '860'
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Queste configurazioni aiutano a risolvere il problema dell’impostazione di un 
 
 >[!TIP]
 >
->Puoi anche implementare queste configurazioni durante il serving di un video in un iFrame con [Video Heartbeat](https://docs.adobe.com/content/help/it-IT/media-analytics/using/media-overview.html). Video Heartbeat richiede un ID del servizio ID (il MID) per funzionare correttamente.
+>Puoi anche implementare queste configurazioni durante il serving di un video in un iFrame con [Video Heartbeat](https://docs.adobe.com/content/help/it-IT/experience-cloud/user-guides/home.translate.html). Video Heartbeat richiede un ID del servizio ID (il MID) per funzionare correttamente.
 
 **Caso d’uso 1: il browser blocca i cookie di terze parti e il servizio ID è implementato nell’iFrame e nella pagina padre**
 
