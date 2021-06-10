@@ -3,10 +3,10 @@ description: Il cookie AMCV contiene l'identificatore Experience Cloud ID (MID) 
 keywords: Servizio ID
 title: Ottenere gli ID di utente e regione dal cookie AMCV o dal servizio ID
 exl-id: 986e761e-4bc7-4511-86b7-7d13a7761a2b
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '224'
+ht-degree: 91%
 
 ---
 
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 Il cookie AMCV contiene l&#39;identificatore Experience Cloud ID (MID) e un ID di regione per i visitatori del sito. Questi ID sono archiviati come coppie chiave-valore. L&#39;ID mid:user rappresenta l&#39;Experience Cloud ID del visitatore. L’ID aamlh:region rappresenta l’ID di regione dei visitatori del sito. Puoi recuperare tali informazioni analizzando il cookie AMCV.
 
-Per ulteriori informazioni, consulta [Ottenere l’ID utente e di regione tramite il servizio Experience Cloud Identity](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-mcid-ids.html).
+Per ulteriori informazioni, consulta [Ottenere l’ID utente e di regione tramite il servizio Experience Cloud Identity](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-mcid-ids.html).
 
-Se sei un cliente di [!DNL Audience Manager], puoi ottenere l’ID di regione dalla risposta inviata dal server di raccolta dati (DCS, Data Collection Server). Consulta [Ottenere l’ID utente e di regione da una risposta DCS](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-aam-ids.html).
+Se sei un cliente di [!DNL Audience Manager], puoi ottenere l’ID di regione dalla risposta inviata dal server di raccolta dati (DCS, Data Collection Server). Consulta [Ottenere l’ID utente e di regione da una risposta DCS](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-aam-ids.html).
 
 Puoi ottenere l&#39;ID di regione anche con un `GET` metodo fornito dal servizio ID. Consulta [Ottieni ID di regione (hint posizione)](../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c).
