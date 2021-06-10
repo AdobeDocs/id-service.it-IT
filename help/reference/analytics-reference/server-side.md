@@ -1,16 +1,12 @@
 ---
 description: In alcune implementazioni, gli ID visitatore vengono trasferiti da JavaScript a un server, pertanto gli eventi aggiuntivi di Analytics (ad esempio gli acquisti) possono essere inviati dal server.
 keywords: Servizio ID
-seo-description: In alcune implementazioni, gli ID visitatore vengono trasferiti da JavaScript a un server, pertanto gli eventi aggiuntivi di Analytics (ad esempio gli acquisti) possono essere inviati dal server.
-seo-title: Implementazione lato server con JavaScript
 title: Implementazione lato server con JavaScript
-uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
 exl-id: 1986ee11-2021-4f34-bb56-6eaa87b6dd6d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '213'
-ht-degree: 100%
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
