@@ -5,8 +5,8 @@ title: Informazioni sulla sincronizzazione degli ID e sulle percentuali di corri
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '805'
+ht-degree: 100%
 
 ---
 
@@ -50,11 +50,11 @@ La sincronizzazione ID è un URL attivato nel Destination Publishing iFrame. Com
 
 `http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 
-Vedi anche [Sincronizzazione degli ID per trasferimenti di dati in entrata](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.html?lang=en).
+Vedi anche [Sincronizzazione degli ID per trasferimenti di dati in entrata](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.html?lang=it).
 
 **Passaggio 4: archiviazione degli ID**
 
-Gli ID sincronizzati sono archiviati nei [server dati edge e core](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-edge.html?lang=en).
+Gli ID sincronizzati sono archiviati nei [server dati edge e core](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-edge.html?lang=it).
 
 ## I servizi di sincronizzazione gestiscono la sincronizzazione degli ID {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
@@ -69,9 +69,9 @@ Il termine *`Sync Services`* fa riferimento alle tecnologie interne [!DNL Experi
 
 ## Sincronizzazione degli ID con Adobe Advertising Cloud {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Advertising Cloud] (prima chiamato [!DNL Adobe Media Optimizer]) è un’eccezione del processo di sincronizzazione ID basato sull’iFrame. Poiché [!DNL Advertising Cloud] è un dominio fidato, le sincronizzazioni ID hanno luogo dalla pagina padre invece che nel [!UICONTROL Destination Publishing iFrame]. Durante la sincronizzazione, il servizio ID chiama [!DNL Advertising Cloud] su `cm.eversttech.net`, che è un nome di dominio legacy usato da [!DNL Advertising Cloud] prima della sua acquisizione da parte di Adobe. L&#39;invio di dati a [!DNL Advertising Cloud] aiuta a migliore le percentuali di corrispondenza ed è automatico per i clienti del servizio ID che usano la versione 2.0 (o superiore). Vedi anche [Cookie di Advertising Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-advertising-cloud.html?lang=en).
+[!DNL Adobe Advertising Cloud] (prima chiamato [!DNL Adobe Media Optimizer]) è un’eccezione del processo di sincronizzazione ID basato sull’iFrame. Poiché [!DNL Advertising Cloud] è un dominio fidato, le sincronizzazioni ID hanno luogo dalla pagina padre invece che nel [!UICONTROL Destination Publishing iFrame]. Durante la sincronizzazione, il servizio ID chiama [!DNL Advertising Cloud] su `cm.eversttech.net`, che è un nome di dominio legacy usato da [!DNL Advertising Cloud] prima della sua acquisizione da parte di Adobe. L&#39;invio di dati a [!DNL Advertising Cloud] aiuta a migliore le percentuali di corrispondenza ed è automatico per i clienti del servizio ID che usano la versione 2.0 (o superiore). Vedi anche [Cookie di Advertising Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-advertising-cloud.html?lang=it).
 
 >[!MORELIKETHIS]
 >
->* [Informazioni sulle chiamate al dominio demdex](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en)
+>* [Informazioni sulle chiamate al dominio demdex](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=it)
 
