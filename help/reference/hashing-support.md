@@ -6,7 +6,7 @@ exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
 source-wordcount: '606'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Esistono due modi per implementare il supporto dell’hashing per setCustomerIDs
 
 Nel primo caso viene utilizzato il metodo [`setCustomerIDs`](/help/library/get-set/setcustomerids.md) (`customerIDs<object>`, `hashType<string>`).
 
-Prima di eseguire l’hashing, la libreria ECID esegue la normalizzazione dei dati sugli identificatori customerID. Durante questo processo vengono eliminati gli spazi bianchi a entrambe le estremità degli identificatori customerID e tutti i caratteri vengono convertiti in minuscole. Ad esempio, l’indirizzo e-mail &quot; ecid@adobe.com &quot; diventa &quot;ecid@adobe.com&quot;
+Prima di eseguire l’hashing, la libreria ECID esegue la normalizzazione dei dati sugli identificatori customerID. Durante questo processo vengono eliminati gli spazi bianchi a entrambe le estremità degli identificatori customerID e tutti i caratteri vengono convertiti in minuscole. Ad esempio, l’indirizzo e-mail &quot;ecid@adobe.com&quot; diventa &quot;ecid@adobe.com&quot;
 
 Di seguito trovi un esempio di codice per impostare un singolo ID cliente (l’indirizzo e-mail indicato qui sopra) con hashing SHA-256.
 
@@ -68,7 +68,7 @@ Per una descrizione del parametro `d_cid_ic` e dello stato di autenticazione, co
 
 ## Aggiungere un’azione in Adobe Experience Platform Launch {#add-action-launch}
 
-Experience Platform Launch è la soluzione Adobe di nuova generazione per la gestione dei tag. Per ulteriori informazioni sul Platform launch, consulta la [documentazione di Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=en).
+Experience Platform Launch è la soluzione Adobe di nuova generazione per la gestione dei tag. Per ulteriori informazioni su Platform Launch, consulta la [documentazione di Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=it).
 
 Per aggiungere un’azione in Launch, leggi la [documentazione sulle regole](https://docs.adobe.com/help/it-IT/launch/using/reference/manage-resources/rules.html) in Adobe Launch e fai riferimento alla schermata di seguito:
 
