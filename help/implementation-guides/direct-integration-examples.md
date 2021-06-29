@@ -4,9 +4,9 @@ keywords: Servizio ID
 title: Casi d'uso dell'integrazione diretta
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '443'
+ht-degree: 100%
 
 ---
 
