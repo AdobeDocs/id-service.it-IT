@@ -4,7 +4,7 @@ keywords: Servizio ID
 title: Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '805'
 ht-degree: 100%
 
