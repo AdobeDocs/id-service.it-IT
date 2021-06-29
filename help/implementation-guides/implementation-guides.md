@@ -6,9 +6,9 @@ title: Guide all'implementazione
 uuid: null
 exl-id: af6da32b-72d9-463d-a933-fd1fe960d4d8
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '190'
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Istruzioni ed esempi di codice per le implementazioni standard e non-standard de
 
 ## Implementazione standard
 
-Un&#39;implementazione standard utilizza [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html) per aiutarti a iniziare con il servizio ID e a integrarlo con altre soluzioni Experience Cloud. Tuttavia, si consiglia vivamente di usare Experience Platform Launch per implementare il servizio ID.
+Un&#39;implementazione standard utilizza [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=it) per aiutarti a iniziare con il servizio ID e a integrarlo con altre soluzioni Experience Cloud. Tuttavia, si consiglia vivamente di usare Experience Platform Launch per implementare il servizio ID.
 
 ## Risorse di implementazione
 
