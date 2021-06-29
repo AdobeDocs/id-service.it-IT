@@ -4,9 +4,9 @@ keywords: Servizio ID
 title: Periodo di tolleranza per il servizio ID
 exl-id: 83b4898c-8358-458b-a798-1e3c9633afe9
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '417'
+ht-degree: 100%
 
 ---
 
@@ -30,6 +30,6 @@ Se disponi di un singolo file JavaScript di Analytics e non utilizzi altre libre
 
 Se disponi di più file JavaScript che inviano dati alla *stessa suite di rapporti* o se utilizzi altre tecnologie sul tuo sito, ad esempio la misurazione video Flash, ti consigliamo di impostare un periodo di tolleranza.
 
-## Come posso attivare un periodo di tolleranza?   {#section-512d5cd8570e483cbdd8b04457a16ced}
+## Come posso attivare un periodo di tolleranza? {#section-512d5cd8570e483cbdd8b04457a16ced}
 
 Contatta l’[Assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html).
