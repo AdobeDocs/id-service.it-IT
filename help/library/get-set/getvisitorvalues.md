@@ -4,9 +4,9 @@ keywords: Servizio ID
 title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Nei parametri della funzione:
 
 Per maggiori informazioni, vedi i casi d&#39;uso seguenti e le definizioni.
 
-## Caso d&#39;uso 1: richiesta di impostazione di dati predefiniti  {#section-36a31683558742a5915db3a391e09f7b}
+## Caso d&#39;uso 1: richiesta di impostazione di dati predefiniti {#section-36a31683558742a5915db3a391e09f7b}
 
 Questo codice restituisce il set di dati standard. La richiesta e la risposta potrebbero essere simili ai seguenti esempi.
 
@@ -59,7 +59,7 @@ Nella risposta di esempio predefinita alcuni valori sono stati abbreviati a scop
 }
 ```
 
-## Caso d&#39;uso 2: richiesta di impostazione di dati personalizzati  {#section-467b2f4e513344c89b7332b05f6f59f3}
+## Caso d&#39;uso 2: richiesta di impostazione di dati personalizzati {#section-467b2f4e513344c89b7332b05f6f59f3}
 
 Questo codice utilizza un array facoltativo per restituire un set specifico di ID usando `visitor.FIELDS` l&#39;enum. In questo caso vogliamo solo l’Experience Cloud ID (MCID) e l’ID Analytics (MCAID) del visitatore. La richiesta e la risposta potrebbero essere simili ai seguenti esempi.
 
@@ -81,7 +81,7 @@ La risposta di esempio personalizzata restituisce solo gli ID specificati nella 
 }
 ```
 
-## Parametri di risposta definiti  {#section-4c4c300167694c6fbff1d6c612f372b5}
+## Parametri di risposta definiti {#section-4c4c300167694c6fbff1d6c612f372b5}
 
 Nella seguente tabella sono elencati e definiti i parametri di risposta. Questi sono anche tutti i valori `visitor.FIELDS` nell&#39;enum. Nota che questo metodo restituisce una stringa vuota se non sono presenti valori per una particolare variabile.
 
@@ -99,7 +99,7 @@ Nella seguente tabella sono elencati e definiti i parametri di risposta. Questi 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>L'ID della regione di raccolta dati. Questo è un identificatore numerico per la posizione geografica di un particolare datacenter del servizio ID. </p> <p>Consulta <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">ID regioni DCS, posizioni e nomi host</a> e <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a> </p> </td> 
+   <td colname="col2"> <p>L'ID della regione di raccolta dati. Questo è un identificatore numerico per la posizione geografica di un particolare datacenter del servizio ID. </p> <p>Consulta <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=it" format="https" scope="external">ID regioni DCS, posizioni e nomi host</a> e <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
