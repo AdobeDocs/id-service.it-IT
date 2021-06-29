@@ -3,7 +3,7 @@ description: Dopo aver abilitato l'oggetto Opt-in sul sito Web, usa i metodi di 
 title: Convalida del servizio Opt-in
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '440'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ In Chrome, vai alla scheda *Applicazione*, espandi la sezione *Cookie* in *Archi
 
 ![](assets/use_case_1_2.png)
 
-## Caso d&#39;uso 2: abilitare Opt-in e l&#39;archiviazione   {#section-bd28326f52474fa09a2addca23ccdc0f}
+## Caso d&#39;uso 2: abilitare Opt-in e l&#39;archiviazione {#section-bd28326f52474fa09a2addca23ccdc0f}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -60,7 +60,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 L&#39;unica differenza nel caso d&#39;uso 2 è che verrà visualizzato *un nuovo cookie* che conterrà le autorizzazioni Opt-in fornite dal visitatore: **adobeujs-optin**
 
-## Caso d&#39;uso 3: abilitare Opt-in e preapprovare Adobe Analytics   {#section-257fe582b425496cbf986d0ec12d3692}
+## Caso d&#39;uso 3: abilitare Opt-in e preapprovare Adobe Analytics {#section-257fe582b425496cbf986d0ec12d3692}
 
 ```
 var preApproveAnalytics = {}; 
@@ -80,7 +80,7 @@ e vedrai i cookie di Analytics nella scheda Applicazione:
 
 ![](assets/use_case_3_2.png)
 
-## Caso d&#39;uso 4: abilitare Opt-in e IAB   {#section-64331998954d4892960dcecd744a6d88}
+## Caso d&#39;uso 4: abilitare Opt-in e IAB {#section-64331998954d4892960dcecd744a6d88}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
