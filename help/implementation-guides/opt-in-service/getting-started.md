@@ -3,9 +3,9 @@ description: Implementare il servizio Opt-in come unico punto di riferimento usa
 title: Configurazione del servizio Opt-in
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '908'
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Il servizio Opt-in è una libreria JavaScript abbinata con Experience Cloud ID (
 
 Il servizio Opt-in consente di specificare se un visitatore può dare il consenso esplicito a tutte le soluzioni Adobe in una sola volta oppure deve darlo per ogni soluzione seguendo la sequenza di autorizzazioni per ognuna di esse. Quando il processo di approvazione è stato completato e registrato dal cliente, è possibile recuperare le approvazioni del visitatore CMP da tutte le soluzioni Adobe per rispondere con le relative chiamate di consenso.
 
-## Prerequisiti   {#section-c39246f45e514c8ea9fdbe6f7ffa3ad0}
+## Prerequisiti {#section-c39246f45e514c8ea9fdbe6f7ffa3ad0}
 
 1. ECID versione 4.0
 
@@ -41,7 +41,7 @@ Il servizio Opt-in consente di specificare se un visitatore può dare il consens
 
 1. I requisiti di privacy dell&#39;azienda saranno specifici in base alla scelta di rispettare il RGPD. Tieni presente quali librerie i team aziendali per la privacy possono usare prima del consenso.
 
-Se utilizzi [Adobe Launch](https://experienceleague.adobe.com/docs/launch/using/home.html), sfrutta l’[estensione Opt-in](../../implementation-guides/opt-in-service/launch.md) per configurare il servizio Opt-in.
+Se utilizzi [Adobe Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=it), sfrutta l’[estensione Opt-in](../../implementation-guides/opt-in-service/launch.md) per configurare il servizio Opt-in.
 
 ## Categorie di Opt-in {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
@@ -64,7 +64,7 @@ Tutte le librerie lato client delle soluzioni Adobe dipendono dal servizio Opt-i
 
 Le configurazioni del servizio Opt-in vengono fornite nella `getInstance()` funzione di JS per il visitatore che creano l&#39;istanza per `adobe` l&#39;oggetto globale. Di seguito un elenco delle [impostazioni di configurazione](../../implementation-guides/opt-in-service/api.md#section-d66018342baf401389f248bb381becbf) di JS per il visitatore per il servizio Opt-in.
 
-**Configurazione di esempio di Opt-in nell&#39;inizializzazione dell&#39;`Visitor`oggetto** globale 
+**Configurazione di esempio di Opt-in nell&#39;inizializzazione dell&#39;oggetto `Visitor` globale**
 
 ```
 // FORMAT: Object<adobe.OptInCategories enum: boolean> 
