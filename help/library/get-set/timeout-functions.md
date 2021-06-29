@@ -4,9 +4,9 @@ keywords: Servizio ID
 title: Metodi callTimeOut
 exl-id: ff3a2c5e-a0a8-4257-b538-0e4ce454b4e8
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '125'
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Chiama queste funzioni del servizio ID per determinare lo stato di timeout di una richiesta dell’ID del servizio Experience Cloud Identity, di Analytics o di Audience Manager. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
 
-## Funzioni di timeout  {#section-e08228ef5f9b45c9a84139bbb763164a}
+## Funzioni di timeout {#section-e08228ef5f9b45c9a84139bbb763164a}
 
 <table id="table_B3ACE584B3224D838070D32A8462EF28"> 
  <thead> 
