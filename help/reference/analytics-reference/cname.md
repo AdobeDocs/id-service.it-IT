@@ -3,9 +3,9 @@ description: Se utilizzi un sito di accesso principale per l’identificazione d
 keywords: ordine delle operazioni;servizio ID
 title: Panoramica sull’implementazione di CNAME
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '221'
+ht-degree: 100%
 
 ---
 
