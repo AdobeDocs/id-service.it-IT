@@ -4,9 +4,9 @@ keywords: Servizio ID
 title: secureCookie
 exl-id: ba281b1c-1112-4ed6-b4fd-b8f87cabc575
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '91'
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Flag booleano facoltativo che aggiunge un attributo &quot;Sicuro&quot; al cookie AMCV.
 
-Questo attributo di configurazione è disponibile nella `visitorAPI`versione 3.3.0 di.
+Questo attributo di configurazione è disponibile nella `visitorAPI` versione 3.3.0 di.
 
 >[!NOTE]
 >
