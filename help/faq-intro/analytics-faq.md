@@ -4,9 +4,9 @@ keywords: Servizio Experience Cloud Identity
 title: Domande frequenti su Analytics e sul servizio Identity
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '970'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Per gli utenti che sono già stati identificati dal servizio Identity, non cambi
 
 Se utilizzi un sito di accesso principale per l’identificazione dei clienti prima che visitino altri domini, un CNAME consente il monitoraggio tra più domini nei browser che non accettano i cookie di terze parti (ad esempio Safari).
 
-Nei browser che accettano i cookie di terze parti, durante la richiesta viene impostato un cookie nel [dominio demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html) per recuperare un ID visitatore. Questo cookie consente al servizio Identity di restituire lo stesso ID visitatore Experience Cloud a tutti i domini configurati usando lo stesso ID organizzazione. Nei browser che rifiutano i cookie di terze parti a ciascun dominio viene assegnato un nuovo ID visitatore Experience Cloud.
+Nei browser che accettano i cookie di terze parti, durante la richiesta viene impostato un cookie nel [dominio demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=it) per recuperare un ID visitatore. Questo cookie consente al servizio Identity di restituire lo stesso ID visitatore Experience Cloud a tutti i domini configurati usando lo stesso ID organizzazione. Nei browser che rifiutano i cookie di terze parti a ciascun dominio viene assegnato un nuovo ID visitatore Experience Cloud.
 
 Anche se è configurato un CNAME, se il sito di accesso principale non viene visitato per primo, i visitatori vengono identificati in modo diverso sul sito secondario e sul sito principale nei browser che non accettano i cookie di terze parti.
 
@@ -50,13 +50,13 @@ Tuttavia, il codice H non è supportato con la versione 1.6 o successiva del cod
 
 **Cos’è un periodo di tolleranza e come posso configurarlo?**
 
-Consulta [il periodo di tolleranza per il servizio Identity](../reference/analytics-reference/grace-period.md) e contatta [l’Assistenza clienti](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+Consulta [il periodo di tolleranza per il servizio Identity](../reference/analytics-reference/grace-period.md) e contatta [l’Assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html).
 
 **Perché devo migrare alla raccolta dati regionali (RDC) per usare il servizio Identity?**
 
 La RDC offre vantaggi in termini di prestazioni globali ed è necessaria per garantire che l’implementazione sia pronta per le prossime funzionalità che sfruttano la rete globale dei nodi edge di Adobe. Consulta [Requisiti di Analytics: raccolta dati regionali (RDC)](../reference/requirements.md#section-7d04bb013bc84a25bae3b148bc0ca25f).
 
-## Reporting  {#section-123cd55a32e54a45a23beb140becfa8f}
+## Reporting {#section-123cd55a32e54a45a23beb140becfa8f}
 
 **Quali sono alcune delle possibili cause di discrepanze quando si utilizza Analytics con il servizio Identity?**
 
@@ -65,7 +65,7 @@ Alcune cause comuni di discrepanze quando si usa il servizio Identity sono le se
 * Uso continuo del cookie s_vi legacy. Ciò contribuisce a creare discrepanze nella raccolta dei dati.
 * Doppio conteggio dei visitatori quando navigano da un sondaggio a un pop-up.
 
-## Cookie  {#section-b7d5384fbedd47b09e1030211c39a3d1}
+## Cookie {#section-b7d5384fbedd47b09e1030211c39a3d1}
 
 **Cosa succede in Analytics quando il servizio Identity non riesce a impostare il cookie AMCV?**
 
@@ -89,5 +89,5 @@ Esistono tre possibili scenari in cui questo influisce sui dati di Analytics per
 
 >[!MORELIKETHIS]
 >
->* [Assistenza clienti](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+>* [Assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html)
 
