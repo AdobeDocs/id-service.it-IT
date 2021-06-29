@@ -1,12 +1,12 @@
 ---
 description: Domande frequenti sulle caratteristiche, sulle funzionalità e sui problemi correlati all'uso del servizio ID.
-keywords: 'Servizio ID '
+keywords: Servizio ID
 title: Domande frequenti sul servizio ID
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '787'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Questa situazione è difficile da diagnosticare. Una cosa che puoi controllare s
 
 Posiziona la libreria VisitorAPI.js nella parte superiore della pagina nella `<head>` sezione del tuo codice. Questo consente di garantire che la chiamata per un&#39;ID venga effettuata prima che il corpo della pagina inizi a essere caricato e massimizza le possibilità di restituzione di un&#39;ID.
 
-La chiamata al servizio ID è asincrona ed è l’unica chiamata al [dominio demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html). La chiamata del servizio ID non blocca il caricamento di altri elementi sulla pagina.
+La chiamata al servizio ID è asincrona ed è l’unica chiamata al [dominio demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=it). La chiamata del servizio ID non blocca il caricamento di altri elementi sulla pagina.
 
 Per i [!DNL Target] clienti, il posizionamento del codice del servizio ID nel `<body>` della pagina può aumentare le possibilità che possa bloccare una chiamata [!DNL Target]. Se hai bisogno di posizionare il codice del servizio ID nel corpo della pagina, devi posizionarlo dopo il tag `<body>` aperto.
 
