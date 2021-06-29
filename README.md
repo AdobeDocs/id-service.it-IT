@@ -1,6 +1,6 @@
 ---
 source-git-commit: cadd9fab972936106a48a117022ed473b3614e09
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '425'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Il modo in cui contribuisci dipende da chi sei e dal tipo di modifiche con le qu
 
 Per inviare una richiesta, fai clic sul collegamento **Segnala un problema** in un articolo, per aprire un problema su GitHub. Specifica un titolo e una descrizione, quindi fai clic su **Enviar nuevo problema**.
 
-Per richiedere aggiornamenti minori, fai clic sul collegamento **Modifica questa pagina** in un articolo, per aprire l’articolo sorgente in GitHub. Utilizza l’interfaccia utente di GitHub per apportare un aggiornamento. Per ulteriori informazioni, consulta la [Guida collaboratore per i documenti di Adobe](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) generale.
+Per richiedere aggiornamenti minori, fai clic sul collegamento **Modifica questa pagina** in un articolo, per aprire l’articolo sorgente in GitHub. Utilizza l’interfaccia utente di GitHub per apportare un aggiornamento. Per ulteriori informazioni, consulta la [Guida collaboratore per i documenti di Adobe](https://docs.adobe.com/help/it-IT/contributor/contributor-guide/introduction.html) generale.
 
 Le correzioni o i chiarimenti minori inviati per la documentazione e gli esempi di codice in questo archivio sono coperti dalle condizioni d’uso di Adobe.
 
@@ -45,7 +45,7 @@ Se sei un autore, un responsabile di programma o uno sviluppatore del team di pr
 
 I collaboratori della community possono utilizzare l’interfaccia utente di GitHub per le modifiche di base o effettuare il forking dell’archivio per apportare contributi principali.
 
-Per informazioni, consulta la [Guida collaboratore per i documenti di Adobe](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
+Per informazioni, consulta la [Guida collaboratore per i documenti di Adobe](https://docs.adobe.com/help/it-IT/contributor/contributor-guide/introduction.html).
 
 ## Come utilizzare Markdown per formattare l’argomento
 
