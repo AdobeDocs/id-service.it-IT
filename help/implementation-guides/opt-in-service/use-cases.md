@@ -3,9 +3,9 @@ description: Casi d'uso e soluzioni di esempio per gestire il servizio Opt-in.
 title: Casi d'uso di Opt-in
 exl-id: 4c57685f-40b7-4af4-8527-3c2795586f0f
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '424'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Casi d&#39;uso e soluzioni di esempio per gestire il servizio Opt-in.
 * Opt-in è un&#39;implementazione per singolo dominio. Non gestirà le implementazioni tra domini diversi.
 * Per disabilitare le chiamate di terze parti per una libreria specifica, dovrai configurare tale preferenza in ogni libreria separatamente.
 
-## Situazioni che potrebbero verificarsi con Opt-in   {#section-1178053c065c430bba26f82ef383a71c}
+## Situazioni che potrebbero verificarsi con Opt-in {#section-1178053c065c430bba26f82ef383a71c}
 
 Questi casi d&#39;uso sono idee di esempio per usare il servizio Opt-in.
 
