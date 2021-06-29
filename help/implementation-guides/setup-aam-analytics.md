@@ -4,9 +4,9 @@ keywords: Servizio ID
 title: Implementazione del servizio Experience Cloud Identity per Analytics e Audience Manager
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1231'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Queste istruzioni sono per i clienti di Analytics e Audience Manager che desider
 
 ## Passaggio 1: pianificazione dell&#39;inoltro lato server {#section-880797cc992d4755b29cada7b831f1fc}
 
-Oltre ai passaggi qui descritti, i clienti che usano [!DNL Analytics] e [!DNL Audience Manager] devono effettuare la migrazione all&#39;inoltro lato server. L’inoltro lato server consente di rimuovere il DIL (codice di raccolta dati di Audience Manager) e sostituirlo con il [modulo Gestione dell’audience](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html). Per ulteriori informazioni, consulta la [documentazione dell’inoltro lato server](https://docs.adobe.com/content/help/it-IT/analytics/admin/admin-tools/server-side-forwarding/ssf.html).
+Oltre ai passaggi qui descritti, i clienti che usano [!DNL Analytics] e [!DNL Audience Manager] devono effettuare la migrazione all&#39;inoltro lato server. L’inoltro lato server consente di rimuovere il DIL (codice di raccolta dati di Audience Manager) e sostituirlo con il [modulo Gestione dell’audience](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=it). Per ulteriori informazioni, consulta la [documentazione dell’inoltro lato server](https://docs.adobe.com/content/help/it-IT/analytics/admin/admin-tools/server-side-forwarding/ssf.html).
 
 La migrazione all’inoltro lato server richiede pianificazione e coordinamento. Questo processo comporta modifiche esterne al codice del sito e passaggi interni che Adobe deve effettuare per il provisioning del tuo account. Infatti, molte di queste procedure di migrazione devono avvenire in parallelo ed essere rilasciate insieme. Il percorso di implementazione deve seguire questa sequenza di eventi:
 
@@ -140,7 +140,7 @@ Aggiungi la `Visitor.getInstance` funzione riportata di seguito al tuo `AppMeasu
 
 >[!IMPORTANT]
 >
->A questo punto, devi rimuovere il codice [!DNL Audience Manager] DIL e sostituirlo con il modulo Gestione dell&#39;audience. Per istruzioni consulta [Implementare l’inoltro lato server](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html).
+>A questo punto, devi rimuovere il codice [!DNL Audience Manager] DIL e sostituirlo con il modulo Gestione dell&#39;audience. Per istruzioni consulta [Implementare l’inoltro lato server](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=it).
 
 ***(Facoltativo ma consigliato)* Crea un prop personalizzato.**
 
@@ -182,7 +182,7 @@ Se invii dati a un sistema interno da un feed di dati di click-stream e per i pr
 
 Quando il processo di inserimento dei dati può utilizzare le colonne `post_visid_high` e `post_visid_low`, interrompi il periodo di tolleranza.
 
-Vedi anche la [colonna di riferimento dei dati di click-stream](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html).
+Vedi anche la [colonna di riferimento dei dati di click-stream](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=it).
 
 ## Passaggio 9: verifica e distribuisci il codice del servizio ID {#section-f857542bfc70496dbb9f318d6b3ae110}
 
@@ -193,10 +193,10 @@ Puoi eseguire il test e distribuirlo come segue.
 Per verificare l’implementazione del servizio ID, controlla i seguenti elementi:
 
 * [Cookie AMCV](../introduction/cookies.md) nel dominio di hosting della pagina.
-* Valore MID nella richiesta di immagine di Analytics con [Adobe debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html).
+* Valore MID nella richiesta di immagine di Analytics con [Adobe debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=it).
 * Consulta anche [Testare e verificare il servizio Experience Cloud Identity](../implementation-guides/test-verify.md).
 
-Per verificare l’inoltro lato server, vedi [Come verificare l’implementazione dell’inoltro lato server](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html).
+Per verificare l’inoltro lato server, vedi [Come verificare l’implementazione dell’inoltro lato server](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools//server-side-forwarding/ssf-verify.html?lang=it).
 
 **Distribuzione**
 
