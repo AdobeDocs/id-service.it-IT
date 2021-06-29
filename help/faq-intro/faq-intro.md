@@ -4,9 +4,9 @@ keywords: Servizio ID
 title: Domande frequenti
 exl-id: 930c0849-1d88-408e-a385-214b4d0ffd96
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '64'
+ht-degree: 100%
 
 ---
 
