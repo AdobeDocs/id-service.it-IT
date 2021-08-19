@@ -4,9 +4,9 @@ keywords: Servizio ID
 title: Implementazione con Dynamic Tag Management
 exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
 source-git-commit: 0dde49ca194e4a86ea7957629eec79d0b75a1e81
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2008'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ mcvid-dtm-deployment.xml
 
 Prima di iniziare, assicurati che sia stato fatto il provisioning dell&#39;organizzazione e delle soluzioni per [!DNL Experience Cloud] e acquisisci familiarità con [!DNL Dyanamic Tag Management]. Questa documentazione rappresenta un buon punto di partenza:
 
-* [Abilita le tue soluzioni per i servizi di base](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/solutions-core-services.html?lang=it): implementa Experience Cloud e diventa amministratore. Questa procedura consente di modernizzare le soluzioni per i servizi di base come gli attributi del cliente e Experience Cloud Audiences.
+* [Abilita le tue soluzioni per i servizi di base](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html?lang=it): implementa Experience Cloud e diventa amministratore. Questa procedura consente di modernizzare le soluzioni per i servizi di base come gli attributi del cliente e Experience Cloud Audiences.
 * [Guida introduttiva di Dynamic Tag Management](https://experienceleague.adobe.com/docs/dtm/using/getting-started/get-started.html?lang=it).
 
 **Inserimento e ordine di caricamento del codice del servizio ID**
@@ -74,7 +74,7 @@ Per implementare il servizio ID con Dynamic Tag Management (DTM), procedi come i
 
 **Prerequisiti**
 
-* Abilita le tue soluzioni per [!DNL Experience Cloud] e verifica di disporre delle autorizzazioni di livello amministratore. Vedi [abilita le soluzioni per i servizi di base](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html).
+* Abilita le tue soluzioni per [!DNL Experience Cloud] e verifica di disporre delle autorizzazioni di livello amministratore. Vedi [abilita le soluzioni per i servizi di base](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html?lang=it).
 
 * Crea una proprietà Web in Dynamic Tag Management. Consulta [Creare una proprietà Web](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html?lang=it) nella documentazione di DTM.
 
@@ -139,7 +139,7 @@ Nome del server di tracciamento utilizzato per la raccolta dati di Analytics. Si
 
 Se non conosci l&#39;URL del server di tracciamento, controlla i tuoi file `s_code.js` o `AppMeasurement.js`. Individua l&#39;URL impostato dalla `s.trackingServer` variabile.
 
-Vedi [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=it) e [Aggiunta corretta delle variabili trackingServer e trackingServerSecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+Vedi [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=it) e [Aggiunta corretta delle variabili trackingServer e trackingServerSecure](https://helpx.adobe.com/it/analytics/kb/determining-data-center.html#).
 
 **Server protetto di tracciamento**
 
@@ -147,7 +147,7 @@ Il nome del server di tracciamento protetto utilizzato per la raccolta dati di A
 
 Se non conosci l&#39;URL del server di tracciamento, controlla i tuoi file `s_code.js` o `AppMeasurement.js`. Individua l&#39;URL impostato dalla `s.trackingServerSecure` variabile.
 
-Vedi [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) e [Aggiunta corretta delle variabili trackingServer e trackingServerSecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+Vedi [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=it) e [Aggiunta corretta delle variabili trackingServer e trackingServerSecure](https://helpx.adobe.com/it/analytics/kb/determining-data-center.html#).
 
 **Server Experience Cloud**
 
@@ -179,7 +179,7 @@ Campi aggiuntivi che consentono di aggiungere codice di integrazione o lo stato 
 
 **Codice di integrazione**
 
-Un codice di integrazione è un ID univoco fornito dal cliente. Il codice di integrazione deve contenere il valore utilizzato per [creare un’origine dati](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html#create-data-source) in [!DNL Audience Manager].
+Un codice di integrazione è un ID univoco fornito dal cliente. Il codice di integrazione deve contenere il valore utilizzato per [creare un’origine dati](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html?lang=it#create-data-source?lang=it) in [!DNL Audience Manager].
 
 **Valore**
 
@@ -215,7 +215,7 @@ Utilizzando [Adobe Debugger](https://experienceleague.adobe.com/docs/analytics/i
 
 L&#39;integrazione del servizio è configurata correttamente se vedi un identificatore [!DNL Experience Cloud ID] (MID) nella risposta di [!DNL Adobe] Debugger. Per maggiori informazioni sull’identificatore MID, consulta [Cookie e il servizio Experience Cloud Identity](../introduction/cookies.md).
 
-Per verificare lo stato del servizio ID con il [!DNL Adobe] [debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html):
+Per verificare lo stato del servizio ID con il [!DNL Adobe] [debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=it):
 
 1. Cancella i cookie del browser o apri una sessione di navigazione anonima.
 1. Carica la pagina di prova che contiene il codice del servizio ID.
@@ -281,5 +281,5 @@ Per ulteriori informazioni sui codici di errore, vedi [Codici di errore DCS, mes
 
 >[!MORELIKETHIS]
 >
->* [Proprietà Web](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html)
+>* [Proprietà Web](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html?lang=it)
 
