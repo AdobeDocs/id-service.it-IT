@@ -4,7 +4,7 @@ keywords: Servizio ID
 title: Requisiti del servizio Experience Cloud Identity
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '731'
 ht-degree: 100%
 
@@ -72,7 +72,7 @@ Per utilizzare il servizio ID, la società deve essere abilitata per [!DNL Exper
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Non abilitato</b> </p> </td> 
-   <td colname="col2"> <p> Se la società non è abilitata per Experience Cloud, vedi <a href="https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/solutions-core-services.html?lang=it" format="https" scope="external">Servizi di base - Come abilitare le soluzioni</a>. </p> </td> 
+   <td colname="col2"> <p> Se la società non è abilitata per Experience Cloud, vedi <a href="https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=it" format="https" scope="external">Servizi di base - Come abilitare le soluzioni</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
