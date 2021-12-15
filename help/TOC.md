@@ -5,11 +5,10 @@ user-guide-title: Guida del servizio Experience Cloud Identity
 breadcrumb-title: Guida al servizio Identity
 user-guide-description: Il servizio ID fornisce un ID universale e costante che identifica i visitatori in tutte le soluzioni Experience Cloud. Può sostituire il codice di generazione ID per servizi come Analytics, Audience Manager, Target e altre soluzioni o funzionalità Experience Cloud.
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: ht
-source-git-commit: 01d50f9def8916b45fac846de235363836ba0429
-workflow-type: ht
-source-wordcount: '397'
-ht-degree: 100%
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 98%
 
 ---
 
@@ -25,9 +24,8 @@ ht-degree: 100%
    + [Informazioni sulla sincronizzazione degli e sulle percentuali di corrispondenza](introduction/match-rates.md)
 + Implementazione {#implementation}
    + [Metodi di implementazione](implementation-guides/implementation-methods.md)
-   + [Guide all’implementazione](implementation-guides/implementation-guides.md)
-   + [Implementazione con Experience Platform Launch](implementation-guides/ecid-implement-with-launch.md)
-   + [Implementazione con DTM](implementation-guides/standard.md)
+   + [Guide all&#39;implementazione](implementation-guides/implementation-guides.md)
+   + [Implementazione con i tag di Experience Platform](implementation-guides/ecid-implement-with-launch.md)
    + [Implementazione per Analytics](implementation-guides/setup-analytics.md)
    + [Implementazione per Target](implementation-guides/setup-target.md)
    + [Implementazione per Analytics e Audience Manager](implementation-guides/setup-aam-analytics.md)
@@ -41,9 +39,9 @@ ht-degree: 100%
       + [Configurazione del servizio Opt-in](implementation-guides/opt-in-service/getting-started.md)
       + [Convalida del servizio Opt-in](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
       + [Configurazione di Opt-in con Experience Platform Launch](implementation-guides/opt-in-service/launch.md)
-      + [Configurazione di Opt-in con DTM](implementation-guides/opt-in-service/optin-dtm.md)
+      + [Configurare Opt-in con DTM](implementation-guides/opt-in-service/optin-dtm.md)
       + [Controllare le attività Experience Cloud in base al consenso degli utenti](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
-      + [Casi d’uso di Opt-in](implementation-guides/opt-in-service/use-cases.md)
+      + [Casi d&#39;uso di Opt-in](implementation-guides/opt-in-service/use-cases.md)
       + [Riferimenti di Opt-in](implementation-guides/opt-in-service/api.md)
       + [Utilizzo dei servizi Opt-in con il Framework IAB](implementation-guides/opt-in-service/iab.md)
 + API del servizio ID {#id-service-api}
@@ -86,7 +84,7 @@ ht-degree: 100%
 + Riferimenti {#reference}
    + [Panoramica dei riferimenti](reference/reference.md)
    + Guida di riferimento di Analytics {#analytics-reference}
-      + [Panoramica sulla guida di riferimento di Analytics](reference/analytics-reference/analytics-reference.md)
+      + [Panoramica delle risorse di riferimento per Analytics](reference/analytics-reference/analytics-reference.md)
       + [Panoramica dell’implementazione di CNAME](reference/analytics-reference/cname.md)
       + [Impostazione degli ID di Analytics ed Experience Cloud](reference/analytics-reference/analytics-ids.md)
       + [Ordine delle operazioni per gli ID di Analytics](reference/analytics-reference/analytics-order-of-operations.md)

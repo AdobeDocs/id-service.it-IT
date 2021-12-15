@@ -3,14 +3,14 @@ description: Panoramica dei processi di sincronizzazione ID e delle percentuali 
 keywords: Servizio ID
 title: Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '805'
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+workflow-type: tm+mt
+source-wordcount: '785'
 ht-degree: 100%
 
 ---
 
-# Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza {#understanding-id-synchronization-and-match-rates}
+# Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza{#understanding-id-synchronization-and-match-rates}
 
 Panoramica dei processi di sincronizzazione ID e delle percentuali di corrispondenza nel servizio Experience Cloud Identity, inclusi Adobe Media Optimizer e il servizio ID.
 
@@ -24,7 +24,7 @@ Le percentuali di corrispondenza misurano e confermano l’efficacia del process
 
 **Come ottenere elevate percentuali di corrispondenza**
 
-Per generare percentuali di corrispondenza elevate, è importante impostare correttamente il servizio ID (vedi la [guida all&#39;implementazione standard](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445)). Una corretta implementazione consente di ottenere percentuali di corrispondenza elevate, perché consente al servizio ID di impostare i cookie necessari per funzionare e sincronizzare gli ID con i partner dati abilitati. Tuttavia, fattori come connessioni Internet lente, raccolta di dati da dispositivi mobile o reti wireless possono influenzare l’efficacia con cui il servizio ID raccoglie, sincronizza e associa gli ID. Tali variabili lato client non possono essere controllate dal servizio ID e da [!DNL Adobe].
+Una corretta implementazione consente di ottenere percentuali di corrispondenza elevate, perché consente al servizio ID di impostare i cookie necessari per funzionare e sincronizzare gli ID con i partner dati abilitati. Tuttavia, fattori come connessioni Internet lente, raccolta di dati da dispositivi mobile o reti wireless possono influenzare l’efficacia con cui il servizio ID raccoglie, sincronizza e associa gli ID. Tali variabili lato client non possono essere controllate dal servizio ID e da [!DNL Adobe].
 
 ## Descrizione del processo di sincronizzazione degli ID {#section-a541a85cbbc74f5682824b1a2ee2a657}
 
