@@ -4,9 +4,9 @@ keywords: Servizio ID
 title: Requisiti del servizio Experience Cloud Identity
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '649'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Un&#39;implementazione di successo e supportata deve rispettare (o superare) i r
 
 ### Implementazioni standard
 
-Vedi [Experience Platform di tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it) per la tua implementazione standard.
+Vedi [Tag di Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it) per la tua implementazione standard.
 
 ### Implementazioni non standard
 
