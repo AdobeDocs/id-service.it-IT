@@ -6,31 +6,31 @@ breadcrumb-title: Guida al servizio Identity
 user-guide-description: Il servizio ID fornisce un ID universale e costante che identifica i visitatori in tutte le soluzioni Experience Cloud. Può sostituire il codice di generazione ID per servizi come Analytics, Audience Manager, Target e altre soluzioni o funzionalità Experience Cloud.
 user-guide-url: /content/help/en/id-service/using/home.html
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '394'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
 # Guida del servizio Experience Cloud Identity {#using}
 
-+ [Guida al servizio ID](home.md)
++ [Guida del servizio ID](home.md)
 + Panoramica {#intro}
    + [Panoramica](introduction/overview.md)
    + [Informazioni sul servizio ID](introduction/about-id-service.md)
    + [Cookie e il servizio ID](introduction/cookies.md)
    + [Richiesta e impostazione degli ID da parte del servizio ID](introduction/id-request.md)
-   + [Informazioni sulla sincronizzazione degli e sulle percentuali di corrispondenza](introduction/match-rates.md)
+   + [Sincronizzazione e percentuali di corrispondenza](introduction/match-rates.md)
 + Implementazione {#implementation}
    + [Metodi di implementazione](implementation-guides/implementation-methods.md)
-   + [Guide all&#39;implementazione](implementation-guides/implementation-guides.md)
+   + [Guide all’implementazione](implementation-guides/implementation-guides.md)
    + [Implementazione con i tag di Experience Platform](implementation-guides/ecid-implement-with-launch.md)
    + [Implementazione per Analytics](implementation-guides/setup-analytics.md)
    + [Implementazione per Target](implementation-guides/setup-target.md)
    + [Implementazione per Analytics e Audience Manager](implementation-guides/setup-aam-analytics.md)
    + [Implementazione per Analytics, Audience Manager e Target](implementation-guides/setup-aam-analytics-target.md)
-   + [Uso del servizio ID con A4T e l’implementazione lato server di Target](implementation-guides/ecid-a4t-target.md)
+   + [Uso del servizio ID con A4T e implementazione lato server di Target](implementation-guides/ecid-a4t-target.md)
    + [Integrazione diretta con il servizio ID](implementation-guides/direct-integration.md)
    + [Casi d’uso dell&#39;integrazione diretta](implementation-guides/direct-integration-examples.md)
    + [Test e verifica del servizio ID](implementation-guides/test-verify.md)
@@ -45,7 +45,7 @@ ht-degree: 98%
       + [Riferimenti di Opt-in](implementation-guides/opt-in-service/api.md)
       + [Utilizzo dei servizi Opt-in con il Framework IAB](implementation-guides/opt-in-service/iab.md)
 + API del servizio ID {#id-service-api}
-   + [Panoramica API del servizio ID](library/library.md)
+   + [Panoramica delle API del servizio ID](library/library.md)
    + Configurazione {#configurations}
       + [Panoramica sulle configurazioni](library/function-vars/function-vars.md)
       + [audienceManagerServer e audienceManagerServerSecure](library/function-vars/subdomain-config.md)
@@ -84,7 +84,7 @@ ht-degree: 98%
 + Riferimenti {#reference}
    + [Panoramica dei riferimenti](reference/reference.md)
    + Guida di riferimento di Analytics {#analytics-reference}
-      + [Panoramica delle risorse di riferimento per Analytics](reference/analytics-reference/analytics-reference.md)
+      + [Panoramica delle risorse di riferimento di Analytics](reference/analytics-reference/analytics-reference.md)
       + [Panoramica dell’implementazione di CNAME](reference/analytics-reference/cname.md)
       + [Impostazione degli ID di Analytics ed Experience Cloud](reference/analytics-reference/analytics-ids.md)
       + [Ordine delle operazioni per gli ID di Analytics](reference/analytics-reference/analytics-order-of-operations.md)
@@ -94,7 +94,7 @@ ht-degree: 98%
       + [Implementazione lato server con JavaScript](reference/analytics-reference/server-side.md)
       + [Periodo di tolleranza per il servizio ID](reference/analytics-reference/grace-period.md)
    + [Modifiche all’etichettatura SameSite di Google Chrome](reference/chrome-samesite-labelling.md)
-   + [Informativa sulla sicurezza dei contenuti e servizio ID](reference/csp.md)
+   + [Sicurezza dei contenuti e servizio ID](reference/csp.md)
    + [Supporto per COPPA nel servizio ID](reference/coppa.md)
    + [Supporto per CORS nel servizio ID](reference/cors.md)
    + [ID cliente e stati di autenticazione](reference/authenticated-state.md)
