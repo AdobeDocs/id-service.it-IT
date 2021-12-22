@@ -1,16 +1,16 @@
 ---
 description: Queste istruzioni sono per i clienti A4T con implementazioni miste lato server e client di Target, Analytics e del servizio ID. Dovranno essere consultate anche dai clienti che devono eseguire il servizio ID in un ambiente NodeJS o Rhino. Questa istanza del servizio ID utilizza una versione ridotta della libreria di codici VisitorAPI.js, che puoi scaricare e installare da Node Package Manager (NPM). Leggi questa sezione per le istruzioni di installazione e altri requisiti di configurazione.
 keywords: Servizio ID
-title: Uso del servizio ID con A4T e l'implementazione lato server di Target
+title: Uso del servizio ID con A4T e implementazione lato server di Target
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '820'
 ht-degree: 100%
 
 ---
 
-# Uso del servizio ID con A4T e l&#39;implementazione lato server di Target {#using-the-id-service-with-a-t-and-a-server-side-implementation-of-target}
+# Uso del servizio ID con A4T e implementazione lato server di Target {#using-the-id-service-with-a-t-and-a-server-side-implementation-of-target}
 
 Queste istruzioni sono per i clienti A4T con implementazioni miste lato server e client di Target, Analytics e del servizio ID. Dovranno essere consultate anche dai clienti che devono eseguire il servizio ID in un ambiente NodeJS o Rhino. Questa istanza del servizio ID utilizza una versione ridotta della libreria di codici VisitorAPI.js, che puoi scaricare e installare da Node Package Manager (NPM). Leggi questa sezione per le istruzioni di installazione e altri requisiti di configurazione.
 
