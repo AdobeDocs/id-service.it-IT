@@ -2,10 +2,10 @@
 description: Il ruolo del servizio Experience Cloud Identity in Adobe Experience Cloud.
 title: Panoramica del servizio Experience Cloud ID
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
-source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
-workflow-type: ht
-source-wordcount: '543'
-ht-degree: 100%
+source-git-commit: 953a4932e581a7a0019bec354201be4bc39f8b6b
+workflow-type: tm+mt
+source-wordcount: '527'
+ht-degree: 95%
 
 ---
 
@@ -26,7 +26,7 @@ Quando l’organizzazione implementa il servizio ID, questo ID consente di ident
 
 Inoltre, il servizio ID può sostituire i diversi ID delle singole soluzioni (ad esempio, AID di Analytics). Quindi, tramite la funzionalità [ID cliente e stati di autenticazione](/help/reference/authenticated-state.md), il servizio ID ti permette di trasmettere gli ID dei tuoi clienti a Experience Cloud. Tuttavia, il servizio ID funziona solo con le soluzioni alle quali sei abbonato. Se non ti sei registrato per altri prodotti, non sarà possibile accedere ad altri prodotti.
 
-Il servizio ID è un componente integrale di un gran numero di funzioni, miglioramenti e servizi correnti e futuri di Experience Cloud. Attualmente, il servizio ID supporta [Analytics](http://www.adobe.com/it/marketing-cloud/web-analytics.html), [Audience Manager](http://www.adobe.com/it/marketing-cloud/data-management-platform.html) e [Target](http://www.adobe.com/it/marketing-cloud/testing-targeting.html). È inoltre richiesto per partecipare ad Adobe Experience Cloud Device Co-op. Se non hai implementato il servizio ID, ti consigliamo di considerare fin d&#39;ora una strategia di migrazione.
+Il servizio ID è un componente integrale di un gran numero di funzioni, miglioramenti e servizi correnti e futuri di Experience Cloud. Attualmente, il servizio ID supporta [Analytics](http://www.adobe.com/it/marketing-cloud/web-analytics.html), [Audience Manager](http://www.adobe.com/it/marketing-cloud/data-management-platform.html) e [Target](http://www.adobe.com/it/marketing-cloud/testing-targeting.html). Se non hai implementato il servizio ID, ti consigliamo di considerare fin d&#39;ora una strategia di migrazione.
 
 ## Riepilogo delle funzioni
 
@@ -34,7 +34,7 @@ In sintesi, il servizio ID svolge le seguenti funzioni:
 
 * Crea una chiave o un ID comune che può essere utilizzato per collegare profili e identità.
 * Identifica in modo univoco un dispositivo tra più soluzioni.
-* Imposta un cookie di prima parte nel dominio del cliente per garantire il monitoraggio del dominio stesso. Consulta il documento su [cookie e servizio Experience Cloud Identity](./cookies.md) per ulteriori informazioni.
+* Imposta un cookie di prima parte nel dominio del cliente per garantire il monitoraggio dello stesso dominio. Visualizza il documento in [cookie e servizio Experience Cloud Identity](./cookies.md) per ulteriori informazioni.
 * Riceve alias e mappature ID dai clienti e dai partner Experience Cloud.
 * Gestisce la sincronizzazione ID all&#39;interno di Experience Cloud.
 * Supporta la sincronizzazione ID con terze parti diverse all&#39;interno dell&#39;ecosistema di tecnologie per la gestione di annunci.
