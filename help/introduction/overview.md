@@ -3,9 +3,9 @@ description: Il ruolo del servizio Experience Cloud Identity in Adobe Experience
 title: Panoramica del servizio Experience Cloud ID
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
 source-git-commit: 953a4932e581a7a0019bec354201be4bc39f8b6b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '527'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ In sintesi, il servizio ID svolge le seguenti funzioni:
 
 * Crea una chiave o un ID comune che può essere utilizzato per collegare profili e identità.
 * Identifica in modo univoco un dispositivo tra più soluzioni.
-* Imposta un cookie di prima parte nel dominio del cliente per garantire il monitoraggio dello stesso dominio. Visualizza il documento in [cookie e servizio Experience Cloud Identity](./cookies.md) per ulteriori informazioni.
+* Imposta un cookie di prima parte nel dominio del cliente affinché sia possibile eseguire il tracciamento sullo stesso dominio. Per ulteriori informazioni, consulta il documento su [Cookie e servizio Experience Cloud Identity](./cookies.md).
 * Riceve alias e mappature ID dai clienti e dai partner Experience Cloud.
 * Gestisce la sincronizzazione ID all&#39;interno di Experience Cloud.
 * Supporta la sincronizzazione ID con terze parti diverse all&#39;interno dell&#39;ecosistema di tecnologie per la gestione di annunci.
