@@ -4,7 +4,7 @@ keywords: Servizio ID
 title: Note sulla versione 2017
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
 source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '700'
 ht-degree: 100%
 
@@ -101,7 +101,7 @@ Luglio 2017
 **Correzioni di bug e altre modifiche**
 
 * È stato corretto un bug in VisitorAPI.js v2.2 che impediva al servizio ID e a Target di funzionare in contemporanea in Internet Explorer.
-* È stato rivisto il codice per migliorare il modo in cui il servizio ID invia i dati all&#39;iFrame di pubblicazione di destinazione, Questo consente di ridurre l’utilizzo della CPU.
+* È stato rivisto il codice per migliorare il modo in cui il servizio ID invia i dati all&#39;iFrame di pubblicazione di destinazione. Questo consente di ridurre l’utilizzo della CPU.
 
 ## Versione 2.2 {#section-b7dee2495c29470e9b3a3132ec1fd951}
 
