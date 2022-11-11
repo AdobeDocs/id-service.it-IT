@@ -3,8 +3,8 @@ description: In alcune implementazioni, gli ID visitatore vengono trasferiti da 
 keywords: Servizio ID
 title: Implementazione lato server con JavaScript
 exl-id: 1986ee11-2021-4f34-bb56-6eaa87b6dd6d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Include l&#39;ID visitatore di Analytics (se è impostato) nell&#39;elemento `<v
 
 Include l&#39;ID visitatore di Experience Cloud nell&#39;elemento `<marketingCloudVisitorID>`.
 
-Consulta [Tag XML supportati](https://www.adobe.io).
+Consulta [Tag XML supportati](https://developer.adobe.com/).
 
 ## AppMeasurement per Java {#section-d664b94934924d048300d9c2b6560085}
 
