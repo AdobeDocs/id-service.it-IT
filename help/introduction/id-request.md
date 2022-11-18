@@ -4,7 +4,7 @@ keywords: Servizio ID
 title: Richiesta e impostazione degli ID da parte del servizio Experience Cloud Identity
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
 source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '746'
 ht-degree: 100%
 
