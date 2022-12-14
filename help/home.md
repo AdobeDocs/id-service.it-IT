@@ -1,18 +1,28 @@
 ---
-description: 'Il servizio Experience Cloud Identity fornisce un ID universale e costante che identifica i visitatori in tutte le soluzioni di Experience Cloud. '
-keywords: Servizio ID
+description: Il servizio Experience Cloud Identity abilita il framework comune di identificazione di applicazioni e servizi Experience Cloud. Funziona tramite l’assegnazione di un ID univoco e costante noto come ID Experience Cloud (ECID) a un visitatore del sito.
+keywords: Servizio ID; Servizio identità; Servizio Experience Cloud Identity
 title: Servizio Experience Cloud Identity
 exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
-source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
-workflow-type: ht
-source-wordcount: '261'
-ht-degree: 100%
+source-git-commit: f7c25f5ebd0690c56c081422949eb34f1f277ae1
+workflow-type: tm+mt
+source-wordcount: '405'
+ht-degree: 48%
 
 ---
 
 # Servizio Adobe Experience Cloud Identity {#experience-cloud-id-service}
 
-Il servizio Adobe Experience Cloud Identity (servizio ID) fornisce un ID universale e costante che identifica i visitatori in tutte le soluzioni di Experience Cloud. Può sostituire il codice di generazione ID di servizi come Analytics, Audience Manager, Target e altre soluzioni o funzionalità Experience Cloud.
+Il servizio Experience Cloud Identity abilita il framework comune di identificazione di applicazioni e servizi Experience Cloud. Funziona tramite l’assegnazione di un ID univoco e costante noto come ID Experience Cloud (ECID) a un visitatore del sito.
+
+## Comprendere le principali entità di identità
+
+Per capire meglio in che modo Adobe aiuta a identificare in modo univoco i visitatori e a risolvere le informazioni di identità, leggi la suddivisione seguente:
+
+* **Servizio Experience Cloud Identity**: Servizio Experience Cloud Identity **è responsabile dell&#39;impostazione dell&#39;Experience Cloud ID (ECID)**. Per ulteriori informazioni, consulta la sezione [Panoramica del servizio Experience Cloud Identity](./introduction/overview.md).
+* **ID Experience Cloud (ECID)**: L’ECID è uno spazio dei nomi di identità condivisa utilizzato nelle applicazioni Adobe Experience Platform e Adobe Experience Cloud per identificare persone e dispositivi. Per ulteriori informazioni sull’ECID, consulta la sezione [Panoramica ECID](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html).
+* **Servizio Experience Platform Identity**: Il servizio Experience Platform Identity fornisce una panoramica completa dei clienti e del loro comportamento attraverso il collegamento di identità tra dispositivi e sistemi. Per ulteriori informazioni, leggere [Panoramica del servizio Experience Platform Identity](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html).
+
+<!-- The Adobe Experience Cloud Identity Service provides a universal, persistent ID that identifies your visitors across all the solutions in the Experience Cloud. It can replace ID generation code for Experience Cloud solutions and services. -->
 
 <table id="table_5E612F746A704FE095B809A013EE977F" class="simpletable"> 
  <tbody> 
@@ -36,7 +46,7 @@ Il servizio Adobe Experience Cloud Identity (servizio ID) fornisce un ID univers
    <td colname="col2"> <p> <b>Note sulla versione</b> </p> <p>La <b>versione 4.4</b> del 17 luglio 2019 include il supporto dell’<a href="reference/hashing-support.md" format="dita" scope="local">algoritmo di hashing SHA-256</a> che consente di ricevere gli ID o indirizzi e-mail dei clienti e di inoltrarli con hashing.</p><p>La <b>versione 4.0</b> del 12 febbraio 2019 include il <a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local">servizio Opt-in</a> utilizzato per identificare se è possibile inserire un cookie sul dispositivo o nel browser di un utente quando visita il sito. </p> <p> 
      <ul id="ul_4F06F170F214492780C7D25A069F799F"> 
       <li id="li_45A7CD556FE44F4DAB035C736A058F36"> Per conoscere le nuove funzioni e le correzioni, vedi le <a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=it" format="https" scope="external">note sulla versione di Experience Cloud</a> più recenti. </li> 
-      <li id="li_10CC4FBFEFC947CA9AD15F52D9715257">Per le versioni precedenti consulta la sezione <a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=it" format="html" scope="external">note sulla versione precedente</a>. </li> 
+      <li id="li_10CC4FBFEFC947CA9AD15F52D9715257">Per le versioni precedenti consulta la sezione <a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=en" format="html" scope="external">note sulla versione precedente</a>. </li> 
      </ul> </p> <p> <b>Risorse di Experience Cloud</b> </p> <p> 
      <ul id="ul_E30EC96BDC624B5591F0470D430B7F41"> 
       <li id="li_F3A5CCFAE0F247CEB41A03CA8E03106B"> <a href="http://www.adobe.com/it/privacy.html" format="http" scope="external"> Centro per la privacy Adobe</a> </li> 
