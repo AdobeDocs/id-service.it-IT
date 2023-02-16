@@ -4,13 +4,13 @@ keywords: Servizio ID
 title: appendSupplementalDataIDTo
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
 source-git-commit: 5710539b45a81394061cd4af2ef3edc27b49092e
-workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 96%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
-# appendSupplementalDataIDTo{#appendsupplementaldataidto}
+# appendSupplementalDataIDTo {#appendsupplementaldataidto}
 
 Questo metodo helper ti consente di aggiungere a un URL di reindirizzamento il codice Supplemental Data ID (SDID) sotto forma di parametro della stringa di interrogazione. È utile quando stai usando A4T e hai bisogno di mantenere il codice SDID da una pagina all&#39;altra e di unire insieme le visite separate. Per usare questa funzione, devi aver implementato il servizio ID con lo stesso ID organizzazione sui domini di origine e di destinazione.
 
@@ -42,7 +42,7 @@ var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, theCurrentSDID));
 
 ## Output di esempio {#section-dbe02d7ff6bd4ad1a2a26bf9cff54fa4}
 
-Come mostrato di seguito, l&#39;URL reindirizza il codice SDID visitatore, l&#39;ID organizzazione e la marca temporale UNIX nella chiamata alla pagina ricevente.
+Come mostrato di seguito, l’URL reindirizza il codice SDID del visitatore, l’ID della tua organizzazione e la marca temporale UNIX nella chiamata alla pagina ricevente.
 
 <ul class="simplelist"> 
  <li> <span class="codeph"> www.domain.com/pageB?adobe_mc_sdid=SDID=7996F0B028999505-13DA591039D6226|MCORGID=123456789@AdobeOrg|TS=1498569322 </span> </li> 
