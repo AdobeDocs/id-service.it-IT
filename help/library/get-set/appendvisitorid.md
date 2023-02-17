@@ -3,7 +3,7 @@ description: Con questa funzione puoi condividere l'Experience Cloud ID di un vi
 keywords: Servizio ID
 title: appendVisitorIDsTo (Monitoraggio interdominio)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: 622f785384386e108f54b7e5381cc80f53b3ef8e
+source-git-commit: 7d37d9ca44db9d7a8d3b32d9a5d5a47d3fa137ce
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 93%
@@ -41,7 +41,7 @@ Per informazioni dettagliate consulta l’esempio di codice.
 
 >[!IMPORTANT]
 >
->Affinché i valori passati nell’URL tramite appendVisitorsIDsTo vengano prelevati, la variabile [ovewriteCrossDomainMDCIDAndAID](../function-vars/overwrite-visitor-id.md) deve essere impostata su true.
+>Affinché i valori passati nell’URL tramite appendVisitorsIDsTo vengano prelevati, la variabile [ovewriteCrossDomainMCIDAndAID](../function-vars/overwrite-visitor-id.md) deve essere impostata su true.
 
 L&#39;esempio seguente può aiutarti a iniziare con ` Visitor.appendVisitorIDsTo( *`url`*)`. Se viene implementato correttamente, il codice JavaScript sarà simile a quello di questo esempio.
 
