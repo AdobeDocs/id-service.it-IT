@@ -3,14 +3,14 @@ description: Il servizio ID utilizza l'ID organizzazione, il cookie AMCV di Expe
 keywords: playstation; servizio ID
 title: Cookie e il servizio Experience Cloud Identity
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '932'
-ht-degree: 100%
+source-git-commit: 33e467ade389144423abf14539aad8a5a5f69d21
+workflow-type: tm+mt
+source-wordcount: '955'
+ht-degree: 96%
 
 ---
 
-# Cookie e il servizio Experience Cloud Identity {#cookies-and-the-experience-cloud-id-service}
+# Cookie e il servizio Experience Cloud Identity{#cookies-and-the-experience-cloud-id-service}
 
 Il servizio ID utilizza l&#39;ID organizzazione, il cookie AMCV di Experience Cloud e il cookie demdex per creare e memorizzare identificatori univoci e costanti per i visitatori del sito. Questi cookie permettono al servizio ID di tenere traccia dei visitatori nei diversi domini e di condividere i dati tra le varie soluzioni Experience Cloud.
 
@@ -113,7 +113,9 @@ Nella tabella seguente sono elencati e definiti alcuni attributi importanti del 
  </tbody> 
 </table>
 
-Per informazioni correlate, consulta [Informazioni sulle chiamate al dominio Demdex](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=it).
+Per informazioni sulle informazioni relative a Demdex, visita [Audience Manager di informazioni sulla memorizzazione dei dispositivi](https://aam-iab-tcf-vendor.s3.amazonaws.com/aam_device_storage_disclosures.json).
+
+Per informazioni correlate, consulta la documentazione su [informazioni sulle chiamate al dominio Demdex](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=it).
 
 ## Generazione dell&#39;Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
