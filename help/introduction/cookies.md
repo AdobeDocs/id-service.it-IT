@@ -4,9 +4,9 @@ keywords: playstation; servizio ID
 title: Cookie e il servizio Experience Cloud Identity
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
 source-git-commit: 33e467ade389144423abf14539aad8a5a5f69d21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '955'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -113,11 +113,11 @@ Nella tabella seguente sono elencati e definiti alcuni attributi importanti del 
  </tbody> 
 </table>
 
-Per informazioni sulle informazioni relative a Demdex, visita [Audience Manager di informazioni sulla memorizzazione dei dispositivi](https://aam-iab-tcf-vendor.s3.amazonaws.com/aam_device_storage_disclosures.json).
+Per informazioni sulle divulgazioni relative a Demdex, visita [Divulgazioni sulla memorizzazione dei dispositivi di Audience Manager](https://aam-iab-tcf-vendor.s3.amazonaws.com/aam_device_storage_disclosures.json).
 
-Per informazioni correlate, consulta la documentazione su [informazioni sulle chiamate al dominio Demdex](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=it).
+Per informazioni correlate, consulta la documentazione relativa alle [informazioni sulle chiamate al dominio Demdex](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=it).
 
-## Generazione dell&#39;Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
+## Generazione di Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
 L&#39;Experience Cloud ID (MID) viene derivato matematicamente dall&#39;ID organizzazione e dall&#39;ID demdex. Fintanto che questi ID restano costanti la generazione del MID corretto per un utente specifico è semplicemente un problema matematico. Con lo stesso ID organizzazione e lo stesso ID demdex si ottiene sempre lo stesso valore MID. Questo consente al servizio ID di tenere traccia dei visitatori tra i domini che controlli e che hai configurato con il codice del servizio ID.
 
