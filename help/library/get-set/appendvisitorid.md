@@ -3,10 +3,10 @@ description: Con questa funzione puoi condividere l'Experience Cloud ID di un vi
 keywords: Servizio ID
 title: appendVisitorIDsTo (Monitoraggio interdominio)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: 70e0ff00be9037b475084a906405180107f2514c
-workflow-type: ht
-source-wordcount: '337'
-ht-degree: 100%
+source-git-commit: c035f0af76f70322e4d79ed842502b26c3f155ac
+workflow-type: tm+mt
+source-wordcount: '367'
+ht-degree: 93%
 
 ---
 
@@ -42,6 +42,10 @@ Per informazioni dettagliate consulta l’esempio di codice.
 ## Aggiungi l&#39;esempio di codice ID visitatore {#section-62d55f7f986542b0b9238e483d50d7b0}
 
 L’esempio seguente può aiutarti a iniziare con la funzione `appendVisitorIDsTo`:
+
+>[!TIP]
+>
+>Puoi inserire questo codice nell’editor di codice personalizzato che fa parte dell’estensione Adobe Analytics o nella parte superiore di [AppMeasurement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=it).
 
 ```js
 var adbeDomains = ["marketo.com", "figma.com", "workfront.com"];

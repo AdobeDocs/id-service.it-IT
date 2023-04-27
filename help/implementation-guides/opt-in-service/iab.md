@@ -2,8 +2,8 @@
 description: Collega la loro piattaforma di gestione del consenso (CMP) con relativo il plug-in di Audience Manager per i servizi Opt-in con la specifica IAB TCF (Trasparency and Consent Framework).
 title: Utilizzo dei servizi Opt-in con il Framework IAB
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
-source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
-workflow-type: ht
+source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ Una volta configurate correttamente le impostazioni, le librerie ECID e DIL verr
 
 >[!IMPORTANT]
 >
->Audience Manager richiede il consenso per *Scopo 1, Scopo 10 e il consenso del fornitore* per distribuire i cookie e avviare o rispettare le sincronizzazioni degli ID. Trovi maggiori informazioni sul plug-in di Opt-in IAB TCF nella documentazione di Audience Manager [qui](https://docs.adobe.com/content/help/it-IT/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html).
+>Audience Manager richiede il consenso per *Scopo 1, Scopo 10 e il consenso del fornitore* per distribuire i cookie e avviare o rispettare le sincronizzazioni degli ID. Trovi maggiori informazioni sul plug-in di Opt-in IAB TCF nella documentazione di Audience Manager [qui](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html?lang=it).
 
 Per maggiori informazioni su come convalidare il plug-in di Opt-in IAB TCF, fai riferimento al caso d’uso n° 4 nella guida alla convalida [qui](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0).
 

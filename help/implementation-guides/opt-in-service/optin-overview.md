@@ -2,14 +2,14 @@
 description: Il servizio Opt-in consente di configurare i protocolli per il visitatore per identificare se è possibile impostare un cookie sul dispositivo o sul browser dell'utente che visita il tuo sito.
 title: Servizio Opt-in
 exl-id: 351da861-4faa-409b-b0ff-f4d2ce66700b
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '507'
-ht-degree: 100%
+source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 96%
 
 ---
 
-# Servizio Opt-in {#opt-in-service}
+# Servizio Opt-in{#opt-in-service}
 
 Il servizio Opt-in consente di configurare i protocolli per il visitatore per identificare se è possibile impostare un cookie sul dispositivo o sul browser dell&#39;utente che visita il tuo sito.
 
@@ -17,7 +17,7 @@ Il servizio Opt-in è un&#39;estensione del servizio Experience Cloud ID (ECID) 
 
 Usando il servizio Opt-in è possibile specificare se un visitatore può dare il consenso a tutte le soluzioni Adobe in una sola volta oppure deve darlo per ogni soluzione seguendo la sequenza di autorizzazioni per ognuna di esse. Una volta che il cliente ha completato e registrato il processo di approvazione, è possibile recuperare le approvazioni del visitatore CMP da tutte le soluzioni Adobe.
 
-Il servizio Opt-in può essere implementato e configurato facilmente tramite [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=it) con l’[estensione Opt-in](../../implementation-guides/opt-in-service/launch.md). Può essere implementato e configurato anche usando [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
+Il servizio Opt-in viene implementato e configurato facilmente utilizzando [Tag in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it) con [Estensione Opt-in](../../implementation-guides/opt-in-service/launch.md). Può essere implementato e configurato anche usando [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
 
 Per iniziare, consulta [Configurazione del servizio Opt-in](../../implementation-guides/opt-in-service/getting-started.md).
 
