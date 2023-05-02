@@ -2,26 +2,27 @@
 description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity.
 keywords: Servizio ID
 title: Note sulla versione 2021
-source-git-commit: dce2c0036f697507381d0763c2f6a9538155681c
-workflow-type: tm+mt
+exl-id: f0bbb100-49a9-4bba-8cee-5f40bec87984
+source-git-commit: fcd3e8b65bb84e94eabac7ffec6a34f4cf75ec3d
+workflow-type: ht
 source-wordcount: '103'
-ht-degree: 25%
+ht-degree: 100%
 
 ---
 
-# Note sulla versione del servizio Experience Cloud Identity - 2021
+# Note sulla versione 2021 del servizio Experience Cloud Identity
 
 Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity.
 
-## Visitatore 5.3.0
+## Visitor 5.3.0
 
 I seguenti aggiornamenti sono stati inclusi nella versione di Visitor 5.3.0:
 
-* È stato aggiornato l’algoritmo per generare ECID locale.
-* Opt-in più recente con `Secure` e `SameSite` flag per cookie di privacy.
-* Correzione della patch per un problema del browser Firefox quando una pagina viene caricata in un iFrame figlio.
+* È stato aggiornato l’algoritmo per generare l’ECID locale.
+* Servizio Opt-in più recente con i flag `Secure` e `SameSite` per cookie di privacy.
+* Correzione della patch per un problema del browser Firefox quando una pagina viene caricata in un iFrame secondario.
 
-## Visitatore 5.2.0
+## Visitor 5.2.0
 
 I seguenti aggiornamenti sono stati inclusi nella versione di Visitor 5.2.0:
 
