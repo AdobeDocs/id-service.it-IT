@@ -4,23 +4,23 @@ keywords: Servizio ID
 title: Note sulla versione 2020
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
 source-git-commit: dce2c0036f697507381d0763c2f6a9538155681c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '213'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
-# Note sulla versione di Experience Cloud - 2020 {#release-notes}
+# Note sulla versione 2020 di Experience Cloud {#release-notes}
 
 Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity.
 
 ## Versione 5.1.1
 
-* Correzione della patch per l&#39;impostazione del cookie AMCV con `SameSite=None` quando VisitorJS viene caricato in un iFrame.
+* Correzione della patch per l’impostazione del cookie AMCV con `SameSite=None` quando VisitorJS viene caricato in un iFrame.
 
 ## Versione 5.1.0
 
-* Aggiunta `sameSiteCookie` configurazione per specificare `SameSite` attributo per il cookie AMCV. Questa configurazione supporta i seguenti valori per `SameSite` attributo:
+* Aggiunta della configurazione `sameSiteCookie` per specificare l’attributo `SameSite` del cookie AMCV. La configurazione supporta i seguenti valori per l’attributo `SameSite`:
    * `Strict`
    * `Lax`
    * `None`
@@ -29,7 +29,7 @@ Per ulteriori informazioni su questi valori di attributo, visita [web.dev](https
 
 ## Versione 5.0.1
 
-* Correzione patch per includere `d_cf` flag quando viene inviata una nuova stringa di consenso IAB ai bordi della raccolta dati di Adobe.
+* Correzione della patch per includere il flag `d_cf` quando una nuova stringa di consenso IAB viene inviata agli Edge di raccolta dati di Adobe.
 
 ## Versione 5.0.0
 
