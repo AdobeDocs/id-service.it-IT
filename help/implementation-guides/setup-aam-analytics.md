@@ -4,9 +4,9 @@ keywords: Servizio ID
 title: Implementazione del servizio Experience Cloud Identity per Analytics e Audience Manager
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
 source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1232'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Queste istruzioni sono per i clienti di Analytics e Audience Manager che desider
 
 ## Passaggio 1: pianificazione dell&#39;inoltro lato server {#section-880797cc992d4755b29cada7b831f1fc}
 
-Oltre ai passaggi qui descritti, i clienti che usano [!DNL Analytics] e [!DNL Audience Manager] devono effettuare la migrazione all&#39;inoltro lato server. L’inoltro lato server consente di rimuovere il DIL (codice di raccolta dati di Audience Manager) e sostituirlo con il [modulo Gestione dell’audience](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=it). Per ulteriori informazioni, consulta la [documentazione dell’inoltro lato server](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf.html).
+Oltre ai passaggi qui descritti, i clienti che usano [!DNL Analytics] e [!DNL Audience Manager] devono effettuare la migrazione all’inoltro lato server. L’inoltro lato server consente di rimuovere il DIL (codice di raccolta dati di Audience Manager) e sostituirlo con il [modulo Gestione dell’audience](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=it). Per ulteriori informazioni, consulta la [documentazione dell’inoltro lato server](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf.html?lang=it).
 
 La migrazione all’inoltro lato server richiede pianificazione e coordinamento. Questo processo comporta modifiche esterne al codice del sito e passaggi interni che Adobe deve effettuare per il provisioning del tuo account. Infatti, molte di queste procedure di migrazione devono avvenire in parallelo ed essere rilasciate insieme. Il percorso di implementazione deve seguire questa sequenza di eventi:
 
@@ -90,7 +90,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE",
 }); 
 ```
 
-## Passaggio 4: aggiungi l&#39;ID organizzazione Experience Cloud a Visitor.getInstance {#section-e2947313492546789b0c3b2fc3e897d8}
+## Passaggio 4: aggiungi l’ID organizzazione Experience Cloud a Visitor.getInstance {#section-e2947313492546789b0c3b2fc3e897d8}
 
 Nella `Visitor.getInstance` funzione sostituisci `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` con l&#39;ID organizzazione Experience Cloud. Se non conosci il tuo ID organizzazione, puoi trovarlo nella pagina di amministrazione di Experience Cloud. La funzione modificata deve essere simile a quella riportata di seguito.
 
