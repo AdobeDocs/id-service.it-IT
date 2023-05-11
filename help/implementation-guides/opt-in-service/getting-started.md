@@ -3,9 +3,9 @@ description: Implementare il servizio Opt-in come unico punto di riferimento usa
 title: Configurazione del servizio Opt-in
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
 source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '911'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Il servizio Opt-in consente di specificare se un visitatore può dare il consens
 
 ## Prerequisiti {#section-c39246f45e514c8ea9fdbe6f7ffa3ad0}
 
-1. ECID versione 4.0
+1. ECID versione 4.0.
 
    [Scarica](https://github.com/Adobe-Marketing-Cloud/id-service/releases) la versione di ECID più recente.
 
@@ -41,7 +41,7 @@ Il servizio Opt-in consente di specificare se un visitatore può dare il consens
 
 1. I requisiti di privacy dell&#39;azienda saranno specifici in base alla scelta di rispettare il RGPD. Tieni presente quali librerie i team aziendali per la privacy possono usare prima del consenso.
 
-Se utilizzi [Tag in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it), sfruttare [Estensione Opt-in](../../implementation-guides/opt-in-service/launch.md) per configurare il servizio Opt-in.
+Se utilizzi i [Tag in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it), sfrutta l’[estensione Opt-in](../../implementation-guides/opt-in-service/launch.md) per configurare il servizio Opt-in.
 
 ## Categorie di Opt-in {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
