@@ -4,9 +4,9 @@ keywords: Servizio ID
 title: ID cliente e stati di autenticazione
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
 source-git-commit: 159b37e360b586bbada13e34793009e3067de668
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '629'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -217,4 +217,4 @@ Il servizio [!DNL Experience Cloud] ID supporta gli ID dei clienti e gli stati d
 
 ## Avviso per i clienti Analytics e Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-Se trasferisci ID dichiarati ad [!DNL Audience Manager], l’oggetto `userid` deve corrispondere al codice di integrazione associato a un’origine dati. Per ulteriori informazioni, consulta la sezione [!UICONTROL Servizio ID visitatore] nel documento [Configurazione codice delle regole di unione](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=en#configure-merge-rule-code).
+Se trasferisci ID dichiarati ad [!DNL Audience Manager], l’oggetto `userid` deve corrispondere al codice di integrazione associato a un’origine dati. Per ulteriori informazioni, consulta la sezione [!UICONTROL Servizio ID visitatore] nel documento [Configurazione codice delle regole di unione](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=it#configure-merge-rule-code).
