@@ -2,15 +2,17 @@
 description: Proprietà, metodi e configurazioni che consentono di usare in maniera programmatica il servizio Experience Cloud Identity.
 keywords: Servizio ID
 title: API del servizio ID
+feature-set: Experience Cloud Services
+feature: TK421
 exl-id: 60ae4927-e905-4252-b9ec-9cc74073e8d5
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
+workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 100%
 
 ---
 
-# API del servizio ID {#id-service-api}
+# API del servizio ID{#id-service-api}
 
 Proprietà, metodi e configurazioni che consentono di usare in maniera programmatica il servizio Experience Cloud Identity.
 
