@@ -6,7 +6,7 @@ feature-set: Experience Cloud Services
 feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
 source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1146'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Note sulla versione 2016 {#release-notes}
 
-Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2016.
+Funzionalità rilasciate, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2016.
 
 Queste modifiche vengono riportate anche nelle [note sulla versione di Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=it).
 
