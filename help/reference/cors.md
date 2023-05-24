@@ -4,9 +4,9 @@ keywords: Servizio ID
 title: Supporto per CORS nel servizio Experience Cloud Identity
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '616'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '615'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ Vediamo come funzionano queste intestazioni. In questo esempio, supponiamo che u
    <td colname="col1"> <p> <b>Richiesta</b> </p> </td> 
    <td colname="col2"> <p>Al caricamento della pagina del sito della società di servizi finanziari, il browser invia una richiesta a <span class="codeph">dpm.demdex.net</span>. Si tratta di una chiamata al dominio dei server di raccolta dati (DCS) utilizzati dal servizio ID. Questa richiesta tra domini diversi include l’intestazione: </p> <p> 
      <ul class="simplelist"> 
-      <li> <span class="codeph"> Origin: https://www.finance-website.com</span> </li> 
+      <li> <span class="codeph"> Origine:https://www.finance-website.com</span> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 

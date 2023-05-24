@@ -4,9 +4,9 @@ keywords: Servizio ID
 title: Implementazione del servizio Experience Cloud Identity per Analytics
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1025'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -89,7 +89,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 }); 
 ```
 
-## Passaggio 3: aggiungi l&#39;ID organizzazione Experience Cloud a Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
+## Passaggio 3: aggiungi l’ID organizzazione Experience Cloud a Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
 
 Nella `Visitor.getInstance` funzione sostituisci `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` con l&#39;ID organizzazione [!DNL Experience Cloud]. Se non conosci il tuo ID organizzazione, puoi trovarlo nella pagina di amministrazione di [!DNL Experience Cloud]. Vedi anche [Amministrazione - Servizi di base](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=it). La funzione modificata deve essere simile a quella riportata di seguito.
 

@@ -4,13 +4,13 @@ keywords: Servizio ID
 title: Impostazione degli ID di Analytics ed Experience Cloud
 exl-id: 7399ea16-d13e-452c-b8d9-8d0699566aa2
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 100%
 
 ---
 
-# Impostazione degli ID di Analytics ed Experience Cloud {#setting-analytics-and-experience-cloud-ids}
+# Impostazione degli ID di Analytics ed Experience Cloud{#setting-analytics-and-experience-cloud-ids}
 
 Il servizio Experience Cloud Identity sostituisce i metodi legacy di raccolta degli ID visitatore di Analytics.
 

@@ -3,13 +3,13 @@ description: Dopo aver abilitato l'oggetto Opt-in sul sito Web, usa i metodi di 
 title: Convalida del servizio Opt-in
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '440'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 94%
 
 ---
 
-# Convalida del servizio Opt-in {#validating-opt-in-service}
+# Convalida del servizio Opt-in{#validating-opt-in-service}
 
 Dopo aver abilitato l&#39;oggetto Opt-in sul sito Web, usa i metodi di convalida per verificare che il servizio funzioni come previsto usando gli strumenti per sviluppatori nel browser.
 
@@ -43,7 +43,7 @@ Non dovrebbero eserci richieste ai server di Adobe:
 >
 >È possibile che venga visualizzata una chiamata a `http://dpm.demdex.net/optOutStatus`; si tratta di un endpoint di SOLA LETTURA usato per recuperare lo stato di Opt-out del visitatore. Questo endpoint non comporterà la creazione di cookie di terze parti e non raccoglierà informazioni dalla pagina.
 
-Non dovresti trovare cookie creati dai tag di Adobe: (AMCV_{{YOUR_ORG_ID}}, mbox, demdex, s_cc, s_sq, everest_g_v2, everest_session_v2)
+Non dovresti trovare cookie creati dai tag Adobi: (AMCV_{{YOUR_ORG_ID}}, mbox, demdex, s_cc, s_sq, everest_g_v2, everest_session_v2)
 
 In Chrome, vai alla scheda *Applicazione*, espandi la sezione *Cookie* in *Archiviazione* e seleziona il nome di dominio del tuo sito web:
 

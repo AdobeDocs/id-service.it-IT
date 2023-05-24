@@ -4,13 +4,13 @@ keywords: Servizio Experience Cloud Identity
 title: Domande frequenti su Analytics e sul servizio Identity
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '970'
 ht-degree: 100%
 
 ---
 
-# Domande frequenti su Analytics e sul servizio Identity {#analytics-and-id-service-faqs}
+# Domande frequenti su Analytics e sul servizio Identity{#analytics-and-id-service-faqs}
 
 Domande frequenti sulle caratteristiche, sulle funzionalità e sui problemi correlati all’uso di Analytics con il servizio Identity.
 

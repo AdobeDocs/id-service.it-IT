@@ -3,7 +3,7 @@ title: Usare il servizio Opt-in per controllare le attività Experience Cloud in
 description: L’oggetto Adobe Opt-in è un’estensione del servizio Adobe Experience Platform Identity, utile per controllare se e quali soluzioni Experience Cloud possono creare dei cookie su pagine web o avviare dei beacon, in base al consenso dell’utente finale.
 exl-id: ac44e628-01ca-401c-864b-30fed0450e5f
 source-git-commit: 0dca594c090095a01dfa2d02a98dfeba7ca02dca
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 100%
 

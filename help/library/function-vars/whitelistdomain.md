@@ -4,13 +4,13 @@ keywords: Servizio ID
 title: whitelistParentDomain e whitelistIframeDomains
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 100%
 
 ---
 
-# whitelistParentDomain e whitelistIframeDomains {#whitelistparentdomain-and-whitelistiframedomains}
+# whitelistParentDomain e whitelistIframeDomains{#whitelistparentdomain-and-whitelistiframedomains}
 
 Queste configurazioni consentono a diverse istanze del codice del servizio ID implementate in un iFrame e sulla pagina padre di comunicare tra di loro. Risolvono problemi rilevati per 2 casi d&#39;uso specifici in cui si può controllare o meno la pagina padre o il dominio e si carica il codice del servizio ID nell&#39;iFrame di un dominio controllato. Sono disponibili in VisitorAPI.js per la versione del codice 2.2 o successiva.
 
@@ -63,7 +63,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 );
 ```
 
-## Casi d&#39;uso {#section-fc2eeb93546b406fae3b102dbcd11de7}
+## Casi di utilizzo {#section-fc2eeb93546b406fae3b102dbcd11de7}
 
 Queste configurazioni aiutano a risolvere il problema dell’impostazione di un cookie del servizio ID e dell’assegnazione di un ID visitatore quando i browser bloccano i cookie di terze parti e se si applica una delle seguenti condizioni:
 

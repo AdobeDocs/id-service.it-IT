@@ -3,8 +3,8 @@ title: Identificazione di visitatori univoci
 description: Documentazione di Adobe ECID (servizio ID)
 exl-id: 379dbf0a-814d-4348-9ac4-d0e8fc13b9dc
 source-git-commit: c65816530ae2269b216f60b9b0450077e5aaac2f
-workflow-type: ht
-source-wordcount: '253'
+workflow-type: tm+mt
+source-wordcount: '250'
 ht-degree: 100%
 
 ---
@@ -22,6 +22,6 @@ Il metodo per identificare i visitatori univoci tra più contesti include una se
 |  5  |  [Intestazione del sottoscrittore mobile HTTP](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=it)  |  2  |  Il dispositivo è riconosciuto come dispositivo mobile.  |
 |  6  |  [Indirizzo IP, agente utente, indirizzo IP gateway](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=it)  |  1  |  Il browser del visitatore non accetta i cookie. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Per informazioni sul modo in cui vengono segnalati i visitatori univoci, vedi [Visitatori univoci in Analytics](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=it).

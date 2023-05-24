@@ -4,13 +4,13 @@ keywords: Servizio ID
 title: Guida di riferimento di Analytics
 exl-id: bfa13677-77e4-4201-94e4-31328523c421
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 100%
 
 ---
 
-# Guida di riferimento di Analytics {#analytics-reference}
+# Guida di riferimento di Analytics{#analytics-reference}
 
 Funzioni o caratteristiche del servizio ID esclusive di Adobe Analytics.
 
@@ -21,4 +21,4 @@ Funzioni o caratteristiche del servizio ID esclusive di Adobe Analytics.
 + [Richieste Analytics ed Experience Cloud ID](legacy-analytics.md)
 + [Implementazione lato server con JavaScript](server-side.md)
 + [Periodo di tolleranza per il servizio ID](grace-period.md)
-<!--+ [Data Collection CNAMEs and Cross-Domain Tracking](cname.md)-->
+   <!--+ [Data Collection CNAMEs and Cross-Domain Tracking](cname.md)-->

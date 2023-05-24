@@ -1,6 +1,6 @@
 ---
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ come parte del progetto. [Firma il Contratto di licenza da collaboratore](http:/
 
 Tutti gli invii devono pervenire sotto forma di richieste di pull e devono essere revisionati
 dai committenti del progetto. Per ulteriori informazioni sull’invio di richieste di pull,
-consulta la [Documentazione sulle richieste di pull di GitHub](https://help.github.com/it/github/collaborating-with-issues-and-pull-requests/about-pull-requests).
+consulta la [Documentazione sulle richieste di pull di GitHub](https://help.github.com/it/articles/about-pull-requests/).
 
 <!--
 Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when

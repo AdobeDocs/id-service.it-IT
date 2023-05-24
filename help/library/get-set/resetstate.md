@@ -4,7 +4,7 @@ keywords: Servizio ID
 title: resetState
 exl-id: 8e8cb299-bb89-4bc1-8841-3091ce0cbd81
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Questa funzione è stata progettata in particolare per aiutare i clienti A4T a risolvere problemi relativi all&#39;utilizzo degli ID su app oppure siti/schermate a pagina singola.
 
-## Casi d&#39;uso {#section-840b88a5cdb042488b340cad5d7b22a5}
+## Casi d’uso {#section-840b88a5cdb042488b340cad5d7b22a5}
 
 Come cliente A4T che utilizza il servizio ID, potresti voler usare la funzione `visitor.resetState()` quando devi:
 

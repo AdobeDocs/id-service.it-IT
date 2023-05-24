@@ -4,13 +4,13 @@ keywords: Servizio ID
 title: Ordine delle operazioni per gli ID di Analytics
 exl-id: 8ee340fe-ef3b-40e6-9441-7ee0c9e20357
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 100%
 
 ---
 
-# Ordine delle operazioni per gli ID di Analytics {#order-of-operations-for-analytics-ids}
+# Ordine delle operazioni per gli ID di Analytics{#order-of-operations-for-analytics-ids}
 
 Dopo l’implementazione del servizio ID visitatore, un visitatore può essere identificato in Analytics in 5 modi diversi.
 

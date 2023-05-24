@@ -4,13 +4,13 @@ keywords: Servizio ID
 title: Richieste Analytics ed Experience Cloud ID
 exl-id: 8c682159-e23a-4641-9ffd-e0028dc2f305
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 100%
 
 ---
 
-# Richieste Analytics ed Experience Cloud ID {#analytics-and-experience-cloud-id-requests}
+# Richieste Analytics ed Experience Cloud ID{#analytics-and-experience-cloud-id-requests}
 
 Panoramica del funzionamento del servizio Experience Cloud Identity con gli ID legacy di Analytics.
 

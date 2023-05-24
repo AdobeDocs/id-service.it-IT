@@ -1,6 +1,6 @@
 ---
 source-git-commit: cadd9fab972936106a48a117022ed473b3614e09
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 100%
 
@@ -59,4 +59,4 @@ Tutti gli articoli in questo archivio utilizzano GitHub Flavored Markdown. Se no
 Nell’archivio pubblico, le etichette automatizzate vengono assegnate alle richieste di pull per consentire di gestire il flusso di lavoro di richieste di pull e conoscere lo stato della richiesta di pull:
 
 * **Change sent to author**: l’autore ha ricevuto una notifica della richiesta di pull in sospeso.
-* **Ready-to-merge**: pronta per la revisione da parte del team di revisione delle richieste di pull.
+* **ready-to-merge**: pronta per la revisione da parte del team di revisione delle richieste di pull.

@@ -4,7 +4,7 @@ keywords: Servizio ID
 title: isCoopSafe
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ Per usare `isCoopSafe` devi:
 
 * Definisci un flag whitelist o blacklist sul tuo account Device Co-op avvalendoti dell&#39;aiuto del tuo consulente [!DNL Adobe]. Non esiste alcun percorso self-service per l&#39;attivazione di questi flag.
 
-## Casi d&#39;uso {#section-d18af2b903f248e18ae8108aaf0a8ebb}
+## Casi di utilizzo {#section-d18af2b903f248e18ae8108aaf0a8ebb}
 
 `isCoopSafe` aiuta a risolvere 2 casi d&#39;uso relativi alla raccolta di dati da parte di membri attuali o potenziali di Device Co-op. Questi casi d&#39;uso si riferiscono al modo in cui i dati dei visitatori del sito vengono trasmessi al Device Co-op per aiutare a costruire il grafico del dispositivo. La tabella seguente descrive come `isCoopSafe` funziona con questi casi d&#39;uso per bloccare o inviare dati al grafico del dispositivo
 
