@@ -2,10 +2,10 @@
 title: Modifiche all’etichettatura SameSite di Google Chrome
 description: Documentazione della libreria Adobe ECID (servizio ID).
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: ee4b7f8df5766372034da2a76e7acb81ba2a65f0
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 100%
+source-wordcount: '1064'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ Per ulteriori informazioni sugli attributi SameSite, visita il [documento sugli 
 | ------ | ------------ |
 | `strict` | I cookie con questa impostazione vengono inviati solo se sia la pagina di provenienza che la pagina di destinazione fanno parte dello stesso dominio del cookie. |
 | `lax` | I cookie con questa impostazione vengono inviati solo quando il dominio visualizzato nell’URL del browser corrisponde al dominio del cookie. Questa è la nuova impostazione predefinita per i cookie in Chrome. |
-| `none` | I cookie con questa impostazione sono disponibili per l’accesso esterno o di terze parti, ad esempio “cross-site”. Prima di questa modifica, `none` era l’impostazione SameSite predefinita per i cookie, quindi l’utilizzo di questa impostazione fa sì che un cookie si comporti in modo simile a quello tradizionale. Google sta tuttavia richiedendo che qualsiasi cookie con questa impostazione specifichi ora il flag Secure, il che significa che il cookie verrà creato e inviato solo con richieste tramite HTTPS. Tutti i cookie cross-site senza il flag Secure verranno rifiutati da Google. |
+| `none` | I cookie con questa impostazione sono disponibili per l’accesso esterno o di terze parti, ad esempio &quot;cross-site&quot;. Prima di questa modifica, `none` era l’impostazione SameSite predefinita per i cookie, quindi l’utilizzo di questa impostazione fa sì che un cookie si comporti in modo simile a quello tradizionale. Google sta tuttavia richiedendo che qualsiasi cookie con questa impostazione specifichi ora il flag Secure, il che significa che il cookie verrà creato e inviato solo con richieste tramite HTTPS. Tutti i cookie cross-site senza il flag Secure verranno rifiutati da Google. |
 
 ## Cosa è necessario sapere come cliente di Adobe Experience Cloud
 
@@ -51,7 +51,7 @@ La maggior parte dei prodotti Adobe dispone già dei flag appropriati assegnati 
 
 **Possibile riduzione della corrispondenza dei cookie per i partner di destinazione e di marketplace (solo Audience Manager)**
 
-Adobe ha il controllo sull’aggiornamento dei cookie, ma non può obbligare i partner ad apportare le modifiche necessarie. La corrispondenza dei cookie può diminuire per i clienti di Audience Manager che utilizzano partner di destinazione o di marketplace che non hanno effettuato questi aggiornamenti.
+Adobe Adobe ha il controllo sull’aggiornamento dei cookie, ma non può obbligare i partner ad apportare le modifiche necessarie. La corrispondenza dei cookie può diminuire per i clienti di Audience Manager che utilizzano partner di destinazione o di marketplace che non hanno effettuato questi aggiornamenti.
 
 **Cookie di terze parti compatibili con Analytics (solo cookie `s_vi` di Analytics)**
 
@@ -117,6 +117,6 @@ Solo i cookie visitatore standard comuni sono elencati nella tabella seguente. P
 | ------ | ---- | ------------------ | ---------------- |
 | _mkto_trk | Prime parti lato client | Nessun valore aggiunto *Chrome utilizza `lax` per impostazione predefinita | Configurabile per pagine esterne |
 
-> !![IMPORTANT] I cookie di terze parti Adobe sono impostati sul lato server
+>  I cookie di terze parti Adobe sono impostati sul lato server.
 
-Per ulteriori informazioni, consulta il documento sui [Criteri di Target per SameSite di Google Chrome](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/google-chrome-samesite-cookie-policies.html?lang=it).
+Per ulteriori informazioni, consulta il documento sui [Criteri di Target per SameSite di Google Chrome](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/google-chrome-samesite-cookie-policies.html).
