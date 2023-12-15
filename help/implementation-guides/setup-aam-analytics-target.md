@@ -1,18 +1,18 @@
 ---
-description: Queste istruzioni sono per i clienti di Analytics, Audience Manager e Target che desiderano usare il servizio Experience Cloud Identity e non usano Dynamic Tag Management (DTM). Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. DTM semplifica il flusso di lavoro di implementazione e assicura automaticamente il posizionamento e la sequenza del codice corretti.
+description: Queste istruzioni sono per i clienti di Analytics, Audienci Manager e Target che desiderano usare il servizio Experience Cloud Identity e non usano i tag di raccolta dati. Tuttavia, si consiglia vivamente di utilizzare i tag per implementare il servizio ID. I tag semplificano il flusso di lavoro di implementazione e garantiscono automaticamente il corretto inserimento e la corretta sequenza del codice.
 keywords: Servizio ID
 title: Implementazione del servizio Experience Cloud Identity per Analytics, Audience Manager e Target
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
 workflow-type: tm+mt
-source-wordcount: '1499'
-ht-degree: 100%
+source-wordcount: '1450'
+ht-degree: 92%
 
 ---
 
 # Implementazione del servizio Experience Cloud Identity per Analytics, Audience Manager e Target {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
 
-Queste istruzioni sono per i clienti di Analytics, Audience Manager e Target che desiderano usare il servizio Experience Cloud Identity e non usano Dynamic Tag Management (DTM). Tuttavia, si consiglia vivamente di usare Dynamic Tag Management per implementare il servizio ID. DTM semplifica il flusso di lavoro di implementazione e assicura automaticamente il posizionamento e la sequenza del codice corretti.
+Queste istruzioni sono per i clienti di Analytics, Audienci Manager e Target che desiderano usare il servizio Experience Cloud Identity e non usano [Tag di raccolta dati](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it). Tuttavia, si consiglia vivamente di utilizzare i tag per implementare il servizio ID. I tag semplificano il flusso di lavoro di implementazione e garantiscono automaticamente il corretto inserimento e la corretta sequenza del codice.
 
 >[!IMPORTANT]
 >
@@ -20,7 +20,6 @@ Queste istruzioni sono per i clienti di Analytics, Audience Manager e Target che
 >
 >* I clienti che usano s_code non possono completare questa procedura. Esegui l’aggiornamento al codice mbox v61 per completare questa procedura.
 >* Configura e verifica questo codice in un ambiente di sviluppo *prima* di implementarlo in produzione.
-
 
 ## Passaggio 1: pianificazione dell&#39;inoltro lato server {#section-880797cc992d4755b29cada7b831f1fc}
 
@@ -49,7 +48,6 @@ Il servizio ID richiede la `VisitorAPI.js` libreria dei codici. Per scaricare la
 >
 >* Le versioni precedenti dell’API del servizio ID inserivano questa funzione in una posizione diversa e richiedevano una sintassi diversa. Se stai eseguendo la migrazione da una versione precedente alla [versione 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572), tieni presente la nuova posizione e la sintassi qui documentate.
 >* Il codice in maiuscolo è un segnaposto per i valori effettivi. Sostituisci questo testo con il tuo ID organizzazione, l’URL del server di tracciamento o un altro valore denominato.
-
 
 **Parte 1: copia la funzione Visitor.getInstance di seguito**
 
