@@ -1,18 +1,18 @@
 ---
-description: Queste istruzioni sono per i clienti di Analytics e Audienci Manager che desiderano usare il servizio Experience Cloud Identity e non usano i tag di raccolta dati. Tuttavia, si consiglia vivamente di utilizzare i tag per implementare il servizio ID. I tag semplificano il flusso di lavoro di implementazione e garantiscono automaticamente il corretto inserimento e la corretta sequenza del codice.
+description: Queste istruzioni sono per i clienti di Analytics e Audience Manager che desiderano usare il servizio Experience Cloud Identity e non usano i tag di Raccolta dati. Tuttavia, si consiglia vivamente di usare i tag per implementare il servizio ID. I tag agevolano il flusso di lavoro di implementazione e assicurano automaticamente il posizionamento e la sequenza del codice corretti.
 keywords: Servizio ID
 title: Implementazione del servizio Experience Cloud Identity per Analytics e Audience Manager
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
 source-git-commit: 26152f559150f5bd67d4802b8464446482f2e9a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1183'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Implementazione del servizio Experience Cloud Identity per Analytics e Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
-Queste istruzioni sono per i clienti di Analytics e Audienci Manager che desiderano usare il servizio Experience Cloud Identity e non usano [Tag di raccolta dati](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it). Tuttavia, si consiglia vivamente di utilizzare i tag per implementare il servizio ID. I tag semplificano il flusso di lavoro di implementazione e garantiscono automaticamente il corretto inserimento e la corretta sequenza del codice.
+Queste istruzioni sono per i clienti di Analytics e Audience Manager che vogliono utilizzare il servizio Experience Cloud Identity e che non usano i tag di [Raccolta dati](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it). Tuttavia, si consiglia vivamente di usare i tag per implementare il servizio ID. I tag agevolano il flusso di lavoro di implementazione e assicurano automaticamente il posizionamento e la sequenza del codice corretti.
 
 >[!IMPORTANT]
 >
