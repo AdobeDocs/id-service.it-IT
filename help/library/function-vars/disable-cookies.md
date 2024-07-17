@@ -1,5 +1,5 @@
 ---
-description: Flag booleano opzionale che impedisce al servizio Experience Cloud Identity di restituire il cookie di terze parti demdex.net.
+description: Flag booleano opzionale che impedisce a Experience Cloud Identity Service di restituire il cookie di terze parti demdex.net.
 keywords: Servizio ID
 title: disableThirdPartyCookies
 exl-id: 19d12822-0e17-4a1c-8e9c-25a22e20a4a8
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # disableThirdPartyCookies{#disablethirdpartycookies}
 
-Flag booleano opzionale che impedisce al servizio Experience Cloud Identity di restituire il cookie di terze parti demdex.net.
+Flag booleano opzionale che impedisce a Experience Cloud Identity Service di restituire il cookie di terze parti demdex.net.
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ Flag booleano opzionale che impedisce al servizio Experience Cloud Identity di r
 
 **Sintassi:** `disableThirdPartyCookies: true|false` (l&#39;impostazione predefinita è `false`). Per `VisitorAPI.js` versione 3.0.0 o successiva.
 
-Quando `disableThirdPartyCookies: true`, il servizio ID non restituisce il cookie di terze parti demdex.net (vedi [Cookie e il servizio Experience Cloud Identity](../../introduction/cookies.md)). Se il browser del visitatore del sito contiene già questo cookie, il servizio ID non lo usa per creare un nuovo identificatore Experience Cloud ID (MID) o restituire un ID esistente. Il servizio ID crea un nuovo MID casuale nel cookie di prime parti. Una volta attivato, è possibile raccogliere i dati con il servizio ID e condividerlo tra diverse soluzioni Experience Cloud.
+Quando `disableThirdPartyCookies: true`, il servizio ID non restituisce il cookie di terze parti demdex.net (vedi [I cookie ed Experience Cloud Identity Service](../../introduction/cookies.md)). Se il browser del visitatore del sito contiene già questo cookie, il servizio ID non lo usa per creare un nuovo identificatore Experience Cloud ID (MID) o restituire un ID esistente. Il servizio ID crea un nuovo MID casuale nel cookie di prime parti. Una volta attivato, è possibile raccogliere i dati con il servizio ID e condividerlo tra diverse soluzioni Experience Cloud.
 
 **Esempio di codice**
 

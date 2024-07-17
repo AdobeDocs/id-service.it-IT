@@ -1,16 +1,16 @@
 ---
 description: Istruzioni, strumenti e procedure utili per determinare se il servizio ID funziona correttamente. Questi test sono applicabili al servizio ID in generale e per diverse combinazioni del servizio ID e delle soluzioni Experience Cloud.
 keywords: Servizio ID
-title: Test e verifica del servizio Experience Cloud Identity
+title: Testare e verificare Experience Cloud Identity Service
 exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '642'
 ht-degree: 100%
 
 ---
 
-# Test e verifica del servizio Experience Cloud Identity{#test-and-verify-the-experience-cloud-id-service}
+# Testare e verificare Experience Cloud Identity Service{#test-and-verify-the-experience-cloud-id-service}
 
 Istruzioni, strumenti e procedure utili per determinare se il servizio ID funziona correttamente. Questi test sono applicabili al servizio ID in generale e per diverse combinazioni del servizio ID e delle soluzioni Experience Cloud.
 
@@ -30,7 +30,7 @@ Utilizzando [Adobe Debugger](https://experienceleague.adobe.com/docs/analytics/i
 
 ## Test con Adobe Debugger {#section-861365abc24b498e925b3837ea81d469}
 
-L&#39;integrazione del servizio è configurata correttamente se vedi un identificatore [!DNL Experience Cloud ID] (MID) nella risposta di [!DNL Adobe] Debugger. Per maggiori informazioni sull’identificatore MID, consulta [Cookie e il servizio Experience Cloud Identity](../introduction/cookies.md).
+L&#39;integrazione del servizio è configurata correttamente se vedi un identificatore [!DNL Experience Cloud ID] (MID) nella risposta di [!DNL Adobe] Debugger. Per maggiori informazioni sull’identificatore MID, consulta [I cookie ed Experience Cloud Identity Service](../introduction/cookies.md).
 
 Per verificare lo stato del servizio ID con il [!DNL Adobe] [debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=it):
 

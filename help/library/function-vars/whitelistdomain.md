@@ -5,7 +5,7 @@ title: whitelistParentDomain e whitelistIframeDomains
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '861'
 ht-degree: 100%
 
 ---
@@ -63,7 +63,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 );
 ```
 
-## Casi di utilizzo {#section-fc2eeb93546b406fae3b102dbcd11de7}
+## Casi d’uso {#section-fc2eeb93546b406fae3b102dbcd11de7}
 
 Queste configurazioni aiutano a risolvere il problema dell’impostazione di un cookie del servizio ID e dell’assegnazione di un ID visitatore quando i browser bloccano i cookie di terze parti e se si applica una delle seguenti condizioni:
 

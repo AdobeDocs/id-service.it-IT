@@ -5,7 +5,7 @@ title: appendVisitorIDsTo (Monitoraggio interdominio)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
 source-git-commit: c035f0af76f70322e4d79ed842502b26c3f155ac
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '365'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,7 @@ Sommario:
 
 ## Tieni traccia dei visitatori su più domini quando i browser bloccano i cookie di terze parti {#section-7251d88befd440b4b79520e33c5aa44a}
 
-Il servizio ID scrive un cookie di prime e terze parti nel browser quando una persona visita il sito (consulta [Cookie e il servizio Experience Cloud Identity](../../introduction/cookies.md)). Il cookie di prima parte contiene il MID, un ID univoco che identifica quel visitatore specifico. Il cookie di terza parte contiene un altro ID usato dal servizio ID per generare il MID. Quando un browser blocca il cookie di terza parte, il servizio ID non può:
+Il servizio ID scrive un cookie di prime e terze parti nel browser quando una persona visita il sito (consulta [I cookie ed Experience Cloud Identity Service](../../introduction/cookies.md)). Il cookie di prima parte contiene il MID, un ID univoco che identifica quel visitatore specifico. Il cookie di terza parte contiene un altro ID usato dal servizio ID per generare il MID. Quando un browser blocca il cookie di terza parte, il servizio ID non può:
 
 * Rigenerare l’ID univoco per quel visitatore del sito quando si sposta su un altro dominio.
 * Tenere traccia dei visitatori su domini diversi di proprietà della tua organizzazione.

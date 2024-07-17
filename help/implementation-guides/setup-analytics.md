@@ -1,18 +1,18 @@
 ---
-description: Queste istruzioni sono per chi utilizza Analytics e desidera usare il servizio Experience Cloud Identity e non usa i tag di Raccolta dati. Tuttavia, si consiglia vivamente di usare i tag per implementare il servizio ID. I tag agevolano il flusso di lavoro di implementazione e assicurano automaticamente il posizionamento e la sequenza del codice corretti.
+description: Queste istruzioni sono per chi utilizza Analytics, desidera usare Experience Cloud Identity Service e non usa i tag di Raccolta dati. Tuttavia, si consiglia vivamente di usare i tag per implementare il servizio ID. I tag agevolano il flusso di lavoro di implementazione e assicurano automaticamente il posizionamento e la sequenza del codice corretti.
 keywords: Servizio ID
-title: Implementazione del servizio Experience Cloud Identity per Analytics
+title: Implementare Experience Cloud Identity Service per Analytics
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
 source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 100%
 
 ---
 
-# Implementazione del servizio Experience Cloud Identity per Analytics {#implement-the-experience-cloud-id-service-for-analytics}
+# Implementare Experience Cloud Identity Service per Analytics {#implement-the-experience-cloud-id-service-for-analytics}
 
-Queste istruzioni sono per chi utilizza Analytics e desidera usare il servizio Experience Cloud Identity e non usa i [tag di Raccolta dati](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it). Tuttavia, si consiglia vivamente di usare i tag per implementare il servizio ID. I tag agevolano il flusso di lavoro di implementazione e assicurano automaticamente il posizionamento e la sequenza del codice corretti.
+Queste istruzioni sono per chi utilizza Analytics, desidera usare Experience Cloud Identity Service e non usa i [tag di Raccolta dati](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it). Tuttavia, si consiglia vivamente di usare i tag per implementare il servizio ID. I tag agevolano il flusso di lavoro di implementazione e assicurano automaticamente il posizionamento e la sequenza del codice corretti.
 
 >[!IMPORTANT]
 >
@@ -169,7 +169,7 @@ Devi impostare un periodo di tolleranza se dopo la migrazione al servizio ID ric
 
 Puoi interrompere il periodo di tolleranza dopo che l’implementazione sarà in grado di acquisire il MID invece di leggere il cookie s_vi.
 
-Consulta [Cookie e il servizio Experience Cloud Identity](../introduction/cookies.md).
+Consulta [I cookie ed Experience Cloud Identity Service](../introduction/cookies.md).
 
 Se invii dati a un sistema interno da un feed di dati click-stream e per i processi sono utilizzate le colonne `visid_high` e `visid_low`, devi attivare un periodo di tolleranza.
 
@@ -190,7 +190,7 @@ Per verificare l’implementazione del servizio ID, controlla i seguenti element
 * [Cookie AMCV](../introduction/cookies.md) nel dominio di hosting della pagina.
 * Valore MID nella richiesta di immagine [!DNL Analytics] con lo [strumento Adobe Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=it).
 
-Consulta [Test e verifica del servizio Experience Cloud Identity](../implementation-guides/test-verify.md).
+Consulta [Testare e verificare Experience Cloud Identity Service](../implementation-guides/test-verify.md).
 
 **Distribuisci il codice**
 

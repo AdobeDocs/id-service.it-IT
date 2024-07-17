@@ -1,22 +1,22 @@
 ---
 description: Panoramica del processo di richiesta ID e risposta. Questi esempi descrivono l'assegnazione degli ID per siti individuali, per siti diversi e per siti gestiti da diversi clienti Experience Cloud con i propri ID organizzazione.
 keywords: Servizio ID
-title: Richiesta e impostazione degli ID da parte del servizio Experience Cloud Identity
+title: Richiesta e impostazione degli ID da parte di Experience Cloud Identity Service
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
 source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '732'
 ht-degree: 100%
 
 ---
 
-# Richiesta e impostazione degli ID da parte del servizio Experience Cloud Identity{#how-the-experience-cloud-id-service-requests-and-sets-ids}
+# Richiesta e impostazione degli ID da parte di Experience Cloud Identity Service{#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
 Panoramica del processo di richiesta ID e risposta. Questi esempi descrivono l&#39;assegnazione degli ID per siti individuali, per siti diversi e per siti gestiti da diversi clienti Experience Cloud con i propri ID organizzazione.
 
 >[!NOTE]
 >
->Se non sai in che modo il servizio Experience Cloud Identity crea l’ID visitatore, consulta la sezione [Experience Cloud](../introduction/cookies.md).
+>Se non sai in che modo Experience Cloud Identity Service crea l’ID visitatore, consulta la sezione [Experience Cloud](../introduction/cookies.md).
 
 ## Richiesta di un Experience Cloud ID {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 

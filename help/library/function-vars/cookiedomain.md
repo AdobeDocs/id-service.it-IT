@@ -1,18 +1,18 @@
 ---
-description: Obbligatoria per i domini di livello superiore con più parti, se una delle ultime due parti dell'URL comprende più di due caratteri.
+description: Obbligatoria per i domini di livello superiore con più parti, se una delle ultime due parti dell’URL comprende più di due caratteri.
 keywords: Servizio ID
 title: cookieDomain
 exl-id: 280416ad-372a-4a59-a938-0f49c0ce300f
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '56'
+source-wordcount: '58'
 ht-degree: 100%
 
 ---
 
 # cookieDomain{#cookiedomain}
 
-Obbligatoria per i domini di livello superiore con più parti, se una delle ultime due parti dell&#39;URL comprende più di due caratteri.
+Obbligatoria per i domini di livello superiore con più parti, se una delle ultime due parti dell’URL comprende più di due caratteri.
 
 **Sintassi:** ` cookieDomain: " *`URL`*"` (Il prefisso `www` non è obbligatorio.)
 

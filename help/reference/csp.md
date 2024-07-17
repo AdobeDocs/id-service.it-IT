@@ -1,16 +1,16 @@
 ---
 description: Un'informativa sulla sicurezza dei contenuti (CSP) è un'intestazione HTTP e una funzione di sicurezza che offre ai browser il controllo sul tipo di risorse caricate su una pagina Web. Consulta questa sezione se usi il servizio ID e hai una CSP rigida che adotta delle whitelist per accettare le risorse dai domini fidati. Dovrai aggiungere i domini Adobe elencati di seguito alle whitelist della CSP.
 keywords: Servizio ID
-title: Informativa sulla sicurezza dei contenuti e servizio Experience Cloud Identity
+title: Informativa sulla sicurezza dei contenuti ed Experience Cloud Identity Service
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 100%
+source-wordcount: '523'
+ht-degree: 99%
 
 ---
 
-# Informativa sulla sicurezza dei contenuti e servizio Experience Cloud Identity {#content-security-policies-and-the-experience-cloud-id-service}
+# Informativa sulla sicurezza dei contenuti ed Experience Cloud Identity Service {#content-security-policies-and-the-experience-cloud-id-service}
 
 Un&#39;informativa sulla sicurezza dei contenuti (CSP) è un&#39;intestazione HTTP e una funzione di sicurezza che offre ai browser il controllo sul tipo di risorse caricate su una pagina Web. Consulta questa sezione se usi il servizio ID e hai una CSP rigida che adotta delle whitelist per accettare le risorse dai domini fidati. Dovrai aggiungere i domini Adobe elencati di seguito alle whitelist della CSP.
 
@@ -26,7 +26,7 @@ La CSP usa l&#39;intestazione HTTP `Content-Security-Policy` per controllare il 
 
 L&#39;uso della CSP è comune e noto. Questa documentazione non ha l&#39;obiettivo di spiegare in maniera dettagliata la CSP (per maggiori informazioni consulta i link alle informazioni correlate). Ciò che è importante è capire quali nomi dei domini Adobe devi aggiungere a una CSP se ne usi una e se hai delle politiche di sicurezza restrittive. L’aggiunta di questi domini consente ai browser dei visitatori che accedono al tuo sito di effettuare chiamate importanti alle risorse Experience Cloud che utilizzi.
 
-## Domini Experience Cloud per la creazione di whitelist {#section-30693e9a96834edfbf04de9e698cf2aa}
+## Domini di Experience Cloud per la creazione di whitelist {#section-30693e9a96834edfbf04de9e698cf2aa}
 
 Aggiungi questi nomi di dominio o URL alla tua CSP per ogni soluzione o servizio Experience Cloud che utilizzi.
 
@@ -58,7 +58,7 @@ Aggiungi questi nomi di dominio o URL alla tua CSP per ogni soluzione o servizio
    <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-   <li>Se utilizzi Adobe Launch per distribuire i tag, devi aggiungere anche <code>https://assets.adobedtm.com</code> all’elenco dei domini.</li></ul></p> <p>Le chiamate al dominio <span class="codeph">demdex.net</span> vengono utilizzate per generare i <a href="../introduction/cookies.md" format="dita" scope="local">cookie e il servizio Experience Cloud Identity</a> e per le sincronizzazioni degli ID. Vedi anche <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=it" format="https" scope="external">Informazioni sulle chiamate al dominio demdex</a>. </p> </td> </tr> 
+   <li>Se utilizzi Adobe Launch per distribuire i tag, devi aggiungere anche <code>https://assets.adobedtm.com</code> all’elenco dei domini.</li></ul></p> <p>Le chiamate al dominio <span class="codeph">demdex.net</span> vengono utilizzate per generare <a href="../introduction/cookies.md" format="dita" scope="local">I cookie ed Experience Cloud Identity Service</a> e per le sincronizzazioni degli ID. Vedi anche <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=it" format="https" scope="external">Informazioni sulle chiamate al dominio demdex</a>. </p> </td> </tr> 
  <tr>
  <td colname="col1"> <p> <b>Plug-in Activity Map</b> </p> </td> 
  <td colname="col2"> <p>Modifica la tua CSP in modo che includa *.adobe.com. **Nota**: se hai installato Activity Map prima di gennaio 2020, il browser visualizzerà comunque una richiesta iniziale a *.omniture.com ma verrà reindirizzato a *.adobe.com. </p></td> 
@@ -75,4 +75,3 @@ Aggiungi questi nomi di dominio o URL alla tua CSP per ogni soluzione o servizio
 >* [Riferimento all’informativa sulla sicurezza dei contenuti](https://content-security-policy.com/)
 >* [MDN: informativa sulla sicurezza dei contenuti](https://developer.mozilla.org/it/docs/Web/HTTP/CSP)
 >* [Wikipedia: informativa sulla sicurezza dei contenuti](https://en.wikipedia.org/wiki/Content_Security_Policy)
-

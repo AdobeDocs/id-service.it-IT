@@ -1,18 +1,18 @@
 ---
-description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2017.
+description: Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service per il 2017.
 keywords: Servizio ID
 title: Note sulla versione 2017
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
 source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 100%
+source-wordcount: '714'
+ht-degree: 99%
 
 ---
 
 # Note sulla versione 2017 {#release-notes}
 
-Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2017.
+Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service per il 2017.
 
 Queste modifiche vengono riportate anche nelle [note sulla versione di Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=it).
 
@@ -50,7 +50,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * È stato corretto un bug relativo a Chrome a causa del quale il servizio ID generava un errore quando si faceva clic sul pulsante Indietro in questo browser.
 * Il servizio ID ora riavvia la sincronizzazione degli ID quando l’ID di regione cambia nella risposta alla chiamata dell’evento.
-* È stata aggiunta della nuova documentazione, [Policy di sicurezza dei contenuti e il servizio Experience Cloud Identity](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), che spiega come inserire nella whitelist le chiamate ai domini Adobe usati dal servizio ID.
+* È stata aggiunta della nuova documentazione, [Policy di sicurezza dei contenuti ed Experience Cloud Identity Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), che spiega come inserire nella whitelist le chiamate ai domini Adobe usati dal servizio ID.
 
 <!-- ## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
@@ -154,7 +154,7 @@ Data di rilascio: giugno 2017
    <td colname="col2"> <p>Link aggiunti alla documentazione di <span class="keyword">Audience Manager</span> che descrive le chiamate al dominio <span class="codeph">demdex.net</span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="../library/function-vars/subdomain-config.md" format="dita" scope="local"> Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza </a> </p> </td> 
+   <td colname="col1"> <p> <a href="../library/function-vars/subdomain-config.md" format="dita" scope="local"> Informazioni sulla sincronizzazione degli ID e sui tassi di corrispondenza </a> </p> </td> 
    <td colname="col2"> <p>Sezione <span class="keyword">Media Optimizer</span> rivista per descrivere la chiamata a <span class="codeph">cm.eversttech.net</span>. Questa è una sincronizzazione ID automatica che il servizio ID esegue con <span class="keyword">Media Optimizer</span>. Questa funzione è stata rilasciata a gennaio 2017. Vedi la <a href="../release-notes/notes-2017.md#section-0ceac6007c1241b58ad607e2b76b2b7e" format="dita" scope="local">Versione 2.0</a> seguente. </p> </td> 
   </tr> 
  </tbody> 
@@ -175,7 +175,7 @@ Data di rilascio: febbraio 2017
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> Proprietà API del servizio ID, <span class="codeph">idSyncContainerID</span></p> </td> 
+   <td colname="col1"> <p> Proprietà API del servizio ID, <span class="codeph"> idSyncContainerID</span></p> </td> 
    <td colname="col2"> <p>Questa proprietà imposta l'ID del contenitore utilizzato da <span class="keyword">Audience Manager</span> per la sincronizzazione degli ID. Consulta <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external"> idSyncContainerID</a>. </p> </td> 
   </tr> 
   <tr> 
@@ -199,7 +199,7 @@ Gennaio 2017
 
 >[!IMPORTANT]
 >
->Per impostazione predefinita, il codice v2.0 del servizio ID sincronizza automaticamente gli ID con Adobe Media Optimizer. Questo significa che vedrai una chiamata dalla pagina a `cm.eversttech.net`, che è il dominio [!DNL Media Optimizer] legacy controllato da [!DNL Adobe]. Consultare anche [Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
+>Per impostazione predefinita, il codice v2.0 del servizio ID sincronizza automaticamente gli ID con Adobe Media Optimizer. Questo significa che vedrai una chiamata dalla pagina a `cm.eversttech.net`, che è il dominio [!DNL Media Optimizer] legacy controllato da [!DNL Adobe]. Consulta anche [Informazioni sulla sincronizzazione degli ID e sui tassi di corrispondenza](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
 **Correzioni e miglioramenti**
 

@@ -1,16 +1,16 @@
 ---
 description: Il servizio ID utilizza l'ID organizzazione, il cookie AMCV di Experience Cloud e il cookie demdex per creare e memorizzare identificatori univoci e costanti per i visitatori del sito. Questi cookie permettono al servizio ID di tenere traccia dei visitatori nei diversi domini e di condividere i dati tra le varie soluzioni Experience Cloud.
 keywords: playstation; servizio ID
-title: Cookie e il servizio Experience Cloud Identity
+title: I cookie ed Experience Cloud Identity Service
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
 source-git-commit: 33e467ade389144423abf14539aad8a5a5f69d21
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '941'
 ht-degree: 100%
 
 ---
 
-# Cookie e il servizio Experience Cloud Identity{#cookies-and-the-experience-cloud-id-service}
+# I cookie ed Experience Cloud Identity Service{#cookies-and-the-experience-cloud-id-service}
 
 Il servizio ID utilizza l&#39;ID organizzazione, il cookie AMCV di Experience Cloud e il cookie demdex per creare e memorizzare identificatori univoci e costanti per i visitatori del sito. Questi cookie permettono al servizio ID di tenere traccia dei visitatori nei diversi domini e di condividere i dati tra le varie soluzioni Experience Cloud.
 
@@ -137,4 +137,4 @@ La tabella seguente descrive i flag per i cookie Experience Cloud:
 
 ## Passaggi successivi {#section-8db1727a63bc4ff68b495f270315d453}
 
-Consulta [Richiesta e impostazione degli ID da parte del servizio Experience Cloud Identity...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
+Consulta [Richiesta e impostazione degli ID da parte di Experience Cloud Identity Service...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).

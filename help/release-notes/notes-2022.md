@@ -1,18 +1,18 @@
 ---
-description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity.
+description: Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service.
 keywords: Servizio ID
 title: Note sulla versione 2022
-exl-id: 1550f43f-81be-447e-904c-b408785965fe
-source-git-commit: fcd3e8b65bb84e94eabac7ffec6a34f4cf75ec3d
+exl-id: 2e2de89e-75b3-484d-ae4f-99054ef9956f
+source-git-commit: 790542037f3240cf4eb8635549e240b224070f85
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '116'
 ht-degree: 100%
 
 ---
 
-# Note sulla versione 2022 del servizio Experience Cloud Identity
+# Note sulla versione 2022 di Experience Cloud Identity Service
 
-Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity.
+Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service.
 
 ## Visitor 5.5.0
 

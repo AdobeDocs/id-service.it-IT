@@ -5,8 +5,8 @@ title: sdidParamExpiry
 exl-id: 5458ffa5-03d1-4c52-907d-c50fe00ce35d
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 100%
+source-wordcount: '260'
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ Se hai bisogno di modificare il timeout del codice SDID predefinito, aggiungi `s
 
 **Esempio di codice**
 
-Una volta configurato il tuo codice del servizio ID potrebbe assomigliare a questo esempio. Questo esempio imposta il timeout del codice SDID a 15 secondi. Questa configurazione funziona con Metodo helper [appendSupplementalDataIDTo](../../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d).
+Una volta configurato il tuo codice del servizio ID potrebbe assomigliare a questo esempio. Questo esempio imposta il timeout del codice SDID a 15 secondi. Questa configurazione funziona con il metodo helper [appendSupplementalDataIDTo](../../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d).
 
 ```js
 var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 

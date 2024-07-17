@@ -1,18 +1,18 @@
 ---
-description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity.
+description: Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service.
 keywords: Servizio ID
 title: Note sulla versione 2020
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
 source-git-commit: dce2c0036f697507381d0763c2f6a9538155681c
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 100%
+source-wordcount: '218'
+ht-degree: 99%
 
 ---
 
 # Note sulla versione 2020 di Experience Cloud {#release-notes}
 
-Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity.
+Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service.
 
 ## Versione 5.1.1
 
@@ -37,7 +37,7 @@ Per ulteriori informazioni su questi valori di attributo, visita [web.dev](https
 
 ## Versione 4.6
 
-* È stato impostato il flag `loadSSL` per impostazione predefinita. Tutte le chiamate al servizio identità sono impostate su `https` per impostazione predefinita.  I clienti possono impostarlo su false se desiderano chiamare i servizi identità su HTTP dalle proprie `non-ssl` pagine.
+* È stato impostato il flag `loadSSL` per impostazione predefinita. Tutte le chiamate a Identity Service sono impostate su `https` per impostazione predefinita. I clienti possono impostarlo su falso se desiderano chiamare i servizi Identity Service su HTTP dalle proprie pagine `non-ssl`.
 * È stata aggiornata la funzione utilizzata per rilevare la versione di `Internet-Explorer (IE)`, per risolvere un problema segnalato da `ESLint`.
 È stato risolto un problema di prestazioni in `Internet-Explorer (IE) 11`, nel caso di `pre-approval` del consenso esplicito per l’ECID e successivo aggiornamento.
 

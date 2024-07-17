@@ -1,5 +1,5 @@
 ---
-description: getCustomerIDs restituisce tutti gli ID cliente impostati dal servizio Experience Cloud Identity.
+description: getCustomerIDs restituisce tutti gli ID cliente impostati da Experience Cloud Identity Service.
 keywords: Servizio ID
 title: getCustomerIDs
 exl-id: 4a05509b-99f6-42c8-a539-0784f5b9fabc
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # getCustomerIDs{#getcustomerids}
 
-getCustomerIDs restituisce tutti gli ID cliente impostati dal servizio Experience Cloud Identity.
+getCustomerIDs restituisce tutti gli ID cliente impostati da Experience Cloud Identity Service.
 
 <!--
 Is there anything else we can say about this??

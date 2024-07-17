@@ -1,18 +1,18 @@
 ---
-description: Restituisce l’ID di regione del servizio Experience Cloud Identity. Un ID di regione (o hint di posizione) è un identificatore numerico per la posizione geografica di un particolare datacenter del servizio ID. Per effettuare chiamate API lato server ad Audience Manager è necessario disporre dell’ID di regione.
+description: Restituisce l’ID di regione di Experience Cloud Identity Service. Un ID di regione (o hint di posizione) è un identificatore numerico per la posizione geografica di un particolare datacenter del servizio ID. Per effettuare chiamate API lato server ad Audience Manager è necessario disporre dell’ID di regione.
 keywords: Servizio ID
 title: getLocationHint
 exl-id: 0213f828-a985-4201-8a38-0a4b170ed057
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '177'
 ht-degree: 100%
 
 ---
 
 # getLocationHint{#getlocationhint}
 
-Restituisce l’ID di regione del servizio Experience Cloud Identity. Un ID di regione (o hint di posizione) è un identificatore numerico per la posizione geografica di un particolare datacenter del servizio ID. Per effettuare chiamate API lato server ad Audience Manager è necessario disporre dell’ID di regione.
+Restituisce l’ID di regione di Experience Cloud Identity Service. Un ID di regione (o hint di posizione) è un identificatore numerico per la posizione geografica di un particolare datacenter del servizio ID. Per effettuare chiamate API lato server ad Audience Manager è necessario disporre dell’ID di regione.
 
 **Sintassi:** ` var *`nome variabile`* = visitor.getLocationHint()`
 

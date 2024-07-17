@@ -5,7 +5,7 @@ title: ID cliente e stati di autenticazione
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
 source-git-commit: 159b37e360b586bbada13e34793009e3067de668
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '595'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ Il `setCustomerIDs` metodo accetta più ID cliente per lo stesso visitatore. In 
 >
 >`setCustomerIDs` (sincronizzazione ID cliente) è richiesto per gli attributi dei clienti e le funzionalità dei servizi principali. La sincronizzazione degli ID cliente è un metodo di identificazione facoltativo per [!DNL Analytics]. [!DNL Target] richiede `Visitor.AuthState.AUTHENTICATED` per il funzionamento degli attributi cliente. Alcuni esempi sono disponibili in [Servizi principali - Come attivare le proprie soluzioni](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/solutions-core-services.html?lang=it).
 
-A partire dalla versione 1.5 del servizio Experience Cloud Identity, `setCustomerIDs` include l’oggetto facoltativo `AuthState`. `AuthState` identifica i visitatori in base al loro stato di autenticazione (ad es. connessi o disconnessi). Lo stato di autenticazione si imposta con uno dei valori di stato elencati nella tabella. Lo stato di autenticazione viene restituito come numero intero.
+A partire dalla versione 1.5 di Experience Cloud Identity Service, `setCustomerIDs` include l’oggetto facoltativo `AuthState`. `AuthState` identifica i visitatori in base al loro stato di autenticazione (ad es. connessi o disconnessi). Lo stato di autenticazione si imposta con uno dei valori di stato elencati nella tabella. Lo stato di autenticazione viene restituito come numero intero.
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
@@ -92,7 +92,6 @@ Gli ID cliente possono includere combinazioni di ID e stati di identificazione, 
 >* Per gli ID, usa solo valori non codificati.
 >* Gli ID cliente e gli stati di autenticazione non sono memorizzati nel cookie dell’ID visitatore. Devono essere impostati per ciascuna pagina o contesto dell’applicazione.
 >* Negli ID cliente non devono essere incluse informazioni identificative della persona (Personally Identifiable Information, PII). Invece di utilizzare informazioni PII per identificare un visitatore (ad esempio l’indirizzo e-mail), consigliamo di memorizzare una versione con hashing o codificata di queste informazioni. La libreria ECID supporta l’hashing degli identificatori utente. Consulta [Supporto di hashing SHA-256 per setCustomerIDs](/help/reference/hashing-support.md).
-
 
 ```js
 // Single ID with a single authentication state 

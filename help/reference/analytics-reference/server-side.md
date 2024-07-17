@@ -5,7 +5,7 @@ title: Implementazione lato server con JavaScript
 exl-id: 1986ee11-2021-4f34-bb56-6eaa87b6dd6d
 source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '180'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ Controlla sia l&#39;ID visitatore di Experience Cloud, sia quello di Analytics e
 
 >[!IMPORTANT]
 >
->AppMeasurement per Java al momento non supporta il servizio Experience Cloud Identity.
+>AppMeasurement per Java al momento non supporta Experience Cloud Identity Service.
 
 ## API di inserimento dati {#section-955ce7664a4646d38b3005cb2df40baf}
 
@@ -32,4 +32,4 @@ Consulta [Tag XML supportati](https://developer.adobe.com/).
 
 ## AppMeasurement per Java {#section-d664b94934924d048300d9c2b6560085}
 
-Al momento il servizio Experience Cloud Identity non è supportato da AppMeasurement per Java.
+Al momento Experience Cloud Identity Service non è supportato da AppMeasurement per Java.

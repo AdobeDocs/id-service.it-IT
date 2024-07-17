@@ -1,19 +1,19 @@
 ---
-description: Adobe Experience Platform Launch è lo strumento principale usato per configurare, distribuire e integrare il servizio Experience Cloud Identity con le altre soluzioni Experience Cloud.
+description: Adobe Experience Platform Launch è lo strumento principale usato per configurare, distribuire e integrare Experience Cloud Identity Service con le altre soluzioni Experience Cloud.
 title: Implementare con Launch
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: cf197fde-3b93-4578-b24e-2db5633f043c
 source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '167'
 ht-degree: 100%
 
 ---
 
 # Implementazione con i tag di Experience Platform {#implement-with-launch}
 
-I Tag in Adobe Experience Platform sono lo strumento principale usato per configurare, distribuire e integrare il servizio Identity di Experience Cloud con le altre soluzioni Experience Cloud.
+I Tag in Adobe Experience Platform sono lo strumento principale usato per configurare, distribuire e integrare Experience Cloud Identity Service con le altre soluzioni Experience Cloud.
 
 ## Informazioni sui tag di Experience Platform {#section-611711602854464ea351a4af80a8dafe}
 

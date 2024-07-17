@@ -1,5 +1,5 @@
 ---
-description: Flag booleano facoltativo che controlla come il servizio Experience Cloud Identity carica l’iFrame di sincronizzazione ID.
+description: Flag booleano facoltativo che controlla come Experience Cloud Identity Service carica l’iFrame di sincronizzazione ID.
 keywords: Servizio ID
 title: idSyncAttachIframeOnWindowLoad
 exl-id: 44c45378-f007-4d87-913a-d6bb9961948c
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # idSyncAttachIframeOnWindowLoad{#idsyncattachiframeonwindowload}
 
-Flag booleano facoltativo che controlla come il servizio Experience Cloud Identity carica l’iFrame di sincronizzazione ID.
+Flag booleano facoltativo che controlla come Experience Cloud Identity Service carica l’iFrame di sincronizzazione ID.
 
 **Sintassi:** ` `idSyncAttachIframeOnWindowLoad= true false`` (l&#39;impostazione predefinita è `false`).
 

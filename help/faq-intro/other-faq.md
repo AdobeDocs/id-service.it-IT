@@ -16,7 +16,7 @@ Domande frequenti su caratteristiche, funzionalità e problemi correlati all’u
 
 ## Analytics e Audience Manager {#section-b3dd206d497041acb04554c6fb1c912a}
 
-**La cronologia delle visite di un utente verrà esportata da [!DNL Adobe Analytics] a [!DNL Audience Manager] in seguito all’implementazione del servizio Experience Cloud Identity?**
+**La cronologia delle visite di un utente verrà esportata da [!DNL Adobe Analytics] a [!DNL Audience Manager] in seguito all’implementazione di Experience Cloud Identity Service?**
 
 In questo caso sono disponibili due opzioni:
 

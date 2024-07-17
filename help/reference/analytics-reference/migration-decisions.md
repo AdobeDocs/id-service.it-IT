@@ -1,18 +1,18 @@
 ---
-description: Prima di implementare il servizio Experience Cloud Identity, è necessario comprendere in che modo condiziona il tracciamento dei visitatori in più domini e i potenziali problemi relativi alla raccolta dei dati con metodi diversi o tramite file JavaScript.
+description: Prima di implementare Experience Cloud Identity Service, è necessario comprendere in che modo condiziona il tracciamento dei visitatori in più domini e i potenziali problemi relativi alla raccolta dei dati con metodi diversi o tramite file JavaScript.
 keywords: Servizio ID
-title: Decisioni relative alla migrazione al servizio Experience Cloud Identity
+title: Decisioni relative alla migrazione a Experience Cloud Identity Service
 exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 100%
+source-wordcount: '625'
+ht-degree: 94%
 
 ---
 
-# Decisioni relative alla migrazione al servizio Experience Cloud Identity
+# Decisioni relative alla migrazione a Experience Cloud Identity Service
 
-Prima di implementare il servizio Experience Cloud Identity, è necessario comprendere in che modo condiziona il tracciamento dei visitatori in più domini e i potenziali problemi relativi alla raccolta dei dati con metodi diversi o tramite file JavaScript.
+Prima di implementare Experience Cloud Identity Service, è necessario comprendere in che modo condiziona il tracciamento dei visitatori in più domini e i potenziali problemi relativi alla raccolta dei dati con metodi diversi o tramite file JavaScript.
 
 Le risposte alle domande incluse in questa sezione sono utili per stabilire eventuali passaggi di migrazione da eseguire.
 
@@ -53,7 +53,7 @@ Se hai più domini che inviano dati alla *stessa suite di rapporti*, ti consigli
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Più domini </p> </td> 
-   <td colname="col2"> <p>Se tieni traccia dei visitatori su più domini e hai anche un sito di accesso principale in cui i clienti possono essere identificati prima che visitino altri domini dovresti continuare a utilizzare il CNAME di raccolta dati. <!--See <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local"> Data Collection CNAMES and Cross Domain Tracking</a> for a detailed explanation.--> </p> <p>Per configurare un CNAME con il servizio ID è necessario specificare due parametri aggiunti per il server di tracciamento, <span class="codeph">visitor.marketingCloudServer</span> e <span class="codeph">visitor.marketingCloudServerSecure</span>. </p> </td> 
+   <td colname="col2"> <p>Se tieni traccia dei visitatori su più domini e hai anche un sito di accesso principale in cui i clienti possono essere identificati prima che visitino altri domini, dovresti continuare a utilizzare il CNAME di raccolta dati. <!--See <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local"> Data Collection CNAMES and Cross Domain Tracking</a> for a detailed explanation.--> </p> <p>Per configurare un CNAME con il servizio ID è necessario specificare due parametri aggiunti per il server di tracciamento, <span class="codeph">visitor.marketingCloudServer</span> e <span class="codeph">visitor.marketingCloudServerSecure</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Un solo dominio </p> </td> 

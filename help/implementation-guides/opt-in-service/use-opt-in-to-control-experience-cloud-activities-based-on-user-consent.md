@@ -1,27 +1,27 @@
 ---
 title: Usare il servizio Opt-in per controllare le attività Experience Cloud in base al consenso degli utenti
-description: L’oggetto Adobe Opt-in è un’estensione del servizio Adobe Experience Platform Identity, utile per controllare se e quali soluzioni Experience Cloud possono creare dei cookie su pagine web o avviare dei beacon, in base al consenso dell’utente finale.
+description: L’oggetto Adobe Opt-in è un’estensione di Adobe Experience Platform Identity Service, utile per controllare se e quali soluzioni Experience Cloud possono creare dei cookie su pagine web o avviare dei beacon, in base al consenso dell’utente finale.
 exl-id: ac44e628-01ca-401c-864b-30fed0450e5f
 source-git-commit: 0dca594c090095a01dfa2d02a98dfeba7ca02dca
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '508'
 ht-degree: 100%
 
 ---
 
 # Controllare le attività Experience Cloud in base al consenso degli utenti
 
-L’oggetto Adobe [!UICONTROL Opt-in] è un’estensione del [!UICONTROL servizio Adobe Experience Platform Identity], utile per controllare se e quali soluzioni Experience Cloud possono creare dei cookie su pagine web o avviare dei beacon, in base al consenso fornito dall’utente finale.
+L’oggetto Adobe [!UICONTROL Opt-in] è un’estensione di [!UICONTROL Adobe Experience Platform Identity Service], utile per controllare se e quali soluzioni Experience Cloud possono creare dei cookie su pagine web o avviare dei beacon, in base al consenso fornito dall’utente finale.
 
 ## Nozioni di base del servizio [!UICONTROL Opt-in]
 
-Un aspetto importante della normativa sulla privacy riguarda l’acquisizione e la trasmissione del consenso degli utenti in merito a come e da chi possono essere utilizzati i loro dati personali. La versione più recente del [!UICONTROL servizio Identity] include funzionalità per l&#39;attivazione condizionale (ad esempio, pre e post-consenso) dei tag della soluzione Experience Cloud, in base al consenso fornito o negato dall&#39;utente finale. Tale processo è illustrato dall’immagine seguente:
+Un aspetto importante della normativa sulla privacy riguarda l’acquisizione e la trasmissione del consenso degli utenti in merito a come e da chi possono essere utilizzati i loro dati personali. La versione più recente di [!UICONTROL Identity Service] include funzionalità per l&#39;attivazione condizionale (ad esempio, pre e post-consenso) dei tag della soluzione Experience Cloud, in base al consenso fornito o negato dall&#39;utente finale. Tale processo è illustrato dall’immagine seguente:
 
 ![Diagramma del funzionamento del servizio [!UICONTROL Opt-in]](assets/opt-in.png)
 
 [!UICONTROL Opt-in] funziona come segue:
 
-**Se il servizio [!UICONTROL Opt-in] è attivato nel servizio Identity (tramite una variabile booleana), l’attivazione di tag o l’impostazione di cookie da parte delle librerie della soluzione Experience Cloud viene rinviata fino a quando non si riceve il consenso per tale soluzione.**
+**Se [!UICONTROL Opt-in] è attivato in Identity Service (tramite una variabile booleana), l’attivazione di tag o l’impostazione di cookie da parte delle librerie della soluzione Experience Cloud viene rinviata fino a quando non si riceve il consenso per tale soluzione.**
 
 [!UICONTROL Opt-in] permette inoltre di decidere se eventuali tag devono essere attivati prima del consenso dell’utente. Le informazioni sul consenso (insieme al consenso fornito dall’utente finale) vengono quindi memorizzate e utilizzate anche per gli hit successivi. L’archiviazione del consenso è disponibile nelle opzioni di [!UICONTROL Opt-in], oppure tramite l’integrazione con una soluzione CMP in cui possono essere archiviate le opzioni di consenso selezionate.
 
@@ -47,7 +47,7 @@ Il seguente video offre una breve dimostrazione di come funziona il servizio [!U
 
 **NOTA:** al momento della stesura di questo articolo, [!UICONTROL Opt-in] non è ancora stato integrato nelle librerie di tutte le soluzioni Experience Cloud. Attualmente [!UICONTROL Opt-in] supporta le seguenti librerie:
 
-* Servizio Identity
+* Identity Service
 * Analytics
 * Audience Manager
 * [!DNL Target]

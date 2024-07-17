@@ -1,18 +1,18 @@
 ---
-description: Restituisce l’ID Analytics legacy (se presente) memorizzato nel cookie s_vi prima dell’implementazione del servizio Experience Cloud Identity. Se a un visitatore non è stato assegnato un ID Analytics, restituisce una stringa vuota.
+description: Restituisce l’ID Analytics legacy (se presente) memorizzato nel cookie s_vi prima dell’implementazione di Experience Cloud Identity Service. Se a un visitatore non è stato assegnato un ID Analytics, restituisce una stringa vuota.
 keywords: Servizio ID
 title: getAnalyticsVisitorID
 exl-id: 82973de4-4257-4aab-9268-4ab124a01ee2
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '276'
 ht-degree: 100%
 
 ---
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-Restituisce l’ID Analytics legacy (se presente) memorizzato nel cookie s_vi prima dell’implementazione del servizio Experience Cloud Identity. Se a un visitatore non è stato assegnato un ID Analytics, restituisce una stringa vuota.
+Restituisce l’ID Analytics legacy (se presente) memorizzato nel cookie s_vi prima dell’implementazione di Experience Cloud Identity Service. Se a un visitatore non è stato assegnato un ID Analytics, restituisce una stringa vuota.
 
 **Sintassi** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
@@ -52,4 +52,3 @@ Il `aid` parametro viene visualizzato in una stringa di interrogazione quando l&
 >[!MORELIKETHIS]
 >
 >* [Cookie di Analytics](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-privacy.html?lang=it)
-

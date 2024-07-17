@@ -5,8 +5,8 @@ title: Domande frequenti sul servizio ID
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '787'
-ht-degree: 100%
+source-wordcount: '783'
+ht-degree: 97%
 
 ---
 
@@ -18,11 +18,11 @@ Domande frequenti sulle caratteristiche, sulle funzionalità e sui problemi corr
 
 **Che tipo di funzionalità o capacità offre il servizio ID?**
 
-Consulta la sezione [Panoramica](../introduction/overview.md).
+Vedi la [Panoramica](../introduction/overview.md).
 
 **Perché il servizio ID non effettua una chiamata per recuperare l’Experience Cloud ID?**
 
-Questa situazione è difficile da diagnosticare. Una cosa che puoi controllare sono le intestazioni dell&#39;informativa sulla sicurezza dei contenuti sul tuo sito. Se hai una politica di sicurezza restrittiva, quelle impostazioni possono bloccare le chiamate di terze parti effettuate dal servizio ID. Consulta [Informativa sulla sicurezza dei contenuti e servizio Experience Cloud Identity](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
+Questa situazione è difficile da diagnosticare. Una cosa che puoi controllare sono le intestazioni dell&#39;informativa sulla sicurezza dei contenuti sul tuo sito. Se hai una politica di sicurezza restrittiva, quelle impostazioni possono bloccare le chiamate di terze parti effettuate dal servizio ID. Consulta [Informativa sulla sicurezza dei contenuti e il servizio Experience Cloud Identity](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
 
 **Archiviazione dei file VisitorAPI.js**
 
@@ -66,13 +66,13 @@ Questa modifica migliore le prestazioni per i clienti che usano Visitor 2.3.0+ e
 
 Le richieste di risorse con CORS sono generalmente preferibili a quelle con JSONP. Con JSONP, alcuni browser mettono in coda e modificano la priorità delle richieste rispetto ad altre chiamate sincrone ed asincrone sulla pagina. CORS garantisce che queste richieste siano trattate con una priorità più alta nello stack di chiamate del browser.
 
-Consulta [Supporto per CORS nel servizio Experience Cloud Identity](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Consulta [Supporto per CORS in Experience Cloud Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 ## Sicurezza {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **Il servizio ID supporta CORS?**
 
-Sì. Consulta [Supporto per CORS nel servizio Experience Cloud Identity](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Sì. Consulta [Supporto per CORS in Experience Cloud Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **Cos’è CORS?**
 
@@ -87,4 +87,3 @@ Consulta [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da1
 >[!MORELIKETHIS]
 >
 >* [Assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html)
-

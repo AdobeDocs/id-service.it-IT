@@ -1,18 +1,18 @@
 ---
-description: Queste istruzioni sono per chi utilizza Analytics, Audience Manager e Target e desidera usare il servizio Experience Cloud ID e non usa i tag di Raccolta dati. Tuttavia, si consiglia vivamente di usare i tag per implementare il servizio ID. I tag agevolano il flusso di lavoro di implementazione e assicurano automaticamente il posizionamento e la sequenza del codice corretti.
+description: Queste istruzioni sono per chi utilizza Analytics, Audience Manager e Target, desidera usare Experience Cloud Identity Service e non usa i tag di Raccolta dati. Tuttavia, si consiglia vivamente di usare i tag per implementare il servizio ID. I tag agevolano il flusso di lavoro di implementazione e assicurano automaticamente il posizionamento e la sequenza del codice corretti.
 keywords: Servizio ID
-title: Implementazione del servizio Experience Cloud Identity per Analytics, Audience Manager e Target
+title: Implementare Experience Cloud Identity Service per Analytics, Audience Manager e Target
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
 source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 100%
 
 ---
 
-# Implementazione del servizio Experience Cloud Identity per Analytics, Audience Manager e Target {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
+# Implementare Experience Cloud Identity Service per Analytics, Audience Manager e Target {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
 
-Queste istruzioni sono per chi utilizza Analytics, Audience Manager e Target che desidera utilizzare il servizio Experience Cloud Identity e non usa i [tag di Raccolta dati](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it). Tuttavia, si consiglia vivamente di usare i tag per implementare il servizio ID. I tag agevolano il flusso di lavoro di implementazione e assicurano automaticamente il posizionamento e la sequenza del codice corretti.
+Queste istruzioni sono per chi utilizza Analytics, Audience Manager e Target, desidera utilizzare Experience Cloud Identity Service e non usa i [tag di Raccolta dati](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it). Tuttavia, si consiglia vivamente di usare i tag per implementare il servizio ID. I tag agevolano il flusso di lavoro di implementazione e assicurano automaticamente il posizionamento e la sequenza del codice corretti.
 
 >[!IMPORTANT]
 >
@@ -172,7 +172,7 @@ Devi impostare un periodo di tolleranza se dopo la migrazione al servizio ID ric
 
 Puoi interrompere il periodo di tolleranza dopo che l’implementazione sarà in grado di acquisire il MID invece di leggere il cookie s_vi.
 
-Consulta anche [Cookie e il servizio Experience Cloud Identity](../introduction/cookies.md).
+Consulta anche [I cookie ed Experience Cloud Identity Service](../introduction/cookies.md).
 
 **Integrazione dei dati di click-stream**
 
@@ -197,7 +197,7 @@ Controlla che ci siano:
 * [Cookie AMCV](../introduction/cookies.md) nel dominio di hosting della pagina.
 * [!DNL Experience Cloud] ID (MID) con [!DNL Adobe] Debugger o altro strumento di debug.
 
-Per ulteriori verifiche utili per determinare se il servizio ID funziona correttamente, consulta [Test e verifica del servizio Experience Cloud Identity](../implementation-guides/test-verify.md).
+Per ulteriori verifiche utili per determinare se il servizio ID funziona correttamente, consulta [Testare e verificare Experience Cloud Identity Service](../implementation-guides/test-verify.md).
 
 **Analytics**
 

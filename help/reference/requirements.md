@@ -1,18 +1,18 @@
 ---
-description: Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per il servizio Experience Cloud Identity.
+description: Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per Experience Cloud Identity Service.
 keywords: Servizio ID
-title: Requisiti del servizio Experience Cloud Identity
+title: Requisiti di Experience Cloud Identity Service
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 source-git-commit: 00ebcaa16ec6b432b480d96fbf79b6a745515b1b
-workflow-type: ht
-source-wordcount: '653'
+workflow-type: tm+mt
+source-wordcount: '572'
 ht-degree: 100%
 
 ---
 
-# Requisiti del servizio Experience Cloud Identity {#requirements-for-the-experience-cloud-id-service}
+# Requisiti di Experience Cloud Identity Service {#requirements-for-the-experience-cloud-id-service}
 
-Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per il servizio Experience Cloud Identity.
+Leggi questa sezione per essere certo di usare le soluzioni, i servizi e le versioni di codice corrette per Experience Cloud Identity Service.
 
 ## Requisiti per il successo e il supporto dell&#39;implementazione {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
@@ -135,4 +135,3 @@ Il codice SDK deve essere abilitato per il servizio ID. Abilita e scarica il cod
 >[!MORELIKETHIS]
 >
 >* [Libreria dei codici](../library/library.md#concept-ff27497375644a898d47984aefb21c97)
-

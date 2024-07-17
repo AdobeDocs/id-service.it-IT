@@ -1,16 +1,16 @@
 ---
 description: Questa implementazione permette ai clienti di usare il servizio ID su dispositivi che non possono accettare o lavorare con il nostro codice JavaScript o SDK. Tra questi dispositivi sono incluse consolle di gioco, smart TV o altri apparecchi dotati di Internet. Fai riferimento a questa sezione per sintassi, esempi di codice e definizioni.
 keywords: Servizio ID
-title: Integrazione diretta con il servizio Experience Cloud Identity
+title: Integrazione diretta con Experience Cloud Identity Service
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 100%
+source-wordcount: '632'
+ht-degree: 95%
 
 ---
 
-# Integrazione diretta con il servizio Experience Cloud Identity {#direct-integration-with-the-experience-cloud-id-service}
+# Integrazione diretta con Experience Cloud Identity Service {#direct-integration-with-the-experience-cloud-id-service}
 
 Questa implementazione permette ai clienti di usare il servizio ID su dispositivi che non possono accettare o lavorare con il nostro codice JavaScript o SDK. Tra questi dispositivi sono incluse consolle di gioco, smart TV o altri apparecchi dotati di Internet. Fai riferimento a questa sezione per sintassi, esempi di codice e definizioni.
 
@@ -61,11 +61,11 @@ Il servizio ID restituisce i dati in un oggetto JSON come mostrato di seguito. L
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>L'ID visitatore Experience Cloud. Consulta <a href="../introduction/cookies.md" format="dita" scope="local"> Cookie e il servizio Experience Cloud Identity</a>. </p> </td> 
+   <td colname="col2"> <p>L'ID visitatore Experience Cloud. Consulta Cookie <a href="../introduction/cookies.md" format="dita" scope="local"> e il servizio Experience Cloud Identity</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>L'ID organizzazione Experience Cloud. Per maggiori informazioni su come trovare questo ID vedere, <a href="../reference/requirements.md" format="dita" scope="local"> Requisiti del servizio Experience Cloud Identity</a>. </p> </td> 
+   <td colname="col2"> <p>L'ID organizzazione Experience Cloud. Per informazioni su come trovare questo ID, vedere <a href="../reference/requirements.md" format="dita" scope="local"> Requisiti per il servizio Experience Cloud Identity</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 

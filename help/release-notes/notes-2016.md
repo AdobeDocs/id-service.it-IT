@@ -1,5 +1,5 @@
 ---
-description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2016.
+description: Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service per il 2016.
 keywords: Servizio ID
 title: Note sulla versione 2016
 feature-set: Experience Cloud Services
@@ -7,14 +7,14 @@ feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
 source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1175'
 ht-degree: 100%
 
 ---
 
 # Note sulla versione 2016 {#release-notes}
 
-Funzionalità rilasciate, aggiornamenti o modifiche al servizio Experience Cloud Identity per il 2016.
+Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service per il 2016.
 
 Queste modifiche vengono riportate anche nelle [note sulla versione di Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=it).
 
@@ -25,8 +25,7 @@ Novembre 2016
 >[!IMPORTANT]
 >
 >* La versione 1.10 richiede [!UICONTROL AppMeasurement] 1.8.0.
->* Se si utilizza la libreria 2.0.0+ del servizio Experience Cloud Identity, la sincronizzazione degli ID verrà avviata per Adobe Media Optimizer per impostazione predefinita. Consulta [Informazioni sulla sincronizzazione degli ID e delle percentuali di corrispondenza](/help/introduction/match-rates.md).
-
+>* Se si utilizza la libreria 2.0.0+ di Experience Cloud Identity Service, la sincronizzazione degli ID verrà avviata per Adobe Media Optimizer per impostazione predefinita. Consulta [Informazioni sulla sincronizzazione degli ID e sui tassi di corrispondenza](/help/introduction/match-rates.md).
 
 **Correzioni e miglioramenti**
 
@@ -50,7 +49,7 @@ Ottobre 2016
 
 * È stato corretto un bug che riportava al servizio ID gli ID utente univoci di Audience Manager (AAMUUID) come Experience Cloud ID.
 * Se il time-to-live (TTL) di un cookie AMCV è scaduto, il servizio ID restituirà comunque tali informazioni al server purché il cookie non contenga un Experience Cloud ID. Dopo questa chiamata, il servizio ID effettua una chiamata asincrona per aggiornare il cookie. Ciò consente di migliorare le prestazioni perché il servizio ID non deve attendere una risposta del server. Può utilizzare i valori del cookie AMCV esistenti e richiedere un aggiornamento.
-* Il servizio ID sincronizza automaticamente gli Experience Cloud ID (MID) con Adobe Media Optimizer e altri domini interni di Adobe direttamente sulla pagina. La sincronizzazione automatica è abilitata per tutti gli account esistenti e nuovi. Questo consente di migliorare le percentuali di corrispondenza per Media Optimizer. Applicabile a VisitorAPI.js versione 1.8 o versioni successive. Consultare anche [Informazioni sulla sincronizzazione degli ID e sulle percentuali di corrispondenza](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
+* Il servizio ID sincronizza automaticamente gli Experience Cloud ID (MID) con Adobe Media Optimizer e altri domini interni di Adobe direttamente sulla pagina. La sincronizzazione automatica è abilitata per tutti gli account esistenti e nuovi. Questo consente di migliorare i tassi di corrispondenza per Media Optimizer. Applicabile a VisitorAPI.js versione 1.8 o versioni successive. Consulta anche [Informazioni sulla sincronizzazione degli ID e sui tassi di corrispondenza](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
 **Documentazione nuova e rivista**
 
@@ -78,7 +77,7 @@ Agosto 2016
 
 **Documentazione nuova e rivista**
 
-Rivisto: [Requisiti del servizio Experience Cloud Identity](../reference/requirements.md)
+Rivisto: [Requisiti di Experience Cloud Identity Service](../reference/requirements.md)
 
 **Problemi noti**
 
@@ -102,9 +101,9 @@ Luglio 2016
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Condivisione delle risorse multiorigine (CORS) </p> </td> 
-   <td colname="col2"> <p>CORS consente ai browser di richiedere risorse da un dominio diverso da quello corrente. Il servizio Experience Cloud Identity supporta gli standard CORS per consentire le richieste di risorse tra diverse origini lato client. Il servizio ID ripristina le richieste JSONP sui browser che non supportano CORS. </p> <p>Vedi: </p> 
+   <td colname="col2"> <p>CORS consente ai browser di richiedere risorse da un dominio diverso da quello corrente. Experience Cloud Identity Service supporta gli standard CORS per consentire le richieste di risorse tra diverse origini lato client. Il servizio ID ripristina le richieste JSONP sui browser che non supportano CORS. </p> <p>Vedi: </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
-     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local">Supporto per CORS nel servizio Experience Cloud Identity</a> </li> 
+     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Supporto per CORS in Experience Cloud Identity Service </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -115,7 +114,7 @@ Luglio 2016
 * È stato aggiunto il parametro `d_fieldgroup` alle chiamate per la sincronizzazione ID verso `dpm.demdex.net`. Questo nuovo parametro viene utilizzato per la risoluzione interna dei problemi e per il debug.
 
 * È stato aggiunto un attributo titolo all’iFrame del servizio ID. Un titolo nell&#39;iFrame consente alle utilità per la lettura dello schermo di fornire informazioni sulla pagina agli utenti che necessitano di assistenza per interagire con i contenuti online. L’attributo titolo dell’iFrame è impostato su `Adobe ID Syncing iFrame`.
-* È stato aggiunto `idSyncAttachIframeASAP: true` come flag opzionale impostabile nella funzione `Visitor.getInstance`. Quando è `true`, il servizio ID carica l&#39;iFrame di sincronizzazione ID il più rapidamente possibile. Questa funzione è stata progettata per migliorare le percentuali di corrispondenza della sincronizzazione ID. Per impostazione predefinita il servizio ID carica l’iFrame al caricamento della finestra. Consulta [Variabili della funzione Visitor.getInstance](../library/function-vars/function-vars.md).
+* È stato aggiunto `idSyncAttachIframeASAP: true` come flag opzionale impostabile nella funzione `Visitor.getInstance`. Quando è `true`, il servizio ID carica l&#39;iFrame di sincronizzazione ID il più rapidamente possibile. Questa funzione è stata progettata per migliorare i tassi di corrispondenza della sincronizzazione ID. Per impostazione predefinita il servizio ID carica l’iFrame al caricamento della finestra. Consulta [Variabili della funzione Visitor.getInstance](../library/function-vars/function-vars.md).
 
 * È stato corretto un problema relativo a una funzione di callback che bloccava AppMeasurement in un ciclo infinito.
 * Il valore predefinito `loadTimeout` è stato modificato da 500 a 30.000 millisecondi. Consulta [Variabili della funzione Visitor.getInstance](../library/function-vars/function-vars.md).
@@ -124,13 +123,13 @@ Luglio 2016
 
 **Novità**
 
-* [Implementazione del servizio Experience Cloud Identity per Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
-* [Implementazione del servizio Experience Cloud Identity per Analytics, Audience Manager e Target](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
+* [Implementare Experience Cloud Identity Service per Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
+* [Implementare Experience Cloud Identity Service per Analytics, Audience Manager e Target](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
 
 **Articoli rivisti:**
 
-* [Requisiti del servizio Experience Cloud Identity](../reference/requirements.md)
-* [Test e verifica del servizio Experience Cloud Identity](../implementation-guides/test-verify.md)
+* [Requisiti di Experience Cloud Identity Service](../reference/requirements.md)
+* [Testare e verificare Experience Cloud Identity Service](../implementation-guides/test-verify.md)
 
 ## Versione 1.5.7 {#section-735b4989a5744a42aeb2d97602dbda62}
 
@@ -166,8 +165,8 @@ Maggio 2016
 **Aggiornamenti alla documentazione**
 
 * [Requisiti dell&#39;SDK per Android e iOS](../reference/requirements.md#section-73b2446fba8e463888642c7d7dfd94f1)
-* [Data Workbench e il servizio Experience Cloud Identity](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
-* [Test e verifica del servizio Experience Cloud Identity](../implementation-guides/test-verify.md)
+* [Data Workbench ed Experience Cloud Identity Service](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
+* [Testare e verificare Experience Cloud Identity Service](../implementation-guides/test-verify.md)
 
 ## Versione 1.5.x {#section-0cfeef085cff4cbc8dff6cbc6fc32920}
 
@@ -175,7 +174,7 @@ Aprile 2016
 
 **Aggiornamenti alla documentazione**
 
-[Implementazione del servizio Experience Cloud Identity per Target](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
+[Implementare Experience Cloud Identity Service per Target](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
 
 ## Versione 1.5.4 {#section-1a44ba147fb3440ea7dec551faee3528}
 
@@ -202,9 +201,9 @@ Marzo 2016
 
 **Aggiornamenti alla documentazione**
 
-* [Implementazione del servizio Experience Cloud Identity per ](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd): nuova procedura che descrive come configurare il servizio ID con [!DNL Analytics].
+* [Implementare Experience Cloud Identity Service per Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd): nuova procedura che descrive come configurare il servizio ID con [!DNL Analytics].
 
-* [Decisioni relative alla migrazione al servizio Experience Cloud Identity](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257): testo aggiornato per migliorarne la chiarezza. Se usi un solo dominio puoi effettuare la migrazione da un CNAME di raccolta dati se non desideri più gestirlo. Tuttavia, questo cambiamento non è necessario se il CNAME funziona correttamente.
+* [Decisioni relative alla migrazione a Experience Cloud Identity Service](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257): testo aggiornato per migliorarne la chiarezza. Se usi un solo dominio puoi effettuare la migrazione da un CNAME di raccolta dati se non desideri più gestirlo. Tuttavia, questo cambiamento non è necessario se il CNAME funziona correttamente.
 
 ## Versione 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 

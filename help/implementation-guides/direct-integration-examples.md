@@ -5,8 +5,8 @@ title: Casi d'uso dell'integrazione diretta
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 100%
+source-wordcount: '440'
+ht-degree: 81%
 
 ---
 
@@ -17,11 +17,10 @@ Questi esempi coprono 2 casi d&#39;uso comuni relativi a un&#39;integrazione dir
 >[!TIP]
 >
 >* Leggi e comprendi la [sintassi del codice e le variabili](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) prima di immergerti nei casi d&#39;uso.
->* Per ulteriori informazioni sull’identificatore MID, consulta [Cookie e il servizio Experience Cloud Identity](../introduction/cookies.md).
+>* Per ulteriori informazioni sull’identificatore MID, consulta [I cookie ed Experience Cloud Identity Service](../introduction/cookies.md).
 >
 
-
-## Caso d’uso 1: ho un identificatore Experience Cloud ID (MID) ma voglio trasmettere i miei ID visitatori e impostare uno stato di autenticazione {#section-a67d89a343754d1286d03cf08d34b806}
+## Caso d’uso 1: ho un identificatore MID (Experience Cloud ID) ma voglio trasmettere i miei ID visitatori e impostare uno stato di autenticazione {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
@@ -49,7 +48,7 @@ Questi esempi coprono 2 casi d&#39;uso comuni relativi a un&#39;integrazione dir
      <li id="li_4869572B40E54C54B88A2474DAC475A8">L'ID del fornitore dei dati. Questo è un ID univoco assegnato alla tua azienda. Chiamiamolo ID 4444. </li> 
      <li id="li_05C8ED47488C4E289D84093127EC7B19">Il tuo ID per il visitatore (9876). </li> 
      <li id="li_3D1556AD18C843828A362CC604A9F76B"> <i>(Facoltativo)</i> Un ID di stato per definire lo stato di autenticazione per questo visitatore. </li> 
-    </ul> <p>Nel caso in cui tu disponga degli altri parametri elencati in <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">guida all'integrazione diretta</a> (es., <span class="codeph">d_blob</span> o <span class="codeph">dcs_region</span>, ecc.) puoi passare anche tali parametri. </p> </td> 
+    </ul> <p>Inoltre, se uno degli altri parametri elencati nella <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guida all'integrazione diretta</a> (ad esempio, <span class="codeph"> d_blob</span> o <span class="codeph"> dcs_region</span>, ecc.) puoi passare anche tali parametri. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Soluzione ed esempio di codice</b> </p> </td> 
@@ -84,7 +83,7 @@ Questi esempi coprono 2 casi d&#39;uso comuni relativi a un&#39;integrazione dir
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Azioni</b> </p> </td> 
-   <td colname="col2"> <p>Considerate queste condizioni, effettua una chiamata al servizio ID che includa il tuo ID organizzazione. </p> <p>Nel caso in cui tu disponga degli altri parametri elencati in <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">guida all'integrazione diretta</a> (es., <span class="codeph">d_blob</span> o <span class="codeph">dcs_region</span>, ecc.) puoi passare anche tali parametri. </p> </td> 
+   <td colname="col2"> <p>Considerate queste condizioni, effettua una chiamata al servizio ID che includa il tuo ID organizzazione. </p> <p>Inoltre, se uno degli altri parametri elencati nella <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guida all'integrazione diretta</a> (ad esempio, <span class="codeph"> d_blob</span> o <span class="codeph"> dcs_region</span>, ecc.) puoi passare anche tali parametri. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Soluzione ed esempio di codice</b> </p> </td> 

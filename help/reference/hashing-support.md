@@ -5,8 +5,8 @@ title: Supporto di hashing SHA-256 per setCustomerIDs
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
 source-git-commit: 159b37e360b586bbada13e34793009e3067de668
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 100%
+source-wordcount: '594'
+ht-degree: 97%
 
 ---
 
@@ -64,7 +64,7 @@ Per una descrizione del parametro `d_cid_ic` e dello stato di autenticazione, co
 
 | Parametro | Descrizione |
 |------------|----------|
-| `d_cid_ic` | Trasmette al servizio ID il codice di integrazione, l’ID utente univoco (DPUUID) e un ID di stato di autenticazione. Separa il codice integrazione e il DPUUID con il carattere di controllo non stampabile %01</code>: <br> Esempio: d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>Stato di autenticazione</b> <br> Questo è un ID opzionale nel parametro d_cid_ic. Espresso sotto forma di numero intero, identifica gli utenti a seconda del loro stato di autenticazione come mostrato di seguito: <br> <ul><li>0 (utente sconosciuto o mai autenticato)</li><li>1 (attualmente autenticato per il contesto di questa istanza/pagina/app)</li><li>2 (disconnesso)</li></ul> <br> Esempi: <br> <ul><li>Sconosciuto: ...d_cid=123%01456%01<b>0</b></li><li>Autenticato: ...d_cid=123%01456%01<b>1</b></li><li>Disconnesso: ...d_cid=123%01456%01<b>2</b></li></ul> |
+| `d_cid_ic` | Trasmette al servizio ID il codice di integrazione, l’ID utente univoco (DPUUID) e un ID di stato di autenticazione. Separa il codice integrazione e il DPUUID con il carattere di controllo non stampabile <code>%01</code>: <br> Esempio: <code>d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>Stato di autenticazione</b> <br> Questo è un ID opzionale nel parametro d_cid_ic. Espresso sotto forma di numero intero, identifica gli utenti a seconda del loro stato di autenticazione come mostrato di seguito: <br> <ul><li>0 (utente sconosciuto o mai autenticato)</li><li>1 (attualmente autenticato per il contesto di questa istanza/pagina/app)</li><li>2 (disconnesso)</li></ul> <br> Esempi: <br> <ul><li>Sconosciuto: ...d_cid=123%01456%01<b>0</b></li><li>Autenticato: ...d_cid=123%01456%01<b>1</b></li><li>Disconnesso: ...d_cid=123%01456%01<b>2</b></li></ul> |
 
 ## Aggiungere un’azione in Adobe Experience Platform Launch {#add-action-launch}
 

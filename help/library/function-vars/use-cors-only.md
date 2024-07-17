@@ -1,5 +1,5 @@
 ---
-description: Flag booleano facoltativo che controlla in che modo il browser richiede le risorse dal servizio Experience Cloud Identity.
+description: Flag booleano facoltativo che controlla in che modo il browser richiede le risorse da Experience Cloud Identity Service.
 keywords: Servizio ID
 title: useCORSOnly
 exl-id: 049a082a-8e6b-44cc-bd05-c12aaf3cbe4d
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # useCORSOnly{#usecorsonly}
 
-Flag booleano facoltativo che controlla in che modo il browser richiede le risorse dal servizio Experience Cloud Identity.
+Flag booleano facoltativo che controlla in che modo il browser richiede le risorse da Experience Cloud Identity Service.
 
 **Sintassi:** `useCORSOnly: true|false` (l&#39;impostazione predefinita è `false`).
 

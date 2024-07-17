@@ -1,18 +1,18 @@
 ---
-description: Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity.
+description: Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service.
 keywords: Servizio ID
 title: Note sulla versione 2019
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
 source-git-commit: 503683b66b6022b7c1fecbfb197fe17e05ae9c64
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '422'
 ht-degree: 100%
 
 ---
 
 # Note sulla versione 2019 di Experience Cloud {#release-notes}
 
-Versioni future, aggiornamenti o modifiche al servizio Experience Cloud Identity.
+Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service.
 
 ## Versione 4.4.1
 

@@ -1,18 +1,18 @@
 ---
-description: I browser usano Cross Origin Resource Sharing (CORS) per richiedere risorse da un dominio diverso da quello corrente. Il servizio Experience Cloud Identity supporta gli standard CORS per consentire tali richieste di risorse lato client tra origini diverse. Il servizio ID utilizza invece le richieste JSONP nei browser più datati che non supportano CORS.
+description: I browser usano Cross Origin Resource Sharing (CORS) per richiedere risorse da un dominio diverso da quello corrente. Experience Cloud Identity Service supporta gli standard CORS per consentire tali richieste di risorse lato client tra origini diverse. Il servizio ID utilizza invece le richieste JSONP nei browser più datati che non supportano CORS.
 keywords: Servizio ID
-title: Supporto per CORS nel servizio Experience Cloud Identity
+title: Supporto per CORS in Experience Cloud Identity Service
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 99%
+source-wordcount: '609'
+ht-degree: 96%
 
 ---
 
-# Supporto per CORS nel servizio Experience Cloud Identity {#cors-support-in-the-experience-cloud-id-service}
+# Supporto per CORS in Experience Cloud Identity Service {#cors-support-in-the-experience-cloud-id-service}
 
-I browser usano Cross Origin Resource Sharing (CORS) per richiedere risorse da un dominio diverso da quello corrente. Il servizio Experience Cloud Identity supporta gli standard CORS per consentire tali richieste di risorse lato client tra origini diverse. Il servizio ID utilizza invece le richieste JSONP nei browser più datati che non supportano CORS.
+I browser usano Cross Origin Resource Sharing (CORS) per richiedere risorse da un dominio diverso da quello corrente. Experience Cloud Identity Service supporta gli standard CORS per consentire tali richieste di risorse lato client tra origini diverse. Il servizio ID utilizza invece le richieste JSONP nei browser più datati che non supportano CORS.
 
 ## Problemi relativi a criteri per la stessa origine e richieste del servizio ID {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
@@ -26,7 +26,7 @@ Il browser consente una richiesta se entrambe le pagine condividono queste carat
 
 ## CORS risolve i problemi relativi a criteri per la stessa origine {#section-76c87ec3295d447bab220c84f138c235}
 
-CORS offre un modo sicuro ed efficace per richiedere risorse tra domini diversi. La specifica CORS include un set di intestazioni HTTP utilizzate dai browser per inviare, ricevere e valutare richieste di risorse. La valutazione di una richiesta di risorse è detta *`preflight check`*. Questo controllo consente ai browser e ai server di determinare quali richieste sono consentite o bloccate. Il controllo preliminare è trasparente per l’app, l’API o lo script che richiede una risorsa. Due intestazioni importanti nel processo di richiesta delle risorse sono le seguenti:
+CORS offre un modo sicuro ed efficace per richiedere risorse tra domini diversi. La specifica CORS include un set di intestazioni HTTP utilizzate dai browser per inviare, ricevere e valutare richieste di risorse. La valutazione di una richiesta di risorse è denominata *`preflight check`*. Questo controllo consente ai browser e ai server di determinare quali richieste sono consentite o bloccate. Il controllo preliminare è trasparente per l’app, l’API o lo script che richiede una risorsa. Due intestazioni importanti nel processo di richiesta delle risorse sono le seguenti:
 
 * `Origin`: intestazione di richiesta che identifica l&#39;origine di una richiesta.
 * `Access-Control-Allow-Origin`: intestazione di richiesta che indica se una risorsa può essere condivisa con il richiedente.
@@ -61,7 +61,7 @@ Vediamo come funzionano queste intestazioni. In questo esempio, supponiamo che u
 
 Vedi anche [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
 
-## Altri benefici di CORS {#section-6f44f30694c44f95bf9854b8a2af8449}
+## Altri vantaggi dell’utilizzo di CORS {#section-6f44f30694c44f95bf9854b8a2af8449}
 
 La tabella seguente descrive alcuni dei vantaggi offerti da CORS ai clienti che utilizzano il servizio ID.
 
