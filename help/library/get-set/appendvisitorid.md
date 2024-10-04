@@ -3,7 +3,7 @@ description: Con questa funzione puoi condividere l'Experience Cloud ID di un vi
 keywords: Servizio ID
 title: appendVisitorIDsTo (Monitoraggio interdominio)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: fc630f3a161b65edab1c34ec3b3f07938bf13aaf
+source-git-commit: f185ae10dac686b6986b171aef8a46a574484283
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 88%
@@ -14,7 +14,7 @@ ht-degree: 88%
 
 >[!TIP]
 >
->Il tracciamento tra domini diversi non funziona come previsto se l’ECID viene rifiutato inizialmente (o in precedenza). Non verificherà gli ID esistenti passati tramite l’URL o presenti in precedenza nel cookie, considerando che si trattava degli ID quando il consenso era impostato su &quot;NO&quot;
+>Il tracciamento tra domini diversi non funziona come previsto se l’ECID viene rifiutato inizialmente (o in precedenza). Non verificherà gli ID esistenti che sono stati passati tramite l’URL o che in precedenza erano presenti nel cookie, considerando che erano gli ID quando il consenso è stato impostato su &quot;NO&quot;.
 
 Con questa funzione puoi condividere l&#39;Experience Cloud ID di un visitatore tra più domini quando i browser bloccano i cookie di terze parti. Per usare questa funzione, devi avere implementato il servizio ID sui domini di sorgente e di destinazione. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
 
