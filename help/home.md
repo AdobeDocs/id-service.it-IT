@@ -3,10 +3,10 @@ description: Experience Cloud Identity Service abilita il framework comune di id
 keywords: Servizio ID; Identity Service; Experience Cloud Identity Service
 title: Experience Cloud Identity Service
 exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
-source-git-commit: f7c25f5ebd0690c56c081422949eb34f1f277ae1
+source-git-commit: 507b5c9fed0d6d16828522c0fd9c7db4fdeefe3d
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -16,7 +16,7 @@ Experience Cloud Identity Service abilita il framework comune di identificazione
 
 ## Informazioni sulle principali entità di identità
 
-Per capire meglio in che modo Adobe aiuta a identificare in modo univoco i visitatori e a risolvere le informazioni sull’identità, leggi i seguenti punti:
+Per capire meglio in che modo Adobe aiuta a identificare in modo univoco i visitatori e a risolvere le informazioni sull’identità, leggi la suddivisione seguente:
 
 * **Experience Cloud Identity Service**: Experience Cloud Identity Service **è responsabile dell’impostazione dell’identificatore Experience Cloud ID (ECID)**. Per ulteriori informazioni, consulta [Panoramica di Experience Cloud Identity Service](./introduction/overview.md).
 * **Experience Cloud ID (ECID)**: ECID è uno spazio dei nomi di identità condiviso e utilizzato dalle varie applicazioni Adobe Experience Platform e Adobe Experience Cloud per identificare persone e dispositivi. Per ulteriori informazioni sull’identificatore ECID, consulta la sezione [Panoramica di ECID](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=it).
