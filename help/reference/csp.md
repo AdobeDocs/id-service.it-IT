@@ -3,10 +3,10 @@ description: Un'informativa sulla sicurezza dei contenuti (CSP) è un'intestazio
 keywords: Servizio ID
 title: Informativa sulla sicurezza dei contenuti ed Experience Cloud Identity Service
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 2bb47b56b26ce6ea17297a9ee0200f2623e44e71
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 99%
+source-wordcount: '501'
+ht-degree: 80%
 
 ---
 
@@ -26,48 +26,89 @@ La CSP usa l&#39;intestazione HTTP `Content-Security-Policy` per controllare il 
 
 L&#39;uso della CSP è comune e noto. Questa documentazione non ha l&#39;obiettivo di spiegare in maniera dettagliata la CSP (per maggiori informazioni consulta i link alle informazioni correlate). Ciò che è importante è capire quali nomi dei domini Adobe devi aggiungere a una CSP se ne usi una e se hai delle politiche di sicurezza restrittive. L’aggiunta di questi domini consente ai browser dei visitatori che accedono al tuo sito di effettuare chiamate importanti alle risorse Experience Cloud che utilizzi.
 
-## Domini di Experience Cloud per la creazione di whitelist {#section-30693e9a96834edfbf04de9e698cf2aa}
+## Domini Experience Cloud per la creazione di whitelist {#section-30693e9a96834edfbf04de9e698cf2aa}
 
 Aggiungi questi nomi di dominio o URL alla tua CSP per ogni soluzione o servizio Experience Cloud che utilizzi.
 
-<table id="table_EC9FC999A62D4B7A830CE73B0AB9EF3C"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Soluzione o servizio Experience Cloud </th> 
-   <th colname="col2" class="entry"> Descrizione </th> 
-  </tr> 
+<table id="table_EC9FC999A62D4B7A830CE73B0AB9EF3C">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry">Soluzione o servizio Experience Cloud</th>
+   <th colname="col2" class="entry">Descrizione</th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <b>AppMeasurement</b> </p> </td> 
-   <td colname="col2"> <p>Modifica la tua CSP in modo che includa quanto segue: </p> <p> 
-     <ul id="ul_7522AE83A03A4115A84DF5B32D6DD79B"> 
-      <li id="li_AB1EC161FB154BEDA1BEFE76C8A38A90"> <span class="codeph"> *.2o7.net</span> </li> 
-      <li id="li_4B12A283716746949201528CD6AF529E"> <span class="codeph"> *.omtrdc.net</span> </li> 
-     </ul> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <b>Target</b> </p> </td> 
-   <td colname="col2"> <p>Modifica la tua CSP in modo che includa <span class="codeph">*.tt.omtrdc.net</span>. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <b>Servizio di Experience Cloud ID e Audience Manager </b> </p> </td> 
-   <td colname="col2"> <p>Modifica la tua CSP in modo che includa i seguenti domini.</p> 
-   <p><ul>
-   <li>connect-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
-   <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
-   <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
-   <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-   <li>Se utilizzi Adobe Launch per distribuire i tag, devi aggiungere anche <code>https://assets.adobedtm.com</code> all’elenco dei domini.</li></ul></p> <p>Le chiamate al dominio <span class="codeph">demdex.net</span> vengono utilizzate per generare <a href="../introduction/cookies.md" format="dita" scope="local">I cookie ed Experience Cloud Identity Service</a> e per le sincronizzazioni degli ID. Vedi anche <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=it" format="https" scope="external">Informazioni sulle chiamate al dominio demdex</a>. </p> </td> </tr> 
- <tr>
- <td colname="col1"> <p> <b>Plug-in Activity Map</b> </p> </td> 
- <td colname="col2"> <p>Modifica la tua CSP in modo che includa *.adobe.com. **Nota**: se hai installato Activity Map prima di gennaio 2020, il browser visualizzerà comunque una richiesta iniziale a *.omniture.com ma verrà reindirizzato a *.adobe.com. </p></td> 
- </tr>
- <tr>
- <td colname="col1"> <p> <b>Advertising Analytics</b> </p> </td> 
- <td colname="col2"> <p>Se disponi di controlli sui parametri delle stringhe query, accertati di inserire in una whitelist i parametri 's_kwcid' e 'ef_id'. Tecnicamente Advertising Analytics utilizza solo 's_kwcid', ma se selezioni Ad Cloud Search o DSP utilizza anche 'ef_id'. Questi parametri delle stringhe query sono alfanumerici. Il parametro 's_kwcid' utilizza il carattere “!” e il parametro 'ef_id' utilizza il carattere “:”. Se blocchi il carattere “!” nell’URL, inseriscilo a sua volta nella whitelist.</p></td> 
- </tr>
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1">
+    <p><b>AppMeasurement</b></p>
+   </td>
+   <td colname="col2">
+    <p>Modifica la tua CSP in modo che includa quanto segue:</p>
+    <ul id="ul_7522AE83A03A4115A84DF5B32D6DD79B">
+     <li id="li_AB1EC161FB154BEDA1BEFE76C8A38A90"><span class="codeph">*.2o7.net</span></li>
+     <li id="li_4B12A283716746949201528CD6AF529E"><span class="codeph">*.omtrdc.net</span></li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <td colname="col1">
+    <p><b>Target</b></p>
+   </td>
+   <td colname="col2">
+    <p>Modifica la tua CSP per includere <span class="codeph">*.tt.omtrdc.net</span>.</p>
+   </td>
+  </tr>
+  <tr>
+   <td colname="col1">
+    <p><b>Servizio Experience Cloud ID e Audience Manager</b></p>
+   </td>
+   <td colname="col2">
+    <p>Modifica la tua CSP in modo che includa i seguenti domini.</p>
+    <ul>
+     <li>connect-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
+     <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
+     <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
+     <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
+     <li>Se utilizzi Adobe Launch per distribuire i tag, devi aggiungere anche <code>https://assets.adobedtm.com</code> all’elenco dei domini.</li>
+    </ul>
+    <p>Le chiamate al dominio <span class="codeph">demdex.net</span> vengono utilizzate per generare i <a href="../introduction/cookies.md" format="dita" scope="local">cookie e il servizio Experience Cloud Identity</a> e per le sincronizzazioni degli ID. Vedi anche <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=it" format="https" scope="external">Informazioni sulle chiamate al dominio Demdex</a>.</p>
+   </td>
+  </tr>
+  <tr>
+   <td colname="col1">
+    <p><b>Plug-in Activity Map</b></p>
+   </td>
+   <td colname="col2">
+    <p>Modifica la tua CSP in modo che includa *.adobe.com. **Nota**: se hai installato Activity Map prima di gennaio 2020, il browser visualizzerà comunque una richiesta iniziale a *.omniture.com ma verrà reindirizzato a *.adobe.com.</p>
+   </td>
+  </tr>
+  <tr>
+   <td colname="col1">
+    <p><b>Advertising Analytics</b></p>
+   </td>
+   <td colname="col2">
+    <p>Se si limitano i parametri delle stringhe di query, inserire nella whitelist i seguenti parametri:</p>
+    <ul>
+     <li><code>s_kwcid</code> (che utilizza <code>!</code>)</li>
+     <li><code>ef_id</code> (che utilizza <code>:</code>)</li>
+    </ul>
+    <p>Se blocchi il carattere <code>!</code> negli URL, inseriscilo anche nella whitelist.</p>
+    <p>Advertising Analytics utilizza solo <code>s_kwcid</code>, ma anche Advertising Search, Social, Commerce e Advertising DSP utilizzano <code>ef_id</code>.</p>
+   </td>
+  </tr>
+  <tr>
+   <td colname="col1">
+    <p><b>Adobe Advertising</b></p>
+   </td>
+   <td colname="col2">
+    <p>Modifica la tua CSP in modo che includa i seguenti domini:</p>
+    <ul>
+     <li><code>.everestjs.net</code></li>
+     <li><code>.everesttech.net</code></li>
+    </ul>
+   </td>
+  </tr>
+ </tbody>
 </table>
 
 >[!MORELIKETHIS]
