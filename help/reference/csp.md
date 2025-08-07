@@ -1,24 +1,24 @@
 ---
-description: Un'informativa sulla sicurezza dei contenuti (CSP) è un'intestazione HTTP e una funzione di sicurezza che offre ai browser il controllo sul tipo di risorse caricate su una pagina Web. Consulta questa sezione se usi il servizio ID e hai una CSP rigida che adotta delle whitelist per accettare le risorse dai domini fidati. Dovrai aggiungere i domini Adobe elencati di seguito alle whitelist della CSP.
+description: Un'informativa sulla sicurezza dei contenuti (CSP) è un'intestazione HTTP e una funzione di sicurezza che offre ai browser il controllo sul tipo di risorse caricate su una pagina Web. Consulta questa sezione se usi il servizio ID e hai CSP rigidi che usano i elenchi Consentiti per accettare risorse da domini affidabili. Dovrai aggiungere i domini Adobe elencati di seguito ai tuoi elenchi Consentiti di CSP.
 keywords: Servizio ID
 title: Informativa sulla sicurezza dei contenuti ed Experience Cloud Identity Service
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
-source-git-commit: 2bb47b56b26ce6ea17297a9ee0200f2623e44e71
+source-git-commit: c56bbaa6a3639e421c11a8231e14afb58a4fa305
 workflow-type: tm+mt
 source-wordcount: '501'
-ht-degree: 80%
+ht-degree: 62%
 
 ---
 
 # Informativa sulla sicurezza dei contenuti ed Experience Cloud Identity Service {#content-security-policies-and-the-experience-cloud-id-service}
 
-Un&#39;informativa sulla sicurezza dei contenuti (CSP) è un&#39;intestazione HTTP e una funzione di sicurezza che offre ai browser il controllo sul tipo di risorse caricate su una pagina Web. Consulta questa sezione se usi il servizio ID e hai una CSP rigida che adotta delle whitelist per accettare le risorse dai domini fidati. Dovrai aggiungere i domini Adobe elencati di seguito alle whitelist della CSP.
+Un&#39;informativa sulla sicurezza dei contenuti (CSP) è un&#39;intestazione HTTP e una funzione di sicurezza che offre ai browser il controllo sul tipo di risorse caricate su una pagina Web. Consulta questa sezione se usi il servizio ID e hai CSP rigidi che usano i elenchi Consentiti per accettare risorse da domini affidabili. Dovrai aggiungere i domini Adobe elencati di seguito ai tuoi elenchi Consentiti di CSP.
 
 ## Consulta CSP {#section-5fde5c00a678455c914b8307a8caab82}
 
 La CSP usa l&#39;intestazione HTTP `Content-Security-Policy` per controllare il tipo di risorse che i browser accettano o caricano su una pagina. L’applicazione di una CSP può essere utile per impedire:
 
-* Il caricamento dei file JavaScript se l’origine è sconosciuta o non è inclusa in una whitelist.
+* Il caricamento dei file di JavaScript se l’origine è sconosciuta o non è inclusa in un inserisco nell&#39;elenco Consentiti di.
 * Gli attacchi di cross-site scripting (XXS).
 * Attacchi di iniezione di dati.
 * Attacchi di defacing del sito.
@@ -26,7 +26,7 @@ La CSP usa l&#39;intestazione HTTP `Content-Security-Policy` per controllare il 
 
 L&#39;uso della CSP è comune e noto. Questa documentazione non ha l&#39;obiettivo di spiegare in maniera dettagliata la CSP (per maggiori informazioni consulta i link alle informazioni correlate). Ciò che è importante è capire quali nomi dei domini Adobe devi aggiungere a una CSP se ne usi una e se hai delle politiche di sicurezza restrittive. L’aggiunta di questi domini consente ai browser dei visitatori che accedono al tuo sito di effettuare chiamate importanti alle risorse Experience Cloud che utilizzi.
 
-## Domini Experience Cloud per la creazione di whitelist {#section-30693e9a96834edfbf04de9e698cf2aa}
+## Domini Experience Cloud per la Inserisce nell&#39;elenco Consentiti dei {#section-30693e9a96834edfbf04de9e698cf2aa}
 
 Aggiungi questi nomi di dominio o URL alla tua CSP per ogni soluzione o servizio Experience Cloud che utilizzi.
 
@@ -87,12 +87,12 @@ Aggiungi questi nomi di dominio o URL alla tua CSP per ogni soluzione o servizio
     <p><b>Advertising Analytics</b></p>
    </td>
    <td colname="col2">
-    <p>Se si limitano i parametri delle stringhe di query, inserire nella whitelist i seguenti parametri:</p>
+    <p>Se si limitano i parametri delle stringhe di query, è possibile inserire nell'elenco Consentiti i seguenti parametri:</p>
     <ul>
      <li><code>s_kwcid</code> (che utilizza <code>!</code>)</li>
      <li><code>ef_id</code> (che utilizza <code>:</code>)</li>
     </ul>
-    <p>Se blocchi il carattere <code>!</code> negli URL, inseriscilo anche nella whitelist.</p>
+    <p>Se blocchi il carattere <code>!</code> negli URL, lo inserisce nell'elenco Consentiti anche in questo caso.</p>
     <p>Advertising Analytics utilizza solo <code>s_kwcid</code>, ma anche Advertising Search, Social, Commerce e Advertising DSP utilizzano <code>ef_id</code>.</p>
    </td>
   </tr>
