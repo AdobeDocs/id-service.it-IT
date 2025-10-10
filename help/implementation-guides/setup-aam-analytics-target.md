@@ -3,7 +3,7 @@ description: Queste istruzioni sono per chi utilizza Analytics, Audience Manager
 keywords: Servizio ID
 title: Implementare Experience Cloud Identity Service per Analytics, Audience Manager e Target
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 100%
@@ -138,7 +138,7 @@ Aggiungi la `Visitor.getInstance` funzione riportata di seguito al tuo `AppMeasu
 
 >[!IMPORTANT]
 >
->A questo punto, devi rimuovere il codice [!DNL Audience Manager] DIL e sostituirlo con il modulo Gestione dell&#39;audience. Per istruzioni consulta [Implementare l’inoltro lato server](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=it).
+>A questo punto, devi rimuovere il codice [!DNL Audience Manager] DIL e sostituirlo con il modulo Gestione del pubblico. Per istruzioni consulta [Implementare l’inoltro lato server](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=it).
 
 ***(Facoltativo ma consigliato)* Crea un prop personalizzato.**
 
@@ -151,7 +151,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## Passaggio 7: aggiungi il codice API del visitatore alla pagina {#section-c2bd096a3e484872a72967b6468d3673}
 
-Inserisci il ` [!UICONTROL VisitorAPI.js]` file entro i tag `<head>` di ogni pagina. Quando inserisci il `VisitorAPI.js` file nella pagina:
+Inserisci il `[!UICONTROL VisitorAPI.js]` file entro i tag `<head>` di ogni pagina. Quando inserisci il `VisitorAPI.js` file nella pagina:
 
 * Inseriscilo all&#39;inizio della `<head>` sezione prima dei tag di altre soluzioni.
 * Deve essere eseguito prima di AppMeasurement e del codice di altre [!DNL Experience Cloud] soluzioni.
@@ -178,7 +178,7 @@ Consulta anche [I cookie ed Experience Cloud Identity Service](../introduction/c
 
 Se invii dati a un sistema interno da un feed di dati di click-stream e per i processi sono utilizzate le colonne `visid_high` e `visid_low`, devi attivare un periodo di tolleranza.
 
-Quando il processo di inserimento dei dati può utilizzare le colonne `post_visid_high` e `post_visid_low`, interrompi il periodo di tolleranza.
+Quando il processo di acquisizione dei dati può utilizzare le colonne `post_visid_high` e `post_visid_low`, interrompi il periodo di tolleranza.
 
 Vedi anche la [colonna di riferimento dei dati di click-stream](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=it).
 
@@ -234,7 +234,7 @@ Quando ricevi un mboxMCAVID, controllane il valore rispetto al valore [!DNL Anal
 
 Distribuisci il codice dopo aver superato il test.
 
-Se hai attivato un periodo di tolleranza:
+Se hai abilitato un periodo di tolleranza:
 
 * Verifica che l’ID di Analytics (AID) e il MID siano presenti nella richiesta di immagine.
 * Ricorda di disattivare il periodo di tolleranza quando sono presenti i [requisiti per l’interruzione](../implementation-guides/setup-aam-analytics-target.md#section-aceacdb7d5794f25ac6ff46f82e148e1).

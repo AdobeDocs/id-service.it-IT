@@ -3,7 +3,7 @@ description: Restituisce l’ID di regione di Experience Cloud Identity Service.
 keywords: Servizio ID
 title: getLocationHint
 exl-id: 0213f828-a985-4201-8a38-0a4b170ed057
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 100%
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Restituisce l’ID di regione di Experience Cloud Identity Service. Un ID di regione (o hint di posizione) è un identificatore numerico per la posizione geografica di un particolare datacenter del servizio ID. Per effettuare chiamate API lato server ad Audience Manager è necessario disporre dell’ID di regione.
 
-**Sintassi:** ` var *`nome variabile`* = visitor.getLocationHint()`
+**Sintassi:** `var *`nome variabile`* = visitor.getLocationHint()`
 
 Per un elenco degli ID di regione e delle posizioni corrispondenti, consulta [ID di regione DCS, posizioni e nomi host](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=it).
 

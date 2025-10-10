@@ -1,9 +1,9 @@
 ---
 description: Questo metodo helper ti consente di aggiungere a un URL di reindirizzamento il codice Supplemental Data ID (SDID) sotto forma di parametro della stringa di interrogazione. È utile quando stai usando A4T e hai bisogno di mantenere il codice SDID da una pagina all'altra e di unire insieme le visite separate. Per usare questa funzione, devi aver implementato il servizio ID con lo stesso ID organizzazione sui domini di origine e di destinazione.
 keywords: Servizio ID
-title: appendSupplementalDataIDTo
+title: 'appendSupplementalDataIDTo '
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
-source-git-commit: 5710539b45a81394061cd4af2ef3edc27b49092e
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 100%
@@ -25,7 +25,7 @@ Sommario:
 
 ## Sintassi ed esempio di codice {#section-cbb0b2f73bcc418386796c24c01b2365}
 
-**Sintassi:** ` appendSupplementalDataIDTo( *`URL`*, *`SDID`*)`
+**Sintassi:** `appendSupplementalDataIDTo( *`URL`*, *`SDID`*)`
 
 **Esempio di codice**
 
@@ -54,7 +54,7 @@ La configurazione [sdidParamExpiry](../../library/function-vars/sdidparamexpiry.
 
 Se hai bisogno di modificare il timeout del codice SDID predefinito, aggiungi `sdidParamExpiry` alla `Visitor.getInstance` funzione con la sintassi seguente:
 
-**Sintassi:** ` sdidParamExpiry: *`tempo in secondi`*`
+**Sintassi:** `sdidParamExpiry: *`tempo in secondi`*`
 
 **Esempio di codice**
 

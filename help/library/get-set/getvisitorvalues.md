@@ -3,7 +3,7 @@ description: Questa API asincrona restituisce per impostazione predefinita ident
 keywords: Servizio ID
 title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 100%
@@ -25,12 +25,12 @@ Sommario:
 
 ## Sintassi {#section-5aebe3907b2b46e997f45a1d1ed35c09}
 
-Questa funzione utilizza la seguente sintassi (il corsivo rappresenta un segnaposto per una variabile): ` var *`valori`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`tipo ID`*, visitor.FIELDS. *`tipo ID`*]);`
+Questa funzione utilizza la seguente sintassi (il corsivo rappresenta un segnaposto per una variabile): `var *`valori`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`tipo ID`*, visitor.FIELDS. *`tipo ID`*]);`
 
 Nei parametri della funzione:
 
-* ` *`callback`*` rappresenta il codice di callback che riceve l&#39;ID restituito.
-* *(Facoltativo)* ` visitor.FIELDS. *`Tipo ID`*` è un enum che ti permette di specificare quali [valori ID](../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) vuoi che siano restituiti da questa funzione.
+* `*`callback`*` rappresenta il codice di callback che riceve l&#39;ID restituito.
+* *(Facoltativo)* `visitor.FIELDS. *`Tipo ID`*` è un enum che ti permette di specificare quali [valori ID](../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) vuoi che siano restituiti da questa funzione.
 
 Per maggiori informazioni, vedi i casi d&#39;uso seguenti e le definizioni.
 

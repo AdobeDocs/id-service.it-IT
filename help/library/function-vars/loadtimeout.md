@@ -1,20 +1,20 @@
 ---
-description: Imposta un intervallo di timeout in millisecondi. Utilizzato per comunicare ad altre soluzioni (ad esempio Analytics, Audience Manager, Target, ecc.) quanto tempo attendere una risposta dal servizio ID.
+description: Imposta un intervallo di timeout in millisecondi. Utilizzato per indicare ad altre soluzioni (ad es. Analytics, Audience Manager, Target, ecc.) quanto tempo attendere una risposta dal servizio ID.
 keywords: Servizio ID
 title: loadTimeout
 exl-id: 485264f4-ee24-4042-8be3-259e70462110
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '142'
-ht-degree: 100%
+ht-degree: 69%
 
 ---
 
 # loadTimeout{#loadtimeout}
 
-Imposta un intervallo di timeout in millisecondi. Utilizzato per comunicare ad altre soluzioni (ad esempio Analytics, Audience Manager, Target, ecc.) quanto tempo attendere una risposta dal servizio ID.
+Imposta un intervallo di timeout in millisecondi. Utilizzato per indicare ad altre soluzioni (ad es. Analytics, Audience Manager, Target, ecc.) quanto tempo attendere una risposta dal servizio ID.
 
-**Sintassi:** ` loadTimeout: *`intervallo in millisecondi`*`
+**Sintassi:** `loadTimeout: *`intervallo in millisecondi`*`
 
 Il valore predefinito è 30.000 millisecondi (30 secondi). Si consiglia vivamente di *non* modificare il valore predefinito.
 
