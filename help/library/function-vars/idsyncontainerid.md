@@ -3,10 +3,10 @@ description: Questa proprietà imposta l'ID del contenitore della sorgente dati 
 keywords: Servizio ID
 title: idSyncContainerID
 exl-id: 6c4cd41b-902b-4872-8c3f-475a834b76f4
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: d8b230331d983bc95f96516243c3a65037dea7f0
 workflow-type: tm+mt
 source-wordcount: '320'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -81,7 +81,7 @@ A seconda della situazione, potresti dover o meno aggiungere questa configurazio
 
 ## Impostazione degli ID dei contenitori quando usi DIL e VisitorAPI.js {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
-Se hai implementato [!UICONTROL DIL ]* e* VisitorAPI.js sulla stessa pagina:
+Se hai implementato [!UICONTROL DIL] *e* VisitorAPI.js sulla stessa pagina:
 
 * Il codice del servizio ID del visitatore ha la precedenza rispetto a DIL per le sincronizzazioni ID.
 * Imposta la configurazione `idSyncContainerID` solo nel codice del servizio ID.
