@@ -37,7 +37,7 @@ Agosto 2015
   Questo bug interessava solo alcuni clienti che soddisfacevano *tutti* i seguenti criteri:
 
    * Uso del servizio ID.
-   * Hanno abilitato un [periodo di grazia ](../reference/analytics-reference/grace-period.md)*o* utilizzano cookie di prime parti e gli utenti hanno bloccato i cookie di terze parti.
+   * Hanno abilitato un [periodo di grazia &#x200B;](../reference/analytics-reference/grace-period.md)*o* utilizzano cookie di prime parti e gli utenti hanno bloccato i cookie di terze parti.
 
    * Avevano pagine con domini di livello superiore con più parti.
 
