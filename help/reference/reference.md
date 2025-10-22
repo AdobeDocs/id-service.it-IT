@@ -3,9 +3,9 @@ description: Informazioni su altre funzioni di Experience Cloud Identity Service
 keywords: Servizio ID
 title: Riferimenti
 exl-id: 9a14300c-206c-4960-b594-517809f7e979
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '90'
 ht-degree: 100%
 
 ---
@@ -14,7 +14,6 @@ ht-degree: 100%
 
 Informazioni su altre funzioni di Experience Cloud Identity Service.
 
-* [Panoramica delle risorse di riferimento per Analytics](analytics-reference/analytics-reference.md)
 * [Informativa sulla sicurezza dei contenuti ed Experience Cloud Identity Service](csp.md)
 * [Supporto per COPPA in Experience Cloud Identity Service](coppa.md)
 * [Supporto per CORS in Experience Cloud Identity Service](cors.md)

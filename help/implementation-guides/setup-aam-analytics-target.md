@@ -3,10 +3,10 @@ description: Queste istruzioni sono per chi utilizza Analytics, Audience Manager
 keywords: Servizio ID
 title: Implementare Experience Cloud Identity Service per Analytics, Audience Manager e Target
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
 workflow-type: tm+mt
-source-wordcount: '1450'
-ht-degree: 100%
+source-wordcount: '1443'
+ht-degree: 97%
 
 ---
 
@@ -37,8 +37,8 @@ La migrazione all’inoltro lato server richiede pianificazione e coordinamento.
 
 Il servizio ID richiede la `VisitorAPI.js` libreria dei codici. Per scaricare la libreria dei codici:
 
-1. Seleziona **[!UICONTROL Amministratore > Gestione codici]**.
-1. In Gestione codici, fai clic su **[!UICONTROL JavaScript (Nuovo)]** o su **[!UICONTROL JavaScript (Legacy)]**. Verranno scaricate le librerie dei codici compresse.
+1. Vai a **[!UICONTROL Admin > Code Manager]**.
+1. In Gestione codici, fare clic su **[!UICONTROL JavaScrpt (New)]** o su **[!UICONTROL JavaScript (Legacy)]**. Verranno scaricate le librerie dei codici compresse.
 
 1. Decomprimi il file dei codici e apri il `VisitorAPI.js` file.
 
@@ -158,7 +158,7 @@ Inserisci il `[!UICONTROL VisitorAPI.js]` file entro i tag `<head>` di ogni pagi
 
 ## Passaggio 8: (facoltativo) configura un periodo di tolleranza {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-Se uno di questi casi d’uso è applicabile alla tua situazione, chiedi all’[Assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html) di impostare un [periodo di tolleranza](../reference/analytics-reference/grace-period.md) temporaneo. I periodi di tolleranza possono durare fino a 180 giorni. Se necessario, puoi rinnovare il periodo di tolleranza.
+Se uno di questi casi d&#39;uso si applica alla tua situazione, chiedi a [Assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html) di impostare un periodo di tolleranza temporaneo. I periodi di tolleranza possono durare fino a 180 giorni. Se necessario, puoi rinnovare il periodo di tolleranza.
 
 **Implementazione parziale**
 
@@ -206,7 +206,7 @@ Verifica la presenza dell’identificatore SDID nella richiesta JavaScript. Il v
 Se i test restituiscono un AID, questo può indicare che:
 
 * Sei un visitatore precedente ed è in corso la migrazione degli [!DNL Analytics] ID precedenti.
-* Hai impostato un [periodo di tolleranza](../reference/analytics-reference/grace-period.md).
+* Hai impostato un [periodo di tolleranza](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration).
 
 Quando ricevi un AID, controllane il valore rispetto al valore [!DNL Target] mboxMCAVID di. Questi valori sono identici se il servizio ID è stato implementato correttamente.
 

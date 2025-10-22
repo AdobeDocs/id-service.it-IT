@@ -3,10 +3,10 @@ description: Queste istruzioni sono per chi usa Analytics e Audience Manager, de
 keywords: Servizio ID
 title: Implementare Experience Cloud Identity Service per Analytics e Audience Manager
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
 workflow-type: tm+mt
-source-wordcount: '1183'
-ht-degree: 100%
+source-wordcount: '1177'
+ht-degree: 98%
 
 ---
 
@@ -36,9 +36,9 @@ La migrazione all’inoltro lato server richiede pianificazione e coordinamento.
 
 Il servizio ID richiede la `VisitorAPI.js` libreria dei codici. Per scaricare la libreria dei codici:
 
-1. Seleziona **[!UICONTROL Amministratore]** > **[!UICONTROL Gestione codici]**.
+1. Vai a **[!UICONTROL Admin]** > **[!UICONTROL Code Manager]**.
 
-1. In Gestione codici, fai clic su **[!UICONTROL JavaScript (Nuovo)]** o su **[!UICONTROL JavaScript (Legacy)]**. Verranno scaricate le librerie dei codici compresse.
+1. In Gestione codici, fare clic su **[!UICONTROL JavaScrpt (New)]** o su **[!UICONTROL JavaScript (Legacy)]**. Verranno scaricate le librerie dei codici compresse.
 
 1. Decomprimi il file dei codici e apri il `VisitorAPI.js` file.
 
@@ -158,7 +158,7 @@ Inserisci il `[!UICONTROL VisitorAPI.js]` file entro i tag `<head>` di ogni pagi
 
 ## Passaggio 8: (facoltativo) configura un periodo di tolleranza {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-Se uno di questi casi d’uso è applicabile alla tua situazione, chiedi all’[Assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html) di impostare un [periodo di tolleranza](../reference/analytics-reference/grace-period.md) temporaneo. I periodi di tolleranza possono durare fino a 180 giorni. Se necessario, puoi rinnovare il periodo di tolleranza.
+Se uno di questi casi d’uso è applicabile alla tua situazione, chiedi all’[Assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html) di impostare un [periodo di tolleranza](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) temporaneo. I periodi di tolleranza possono essere di 180 giorni. Se necessario, puoi rinnovare il periodo di tolleranza.
 
 **Implementazione parziale**
 

@@ -5,9 +5,9 @@ title: Note sulla versione 2016
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
-source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1099'
 ht-degree: 100%
 
 ---
@@ -123,7 +123,6 @@ Luglio 2016
 
 **Novità**
 
-* [Implementare Experience Cloud Identity Service per Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
 * [Implementare Experience Cloud Identity Service per Analytics, Audience Manager e Target](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
 
 **Articoli rivisti:**
@@ -198,12 +197,6 @@ Marzo 2016
   </tr> 
  </tbody> 
 </table>
-
-**Aggiornamenti alla documentazione**
-
-* [Implementare Experience Cloud Identity Service per Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd): nuova procedura che descrive come configurare il servizio ID con [!DNL Analytics].
-
-* [Decisioni relative alla migrazione a Experience Cloud Identity Service](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257): testo aggiornato per migliorarne la chiarezza. Se usi un solo dominio puoi effettuare la migrazione da un CNAME di raccolta dati se non desideri più gestirlo. Tuttavia, questo cambiamento non è necessario se il CNAME funziona correttamente.
 
 ## Versione 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 
