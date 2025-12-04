@@ -52,7 +52,7 @@ Questi esempi coprono 2 casi d&#39;uso comuni relativi a un&#39;integrazione dir
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Soluzione ed esempio di codice</b> </p> </td> 
-   <td colname="col2"> <p>Formatta la chiamata al servizio ID in questo modo: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&amp;d_cid=4444%019876%011&amp;d_ver=2</span> </p> <p>Nota che la chiamata di esempio contiene: </p> 
+   <td colname="col2"> <p>Formatta la chiamata al servizio ID in questo modo: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&d_cid=4444%019876%011&d_ver=2</span> </p> <p>Nota che la chiamata di esempio contiene: </p> 
     <ul id="ul_0667FBFD8D3C46BDBD027F484691EC97"> 
      <li id="li_FAB1FAE703DB48D1A32EE72684028964">MID: <span class="codeph">d_mid=1234</span> </li> 
      <li id="li_C97B74FF444F4BB4B4A5CB1CBBE52249">MID unito all'ID univoco per il visitatore: <span class="codeph">d_mid=1234&amp;d_cid=4444%019876%011</span> </li> 
@@ -87,7 +87,7 @@ Questi esempi coprono 2 casi d&#39;uso comuni relativi a un&#39;integrazione dir
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Soluzione ed esempio di codice</b> </p> </td> 
-   <td colname="col2"> <p>Formatta la chiamata al servizio ID in questo modo: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>Nota come questa chiamata d'esempio contiene il tuo ID organizzazione, <span class="codeph">d_orgid=5555</span>. Ti verrà restituito un <span class="keyword">Experience Cloud</span> ID per il visitatore. </p> </td> 
+   <td colname="col2"> <p>Formatta la chiamata al servizio ID in questo modo: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&d_ver=2</span> </p> <p>Nota come questa chiamata d'esempio contiene il tuo ID organizzazione, <span class="codeph">d_orgid=5555</span>. Ti verrà restituito un <span class="keyword">Experience Cloud</span> ID per il visitatore. </p> </td> 
   </tr> 
  </tbody> 
 </table>
