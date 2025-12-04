@@ -3,9 +3,9 @@ description: getInstance restituisce un ID visitatore per l'ID organizzazione Ex
 keywords: Servizio ID
 title: getInstance
 exl-id: 4941cf51-a8d0-4796-a102-4cd13cd5574d
-source-git-commit: 76e894b6af7b217632bf89dcf94381f55457d45d
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '218'
 ht-degree: 96%
 
 ---
@@ -32,7 +32,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 >[!CAUTION]
 >
->*Non* creare un&#39;istanza della funzione Visitatore con `var visitor = new Visitor`. Devi usare la chiamata di funzione appropriata indicata qui. Si applica alla versione 3.0 o successiva della libreria del codice di [!UICONTROL VisitorAPI.js].
+>*Non* creare un&#39;istanza della funzione Visitatore con `var visitor = new Visitor`. Devi usare la chiamata di funzione appropriata indicata qui. Si applica alla [!UICONTROL VisitorAPI.js] libreria di codici v3.0 o superiore.
 
 **ActionScript / Flash**
 
@@ -57,3 +57,4 @@ Se `getInstance` non rileva un&#39;istanza esistente, viene creata e restituita 
 L&#39;API del servizio [!DNL Experience Cloud] ID conserva un elenco di tutte le istanze create per ciascun [!DNL Adobe Experience Cloud] ID organizzazione di. Se l&#39;applicazione che utilizza l&#39;API del servizio ID non utilizza un riferimento all&#39;istanza, l&#39;istanza può essere rilevata chiamando `getInstance`, senza bisogno di crearne una nuova. Questa funzione supporta anche più istanze per diverse organizzazioni all&#39;interno della stessa pagina Web o della stessa applicazione.
 
 È utile per le applicazioni che non dispongono di una `init` fase chiara e che devono essere richiamate nell&#39;API del servizio ID in più posizioni. Puoi chiamare `getInstance` da tutte le posizioni, l&#39;istanza verrà creata dalla prima posizione in cui viene eseguito. L&#39;istanza esistente verrà restituita dalle chiamate successive.
+

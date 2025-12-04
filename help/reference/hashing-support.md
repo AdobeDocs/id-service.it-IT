@@ -3,7 +3,7 @@ description: Il servizio Experience Cloud ID (ECID) supporta l’algoritmo di ha
 keywords: Servizio ID
 title: Supporto di hashing SHA-256 per setCustomerIDs
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 97%
@@ -35,7 +35,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 Oltre all’ID visitatore di Experience Cloud, puoi associare a ciascun visitatore altri ID cliente, lo stato di autenticazione e il tipo di hashing (SHA-256). Se non fornisci il tipo di hashing, l’impostazione verrà considerata come “senza hashing”.
 
-Il `setCustomerIDs` metodo accetta più ID cliente per lo stesso visitatore. In questo modo puoi identificare o indirizzare un singolo utente in più dispositivi. Ad esempio, puoi caricare gli ID come [attributi del cliente](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=it) in Experience Cloud e accedere ai dati dalle diverse soluzioni.
+Il `setCustomerIDs` metodo accetta più ID cliente per lo stesso visitatore. In questo modo puoi identificare o rivolgerti a un singolo utente in più dispositivi. Ad esempio, puoi caricare gli ID come [attributi del cliente](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=it) in Experience Cloud e accedere ai dati dalle diverse soluzioni.
 
 Gli ID cliente, gli stati di autenticazione e il tipo di hashing *non sono* memorizzati in un cookie da utilizzare in un secondo momento. Al contrario, gli ID cliente, gli stati di autenticazione e il tipo hashing devono essere memorizzati in una variabile di istanza, da recuperare mediante [`getCustomerIDs`](/help/library/get-set/getcustomerids.md), come illustrato di seguito:
 
@@ -100,3 +100,4 @@ setCustomerIDs(Ingeration code: {
 ```
 
 In modo analogo al metodo `setCustomerIDs` descritto nella prima sezione, si verifica una chiamata al servizio Experience Cloud ID, con l’aggiunta del parametro di query `d_cid_ic`.
+

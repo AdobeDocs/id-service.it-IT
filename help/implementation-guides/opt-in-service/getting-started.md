@@ -2,7 +2,7 @@
 description: Implementare il servizio Opt-in come unico punto di riferimento usato dalle soluzioni Experience Cloud (definite anche Categorie in Opt-in) per definire se è necessario creare cookie sul dispositivo di un visitatore.
 title: Configurazione del servizio Opt-in
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
-source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
@@ -39,7 +39,7 @@ Il servizio Opt-in consente di specificare se un visitatore può dare il consens
    For IAB, see here for additional pre-reqs.
    -->
 
-1. I requisiti di privacy dell&#39;azienda saranno specifici in base alla scelta di rispettare il RGPD. Tieni presente quali librerie i team aziendali per la privacy possono usare prima del consenso.
+1. I requisiti di privacy dell&#39;azienda saranno specifici in base alla scelta di rispettare il GDPR. Tieni presente quali librerie i team aziendali per la privacy possono usare prima del consenso.
 
 Se utilizzi i [Tag in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it), sfrutta l’[estensione Opt-in](../../implementation-guides/opt-in-service/launch.md) per configurare il servizio Opt-in.
 
@@ -143,3 +143,4 @@ Il servizio Opt-in consente di memorizzare le preferenze di consenso adatte a un
 
 * Se la soluzione di persistenza del consenso, che si tratti di CMP o di un cookie sul browser del visitatore, consente un recupero tempestivo delle preferenze del visitatore, è possibile fornirle al servizio Opt-in durante l&#39;inizializzazione di Visitatore.
 * Tuttavia, se il recupero è un processo lungo o in alternativa viene eseguito meglio come processo asincrono, puoi usare la `approve()` funzione del servizio per fornire tali impostazioni una volta caricate correttamente.
+

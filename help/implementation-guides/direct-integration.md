@@ -3,7 +3,7 @@ description: Questa implementazione permette ai clienti di usare il servizio ID 
 keywords: Servizio ID
 title: Integrazione diretta con Experience Cloud Identity Service
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 95%
@@ -61,11 +61,11 @@ Il servizio ID restituisce i dati in un oggetto JSON come mostrato di seguito. L
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>L'ID visitatore Experience Cloud. Consulta Cookie <a href="../introduction/cookies.md" format="dita" scope="local"> e il servizio Experience Cloud Identity</a>. </p> </td> 
+   <td colname="col2"> <p>L'ID visitatore Experience Cloud. Consulta <a href="../introduction/cookies.md" format="dita" scope="local"> cookie e il servizio Experience Cloud Identity</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>L'ID organizzazione Experience Cloud. Per informazioni su come trovare questo ID, vedere <a href="../reference/requirements.md" format="dita" scope="local"> Requisiti per il servizio Experience Cloud Identity</a>. </p> </td> 
+   <td colname="col2"> <p>L'ID organizzazione Experience Cloud. Per informazioni su come trovare questo ID, vedi <a href="../reference/requirements.md" format="dita" scope="local"> Requisiti per il servizio Experience Cloud Identity</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
@@ -122,3 +122,4 @@ Alcuni parametri di risposta fanno parte della richiesta e sono stati definiti n
   </tr> 
  </tbody> 
 </table>
+

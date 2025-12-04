@@ -2,7 +2,7 @@
 description: Semplificare l'abilitazione della soluzione Experience Cloud per Opt-in utilizzando Adobe Experience Platform Launch.
 title: Configurare Opt-in con Launch
 exl-id: 9e9d1e2b-196f-474c-b872-de4329dcb017
-source-git-commit: 5858933e9d51ec97b1ba7a8fbe483f1919954543
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 100%
@@ -19,10 +19,11 @@ Semplificare l’abilitazione della soluzione Experience Cloud per Opt-in utiliz
 
 **Configurare l&#39;estensione Experience Cloud ID**
 
-Se l’estensione Experience Cloud ID non è ancora stata installata, apri la proprietà, quindi fai clic su *Estensioni* > *Catalogo*, passa il puntatore del mouse sull’estensione Experience Cloud ID e fai clic su *Installa*.
+Se l’estensione Experience Cloud ID non è ancora stata installata, apri la proprietà, quindi fai clic su *Estensioni* > *Catalogo*, passa il puntatore sull’estensione Experience Cloud ID e fai clic su *Installa*.
 
-Per configurare l&#39;estensione, apri la scheda *Estensioni* e passa il puntatore del mouse sull&#39;estensione. Quindi fai clic su *Configura*.
+Per configurare l’estensione, apri la scheda *Estensioni* e passa il puntatore sull’estensione. Quindi fai clic su *Configura*.
 
 Per ulteriori informazioni di riferimento, consulta la [panoramica sull’estensione Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html?lang=it).
 
 ![](assets/optin-launch.jpg)
+

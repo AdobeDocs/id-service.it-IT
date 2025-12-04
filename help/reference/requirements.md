@@ -3,7 +3,7 @@ description: Leggi questa sezione per essere certo di usare le soluzioni, i serv
 keywords: Servizio ID
 title: Requisiti di Experience Cloud Identity Service
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: 00ebcaa16ec6b432b480d96fbf79b6a745515b1b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 100%
@@ -135,3 +135,4 @@ Il codice SDK deve essere abilitato per il servizio ID. Abilita e scarica il cod
 >[!MORELIKETHIS]
 >
 >* [Libreria dei codici](../library/library.md#concept-ff27497375644a898d47984aefb21c97)
+

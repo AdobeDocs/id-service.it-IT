@@ -3,9 +3,9 @@ description: Queste configurazioni consentono a diverse istanze del codice del s
 keywords: Servizio ID
 title: whitelistParentDomain e whitelistIframeDomains
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '859'
 ht-degree: 100%
 
 ---
@@ -49,7 +49,7 @@ Entrambi gli elementi di configurazione sono richiesti quando si utilizza questo
 
 ## Esempio di codice {#section-09d0049fe88a473baa69d404c50bf8ae}
 
-Una volta configurato, il tuo codice del [!UICONTROL servizio ID] potrebbe assomigliare a questo esempio.
+Una volta configurato il tuo [!UICONTROL ID service]codice, potrebbe assomigliare a questo esempio.
 
 ```js
 //Instantiate Visitor 
@@ -104,7 +104,7 @@ Queste configurazioni aiutano a risolvere il problema dell’impostazione di un 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Soluzione</b> </p> </td> 
-   <td colname="col2"> <p>Modifica la funzione <span class="codeph">Visitor.getInstance</span> del servizio ID nell'iFrame con queste configurazioni della whitelist. Specifica i domini padre e figlio nel codice. Queste configurazioni consentono al codice del servizio ID nell’iFrame di controllare il codice del servizio ID sulla pagina padre per un ID visitatore. </p> <p>Se il codice del servizio ID nell’iFrame non riceve una pagina padre di risposta, queste configurazioni generano un ID visitatore locale. </p> </td> 
+   <td colname="col2"> <p>Modifica la funzione <span class="codeph">Visitor.getInstance</span> del servizio ID nell'iFrame con queste configurazioni della whitelist. Specifica i domini principale e secondario nel codice. Queste configurazioni consentono al codice del servizio ID nell’iFrame di controllare il codice del servizio ID sulla pagina padre per un ID visitatore. </p> <p>Se il codice del servizio ID nell’iFrame non riceve una pagina padre di risposta, queste configurazioni generano un ID visitatore locale. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -138,7 +138,7 @@ Queste configurazioni aiutano a risolvere il problema dell’impostazione di un 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Soluzione</b> </p> </td> 
-   <td colname="col2"> <p>Modifica la funzione <span class="codeph">Visitor.getInstance</span> del servizio ID nell'iFrame con queste configurazioni della whitelist. Specifica i domini padre e figlio nel codice. Queste configurazioni consentono al codice del servizio ID nell’iFrame di controllare il codice del servizio ID sulla pagina padre per un ID visitatore. </p> <p>Se il codice del servizio ID nell’iFrame non riceve una pagina padre di risposta, queste configurazioni generano un ID visitatore locale. </p> </td> 
+   <td colname="col2"> <p>Modifica la funzione <span class="codeph">Visitor.getInstance</span> del servizio ID nell'iFrame con queste configurazioni della whitelist. Specifica i domini principale e secondario nel codice. Queste configurazioni consentono al codice del servizio ID nell’iFrame di controllare il codice del servizio ID sulla pagina padre per un ID visitatore. </p> <p>Se il codice del servizio ID nell’iFrame non riceve una pagina padre di risposta, queste configurazioni generano un ID visitatore locale. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -184,3 +184,4 @@ Il servizio ID supporta un set limitato di metodi API pubblici quando si impleme
   </tr> 
  </tbody> 
 </table>
+

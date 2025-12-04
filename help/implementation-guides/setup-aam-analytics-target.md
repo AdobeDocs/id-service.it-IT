@@ -3,7 +3,7 @@ description: Queste istruzioni sono per chi utilizza Analytics, Audience Manager
 keywords: Servizio ID
 title: Implementare Experience Cloud Identity Service per Analytics, Audience Manager e Target
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 97%
@@ -206,7 +206,7 @@ Verifica la presenza dell’identificatore SDID nella richiesta JavaScript. Il v
 Se i test restituiscono un AID, questo può indicare che:
 
 * Sei un visitatore precedente ed è in corso la migrazione degli [!DNL Analytics] ID precedenti.
-* Hai impostato un [periodo di tolleranza](https://experienceleague.adobe.com/it/docs/analytics/implementation/id/migration).
+* Hai impostato un [periodo di tolleranza](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration).
 
 Quando ricevi un AID, controllane il valore rispetto al valore [!DNL Target] mboxMCAVID di. Questi valori sono identici se il servizio ID è stato implementato correttamente.
 
@@ -238,3 +238,4 @@ Se hai abilitato un periodo di tolleranza:
 
 * Verifica che l’ID di Analytics (AID) e il MID siano presenti nella richiesta di immagine.
 * Ricorda di disattivare il periodo di tolleranza quando sono presenti i [requisiti per l’interruzione](../implementation-guides/setup-aam-analytics-target.md#section-aceacdb7d5794f25ac6ff46f82e148e1).
+

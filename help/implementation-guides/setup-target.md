@@ -3,9 +3,9 @@ description: Queste istruzioni sono per chi utilizza Target, desidera usare Expe
 keywords: Servizio ID
 title: Implementare Experience Cloud Identity Service per Target
 exl-id: 7a387e98-c8fc-4904-942a-be5e527eada2
-source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '396'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ Queste istruzioni sono per chi utilizza Target e desidera utilizzare Experience 
 
 ## Passaggio 1: ottieni il codice del servizio ID {#section-b32ba0548aa546a79dd38be59832a53e}
 
-Il [!UICONTROL servizio ID] richiede la libreria dei codici `VisitorAPI.js`. Per ottenere questo codice contatta l’[Assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html).
+Il [!UICONTROL ID Service] richiede la `VisitorAPI.js` libreria dei codici. Per ottenere questo codice contatta l’[Assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html).
 
 ## Passaggio 2: aggiungi la funzione Visitor.getInstance al codice del servizio ID {#section-287ef2958e9f43858fe9d630ae519e22}
 
@@ -78,3 +78,4 @@ Per informazioni sul cookie AMCV e sull’identificatore MID, consulta [I cookie
 **Distribuzione**
 
 Distribuisci il codice dopo aver superato il test.
+

@@ -3,7 +3,7 @@ description: Versioni future, aggiornamenti o modifiche a Experience Cloud Ident
 keywords: Servizio ID
 title: Note sulla versione 2019
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
-source-git-commit: 503683b66b6022b7c1fecbfb197fe17e05ae9c64
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 100%
@@ -67,3 +67,4 @@ Supporto per il plug-in Audience Manager per IAB TCF, disponibile tramite l’og
 |---|---|
 | Il flag `disableIdSyncs` non funziona quando viene passata una stringa. | Corretto. Ora i valori impostati sul `disableidSyncs` parametro per la `getInstance` funzione vengono rispettati. |
 | iFrames di terze parti non ricevono l’ECID | È stato corretto ECID su Safari Mobile e ECID in diversi iFrame che non funzionavano. |
+

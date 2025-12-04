@@ -3,10 +3,10 @@ description: Versioni future, aggiornamenti o modifiche a Experience Cloud Ident
 keywords: Servizio ID
 title: Note sulla versione 2018
 exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 99%
+ht-degree: 93%
 
 ---
 
@@ -77,7 +77,7 @@ Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service p
 
 >[!NOTE]
 >
->È consigliabile passare il prima possibile dalla versione 3.1.0 alla versione più recente. Consultare la descrizione della versione 3.1.2. L’ultimo pacchetto è disponibile da Adobe Experience Platform Launch, DTM e AppMeasurement.
+>È consigliabile aggiornare il prima la versione 3.1.0 alla versione più recente. Consultare la descrizione della versione 3.1.2. L’ultimo pacchetto è disponibile da Adobe Experience Platform Launch, DTM e AppMeasurement.
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
@@ -89,7 +89,7 @@ Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service p
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Cookie impostato su un dominio errato </p> </td> 
-   <td colname="col2"> <p>È stato corretto un bug a causa del quale il cookie Visitatore temporaneo impostava un cookie nel dominio del cookie “default” invece di impostarlo nel dominio fornito nella configurazione (initConfig). </p> </td> 
+   <td colname="col2"> <p>È stato corretto un bug a causa del quale il cookie Visitatore temporaneo impostava un cookie nel dominio del cookie "default" invece di impostarlo nel dominio fornito nella configurazione (initConfig). </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -122,3 +122,4 @@ Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service p
   </tr> 
  </tbody> 
 </table>
+

@@ -2,10 +2,10 @@
 description: Collega la loro piattaforma di gestione del consenso (CMP) con relativo il plug-in di Audience Manager per i servizi Opt-in con la specifica IAB TCF (Trasparency and Consent Framework).
 title: Utilizzo dei servizi Opt-in con il Framework IAB
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
-source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -57,3 +57,4 @@ Per maggiori informazioni su come convalidare il plug-in di Opt-in IAB TCF, fai 
 * [Adobe Opt-in](../../implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360): per altre informazioni su Opt-in, un componente necessario per la gestione dei consensi nelle soluzioni della piattaforma
 * Supporto IAB Transparency and Consent Framework (TCF) [in Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html?lang=it)
 * [Opzioni sulla privacy](https://www.adobe.com/it/privacy/opt-out.html#customeruse): un’altra opzione sulla privacy a tua disposizione è la capacità di negare il consenso alla raccolta dei dati usando gli strumenti di rifiuto globale. Il rifiuto globale ha la precedenza sull’Opt-in e sulla verifica IAB TCF
+

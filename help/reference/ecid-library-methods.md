@@ -2,10 +2,10 @@
 title: Metodi della libreria ECID in ambito Safari ITP
 description: Documentazione della libreria Adobe ECID (servizio ID).
 exl-id: ac1d1ee1-2b5f-457a-a694-60bb4c960ae7
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '785'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Poiché Safari ottimizza il monitoraggio tra domini diversi tramite ITP, Adobe deve mantenere le best practice per le librerie che supportano i clienti, nonché la privacy e le scelte dei consumatori.
 
-A partire dal 10 novembre 2020, tutti i cookie persistenti di prime parti impostati tramite l’API document.cookie, anche noti come cookie “lato client”, e i cookie impostati tramite le implementazioni CNAME di prime parti nei browser Safari e iOS mobile hanno una scadenza limitata a sette giorni. I cookie di terze parti continueranno a essere bloccati, come indicato nelle versioni precedenti di ITP. Per ulteriori dettagli su ITP 2.1 e sull’impatto delle soluzioni Adobe, consulta [L’impatto di Safari ITP 2.1 sui clienti Adobe Experience Cloud ed Experience Platform](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).
+A partire dal 10 novembre 2020, tutti i cookie persistenti di prime parti impostati tramite l’API document.cookie, spesso noti come cookie &quot;lato client&quot;, e i cookie impostati tramite le implementazioni CNAME di prime parti nei browser Safari e iOS mobile hanno una scadenza limitata a sette giorni. I cookie di terze parti continueranno a essere bloccati, come indicato nelle versioni precedenti di ITP. Per ulteriori dettagli su ITP 2.1 e sull’impatto delle soluzioni Adobe, consulta [L’impatto di Safari ITP 2.1 sui clienti Adobe Experience Cloud ed Experience Platform](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).
 
 ## Modifiche, metodi e configurazioni relative a ITP
 
@@ -77,3 +77,4 @@ Con questa funzione puoi condividere l&#39;ECID di un visitatore tra più domini
   >Se la pagina di destinazione dispone già di un ECID da precedenti visite, la decisione di sovrascrivere il cookie esistente è controllata da questa configurazione overwriteCrossDomainMCIDAndAID. Per informazioni dettagliate su questa configurazione, consulta [overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md).
   >
   >Per maggiori dettagli su questo metodo, consulta la pagina di riferimento [appendVisitorIDsTo (Monitoraggio interdominio)](/help/library/get-set/appendvisitorid.md).
+

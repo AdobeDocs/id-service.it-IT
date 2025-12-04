@@ -3,10 +3,10 @@ description: Oltre all’ID visitatore di Experience Cloud, puoi associare altri
 keywords: Servizio ID
 title: ID cliente e stati di autenticazione
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
-source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 100%
+source-wordcount: '592'
+ht-degree: 97%
 
 ---
 
@@ -16,11 +16,11 @@ Oltre all’ID visitatore di Experience Cloud, puoi associare altri ID cliente e
 
 ## Stati di autenticazione {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-Il `setCustomerIDs` metodo accetta più ID cliente per lo stesso visitatore. In questo modo puoi identificare o indirizzare un singolo utente in più dispositivi. Ad esempio, puoi caricare gli ID come [attributi del cliente](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=it) in [!DNL Experience Cloud] e accedere ai dati dalle diverse soluzioni.
+Il `setCustomerIDs` metodo accetta più ID cliente per lo stesso visitatore. In questo modo puoi identificare o rivolgerti a un singolo utente in più dispositivi. Ad esempio, puoi caricare gli ID come [attributi del cliente](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=it) in [!DNL Experience Cloud] e accedere ai dati dalle diverse soluzioni.
 
 >[!IMPORTANT]
 >
->`setCustomerIDs` (sincronizzazione ID cliente) è richiesto per gli attributi dei clienti e le funzionalità dei servizi principali. La sincronizzazione degli ID cliente è un metodo di identificazione facoltativo per [!DNL Analytics]. [!DNL Target] richiede `Visitor.AuthState.AUTHENTICATED` per il funzionamento degli attributi cliente. Alcuni esempi sono disponibili in [Servizi principali - Come attivare le proprie soluzioni](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/solutions-core-services.html?lang=it).
+>`setCustomerIDs` (sincronizzazione ID cliente) è richiesto per gli attributi dei clienti e le funzionalità dei servizi principali. La sincronizzazione degli ID cliente è un metodo di identificazione facoltativo per [!DNL Analytics]. [!DNL Target] richiede `Visitor.AuthState.AUTHENTICATED` per il funzionamento degli attributi cliente. Alcuni esempi sono disponibili in [Servizi principali - Come abilitare le proprie soluzioni](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/solutions-core-services.html?lang=it).
 
 A partire dalla versione 1.5 di Experience Cloud Identity Service, `setCustomerIDs` include l’oggetto facoltativo `AuthState`. `AuthState` identifica i visitatori in base al loro stato di autenticazione (ad es. connessi o disconnessi). Lo stato di autenticazione si imposta con uno dei valori di stato elencati nella tabella. Lo stato di autenticazione viene restituito come numero intero.
 
@@ -91,7 +91,7 @@ Gli ID cliente possono includere combinazioni di ID e stati di identificazione, 
 >* Gli ID sono sensibili all’uso di maiuscole e minuscole.
 >* Per gli ID, usa solo valori non codificati.
 >* Gli ID cliente e gli stati di autenticazione non sono memorizzati nel cookie dell’ID visitatore. Devono essere impostati per ciascuna pagina o contesto dell’applicazione.
->* Negli ID cliente non devono essere incluse informazioni identificative della persona (Personally Identifiable Information, PII). Invece di utilizzare informazioni PII per identificare un visitatore (ad esempio l’indirizzo e-mail), consigliamo di memorizzare una versione con hashing o codificata di queste informazioni. La libreria ECID supporta l’hashing degli identificatori utente. Consulta [Supporto di hashing SHA-256 per setCustomerIDs](/help/reference/hashing-support.md).
+>* Negli ID cliente non devono essere incluse informazioni identificative della persona (Personally Identifiable Information, PII). Invece di utilizzare informazioni PII per identificare un visitatore (ad esempio l’indirizzo e-mail), consigliamo di memorizzare una versione con hashing o crittografata di queste informazioni. La libreria ECID supporta l’hashing degli identificatori utente. Consulta [Supporto di hashing SHA-256 per setCustomerIDs](/help/reference/hashing-support.md).
 
 ```js
 // Single ID with a single authentication state 
@@ -216,4 +216,5 @@ Il servizio [!DNL Experience Cloud] ID supporta gli ID dei clienti e gli stati d
 
 ## Avviso per i clienti Analytics e Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-Se trasferisci ID dichiarati ad [!DNL Audience Manager], l’oggetto `userid` deve corrispondere al codice di integrazione associato a un’origine dati. Per ulteriori informazioni, consulta la sezione [!UICONTROL Servizio ID visitatore] nel documento [Configurazione codice delle regole di unione](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=it#configure-merge-rule-code).
+Se trasferisci ID dichiarati ad [!DNL Audience Manager], l’oggetto `userid` deve corrispondere al codice di integrazione associato a un’origine dati. Per ulteriori informazioni, vedere la sezione [!UICONTROL Visitor ID Service] nella documentazione di [Configurazione codice regole di unione](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=it#configure-merge-rule-code).
+

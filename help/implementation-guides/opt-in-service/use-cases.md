@@ -2,10 +2,10 @@
 description: Casi d'uso e soluzioni di esempio per gestire il servizio Opt-in.
 title: Casi d'uso di Opt-in
 exl-id: 4c57685f-40b7-4af4-8527-3c2795586f0f
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 99%
+ht-degree: 90%
 
 ---
 
@@ -39,7 +39,7 @@ Questi casi d&#39;uso sono idee di esempio per usare il servizio Opt-in.
   </tr> 
   <tr> 
    <td colname="col1"> <p>La misurazione di prima parte è adatta per la raccolta dei dati prima del consenso. Tutti gli altri tipi di dati di utilizzo potranno essere raccolti solo dopo la ricezione del consenso. </p> </td> 
-   <td colname="col2"> <p>Utilizza il servizio Opt-in per abilitare le librerie di Analytics e ECID prima del consenso. </p> <p>Aggiungi la configurazione “disablethirdpartycookies” alla libreria ECID per bloccare cookie di terze parti e sincronizzazioni degli ID prima del consenso. </p> </td> 
+   <td colname="col2"> <p>Utilizza il servizio Opt-in per abilitare le librerie di Analytics e ECID prima del consenso. </p> <p>Aggiungi la configurazione "disablethirdpartycookies" alla libreria ECID per bloccare cookie di terze parti e sincronizzazioni degli ID prima del consenso. </p> </td> 
    <td colname="col3"> <p>La chiamata demdex di Adobe verrà attivata per il recupero dell’ECID, ma non saranno presenti il cookie demdex, altri cookie di terze parti né sincronizzazioni degli ID. </p> <p>Mantiene la coerenza del visitatore nello stato che precede/segue il consenso per Analytics. La raccolta prima del consenso verrà associata alla raccolta dati dopo il consenso. </p> </td> 
   </tr> 
   <tr> 
@@ -54,3 +54,4 @@ Questi casi d&#39;uso sono idee di esempio per usare il servizio Opt-in.
   </tr> 
  </tbody> 
 </table>
+

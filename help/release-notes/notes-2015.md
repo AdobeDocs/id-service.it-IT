@@ -3,7 +3,7 @@ description: Note sulla versione e aggiornamenti per la versione 2015.
 keywords: Servizio ID
 title: Note sulla versione 2015
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 95%
@@ -37,7 +37,7 @@ Agosto 2015
   Questo bug interessava solo alcuni clienti che soddisfacevano *tutti* i seguenti criteri:
 
    * Uso del servizio ID.
-   * È abilitato un [periodo di tolleranza](https://experienceleague.adobe.com/it/docs/analytics/implementation/id/migration) *o* che utilizza cookie di prime parti e gli utenti bloccano i cookie di terze parti.
+   * È abilitato un [periodo di tolleranza](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) *o* che utilizza cookie di prime parti e gli utenti bloccano i cookie di terze parti.
    * Avevano pagine con domini di livello superiore con più parti.
 
 Le revisioni della documentazione in questa versione includono:
@@ -76,3 +76,4 @@ Febbraio 2015
 Gennaio 2015
 
 La ricerca del tag `<head>/<body>` è stata rielaborata per il contenitore di tag `<script>` della richiesta JSONP; è stata rielaborata anche la creazione del tag `<script>` per diverse implementazioni DOM (HTML vs XHTML) con impostazioni potenzialmente diverse per la distinzione tra maiuscole e minuscole. (AN-9355)
+

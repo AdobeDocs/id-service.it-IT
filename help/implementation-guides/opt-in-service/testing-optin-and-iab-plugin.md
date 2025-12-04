@@ -2,7 +2,7 @@
 description: Dopo aver abilitato l'oggetto Opt-in sul sito Web, usa i metodi di convalida per verificare che il servizio funzioni come previsto usando gli strumenti per sviluppatori nel browser.
 title: Convalida del servizio Opt-in
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 96%
@@ -113,3 +113,4 @@ Se uno dei seguenti elementi non è valido, non verranno visualizzate richieste 
 
 * Le finalità 1, 2 o 5 non sono approvate.
 * L’ID fornitore Audience Manager non è approvato.
+

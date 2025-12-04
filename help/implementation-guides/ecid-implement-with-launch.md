@@ -4,7 +4,7 @@ title: Implementare con Launch
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: cf197fde-3b93-4578-b24e-2db5633f043c
-source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 100%
@@ -22,3 +22,4 @@ I [Tag in Experience Platform](https://experienceleague.adobe.com/docs/experienc
 * distribuire prodotti Web lato client usando integrazioni definite _estensioni_;
 * acquisire, definire, gestire e condividere in modo coerente i dati tra prodotti marketing e pubblicitari di Adobe e altri fornitori.
 * I tag di Platform rappresentano un sistema di consegna JavaScript avanzato che valuta le condizioni ed esegue azioni per distribuire in modo efficiente ed efficace librerie e prodotti lato client. Forniscono un approccio altamente scalabile per gestire e creare estensioni, con un solido insieme di API per l’interazione programmatica con Adobe Experience Cloud.
+

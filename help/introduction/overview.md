@@ -2,7 +2,7 @@
 description: Il ruolo di Experience Cloud Identity Service in Adobe Experience Cloud.
 title: Panoramica di Experience Cloud Identity Service
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
-source-git-commit: f7c25f5ebd0690c56c081422949eb34f1f277ae1
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 100%
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Experience Cloud Identity Service abilita la piattaforma di identificazione comune per i servizi applicativi di Experience Cloud. Puoi utilizzare Experience Cloud Identity Service per impostare l&#39;[ID Experience Cloud (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=it).
 
-L’ECID è uno spazio dei nomi dell’identità condivisa utilizzato nelle applicazioni Adobe Experience Platform e Experience Cloud per monitorare il comportamento dei visitatori e garantire che ogni dispositivo abbia un identificatore univoco che possa persistere in più sessioni.
+L’ECID è uno spazio dei nomi di identità condiviso e utilizzato nelle applicazioni Adobe Experience Platform e Experience Cloud per monitorare il comportamento dei visitatori e garantire che ogni dispositivo abbia un identificatore univoco che possa persistere in più sessioni.
 
 >[!TIP]
 >
@@ -50,3 +50,4 @@ Prima che tu possa utilizzare Identity Service, la tua soluzione e altre libreri
 * [I cookie ed Experience Cloud Identity Service](cookies.md): il servizio Experience Cloud Identity utilizza l’ID dell&#39;organizzazione, il cookie AMCV di Experience Cloud e un cookie demdex per creare e memorizzare identificatori univoci e costanti per i visitatori del sito. Questi cookie permettono al Identity Service di tenere traccia dei visitatori nei diversi domini e di condividere i dati tra le varie soluzioni di Experience Cloud.
 * [Richiesta e impostazione degli ID da parte di Experience Cloud Identity Service](id-request.md): panoramica del processo di richiesta degli ID e di risposta. Questi esempi descrivono l’assegnazione degli ID per siti individuali, per siti diversi e per siti gestiti da diversi clienti Experience Cloud con i propri ID organizzazione.
 * [Informazioni sulla sincronizzazione degli ID e sui tassi di corrispondenza](match-rates.md): panoramica dei processi di sincronizzazione ID e dei tassi di corrispondenza in Experience Cloud Identity Service, inclusi Adobe Media Optimizer e Identity Service.
+

@@ -3,10 +3,10 @@ description: Questa configurazione consente di cancellare Experience Cloud ID (E
 keywords: Servizio ID
 title: resetBeforeVersion
 exl-id: 9fa40baa-433d-4f16-824b-521948a92a4b
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '249'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -16,7 +16,7 @@ Questa configurazione consente di cancellare Experience Cloud ID (ECID) orfani o
 
 Specificando la versione del servizio ID come valore della variabile `resetBeforeVersion` gli ECID superati verranno cancellati dagli ID lato client.
 
-Alcune condizioni, ad esempio i timeout della sessione, potrebbero a volte causare la generazione di un ID lato client senza che il servizio ID ottenga in maniera corretta un ID lato server. Quando si verifica questa situazione, un ID lato client orfano viene tracciato dal servizio ID senza poter essere tracciato tra i domini o sincronizzato in modo appropriato con altre soluzioni. Il comportamento confronta la versione nel cookie AMCV attuale con il valore di `resetBeforeVersion`. Se il cookie non esiste o la versione del cookie è meno recente rispetto all&#39;ultima versione rilasciata di `resetBeforeVersion`, i cookie AMCV vengono rimossi e il servizio ID richiede un nuovo ECID.
+Alcune condizioni, ad esempio i timeout della sessione, potrebbero a volte causare la generazione di un ID lato client senza che il servizio ID ottenga in maniera corretta un ID lato server. Quando si verifica questa situazione, un ID lato client orfano viene tracciato dal servizio ID senza poter essere tracciato tra i domini o sincronizzato in modo appropriato con altre soluzioni. Il comportamento confronta la versione nel cookie AMCV attuale con il valore di `resetBeforeVersion`. Se il cookie non esiste o la versione del cookie è meno recente rispetto all&#39;ultima versione rilasciata di `resetBeforeVersion`, il cookie AMCV viene rimosso e il servizio ID richiede un nuovo ECID.
 
 Per i visitatori che hanno cookie demdex di terze parti sul browser, l&#39;ECID viene controllato per verificare che sia stato generato correttamente usando l&#39;UUID nel cookie demdex. Se la verifica conferma la corretta generazione, il nuovo ECID sarà lo stesso e il visitatore verrà considerato come nuovo. Se per qualche motivo l’ECID da eliminare non era stato generato utilizzando il cookie demdex o se non è presente alcun cookie demdex, il visitatore riceverà un nuovo ECID e sarà considerato come nuovo visitatore.
 
@@ -42,3 +42,4 @@ var visitor = Visitor.getInstance ("Insert Marketing Cloud organization ID here"
     resetBeforeVersion: "3.3" 
 });
 ```
+

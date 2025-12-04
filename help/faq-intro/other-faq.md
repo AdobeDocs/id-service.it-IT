@@ -3,7 +3,7 @@ description: Domande frequenti su caratteristiche, funzionalità e problemi corr
 keywords: Servizio ID
 title: Domande frequenti per altre soluzioni Experience Cloud
 exl-id: d1164951-01c9-4375-981a-f87d8a280e4b
-source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 100%
@@ -22,3 +22,4 @@ In questo caso sono disponibili due opzioni:
 
 * Se un utente ha un&#39;attività di visita dopo aver implementato il servizio ID, il visitatore e la cronologia vengono inclusi nell&#39;esportazione dei dati in [!DNL Audience Manager].
 * Se un utente non ha un&#39;attività di visita dopo aver implementato il servizio ID, il visitatore e la cronologia non vengono inclusi nell&#39;esportazione dei dati in Audience Manager. Poiché la nuova attività non è presente, non è possibile associare l’ID di Analytics all’ID di Experience Cloud.
+

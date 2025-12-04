@@ -3,9 +3,9 @@ description: Istruzioni, strumenti e procedure utili per determinare se il servi
 keywords: Servizio ID
 title: Testare e verificare Experience Cloud Identity Service
 exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '638'
 ht-degree: 100%
 
 ---
@@ -78,20 +78,21 @@ Questa sezione descrive quali informazioni cercare e dove cercarle quando usi Ch
 
 **Richieste corrette per il servizio ID in Charles**
 
-Il codice del servizio ID funziona correttamente se la funzione `Visitor.getInstance` effettua una chiamata JavaScript a `dpm.demdex.net`. Una richiesta corretta include il tuo [ID organizzazione](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). L&#39;ID organizzazione viene passato sotto forma di coppia chiave-valore con sintassi: `d_orgid= *`ID organizzazione`*`. Cerca le chiamate `dpm.demdex.net` e JavaScript nella scheda [!UICONTROL Struttura]. Cerca l’ID organizzazione nella scheda [!UICONTROL Richiesta].
+Il codice del servizio ID funziona correttamente se la funzione `Visitor.getInstance` effettua una chiamata JavaScript a `dpm.demdex.net`. Una richiesta corretta include il tuo [ID organizzazione](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). L&#39;ID organizzazione viene passato sotto forma di coppia chiave-valore con sintassi: `d_orgid= *`ID organizzazione`*`. Cerca il `dpm.demdex.net` e la chiamata JavaScript nella scheda [!UICONTROL Structure]. Cerca l&#39;ID organizzazione nella scheda [!UICONTROL Request].
 
 ![](assets/charles_request.png)
 
 **Risposte corrette per il servizio ID in Charles**
 
-Il provisioning del tuo account per il servizio ID è corretto se la risposta dai [Data Collection Servers](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=it) (DCS) restituisce un valore MID. L’identificatore MID viene restituito come una coppia chiave-valore con sintassi: `d_mid: *`Experience Cloud ID visitatore`*`. Cerca l’identificatore MID nella scheda [!UICONTROL Risposta], come illustrato di seguito.
+Il provisioning del tuo account per il servizio ID è corretto se la risposta dai [Data Collection Servers](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=it) (DCS) restituisce un valore MID. L’identificatore MID viene restituito come una coppia chiave-valore con sintassi: `d_mid: *`Experience Cloud ID visitatore`*`. Cerca l&#39;identificatore MID nella scheda [!UICONTROL Response], come illustrato di seguito.
 
 ![](assets/charles_response_success.png)
 
 **Risposte errate per il servizio ID in Charles**
 
-Il provisioning del tuo account per il servizio ID non è corretto se la risposta DCS non contiene l’identificatore MID. Una risposta fallimentare restituisce un codice e un messaggio di errore nella scheda [!UICONTROL Risposta] come mostrato di seguito. Se ricevi questo messaggio di errore nella risposta DCS, contatta l’assistenza clienti.
+Il provisioning del tuo account per il servizio ID non è corretto se la risposta DCS non contiene l&#39;identificatore MID. Una risposta errata restituisce un codice di errore e un messaggio nella scheda [!UICONTROL Response], come illustrato di seguito. Se ricevi questo messaggio di errore nella risposta DCS, contatta l’assistenza clienti.
 
 ![](assets/charles_response_unsuccessful.png)
 
 Per ulteriori informazioni sui codici di errore, vedi [Codici di errore DCS, messaggi ed esempi](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html?lang=it).
+

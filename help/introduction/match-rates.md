@@ -3,9 +3,9 @@ description: Panoramica dei processi di sincronizzazione ID e dei tassi di corri
 keywords: Servizio ID
 title: Informazioni sulla sincronizzazione degli ID e sui tassi di corrispondenza
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
-source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '747'
 ht-degree: 96%
 
 ---
@@ -36,9 +36,9 @@ Quando un visitatore accede al sito e carica una pagina, la funzione `Visitor.ge
 
 **Passaggio 2: caricamento dell&#39;iFrame**
 
-Durante il caricamento della pagina, il servizio ID carica un iFrame denominato *`Destination Publishing iFrame`*. Il [!UICONTROL Destination Publishing iFrame] viene caricato in un dominio separato dalla pagina padre. Questo consente di garantire la prestazione della pagina e di migliorare la sicurezza perché l’iFrame:
+Durante il caricamento della pagina, il servizio ID carica un iFrame denominato *`Destination Publishing iFrame`*. L&#39;[!UICONTROL Destination Publishing iFrame] viene caricato in un dominio diverso dalla pagina padre. Questo consente di garantire la prestazione della pagina e di migliorare la sicurezza perché l’iFrame:
 
-* viene caricato in modo asincrono in relazione alla pagina padre. Questo significa che la pagina padre può essere caricata indipendentemente dal [!UICONTROL Destination Publishing iFrame]. Il caricamento dell’iFrame e dei pixel di sincronizzazione ID dall’interno dell’iFrame non influisce sulla pagina padre o sull’esperienza utente.
+* viene caricato in modo asincrono in relazione alla pagina padre. Questo significa che la pagina padre può essere caricata in modo indipendente dall&#39;[!UICONTROL Destination Publishing iFrame]. Il caricamento dell’iFrame e dei pixel di sincronizzazione ID dall’interno dell’iFrame non influisce sulla pagina padre o sull’esperienza utente.
 * Viene caricato il più rapidamente possibile. Se è troppo veloce, puoi caricare l’iFrame dopo l’evento di caricamento della finestra (non consigliato). Per informazioni, consulta [idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4).
 * Impedisce al codice presente nell&#39;iFrame di accedere alla pagina padre o di incidere su di essa.
 
@@ -74,3 +74,4 @@ Il termine *`Sync Services`* fa riferimento alle tecnologie interne [!DNL Experi
 >[!MORELIKETHIS]
 >
 >* [Informazioni sulle chiamate al dominio demdex](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=it)
+

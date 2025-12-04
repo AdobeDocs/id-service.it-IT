@@ -3,7 +3,7 @@ description: Un'informativa sulla sicurezza dei contenuti (CSP) è un'intestazio
 keywords: Servizio ID
 title: Informativa sulla sicurezza dei contenuti ed Experience Cloud Identity Service
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
-source-git-commit: c56bbaa6a3639e421c11a8231e14afb58a4fa305
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 62%
@@ -116,3 +116,4 @@ Aggiungi questi nomi di dominio o URL alla tua CSP per ogni soluzione o servizio
 >* [Riferimento all’informativa sulla sicurezza dei contenuti](https://content-security-policy.com/)
 >* [MDN: informativa sulla sicurezza dei contenuti](https://developer.mozilla.org/it/docs/Web/HTTP/CSP)
 >* [Wikipedia: informativa sulla sicurezza dei contenuti](https://en.wikipedia.org/wiki/Content_Security_Policy)
+

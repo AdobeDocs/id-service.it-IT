@@ -3,7 +3,7 @@ description: Queste istruzioni sono per chi usa Analytics e Audience Manager, de
 keywords: Servizio ID
 title: Implementare Experience Cloud Identity Service per Analytics e Audience Manager
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '1177'
 ht-degree: 98%
@@ -158,7 +158,7 @@ Inserisci il `[!UICONTROL VisitorAPI.js]` file entro i tag `<head>` di ogni pagi
 
 ## Passaggio 8: (facoltativo) configura un periodo di tolleranza {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-Se uno di questi casi d’uso è applicabile alla tua situazione, chiedi all’[Assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html) di impostare un [periodo di tolleranza](https://experienceleague.adobe.com/it/docs/analytics/implementation/id/migration) temporaneo. I periodi di tolleranza possono essere di 180 giorni. Se necessario, puoi rinnovare il periodo di tolleranza.
+Se uno di questi casi d’uso è applicabile alla tua situazione, chiedi all’[Assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html) di impostare un [periodo di tolleranza](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) temporaneo. I periodi di tolleranza possono essere di 180 giorni. Se necessario, puoi rinnovare il periodo di tolleranza.
 
 **Implementazione parziale**
 
@@ -204,3 +204,4 @@ Se hai abilitato un periodo di tolleranza:
 
 * Verifica che l’ID di Analytics (AID) e il MID siano presenti nella richiesta di immagine.
 * Ricorda di disattivare il periodo di tolleranza quando sono presenti i requisiti per l&#39;interruzione.
+

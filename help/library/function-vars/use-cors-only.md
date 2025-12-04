@@ -3,10 +3,10 @@ description: Flag booleano facoltativo che controlla in che modo il browser rich
 keywords: Servizio ID
 title: useCORSOnly
 exl-id: 049a082a-8e6b-44cc-bd05-c12aaf3cbe4d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -22,7 +22,7 @@ Se è impostato su `false`, il browser esegue verifiche sulle risorse con CORS o
 
 >[!IMPORTANT]
 >
->`Set useCORSOnly: true` in caso di requisiti di sicurezza rigidi. Abilita questa modalità solo se sei certo che i visitatori del tuo sito utilizzano browser che supportano CORS. Sui browser che non supportano CORS, l’esperienza utente resta invariata. Tuttavia, i browser senza supporto CORS non possono richiedere risorse o scambiare dati con [!DNL Adobe Experience Cloud].
+>`Set useCORSOnly: true` in caso di requisiti di sicurezza rigidi. Abilita questa modalità solo se sei certo che tutti i visitatori utilizzano browser che supportano CORS. Sui browser che non supportano CORS, l’esperienza utente resta invariata. Tuttavia, i browser senza supporto CORS non possono richiedere risorse o scambiare dati con [!DNL Adobe Experience Cloud].
 
 **Esempio di codice**
 
@@ -39,3 +39,4 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    useCORSOnly: true 
 });
 ```
+

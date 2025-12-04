@@ -3,9 +3,9 @@ description: Modifica il nome di dominio predefinito usato dalle chiamate a Expe
 keywords: Servizio ID
 title: audienceManagerServer e audienceManagerServerSecure
 exl-id: b740eb5c-ac4e-46f4-ba7c-1080d8d9292d
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '210'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,7 @@ Normalmente, il servizio [!DNL Experience Cloud] ID effettua chiamate ad [!DNL A
 Per queste configurazioni è necessario usare:
 
 * Il nome del [!DNL Audience Manager] sottodominio registrati della tua azienda. Verifica o ottieni questo nome dal tuo consulente.
-* Il nome del sottodominio associato al tuo [!UICONTROL ID organizzazione].
+* Il nome del sottodominio associato a [!UICONTROL Organization ID].
 * *Entrambi* i parametri di configurazione con lo stesso nome di sottodominio.
 
 **Esempio di codice**
@@ -45,3 +45,4 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
      } 
 );
 ```
+

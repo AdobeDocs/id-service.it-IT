@@ -3,10 +3,10 @@ description: Versioni future, aggiornamenti o modifiche a Experience Cloud Ident
 keywords: Servizio ID
 title: Note sulla versione 2022
 exl-id: 2e2de89e-75b3-484d-ae4f-99054ef9956f
-source-git-commit: 790542037f3240cf4eb8635549e240b224070f85
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,3 +27,4 @@ I seguenti aggiornamenti sono stati inclusi nella versione di Visitor 5.4.0:
 
 * Supporto per la possibilità di configurare la durata dei cookie `s_ecid` utilizzando `cookieLifetime` config.
 * Correzione della patch per un problema del browser Firefox quando una pagina viene caricata in un iFrame secondario.
+

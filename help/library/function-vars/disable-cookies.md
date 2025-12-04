@@ -3,10 +3,10 @@ description: Flag booleano opzionale che impedisce a Experience Cloud Identity S
 keywords: Servizio ID
 title: disableThirdPartyCookies
 exl-id: 19d12822-0e17-4a1c-8e9c-25a22e20a4a8
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -18,9 +18,9 @@ Flag booleano opzionale che impedisce a Experience Cloud Identity Service di res
 >
 >Questa configurazione era `idSyncDisable3rdPartySyncing` ed è stata rinominata in `disableThirdPartyCookies` il 18 gennaio 2018 in occasione del rilascio della v3.0.
 
-**Sintassi:** `disableThirdPartyCookies: true|false` (l&#39;impostazione predefinita è `false`). Per `VisitorAPI.js` versione 3.0.0 o successiva.
+**Sintassi:** `disableThirdPartyCookies: true|false` (il valore predefinito è `false`.) Per `VisitorAPI.js` versione 3.0.0 o successiva.
 
-Quando `disableThirdPartyCookies: true`, il servizio ID non restituisce il cookie di terze parti demdex.net (vedi [I cookie ed Experience Cloud Identity Service](../../introduction/cookies.md)). Se il browser del visitatore del sito contiene già questo cookie, il servizio ID non lo usa per creare un nuovo identificatore Experience Cloud ID (MID) o restituire un ID esistente. Il servizio ID crea un nuovo MID casuale nel cookie di prime parti. Una volta attivato, è possibile raccogliere i dati con il servizio ID e condividerlo tra diverse soluzioni Experience Cloud.
+Quando `disableThirdPartyCookies: true`, il servizio ID non restituisce il cookie di terze parti demdex.net (vedi [I cookie ed Experience Cloud Identity Service](../../introduction/cookies.md)). Se il browser del visitatore del sito contiene già questo cookie, il servizio ID non lo usa per creare un nuovo identificatore Experience Cloud ID (MID) o restituire un ID esistente. Il servizio ID crea un nuovo MID casuale nel cookie di prime parti. Una volta abilitato, è possibile raccogliere i dati con il servizio ID e condividerlo tra diverse soluzioni Experience Cloud.
 
 **Esempio di codice**
 
@@ -37,3 +37,4 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    disableThirdPartyCookies: true 
 });
 ```
+

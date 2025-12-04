@@ -2,7 +2,7 @@
 title: Identificazione di visitatori univoci
 description: Documentazione di Adobe ECID (servizio ID)
 exl-id: 379dbf0a-814d-4348-9ac4-d0e8fc13b9dc
-source-git-commit: c65816530ae2269b216f60b9b0450077e5aaac2f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 100%
@@ -25,3 +25,4 @@ Il metodo per identificare i visitatori univoci tra più contesti include una se
 {style="table-layout:auto"}
 
 Per informazioni sul modo in cui vengono segnalati i visitatori univoci, vedi [Visitatori univoci in Analytics](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=it).
+

@@ -3,10 +3,10 @@ description: Queste istruzioni sono per i clienti A4T con implementazioni miste 
 keywords: Servizio ID
 title: Uso del servizio ID con A4T e implementazione lato server di Target
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
-source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 98%
+source-wordcount: '803'
+ht-degree: 96%
 
 ---
 
@@ -152,10 +152,10 @@ Response.send("
 
 **Impostazioni di Dynamic Tag Management**
 
-Aggiungi queste coppie nome-valore alla sezione **[!UICONTROL Generali > Impostazioni]** della tua istanza del servizio ID:
+Aggiungi queste coppie nome-valore alla sezione **[!UICONTROL General > Settings]** dell&#39;istanza del servizio ID:
 
-* **[!UICONTROL Nome:]** serverState
-* **[!UICONTROL Valore:]** %serverState%
+* **[!UICONTROL Name:]** serverState
+* **[!UICONTROL Value:]** %serverState%
 
   >[!IMPORTANT]
   >
@@ -197,3 +197,4 @@ A questo punto, il server Web invia il contenuto della pagina al browser del vis
 >[!MORELIKETHIS]
 >
 >* [Pacchetto del servizio ID lato server da Node Package Manager](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
+

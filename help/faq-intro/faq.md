@@ -3,10 +3,10 @@ description: Domande frequenti sulle caratteristiche, sulle funzionalità e sui 
 keywords: Servizio ID
 title: Domande frequenti sul servizio ID
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '783'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ Vedi la [Panoramica](../introduction/overview.md).
 
 **Perché il servizio ID non effettua una chiamata per recuperare l’Experience Cloud ID?**
 
-Questa situazione è difficile da diagnosticare. Una cosa che puoi controllare sono le intestazioni dell&#39;informativa sulla sicurezza dei contenuti sul tuo sito. Se hai una politica di sicurezza restrittiva, quelle impostazioni possono bloccare le chiamate di terze parti effettuate dal servizio ID. Consulta [Informativa sulla sicurezza dei contenuti e il servizio Experience Cloud Identity](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
+Questa situazione è difficile da diagnosticare. Una cosa che puoi controllare sono le intestazioni dell&#39;informativa sulla sicurezza dei contenuti sul tuo sito. Se hai una politica di sicurezza restrittiva, quelle impostazioni possono bloccare le chiamate di terze parti effettuate dal servizio ID. Consulta [Informativa sulla sicurezza dei contenuti e servizio Experience Cloud Identity](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
 
 **Archiviazione dei file VisitorAPI.js**
 
@@ -87,3 +87,4 @@ Consulta [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da1
 >[!MORELIKETHIS]
 >
 >* [Assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html)
+

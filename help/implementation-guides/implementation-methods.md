@@ -3,7 +3,7 @@ description: Metodi di implementazione standard e non standard di Experience Clo
 keywords: Servizio ID
 title: Metodi di implementazione
 exl-id: 0fe40a3c-bdcd-4290-bcd7-25344ff108d6
-source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 100%
@@ -25,3 +25,4 @@ Adobe consiglia vivamente di utilizzare [[!DNL Experience Platform tags]](https:
 ## Implementazioni non standard {#section-2c4f2db1f9704315a7cccab6d2e07113}
 
 Le procedure e gli esempi di codice contenuti in questa guida possono essere utili per impostare il servizio [!DNL Experience Cloud] ID in modo manuale o non standard. Nota tuttavia che queste implementazioni sono spesso tecnicamente complesse e difficili. Possono richiedere l’impegno di risorse tecniche interne già limitate, o parecchio tempo di assistenza esterna con il tuo consulente Adobe.
+
