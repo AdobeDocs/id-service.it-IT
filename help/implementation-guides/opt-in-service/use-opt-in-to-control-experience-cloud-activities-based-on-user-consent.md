@@ -29,7 +29,7 @@ Un aspetto importante della normativa sulla privacy riguarda l’acquisizione e 
 
 [!UICONTROL Opt-in] può essere facilmente configurato con i tag di Adobe Experience Platform (precedentemente Launch). come illustrato da questo breve video.
 
->[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/327943/?captions=ita&quality=12)
 
 Se non utilizzi i tag di Experience Platform, puoi impostare la configurazione di [!UICONTROL Opt-in] nell&#39;inizializzazione dell&#39;oggetto globale Visitor, come descritto nella [documentazione](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=it).
 
@@ -43,7 +43,7 @@ Quando si imposta un&#39;interfaccia utente per l&#39;utilizzo di [!UICONTROL Op
 
 Il video seguente offre una breve dimostrazione di [!UICONTROL Opt-in] che lavora sulla pagina e di come può determinare se le soluzioni Experience Cloud possano o meno impostare i cookie, avviare i beacon e così via.
 
->[!VIDEO](https://video.tv.adobe.com/v/26432/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/327944/?captions=ita&quality=12)
 
 **NOTA:** Al momento della stesura di questo articolo, [!UICONTROL Opt-in] non è ancora stato integrato nelle librerie di tutte le applicazioni Experience Cloud. Le librerie attualmente supportate per [!UICONTROL Opt-in] sono:
 
