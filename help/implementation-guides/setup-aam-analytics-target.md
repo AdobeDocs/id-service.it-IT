@@ -206,7 +206,7 @@ Verifica la presenza dell’identificatore SDID nella richiesta JavaScript. Il v
 Se i test restituiscono un AID, questo può indicare che:
 
 * Sei un visitatore precedente ed è in corso la migrazione degli [!DNL Analytics] ID precedenti.
-* Hai impostato un [periodo di tolleranza](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration).
+* Hai impostato un [periodo di tolleranza](https://experienceleague.adobe.com/it/docs/analytics/implementation/id/migration).
 
 Quando ricevi un AID, controllane il valore rispetto al valore [!DNL Target] mboxMCAVID di. Questi valori sono identici se il servizio ID è stato implementato correttamente.
 
