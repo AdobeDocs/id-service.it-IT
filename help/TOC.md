@@ -106,5 +106,5 @@ ht-degree: 96%
    + [Note sulla versione 2017](release-notes/notes-2017.md)
    + [Note sulla versione 2016](release-notes/notes-2016.md)
    + [Note sulla versione 2015](release-notes/notes-2015.md)
-+ {hide-from-toc}[Test di Analytics nascosto dal sommario](analytics-test-file-hidetoc.md)
-+ {hide-from-toc}[File di test nascosto](hidden-file.md)
++ [hide-from-tocTest di Analytics nascosto dal sommario](analytics-test-file-hidetoc.md)
++ [hide-from-tocFile di test nascosto](hidden-file.md)
