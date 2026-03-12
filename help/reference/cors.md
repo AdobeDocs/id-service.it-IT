@@ -3,10 +3,10 @@ description: I browser usano Cross Origin Resource Sharing (CORS) per richiedere
 keywords: Servizio ID
 title: Supporto per CORS in Experience Cloud Identity Service
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+source-git-commit: 3c230d158e3094ebb13b0fa4f1eddb25eecde0b4
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 96%
+source-wordcount: '630'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ I browser usano Cross Origin Resource Sharing (CORS) per richiedere risorse da u
 I criteri per la stessa origine sono controlli di sicurezza o restrizioni applicati dal browser Web. Quando viene applicato a questo livello, il browser stesso determina se una richiesta di risorse effettuata da una pagina all’altra sarà consentita o bloccata. Per determinare se una richiesta è della stessa origine, il browser confronta:
 
 * URI (Uniform Resource Identifiers)
-* Nomi host (ad esempio, http://www.my-webpage-example.com)
+* Nomi host (ad esempio, `http://www.my-webpage-example.com`)
 * Numeri di porta (ad esempio, porte 80 e 440 per le richieste HTTP e HTTPS)
 
 Il browser consente una richiesta se entrambe le pagine condividono queste caratteristiche; in caso contrario, blocca le richieste di risorse.
@@ -31,7 +31,7 @@ CORS offre un modo sicuro ed efficace per richiedere risorse tra domini diversi.
 * `Origin`: intestazione di richiesta che identifica l&#39;origine di una richiesta.
 * `Access-Control-Allow-Origin`: intestazione di richiesta che indica se una risorsa può essere condivisa con il richiedente.
 
-Vediamo come funzionano queste intestazioni. In questo esempio, supponiamo che una società di servizi finanziari abbia implementato il servizio [!DNL Experience Cloud] ID sul suo sito, www.finance-website.com. La tabella seguente definisce il modo in cui le intestazioni di richiesta e risposta CORS verificano l’accesso a una risorsa.
+Vediamo come funzionano queste intestazioni. In questo esempio, supponiamo che una società di servizi finanziari abbia implementato il servizio ID [!DNL Experience Cloud] sul suo sito, `www.finance-website.com`. La tabella seguente definisce il modo in cui le intestazioni di richiesta e risposta CORS verificano l’accesso a una risorsa.
 
 <table id="table_B004ACF52B5A4D33B1DCF7EA77BE4E6D"> 
  <thead> 
@@ -45,7 +45,7 @@ Vediamo come funzionano queste intestazioni. In questo esempio, supponiamo che u
    <td colname="col1"> <p> <b>Richiesta</b> </p> </td> 
    <td colname="col2"> <p>Al caricamento della pagina del sito della società di servizi finanziari, il browser invia una richiesta a <span class="codeph">dpm.demdex.net</span>. Si tratta di una chiamata al dominio dei server di raccolta dati (DCS) utilizzati dal servizio ID. Questa richiesta tra domini diversi include l’intestazione: </p> <p> 
      <ul class="simplelist"> 
-      <li> <span class="codeph"> Origine:https://www.finance-website.com</span> </li> 
+      <li> <code> Origin:https://www.finance-website.com</code> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
