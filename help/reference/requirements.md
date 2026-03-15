@@ -3,10 +3,10 @@ description: Leggi questa sezione per essere certo di usare le soluzioni, i serv
 keywords: Servizio ID
 title: Requisiti di Experience Cloud Identity Service
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+source-git-commit: 3c230d158e3094ebb13b0fa4f1eddb25eecde0b4
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 100%
+source-wordcount: '707'
+ht-degree: 88%
 
 ---
 
@@ -92,7 +92,7 @@ Nelle seguenti sezioni sono elencate le versioni minime dei codici richieste per
   </tr> 
   <tr> 
    <td colname="col3"> <p> <span class="codeph"> s_code.js</span> </p> </td> 
-   <td colname="col4"> <p>H.27 </p> <p> <p>Nota:<span class="keyword"> la versione H.27 di Analytics</span> s_code non è più supportata a partire dal rilascio del servizio ID versione 1.6.0. Aggiorna il codice all'ultima versione di AppMeasurement. </p> </p> </td> 
+   <td colname="col4"> <p>H.27 </p> <p> <p>Nota: <span class="keyword"> Analytics</span> s_code versione H.27 non è più supportato con il rilascio del servizio ID versione 1.6.0. Aggiorna il codice all’ultima versione di AppMeasurement. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col3"> <p>Video Heartbeat </p> <p>Guarda il <a href="https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it" format="https" scope="external">video su Heartbeat 2.x per JavaScript</a>. </p> </td> 
@@ -105,11 +105,11 @@ Nelle seguenti sezioni sono elencate le versioni minime dei codici richieste per
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Vedi <a href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/overview.html?lang=it" format="https" scope="external">Codice mbox</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Vedi <a href="https://experienceleague.adobe.com/it/docs/target-dev/developer/client-side/at-js-implementation/at-js/overview" format="https" scope="external">Codice mbox</a>. </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Vedi <a href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=it" format="https" scope="external">Implementazione at.js</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Vedi <a href="https://experienceleague.adobe.com/it/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works" format="https" scope="external">Implementazione at.js</a>. </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 
@@ -130,9 +130,8 @@ Il codice SDK deve essere abilitato per il servizio ID. Abilita e scarica il cod
 
 * [Configurare le opzioni del servizio ID visitatore dell’SDK](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html?lang=it)
 * [Metodi SDK per Android](https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/c-marketing-cloud.html?lang=it)
-* [Metodi SDK per iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/marketing-cloud.html?lang=it)
+* [Metodi SKD di iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/marketing-cloud.html?lang=it)
 
 >[!MORELIKETHIS]
 >
 >* [Libreria dei codici](../library/library.md#concept-ff27497375644a898d47984aefb21c97)
-

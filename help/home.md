@@ -3,10 +3,10 @@ description: Experience Cloud Identity Service abilita il framework comune di id
 keywords: Servizio ID; Identity Service; Experience Cloud Identity Service
 title: Experience Cloud Identity Service
 exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+source-git-commit: 126292a287e219ee3152ce92eec63c620cce1254
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 95%
+source-wordcount: '428'
+ht-degree: 96%
 
 ---
 
@@ -39,10 +39,11 @@ Per capire meglio in che modo Adobe aiuta a identificare in modo univoco i visit
       <li id="li_9E512C6DD15C46C3ABD06ACD60D97E4A"> <a href="faq-intro/faq-intro.md" format="dita" scope="local"> Domande frequenti </a> </li> 
       <li id="li_7744A4898EA542B9BF009D2066810050"> <a href="library/function-vars/idsyncontainerid.md#reference-5cfbed2240fa4def90f535f017a36015" format="dita" scope="local"> idSyncContainerID </a> </li> 
      </ul> </p> 
-     <!-- 
+     <!--
      <p> <b>Announcements:</b> </p> 
      <p> <p>Important:  ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be discontinued in a future release. </p> </p> 
-     --> </td> 
+     -->
+   </td> 
    <td colname="col2"> <p> <b>Note sulla versione</b> </p> <p>La <b>versione 4.4</b> del 17 luglio 2019 include il supporto dell’<a href="reference/hashing-support.md" format="dita" scope="local">algoritmo di hashing SHA-256</a> che consente di ricevere gli ID o indirizzi e-mail dei clienti e di inoltrarli con hashing.</p><p>La <b>versione 4.0</b> del 12 febbraio 2019 include il <a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local">servizio Opt-in</a> utilizzato per identificare se è possibile inserire un cookie sul dispositivo o nel browser di un utente quando visita il sito. </p> <p> 
      <ul id="ul_4F06F170F214492780C7D25A069F799F"> 
       <li id="li_45A7CD556FE44F4DAB035C736A058F36"> Per conoscere le nuove funzioni e le correzioni, vedi le <a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=it" format="https" scope="external">note sulla versione di Experience Cloud</a> più recenti. </li> 
