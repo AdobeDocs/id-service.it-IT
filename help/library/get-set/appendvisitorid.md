@@ -3,10 +3,10 @@ description: Con questa funzione puoi condividere l'Experience Cloud ID di un vi
 keywords: Servizio ID
 title: appendVisitorIDsTo (Monitoraggio interdominio)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+source-git-commit: 126292a287e219ee3152ce92eec63c620cce1254
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 88%
+source-wordcount: '429'
+ht-degree: 89%
 
 ---
 
@@ -35,7 +35,7 @@ Il servizio ID scrive un cookie di prime e terze parti nel browser quando una pe
 * Rigenerare l’ID univoco per quel visitatore del sito quando si sposta su un altro dominio.
 * Tenere traccia dei visitatori su domini diversi di proprietà della tua organizzazione.
 
-Per risolvere questo problema, implementa `Visitor.appendVisitorIDsTo( *`url`*)`. Questa proprietà consente al servizio ID di tenere traccia dei visitatori su più domini anche se il loro browser blocca i cookie di terze parti. Ecco come funziona:
+Per risolvere questo problema, implementa `Visitor.appendVisitorIDsTo( *`url`*)`. Questa proprietà consente al servizio ID di tenere traccia dei visitatori del sito su più domini anche se il loro browser blocca i cookie di terze parti. Ecco come funziona:
 
 * Quando un visitatore esplora gli altri domini, l&#39;`Visitor.appendVisitorIDsTo( *`url`*)` aggiunge il MID come parametro di query nell&#39;URL reindirizzandolo dal dominio originale al dominio di destinazione.
 * Invece di inviare ad Adobe la richiesta dell&#39;ID di quel visitatore, il codice del servizio ID sul dominio di destinazione estrae l&#39;identificatore MID dall&#39;URL. Questa richiesta include l’ID del cookie di terza parte, che in questo caso non è disponibile.
@@ -73,7 +73,8 @@ adbeDomains.forEach(function(domain) {
 });
 ```
 
-<!-- >[!IMPORTANT]
+<!-- 
+>[!IMPORTANT]
 >
 >In order for the values passed in the URL via appendVisitorsIDsTo to be picked up, the [ovewriteCrossDomainMCIDAndAID](../function-vars/overwrite-visitor-id.md) variable must be set to true.
 
@@ -91,9 +92,11 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
      //Result of appendVisitorIDsTo includes destination URL, Experience Cloud ID (MCMID), and Analytics ID (MCAID) 
      "www.destination.com?adobe_mc=MCMID=1234|MCAID=5678"
 //Redirect to the destination
-``` -->
+``` 
+-->
 
-<!-- ## Dynamic Tag Management (DTM) and SDK Support {#section-168e313df6054af0a7e27b9fa0d69640}
+<!--
+## Dynamic Tag Management (DTM) and SDK Support {#section-168e313df6054af0a7e27b9fa0d69640}
 
 <table id="table_6E7152B4FD2B4C4D8C9477C68204C4FF"> 
  <thead> 
@@ -111,10 +114,11 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
    <td colname="col1"> <p> <b>SDK</b> </p> </td> 
    <td colname="col2"> 
     <ul id="ul_9D7933FF68EE4C71BAE999B3747F8398"> 
-     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/mc-methods.html?lang=it" format="https" scope="external"> Android ID Service Methods </a> </li> 
-     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/mc-methods.html?lang=it" format="https" scope="external"> iOS ID Service Methods </a> </li> 
+     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/mc-methods.html" format="https" scope="external"> Android ID Service Methods </a> </li> 
+     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/mc-methods.html" format="https" scope="external"> iOS ID Service Methods </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
-</table> -->
+</table> 
+-->
 
