@@ -172,7 +172,7 @@ Inserisci il `[!UICONTROL VisitorAPI.js]` file entro i tag `<head>` di ogni pagi
 
 ## Passaggio 8: (facoltativo) configura un periodo di tolleranza {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-Se uno di questi casi d’uso è applicabile alla tua situazione, chiedi all’[Assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html) di impostare un [periodo di tolleranza](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) temporaneo. I periodi di tolleranza possono essere di 180 giorni. Se necessario, puoi rinnovare il periodo di tolleranza.
+Se uno di questi casi d’uso è applicabile alla tua situazione, chiedi all’[Assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/contact-support.html) di impostare un [periodo di tolleranza](https://experienceleague.adobe.com/it/docs/analytics/implementation/id/migration) temporaneo. I periodi di tolleranza possono essere di 180 giorni. Se necessario, puoi rinnovare il periodo di tolleranza.
 
 **Implementazione parziale**
 

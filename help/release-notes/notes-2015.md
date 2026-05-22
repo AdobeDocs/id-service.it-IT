@@ -49,7 +49,7 @@ Agosto 2015
   Questo bug interessava solo alcuni clienti che soddisfacevano *tutti* i seguenti criteri:
 
    * Uso del servizio ID.
-   * È abilitato un [periodo di tolleranza](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) *o* che utilizza cookie di prime parti e gli utenti bloccano i cookie di terze parti.
+   * È abilitato un [periodo di tolleranza](https://experienceleague.adobe.com/it/docs/analytics/implementation/id/migration) *o* che utilizza cookie di prime parti e gli utenti bloccano i cookie di terze parti.
    * Avevano pagine con domini di livello superiore con più parti.
 
 Le revisioni della documentazione in questa versione includono:

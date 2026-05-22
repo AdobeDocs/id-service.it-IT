@@ -58,7 +58,7 @@ Il parametro `aid` viene visualizzato in una stringa di interrogazione quando:
 
 **Caso 2**
 
-Il `aid` parametro viene visualizzato in una stringa di interrogazione quando l&#39;organizzazione utilizza un [periodo di tolleranza](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) prima di implementare completamente il servizio ID. Se un nuovo utente accede al sito e non utilizzi un periodo di tolleranza, il visitatore riceve il parametro `mid` (ID [!DNL Experience Cloud]).
+Il `aid` parametro viene visualizzato in una stringa di interrogazione quando l&#39;organizzazione utilizza un [periodo di tolleranza](https://experienceleague.adobe.com/it/docs/analytics/implementation/id/migration) prima di implementare completamente il servizio ID. Se un nuovo utente accede al sito e non utilizzi un periodo di tolleranza, il visitatore riceve il parametro `mid` (ID [!DNL Experience Cloud]).
 
 >[!MORELIKETHIS]
 >
