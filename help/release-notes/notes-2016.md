@@ -5,10 +5,14 @@ title: Note sulla versione 2016
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/u91aLAt-ycKk1U1A1yhAVUAonGhV6fHWNRVTZB0QAXI
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 100%
+source-wordcount: 1131
+ht-degree: 97%
 
 ---
 
@@ -89,7 +93,7 @@ Luglio 2016
 
 >[!IMPORTANT]
 >
->La versione 1.6.0 del [!DNL Experience Cloud]servizio ID *richiede* AppMeasurement per la versione 1.6.2. di JavaScript. Se effettui l&#39;aggiornamento al servizio ID versione 1.6.0, assicurati di usare la versione corretta del codice AppMeasurement.
+>La versione 1.6.0 del servizio ID [!DNL Experience Cloud] *richiede* AppMeasurement per JavaScript versione 1.6.2. Se effettui l’aggiornamento al servizio ID versione 1.6.0, assicurati di utilizzare la versione corretta del codice AppMeasurement.
 
 <table id="table_5472AAFA0DD2495DB8D92DEBE44A07A9"> 
  <thead> 
@@ -101,7 +105,7 @@ Luglio 2016
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Condivisione delle risorse multiorigine (CORS) </p> </td> 
-   <td colname="col2"> <p>CORS consente ai browser di richiedere risorse da un dominio diverso da quello corrente. Experience Cloud Identity Service supporta gli standard CORS per consentire le richieste di risorse tra diverse origini lato client. Il servizio ID ripristina le richieste JSONP sui browser che non supportano CORS. </p> <p>Vedi: </p> 
+   <td colname="col2"> <p>CORS consente ai browser di richiedere risorse da un dominio diverso da quello corrente. Experience Cloud Identity Service supporta gli standard CORS per consentire le richieste di risorse tra diverse origini lato client. Il servizio ID ripristina le richieste JSONP sui browser che non supportano CORS. </p> <p>Consulta: </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
      <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Supporto per CORS in Experience Cloud Identity Service </a> </li> 
     </ul> </td> 
@@ -153,7 +157,7 @@ Giugno 2016
  </tbody> 
 </table>
 
-**Correzioni**
+**Problemi risolti**
 
 L’API del visitatore non forza più una chiamata di risincronizzazione aggiuntiva con Audience Manager quando manca l’ID visitatore di Analytics legacy.
 

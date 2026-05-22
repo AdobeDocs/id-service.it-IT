@@ -3,10 +3,14 @@ description: Versioni future, aggiornamenti o modifiche a Experience Cloud Ident
 keywords: Servizio ID
 title: Note sulla versione 2020
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/hqAMIyXTeLBPU-4B6AVRXhcWux3bkyViMCrbjoGiRwk
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 99%
+source-wordcount: 229
+ht-degree: 97%
 
 ---
 
@@ -37,7 +41,7 @@ Per ulteriori informazioni su questi valori di attributo, visita [web.dev](https
 
 ## Versione 4.6
 
-* È stato impostato il flag `loadSSL` per impostazione predefinita. Tutte le chiamate a Identity Service sono impostate su `https` per impostazione predefinita. I clienti possono impostarlo su falso se desiderano chiamare i servizi Identity Service su HTTP dalle proprie pagine `non-ssl`.
+* È stato impostato il flag `loadSSL` per impostazione predefinita. Tutte le chiamate a Identity Service sono impostate su `https` per impostazione predefinita.  I clienti possono impostarlo su falso se desiderano chiamare i servizi Identity Service su HTTP dalle proprie pagine `non-ssl`.
 * È stata aggiornata la funzione utilizzata per rilevare la versione di `Internet-Explorer (IE)`, per risolvere un problema segnalato da `ESLint`.
 È stato risolto un problema di prestazioni in `Internet-Explorer (IE) 11`, nel caso di `pre-approval` del consenso esplicito per l’ECID e successivo aggiornamento.
 

@@ -3,10 +3,14 @@ description: Note sulla versione e aggiornamenti per la versione 2015.
 keywords: Servizio ID
 title: Note sulla versione 2015
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/WmeSY7aRbvnZJN0a-lNR-yYzWzF4dfJLPZqA--6lpYQ
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 95%
+source-wordcount: 449
+ht-degree: 94%
 
 ---
 
@@ -37,7 +41,7 @@ Agosto 2015
   Questo bug interessava solo alcuni clienti che soddisfacevano *tutti* i seguenti criteri:
 
    * Uso del servizio ID.
-   * È abilitato un [periodo di tolleranza](https://experienceleague.adobe.com/it/docs/analytics/implementation/id/migration) *o* che utilizza cookie di prime parti e gli utenti bloccano i cookie di terze parti.
+   * È abilitato un [periodo di tolleranza](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) *o* che utilizza cookie di prime parti e gli utenti bloccano i cookie di terze parti.
    * Avevano pagine con domini di livello superiore con più parti.
 
 Le revisioni della documentazione in questa versione includono:

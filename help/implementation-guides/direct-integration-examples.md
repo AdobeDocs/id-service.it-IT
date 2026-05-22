@@ -3,9 +3,13 @@ description: Questi esempi coprono 2 casi d'uso comuni relativi a un'integrazion
 keywords: Servizio ID
 title: Casi d'uso dell'integrazione diretta
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/1vfYQsSZiqM3SrnP0lmSrZEWpAMsbwVK8sR0MNitetQ
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: 457
 ht-degree: 78%
 
 ---
@@ -48,11 +52,11 @@ Questi esempi coprono 2 casi d&#39;uso comuni relativi a un&#39;integrazione dir
      <li id="li_4869572B40E54C54B88A2474DAC475A8">L'ID del fornitore dei dati. Questo è un ID univoco assegnato alla tua azienda. Chiamiamolo ID 4444. </li> 
      <li id="li_05C8ED47488C4E289D84093127EC7B19">Il tuo ID per il visitatore (9876). </li> 
      <li id="li_3D1556AD18C843828A362CC604A9F76B"> <i>(Facoltativo)</i> Un ID di stato per definire lo stato di autenticazione per questo visitatore. </li> 
-    </ul> <p>Inoltre, se si dispone di uno qualsiasi degli altri parametri elencati nella Guida all'integrazione diretta <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"></a> (ad esempio, <span class="codeph"> d_blob</span> o <span class="codeph"> dcs_region</span>, ecc.) è possibile passare anche questi parametri. </p> </td> 
+    </ul> <p>Inoltre, se uno degli altri parametri elencati nella <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guida all'integrazione diretta</a> (ad esempio, <span class="codeph"> d_blob</span> o <span class="codeph"> dcs_region</span>, ecc.) puoi passare anche questi. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Soluzione ed esempio di codice</b> </p> </td> 
-   <td colname="col2"> <p>Formatta la chiamata al servizio ID in questo modo: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&d_cid=4444%019876%011&d_ver=2</span> </p> <p>Nota che la chiamata di esempio contiene: </p> 
+   <td colname="col2"> <p>Formatta la chiamata al servizio ID in questo modo: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&amp;d_cid=4444%019876%011&amp;d_ver=2</span> </p> <p>Nota che la chiamata di esempio contiene: </p> 
     <ul id="ul_0667FBFD8D3C46BDBD027F484691EC97"> 
      <li id="li_FAB1FAE703DB48D1A32EE72684028964">MID: <span class="codeph">d_mid=1234</span> </li> 
      <li id="li_C97B74FF444F4BB4B4A5CB1CBBE52249">MID unito all'ID univoco per il visitatore: <span class="codeph">d_mid=1234&amp;d_cid=4444%019876%011</span> </li> 
@@ -83,11 +87,11 @@ Questi esempi coprono 2 casi d&#39;uso comuni relativi a un&#39;integrazione dir
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Azioni</b> </p> </td> 
-   <td colname="col2"> <p>Considerate queste condizioni, effettua una chiamata al servizio ID che includa il tuo ID organizzazione. </p> <p>Inoltre, se si dispone di uno qualsiasi degli altri parametri elencati nella Guida all'integrazione diretta <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"></a> (ad esempio, <span class="codeph"> d_blob</span> o <span class="codeph"> dcs_region</span>, ecc.) è possibile passare anche questi parametri. </p> </td> 
+   <td colname="col2"> <p>Considerate queste condizioni, effettua una chiamata al servizio ID che includa il tuo ID organizzazione. </p> <p>Inoltre, se uno degli altri parametri elencati nella <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guida all'integrazione diretta</a> (ad esempio, <span class="codeph"> d_blob</span> o <span class="codeph"> dcs_region</span>, ecc.) puoi passare anche questi. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Soluzione ed esempio di codice</b> </p> </td> 
-   <td colname="col2"> <p>Formatta la chiamata al servizio ID in questo modo: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&d_ver=2</span> </p> <p>Nota come questa chiamata d'esempio contiene il tuo ID organizzazione, <span class="codeph">d_orgid=5555</span>. Ti verrà restituito un <span class="keyword">Experience Cloud</span> ID per il visitatore. </p> </td> 
+   <td colname="col2"> <p>Formatta la chiamata al servizio ID in questo modo: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>Nota come questa chiamata d'esempio contiene il tuo ID organizzazione, <span class="codeph">d_orgid=5555</span>. Ti verrà restituito un <span class="keyword">Experience Cloud</span> ID per il visitatore. </p> </td> 
   </tr> 
  </tbody> 
 </table>
