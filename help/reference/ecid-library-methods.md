@@ -2,10 +2,21 @@
 title: Metodi della libreria ECID in ambito Safari ITP
 description: Documentazione della libreria Adobe ECID (servizio ID).
 exl-id: ac1d1ee1-2b5f-457a-a694-60bb4c960ae7
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/GwI5LkCBXGiKyfjGm6bOqbyGbHQ2GwW64PeyLIrl3Ck
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 95%
+source-wordcount: 833
+ht-degree: 93%
 
 ---
 
@@ -35,7 +46,7 @@ ITP 2.1 ostacola la possibilità di scrivere cookie lato client, il che ostacola
 
 Questa modifica è utile solo per i clienti ECID che utilizzano un CNAME di Analytics nel contesto di prima parte. Se sei un cliente di Analytics che al momento non usa un CNAME, o anche se non sei un cliente di Analytics, sei comunque idoneo per il record CNAME. Per avviare il processo di registrazione per un [CNAME](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html?lang=it), contatta l’Assistenza clienti o il rappresentante di riferimento per il tuo account.
 
-Esegui l&#39;aggiornamento alla libreria ECID versione 4.3.0 o superiore per sfruttare questa modifica.
+Aggiornamento alla libreria ECID v. 4.3.0 + per trarre vantaggio da questa modifica.
 
 Di seguito vengono illustrati il comportamento della libreria ECID con ITP 2.1 e le ultime modifiche apportate da Apple nell’ambito della versione Big Sur.
 
