@@ -5,7 +5,7 @@ title: isCoopSafe
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '612'
 ht-degree: 100%
 
 ---
@@ -31,7 +31,7 @@ Per usare `isCoopSafe` devi:
 * Usare il codice del servizio ID versione 2.4 o superiore.
 * Partecipare a [Experience Cloud Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html?lang=it). Anche i potenziali membri co-op devono consultare questa documentazione per stabilire se `isCoopSafe` si occupa di possibili problemi relativi al modo in cui i dati vengono utilizzati per creare il grafico del dispositivo.
 
-* Definisci un flag whitelist o blacklist sul tuo account Device Co-op avvalendoti dell&#39;aiuto del tuo consulente [!DNL Adobe]. Non esiste alcun percorso self-service per l&#39;attivazione di questi flag.
+* Definisci un flag whitelist o blacklist sul tuo account Device Co-op avvalendoti dell&#39;aiuto del tuo consulente [!DNL Adobe]. Non esiste alcun percorso self-service per l&#39;abilitazione di questi flag.
 
 ## Casi d’uso {#section-d18af2b903f248e18ae8108aaf0a8ebb}
 

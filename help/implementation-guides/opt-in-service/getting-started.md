@@ -3,21 +3,13 @@ description: Implementare il servizio Opt-in come unico punto di riferimento usa
 title: Configurazione del servizio Opt-in
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
 TQID: https://experienceleague.adobe.com/Nq3mYoy0U-0RK8MHzsu-yCIVwbCbaAJnIUR8QZDCKcs
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: 960
-ht-degree: 100%
+source-wordcount: 849
+ht-degree: 97%
 
 ---
 
@@ -71,8 +63,8 @@ adobe.OptInCategories = {
 };
 ```
 
-Il servizio Opt-in consente di impostare le preferenze di autorizzazione dei visitatori per ciascuna soluzione Adobe sul tuo sito. Include una libreria per salvare le impostazioni del visitatore mediante una categoria approvata e supporta un flusso sequenziale dove il processo di approvazione riceve le preferenze di &quot;conferma&quot; o &quot;rifiuto&quot; una alla volta per ogni categoria. Puoi impostare il consenso di tutte le soluzioni/categorie insieme oppure per ogni singola soluzione.
-Tutte le librerie lato client delle soluzioni Adobe dipendono dal servizio Opt-in e non genereranno cookie a meno che non sia stata concessa l&#39;autorizzazione alla soluzione. L&#39;oggetto Opt-in supporta diversi approcci per fornire e aggiornare le impostazioni di consenso per il visitatore attuale. Questa sezione contiene degli esempi su come impostare le preferenze del servizio Opt-in. Consulta i [riferimenti alle API di Opt-in](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) per un elenco completo delle funzioni e dei parametri.
+Il servizio Opt-in consente di impostare le preferenze di autorizzazione dei visitatori per ogni soluzione Adobe utilizzata sul sito. Include una libreria per salvare le impostazioni di un visitatore tramite una categoria approvata e supporta un flusso sequenziale, in cui il processo di approvazione riceve le preferenze di &quot;conferma&quot; o &quot;rifiuto&quot; una alla volta per ogni categoria. Puoi impostare il consenso di tutte le soluzioni/categorie, oppure di singole soluzioni.
+Tutte le librerie lato client delle soluzioni Adobe dipendono dal servizio Opt-in e non genereranno cookie a meno che non sia stata concessa l&#39;autorizzazione alla soluzione. Opt-in supporta diversi approcci per fornire e aggiornare le impostazioni di consenso per il visitatore corrente. Questa sezione fornisce alcuni esempi per impostare le preferenze del servizio Opt-in. Per un elenco completo delle funzioni e dei parametri, consulta la [documentazione API di Opt-in](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867).
 
 Le configurazioni del servizio Opt-in vengono fornite nella `getInstance()` funzione di JS per il visitatore che creano l&#39;istanza per `adobe` l&#39;oggetto globale. Di seguito un elenco delle [impostazioni di configurazione](../../implementation-guides/opt-in-service/api.md#section-d66018342baf401389f248bb381becbf) di JS per il visitatore per il servizio Opt-in.
 
