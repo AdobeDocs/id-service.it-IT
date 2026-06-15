@@ -37,7 +37,7 @@ La CSP usa l&#39;intestazione HTTP `Content-Security-Policy` per controllare il 
 
 L&#39;uso della CSP è comune e noto. Questa documentazione non ha l&#39;obiettivo di spiegare in maniera dettagliata la CSP (per maggiori informazioni consulta i link alle informazioni correlate). Ciò che è importante è capire quali nomi dei domini Adobe devi aggiungere a una CSP se ne usi una e se hai delle politiche di sicurezza restrittive. L’aggiunta di questi domini consente ai browser dei visitatori che accedono al tuo sito di effettuare chiamate importanti alle risorse Experience Cloud che utilizzi.
 
-## Domini Experience Cloud per la Inserire nell&#39;elenco Consentiti dei {#section-30693e9a96834edfbf04de9e698cf2aa}
+## Domini di Experience Cloud per la Inserire nell&#39;elenco Consentiti dei {#section-30693e9a96834edfbf04de9e698cf2aa}
 
 Aggiungi questi nomi di dominio o URL alla tua CSP per ogni soluzione o servizio Experience Cloud che utilizzi.
 

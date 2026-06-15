@@ -6,8 +6,8 @@ user-guide-description: Adobe Experience Cloud Identity Service fornisce un ID u
 user-guide-url: /content/help/en/id-service/using/home.html
 source-git-commit: 13bfd8b38596dd64f607c897a60bbeb2733b89bf
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 96%
+source-wordcount: '378'
+ht-degree: 93%
 
 ---
 
@@ -106,5 +106,5 @@ ht-degree: 96%
    + [Note sulla versione 2017](release-notes/notes-2017.md)
    + [Note sulla versione 2016](release-notes/notes-2016.md)
    + [Note sulla versione 2015](release-notes/notes-2015.md)
-+ [hide-from-tocTest di Analytics nascosto dal sommario](analytics-test-file-hidetoc.md)
-+ [hide-from-tocFile di test nascosto](hidden-file.md)
++ {hide-from-toc}[Test di Analytics nascosto dal sommario](analytics-test-file-hidetoc.md)
++ {hide-from-toc}[File di test nascosto](hidden-file.md)

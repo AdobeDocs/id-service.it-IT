@@ -28,7 +28,7 @@ Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service.
 
 Aggiungi approvazione pre-consenso tramite casella di controllo per l’analisi dei supporti in ECID Launch Extension.
 
-**Correzioni**
+**Problemi risolti**
 
 * Problema con l’estensione di lancio ECID: parsing della stringa di input per preOptInApprovals.
 * Calo della prestazione quando trackingServer è in uso.
@@ -61,7 +61,7 @@ Aggiornamento `publishDestinations` per nuova modifica API. Con questo aggiornam
 
 Supporto per il plug-in Audience Manager per IAB TCF, disponibile tramite l’oggetto Opt-in ECID.
 
-**Correzioni**
+**Problemi risolti**
 
 * IAB + OptIn non riesce a ottenere il MID per i clienti di ritorno.
 * Risoluzione di un bug della configurazione opt-in doesOptInApply in DTM.

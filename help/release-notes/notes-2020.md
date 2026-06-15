@@ -15,8 +15,8 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: 229
-ht-degree: 97%
+source-wordcount: 216
+ht-degree: 91%
 
 ---
 
@@ -48,8 +48,8 @@ Per ulteriori informazioni su questi valori di attributo, visita [web.dev](https
 ## Versione 4.6
 
 * È stato impostato il flag `loadSSL` per impostazione predefinita. Tutte le chiamate a Identity Service sono impostate su `https` per impostazione predefinita.  I clienti possono impostarlo su falso se desiderano chiamare i servizi Identity Service su HTTP dalle proprie pagine `non-ssl`.
-* È stata aggiornata la funzione utilizzata per rilevare la versione di `Internet-Explorer (IE)`, per risolvere un problema segnalato da `ESLint`.
-È stato risolto un problema di prestazioni in `Internet-Explorer (IE) 11`, nel caso di `pre-approval` del consenso esplicito per l’ECID e successivo aggiornamento.
+* È stata aggiornata la funzione utilizzata per rilevare la versione `Internet-Explorer (IE)`, per risolvere un problema segnalato da `ESLint`.
+Risoluzione del problema di prestazioni in `Internet-Explorer (IE) 11` quando a ECID viene dato il consenso esplicito `pre-approval` e aggiornato in seguito.
 
 ## Versione 4.5
 

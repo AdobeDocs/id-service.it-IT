@@ -30,7 +30,7 @@ Questi esempi coprono 2 casi d&#39;uso comuni relativi a un&#39;integrazione dir
 >* Per ulteriori informazioni sull’identificatore MID, consulta [I cookie ed Experience Cloud Identity Service](../introduction/cookies.md).
 >
 
-## Caso d’uso 1: ho un identificatore Experience Cloud ID (MID) ma voglio trasmettere i miei ID visitatori e impostare uno stato di autenticazione {#section-a67d89a343754d1286d03cf08d34b806}
+## Caso d&#39;uso 1: ho un identificatore Experience Cloud ID (MID) ma voglio trasmettere i miei ID visitatori e impostare uno stato di autenticazione {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 

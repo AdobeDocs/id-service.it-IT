@@ -22,7 +22,7 @@ ht-degree: 39%
 
 # Controllare le attività Experience Cloud in base al consenso degli utenti
 
-L&#39;oggetto Adobe [!UICONTROL Opt-in] è un&#39;estensione di Adobe [!UICONTROL Experience Platform Identity Service], progettata per consentire il controllo di eventuali soluzioni Experience Cloud che possono creare cookie su pagine Web o avviare beacon, in base al consenso dell&#39;utente finale.
+L&#39;oggetto Adobe [!UICONTROL Opt-in] è un&#39;estensione di Adobe [!UICONTROL Experience Platform Identity Service], progettata per aiutarti a controllare se e quali soluzioni Experience Cloud possono creare cookie su pagine web o avviare beacon, in base al consenso dell&#39;utente finale.
 
 ## Nozioni di base di [!UICONTROL Opt-In]
 
@@ -48,7 +48,7 @@ Se non utilizzi i tag di Experience Platform, puoi impostare la configurazione d
 
 La configurazione e l’impostazione back-end sono necessarie solo in preparazione alla fornitura di un’interfaccia che offra ai visitatori del sito le opzioni di consenso da selezionare. Puoi creare tale interfaccia utente internamente oppure puoi rivolgerti a un partner CMP (Consent Management Platform).
 
-Quando si imposta un&#39;interfaccia utente per l&#39;utilizzo di [!UICONTROL Opt-in] per raccogliere il consenso, è necessario configurarla per chiamare le API che si agganciano a [!UICONTROL Opt-in] e lo informano per fornire il consenso ad alcune o a tutte le soluzioni Adobe Experience Cloud. Per informazioni dettagliate su queste API, consulta la [documentazione di riferimento di Opt-in](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/api.html?lang=it). Ulteriori informazioni sul servizio Opt-in sono disponibili anche nelle pagine della documentazione circostanti.
+Quando si imposta un&#39;interfaccia utente per l&#39;utilizzo di [!UICONTROL Opt-in] per raccogliere il consenso, è necessario configurarla per chiamare delle API che si agganciano a [!UICONTROL Opt-in] e lo informano se il consenso è applicabile solo ad alcune o a tutte le soluzioni Adobe Experience Cloud. Per informazioni dettagliate su queste API, consulta la [documentazione di riferimento di Opt-in](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/api.html?lang=it). Ulteriori informazioni sul servizio Opt-in sono disponibili anche nelle pagine della documentazione circostanti.
 
 ## Demo di [!UICONTROL Opt-In]
 
