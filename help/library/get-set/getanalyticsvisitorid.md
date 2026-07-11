@@ -58,7 +58,7 @@ Il parametro `aid` viene visualizzato in una stringa di interrogazione quando:
 
 **Caso 2**
 
-Il parametro `aid` verrà visualizzato in una stringa di query quando l&#39;organizzazione utilizza un [periodo di tolleranza](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) prima di implementare completamente il servizio ID visitatori. Se un nuovo utente accede al sito e non utilizzi un periodo di tolleranza, il visitatore riceve il parametro `mid` (ECID).
+Il parametro `aid` verrà visualizzato in una stringa di query quando l&#39;organizzazione utilizza un [periodo di tolleranza](https://experienceleague.adobe.com/it/docs/analytics/implementation/id/migration) prima di implementare completamente il servizio ID visitatori. Se un nuovo utente accede al sito e non utilizzi un periodo di tolleranza, il visitatore riceve il parametro `mid` (ECID).
 
 >[!MORELIKETHIS]
 >
