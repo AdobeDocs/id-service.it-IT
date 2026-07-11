@@ -1,6 +1,6 @@
 ---
-description: Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service per il 2018.
-keywords: Servizio ID
+description: Versioni future, aggiornamenti o modifiche al servizio ID visitatori per il 2018.
+keywords: Servizio ID visitatori
 title: Note sulla versione 2018
 exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
 TQID: https://experienceleague.adobe.com/1vrVFuFbQiLL9XYnZwEf0WkElW-qhsklHbrem-mo5LE
@@ -15,16 +15,16 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 503
-ht-degree: 94%
+source-wordcount: 488
+ht-degree: 66%
 
 ---
 
 # Note sulla versione 2018 {#release-notes}
 
-Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service per il 2018.
+Versioni future, aggiornamenti o modifiche al servizio ID visitatori per il 2018.
 
 ## Versione 3.3 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -38,7 +38,7 @@ Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service p
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Maggiore sicurezza per i cookie AMCV </p> </td> 
-   <td colname="col2"> <p>Durante una scansione della sicurezza interna, è stato rilevato che quando si usa la libreria DTM, i cookie usati per la gestione della sessione non riescono a specificare gli attributi adeguati. Questo potrebbe comportare una condivisione involontaria delle informazioni dei cookie. Per risolvere questo problema è stata introdotta una configurazione che consente al cliente di impostare il cookie AMCV come sicuro. Consulta <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a>. </p> </td> 
+   <td colname="col2"> <p>Durante un’analisi della sicurezza interna, è stato rilevato che i cookie utilizzati per la gestione delle sessioni non riescono a specificare gli attributi corretti. Questo potrebbe comportare una condivisione involontaria delle informazioni dei cookie. Per risolvere questo problema è stata introdotta una configurazione che consente al cliente di impostare il cookie AMCV come sicuro. Consulta <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -55,7 +55,7 @@ Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service p
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Maggiore sicurezza per i cookie AMCV </p> </td> 
-   <td colname="col2"> <p>Durante una scansione della sicurezza interna, è stato rilevato che quando si usa la libreria DTM, i cookie usati per la gestione della sessione non riescono a specificare gli attributi adeguati. Questo potrebbe comportare una condivisione involontaria delle informazioni dei cookie. Per risolvere questo problema è stata introdotta una configurazione che consente al cliente di impostare il cookie AMCV come sicuro. Consulta secureCookie. </p> </td> 
+   <td colname="col2"> <p>Durante un’analisi della sicurezza interna, è stato rilevato che i cookie utilizzati per la gestione delle sessioni non riescono a specificare gli attributi corretti. Questo potrebbe comportare una condivisione involontaria delle informazioni dei cookie. Per risolvere questo problema è stata introdotta una configurazione che consente al cliente di impostare il cookie AMCV come sicuro. Consulta secureCookie. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Il codice di integrazione e l’ID devono essere numeri o stringhe non vuote. </p> </td> 
@@ -63,7 +63,7 @@ Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service p
   </tr> 
   <tr> 
    <td colname="col1"> ECID JS disponibile nel repository Git pubblico </td> 
-   <td colname="col2"> ECID JS è ora disponibile nel repository Git pubblico per tutti i clienti Experience Cloud all’indirizzo https://github.com/Adobe-Marketing-Cloud/id-service/releases. </td> 
+   <td colname="col2"> ECID JS è ora disponibile nel repository Git pubblico per tutti i clienti CX Enterprise all'indirizzo https://github.com/Adobe-Marketing-Cloud/id-service/releases. </td> 
   </tr> 
  </tbody> 
 </table>
@@ -80,7 +80,7 @@ Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service p
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Picco non realistico nel conteggio di visitatori univoci </p> </td> 
-   <td colname="col2"> <p>Con il rilascio di Experience Cloud Identity Service 3.1.0, abbiamo riscontrato un problema che causava un picco non realistico nel conteggio dei visitatori univoci in seguito all’implementazione di tale versione. Questo comportamento viene mostrato solo con la versione più recente di ECID, v3.1.0, e se un utente ha selezionato l’opzione “Consenti solo dal sito web corrente” nelle impostazioni di privacy di un browser Safari. La versione 3.1.2 risolve questo problema. </p> </td> 
+   <td colname="col2"> <p>Con il rilascio del Servizio ID visitatore 3.1.0, abbiamo riscontrato un problema che causava un picco non realistico nel conteggio dei visitatori univoci quando questa versione veniva implementata. Questo comportamento viene mostrato solo con la versione più recente di ECID, v3.1.0, e se un utente ha selezionato l’opzione “Consenti solo dal sito web corrente” nelle impostazioni di privacy di un browser Safari. La versione 3.1.2 risolve questo problema. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -89,7 +89,7 @@ Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service p
 
 >[!NOTE]
 >
->È consigliabile aggiornare il prima la versione 3.1.0 alla versione più recente. Consultare la descrizione della versione 3.1.2. L’ultimo pacchetto è disponibile da Adobe Experience Platform Launch, DTM e AppMeasurement.
+>È consigliabile aggiornare il prima la versione 3.1.0 alla versione più recente. Consultare la descrizione della versione 3.1.2. L’ultimo pacchetto è disponibile all’interno di tag e AppMeasurement.
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
@@ -126,7 +126,7 @@ Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service p
   </tr> 
   <tr> 
    <td colname="col1"> <p>Supporto di Internet Explorer </p> </td> 
-   <td colname="col2"> <p>Il servizio ID non supporta più Internet Explorer 6, 7, 8 e 9. </p> </td> 
+   <td colname="col2"> <p>Il servizio ID visitatori non supporta più Internet Explorer 6, 7, 8 e 9. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Aggiornamento della documentazione getInstance </p> </td> 

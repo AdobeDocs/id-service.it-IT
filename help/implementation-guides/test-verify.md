@@ -1,7 +1,7 @@
 ---
-description: Istruzioni, strumenti e procedure utili per determinare se il servizio ID funziona correttamente. Questi test sono applicabili al servizio ID in generale e per diverse combinazioni del servizio ID e delle soluzioni Experience Cloud.
-keywords: Servizio ID
-title: Testare e verificare Experience Cloud Identity Service
+description: Istruzioni, strumenti e procedure utili per determinare se il Servizio ID visitatore funziona correttamente. Questi test sono applicabili al servizio ID visitatore in generale e per diverse combinazioni del servizio ID visitatore e delle soluzioni CX Enterprise.
+keywords: Servizio ID visitatori
+title: Test e verifica del servizio ID visitatore di Adobe
 exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
 TQID: https://experienceleague.adobe.com/LPXZ0ydoky48kzyRnMK0kHsfoQyK3mi5IeXM0vtQV0s
 product_v2:
@@ -14,55 +14,55 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 689
-ht-degree: 100%
+source-wordcount: 713
+ht-degree: 46%
 
 ---
 
-# Testare e verificare Experience Cloud Identity Service{#test-and-verify-the-experience-cloud-id-service}
+# Test e verifica del servizio ID visitatore di Adobe{#test-and-verify-the-experience-cloud-id-service}
 
-Istruzioni, strumenti e procedure utili per determinare se il servizio ID funziona correttamente. Questi test sono applicabili al servizio ID in generale e per diverse combinazioni del servizio ID e delle soluzioni Experience Cloud.
+Istruzioni, strumenti e procedure utili per determinare se il Servizio ID visitatore funziona correttamente. Questi test sono applicabili al servizio ID visitatore in generale e per diverse combinazioni del servizio ID visitatore e delle soluzioni CX Enterprise.
 
 ## Prima di iniziare {#section-b1e76ad552ed4eb793b6e521a55127d4}
 
-Informazioni importanti da conoscere prima di iniziare il test e la verifica del servizio ID.
+Informazioni importanti da conoscere prima di iniziare il test e la verifica del Servizio ID visitatore.
 
 **Ambienti browser**
 
 Quando esegui il test in una sessione normale del browser, elimina la cache del browser prima di ogni test.
 
-In alternativa puoi provare il servizio ID in una sessione browser anonima o in incognito. In una sessione anonima non è necessario cancellare i cookie o la cache del browser prima di ogni test.
+In alternativa, puoi testare il Servizio ID visitatore in una sessione browser anonima o in incognito. In una sessione anonima non è necessario cancellare i cookie o la cache del browser prima di ogni test.
 
 **Strumenti**
 
-Utilizzando [Adobe Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=it) e il [proxy HTTP Charles](https://www.charlesproxy.com/) puoi determinare se il servizio ID è stato configurato in modo da funzionare correttamente con Analytics. Le informazioni presenti in questa sezione si basano sui risultati restituiti da Adobe Debugger e Charles. Puoi anche usare un altro strumento o debugger di tua preferenza.
+Il [debugger di Adobe](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=it) e il [proxy HTTP Charles](https://www.charlesproxy.com/) possono aiutarti a determinare se il servizio ID visitatori è stato configurato per funzionare correttamente con Analytics. Le informazioni presenti in questa sezione si basano sui risultati restituiti da Adobe Debugger e Charles. Puoi anche usare un altro strumento o debugger di tua preferenza.
 
 ## Test con Adobe Debugger {#section-861365abc24b498e925b3837ea81d469}
 
-L&#39;integrazione del servizio è configurata correttamente se vedi un identificatore [!DNL Experience Cloud ID] (MID) nella risposta di [!DNL Adobe] Debugger. Per maggiori informazioni sull’identificatore MID, consulta [I cookie ed Experience Cloud Identity Service](../introduction/cookies.md).
+L’integrazione del servizio è configurata correttamente quando visualizzi un ECID nella risposta di Adobe Debugger. Consulta [Cookie e il servizio ID visitatori](../introduction/cookies.md) per ulteriori informazioni sull&#39;identificatore MID.
 
-Per verificare lo stato del servizio ID con il [!DNL Adobe] [debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=it):
+Per verificare lo stato del servizio ID visitatori con il [debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=it) di Adobe:
 
 1. Cancella i cookie del browser o apri una sessione di navigazione anonima.
-1. Carica la pagina di prova che contiene il codice del servizio ID.
-1. Apri [!DNL Adobe] Debugger.
+1. Carica la pagina di test che contiene il codice del servizio ID visitatore.
+1. Apri Adobe Debugger.
 1. Individua un identificatore MID nei risultati.
 
 ## I risultati di Adobe Debugger {#section-bd2caa6643d54d41a476d747b41e7e25}
 
-L&#39;identificatore MID viene memorizzato in una coppia chiave-valore con sintassi: `MID= *`Experience Cloud ID`*`. Queste informazioni sono presentate nel modo seguente.
+L&#39;identificatore MID viene archiviato in una coppia chiave-valore con sintassi `MID= *`ECID`*`. Queste informazioni sono presentate nel modo seguente.
 
 **Operazione riuscita**
 
-Il servizio ID è stato implementato correttamente se viene visualizzata una risposta simile a questa:
+Il Servizio ID visitatore è stato implementato correttamente se viene visualizzata una risposta simile alla seguente:
 
 ```
 mid=20265673158980419722735089753036633573
 ```
 
-Se sei un cliente [!DNL Analytics], oltre all&#39;identificatore MID potresti vedere un identificatore [!DNL Analytics] ID (AID). Ciò si verifica:
+Se sei un cliente Analytics, oltre all’identificatore MID potresti vedere un identificatore ID (AID) di Analytics. Ciò si verifica:
 
 * Con alcuni dei visitatori di lunga data del sito.
 * Se hai impostato un periodo di tolleranza.
@@ -76,30 +76,30 @@ Contatta l’[Assistenza clienti](https://helpx.adobe.com/it/marketing-cloud/con
 
 ## Test con il proxy HTTP Charles {#section-d9e91f24984146b2b527fe059d7c9355}
 
-Per verificare lo stato del servizio ID con Charles:
+Per verificare lo stato del servizio ID visitatori con Charles:
 
 1. Cancella i cookie del browser o apri una sessione di navigazione anonima.
 1. Avvia Charles.
-1. Carica la pagina di prova che contiene il codice del servizio ID.
+1. Carica la pagina di test che contiene il codice del servizio ID visitatore.
 1. Verifica le chiamate di richiesta e risposta e i dati descritti di seguito.
 
 ## I risultati di Charles {#section-c10c3dc0bb9945cbaffcf6fec7082fab}
 
 Questa sezione descrive quali informazioni cercare e dove cercarle quando usi Charles per monitorare le chiamate HTTP.
 
-**Richieste corrette per il servizio ID in Charles**
+**Richieste corrette per il servizio ID visitatori in Charles**
 
-Il codice del servizio ID funziona correttamente se la funzione `Visitor.getInstance` effettua una chiamata JavaScript a `dpm.demdex.net`. Una richiesta corretta include il tuo [ID organizzazione](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). L&#39;ID organizzazione viene passato sotto forma di coppia chiave-valore con sintassi: `d_orgid= *`ID organizzazione`*`. Cerca il `dpm.demdex.net` e la chiamata JavaScript nella scheda [!UICONTROL Structure]. Cerca l&#39;ID organizzazione nella scheda [!UICONTROL Request].
+Il codice del servizio ID visitatore funziona correttamente se la funzione `Visitor.getInstance` effettua una chiamata JavaScript a `dpm.demdex.net`. Una richiesta corretta include il tuo [ID organizzazione IMS](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). L&#39;ID organizzazione IMS viene passato come coppia chiave-valore con sintassi `d_orgid= *`ID organizzazione IMS`*`. Cerca il `dpm.demdex.net` e la chiamata JavaScript nella scheda [!UICONTROL Structure]. Cerca l&#39;ID organizzazione IMS nella scheda [!UICONTROL Request].
 
 ![](assets/charles_request.png)
 
-**Risposte corrette per il servizio ID in Charles**
+**Risposte corrette per il servizio ID visitatori in Charles**
 
-Il provisioning del tuo account per il servizio ID è corretto se la risposta dai [Data Collection Servers](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=it) (DCS) restituisce un valore MID. L’identificatore MID viene restituito come una coppia chiave-valore con sintassi: `d_mid: *`Experience Cloud ID visitatore`*`. Cerca l&#39;identificatore MID nella scheda [!UICONTROL Response], come illustrato di seguito.
+Il provisioning del tuo account per il servizio ID visitatore è corretto quando la risposta dai [Server di raccolta dati](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=it) (DCS) restituisce un identificatore MID. L&#39;identificatore MID viene restituito come coppia chiave-valore con sintassi: `d_mid: *`ECID visitatore`*`. Cerca l&#39;identificatore MID nella scheda [!UICONTROL Response], come illustrato di seguito.
 
 ![](assets/charles_response_success.png)
 
-**Risposte errate per il servizio ID in Charles**
+**Risposte non riuscite al servizio ID visitatore in Charles**
 
 Il provisioning del tuo account per il servizio ID non è corretto se la risposta DCS non contiene l&#39;identificatore MID. Una risposta errata restituisce un codice di errore e un messaggio nella scheda [!UICONTROL Response], come illustrato di seguito. Se ricevi questo messaggio di errore nella risposta DCS, contatta l’assistenza clienti.
 

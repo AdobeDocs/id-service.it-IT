@@ -1,6 +1,6 @@
 ---
-description: Adobe Experience Platform Launch è lo strumento principale usato per configurare, distribuire e integrare Experience Cloud Identity Service con le altre soluzioni Experience Cloud.
-title: Implementare con Launch
+description: tag è lo strumento principale utilizzato per configurare, distribuire e integrare il Servizio ID visitatore con le altre soluzioni CX Enterprise.
+title: Implementazione con i tag di raccolta dati
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: cf197fde-3b93-4578-b24e-2db5633f043c
@@ -14,22 +14,22 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 179
-ht-degree: 100%
+source-wordcount: 170
+ht-degree: 23%
 
 ---
 
-# Implementazione con i tag di Experience Platform{#implement-with-launch}
+# Implementazione con i tag di raccolta dati{#implement-with-launch}
 
-I Tag in Adobe Experience Platform sono lo strumento principale usato per configurare, distribuire e integrare Experience Cloud Identity Service con le altre soluzioni Experience Cloud.
+I tag sono lo strumento principale utilizzato per configurare, distribuire e integrare il servizio ID visitatori con le altre soluzioni CX Enterprise.
 
-## Informazioni sui tag di Experience Platform {#section-611711602854464ea351a4af80a8dafe}
+## Informazioni sui tag di raccolta dati {#section-611711602854464ea351a4af80a8dafe}
 
-I [Tag in Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it) sono la funzionalità di gestione dei tag di nuova generazione di Adobe incorporata in Adobe Experience Cloud. I tag di Platform consentono ai clienti di:
+[Tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it) nella raccolta dati di Adobe Experience Platform è la funzionalità di gestione dei tag di nuova generazione di Adobe incorporata in Adobe CX Enterprise. I tag consentono ai client di:
 
 * distribuire prodotti Web lato client usando integrazioni definite _estensioni_;
 * acquisire, definire, gestire e condividere in modo coerente i dati tra prodotti marketing e pubblicitari di Adobe e altri fornitori.
-* I tag di Platform rappresentano un sistema di consegna JavaScript avanzato che valuta le condizioni ed esegue azioni per distribuire in modo efficiente ed efficace librerie e prodotti lato client. Forniscono un approccio altamente scalabile per gestire e creare estensioni, con un solido insieme di API per l’interazione programmatica con Adobe Experience Cloud.
+* I tag sono un sistema di consegna JavaScript avanzato che valuta le condizioni ed esegue azioni per distribuire in modo efficiente ed efficace le librerie e i prodotti lato client. I tag forniscono un approccio altamente scalabile alla gestione e alla creazione di estensioni, insieme a un solido set di API per l&#39;interazione programmatica con Adobe CX Enterprise.
 

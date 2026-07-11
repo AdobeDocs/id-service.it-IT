@@ -1,6 +1,6 @@
 ---
 description: Obbligatoria per i domini di livello superiore con più parti, se una delle ultime due parti dell’URL comprende più di due caratteri.
-keywords: Servizio ID
+keywords: Servizio ID visitatori
 title: cookieDomain
 exl-id: 280416ad-372a-4a59-a938-0f49c0ce300f
 TQID: https://experienceleague.adobe.com/V-Aej2Eh52NBXQfeUTHQHEs6Q72mzpI5HptURu6FTUM
@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 62
+source-wordcount: 63
 ht-degree: 100%
 
 ---
@@ -32,7 +32,7 @@ Obbligatoria per i domini di livello superiore con più parti, se una delle ulti
 **Esempio di codice**
 
 ```js
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE",{ 
    trackingServer: "Insert tracking server here here",  //Same as s.trackingServer 
    trackingServerSecure: "Insert secure tracking server here",  //Same as s.trackingServerSecure 
  

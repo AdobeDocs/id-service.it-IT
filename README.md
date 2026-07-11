@@ -1,8 +1,8 @@
 ---
-source-git-commit: cadd9fab972936106a48a117022ed473b3614e09
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 98%
+source-wordcount: '440'
+ht-degree: 91%
 
 ---
 # Contribuire agli articoli
@@ -19,7 +19,7 @@ Consulta la [Guida collaboratore per i documenti di Adobe](https://docs.adobe.co
 
 Il modo in cui contribuisci dipende da chi sei e dal tipo di modifiche con le quali desideri contribuire:
 
-### Modifiche minori o richieste minori
+### Richieste o modifiche minori
 
 Per inviare una richiesta, fai clic sul collegamento **Segnala un problema** in un articolo, per aprire un problema su GitHub. Specifica un titolo e una descrizione, quindi fai clic su **Enviar nuevo problema**.
 
@@ -37,7 +37,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Modifiche principali da dipendenti Adobe
 
-Se sei un autore, un responsabile di programma o uno sviluppatore del team di prodotto per una soluzione [!UICONTROL Adobe Experience Cloud] e il tuo lavoro è contribuire a o creare articoli tecnici, devi utilizzare l’archivio privato all’indirizzo `https://git.corp.adobe.com/AdobeDocs`.
+Se sei un autore tecnico, un responsabile di programma o uno sviluppatore del team di prodotto per una soluzione CX Enterprise ed è tuo compito creare o contribuire ad articoli tecnici, devi utilizzare l&#39;archivio privato all&#39;indirizzo `https://github.com/Adobe-Enterprise-Docs/id-service.it-IT`.
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
@@ -52,7 +52,7 @@ Per informazioni, consulta la [Guida collaboratore per i documenti di Adobe](htt
 Tutti gli articoli in questo archivio utilizzano GitHub Flavored Markdown. Se non conosci Markdown, consulta:
 
 * [Nozioni di base su Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [Cheat sheet Markdown stampabile](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Scheda di riferimento stampabile su Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Etichette
 

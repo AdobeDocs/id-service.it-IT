@@ -1,6 +1,6 @@
 ---
-description: Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service.
-keywords: Servizio ID
+description: Versioni future, aggiornamenti o modifiche al servizio ID visitatori.
+keywords: Servizio ID visitatori
 title: Note sulla versione 2022
 exl-id: 2e2de89e-75b3-484d-ae4f-99054ef9956f
 TQID: https://experienceleague.adobe.com/lHj017E8DBAre6wqZ6okoFCREvtGPE4c-GQRllGyqEY
@@ -13,16 +13,16 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 112
-ht-degree: 100%
+source-wordcount: 111
+ht-degree: 75%
 
 ---
 
-# Note sulla versione 2022 di Experience Cloud Identity Service
+# Note sulla versione del servizio ID visitatore di Adobe - 2022
 
-Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service.
+Versioni future, aggiornamenti o modifiche al servizio ID visitatori.
 
 ## Visitor 5.5.0
 

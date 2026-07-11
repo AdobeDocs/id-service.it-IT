@@ -1,6 +1,6 @@
 ---
 description: Questa proprietà imposta l'ID del contenitore della sorgente dati che desideri usare per le sincronizzazioni ID.
-keywords: Servizio ID
+keywords: Servizio ID visitatori
 title: idSyncContainerID
 exl-id: 6c4cd41b-902b-4872-8c3f-475a834b76f4
 TQID: https://experienceleague.adobe.com/bDW5Z4LKbLW2igmRsJ-QxajnBj8KyvoTypUjUekElj4
@@ -11,10 +11,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 320
-ht-degree: 96%
+source-wordcount: 328
+ht-degree: 60%
 
 ---
 
@@ -37,7 +37,7 @@ Sommario:
 **Esempio di codice:**
 
 ```js
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE",{ 
    ... 
    //Set container ID 
    idSyncContainerID:80 
@@ -48,16 +48,16 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 
 **Contenitori**
 
-I contenitori sono oggetti creati da [!DNL Audience Manager]. Sebbene non siano accessibili esternamente, questi contenitori elencano tutte le origini dati che:
+I contenitori sono oggetti creati da Audience Manager. Sebbene non siano accessibili esternamente, questi contenitori elencano tutte le origini dati che:
 
 * sono disponibili ma non utilizzati per la sincronizzazione ID;
 * vengono utilizzati per la sincronizzazione ID.
 
-Anche se non sei un [!DNL Audience Manager] cliente, il tuo account avrà questi contenitori se stai scambiando ID con varie sorgenti dati su pagine diverse all&#39;interno del tuo dominio. Questo perché [!DNL Audience Manager] offre la tecnologia e la funzionalità di back-end che consente la sincronizzazione ID.
+Anche se non sei un cliente di Audience Manager, il tuo account avrà questi contenitori se stai scambiando ID con diverse origini dati su pagine diverse all&#39;interno del tuo dominio. Questo perché Audience Manager fornisce la tecnologia e la funzionalità di back-end che consente la sincronizzazione ID.
 
 **Casi d&#39;uso**
 
-A seconda della situazione, potresti dover o meno aggiungere questa configurazione al codice del servizio ID.
+A seconda della situazione, potrebbe essere necessario aggiungere o meno questa configurazione al codice del servizio ID visitatori.
 
 <table id="table_48621F343C7F4760A75F6BCC2DB2DA20"> 
  <thead> 
@@ -71,7 +71,7 @@ A seconda della situazione, potresti dover o meno aggiungere questa configurazio
    <td colname="col1"> <p> <b>Non necessario</b> </p> </td> 
    <td colname="col2"> <p>Non è necessario utilizzare questa configurazione nei seguenti casi: </p> <p> 
      <ul id="ul_4D6F794CD65C43D0BEFBA6F5DE420C2E"> 
-      <li id="li_0F048A6AC7BE4450AFA1B20B1AC25808">Usi il servizio ID con qualsiasi soluzione <span class="keyword">Experience Cloud</span> e non esegui sincronizzazioni ID con altre sorgenti dati. In questo caso, il tuo account dispone di un contenitore predefinito con ID 0 e non è richiesta alcuna azione. </li> 
+      <li id="li_0F048A6AC7BE4450AFA1B20B1AC25808">Il servizio ID visitatore viene utilizzato con qualsiasi soluzione CX Enterprise e non esegue sincronizzazioni ID con altre origini dati. In questo caso, il tuo account dispone di un contenitore predefinito con ID 0 e non è richiesta alcuna azione. </li> 
       <li id="li_5657D64D9406407D9B4DB7D8BE4F8EE4">Tutte le origini dati si trovano in un unico contenitore. </li> 
      </ul> </p> </td> 
   </tr> 
@@ -87,10 +87,10 @@ A seconda della situazione, potresti dover o meno aggiungere questa configurazio
  </tbody> 
 </table>
 
-## Impostazione degli ID dei contenitori quando usi DIL e VisitorAPI.js {#section-f283cb69c8de4348b5316cc4e02a3e9e}
+## Impostazione degli ID dei contenitori quando si utilizzano DIL e `VisitorAPI.js` {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
-Se hai implementato [!UICONTROL DIL] *e* VisitorAPI.js sulla stessa pagina:
+Se hai distribuito [!UICONTROL DIL] *e* `VisitorAPI.js` sulla stessa pagina:
 
-* Il codice del servizio ID del visitatore ha la precedenza rispetto a DIL per le sincronizzazioni ID.
-* Imposta la configurazione `idSyncContainerID` solo nel codice del servizio ID.
+* Il codice del servizio ID visitatore ha la precedenza su DIL per le sincronizzazioni ID.
+* Imposta la configurazione `idSyncContainerID` solo nel codice del servizio ID visitatore.
 

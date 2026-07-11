@@ -1,6 +1,6 @@
 ---
-description: Semplificare l'abilitazione della soluzione Experience Cloud per Opt-in utilizzando Adobe Experience Platform Launch.
-title: Configurare Opt-in con Launch
+description: Semplificare l'abilitazione della soluzione CX Enterprise per Opt-in utilizzando i tag.
+title: Configurazione di Opt-in con i tag
 exl-id: 9e9d1e2b-196f-474c-b872-de4329dcb017
 TQID: https://experienceleague.adobe.com/o2vzYw-VbX-F5dg-vnaRPdX2va99K1bRsAOA4IoUklc
 product_v2:
@@ -12,28 +12,28 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 180
-ht-degree: 100%
+source-wordcount: 171
+ht-degree: 19%
 
 ---
 
-# Configurazione di Opt-in con Experience Platform Launch {#configuring-opt-in-with-launch}
+# Configurazione di Opt-in con i tag {#configuring-opt-in-with-launch}
 
-Semplificare l’abilitazione della soluzione Experience Cloud per Opt-in utilizzando Adobe Experience Platform Launch.
+Semplificare l&#39;abilitazione della soluzione CX Enterprise per Opt-in utilizzando i tag.
 
-## Configurare uno scenario Opt-in con Experience Platform Launch {#section-8aa1b58bf8374c938aa8cfdeddbad6ff}
+## Configurare uno scenario Opt-in con i tag {#section-8aa1b58bf8374c938aa8cfdeddbad6ff}
 
-[Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it) semplifica la configurazione e l’impostazione di uno scenario opt-in con le soluzioni Adobe. È possibile semplificare la raccolta dei consensi opt-in dei visitatori per la soluzione Experience Cloud consentendo ad Analytics, Target, Audience Manager e a tutte le altre soluzioni Experience Cloud di partecipare al sistema di gestione dei consensi.
+[Tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it) nella raccolta dati di Adobe Experience Platform semplifica la configurazione e l&#39;impostazione di uno scenario di consenso con le soluzioni Adobe. È possibile semplificare la raccolta dei consensi opt-in dei visitatori per le soluzioni CX Enterprise consentendo ad Analytics, Target, Audience Manager e a tutte le altre soluzioni CX Enterprise di partecipare al sistema di gestione dei consensi.
 
-**Configurare l&#39;estensione Experience Cloud ID**
+**Configura l&#39;estensione tag [!UICONTROL Experience Cloud ID Service]**
 
-Se l’estensione Experience Cloud ID non è ancora stata installata, apri la proprietà, quindi fai clic su *Estensioni* > *Catalogo*, passa il puntatore sull’estensione Experience Cloud ID e fai clic su *Installa*.
+Se l&#39;estensione tag [!UICONTROL Experience Cloud ID Service] non è ancora stata installata, apri la proprietà, quindi fai clic su *Estensioni* > *Catalogo*, passa il puntatore sull&#39;estensione tag [!UICONTROL Experience Cloud ID Service] e fai clic su *Installa*.
 
 Per configurare l’estensione, apri la scheda *Estensioni* e passa il puntatore sull’estensione. Quindi fai clic su *Configura*.
 
-Per ulteriori informazioni di riferimento, consulta la [panoramica sull’estensione Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html?lang=it).
+Per ulteriori informazioni di riferimento, leggere l&#39;estensione tag [!UICONTROL Experience Cloud ID Service] [overview](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html?lang=it) (l&#39;estensione che implementa il servizio ID visitatori).
 
 ![](assets/optin-launch.jpg)
 

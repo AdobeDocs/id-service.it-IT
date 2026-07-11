@@ -1,6 +1,6 @@
 ---
-description: Questo metodo helper ti consente di aggiungere a un URL di reindirizzamento il codice Supplemental Data ID (SDID) sotto forma di parametro della stringa di interrogazione. È utile quando stai usando A4T e hai bisogno di mantenere il codice SDID da una pagina all'altra e di unire insieme le visite separate. Per usare questa funzione, devi aver implementato il servizio ID con lo stesso ID organizzazione sui domini di origine e di destinazione.
-keywords: Servizio ID
+description: Questo metodo helper ti consente di aggiungere a un URL di reindirizzamento il codice Supplemental Data ID (SDID) sotto forma di parametro della stringa di interrogazione. È utile quando stai usando A4T e hai bisogno di mantenere il codice SDID da una pagina all'altra e di unire insieme le visite separate. Per utilizzare questa funzione, devi aver implementato il servizio ID visitatore con lo stesso ID organizzazione IMS sui domini di origine e di destinazione.
+keywords: Servizio ID visitatori
 title: appendSupplementalDataIDTo
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
 TQID: https://experienceleague.adobe.com/oR2LCiVk5N-Xnt3wTOKMt7UYFXzwEGFwJpKoz-ikzh8
@@ -11,16 +11,16 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 345
-ht-degree: 100%
+source-wordcount: 354
+ht-degree: 61%
 
 ---
 
 # appendSupplementalDataIDTo{#appendsupplementaldataidto}
 
-Questo metodo helper ti consente di aggiungere a un URL di reindirizzamento il codice Supplemental Data ID (SDID) sotto forma di parametro della stringa di interrogazione. È utile quando stai usando A4T e hai bisogno di mantenere il codice SDID da una pagina all&#39;altra e di unire insieme le visite separate. Per usare questa funzione, devi aver implementato il servizio ID con lo stesso ID organizzazione sui domini di origine e di destinazione.
+Questo metodo helper ti consente di aggiungere a un URL di reindirizzamento il codice Supplemental Data ID (SDID) sotto forma di parametro della stringa di interrogazione. È utile quando stai usando A4T e hai bisogno di mantenere il codice SDID da una pagina all&#39;altra e di unire insieme le visite separate. Per utilizzare questa funzione, devi aver implementato il servizio ID visitatore con lo stesso ID organizzazione IMS sui domini di origine e di destinazione.
 
 Sommario:
 
@@ -38,7 +38,7 @@ Sommario:
 **Esempio di codice**
 
 ```js
-var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"); 
+var visitor = Visitor.getInstance("INSERT-IMS-ORG-ID-HERE"); 
 
 //Get current supplemental data id
 var theCurrentSDID = visitor._supplementalDataIDCurrent ? visitor._supplementalDataIDCurrent : "";
@@ -50,7 +50,7 @@ var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, theCurrentSDID));
 
 ## Output di esempio {#section-dbe02d7ff6bd4ad1a2a26bf9cff54fa4}
 
-Come mostrato di seguito, l’URL reindirizza il codice SDID del visitatore, l’ID della tua organizzazione e la marca temporale UNIX nella chiamata alla pagina ricevente.
+Come mostrato di seguito, l’URL reindirizza il codice SDID del visitatore, l’ID dell’organizzazione IMS e una marca temporale UNIX nella chiamata alla pagina ricevente.
 
 <ul class="simplelist"> 
  <li> <span class="codeph"> www.domain.com/pageB?adobe_mc_sdid=SDID=7996F0B028999505-13DA591039D6226|MCORGID=123456789@AdobeOrg|TS=1498569322 </span> </li> 
@@ -58,7 +58,7 @@ Come mostrato di seguito, l’URL reindirizza il codice SDID del visitatore, l�
 
 ## Modifica del timeout del codice SDID con sdidParamExpiry {#section-99946715cefa4acc95200b093db5297e}
 
-La configurazione [sdidParamExpiry](../../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) ti permette di ignorare l&#39;intervallo di scadenza del codice SDID predefinito quando trasmetti quell&#39;ID da una pagina all&#39;altra usando la funzione helper `appendSupplementalDataIDTo`. Per impostazione predefinita, il codice del servizio ID sulla pagina ricevente ha 30 secondi di tempo per ottenere il codice SDID dall&#39;URL inviato dalla pagina inviante. Se il codice del servizio ID sulla pagina ricevente non riesce a recuperare il codice SDID in meno di 30 secondi, richiede un nuovo codice SDID. Questa funzionalità è principalmente per i clienti A4T che devono passare il codice SDID da una pagina all’altra e desiderano controllare questo intervallo di timeout.
+La configurazione [sdidParamExpiry](../../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) ti permette di ignorare l&#39;intervallo di scadenza del codice SDID predefinito quando trasmetti quell&#39;ID da una pagina all&#39;altra usando la funzione helper `appendSupplementalDataIDTo`. Per impostazione predefinita, il codice del servizio Visitor ID sulla pagina ricevente ha 30 secondi di tempo per ottenere il codice SDID dall&#39;URL inviato dalla pagina inviante. Se il codice del Servizio ID visitatore sulla pagina ricevente non riesce a recuperare il codice SDID in meno di 30 secondi, richiede un nuovo codice SDID. Questa funzionalità è principalmente per i clienti A4T che devono passare il codice SDID da una pagina all’altra e desiderano controllare questo intervallo di timeout.
 
 Se hai bisogno di modificare il timeout del codice SDID predefinito, aggiungi `sdidParamExpiry` alla `Visitor.getInstance` funzione con la sintassi seguente:
 
@@ -66,10 +66,10 @@ Se hai bisogno di modificare il timeout del codice SDID predefinito, aggiungi `s
 
 **Esempio di codice**
 
-Una volta configurato il tuo codice del servizio ID potrebbe assomigliare a questo esempio. Questo esempio imposta il timeout del codice SDID a 15 secondi.
+Una volta configurato, il codice del servizio Visitor ID potrebbe assomigliare a questo esempio. Questo esempio imposta il timeout del codice SDID a 15 secondi.
 
 ```js
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE",{ 
    ... 
    //Change the default SDID timeout to 15 seconds 
    sdidParamExpiry: 15 

@@ -1,6 +1,6 @@
 ---
-description: Chiama questa funzione del servizio ID per determinare se il servizio ID ha generato un ID visitatore Experience Cloud (MID) lato client. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
-keywords: Servizio ID
+description: Chiama questa funzione del servizio ID visitatore per determinare se il servizio ID visitatore ha generato un ECID (MID) lato client. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
+keywords: Servizio ID visitatori
 title: isClientSideMarketingCloudVisitorID
 exl-id: ed2672e7-da1a-4c02-9f4e-c14419ec9ec7
 TQID: https://experienceleague.adobe.com/kQK7Lw-j33luPqTSzQKGuf8fMPuOEDoQBzesZa-bvVo
@@ -11,16 +11,16 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 127
-ht-degree: 100%
+source-wordcount: 128
+ht-degree: 32%
 
 ---
 
 # isClientSideMarketingCloudVisitorID{#isclientsidemarketingcloudvisitorid}
 
-Chiama questa funzione del servizio ID per determinare se il servizio ID ha generato un ID visitatore Experience Cloud (MID) lato client. Disponibile in VisitorAPI.js versione 1.7.0 o successiva.
+Chiama questa funzione del servizio ID visitatore per determinare se il servizio ID visitatore ha generato un ECID (MID) lato client. Disponibile in `VisitorAPI.js` versione 1.7.0 o successiva.
 
 **Sintassi**
 
@@ -38,15 +38,15 @@ Nella tabella seguente sono elencate e descritte le risposte restituite da quest
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> true</span> </p> </td> 
-   <td colname="col2"> <p>Il servizio ID non ha potuto ricevere o non ha ricevuto un identificatore MID dal server <span class="keyword">Experience Cloud</span>. Ha creato un identificatore MID localmente, nel browser (lato client) </p> </td> 
+   <td colname="col2"> <p>Il servizio ID visitatore non ha potuto ricevere o non ha ricevuto un identificatore MID dal server CX Enterprise. Ha creato un identificatore MID localmente, nel browser (lato client) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> false</span> </p> </td> 
-   <td colname="col2"> <p>Il servizio ID ha ricevuto un identificatore MID dal server <span class="keyword">Experience Cloud</span>. </p> </td> 
+   <td colname="col2"> <p>Il servizio ID visitatore ha ricevuto un identificatore MID dal server CX Enterprise. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> null</span> </p> </td> 
-   <td colname="col2"> <p>Il servizio ID non ha effettuato una chiamata al server <span class="keyword">Experience Cloud</span>. </p> </td> 
+   <td colname="col2"> <p>Il servizio ID visitatore non ha effettuato una chiamata al server CX Enterprise. </p> </td> 
   </tr> 
  </tbody> 
 </table>

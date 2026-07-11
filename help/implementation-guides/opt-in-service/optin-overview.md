@@ -12,10 +12,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 528
-ht-degree: 100%
+source-wordcount: 512
+ht-degree: 89%
 
 ---
 
@@ -23,11 +23,11 @@ ht-degree: 100%
 
 Il servizio Opt-in consente di configurare i protocolli per il visitatore per identificare se è possibile impostare un cookie sul dispositivo o sul browser dell’utente che visita il tuo sito.
 
-Il servizio Opt-in è un&#39;estensione del servizio Experience Cloud ID (ECID) progettato per consentire il controllo di eventuali soluzioni Experience Cloud che possono creare cookie sulle pagine Web per i visitatori prima che l&#39;utente dia il consenso. Il servizio Opt-in consente di impostare protocolli da integrare con la Piattaforma di gestione dei consensi (CMP) e i sistemi esistenti come parte di un progetto più grande.
+Il servizio Opt-in è un&#39;estensione dell&#39;ECID, progettato per consentire il controllo di eventuali soluzioni CX Enterprise che possono creare cookie sulle pagine Web per i visitatori prima che l&#39;utente dia il consenso. Il servizio Opt-in consente di impostare protocolli da integrare con la Piattaforma di gestione dei consensi (CMP) e i sistemi esistenti come parte di un progetto più grande.
 
 Usando il servizio Opt-in è possibile specificare se un visitatore può dare il consenso a tutte le soluzioni Adobe in una sola volta oppure deve darlo per ogni soluzione seguendo la sequenza di autorizzazioni per ognuna di esse. Una volta che il cliente ha completato e registrato il processo di approvazione, è possibile recuperare le approvazioni del visitatore CMP da tutte le soluzioni Adobe.
 
-Il servizio Opt-in può essere implementato e configurato facilmente tramite [Tag in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it) con l’[estensione Opt-in](../../implementation-guides/opt-in-service/launch.md). Può essere implementato e configurato anche usando [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
+Il servizio Opt-in può essere implementato e configurato facilmente utilizzando [tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it) con l&#39;estensione [Opt-in](../../implementation-guides/opt-in-service/launch.md).
 
 Per iniziare, consulta [Configurazione del servizio Opt-in](../../implementation-guides/opt-in-service/getting-started.md).
 
@@ -39,7 +39,7 @@ Per iniziare, consulta [Configurazione del servizio Opt-in](../../implementation
 >
 >Il contenuto di questo documento non rappresenta e non intende sostituirsi a una consulenza legale. Consulta l&#39;ufficio legale della tua azienda per ricevere un consiglio sul consenso e le pratiche da seguire quando si configura l&#39;implementazione di Opt-in.
 
-## Opt-in nelle soluzioni Experience Cloud {#section-053e6224505542cf961896f0ca869e52}
+## Opt-in per le soluzioni aziendali CX {#section-053e6224505542cf961896f0ca869e52}
 
 Il servizio Opt-in è uno strumento per creare un flusso di lavoro di scelta del consenso in base alle tue esigenze, che ti consente di progettare un flusso di lavoro che attivi dei tag prima e dopo che l&#39;utente o il controller conceda il consenso.
 

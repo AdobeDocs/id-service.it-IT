@@ -12,10 +12,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 916
-ht-degree: 98%
+source-wordcount: 928
+ht-degree: 91%
 
 ---
 
@@ -36,13 +36,13 @@ adobe.OptInCategories = {
 
 ## Parametri di configurazione Opt-in {#section-d66018342baf401389f248bb381becbf}
 
-Questa sezione illustra come usare l&#39;API per configurare Opt-in. Gran parte della configurazione e dell’implementazione può essere effettuata usando l’estensione Experience Platform Launch.
+Questa sezione illustra come usare l&#39;API per configurare Opt-in. Gran parte della configurazione e dell’implementazione può essere effettuata utilizzando l’estensione tag.
 
 Le configurazioni di Opt-in vengono fornite nella funzione `getInstance()` di JavaScript per il visitatore che crea l&#39;istanza per l&#39;oggetto globale `adobe`. Di seguito si riporta un elenco delle configurazioni di JS per il visitatore per il servizio Opt-in.
 
 **`doesOptInApply (boolean or function that evaluates to a boolean)`**
 
-Se falso indica che i visitatori non devono dare il consenso. Comporta la creazione di cookie da parte di Experience Cloud indipendentemente dalle categorie a cui l&#39;utente ha dato o ha negato il consenso. Questa configurazione abilita o disabilita in modo olistico il servizio Opt-in.
+Se falso indica che i visitatori non devono dare il consenso. Comporta la creazione di cookie da parte di CX Enterprise indipendentemente dalle categorie a cui l&#39;utente ha dato o ha negato il consenso. Questa configurazione abilita o disabilita in modo olistico il servizio Opt-in.
 
 **`preOptInApprovals (Object <adobe.OptInCategories enum: boolean>)`**
 
@@ -106,7 +106,7 @@ Funzione che attiva l&#39;aggregazione delle chiamate in esecuzione per approvar
 
 `adobe.optIn.permissions`
 
-Un oggetto in ascolto di tutte le soluzioni Experience Cloud, come categorie, a cui il visitatore ha dato o negato il proprio consenso.
+Un oggetto in cui sono elencate tutte le soluzioni CX Enterprise, come categorie, a cui il visitatore ha dato o negato il proprio consenso.
 
 `adobe.optIn.isApproved(categories)`
 
@@ -118,7 +118,7 @@ Recupera l&#39;elenco di autorizzazioni in modo asincrono. Il callback avviene c
 
 **`permissions`**
 
-Un oggetto in ascolto di tutte le soluzioni Experience Cloud, come categorie, a cui il visitatore ha dato o negato il proprio consenso. Ad esempio: `{ aa: true, ecid: false, aam: true... }`
+Un oggetto in cui sono elencate tutte le soluzioni CX Enterprise, come categorie, a cui il visitatore ha dato o negato il proprio consenso. Esempio: `{ aa: true, ecid: false, aam: true... }`
 
 **`status`**
 

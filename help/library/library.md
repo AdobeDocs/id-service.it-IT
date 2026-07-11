@@ -1,7 +1,7 @@
 ---
-description: Proprietà, metodi e configurazioni che consentono di usare in maniera programmatica Experience Cloud Identity Service.
-keywords: Servizio ID
-title: API del servizio ID
+description: Proprietà, metodi e configurazioni che consentono di usare in modo programmatico il servizio ID visitatore.
+keywords: Servizio ID visitatori
+title: API del servizio ID visitatore
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: 60ae4927-e905-4252-b9ec-9cc74073e8d5
@@ -15,21 +15,16 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 79
-ht-degree: 100%
+source-wordcount: 43
+ht-degree: 16%
 
 ---
 
-# API del servizio ID{#id-service-api}
+# API del servizio ID visitatore{#id-service-api}
 
-Proprietà, metodi e configurazioni che consentono di usare in maniera programmatica Experience Cloud Identity Service.
+Proprietà, metodi e configurazioni che consentono di usare in modo programmatico il servizio ID visitatore.
 
 * [Panoramica sulle configurazioni](function-vars/function-vars.md)
 * [Panoramica dei metodi](get-set/get-set.md)
-
->[!NOTE]
->
->Le *librerie JavaScript di Experience Cloud ID* sono state recentemente spostate. L’ultima versione delle librerie ECID JS è disponibile all’indirizzo [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
-

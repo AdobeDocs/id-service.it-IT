@@ -1,6 +1,6 @@
 ---
-description: Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service.
-keywords: Servizio ID
+description: Versioni future, aggiornamenti o modifiche al servizio ID visitatori.
+keywords: Servizio ID visitatori
 title: Note sulla versione 2020
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
 TQID: https://experienceleague.adobe.com/hqAMIyXTeLBPU-4B6AVRXhcWux3bkyViMCrbjoGiRwk
@@ -13,16 +13,16 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 216
-ht-degree: 91%
+source-wordcount: 235
+ht-degree: 71%
 
 ---
 
-# Note sulla versione 2020 di Experience Cloud {#release-notes}
+# Note sulla versione 2020 {#release-notes}
 
-Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service.
+Versioni future, aggiornamenti o modifiche al servizio ID visitatori.
 
 ## Versione 5.1.1
 
@@ -47,14 +47,13 @@ Per ulteriori informazioni su questi valori di attributo, visita [web.dev](https
 
 ## Versione 4.6
 
-* È stato impostato il flag `loadSSL` per impostazione predefinita. Tutte le chiamate a Identity Service sono impostate su `https` per impostazione predefinita.  I clienti possono impostarlo su falso se desiderano chiamare i servizi Identity Service su HTTP dalle proprie pagine `non-ssl`.
-* È stata aggiornata la funzione utilizzata per rilevare la versione `Internet-Explorer (IE)`, per risolvere un problema segnalato da `ESLint`.
-Risoluzione del problema di prestazioni in `Internet-Explorer (IE) 11` quando a ECID viene dato il consenso esplicito `pre-approval` e aggiornato in seguito.
+* È stato impostato il flag `loadSSL` per impostazione predefinita. Per impostazione predefinita, tutte le chiamate al servizio ID visitatore si troveranno su `https`.  I clienti possono impostarlo su false se desiderano chiamare il servizio ID visitatori su HTTP dalle proprie pagine `non-ssl`.
+* È stata aggiornata la funzione utilizzata per rilevare la versione di `Internet-Explorer (IE)`, per risolvere un problema segnalato da `ESLint`.È stato risolto un problema di prestazioni in `Internet-Explorer (IE) 11`, nel caso di `pre-approval` del consenso esplicito per l’ECID e successivo aggiornamento.
 
 ## Versione 4.5
 
 * A partire dalla versione 4.5, ECID rifiuterà gli ID vuoti inviati al metodo `setCustomerIDs`.
 * È stato risolto un problema che si verificava quando l’opzione di consenso era configurata come `doesOptInApply=false` e `isIabContext=true`.
 
-Consulta [Note sulla versione di Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=it) per le note sulle versioni mensili di tutti i prodotti.
+Consulta le [note sulla versione di CX Enterprise](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=it) per le note sulla versione mensili di tutti i prodotti.
 
