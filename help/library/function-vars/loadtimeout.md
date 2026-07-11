@@ -1,26 +1,21 @@
 ---
-description: Imposta un intervallo di timeout in millisecondi. Utilizzato per comunicare ad altre soluzioni (ad esempio Analytics, Audience Manager, Target, ecc.) quanto tempo attendere una risposta dal servizio ID.
-keywords: Servizio ID
+description: Imposta un intervallo di timeout in millisecondi. Utilizzato per comunicare ad altre soluzioni (ad esempio Analytics, Audience Manager, Target, ecc.) quanto tempo attendere una risposta dal servizio ID visitatore.
+keywords: Servizio ID visitatori
 title: loadTimeout
 exl-id: 485264f4-ee24-4042-8be3-259e70462110
 TQID: https://experienceleague.adobe.com/w0-c0ROMsYRLqlHQuBfSAdardHnMfaJ8oTLf1xwL9QQ
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 143
-ht-degree: 69%
+source-wordcount: 147
+ht-degree: 56%
 
 ---
 
 # loadTimeout{#loadtimeout}
 
-Imposta un intervallo di timeout in millisecondi. Utilizzato per comunicare ad altre soluzioni (ad esempio Analytics, Audience Manager, Target, ecc.) quanto tempo attendere una risposta dal servizio ID.
+Imposta un intervallo di timeout in millisecondi. Utilizzato per comunicare ad altre soluzioni (ad esempio Analytics, Audience Manager, Target, ecc.) quanto tempo attendere una risposta dal servizio ID visitatore.
 
 **Sintassi:** `loadTimeout: *`intervallo in millisecondi`*`
 
@@ -28,12 +23,12 @@ Il valore predefinito è 30.000 millisecondi (30 secondi). Si consiglia vivament
 
 >[!NOTE]
 >
->Le chiamate al servizio ID sono sincronizzate con gli altri codici non Adobe presenti nella pagina. Di conseguenza, se si aumenta o diminuisce l’intervallo di timeout, la frequenza di rendering del contenuto della pagina non viene modificata. Tuttavia, intervalli di timeout lunghi possono influire sui tempi di caricamento delle pagine misurati da comuni strumenti di monitoraggio della rete, ma il tempo di rendering non cambia.
+>Le chiamate al servizio ID visitatori sono asincrone in relazione ad altro codice non Adobe sulla pagina. Di conseguenza, se si aumenta o diminuisce l’intervallo di timeout, la frequenza di rendering del contenuto della pagina non viene modificata. Tuttavia, intervalli di timeout lunghi possono influire sui tempi di caricamento delle pagine misurati da comuni strumenti di monitoraggio della rete, ma il tempo di rendering non cambia.
 
 **Esempio di codice**
 
 ```js
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE",{ 
    trackingServer: "Insert tracking server here here",  //Same as s.trackingServer 
    trackingServerSecure: "Insert secure tracking server here",  //Same as s.trackingServerSecure 
  

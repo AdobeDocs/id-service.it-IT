@@ -1,26 +1,21 @@
 ---
-description: Flag booleano opzionale che impedisce a Experience Cloud Identity Service di restituire il cookie di terze parti demdex.net.
-keywords: Servizio ID
+description: Flag booleano facoltativo che impedisce al servizio ID visitatore di restituire il cookie di terze parti demdex.net.
+keywords: Servizio ID visitatori
 title: disableThirdPartyCookies
 exl-id: 19d12822-0e17-4a1c-8e9c-25a22e20a4a8
 TQID: https://experienceleague.adobe.com/vx9q-Q1X0fraWPUmaBlx-bBFX-gvnAox03mpENTizHw
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 145
-ht-degree: 97%
+source-wordcount: 144
+ht-degree: 16%
 
 ---
 
 # disableThirdPartyCookies{#disablethirdpartycookies}
 
-Flag booleano opzionale che impedisce a Experience Cloud Identity Service di restituire il cookie di terze parti demdex.net.
+Flag booleano facoltativo che impedisce al servizio ID visitatore di restituire il cookie di terze parti demdex.net.
 
 >[!NOTE]
 >
@@ -28,12 +23,12 @@ Flag booleano opzionale che impedisce a Experience Cloud Identity Service di res
 
 **Sintassi:** `disableThirdPartyCookies: true|false` (l&#39;impostazione predefinita è `false`). Per `VisitorAPI.js` versione 3.0.0 o successiva.
 
-Quando `disableThirdPartyCookies: true`, il servizio ID non restituisce il cookie di terze parti demdex.net (vedi [I cookie ed Experience Cloud Identity Service](../../introduction/cookies.md)). Se il browser del visitatore del sito contiene già questo cookie, il servizio ID non lo usa per creare un nuovo identificatore Experience Cloud ID (MID) o restituire un ID esistente. Il servizio ID crea un nuovo MID casuale nel cookie di prime parti. Una volta abilitato, è possibile raccogliere i dati con il servizio ID e condividerlo tra diverse soluzioni Experience Cloud.
+Quando `disableThirdPartyCookies: true`, il servizio ID visitatore non restituisce il cookie di terze parti demdex.net (vedi [Cookie e il servizio ID visitatore](../../introduction/cookies.md) ). Se il visitatore del sito dispone già del cookie nel proprio browser, il Servizio ID visitatore non lo utilizza per creare un nuovo ECID o restituire un ID esistente. Il Servizio ID visitatore crea un nuovo MID casuale nel cookie di prime parti. Una volta attivato, è possibile raccogliere i dati con il servizio ID visitatore e condividerlo tra diverse soluzioni CX Enterprise.
 
 **Esempio di codice**
 
 ```js
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE",{ 
    trackingServer: "Insert tracking server here here",  //Same as s.trackingServer 
    trackingServerSecure: "Insert secure tracking server here",  //Same as s.trackingServerSecure 
  

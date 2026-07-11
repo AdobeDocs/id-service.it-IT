@@ -1,36 +1,30 @@
 ---
-description: Questi esempi coprono 2 casi d'uso comuni relativi a un'integrazione diretta e all'Experience Cloud ID (MID). Il MID è un ID univoco e costante per i visitatori del tuo sito.
-keywords: Servizio ID
+description: Questi esempi coprono 2 casi d’uso comuni relativi a un’integrazione diretta e all’ECID. Il MID è un ID univoco e costante per i visitatori del tuo sito.
+keywords: Servizio ID visitatori
 title: Casi d'uso dell'integrazione diretta
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
 TQID: https://experienceleague.adobe.com/1vfYQsSZiqM3SrnP0lmSrZEWpAMsbwVK8sR0MNitetQ
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 457
-ht-degree: 78%
+source-wordcount: 456
+ht-degree: 50%
 
 ---
 
 # Casi d&#39;uso dell&#39;integrazione diretta {#direct-integration-use-cases}
 
-Questi esempi coprono 2 casi d&#39;uso comuni relativi a un&#39;integrazione diretta e all&#39;Experience Cloud ID (ECID o MID). Questo ID è univoco e costante per i visitatori del tuo sito.
+Questi esempi coprono 2 casi d’uso comuni relativi a un’integrazione diretta e all’ECID (detto anche MID). Questo ID è univoco e costante per i visitatori del tuo sito.
 
 >[!TIP]
 >
 >* Leggi e comprendi la [sintassi del codice e le variabili](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) prima di immergerti nei casi d&#39;uso.
->* Per ulteriori informazioni sull’identificatore MID, consulta [I cookie ed Experience Cloud Identity Service](../introduction/cookies.md).
+>* Per ulteriori informazioni sull&#39;identificatore MID, vedere [Cookie e il servizio ID visitatore](../introduction/cookies.md).
 >
 
-## Caso d&#39;uso 1: ho un identificatore Experience Cloud ID (MID) ma voglio trasmettere i miei ID visitatori e impostare uno stato di autenticazione {#section-a67d89a343754d1286d03cf08d34b806}
+## Caso d&#39;uso 1: ho un ECID ma voglio trasmettere i miei ID visitatori e impostare uno stato di autenticazione {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
@@ -52,7 +46,7 @@ Questi esempi coprono 2 casi d&#39;uso comuni relativi a un&#39;integrazione dir
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Azioni</b> </p> </td> 
-   <td colname="col2"> <p>Considerate queste condizioni, effettua una chiamata al servizio ID che includa: </p> 
+   <td colname="col2"> <p>Considerate queste condizioni, effettua una chiamata al servizio ID visitatore che includa: </p> 
     <ul id="ul_9ECB1A65266644E89E949C57D202D5A4"> 
      <li id="li_10A6F5A9C54D44A08F4F2E405E6019E2">MID (1234). </li> 
      <li id="li_4869572B40E54C54B88A2474DAC475A8">L'ID del fornitore dei dati. Questo è un ID univoco assegnato alla tua azienda. Chiamiamolo ID 4444. </li> 
@@ -62,7 +56,7 @@ Questi esempi coprono 2 casi d&#39;uso comuni relativi a un&#39;integrazione dir
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Soluzione ed esempio di codice</b> </p> </td> 
-   <td colname="col2"> <p>Formatta la chiamata al servizio ID in questo modo: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&d_cid=4444%019876%011&d_ver=2</span> </p> <p>Nota che la chiamata di esempio contiene: </p> 
+   <td colname="col2"> <p>Formatta la chiamata al servizio ID visitatori in questo modo: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&amp;d_cid=4444%019876%011&amp;d_ver=2</span> </p> <p>Nota che la chiamata di esempio contiene: </p> 
     <ul id="ul_0667FBFD8D3C46BDBD027F484691EC97"> 
      <li id="li_FAB1FAE703DB48D1A32EE72684028964">MID: <span class="codeph">d_mid=1234</span> </li> 
      <li id="li_C97B74FF444F4BB4B4A5CB1CBBE52249">MID unito all'ID univoco per il visitatore: <span class="codeph">d_mid=1234&amp;d_cid=4444%019876%011</span> </li> 
@@ -87,17 +81,17 @@ Questi esempi coprono 2 casi d&#39;uso comuni relativi a un&#39;integrazione dir
    <td colname="col2"> <p>Questo caso d’uso prevede i seguenti presupposti: </p> 
     <ul id="ul_BF3BD821907B46A4B2EFA63146D35722"> 
      <li id="li_E658AE0671D14558B65FDD8992F25996">Nessun MID per il visitatore del sito. </li> 
-     <li id="li_28A48BB3F71C4E4297F95A2D3E10AD7B">È necessario richiedere un identificatore MID dal servizio ID. </li> 
-     <li id="li_E2C306B9308D41E5BFE2F23EF48F5A41">Conoscere l'<a href="../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26" format="dita" scope="local">ID organizzazione</a>. Chiamiamolo 5555. </li> 
+     <li id="li_28A48BB3F71C4E4297F95A2D3E10AD7B">È necessario richiedere un identificatore MID dal servizio ID visitatore. </li> 
+     <li id="li_E2C306B9308D41E5BFE2F23EF48F5A41">Conoscere l'ID organizzazione IMS <a href="../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26" format="dita" scope="local"></a>. Chiamiamolo 5555. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Azioni</b> </p> </td> 
-   <td colname="col2"> <p>Considerate queste condizioni, effettua una chiamata al servizio ID che includa il tuo ID organizzazione. </p> <p>Inoltre, se uno degli altri parametri elencati nella <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guida all'integrazione diretta</a> (ad esempio, <span class="codeph"> d_blob</span> o <span class="codeph"> dcs_region</span>, ecc.) puoi passare anche questi. </p> </td> 
+   <td colname="col2"> <p>Considerate queste condizioni, effettua una chiamata al servizio ID visitatore che includa il tuo ID organizzazione IMS. </p> <p>Inoltre, se uno degli altri parametri elencati nella <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> guida all'integrazione diretta</a> (ad esempio, <span class="codeph"> d_blob</span> o <span class="codeph"> dcs_region</span>, ecc.) puoi passare anche questi. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Soluzione ed esempio di codice</b> </p> </td> 
-   <td colname="col2"> <p>Formatta la chiamata al servizio ID in questo modo: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&d_ver=2</span> </p> <p>Nota come questa chiamata d'esempio contiene il tuo ID organizzazione, <span class="codeph">d_orgid=5555</span>. Ti verrà restituito un <span class="keyword">Experience Cloud</span> ID per il visitatore. </p> </td> 
+   <td colname="col2"> <p>Formatta la chiamata al servizio ID visitatori in questo modo: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>La chiamata di esempio contiene il tuo ID organizzazione IMS, <span class="codeph">d_orgid=5555</span>. Ti verrà restituito un ECID per il visitatore. </p> </td> 
   </tr> 
  </tbody> 
 </table>

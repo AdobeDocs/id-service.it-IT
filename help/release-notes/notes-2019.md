@@ -1,43 +1,37 @@
 ---
-description: Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service.
-keywords: Servizio ID
+description: Versioni future, aggiornamenti o modifiche al servizio ID visitatori.
+keywords: Servizio ID visitatori
 title: Note sulla versione 2019
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
 TQID: https://experienceleague.adobe.com/KnO04dnP6z7gKrr8vkFiiToDSBfClpiOJkGq8949ahA
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 438
-ht-degree: 100%
+source-wordcount: 426
+ht-degree: 67%
 
 ---
 
-# Note sulla versione 2019 di Experience Cloud {#release-notes}
+# Note sulla versione 2019 {#release-notes}
 
-Versioni future, aggiornamenti o modifiche a Experience Cloud Identity Service.
+Versioni future, aggiornamenti o modifiche al servizio ID visitatori.
 
 ## Versione 4.4.1
 
-Aggiungi approvazione pre-consenso tramite casella di controllo per l’analisi dei supporti in ECID Launch Extension.
+Aggiungi approvazione pre-consenso tramite casella di controllo per l&#39;analisi dei contenuti multimediali nell&#39;estensione tag [!UICONTROL Experience Cloud ID Service].
 
 **Problemi risolti**
 
-* Problema con l’estensione di lancio ECID: parsing della stringa di input per preOptInApprovals.
+* Problema con l&#39;estensione tag [!UICONTROL Experience Cloud ID Service] preOptInApprovals nell&#39;analisi della stringa di input.
 * Calo della prestazione quando trackingServer è in uso.
 
 ## Versione 4.4 {#version-4point4}
 
 **Nuova funzionalità**
 
-[Supporto di hashing SHA-256 per setCustomerIDs](/help/reference/hashing-support.md). Il servizio Experience Cloud ID (ECID) supporta l’algoritmo di hashing SHA-256 che consente di ricevere gli ID o indirizzi e-mail dei clienti e di inoltrare gli ID con hashing.
+[Supporto di hashing SHA-256 per setCustomerIDs](/help/reference/hashing-support.md). Il Servizio ID visitatore (ECID) supporta l’algoritmo di hashing SHA-256 che consente di ricevere gli ID o indirizzi e-mail dei clienti e di inoltrare gli ID con hashing.
 
 **Correzioni e miglioramenti**
 
@@ -64,12 +58,12 @@ Supporto per il plug-in Audience Manager per IAB TCF, disponibile tramite l’og
 **Problemi risolti**
 
 * IAB + OptIn non riesce a ottenere il MID per i clienti di ritorno.
-* Risoluzione di un bug della configurazione opt-in doesOptInApply in DTM.
+* È stato corretto un bug nella configurazione opt-in doesOptInApply.
 * La rinuncia ECID disattiva le sincronizzazioni ID.
 
 ## Versione 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**Servizio Opt-in**. Opt-in è un&#39;estensione di Experience Cloud ID (ECID) che consente di controllare se (e quali) librerie di Experience Cloud possono creare dei cookie sulle pagine Web per i visitatori. Usando [Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it), è possibile semplificare la raccolta dei consensi dei visitatori per la soluzione Experience Cloud consentendo ad Analytics, Target, Audience Manager e a tutte le altre soluzioni Experience Cloud di partecipare al sistema di gestione dei consensi.
+**Servizio Opt-in**. Opt-in è un&#39;estensione dell&#39;ECID che consente di controllare se (e quali) librerie aziendali CX possono creare dei cookie sulle pagine Web per i visitatori. Utilizzando [tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it), è possibile semplificare la raccolta dei consensi dei visitatori per la soluzione CX Enterprise consentendo ad Analytics, Target, Audience Manager e a tutte le altre soluzioni CX Enterprise di partecipare al sistema di gestione dei consensi.
 
 ## Versione 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 

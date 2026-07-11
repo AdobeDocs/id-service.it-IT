@@ -1,30 +1,22 @@
 ---
-description: Il Children's Online Privacy Protection Act (COPPA) proibisce la raccolta online di dati personali di bambini di età inferiore ai 13 anni senza disporre del consenso verificabile dei genitori. I clienti interessati dal COPPA possono aggiungere una variabile opzionale al codice di Experience Cloud Identity Service che impedisce l’impostazione di cookie nel dominio di un browser di terze parti.
-keywords: Servizio ID
-title: Supporto per COPPA in Experience Cloud Identity Service
+description: Il Children's Online Privacy Protection Act (COPPA) proibisce la raccolta online di dati personali di bambini di età inferiore ai 13 anni senza disporre del consenso verificabile dei genitori. I clienti interessati dal COPPA possono aggiungere una variabile opzionale al codice del servizio ID visitatore che impedisce l’impostazione di cookie nel dominio di un browser di terze parti.
+keywords: Servizio ID visitatori
+title: Supporto per COPPA nel servizio ID visitatore di Adobe
 exl-id: c7579f90-3011-4e26-b908-08907bf12ba2
 TQID: https://experienceleague.adobe.com/szz7syrA2KSDasXTox02PTbxBy60tfFc80hHmsjXwc0
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 357
-ht-degree: 86%
+source-wordcount: 363
+ht-degree: 36%
 
 ---
 
-# Supporto per COPPA in Experience Cloud Identity Service {#coppa-support-in-the-experience-cloud-id-service}
+# Supporto per COPPA nel servizio ID visitatore di Adobe {#coppa-support-in-the-experience-cloud-id-service}
 
-Il Children&#39;s Online Privacy Protection Act (COPPA) proibisce la raccolta online di dati personali di bambini di età inferiore ai 13 anni senza disporre del consenso verificabile dei genitori. I clienti interessati dal COPPA possono aggiungere una variabile opzionale al codice di Experience Cloud Identity Service che impedisce l’impostazione di cookie nel dominio di un browser di terze parti.
+Il Children&#39;s Online Privacy Protection Act (COPPA) proibisce la raccolta online di dati personali di bambini di età inferiore ai 13 anni senza disporre del consenso verificabile dei genitori. I clienti interessati dal COPPA possono aggiungere una variabile opzionale al codice del servizio ID visitatore che impedisce l’impostazione di cookie nel dominio di un browser di terze parti.
 
 >[!NOTE]
 >
@@ -32,9 +24,9 @@ Il Children&#39;s Online Privacy Protection Act (COPPA) proibisce la raccolta on
 
 **Cookie e monitoraggio**
 
-Quando viene caricata una pagina Web, il servizio [!DNL Experience Cloud] ID effettua una chiamata a un server di raccolta dati (DCS) [!DNL Adobe]. La risposta del DCS include un cookie di Experience Cloud e un cookie demdex.net.
+Quando viene caricata una pagina web, il servizio ID visitatore chiama un server di raccolta dati (DCS) di Adobe. La risposta del DCS include un cookie CX Enterprise e un cookie demdex.net.
 
-* Il cookie Experience Cloud è impostato nel dominio di prime parti. Non può essere utilizzato per tenere traccia dei visitatori tra domini diversi, a meno che questi non collaborino per consentire l’accesso.
+* Il cookie CX Enterprise è impostato nel dominio di prime parti. Non può essere utilizzato per tenere traccia dei visitatori tra domini diversi, a meno che questi non collaborino per consentire l’accesso.
 * Il cookie demdex.net è impostato nel dominio di terze parti. Contiene un identificatore univoco che può essere utilizzato per monitorare i visitatori tra domini diversi.
 
 **Cookie e conformità COPPA**
@@ -42,7 +34,7 @@ Quando viene caricata una pagina Web, il servizio [!DNL Experience Cloud] ID eff
 I cookie di terze parti che eseguono il monitoraggio dei visitatori tra i diversi domini nei siti Web destinati principalmente ai bambini, attivano i requisiti del consenso dei genitori per il COPPA. Per assicurare più facilmente la conformità con il COPPA per l&#39;analisi interna dei siti Web, aggiungi la variabile `disableThirdPartyCookies:true` alla `Visitor.getInstance` funzione come mostrato di seguito.
 
 ```js
-//Call the ID service 
+//Call the Visitor ID Service 
 var visitor = Visitor.getInstance("insert marketing cloud ID here", { 
  
     //Set disableThirdPartyCookies configuration param 
@@ -52,7 +44,7 @@ var visitor = Visitor.getInstance("insert marketing cloud ID here", {
 });
 ```
 
-Quando viene impostato su `true`, `disableThirdPartyCookies` l&#39;oggetto impedisce al DCS di restituire il cookie demdex.net di terze parti. Se il visitatore del sito dispone già del cookie nel proprio browser, il servizio ID non lo utilizza per creare un nuovo [!DNL Experience Cloud] ID o per restituire un ID esistente. Il servizio [!DNL Experience Cloud] ID crea un nuovo ID casuale nel cookie di prime parti. Una volta attivato, è possibile raccogliere i dati con il servizio ID e condividerlo tra diverse [!DNL Experience Cloud] soluzioni, comprese le altre operazioni interne consentite dal COPPA.
+Quando viene impostato su `true`, `disableThirdPartyCookies` l&#39;oggetto impedisce al DCS di restituire il cookie demdex.net di terze parti. Se il visitatore del sito dispone già del cookie nel proprio browser, il Servizio ID visitatore non lo utilizza per creare un nuovo ECID o restituire un ID esistente. Il Servizio ID visitatore crea un nuovo ID casuale nel cookie di prime parti. Una volta attivato, è possibile raccogliere i dati con il servizio ID visitatore e condividerlo tra diverse soluzioni CX Enterprise, incluse altre operazioni interne consentite dal COPPA.
 
 >[!MORELIKETHIS]
 >

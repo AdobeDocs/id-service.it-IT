@@ -1,24 +1,16 @@
 ---
 description: Note sulla versione e aggiornamenti per la versione 2015.
-keywords: Servizio ID
+keywords: Servizio ID visitatori
 title: Note sulla versione 2015
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
 TQID: https://experienceleague.adobe.com/WmeSY7aRbvnZJN0a-lNR-yYzWzF4dfJLPZqA--6lpYQ
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 449
-ht-degree: 94%
+source-wordcount: 457
+ht-degree: 60%
 
 ---
 
@@ -30,38 +22,38 @@ Note sulla versione e aggiornamenti per la versione 2015.
 
 Novembre 2015
 
-Il Children&#39;s Online Privacy Protection Act (COPPA) proibisce la raccolta online di dati personali di bambini di età inferiore ai 13 anni senza disporre del consenso verificabile dei genitori. I clienti interessati dal COPPA possono aggiungere una variabile opzionale al codice del servizio [!DNL Experience Cloud] ID che impedisce l’impostazione di cookie nel dominio di un browser di terze parti. Consulta [Supporto per COPPA in Experience Cloud Identity Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Per le versioni a partire dalla 1.5.3.
+Il Children&#39;s Online Privacy Protection Act (COPPA) proibisce la raccolta online di dati personali di bambini di età inferiore ai 13 anni senza disporre del consenso verificabile dei genitori. I clienti interessati dal COPPA possono aggiungere una variabile opzionale al codice del servizio ID visitatore che impedisce l’impostazione di cookie nel dominio di un browser di terze parti. Consulta [Supporto per COPPA nel servizio ID visitatori](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Per le versioni a partire dalla 1.5.3.
 
 ## Versione 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
 Settembre 2015
 
 * È stato corretto un bug del browser Safari che impediva il funzionamento della sincronizzazione dei servizi quando gli utenti impostavano il blocco dei cookie di terze parti. (AAM-20764)
-* Ora le chiamate al servizio ID includono l&#39;ID versione nel parametro `d_visid_ver=`. L’ID restituito aiuta i team interni a risolvere i problemi e a fornire assistenza. (AAM-20824)
+* Le chiamate al servizio ID visitatore ora includono l&#39;ID versione nel parametro `d_visid_ver=`. L’ID restituito aiuta i team interni a risolvere i problemi e a fornire assistenza. (AAM-20824)
 
 ## Versione 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
 Agosto 2015
 
-* È stato risolto un bug per impedire che il servizio ID richieda un iframe se non sono presenti dati da sincronizzare o attivare. (AAM-20164)
-* È stato risolto un bug che impediva al servizio ID di impostare correttamente un cookie di dominio multiparte di livello più alto. Per esempio, per un dominio come `my_company.co.uk`, in alcuni casi il servizio ID imposterebbe un cookie solo in `co.uk`. (AN-104683)
+* È stato corretto un bug per impedire che il Servizio ID visitatore richieda un iframe se non sono presenti dati da sincronizzare o attivare. (AAM-20164)
+* È stato corretto un bug che impediva a Servizio ID visitatore di impostare correttamente un cookie di dominio multiparte di livello più alto. Ad esempio, se hai un dominio come `my_company.co.uk`, in alcuni casi Servizio ID visitatore imposterebbe un cookie solo in `co.uk`. (AN-104683)
 
   Questo bug interessava solo alcuni clienti che soddisfacevano *tutti* i seguenti criteri:
 
-   * Uso del servizio ID.
-   * È abilitato un [periodo di tolleranza](https://experienceleague.adobe.com/it/docs/analytics/implementation/id/migration) *o* che utilizza cookie di prime parti e gli utenti bloccano i cookie di terze parti.
+   * Utilizzo del servizio ID visitatori.
+   * È abilitato un [periodo di tolleranza](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) *o* che utilizza cookie di prime parti e gli utenti bloccano i cookie di terze parti.
    * Avevano pagine con domini di livello superiore con più parti.
 
 Le revisioni della documentazione in questa versione includono:
 
 * [Metodi API e libreria dei codici](../library/library.md#concept-ff27497375644a898d47984aefb21c97): contenuto e testo riorganizzati. Nella maggior parte dei casi, per ciascun metodo è presente una propria pagina.
-* [Requisiti di Experience Cloud Identity Service](../reference/requirements.md): contenuto rivisto e testo riorganizzato.
+* [Requisiti del servizio ID visitatori](../reference/requirements.md): contenuto rivisto e testo riorganizzato.
 
 ## Versione 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
 Luglio 2015
 
-Il servizio [!DNL Experience Cloud] ID supporta più ID e stati di autenticazione. Questa modifica rimuove anche il supporto obsoleto per le mappature [!DNL Audience Manager] DPID di agli ID utente utilizzate dalla `setCustomerIDs`funzione. Vedi [Impostazione degli ID cliente e degli stati di autenticazione](../reference/authenticated-state.md)
+Il servizio ID visitatori supporta più ID e stati di autenticazione. Questa modifica rimuove anche il supporto obsoleto per le mappature DPID di Audience Manager agli ID utente utilizzate dalla funzione `setCustomerIDs`. Vedi [Impostazione degli ID cliente e degli stati di autenticazione](../reference/authenticated-state.md)
 
 ## Versione 1.4 {#section-f5c596f355b14da28f45c798df513572}
 

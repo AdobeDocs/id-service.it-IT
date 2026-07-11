@@ -1,24 +1,15 @@
 ---
 title: Modifiche all’etichettatura SameSite di Google Chrome
-description: Documentazione della libreria Adobe ECID (servizio ID).
+description: Documentazione per la libreria Adobe ECID (Servizio ID visitatore).
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
 TQID: https://experienceleague.adobe.com/VlmpxMM0Jm4ExEL1WdjeA3h9brGBslGoJCqgQ-xFaRs
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 1125
-ht-degree: 99%
+ht-degree: 95%
 
 ---
 
@@ -40,7 +31,7 @@ Per ulteriori informazioni sugli attributi SameSite, visita il [documento sugli 
 | `lax` | I cookie con questa impostazione vengono inviati solo quando il dominio visualizzato nell’URL del browser corrisponde al dominio del cookie. Questa è la nuova impostazione predefinita per i cookie in Chrome. |
 | `none` | I cookie con questa impostazione sono disponibili per l’accesso esterno o di terze parti, ad esempio “cross-site”. Prima di questa modifica, `none` era l’impostazione SameSite predefinita per i cookie, quindi l’utilizzo di questa impostazione fa sì che un cookie si comporti in modo simile a quello tradizionale. Google sta tuttavia richiedendo che qualsiasi cookie con questa impostazione specifichi ora il flag Secure, il che significa che il cookie verrà creato e inviato solo con richieste tramite HTTPS. Tutti i cookie cross-site senza il flag Secure verranno rifiutati da Google. |
 
-## Cosa è necessario sapere come cliente di Adobe Experience Cloud
+## Cosa è necessario sapere come cliente Adobe CX Enterprise
 
 **Non è richiesto alcun aggiornamento JavaScript**
 
@@ -48,7 +39,7 @@ I prodotti Adobe hanno già rilasciato aggiornamenti lato server per impostare c
 
 **Verificare che gli endpoint di terze parti utilizzino HTTPS**
 
-Tutti i clienti devono verificare che la propria configurazione JavaScript utilizzi HTTPS per le chiamate ai servizi Adobe. Target, Audience Manager ed Experience Cloud Identity Service (ECID) stanno reindirizzando le chiamate HTTP di terze parti ai rispettivi endpoint HTTPS, il che può aumentare la latenza. Ciò significa che non è necessario modificare la configurazione. I clienti di Analytics devono aggiornare le proprie implementazioni in modo da utilizzare esclusivamente HTTPS, in quanto i reindirizzamenti specifici di Analytics possono causare la perdita di dati.
+Tutti i clienti devono verificare che la propria configurazione JavaScript utilizzi HTTPS per le chiamate ai servizi Adobe. Target, Audience Manager e il servizio ID visitatore (ECID) stanno reindirizzando le chiamate HTTP di terze parti ai rispettivi endpoint HTTPS, il che può aumentare la latenza. Ciò significa che non è necessario modificare la configurazione. I clienti di Analytics devono aggiornare le proprie implementazioni in modo da utilizzare esclusivamente HTTPS, in quanto i reindirizzamenti specifici di Analytics possono causare la perdita di dati.
 
 **I cookie etichettati correttamente dovrebbero raccogliere i dati come previsto**
 

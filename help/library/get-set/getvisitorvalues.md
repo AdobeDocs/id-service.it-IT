@@ -1,29 +1,22 @@
 ---
-description: Questa API asincrona restituisce per impostazione predefinita identificatori per Analytics, il servizio ID, la rinuncia alla raccolta di dati, la geolocalizzazione, e contenuti di metadati BLOB. Inoltre, è possibile controllare gli ID che dovranno essere restituiti con l'enum opzionale visitor.FIELDS.
-keywords: Servizio ID
+description: Questa API asincrona restituisce per impostazione predefinita identificatori per Analytics, il servizio ID visitatore, la rinuncia alla raccolta di dati, la posizione geografica e contenuti di metadati BLOB. Inoltre, è possibile controllare gli ID che dovranno essere restituiti con l'enum opzionale visitor.FIELDS.
+keywords: Servizio ID visitatori
 title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
 TQID: https://experienceleague.adobe.com/CF9G6wKlDxjklwedJk8KVmYH7KjA7CRkxtNu-mQ-Kjs
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 421
-ht-degree: 100%
+source-wordcount: 420
+ht-degree: 77%
 
 ---
 
 # getVisitorValues{#getvisitorvalues}
 
-Questa API asincrona restituisce per impostazione predefinita identificatori per Analytics, il servizio ID, la rinuncia alla raccolta di dati, la geolocalizzazione, e contenuti di metadati BLOB. Inoltre, è possibile controllare gli ID che dovranno essere restituiti con l&#39;enum opzionale visitor.FIELDS.
+Questa API asincrona restituisce per impostazione predefinita identificatori per Analytics, il servizio ID visitatore, la rinuncia alla raccolta di dati, la posizione geografica e contenuti di metadati BLOB. Inoltre, è possibile controllare gli ID che dovranno essere restituiti con l&#39;enum opzionale visitor.FIELDS.
 
 Sommario:
 
@@ -50,8 +43,8 @@ Per maggiori informazioni, vedi i casi d&#39;uso seguenti e le definizioni.
 Questo codice restituisce il set di dati standard. La richiesta e la risposta potrebbero essere simili ai seguenti esempi.
 
 ```js
-//Call the ID service 
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{...}); 
+//Call the Visitor ID Service 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE",{...}); 
    
 //Add your callback to the GET method to return IDs and data. 
 visitor.getVisitorValues(visitorIdsCallback);
@@ -72,11 +65,11 @@ Nella risposta di esempio predefinita alcuni valori sono stati abbreviati a scop
 
 ## Caso d&#39;uso 2: richiesta di impostazione di dati personalizzati {#section-467b2f4e513344c89b7332b05f6f59f3}
 
-Questo codice utilizza un array facoltativo per restituire un set specifico di ID usando `visitor.FIELDS` l&#39;enum. In questo caso vogliamo solo l’Experience Cloud ID (MCID) e l’ID Analytics (MCAID) del visitatore. La richiesta e la risposta potrebbero essere simili ai seguenti esempi.
+Questo codice utilizza un array facoltativo per restituire un set specifico di ID usando `visitor.FIELDS` l&#39;enum. In questo caso, vogliamo solo l’ECID (MCID) e l’ID Analytics (MCAID) del visitatore. La richiesta e la risposta potrebbero essere simili ai seguenti esempi.
 
 ```js
-//Call the ID service 
-var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here", { ... });
+//Call the Visitor ID Service 
+var visitor = Visitor.getInstance("INSERT-IMS-ORG-ID-HERE", { ... });
 
 // Add an optional array to specify which IDs you want to return. 
 visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIELDS.MCAID]);
@@ -110,7 +103,7 @@ Nella seguente tabella sono elencati e definiti i parametri di risposta. Questi 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>L'ID della regione di raccolta dati. Questo è un identificatore numerico per la posizione geografica di un particolare datacenter del servizio ID. </p> <p>Consulta <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=it" format="https" scope="external">ID regioni DCS, posizioni e nomi host</a> e <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a> </p> </td> 
+   <td colname="col2"> <p>L'ID della regione di raccolta dati. Questo è un identificatore numerico per la posizione geografica di un particolare datacenter del Servizio ID visitatore. </p> <p>Consulta <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=it" format="https" scope="external">ID regioni DCS, posizioni e nomi host</a> e <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
@@ -118,7 +111,7 @@ Nella seguente tabella sono elencati e definiti i parametri di risposta. Questi 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>L’Experience Cloud ID del visitatore. </p> <p>Consulta <a href="../../introduction/cookies.md" format="dita" scope="local"> I cookie ed Experience Cloud Identity Service </a>. </p> </td> 
+   <td colname="col2"> <p>ECID del visitatore. </p> <p>Consulta <a href="../../introduction/cookies.md" format="dita" scope="local"> cookie e il servizio ID visitatori </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
